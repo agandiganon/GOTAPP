@@ -1,0 +1,202 @@
+[
+  {
+    "storyLocationId": "winterfell",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E01"
+  },
+  {
+    "storyLocationId": "the-wall",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E01"
+  },
+  {
+    "storyLocationId": "beyond-the-wall-haunted-forest",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E01"
+  },
+  {
+    "storyLocationId": "pentos",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E01"
+  },
+  {
+    "storyLocationId": "kingsroad",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E02"
+  },
+  {
+    "storyLocationId": "royal-encampment",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E02"
+  },
+  {
+    "storyLocationId": "road-to-the-wall",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E02"
+  },
+  {
+    "storyLocationId": "kings-landing",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E03"
+  },
+  {
+    "storyLocationId": "castle-black",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E03"
+  },
+  {
+    "storyLocationId": "khalasar-camp",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E03"
+  },
+  {
+    "storyLocationId": "vaes-dothrak",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E04"
+  },
+  {
+    "storyLocationId": "inn-at-the-crossroads",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E04"
+  },
+  {
+    "storyLocationId": "eyrie",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E05"
+  },
+  {
+    "storyLocationId": "vale-of-arryn",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E05"
+  },
+  {
+    "storyLocationId": "mountains-of-the-moon",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E05"
+  },
+  {
+    "storyLocationId": "winterfell-woods",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E06"
+  },
+  {
+    "storyLocationId": "western-lannister-camp",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E07"
+  },
+  {
+    "storyLocationId": "north-army-camp",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E08"
+  },
+  {
+    "storyLocationId": "lhazareen",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E08"
+  },
+  {
+    "storyLocationId": "lhazareen-village",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E08"
+  },
+  {
+    "storyLocationId": "the-twins",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E09"
+  },
+  {
+    "storyLocationId": "whispering-wood",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E09"
+  },
+  {
+    "storyLocationId": "riverrun",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E09"
+  },
+  {
+    "storyLocationId": "baelor-great-sept",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E09"
+  },
+  {
+    "storyLocationId": "dany-desert-camp",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E10"
+  }
+]

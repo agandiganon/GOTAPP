@@ -1,0 +1,327 @@
+[
+  {
+    "id": "winterfell",
+    "name": "וינטרפל",
+    "region": "הצפון",
+    "baseDescription": "מושב בית סטארק בצפון.",
+    "revealEpisodeId": "S01E01",
+    "history": [
+      {
+        "episodeId": "S01E01",
+        "summary": "מושב בית סטארק בצפון."
+      }
+    ]
+  },
+  {
+    "id": "the-wall",
+    "name": "החומה",
+    "region": "הצפון הרחוק",
+    "baseDescription": "קו ההגנה העצום בצפון המאויש בידי משמר הלילה.",
+    "revealEpisodeId": "S01E01",
+    "history": [
+      {
+        "episodeId": "S01E01",
+        "summary": "קו ההגנה העצום בצפון המאויש בידי משמר הלילה."
+      }
+    ]
+  },
+  {
+    "id": "beyond-the-wall-haunted-forest",
+    "name": "מעבר לחומה והיער המכושף",
+    "region": "הצפון הרחוק",
+    "baseDescription": "מרחב פראי וקפוא שבו מופיע האיום הקדום.",
+    "revealEpisodeId": "S01E01",
+    "history": [
+      {
+        "episodeId": "S01E01",
+        "summary": "מרחב פראי וקפוא שבו מופיע האיום הקדום."
+      }
+    ]
+  },
+  {
+    "id": "pentos",
+    "name": "פנטוס",
+    "region": "אסוס",
+    "baseDescription": "עיר חופשית באסוס שבה האחים טארגאריין חיים בגלות בתחילת הסדרה.",
+    "revealEpisodeId": "S01E01",
+    "history": [
+      {
+        "episodeId": "S01E01",
+        "summary": "עיר חופשית באסוס שבה האחים טארגאריין חיים בגלות בתחילת הסדרה."
+      }
+    ]
+  },
+  {
+    "id": "kingsroad",
+    "name": "דרך המלך",
+    "region": "ווסטרוז",
+    "baseDescription": "הציר הראשי המחבר בין צפון הממלכה לדרומה.",
+    "revealEpisodeId": "S01E02",
+    "history": [
+      {
+        "episodeId": "S01E02",
+        "summary": "הציר הראשי המחבר בין צפון הממלכה לדרומה."
+      }
+    ]
+  },
+  {
+    "id": "royal-encampment",
+    "name": "מחנה הפמליה המלכותית",
+    "region": "דרך המלך",
+    "baseDescription": "מרחב מעבר שבו נחשפים יחסי המעמדות והחיכוך בין בני האצולה לשאר המלווים.",
+    "revealEpisodeId": "S01E02",
+    "history": [
+      {
+        "episodeId": "S01E02",
+        "summary": "מרחב מעבר שבו נחשפים יחסי המעמדות והחיכוך בין בני האצולה לשאר המלווים."
+      }
+    ]
+  },
+  {
+    "id": "road-to-the-wall",
+    "name": "הדרך אל החומה",
+    "region": "הצפון",
+    "baseDescription": "הדרך אל החומה.",
+    "revealEpisodeId": "S01E02",
+    "history": [
+      {
+        "episodeId": "S01E02",
+        "summary": "הדרך אל החומה."
+      }
+    ]
+  },
+  {
+    "id": "kings-landing",
+    "name": "מעלה מלך",
+    "region": "ארצות הכתר",
+    "baseDescription": "בירת שבע הממלכות ומרכז הכוח הפוליטי של ווסטרוז.",
+    "revealEpisodeId": "S01E03",
+    "history": [
+      {
+        "episodeId": "S01E03",
+        "summary": "בירת שבע הממלכות ומרכז הכוח הפוליטי של ווסטרוז."
+      }
+    ]
+  },
+  {
+    "id": "castle-black",
+    "name": "טירת שחור",
+    "region": "החומה",
+    "baseDescription": "אחד המבצרים הראשיים של משמר הלילה על החומה.",
+    "revealEpisodeId": "S01E03",
+    "history": [
+      {
+        "episodeId": "S01E03",
+        "summary": "אחד המבצרים הראשיים של משמר הלילה על החומה."
+      }
+    ]
+  },
+  {
+    "id": "khalasar-camp",
+    "name": "מחנה הח'אלסאר",
+    "region": "ים הדות'ראקים",
+    "baseDescription": "מחנה הח'אלסאר בדרך אל ואייס דותראק.",
+    "revealEpisodeId": "S01E03",
+    "history": [
+      {
+        "episodeId": "S01E03",
+        "summary": "מחנה הח'אלסאר בדרך אל ואייס דותראק."
+      }
+    ]
+  },
+  {
+    "id": "vaes-dothrak",
+    "name": "ואייס דותראק",
+    "region": "ים הדות'ראקים",
+    "baseDescription": "העיר הקדושה של הדות'ראקים, מרכז פולחני ופוליטי שאליו מגיעים ח'אלים ואנשיהם.",
+    "revealEpisodeId": "S01E04",
+    "history": [
+      {
+        "episodeId": "S01E04",
+        "summary": "העיר הקדושה של הדות'ראקים, מרכז פולחני ופוליטי שאליו מגיעים ח'אלים ואנשיהם."
+      }
+    ]
+  },
+  {
+    "id": "inn-at-the-crossroads",
+    "name": "פונדק דרכים",
+    "region": "נהרות",
+    "baseDescription": "צומת דרכים אזרחי שבו דרמות פרטיות הופכות מיד לעניינים מדיניים.",
+    "revealEpisodeId": "S01E04",
+    "history": [
+      {
+        "episodeId": "S01E04",
+        "summary": "צומת דרכים אזרחי שבו דרמות פרטיות הופכות מיד לעניינים מדיניים."
+      }
+    ]
+  },
+  {
+    "id": "eyrie",
+    "name": "קן הנשרים",
+    "region": "בקעת ארין",
+    "baseDescription": "מבצרם המבודד והתלול של האארינים.",
+    "revealEpisodeId": "S01E05",
+    "history": [
+      {
+        "episodeId": "S01E05",
+        "summary": "מבצרם המבודד והתלול של האארינים."
+      }
+    ]
+  },
+  {
+    "id": "vale-of-arryn",
+    "name": "בקעת ארין",
+    "region": "בקעת ארין",
+    "baseDescription": "אזור הררי ומוגן הנשלט בידי בית אארין.",
+    "revealEpisodeId": "S01E05",
+    "history": [
+      {
+        "episodeId": "S01E05",
+        "summary": "אזור הררי ומוגן הנשלט בידי בית אארין."
+      }
+    ]
+  },
+  {
+    "id": "mountains-of-the-moon",
+    "name": "הרי הירח",
+    "region": "בקעת ארין",
+    "baseDescription": "נתיב מסוכן הנשלט בחלקו בידי שבטי הרים.",
+    "revealEpisodeId": "S01E05",
+    "history": [
+      {
+        "episodeId": "S01E05",
+        "summary": "נתיב מסוכן הנשלט בחלקו בידי שבטי הרים."
+      }
+    ]
+  },
+  {
+    "id": "winterfell-woods",
+    "name": "היער הסמוך לוינטרפל",
+    "region": "הצפון",
+    "baseDescription": "וינטרפל והיער הסמוך.",
+    "revealEpisodeId": "S01E06",
+    "history": [
+      {
+        "episodeId": "S01E06",
+        "summary": "וינטרפל והיער הסמוך."
+      }
+    ]
+  },
+  {
+    "id": "western-lannister-camp",
+    "name": "מחנה לאניסטר במערב",
+    "region": "המערב",
+    "baseDescription": "מחנה לאניסטר במערב.",
+    "revealEpisodeId": "S01E07",
+    "history": [
+      {
+        "episodeId": "S01E07",
+        "summary": "מחנה לאניסטר במערב."
+      }
+    ]
+  },
+  {
+    "id": "north-army-camp",
+    "name": "מחנה צבא הצפון",
+    "region": "נהרות",
+    "baseDescription": "מחנה צבא הצפון.",
+    "revealEpisodeId": "S01E08",
+    "history": [
+      {
+        "episodeId": "S01E08",
+        "summary": "מחנה צבא הצפון."
+      }
+    ]
+  },
+  {
+    "id": "lhazareen",
+    "name": "לאזאר",
+    "region": "אסוס המזרחית",
+    "baseDescription": "חבל ארץ של יושבי כפרים שלווים יחסית מדרום-מזרח לים הדות'ראקים.",
+    "revealEpisodeId": "S01E08",
+    "history": [
+      {
+        "episodeId": "S01E08",
+        "summary": "חבל ארץ של יושבי כפרים שלווים יחסית מדרום-מזרח לים הדות'ראקים."
+      }
+    ]
+  },
+  {
+    "id": "lhazareen-village",
+    "name": "כפר לאזארי",
+    "region": "לאזאר",
+    "baseDescription": "קהילה אזרחית חסרת מגן המשמשת יעד לפשיטה דות'ראקית ומבליטה את פערי המוסר בין הכוחות.",
+    "revealEpisodeId": "S01E08",
+    "history": [
+      {
+        "episodeId": "S01E08",
+        "summary": "קהילה אזרחית חסרת מגן המשמשת יעד לפשיטה דות'ראקית ומבליטה את פערי המוסר בין הכוחות."
+      }
+    ]
+  },
+  {
+    "id": "the-twins",
+    "name": "התאומים",
+    "region": "נהרות",
+    "baseDescription": "מבצר התאומים של בית פריי השולט על מעבר אסטרטגי בנהר.",
+    "revealEpisodeId": "S01E09",
+    "history": [
+      {
+        "episodeId": "S01E09",
+        "summary": "מבצר התאומים של בית פריי השולט על מעבר אסטרטגי בנהר."
+      }
+    ]
+  },
+  {
+    "id": "whispering-wood",
+    "name": "יער הלחישה",
+    "region": "נהרות",
+    "baseDescription": "יער הלחישה.",
+    "revealEpisodeId": "S01E09",
+    "history": [
+      {
+        "episodeId": "S01E09",
+        "summary": "יער הלחישה וריווראן."
+      }
+    ]
+  },
+  {
+    "id": "riverrun",
+    "name": "ריווראן",
+    "region": "נהרות",
+    "baseDescription": "ריווראן.",
+    "revealEpisodeId": "S01E09",
+    "history": [
+      {
+        "episodeId": "S01E09",
+        "summary": "יער הלחישה וריווראן."
+      }
+    ]
+  },
+  {
+    "id": "baelor-great-sept",
+    "name": "הספט הגדול של באילור",
+    "region": "מעלה מלך",
+    "baseDescription": "מרחב דתי-ציבורי מרכזי במעלה מלך שבו השלטון וההמון נפגשים לעיני כל.",
+    "revealEpisodeId": "S01E09",
+    "history": [
+      {
+        "episodeId": "S01E09",
+        "summary": "מרחב דתי-ציבורי מרכזי במעלה מלך שבו השלטון וההמון נפגשים לעיני כל."
+      }
+    ]
+  },
+  {
+    "id": "dany-desert-camp",
+    "name": "מחנה דאינריז במדבר",
+    "region": "מדבר אסוס",
+    "baseDescription": "מחנה דאינריז במדבר.",
+    "revealEpisodeId": "S01E10",
+    "history": [
+      {
+        "episodeId": "S01E10",
+        "summary": "מחנה דאינריז במדבר."
+      }
+    ]
+  }
+]

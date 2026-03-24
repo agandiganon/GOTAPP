@@ -1,0 +1,1383 @@
+[
+  {
+    "id": "S01E01",
+    "season": 1,
+    "episode": 1,
+    "code": "S01E01",
+    "title": "החורף קרב",
+    "titleEnglish": "Winter Is Coming",
+    "summaries": {
+      "snapshot": "ממלכה שנראית יציבה מבחוץ נסדקת במהירות כאשר ביקור מלכותי בצפון, נישואים מעבר לים ותגלית אסורה בוינטרפל מניעים את כל השחקנים הראשיים אל הלוח.",
+      "full": "מעבר לחומה, שלושה אנשי משמר הלילה נתקלים באיום על-טבעי שמרמז כי הסכנה האמיתית מגיעה מן הצפון הקפוא. בוינטרפל, אדארד \"נד\" סטארק מוציא להורג עריק ממשמר הלילה, ומשפחת סטארק מגלה שגר של זאבי בלהות נמצא בסמוך לגופה של זאבה, דבר שנקשר באופן סמלי לילדי המשפחה. במקביל מגיעה בשורה על מותו של ג'ון אארין, יד המלך, והמלך רוברט באראתיאון מגיע צפונה כדי לבקש מנד להחליפו בתפקיד ולהציע שידוך בין ג'ופרי באראתיאון לסאנסה סטארק. ביבשת אסוס, דאינריז טארגאריין מושאת לחאל דרוגו במסגרת תכניתו של אחיה ויסריז להשיב לעצמו את כתר ווסטרוז בעזרת צבא דות'ראקי. בוינטרפל עצמה, קייטלין מקבלת מכתב חשאי מליסה אארין הטוען כי בית לאניסטר אחראי למות בעלה. בסיום הפרק, בראן סטארק מטפס על מגדל, עד למעשה גילוי עריות בין סרסיי לאניסטר לג'יימי לאניסטר, וג'יימי דוחף אותו מן החלון כדי לשמור על הסוד."
+    },
+    "focusCharacterIds": ["eddard-stark", "bran-stark", "daenerys-targaryen", "robert-baratheon"],
+    "focusCharacters": [
+      {
+        "characterId": "eddard-stark",
+        "summary": "מקבל את הבקשה להפוך ליד המלך ונחשף לחשד ראשון נגד הלאניסטרים."
+      },
+      {
+        "characterId": "bran-stark",
+        "summary": "סקרנותו מובילה אותו לגילוי המסוכן ביותר של הפרק."
+      },
+      {
+        "characterId": "daenerys-targaryen",
+        "summary": "עוברת מנכס פוליטי של אחיה לכלה של חאל דרוגו."
+      },
+      {
+        "characterId": "robert-baratheon",
+        "summary": "מניע את העלילה המרכזית בבואו לצפון ובהצעתו לנד."
+      }
+    ],
+    "mainLocationIds": ["winterfell", "beyond-the-wall-haunted-forest", "pentos", "kingsroad"],
+    "mainLocationLabels": ["וינטרפל", "מעבר לחומה והיער המכושף", "פנטוס", "הדרך המלכותית הסמוכה לוינטרפל"],
+    "newLocationIds": ["the-wall", "beyond-the-wall-haunted-forest", "winterfell", "pentos"],
+    "newLocations": [
+      {
+        "locationId": "the-wall",
+        "summary": "קו ההגנה העצום בצפון המאויש בידי משמר הלילה."
+      },
+      {
+        "locationId": "beyond-the-wall-haunted-forest",
+        "summary": "מרחב פראי וקפוא שבו מופיע האיום הקדום."
+      },
+      {
+        "locationId": "winterfell",
+        "summary": "מושב בית סטארק בצפון."
+      },
+      {
+        "locationId": "pentos",
+        "summary": "עיר חופשית באסוס שבה האחים טארגאריין חיים בגלות בתחילת הסדרה."
+      }
+    ],
+    "primaryLocationId": "winterfell",
+    "powerLeaderId": "baratheon",
+    "recentEventIds": ["tp-s01e01-1", "tp-s01e01-2", "tp-s01e01-3", "tp-s01e01-4"],
+    "turningPoints": [
+      {
+        "id": "tp-s01e01-1",
+        "summary": "מותו של ג'ון אארין מניע את נד להגיע לזירת הכוח המרכזית.",
+        "tone": "shift"
+      },
+      {
+        "id": "tp-s01e01-2",
+        "summary": "מכתבה של ליסה מטיל חשד ישיר על בית לאניסטר.",
+        "tone": "shift"
+      },
+      {
+        "id": "tp-s01e01-3",
+        "summary": "נישואי דאינריז ודרוגו מחברים את ענף טארגאריין לכוח צבאי ממשי.",
+        "tone": "shift"
+      },
+      {
+        "id": "tp-s01e01-4",
+        "summary": "נפילתו של בראן הופכת סוד פרטי למשבר מדיני פוטנציאלי.",
+        "tone": "alert"
+      }
+    ],
+    "characterUpdates": [
+      {
+        "characterId": "jon-arryn",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "מותו מדווח בתחילת הפרק ומניע את ביקור המלך."
+      },
+      {
+        "characterId": "waymar-royce",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג מעבר לחומה במפגש עם האיום העל-טבעי."
+      },
+      {
+        "characterId": "will-ranger",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "מוצא להורג בידי נד כעריק ממשמר הלילה."
+      },
+      {
+        "characterId": "bran-stark",
+        "status": "incapacitated",
+        "statusLabel": "פצוע אנוש / מחוסר הכרה",
+        "summary": "נדחף ממגדל לאחר שראה את ג'יימי וסרסיי."
+      }
+    ],
+    "politicalShifts": [
+      {
+        "id": "ps-s01e01-1",
+        "summary": "ברית סטארק–באראתיאון מתחזקת רשמית עם הצעתו של רוברט לנד להפוך ליד המלך ועם שידוך אפשרי בין סאנסה לג'ופרי.",
+        "factionsInvolved": ["stark", "baratheon"]
+      },
+      {
+        "id": "ps-s01e01-2",
+        "summary": "במקביל נוצר ציר חשד ראשון של סטארק נגד לאניסטר בעקבות מכתבה של ליסה.",
+        "factionsInvolved": ["stark", "lannister"]
+      },
+      {
+        "id": "ps-s01e01-3",
+        "summary": "באסוס מתחיל ציר טארגאריין–דות'ראקי כבסיס לאיום עתידי על ווסטרוז.",
+        "factionsInvolved": ["targaryen", "dothraki"]
+      }
+    ],
+    "housePowerUpdates": [
+      {
+        "factionId": "baratheon",
+        "power": 90,
+        "summary": "מחזיק בכתר, בלגיטימציה ובשליטה כלל-ממלכתית, אך כבר תלוי ביועצים ובמשפחות אחרות."
+      },
+      {
+        "factionId": "lannister",
+        "power": 88,
+        "summary": "קרוב מאוד למוקד הכוח דרך המלכה, המשמר וההון, אך עדיין פועל מאחורי הקלעים."
+      },
+      {
+        "factionId": "stark",
+        "power": 84,
+        "summary": "חזק, מאוחד ומכובד בצפון, אך טרם נכנס במלואו למשחק החצר."
+      },
+      {
+        "factionId": "targaryen",
+        "power": 22,
+        "summary": "כמעט חסר כוח רשמי, אך נישואי דאינריז לדרוגו יוצרים לראשונה מנוף צבאי אמיתי."
+      }
+    ]
+  },
+  {
+    "id": "S01E02",
+    "season": 1,
+    "episode": 2,
+    "code": "S01E02",
+    "title": "דרך המלך",
+    "titleEnglish": "The Kingsroad",
+    "summaries": {
+      "snapshot": "בעוד הפמליה המלכותית מתקדמת דרומה, ניסיון התנקשות, עימות בין ילדים והחלטות קשות של כבוד ונאמנות מעמיקים את הקרע בין המשפחות.",
+      "full": "בראן שוכב מחוסר הכרה בוינטרפל, ונד יוצא דרומה עם בנותיו ועם הפמליה המלכותית. ג'ון שלג יוצא צפונה עם טיריון לאניסטר בדרכו אל החומה, ואילו קייטלין נשארת לצד בראן — עד שמתנקש חודר לחדרו ומנסה לרצוח אותו. קייטלין מצליחה לסכל את ההתנקשות בעזרת זאב הבלהות של בראן, והפגיון היקר שבו השתמש הרוצח מעורר חשד כי מדובר במזימה מכוונת ולא במעשה אקראי. על דרך המלך, ג'ופרי מתעמת עם אריה ועם מיקה, נער הקצב, ואריה מגיבה בהשפלה פומבית לנסיך. נימריה תוקפת את ג'ופרי כדי להגן על אריה, וכתוצאה מכך אריה נאלצת להבריח את הזאבה. כשהסיפור מגיע אל המלך והמלכה, נד נאלץ להוציא להורג את ליידי, זאבת הבלהות של סאנסה, משום שנימריה נעלמה. במקביל, כלב הציד הורג את מיקה, והעוינות בין הסטארקים ללאניסטרים נעשית אישית יותר. בסיום, בראן מתעורר, וקייטלין מחליטה לצאת בחשאי דרומה כדי להביא את האיום לפני נד."
+    },
+    "focusCharacterIds": ["catelyn-stark", "arya-stark", "eddard-stark", "jon-snow"],
+    "focusCharacters": [
+      {
+        "characterId": "catelyn-stark",
+        "summary": "מגנה על בראן, מזהה שמדובר בקנוניה, ומחליטה לפעול עצמאית."
+      },
+      {
+        "characterId": "arya-stark",
+        "summary": "מתנגשת חזיתית עם ג'ופרי ומסרבת להיכנע להיררכיה מלאכותית."
+      },
+      {
+        "characterId": "eddard-stark",
+        "summary": "נקרע בין חובתו למלך לבין נאמנותו למשפחתו כאשר הוא הורג את ליידי."
+      },
+      {
+        "characterId": "jon-snow",
+        "summary": "עוזב את ביתו לעבר חיים חדשים במשמר הלילה."
+      }
+    ],
+    "mainLocationIds": ["winterfell", "kingsroad", "royal-encampment", "road-to-the-wall"],
+    "mainLocationLabels": ["וינטרפל", "דרך המלך", "מחנה הפמליה המלכותית", "הדרך אל החומה"],
+    "newLocationIds": ["kingsroad", "royal-encampment"],
+    "newLocations": [
+      {
+        "locationId": "kingsroad",
+        "summary": "הציר הראשי המחבר בין צפון הממלכה לדרומה."
+      },
+      {
+        "locationId": "royal-encampment",
+        "summary": "מרחב מעבר שבו נחשפים יחסי המעמדות והחיכוך בין בני האצולה לשאר המלווים."
+      }
+    ],
+    "primaryLocationId": "kingsroad",
+    "powerLeaderId": "baratheon",
+    "recentEventIds": ["tp-s01e02-1", "tp-s01e02-2", "tp-s01e02-3", "tp-s01e02-4"],
+    "turningPoints": [
+      {
+        "id": "tp-s01e02-1",
+        "summary": "ניסיון הרצח נגד בראן הופך את פציעתו מחשד לתיק פעיל.",
+        "tone": "alert"
+      },
+      {
+        "id": "tp-s01e02-2",
+        "summary": "מותה של ליידי ורצח מיקה מחריפים את העימות בין סטארק ללאניסטר.",
+        "tone": "alert"
+      },
+      {
+        "id": "tp-s01e02-3",
+        "summary": "בראן מתעורר.",
+        "tone": "shift"
+      },
+      {
+        "id": "tp-s01e02-4",
+        "summary": "קייטלין יוצאת בחשאי דרומה, ובכך פותחת ציר חקירה עצמאי.",
+        "tone": "shift"
+      }
+    ],
+    "characterUpdates": [
+      {
+        "characterId": "bran-stark",
+        "status": "recovering",
+        "statusLabel": "התעורר / עדיין מרותק למיטה",
+        "summary": "שורד את ניסיון הרצח ומתעורר בסוף הפרק."
+      },
+      {
+        "characterId": "lady-direwolf",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "מוצאה להורג בידי נד במקום נימריה."
+      },
+      {
+        "characterId": "mycah",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בידי סנדור קלגיין לאחר העימות עם ג'ופרי."
+      },
+      {
+        "characterId": "catelyn-stark",
+        "status": "away",
+        "statusLabel": "יצאה למשימה חשאית",
+        "summary": "עוזבת דרומה כדי להזהיר את נד."
+      }
+    ],
+    "politicalShifts": [
+      {
+        "id": "ps-s01e02-1",
+        "summary": "בית סטארק ובית לאניסטר עוברים מחשד עמום לעוינות אישית ומוחשית.",
+        "factionsInvolved": ["stark", "lannister"]
+      },
+      {
+        "id": "ps-s01e02-2",
+        "summary": "התקרית עם ג'ופרי מדגישה שסאנסה ואריה מושפעות ישירות ממאבקי הכוח של המבוגרים.",
+        "factionsInvolved": ["stark", "baratheon", "lannister"]
+      },
+      {
+        "id": "ps-s01e02-3",
+        "summary": "הפגיון שבו השתמש המתנקש מרמז שהמאבק כבר חדר אל תוך בית סטארק עצמו.",
+        "factionsInvolved": ["stark", "lannister"]
+      }
+    ],
+    "housePowerUpdates": [
+      {
+        "factionId": "baratheon",
+        "power": 88,
+        "summary": "הכתר עדיין שולט, אך המלך אינו מטפל ביסודיות במשברים סביבו."
+      },
+      {
+        "factionId": "lannister",
+        "power": 84,
+        "summary": "קרבה מיידית לכתר מעניקה השפעה, אבל האלימות סביב ג'ופרי והפגיון מעמיקה חשד נגדם."
+      },
+      {
+        "factionId": "stark",
+        "power": 78,
+        "summary": "עדיין חזק בצפון, אך פועל מעמדת תגובה ונפגע רגשית ופוליטית."
+      },
+      {
+        "factionId": "targaryen",
+        "power": 24,
+        "summary": "טרם משפיע על ווסטרוז, אך דאינריז מתחילה את המעבר מחולשה לתפקיד שיכול לשאת משקל בעתיד."
+      }
+    ]
+  },
+  {
+    "id": "S01E03",
+    "season": 1,
+    "episode": 3,
+    "code": "S01E03",
+    "title": "לורד שלג",
+    "titleEnglish": "Lord Snow",
+    "summaries": {
+      "snapshot": "הגעת נד למעלה מלך וקליטת ג'ון בחומה חושפות לשניהם עד כמה העולם האמיתי מורכב, מושחת ואכזרי יותר מן התדמית שלו.",
+      "full": "נד סטארק מגיע למעלה מלך ונכנס מיד למרכזו של עולם פוליטי רעיל: הוא פוגש את מועצת המלך, בוחן את כס הברזל, ומתחיל להבין עד כמה העיר מתנהלת דרך אינטרסים, חובות ורכילויות. קייטלין מגיעה אליו בחשאי ומראה לו את הפגיון ששימש בניסיון הרצח של בראן; פטיר \"ליטלפינגר\" בייליש טוען שהפגיון היה שייך בעבר לטיריון לאניסטר, ובכך מפנה את החשד במפורש לעבר בית לאניסטר. אריה מתחילה ללמוד \"ריקוד מים\" אצל סיריו פורל, והדרך שלה במעלה מלך מתחילה להתבדל מזו של סאנסה. בטירת שחור, ג'ון שלג מגלה שרוב המתגייסים למשמר הלילה אינם לוחמים אציליים אלא פושעים, יתומים ונדחים, והוא לומד שהיוהרה שלו מבודדת אותו. טיריון, שמזהה את מקומו של ג'ון כחריג בין חריגים, מדרבן אותו לגלות אמפתיה. באסוס, דאינריז מתקרבת לחאל דרוגו, צוברת ביטחון אישי, ולראשונה מתייצבת מול ויסריז במקום להיכנע לו. מתברר שהיא הרה, והחדשות הללו מעלות מאוד את ערכה בתוך הח'אלסאר."
+    },
+    "focusCharacterIds": ["eddard-stark", "jon-snow", "daenerys-targaryen", "tyrion-lannister"],
+    "focusCharacters": [
+      {
+        "characterId": "eddard-stark",
+        "summary": "מתחיל לחקור את נסיבות מותו של ג'ון אארין ונכנס לליבת התככים."
+      },
+      {
+        "characterId": "jon-snow",
+        "summary": "לומד שהחומה איננה מוסד רומנטי אלא מקום של נפלטים ושל משמעת."
+      },
+      {
+        "characterId": "daenerys-targaryen",
+        "summary": "הופכת מנערה מופעלת לדמות שמתחילה לנסח רצון משלה."
+      },
+      {
+        "characterId": "tyrion-lannister",
+        "summary": "פועל כמתווך חכם בין עולמות, ומעניק לג'ון תובנה מכרעת על מעמדו."
+      }
+    ],
+    "mainLocationIds": ["kings-landing", "castle-black", "khalasar-camp"],
+    "mainLocationLabels": ["מעלה מלך", "טירת שחור", "מחנה הח'אלסאר בדרך אל ואייס דותראק"],
+    "newLocationIds": ["kings-landing", "castle-black"],
+    "newLocations": [
+      {
+        "locationId": "kings-landing",
+        "summary": "בירת שבע הממלכות ומרכז הכוח הפוליטי של ווסטרוז."
+      },
+      {
+        "locationId": "castle-black",
+        "summary": "אחד המבצרים הראשיים של משמר הלילה על החומה."
+      }
+    ],
+    "primaryLocationId": "kings-landing",
+    "powerLeaderId": "lannister",
+    "recentEventIds": ["tp-s01e03-1", "tp-s01e03-2", "tp-s01e03-3", "tp-s01e03-4"],
+    "turningPoints": [
+      {
+        "id": "tp-s01e03-1",
+        "summary": "החשד נגד טיריון ולאניסטרים מתעבה בעקבות סיפור הפגיון.",
+        "tone": "shift"
+      },
+      {
+        "id": "tp-s01e03-2",
+        "summary": "אריה מתחילה מסלול עצמאי של אימון לחימה.",
+        "tone": "shift"
+      },
+      {
+        "id": "tp-s01e03-3",
+        "summary": "הריון דאינריז משנה את מעמדה בח'אלסאר.",
+        "tone": "shift"
+      },
+      {
+        "id": "tp-s01e03-4",
+        "summary": "ג'ון מבין שהמקום שאליו הגיע שונה לגמרי מן האגדה שסיפר לעצמו.",
+        "tone": "shift"
+      }
+    ],
+    "characterUpdates": [
+      {
+        "characterId": "daenerys-targaryen",
+        "status": "pregnant",
+        "statusLabel": "הרה",
+        "summary": "ההריון מתגלה ומעלה את מעמדה."
+      },
+      {
+        "characterId": "arya-stark",
+        "status": "training",
+        "statusLabel": "החלה אימון לחימה",
+        "summary": "מתחילה ללמוד אצל סיריו פורל."
+      },
+      {
+        "characterId": "eddard-stark",
+        "status": "appointed",
+        "statusLabel": "יד המלך בפועל במעלה מלך",
+        "summary": "נכנס רשמית לתפקידו בזירת הבירה."
+      },
+      {
+        "characterId": "jon-snow",
+        "status": "recruit",
+        "statusLabel": "טירון במשמר הלילה",
+        "summary": "מתחיל את שירותו בטירת שחור."
+      }
+    ],
+    "politicalShifts": [
+      {
+        "id": "ps-s01e03-1",
+        "summary": "במעלה מלך, נד עובר משותף של הכתר ליריב פוטנציאלי של הלאניסטרים, גם אם עדיין בשקט.",
+        "factionsInvolved": ["stark", "baratheon", "lannister"]
+      },
+      {
+        "id": "ps-s01e03-2",
+        "summary": "בח'אלסאר, מרכז הכובד של ענף טארגאריין מתחיל לעבור מוויסריז אל דאינריז.",
+        "factionsInvolved": ["targaryen", "dothraki"]
+      },
+      {
+        "id": "ps-s01e03-3",
+        "summary": "החצר המלכותית נחשפת כמערכת שבה מידע, חוב וייחוס חשובים כמעט כמו חרב.",
+        "factionsInvolved": ["baratheon", "lannister", "stark"]
+      }
+    ],
+    "housePowerUpdates": [
+      {
+        "factionId": "lannister",
+        "power": 87,
+        "summary": "יושב קרוב לכתר ולמוקדי העיר, גם אם החשד נגדו גובר."
+      },
+      {
+        "factionId": "baratheon",
+        "power": 86,
+        "summary": "שולט עדיין רשמית, אך ניכר שהמנגנון מתנהל גם בלי נוכחות אפקטיבית של המלך."
+      },
+      {
+        "factionId": "stark",
+        "power": 76,
+        "summary": "נד נכנס למרכז השלטון, אך כטירון בזירת תככים שאינה ביתית לו."
+      },
+      {
+        "factionId": "targaryen",
+        "power": 30,
+        "summary": "עדיין בגלות, אך הריון דאינריז מייצר המשכיות ושדרוג מעמד ברור."
+      }
+    ]
+  },
+  {
+    "id": "S01E04",
+    "season": 1,
+    "episode": 4,
+    "code": "S01E04",
+    "title": "נכים, ממזרים ודברים שבורים",
+    "titleEnglish": "Cripples, Bastards, and Broken Things",
+    "summaries": {
+      "snapshot": "חקירות, עלבונות ומעצרים הופכים את המשחק מרמיזות ותככים סמויים לעימות גלוי ומסוכן.",
+      "full": "נד ממשיך לחקור את מותו של ג'ון אארין, בודק ספרי יוחסין, משוחח עם פייסל ועם נפח שמחזיק שוליה בשם גנדרי, ומבין שחלקי הפאזל סביב החצר המלכותית אינם מתיישבים. במקביל נערך טורניר לכבוד מינויו ליד המלך; התחרות חושפת את התרבות הראוותנית והמסוכנת של הבירה, ובמהלכה נהרג סר יו מן הוואל. בוינטרפל, בראן מתחיל להתמודד עם מצבו החדש, וטיריון, בדרך חזרה מן החומה, משאיר לו שרטוט לאוכף מיוחד שיאפשר לו לרכוב. בטירת שחור, ג'ון לומד למתן את גאוותו ומגן על סמוול טארלי, מגויס חלש ופחדן שאינו מסוגל להילחם. באסוס, דאינריז מגיעה לואייס דותראק ומבססת את מקומה בקרב הדות'ראקים. בציר המרכזי של הפרק, קייטלין פוגשת את טיריון בפונדק דרכים ומחליטה לעצור אותו בפומבי באשמת ניסיון רצח של בראן — מהלך שמוציא את הסכסוך עם בית לאניסטר מן הצללים אל המרחב הפוליטי הפתוח."
+    },
+    "focusCharacterIds": ["eddard-stark", "catelyn-stark", "jon-snow", "daenerys-targaryen"],
+    "focusCharacters": [
+      {
+        "characterId": "eddard-stark",
+        "summary": "מחבר בין רמזים חדשים סביב ג'ון אארין והילדים המלכותיים."
+      },
+      {
+        "characterId": "catelyn-stark",
+        "summary": "עושה את המהלך הישיר והמסוכן ביותר עד כה כשהיא עוצרת את טיריון."
+      },
+      {
+        "characterId": "jon-snow",
+        "summary": "הופך ממי שמזלזל באחרים למי שמגן על החלשים."
+      },
+      {
+        "characterId": "daenerys-targaryen",
+        "summary": "מתייצבת בתוך מרחב דות'ראקי זר ומתחילה להיקלט בו."
+      }
+    ],
+    "mainLocationIds": ["kings-landing", "inn-at-the-crossroads", "castle-black", "winterfell", "vaes-dothrak"],
+    "mainLocationLabels": ["מעלה מלך", "פונדק דרכים", "טירת שחור", "וינטרפל", "ואייס דותראק"],
+    "newLocationIds": ["vaes-dothrak", "inn-at-the-crossroads"],
+    "newLocations": [
+      {
+        "locationId": "vaes-dothrak",
+        "summary": "העיר הקדושה של הדות'ראקים, מרכז פולחני ופוליטי שאליו מגיעים ח'אלים ואנשיהם."
+      },
+      {
+        "locationId": "inn-at-the-crossroads",
+        "summary": "צומת דרכים אזרחי שבו דרמות פרטיות הופכות מיד לעניינים מדיניים."
+      }
+    ],
+    "primaryLocationId": "kings-landing",
+    "powerLeaderId": "baratheon",
+    "recentEventIds": ["tp-s01e04-1", "tp-s01e04-2", "tp-s01e04-3"],
+    "turningPoints": [
+      {
+        "id": "tp-s01e04-1",
+        "summary": "מות סר יו בטורניר מחזק את תחושת הסכנה סביב חקירת נד.",
+        "tone": "alert"
+      },
+      {
+        "id": "tp-s01e04-2",
+        "summary": "סמוול טארלי נכנס למעגל הקרוב של ג'ון.",
+        "tone": "shift"
+      },
+      {
+        "id": "tp-s01e04-3",
+        "summary": "קייטלין עוצרת את טיריון בגלוי, ובכך מניעה משבר גלוי בין סטארק ללאניסטר.",
+        "tone": "alert"
+      }
+    ],
+    "characterUpdates": [
+      {
+        "characterId": "tyrion-lannister",
+        "status": "captive",
+        "statusLabel": "שבוי",
+        "summary": "קייטלין עוצרת אותו בחשד למעורבות בניסיון רצח בראן."
+      },
+      {
+        "characterId": "ser-hugh-of-the-vale",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בטורניר במעלה מלך."
+      },
+      {
+        "characterId": "samwell-tarly",
+        "status": "recruit",
+        "statusLabel": "הצטרף למשמר הלילה",
+        "summary": "מגיע כטירון חדש לטירת שחור."
+      }
+    ],
+    "politicalShifts": [
+      {
+        "id": "ps-s01e04-1",
+        "summary": "קו העימות סטארק–לאניסטר עובר מחשד וחקירה למעצר פומבי.",
+        "factionsInvolved": ["stark", "lannister"]
+      },
+      {
+        "id": "ps-s01e04-2",
+        "summary": "נד ממשיך להתקרב למסקנות מסוכנות לגבי בית המלוכה.",
+        "factionsInvolved": ["stark", "baratheon", "lannister"]
+      },
+      {
+        "id": "ps-s01e04-3",
+        "summary": "בטירת שחור נוצר גרעין חברתי חדש סביב ג'ון וסאם, שעתיד להשפיע על המאזן האנושי שם.",
+        "factionsInvolved": ["night-watch"]
+      }
+    ],
+    "housePowerUpdates": [
+      {
+        "factionId": "baratheon",
+        "power": 85,
+        "summary": "הכתר עדיין מרכז את הסדר הציבורי, אך אינו שולט באמת בזרמי המידע והחשד."
+      },
+      {
+        "factionId": "lannister",
+        "power": 81,
+        "summary": "כוחם גדול, אך מעצר טיריון פוגע בכבודם ודוחק אותם לתגובה."
+      },
+      {
+        "factionId": "stark",
+        "power": 74,
+        "summary": "יוזמה נועזת נותנת להם מומנטום מוסרי, אך גם חושפת אותם לסכנת הסלמה."
+      },
+      {
+        "factionId": "targaryen",
+        "power": 33,
+        "summary": "דאינריז מתחזקת חברתית בתוך העולם הדות'ראקי, גם בלי כוח ימי או טריטוריאלי."
+      }
+    ]
+  },
+  {
+    "id": "S01E05",
+    "season": 1,
+    "episode": 5,
+    "code": "S01E05",
+    "title": "הזאב והלביא",
+    "titleEnglish": "The Wolf and the Lion",
+    "summaries": {
+      "snapshot": "המעצר של טיריון מצית תגובת נגד מדממת, ובמקביל מתברר עד כמה מסוכן לנסות לפעול מתוך עיקרון בעולם שבו כולם מחשבים רווח והישרדות.",
+      "full": "קייטלין מובילה את טיריון מזרחה דרך הרי הירח אל קן הנשרים, שם אחותה ליסה אארין מתגלה כשליטה חשדנית, מבודדת ולא יציבה. טיריון נכלא בתא שמיים, אך מסרב להישבר ודורש משפט בקרב. ברון, שכיר חרב ציני ויעיל, נלחם בשמו ומביס את וארדיס איגן, וכך טיריון זוכה בחירותו — לא משום שהאמת הוכחה, אלא משום שהמערכת קיבלה הכרעה אלימה במקום בירור עובדתי. במעלה מלך, נד ניצב מול החלטה מוסרית קשה כאשר רוברט מורה לחסל את דאינריז, הרה ומרוחקת, מחשש לפלישה עתידית. נד מסרב לשתף פעולה ומתפטר מתפקיד יד המלך. במקביל, ג'יימי לאניסטר תוקף את נד ואת אנשיו כנקמה על מעצר טיריון; ג'ורי קאסל נהרג, נד נפצע, והאלימות בין הבתים כבר אינה תיאורטית."
+    },
+    "focusCharacterIds": ["tyrion-lannister", "eddard-stark", "catelyn-stark", "jaime-lannister"],
+    "focusCharacters": [
+      {
+        "characterId": "tyrion-lannister",
+        "summary": "שורד באמצעות שכל, קור רוח וקריאה נכונה של מערכת הכוח."
+      },
+      {
+        "characterId": "eddard-stark",
+        "summary": "בוחר בעמדה מוסרית נגד רצח פוליטי גם במחיר מעמדו."
+      },
+      {
+        "characterId": "catelyn-stark",
+        "summary": "מגלה שהמהלך שלה הוביל אותה לבת ברית בלתי צפויה ומסוכנת."
+      },
+      {
+        "characterId": "jaime-lannister",
+        "summary": "משנה את הסכסוך לעימות אלים וישיר."
+      }
+    ],
+    "mainLocationIds": ["eyrie", "vale-of-arryn", "kings-landing"],
+    "mainLocationLabels": ["קן הנשרים", "בקעת ארין והדרך בהרי הירח", "מעלה מלך"],
+    "newLocationIds": ["vale-of-arryn", "eyrie", "mountains-of-the-moon"],
+    "newLocations": [
+      {
+        "locationId": "vale-of-arryn",
+        "summary": "אזור הררי ומוגן הנשלט בידי בית אארין."
+      },
+      {
+        "locationId": "eyrie",
+        "summary": "מבצרם המבודד והתלול של האארינים."
+      },
+      {
+        "locationId": "mountains-of-the-moon",
+        "summary": "נתיב מסוכן הנשלט בחלקו בידי שבטי הרים."
+      }
+    ],
+    "primaryLocationId": "eyrie",
+    "powerLeaderId": "lannister",
+    "recentEventIds": ["tp-s01e05-1", "tp-s01e05-2", "tp-s01e05-3", "tp-s01e05-4"],
+    "turningPoints": [
+      {
+        "id": "tp-s01e05-1",
+        "summary": "טיריון משתחרר במשפט בקרב.",
+        "tone": "shift"
+      },
+      {
+        "id": "tp-s01e05-2",
+        "summary": "נד מתפטר כיד המלך.",
+        "tone": "shift"
+      },
+      {
+        "id": "tp-s01e05-3",
+        "summary": "אנשיו של נד נטבחים ברחוב בידי ג'יימי.",
+        "tone": "alert"
+      },
+      {
+        "id": "tp-s01e05-4",
+        "summary": "ג'ורי קאסל נהרג ונד נפצע.",
+        "tone": "alert"
+      }
+    ],
+    "characterUpdates": [
+      {
+        "characterId": "tyrion-lannister",
+        "status": "released",
+        "statusLabel": "שוחרר",
+        "summary": "זוכה במשפט בקרב בזכות ברון."
+      },
+      {
+        "characterId": "vardis-egen",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג במשפט בקרב."
+      },
+      {
+        "characterId": "jory-cassel",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בהתנגשות בין אנשיו של נד לג'יימי."
+      },
+      {
+        "characterId": "eddard-stark",
+        "status": "injured",
+        "statusLabel": "פצוע",
+        "summary": "נפצע ברגל במהלך התקיפה."
+      }
+    ],
+    "politicalShifts": [
+      {
+        "id": "ps-s01e05-1",
+        "summary": "היריבות סטארק–לאניסטר הופכת רשמית למאבק אלים.",
+        "factionsInvolved": ["stark", "lannister"]
+      },
+      {
+        "id": "ps-s01e05-2",
+        "summary": "היחסים בין נד לרוברט מתערערים בחדות סביב שאלת דאינריז.",
+        "factionsInvolved": ["stark", "baratheon", "targaryen"]
+      },
+      {
+        "id": "ps-s01e05-3",
+        "summary": "בית אארין אינו מצטרף בפועל לאף צד אלא נשאר מבודד ובלתי אמין.",
+        "factionsInvolved": ["arryn", "stark", "lannister"]
+      }
+    ],
+    "housePowerUpdates": [
+      {
+        "factionId": "lannister",
+        "power": 85,
+        "summary": "מסוגל להשיב בכוח ולשחרר את טיריון דרך מנגנונים חברתיים ואלימים כאחד."
+      },
+      {
+        "factionId": "baratheon",
+        "power": 82,
+        "summary": "המלך עדיין מלך, אך סמכותו נשחקת מול מרי מוסרי של ידו."
+      },
+      {
+        "factionId": "stark",
+        "power": 68,
+        "summary": "נד פצוע, אנשיו נהרגים, והמשפחה מאבדת חופש פעולה."
+      },
+      {
+        "factionId": "arryn",
+        "power": 55,
+        "summary": "מחזיק במבצר חזק מאוד, אך אינו ממיר את ביטחונו לכוח מדיני אפקטיבי."
+      },
+      {
+        "factionId": "targaryen",
+        "power": 28,
+        "summary": "עצם ההחלטה להתנקש בדאינריז מוכיחה שהיא נחשבת כבר איום, אך היא עדיין חסרת שליטה ישירה."
+      }
+    ]
+  },
+  {
+    "id": "S01E06",
+    "season": 1,
+    "episode": 6,
+    "code": "S01E06",
+    "title": "כתר זהב",
+    "titleEnglish": "A Golden Crown",
+    "summaries": {
+      "snapshot": "שינויים בשלטון, בשטח ובזהות המשפחתית מביאים סוף חד לעבר ישן ופותחים מאזן כוחות חדש.",
+      "full": "לאחר פציעתו של נד והיעדרותו של רוברט מציד, נד יושב כיד המלך בפועל ומקבל תלונות על פשיטות ברוטליות של גרגור קלגיין ואנשיו באזורי הנהרות. הוא שולח את בריק דונדריון להעמיד את קלגיין לדין, ובכך משתמש לראשונה בסמכות הכתר באופן ישיר נגד כוח המזוהה עם לאניסטר. בוינטרפל, בראן מנסה לראשונה לרכוב בעזרת האוכף שטיריון תכנן עבורו; ביער הוא נתקל באושה ובאנשיה, והאירוע מסתיים במות שניים מן התוקפים ובשביית אושה. טיריון עוזב את קן הנשרים עם ברון וחוצה שוב את הרי הירח. באסוס, המתח בין ויסריז לדאינריז מגיע לשיאו בואייס דותראק, כאשר ויסריז שולף חרב במקום קדוש, מאיים על אחותו ודורש את \"הכתר\" שהובטח לו. חאל דרוגו מגיב באופן דות'ראקי אכזרי וממלא את הבטחתו במובן קטלני: ויסריז נהרג בכתר של זהב מותך, ודאינריז מבינה סופית שאחיה אינו \"דרקון\" אמיתי."
+    },
+    "focusCharacterIds": ["eddard-stark", "bran-stark", "tyrion-lannister", "daenerys-targaryen"],
+    "focusCharacters": [
+      {
+        "characterId": "eddard-stark",
+        "summary": "משתמש בסמכות הכתר כדי לנסות להשיב סדר וצדק."
+      },
+      {
+        "characterId": "bran-stark",
+        "summary": "מתחיל לבחון מחדש את חייו דרך רכיבה ומפגש ראשון עם איום מן הצפון."
+      },
+      {
+        "characterId": "tyrion-lannister",
+        "summary": "שורד את יציאתו מן הוואל ובונה לעצמו ברית שימושית עם ברון."
+      },
+      {
+        "characterId": "daenerys-targaryen",
+        "summary": "צופה בנפילת אחיה ובפועל הופכת ליורשת היחידה של שושלתה שבזירה."
+      }
+    ],
+    "mainLocationIds": ["kings-landing", "winterfell-woods", "mountains-of-the-moon", "vaes-dothrak"],
+    "mainLocationLabels": ["מעלה מלך", "וינטרפל והיער הסמוך", "הדרך מקן הנשרים", "ואייס דותראק"],
+    "newLocationIds": [],
+    "newLocations": [],
+    "newLocationsNote": "אין בפרק זה מיקום קבוע חדש בעל משמעות מיפוי רחבה מעבר למה שכבר נחשף; עיקר החידוש הוא בשימוש חדש בזירות קיימות ובצירי מעבר.",
+    "primaryLocationId": "vaes-dothrak",
+    "powerLeaderId": "baratheon",
+    "recentEventIds": ["tp-s01e06-1", "tp-s01e06-2", "tp-s01e06-3"],
+    "turningPoints": [
+      {
+        "id": "tp-s01e06-1",
+        "summary": "נד מפעיל את סמכותו נגד גרגור קלגיין.",
+        "tone": "shift"
+      },
+      {
+        "id": "tp-s01e06-2",
+        "summary": "אושה נתפסת ומביאה עמה עדות עקיפה על סכנות הצפון.",
+        "tone": "shift"
+      },
+      {
+        "id": "tp-s01e06-3",
+        "summary": "ויסריז נהרג, וההנהגה הטארגאריינית בגלות משנה צורה מן היסוד.",
+        "tone": "alert"
+      }
+    ],
+    "characterUpdates": [
+      {
+        "characterId": "viserys-targaryen",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בידי חאל דרוגו באמצעות זהב מותך."
+      },
+      {
+        "characterId": "osha",
+        "status": "captive",
+        "statusLabel": "שבויה",
+        "summary": "נלכדת בידי אנשיו של בראן לאחר המפגש ביער."
+      },
+      {
+        "characterId": "stiv",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג במהלך העימות ליד וינטרפל."
+      },
+      {
+        "characterId": "wallen",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג במהלך אותו עימות."
+      }
+    ],
+    "politicalShifts": [
+      {
+        "id": "ps-s01e06-1",
+        "summary": "בחצר המלכותית, נד מסמן שלאנשי לאניסטר אין חסינות אוטומטית תחת סמכות הכתר.",
+        "factionsInvolved": ["baratheon", "lannister", "stark"]
+      },
+      {
+        "id": "ps-s01e06-2",
+        "summary": "בגלות, מוקד הלגיטימציה של בית טארגאריין עובר בפועל לדאינריז.",
+        "factionsInvolved": ["targaryen"]
+      },
+      {
+        "id": "ps-s01e06-3",
+        "summary": "איום הצפון מתחיל לחלחל אל וינטרפל דרך אושה, גם אם עדיין לא מאמינים לו במלואו.",
+        "factionsInvolved": ["stark", "night-watch"]
+      }
+    ],
+    "housePowerUpdates": [
+      {
+        "factionId": "baratheon",
+        "power": 81,
+        "summary": "סמכות הכתר עדיין תקפה דרך נד, אך תלויה במילוי מקום ולא במלך פעיל."
+      },
+      {
+        "factionId": "lannister",
+        "power": 79,
+        "summary": "נתון לראשונה לצו פומבי של צדק מלכותי."
+      },
+      {
+        "factionId": "stark",
+        "power": 72,
+        "summary": "משיב יוזמה מוסדית דרך נד ושומר על יציבות בצפון."
+      },
+      {
+        "factionId": "targaryen",
+        "power": 35,
+        "summary": "מאבד את ויסריז אך מרוויח הנהגה ברורה יותר בדמות דאינריז, שמעמדה בח'אלסאר יציב יותר."
+      }
+    ]
+  },
+  {
+    "id": "S01E07",
+    "season": 1,
+    "episode": 7,
+    "code": "S01E07",
+    "title": "אתה מנצח או שאתה מת",
+    "titleEnglish": "You Win or You Die",
+    "summaries": {
+      "snapshot": "אמת מסוכנת על הירושה, מלך גוסס, ובגידה אחת מחושבת משנים את מאזן הכוח של הממלכה בן לילה.",
+      "full": "במערב, טייווין לאניסטר מופיע לראשונה כמפקד אסטרטגי קשוח ומתחיל לגייס כוח בתגובה להסלמה עם הסטארקים. בוינטרפל, אושה מבהירה לבראן ולמאסטר לואין שהאיום האמיתי נמצא צפונית לחומה. בטירת שחור, ג'ון וחבריו מסיימים את הכשרתם ונשבעים אמונים למשמר הלילה, אך ג'ון מתאכזב כאשר הוא ממונה לסדרן של המפקד העליון ג'יאור מורמונט במקום ללוחם קדמי. באסוס, ניסיון הרעלה של דאינריז מסוכל בידי ג'ורה מורמונט, וחאל דרוגו, שנפגע מכך שהמלך רוברט שלח מתנקש, נשבע להביא את צבאו אל מעבר לים הצר. במעלה מלך, רוברט חוזר מציד כשהוא פצוע אנושות מחזיר בר, ונד מקבל ממנו צו כתוב הממנה אותו למגן הממלכה עד בגרותו של היורש. נד מתעמת עם סרסיי וחושף בפניה שהוא יודע שילדיה אינם בניו של רוברט. לאחר מותו של רוברט, נד מנסה להעביר את השלטון בצורה מסודרת — אך ליטלפינגר ומשמר העיר בוגדים בו, וג'ופרי מוכרז כמלך."
+    },
+    "focusCharacterIds": ["eddard-stark", "cersei-lannister", "daenerys-targaryen", "jon-snow"],
+    "focusCharacters": [
+      {
+        "characterId": "eddard-stark",
+        "summary": "פועל לחשוף את האמת על הירושה ולשמור על מעבר שלטון חוקי."
+      },
+      {
+        "characterId": "cersei-lannister",
+        "summary": "מגיבה לאיום בחישוב קר, מהיר וקטלני."
+      },
+      {
+        "characterId": "daenerys-targaryen",
+        "summary": "הופכת ממי שמוגנת בידי אחרים למוקד שסביבה מתקבלות החלטות אסטרטגיות גדולות."
+      },
+      {
+        "characterId": "jon-snow",
+        "summary": "מבין שחובה ומשמעות במשמר הלילה אינן תמיד תואמות תהילה."
+      }
+    ],
+    "mainLocationIds": ["kings-landing", "castle-black", "western-lannister-camp", "khalasar-camp", "winterfell"],
+    "mainLocationLabels": ["מעלה מלך", "טירת שחור", "מחנה לאניסטר במערב", "מחנה הח'אלסאר באסוס", "וינטרפל"],
+    "newLocationIds": [],
+    "newLocations": [],
+    "newLocationsNote": "אין בפרק זה מיקום קבוע חדש בעל חשיבות מיפוי ראשונית; החידוש המרכזי הוא בחשיפת כוחות, מחנות וטקסים בזירות שכבר נפתחו לעולם.",
+    "primaryLocationId": "kings-landing",
+    "powerLeaderId": "lannister",
+    "recentEventIds": ["tp-s01e07-1", "tp-s01e07-2", "tp-s01e07-3", "tp-s01e07-4", "tp-s01e07-5"],
+    "turningPoints": [
+      {
+        "id": "tp-s01e07-1",
+        "summary": "ניסיון ההתנקשות בדאינריז נכשל.",
+        "tone": "alert"
+      },
+      {
+        "id": "tp-s01e07-2",
+        "summary": "דרוגו נשבע לפלוש לווסטרוז.",
+        "tone": "shift"
+      },
+      {
+        "id": "tp-s01e07-3",
+        "summary": "רוברט מת מפצעיו.",
+        "tone": "alert"
+      },
+      {
+        "id": "tp-s01e07-4",
+        "summary": "נד מאבד את השליטה בעיר בשל בגידת ליטלפינגר ומשמר העיר.",
+        "tone": "alert"
+      },
+      {
+        "id": "tp-s01e07-5",
+        "summary": "ג'ופרי מוכרז מלך.",
+        "tone": "shift"
+      }
+    ],
+    "characterUpdates": [
+      {
+        "characterId": "robert-baratheon",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "מת מפצעי הציד לאחר שמינה את נד למגן הממלכה."
+      },
+      {
+        "characterId": "eddard-stark",
+        "status": "captive",
+        "statusLabel": "שבוי",
+        "summary": "נבגד בידי משמר העיר ונעצר."
+      },
+      {
+        "characterId": "joffrey-baratheon",
+        "status": "ruler",
+        "statusLabel": "שינוי תואר: מלך",
+        "summary": "מוכרז כמלך לאחר מות רוברט."
+      },
+      {
+        "characterId": "jon-snow",
+        "status": "sworn",
+        "statusLabel": "אח מושבע במשמר הלילה",
+        "summary": "משלים את נדריו."
+      }
+    ],
+    "politicalShifts": [
+      {
+        "id": "ps-s01e07-1",
+        "summary": "משבר הירושה מתפרץ בגלוי.",
+        "factionsInvolved": ["baratheon", "lannister", "stark"]
+      },
+      {
+        "id": "ps-s01e07-2",
+        "summary": "בית לאניסטר משתלט בפועל על הבירה באמצעות הכתר, המשמר והמלכה.",
+        "factionsInvolved": ["lannister", "baratheon"]
+      },
+      {
+        "id": "ps-s01e07-3",
+        "summary": "נד עובר ממגן הממלכה ליריב מובס.",
+        "factionsInvolved": ["stark", "lannister", "baratheon"]
+      },
+      {
+        "id": "ps-s01e07-4",
+        "summary": "דרוגו קושר לראשונה את כוחו הצבאי ישירות לפלישה אל ווסטרוז.",
+        "factionsInvolved": ["dothraki", "targaryen", "baratheon"]
+      }
+    ],
+    "housePowerUpdates": [
+      {
+        "factionId": "lannister",
+        "power": 91,
+        "summary": "מחזיק בבירה, ביורש המוכתר ובמנגנון הכפייה העירוני."
+      },
+      {
+        "factionId": "baratheon",
+        "power": 70,
+        "summary": "השם עדיין יושב על הכתר, אך בפועל הכוח נשמט מן הענף החוקי ומתערפל סביב ירושה שנויה במחלוקת."
+      },
+      {
+        "factionId": "stark",
+        "power": 60,
+        "summary": "מאבד את ראש המשפחה שבבירה ואת השליטה באירועים."
+      },
+      {
+        "factionId": "targaryen",
+        "power": 40,
+        "summary": "עדיין בגלות, אך שבועת דרוגו והישרדות דאינריז מעלות מאוד את פוטנציאל האיום שלה."
+      }
+    ]
+  },
+  {
+    "id": "S01E08",
+    "season": 1,
+    "episode": 8,
+    "code": "S01E08",
+    "title": "הקצה החד",
+    "titleEnglish": "The Pointy End",
+    "summaries": {
+      "snapshot": "קריסת הסדר במעלה מלך מתפזרת מיד לכל קצוות העולם, וכל דמות נאלצת לבחור בין הישרדות, נאמנות ותגובה.",
+      "full": "לאחר בגידת משמר העיר, אריה בורחת מטירת המלך בעזרת סיריו פורל ומתאלצת להילחם לראשונה על חייה. סאנסה נותרת שבויה בידי הלאניסטרים ונדרשת להצהיר בפומבי על נאמנות כדי להגן על אביה. ג'ופרי מחלק תגמולים ומעמדות: ג'אנוס סלינט מקודם, סר באריסטן סלמי מודח, וטייווין לאניסטר ממונה ליד המלך. בעיר ברור כעת שהשלטון עבר משליט מוכר למבנה כוח לאניסטרי עם חזות מלכותית. בצפון, רוב סטארק קורא לכרזות ונע דרומה עם צבא הצפון. טיריון מצטרף לטייווין ומביא עמו את אנשי ההרים ככוח עזר. בטירת שחור, שני מתים קמים לתחייה, וג'ון מציל את ג'יאור מורמונט — אירוע שממחיש שאזהרות הצפון אינן אמונה תפלה. באסוס, הדות'ראקים פושטים על כפר בלאזאר; דאינריז מתערבת כדי לעצור חלק מן האלימות ולקחת נשים תחת חסותה, ובכך מתעמתת לראשונה עם נורמות הכוח של הח'אלסאר."
+    },
+    "focusCharacterIds": ["arya-stark", "robb-stark", "jon-snow", "daenerys-targaryen"],
+    "focusCharacters": [
+      {
+        "characterId": "arya-stark",
+        "summary": "עוברת ברגע אחד מילדה סוררת לנמלטת הנאבקת לשרוד."
+      },
+      {
+        "characterId": "robb-stark",
+        "summary": "נכנס רשמית לתפקיד מנהיג צבאי."
+      },
+      {
+        "characterId": "jon-snow",
+        "summary": "חווה הוכחה חיה לכך שהאיום מן הצפון אמיתי."
+      },
+      {
+        "characterId": "daenerys-targaryen",
+        "summary": "בוחנת את גבולות סמכותה המוסרית והחברתית בח'אלסאר."
+      }
+    ],
+    "mainLocationIds": ["kings-landing", "castle-black", "north-army-camp", "western-lannister-camp", "lhazareen"],
+    "mainLocationLabels": ["מעלה מלך", "טירת שחור", "מחנה צבא הצפון", "מחנה לאניסטר", "לאזאר"],
+    "newLocationIds": ["lhazareen", "lhazareen-village"],
+    "newLocations": [
+      {
+        "locationId": "lhazareen",
+        "summary": "חבל ארץ של יושבי כפרים שלווים יחסית מדרום-מזרח לים הדות'ראקים."
+      },
+      {
+        "locationId": "lhazareen-village",
+        "summary": "קהילה אזרחית חסרת מגן המשמשת יעד לפשיטה דות'ראקית ומבליטה את פערי המוסר בין הכוחות."
+      }
+    ],
+    "primaryLocationId": "kings-landing",
+    "powerLeaderId": "lannister",
+    "recentEventIds": ["tp-s01e08-1", "tp-s01e08-2", "tp-s01e08-3", "tp-s01e08-4", "tp-s01e08-5", "tp-s01e08-6"],
+    "turningPoints": [
+      {
+        "id": "tp-s01e08-1",
+        "summary": "אריה נמלטת מן הבירה.",
+        "tone": "alert"
+      },
+      {
+        "id": "tp-s01e08-2",
+        "summary": "סאנסה הופכת לבת ערובה פוליטית.",
+        "tone": "shift"
+      },
+      {
+        "id": "tp-s01e08-3",
+        "summary": "באריסטן סלמי מודח.",
+        "tone": "shift"
+      },
+      {
+        "id": "tp-s01e08-4",
+        "summary": "רוב יוצא למלחמה.",
+        "tone": "shift"
+      },
+      {
+        "id": "tp-s01e08-5",
+        "summary": "המתים הקמים תוקפים בטירת שחור.",
+        "tone": "alert"
+      },
+      {
+        "id": "tp-s01e08-6",
+        "summary": "דאינריז מתעמתת עם אנשיו של דרוגו סביב שבויות לאזאר.",
+        "tone": "shift"
+      }
+    ],
+    "characterUpdates": [
+      {
+        "characterId": "arya-stark",
+        "status": "missing",
+        "statusLabel": "נעדרת / נמלטת",
+        "summary": "בורחת ממעלה מלך לאחר מעצר אביה."
+      },
+      {
+        "characterId": "sansa-stark",
+        "status": "captive",
+        "statusLabel": "שבויה",
+        "summary": "נשארת בחזקת הכתר במעלה מלך."
+      },
+      {
+        "characterId": "barristan-selmy",
+        "status": "dismissed",
+        "statusLabel": "שינוי תפקיד: הודח ממשמר המלך",
+        "summary": "ג'ופרי מסלק אותו מתפקידו."
+      },
+      {
+        "characterId": "vayon-poole",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בהשתלטות הלאניסטרית על בית סטארק בעיר."
+      },
+      {
+        "characterId": "septa-mordane",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "נהרגת במהלך הטיהור נגד אנשי סטארק."
+      }
+    ],
+    "politicalShifts": [
+      {
+        "id": "ps-s01e08-1",
+        "summary": "בית לאניסטר ממסד את שליטתו בבירה דרך מינויים והדחות.",
+        "factionsInvolved": ["lannister", "baratheon"]
+      },
+      {
+        "id": "ps-s01e08-2",
+        "summary": "צבא הצפון יוצא לדרך, והסכסוך הופך למלחמה ממשית.",
+        "factionsInvolved": ["stark", "lannister"]
+      },
+      {
+        "id": "ps-s01e08-3",
+        "summary": "בח'אלסאר, דאינריז מתחילה לבנות סמכות המבוססת גם על שיקול מוסרי ולא רק על מעמדה כאשת החאל.",
+        "factionsInvolved": ["targaryen", "dothraki"]
+      }
+    ],
+    "housePowerUpdates": [
+      {
+        "factionId": "lannister",
+        "power": 93,
+        "summary": "שולט בבירה, בחצר ובמבנה הצבאי הקרוב לכתר."
+      },
+      {
+        "factionId": "stark",
+        "power": 64,
+        "summary": "מאבד בני משפחה כקלפי מיקוח, אך יוצר לראשונה כוח צבאי מאורגן בדרום."
+      },
+      {
+        "factionId": "baratheon",
+        "power": 62,
+        "summary": "הכתר נותר חזק סמלית, אך הזהות החוקית שלו מתערערת."
+      },
+      {
+        "factionId": "targaryen",
+        "power": 38,
+        "summary": "דאינריז אינה מחזיקה ממלכה, אך צוברת לראשונה משקל אנושי ואידאולוגי עצמאי."
+      }
+    ]
+  },
+  {
+    "id": "S01E09",
+    "season": 1,
+    "episode": 9,
+    "code": "S01E09",
+    "title": "באילור",
+    "titleEnglish": "Baelor",
+    "summaries": {
+      "snapshot": "בריתות של מלחמה, הכרעות של כבוד והחלטה מלכותית אחת בלתי הפיכה הופכות את מאזן הממלכה על ראשו.",
+      "full": "בדרום, רוב סטארק זקוק למעבר דרך התאומים, וקייטלין נאלצת לנהל משא ומתן עם וולדר פריי כדי להבטיח את חציית הנהר. לאחר מכן רוב מפצל את כוחותיו ומוציא לפועל מהלך צבאי מבריק ביער הלחישה: ג'יימי לאניסטר נלכד, והמצור על ריווראן נשבר. טיריון, מן הצד השני, חווה את המלחמה בפועל לצד צבאו של טייווין, בעוד מאזן הכוח בין סטארק ללאניסטר משתנה לפתע. בטירת שחור, ג'ון מתקשה לקבל את העובדה שאביו נחשב בוגד, אך נשאר בסופו של דבר נאמן לנדריו. באסוס, דרוגו נפצע בקרב מול מותח תיגר מתוך קבוצתו, והפצע שנראה תחילה זניח הופך למסוכן. דאינריז פונה לעזרתה של מירי מאז דור כדי לנסות להצילו. במעלה מלך, ואריז משכנע את נד להודות בבגידה למען חיי בנותיו והזדמנות לגלות אל החומה. אך מול קהל שהתאסף ליד הספט הגדול של באילור, ג'ופרי מפר את הציפייה לרחמים ומורה להוציא את נד להורג."
+    },
+    "focusCharacterIds": ["robb-stark", "eddard-stark", "daenerys-targaryen", "joffrey-baratheon"],
+    "focusCharacters": [
+      {
+        "characterId": "robb-stark",
+        "summary": "מוכיח כושר מנהיגות צבאי ומדיני גם יחד."
+      },
+      {
+        "characterId": "eddard-stark",
+        "summary": "מוותר על כבודו הציבורי כדי לנסות להציל את בנותיו."
+      },
+      {
+        "characterId": "daenerys-targaryen",
+        "summary": "מסרבת לקבל פסיביות מול הידרדרות מצבו של דרוגו."
+      },
+      {
+        "characterId": "joffrey-baratheon",
+        "summary": "חושף לראשונה בפומבי שלטון שרירותי וחסר רסן."
+      }
+    ],
+    "mainLocationIds": ["the-twins", "whispering-wood", "riverrun", "baelor-great-sept", "castle-black", "khalasar-camp"],
+    "mainLocationLabels": ["התאומים", "יער הלחישה וריווראן", "מעלה מלך / באילור", "טירת שחור", "מחנה הח'אלסאר"],
+    "newLocationIds": ["the-twins", "baelor-great-sept"],
+    "newLocations": [
+      {
+        "locationId": "the-twins",
+        "summary": "מבצר התאומים של בית פריי השולט על מעבר אסטרטגי בנהר."
+      },
+      {
+        "locationId": "baelor-great-sept",
+        "summary": "מרחב דתי-ציבורי מרכזי במעלה מלך שבו השלטון וההמון נפגשים לעיני כל."
+      }
+    ],
+    "primaryLocationId": "baelor-great-sept",
+    "powerLeaderId": "lannister",
+    "recentEventIds": ["tp-s01e09-1", "tp-s01e09-2", "tp-s01e09-3", "tp-s01e09-4", "tp-s01e09-5"],
+    "turningPoints": [
+      {
+        "id": "tp-s01e09-1",
+        "summary": "ברית מעבר נכרתת עם בית פריי.",
+        "tone": "shift"
+      },
+      {
+        "id": "tp-s01e09-2",
+        "summary": "ג'יימי נלכד בידי רוב.",
+        "tone": "shift"
+      },
+      {
+        "id": "tp-s01e09-3",
+        "summary": "דרוגו נפצע קשה.",
+        "tone": "alert"
+      },
+      {
+        "id": "tp-s01e09-4",
+        "summary": "נד מודה בפומבי.",
+        "tone": "shift"
+      },
+      {
+        "id": "tp-s01e09-5",
+        "summary": "ג'ופרי מורה להוציאו להורג במקום לשלוח אותו לחומה.",
+        "tone": "alert"
+      }
+    ],
+    "characterUpdates": [
+      {
+        "characterId": "jaime-lannister",
+        "status": "captive",
+        "statusLabel": "שבוי",
+        "summary": "נלכד בידי כוחותיו של רוב סטארק."
+      },
+      {
+        "characterId": "eddard-stark",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "מוצא להורג בפקודת ג'ופרי בבאילור."
+      },
+      {
+        "characterId": "qotho",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בעת העימות סביב דאינריז ומירי מאז דור."
+      },
+      {
+        "characterId": "khal-drogo",
+        "status": "incapacitated",
+        "statusLabel": "פצוע אנוש / מחוסר תפקוד",
+        "summary": "פציעתו מחמירה ומעמידה את מנהיגותו בסכנה."
+      }
+    ],
+    "politicalShifts": [
+      {
+        "id": "ps-s01e09-1",
+        "summary": "בית פריי נכנס למשחק כברית מעבר חשובה לצפון.",
+        "factionsInvolved": ["frey", "stark"]
+      },
+      {
+        "id": "ps-s01e09-2",
+        "summary": "לכידת ג'יימי משבשת מאוד את עמדת לאניסטר בשטח.",
+        "factionsInvolved": ["stark", "lannister"]
+      },
+      {
+        "id": "ps-s01e09-3",
+        "summary": "הוצאתו להורג של נד שורפת כמעט כל מסלול של פשרה בין הכתר לבין הצפון.",
+        "factionsInvolved": ["stark", "baratheon", "lannister"]
+      },
+      {
+        "id": "ps-s01e09-4",
+        "summary": "שלטונו של ג'ופרי מקבל אופי בלתי צפוי ומסוכן גם לבעלי בריתו.",
+        "factionsInvolved": ["baratheon", "lannister"]
+      }
+    ],
+    "housePowerUpdates": [
+      {
+        "factionId": "lannister",
+        "power": 79,
+        "summary": "עדיין מחזיק בבירה ובכתר, אך מאבד את ג'יימי ונפגע צבאית."
+      },
+      {
+        "factionId": "stark",
+        "power": 72,
+        "summary": "סופג מכה איומה עם מות נד, אך מרוויח הישג צבאי אדיר ולגיטימציה של נקמה."
+      },
+      {
+        "factionId": "baratheon",
+        "power": 58,
+        "summary": "הכתר קיים, אך מעשיו של ג'ופרי מחלישים את הלגיטימציה שלו."
+      },
+      {
+        "factionId": "targaryen",
+        "power": 30,
+        "summary": "דאינריז מגלה נחישות, אבל מצבה תלוי לחלוטין בגורלו המתערער של דרוגו."
+      }
+    ]
+  },
+  {
+    "id": "S01E10",
+    "season": 1,
+    "episode": 10,
+    "code": "S01E10",
+    "title": "אש ודם",
+    "titleEnglish": "Fire and Blood",
+    "summaries": {
+      "snapshot": "אחרי אובדן עצום, העולם הישן נסדק בשלושה כיוונים שונים — בצפון, בבירה ובמדבר — וכל אחד מהם מוליד סדר חדש.",
+      "full": "הידיעה על מותו של נד משנה הכול. במחנה הצפון, רוב מקבל תמיכה הולכת וגוברת כלוחם וכמנהיג, ובסופו של דבר אצילי הצפון ואנשי הנהרות מכריזים עליו כ\"מלך בצפון\" במקום להישבע לסטאניס או לרנלי. קייטלין פוגשת את ג'יימי השבוי ומשמיעה את גודל האסון המשפחתי. במעלה מלך, יורן מבריח את אריה מחוץ לעיר כשהיא מחופשת לנער בדרכה צפונה, בעוד טייווין שולח את טיריון לשמש יד המלך במקומו כדי לרסן את הכאוס שבחצר. בטירת שחור, ג'ון מנסה לעזוב כדי להצטרף לרוב, אך חבריו מחזירים אותו לחובתו, וג'יאור מורמונט מצרף אותו למסע צפונה. באסוס, המחיר של ניסיונה של דאינריז להציל את דרוגו מתברר כמחריד: בנה מת, דרוגו נשאר כצל חסר רצון, ודאינריז בוחרת לשים קץ לחייו. היא שורפת את מירי מאז דור על מדורת הלוויה, נכנסת לאש, ושורדת. עם שחר היא יוצאת מן האפר כששלושה דרקונים חיים לצדה — רגע שמשנה מן היסוד את מעמדה ואת עצם אפשרויות הכוח בעולם."
+    },
+    "focusCharacterIds": ["robb-stark", "arya-stark", "tyrion-lannister", "daenerys-targaryen"],
+    "focusCharacters": [
+      {
+        "characterId": "robb-stark",
+        "summary": "הופך ממפקד בן למשפחה לאלטרנטיבה שלטונית של ממש."
+      },
+      {
+        "characterId": "arya-stark",
+        "summary": "שורדת בזכות הסוואה והברחה ומתחילה מסלול זהות חדש."
+      },
+      {
+        "characterId": "tyrion-lannister",
+        "summary": "מקבל קידום שמציב אותו בלב השלטון."
+      },
+      {
+        "characterId": "daenerys-targaryen",
+        "summary": "מאבדת כמעט הכול אך יוצאת מן הפרק עם מקור כוח חסר תקדים."
+      }
+    ],
+    "mainLocationIds": ["north-army-camp", "kings-landing", "castle-black", "the-wall", "dany-desert-camp"],
+    "mainLocationLabels": ["מחנה צבא הצפון", "מעלה מלך ודרך המלך", "טירת שחור והחומה", "מחנה דאינריז במדבר"],
+    "newLocationIds": [],
+    "newLocations": [],
+    "newLocationsNote": "אין בפרק זה מיקום קבוע חדש בעל חשיבות מיפוי ראשונית; השינוי המרכזי הוא לא גיאוגרפי אלא מערכתי — שינויי שלטון, זהות וכוח בתוך זירות שכבר נפתחו.",
+    "primaryLocationId": "dany-desert-camp",
+    "powerLeaderId": "lannister",
+    "recentEventIds": ["tp-s01e10-1", "tp-s01e10-2", "tp-s01e10-3", "tp-s01e10-4", "tp-s01e10-5"],
+    "turningPoints": [
+      {
+        "id": "tp-s01e10-1",
+        "summary": "רוב מוכרז מלך בצפון.",
+        "tone": "shift"
+      },
+      {
+        "id": "tp-s01e10-2",
+        "summary": "אריה מוברחת ממעלה מלך.",
+        "tone": "alert"
+      },
+      {
+        "id": "tp-s01e10-3",
+        "summary": "טיריון נשלח להיות יד המלך בפועל.",
+        "tone": "shift"
+      },
+      {
+        "id": "tp-s01e10-4",
+        "summary": "ג'ון נשאר במשמר הלילה.",
+        "tone": "shift"
+      },
+      {
+        "id": "tp-s01e10-5",
+        "summary": "דאינריז מאבדת את דרוגו ואת בנה אך בוקעת מחדש כאם הדרקונים.",
+        "tone": "shift"
+      }
+    ],
+    "characterUpdates": [
+      {
+        "characterId": "robb-stark",
+        "status": "ruler",
+        "statusLabel": "שינוי תואר: מלך בצפון",
+        "summary": "מוכרז בידי אנשיו ובעלי בריתו."
+      },
+      {
+        "characterId": "arya-stark",
+        "status": "disguised",
+        "statusLabel": "נמלטת / בזהות מוסווית",
+        "summary": "מוברחת ממעלה מלך מחופשת לנער."
+      },
+      {
+        "characterId": "tyrion-lannister",
+        "status": "appointed",
+        "statusLabel": "שינוי תפקיד: יד המלך בפועל",
+        "summary": "נשלח בידי טייווין לנהל את הבירה."
+      },
+      {
+        "characterId": "rhaego",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "מת בעקבות הכישוף הקשור לניסיון להציל את דרוגו."
+      },
+      {
+        "characterId": "khal-drogo",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "דאינריז שמה קץ לחייו לאחר שאיבד את אישיותו ותפקודו."
+      },
+      {
+        "characterId": "mirri-maz-duur",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "נשרפת במדורת הלוויה."
+      },
+      {
+        "characterId": "daenerys-targaryen",
+        "status": "transformed",
+        "statusLabel": "שינוי סטטוס: אם הדרקונים",
+        "summary": "יוצאת מן האש עם שלושה דרקונים חיים."
+      }
+    ],
+    "politicalShifts": [
+      {
+        "id": "ps-s01e10-1",
+        "summary": "הצפון נפרד בפועל מן הסדר המלכותי של מעלה מלך וממליך את רוב.",
+        "factionsInvolved": ["stark", "baratheon"]
+      },
+      {
+        "id": "ps-s01e10-2",
+        "summary": "בית לאניסטר מחזק את שליטתו המעשית באמצעות טיריון, אף שהחצר עצמה לא יציבה.",
+        "factionsInvolved": ["lannister", "baratheon"]
+      },
+      {
+        "id": "ps-s01e10-3",
+        "summary": "משמר הלילה מושך את ג'ון חזרה למסלול של חובה.",
+        "factionsInvolved": ["night-watch", "stark"]
+      },
+      {
+        "id": "ps-s01e10-4",
+        "summary": "באסוס נולד מחדש ציר טארגארייני ממשי, לא רק יוחסין אבוד אלא מקור כוח חי ונדיר.",
+        "factionsInvolved": ["targaryen"]
+      }
+    ],
+    "housePowerUpdates": [
+      {
+        "factionId": "lannister",
+        "power": 85,
+        "summary": "שומר על הבירה ועל הכתר, ומציב את טיריון כמנהל אפקטיבי יותר."
+      },
+      {
+        "factionId": "stark",
+        "power": 82,
+        "summary": "חרף מות נד, זוכה בלגיטימציה שלטונית עצמאית, במנהיג מאחד ובתנופה פוליטית-צבאית."
+      },
+      {
+        "factionId": "baratheon",
+        "power": 52,
+        "summary": "הכתר הרשמי מוחזק עדיין בשם באראתיאון, אך הלגיטימציה ממשיכה להתפורר."
+      },
+      {
+        "factionId": "targaryen",
+        "power": 55,
+        "summary": "עדיין חסר טריטוריה, אך הופעת שלושת הדרקונים משנה דרמטית את פוטנציאל הכוח והמשיכה של הבית."
+      }
+    ]
+  }
+]

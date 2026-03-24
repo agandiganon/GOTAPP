@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --color-canvas: 8 9 16;
+  --color-canvas-soft: 14 16 28;
+  --color-panel: 18 22 34;
+  --color-panel-strong: 26 30 48;
+  --color-accent: 203 165 92;
+  --color-danger: 131 34 45;
+  --color-ink: 242 238 229;
+  --color-muted: 160 166 183;
+  --color-line: 255 255 255;
+}
+
+* {
+  border-color: rgb(var(--color-line) / 0.1);
+}
+
+html {
+  direction: rtl;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at top, rgba(203, 165, 92, 0.12), transparent 28%),
+    radial-gradient(circle at 15% 15%, rgba(131, 34, 45, 0.14), transparent 18%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0)),
+    rgb(var(--color-canvas));
+  color: rgb(var(--color-ink));
+  font-family: var(--font-heebo), sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(203, 165, 92, 0.22);
+  color: rgb(var(--color-ink));
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(203, 165, 92, 0.22);
+  border-radius: 999px;
+}
+
+@layer components {
+  .shell-frame {
+    @apply relative overflow-hidden rounded-[34px] border border-line/10 bg-panel/80 shadow-shell backdrop-blur-2xl;
+  }
+
+  .panel-surface {
+    @apply rounded-[28px] border border-line/10 bg-panel/80 shadow-panel backdrop-blur-xl;
+  }
+
+  .text-caption {
+    @apply text-[0.7rem] font-medium uppercase tracking-[0.28em] text-muted/75;
+  }
+}

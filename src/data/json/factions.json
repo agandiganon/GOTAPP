@@ -1,0 +1,388 @@
+[
+  {
+    "id": "stark",
+    "displayName": "בית סטארק",
+    "sigil": null,
+    "themeColor": "#8ea7cf",
+    "powerTimeline": [
+      {
+        "episodeId": "S01E01",
+        "power": 84,
+        "summary": "חזק, מאוחד ומכובד בצפון, אך טרם נכנס במלואו למשחק החצר."
+      },
+      {
+        "episodeId": "S01E02",
+        "power": 78,
+        "summary": "עדיין חזק בצפון, אך פועל מעמדת תגובה ונפגע רגשית ופוליטית."
+      },
+      {
+        "episodeId": "S01E03",
+        "power": 76,
+        "summary": "נד נכנס למרכז השלטון, אך כטירון בזירת תככים שאינה ביתית לו."
+      },
+      {
+        "episodeId": "S01E04",
+        "power": 74,
+        "summary": "יוזמה נועזת נותנת להם מומנטום מוסרי, אך גם חושפת אותם לסכנת הסלמה."
+      },
+      {
+        "episodeId": "S01E05",
+        "power": 68,
+        "summary": "נד פצוע, אנשיו נהרגים, והמשפחה מאבדת חופש פעולה."
+      },
+      {
+        "episodeId": "S01E06",
+        "power": 72,
+        "summary": "משיב יוזמה מוסדית דרך נד ושומר על יציבות בצפון."
+      },
+      {
+        "episodeId": "S01E07",
+        "power": 60,
+        "summary": "מאבד את ראש המשפחה שבבירה ואת השליטה באירועים."
+      },
+      {
+        "episodeId": "S01E08",
+        "power": 64,
+        "summary": "מאבד בני משפחה כקלפי מיקוח, אך יוצר לראשונה כוח צבאי מאורגן בדרום."
+      },
+      {
+        "episodeId": "S01E09",
+        "power": 72,
+        "summary": "סופג מכה איומה עם מות נד, אך מרוויח הישג צבאי אדיר ולגיטימציה של נקמה."
+      },
+      {
+        "episodeId": "S01E10",
+        "power": 82,
+        "summary": "חרף מות נד, זוכה בלגיטימציה שלטונית עצמאית, במנהיג מאחד ובתנופה פוליטית-צבאית."
+      }
+    ],
+    "relationshipTimeline": [
+      {
+        "episodeId": "S01E01",
+        "targetFactionId": "baratheon",
+        "state": "alliance",
+        "intensity": 78,
+        "summary": "ברית סטארק–באראתיאון מתחזקת רשמית עם הצעתו של רוברט לנד להפוך ליד המלך ועם שידוך אפשרי בין סאנסה לג'ופרי."
+      },
+      {
+        "episodeId": "S01E01",
+        "targetFactionId": "lannister",
+        "state": "tension",
+        "intensity": 68,
+        "summary": "במקביל נוצר ציר חשד ראשון של סטארק נגד לאניסטר בעקבות מכתבה של ליסה."
+      },
+      {
+        "episodeId": "S01E05",
+        "targetFactionId": "lannister",
+        "state": "war",
+        "intensity": 90,
+        "summary": "היריבות סטארק–לאניסטר הופכת רשמית למאבק אלים."
+      },
+      {
+        "episodeId": "S01E09",
+        "targetFactionId": "frey",
+        "state": "alliance",
+        "intensity": 82,
+        "summary": "בית פריי נכנס למשחק כברית מעבר חשובה לצפון."
+      }
+    ]
+  },
+  {
+    "id": "lannister",
+    "displayName": "בית לאניסטר",
+    "sigil": null,
+    "themeColor": "#c9a55c",
+    "powerTimeline": [
+      {
+        "episodeId": "S01E01",
+        "power": 88,
+        "summary": "קרוב מאוד למוקד הכוח דרך המלכה, המשמר וההון, אך עדיין פועל מאחורי הקלעים."
+      },
+      {
+        "episodeId": "S01E02",
+        "power": 84,
+        "summary": "קרבה מיידית לכתר מעניקה השפעה, אבל האלימות סביב ג'ופרי והפגיון מעמיקה חשד נגדם."
+      },
+      {
+        "episodeId": "S01E03",
+        "power": 87,
+        "summary": "יושב קרוב לכתר ולמוקדי העיר, גם אם החשד נגדו גובר."
+      },
+      {
+        "episodeId": "S01E04",
+        "power": 81,
+        "summary": "כוחם גדול, אך מעצר טיריון פוגע בכבודם ודוחק אותם לתגובה."
+      },
+      {
+        "episodeId": "S01E05",
+        "power": 85,
+        "summary": "מסוגל להשיב בכוח ולשחרר את טיריון דרך מנגנונים חברתיים ואלימים כאחד."
+      },
+      {
+        "episodeId": "S01E06",
+        "power": 79,
+        "summary": "נתון לראשונה לצו פומבי של צדק מלכותי."
+      },
+      {
+        "episodeId": "S01E07",
+        "power": 91,
+        "summary": "מחזיק בבירה, ביורש המוכתר ובמנגנון הכפייה העירוני."
+      },
+      {
+        "episodeId": "S01E08",
+        "power": 93,
+        "summary": "שולט בבירה, בחצר ובמבנה הצבאי הקרוב לכתר."
+      },
+      {
+        "episodeId": "S01E09",
+        "power": 79,
+        "summary": "עדיין מחזיק בבירה ובכתר, אך מאבד את ג'יימי ונפגע צבאית."
+      },
+      {
+        "episodeId": "S01E10",
+        "power": 85,
+        "summary": "שומר על הבירה ועל הכתר, ומציב את טיריון כמנהל אפקטיבי יותר."
+      }
+    ],
+    "relationshipTimeline": [
+      {
+        "episodeId": "S01E02",
+        "targetFactionId": "stark",
+        "state": "tension",
+        "intensity": 78,
+        "summary": "בית סטארק ובית לאניסטר עוברים מחשד עמום לעוינות אישית ומוחשית."
+      },
+      {
+        "episodeId": "S01E05",
+        "targetFactionId": "stark",
+        "state": "war",
+        "intensity": 92,
+        "summary": "היריבות סטארק–לאניסטר הופכת רשמית למאבק אלים."
+      },
+      {
+        "episodeId": "S01E07",
+        "targetFactionId": "baratheon",
+        "state": "alliance",
+        "intensity": 86,
+        "summary": "בית לאניסטר משתלט בפועל על הבירה באמצעות הכתר, המשמר והמלכה."
+      }
+    ]
+  },
+  {
+    "id": "baratheon",
+    "displayName": "בית באראתיאון",
+    "sigil": null,
+    "themeColor": "#e1b24e",
+    "powerTimeline": [
+      {
+        "episodeId": "S01E01",
+        "power": 90,
+        "summary": "מחזיק בכתר, בלגיטימציה ובשליטה כלל-ממלכתית, אך כבר תלוי ביועצים ובמשפחות אחרות."
+      },
+      {
+        "episodeId": "S01E02",
+        "power": 88,
+        "summary": "הכתר עדיין שולט, אך המלך אינו מטפל ביסודיות במשברים סביבו."
+      },
+      {
+        "episodeId": "S01E03",
+        "power": 86,
+        "summary": "שולט עדיין רשמית, אך ניכר שהמנגנון מתנהל גם בלי נוכחות אפקטיבית של המלך."
+      },
+      {
+        "episodeId": "S01E04",
+        "power": 85,
+        "summary": "הכתר עדיין מרכז את הסדר הציבורי, אך אינו שולט באמת בזרמי המידע והחשד."
+      },
+      {
+        "episodeId": "S01E05",
+        "power": 82,
+        "summary": "המלך עדיין מלך, אך סמכותו נשחקת מול מרי מוסרי של ידו."
+      },
+      {
+        "episodeId": "S01E06",
+        "power": 81,
+        "summary": "סמכות הכתר עדיין תקפה דרך נד, אך תלויה במילוי מקום ולא במלך פעיל."
+      },
+      {
+        "episodeId": "S01E07",
+        "power": 70,
+        "summary": "השם עדיין יושב על הכתר, אך בפועל הכוח נשמט מן הענף החוקי ומתערפל סביב ירושה שנויה במחלוקת."
+      },
+      {
+        "episodeId": "S01E08",
+        "power": 62,
+        "summary": "הכתר נותר חזק סמלית, אך הזהות החוקית שלו מתערערת."
+      },
+      {
+        "episodeId": "S01E09",
+        "power": 58,
+        "summary": "הכתר קיים, אך מעשיו של ג'ופרי מחלישים את הלגיטימציה שלו."
+      },
+      {
+        "episodeId": "S01E10",
+        "power": 52,
+        "summary": "הכתר הרשמי מוחזק עדיין בשם באראתיאון, אך הלגיטימציה ממשיכה להתפורר."
+      }
+    ],
+    "relationshipTimeline": [
+      {
+        "episodeId": "S01E01",
+        "targetFactionId": "stark",
+        "state": "alliance",
+        "intensity": 78,
+        "summary": "ברית סטארק–באראתיאון מתחזקת רשמית עם הצעתו של רוברט לנד להפוך ליד המלך ועם שידוך אפשרי בין סאנסה לג'ופרי."
+      },
+      {
+        "episodeId": "S01E07",
+        "targetFactionId": "lannister",
+        "state": "alliance",
+        "intensity": 86,
+        "summary": "בית לאניסטר משתלט בפועל על הבירה באמצעות הכתר, המשמר והמלכה."
+      }
+    ]
+  },
+  {
+    "id": "targaryen",
+    "displayName": "בית טארגאריין",
+    "sigil": null,
+    "themeColor": "#8f2f3b",
+    "powerTimeline": [
+      {
+        "episodeId": "S01E01",
+        "power": 22,
+        "summary": "כמעט חסר כוח רשמי, אך נישואי דאינריז לדרוגו יוצרים לראשונה מנוף צבאי אמיתי."
+      },
+      {
+        "episodeId": "S01E02",
+        "power": 24,
+        "summary": "טרם משפיע על ווסטרוז, אך דאינריז מתחילה את המעבר מחולשה לתפקיד שיכול לשאת משקל בעתיד."
+      },
+      {
+        "episodeId": "S01E03",
+        "power": 30,
+        "summary": "עדיין בגלות, אך הריון דאינריז מייצר המשכיות ושדרוג מעמד ברור."
+      },
+      {
+        "episodeId": "S01E04",
+        "power": 33,
+        "summary": "דאינריז מתחזקת חברתית בתוך העולם הדות'ראקי, גם בלי כוח ימי או טריטוריאלי."
+      },
+      {
+        "episodeId": "S01E05",
+        "power": 28,
+        "summary": "עצם ההחלטה להתנקש בדאינריז מוכיחה שהיא נחשבת כבר איום, אך היא עדיין חסרת שליטה ישירה."
+      },
+      {
+        "episodeId": "S01E06",
+        "power": 35,
+        "summary": "מאבד את ויסריז אך מרוויח הנהגה ברורה יותר בדמות דאינריז, שמעמדה בח'אלסאר יציב יותר."
+      },
+      {
+        "episodeId": "S01E07",
+        "power": 40,
+        "summary": "עדיין בגלות, אך שבועת דרוגו והישרדות דאינריז מעלות מאוד את פוטנציאל האיום שלה."
+      },
+      {
+        "episodeId": "S01E08",
+        "power": 38,
+        "summary": "דאינריז אינה מחזיקה ממלכה, אך צוברת לראשונה משקל אנושי ואידאולוגי עצמאי."
+      },
+      {
+        "episodeId": "S01E09",
+        "power": 30,
+        "summary": "דאינריז מגלה נחישות, אבל מצבה תלוי לחלוטין בגורלו המתערער של דרוגו."
+      },
+      {
+        "episodeId": "S01E10",
+        "power": 55,
+        "summary": "עדיין חסר טריטוריה, אך הופעת שלושת הדרקונים משנה דרמטית את פוטנציאל הכוח והמשיכה של הבית."
+      }
+    ],
+    "relationshipTimeline": [
+      {
+        "episodeId": "S01E01",
+        "targetFactionId": "dothraki",
+        "state": "alliance",
+        "intensity": 72,
+        "summary": "באסוס מתחיל ציר טארגאריין–דות'ראקי כבסיס לאיום עתידי על ווסטרוז."
+      },
+      {
+        "episodeId": "S01E07",
+        "targetFactionId": "dothraki",
+        "state": "alliance",
+        "intensity": 84,
+        "summary": "דרוגו קושר לראשונה את כוחו הצבאי ישירות לפלישה אל ווסטרוז."
+      }
+    ]
+  },
+  {
+    "id": "arryn",
+    "displayName": "בית אארין",
+    "sigil": null,
+    "themeColor": "#7b8cb8",
+    "powerTimeline": [
+      {
+        "episodeId": "S01E05",
+        "power": 55,
+        "summary": "מחזיק במבצר חזק מאוד, אך אינו ממיר את ביטחונו לכוח מדיני אפקטיבי."
+      }
+    ],
+    "relationshipTimeline": []
+  },
+  {
+    "id": "frey",
+    "displayName": "בית פריי",
+    "sigil": null,
+    "themeColor": "#8b6a46",
+    "powerTimeline": [],
+    "relationshipTimeline": [
+      {
+        "episodeId": "S01E09",
+        "targetFactionId": "stark",
+        "state": "alliance",
+        "intensity": 82,
+        "summary": "בית פריי נכנס למשחק כברית מעבר חשובה לצפון."
+      }
+    ]
+  },
+  {
+    "id": "night-watch",
+    "displayName": "משמר הלילה",
+    "sigil": null,
+    "themeColor": "#7b848f",
+    "powerTimeline": [],
+    "relationshipTimeline": []
+  },
+  {
+    "id": "dothraki",
+    "displayName": "הדות'ראקים",
+    "sigil": null,
+    "themeColor": "#a36b3a",
+    "powerTimeline": [],
+    "relationshipTimeline": [
+      {
+        "episodeId": "S01E01",
+        "targetFactionId": "targaryen",
+        "state": "alliance",
+        "intensity": 72,
+        "summary": "באסוס מתחיל ציר טארגאריין–דות'ראקי כבסיס לאיום עתידי על ווסטרוז."
+      },
+      {
+        "episodeId": "S01E07",
+        "targetFactionId": "targaryen",
+        "state": "alliance",
+        "intensity": 84,
+        "summary": "דרוגו קושר לראשונה את כוחו הצבאי ישירות לפלישה אל ווסטרוז."
+      }
+    ]
+  },
+  {
+    "id": "lhazareen",
+    "displayName": "יושבי לאזאר",
+    "sigil": null,
+    "themeColor": "#a8906e",
+    "powerTimeline": [],
+    "relationshipTimeline": []
+  }
+]
