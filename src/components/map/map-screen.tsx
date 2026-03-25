@@ -1,11 +1,13 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { Compass, MapPinned, Sparkles } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Compass, Crown, MapPinned, Sparkles } from "lucide-react";
 
 import { Panel } from "@/components/ui/panel";
-import { episodeIndex, locations, mapRegistry } from "@/data/seed";
-import { getVisibleLocationSnapshots, getVisibleMapPins } from "@/lib/timeline";
+import { episodeIndex, factions, locations, mapRegistry } from "@/data/seed";
+import { getMapPinKind, resolveMapLocationController } from "@/lib/map-presentation";
+import { getEpisodeFactionRankings, getVisibleLocationSnapshots, getVisibleMapPins } from "@/lib/timeline";
 import { isDefined } from "@/lib/utils";
 import { useEpisode } from "@/providers/episode-provider";
 
@@ -23,9 +25,16 @@ const FantasyMapCanvas = dynamic(
 
 export function MapScreen() {
   const { currentEpisode, currentEpisodeId } = useEpisode();
+  const [requestedLocationId, setRequestedLocationId] = useState<string | null>(null);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    setRequestedLocationId(params.get("location"));
+  }, []);
 
   const visibleLocations = getVisibleLocationSnapshots(locations, currentEpisodeId, episodeIndex);
   const visiblePins = getVisibleMapPins(mapRegistry, currentEpisodeId, episodeIndex);
+  const factionRankings = getEpisodeFactionRankings(factions, currentEpisode);
 
   const mapPins = visiblePins
     .map((pin) => {
@@ -39,6 +48,8 @@ export function MapScreen() {
         return null;
       }
 
+      const controllerFaction = resolveMapLocationController(location.id, factionRankings);
+
       return {
         id: location.id,
         name: location.name,
@@ -47,6 +58,16 @@ export function MapScreen() {
         topPercent: pin.imagePositionPercent.top,
         leftPercent: pin.imagePositionPercent.left,
         isPrimary: location.id === currentEpisode.primaryLocationId,
+        isFocused: location.id === requestedLocationId,
+        kind: getMapPinKind(location.id),
+        controllerFaction: controllerFaction
+          ? {
+              id: controllerFaction.id,
+              name: controllerFaction.displayName,
+              themeColor: controllerFaction.themeColor,
+              sigilUrl: controllerFaction.factionSigilUrl ?? controllerFaction.sigil,
+            }
+          : null,
       };
     })
     .filter(isDefined);
@@ -55,59 +76,80 @@ export function MapScreen() {
     visibleLocations.find((location) => location.id === currentEpisode.primaryLocationId)?.name ??
     "לא זמין";
 
+  const focusedLocation = requestedLocationId
+    ? mapPins.find((pin) => pin.id === requestedLocationId) ?? null
+    : null;
+
   return (
     <section className="space-y-4">
-      <Panel className="relative overflow-hidden p-5">
-        <div className="absolute inset-0 bg-hero-glow opacity-60" />
+      <Panel className="relative overflow-hidden p-5 md:p-6">
+        <div className="absolute inset-0 bg-hero-glow opacity-55" />
         <div className="relative space-y-4">
           <div className="space-y-2">
             <p className="text-caption">מפה</p>
-            <h1 className="font-display text-3xl text-ink">מפת העולם האינטראקטיבית</h1>
-            <p className="text-sm leading-7 text-muted">
-              שכבת המפה מציגה את העולם הגלוי עד הפרק שנבחר, עם תנועה חלקה, zoom אינטראקטיבי
-              וסמנים חיים לפי נקודת הזמן הפעילה.
+            <h1 className="font-display text-3xl text-ink">אטלס ווסטרוז ואסוס</h1>
+            <p className="max-w-[42ch] text-sm leading-7 text-muted">
+              המפה מגיבה לפרק הפעיל בלבד, עם סמנים דינמיים, שליטה חלקה, וחיווי עדין על מוקדי כוח
+              מרכזיים בעולם.
             </p>
           </div>
 
           <div className="grid grid-cols-3 gap-3">
-            <div className="rounded-[22px] border border-line/10 bg-white/5 p-4">
+            <div className="rounded-[24px] border border-white/[0.06] bg-white/[0.04] p-4 backdrop-blur-md">
               <p className="text-xs text-muted">לוקיישנים גלויים</p>
               <p className="mt-2 text-2xl font-semibold text-ink">{visiblePins.length}</p>
             </div>
-            <div className="rounded-[22px] border border-accent/20 bg-accent/10 p-4">
+            <div className="rounded-[24px] border border-accent/15 bg-accent/[0.08] p-4 backdrop-blur-md">
               <p className="text-xs text-[#f1ddb2]">מופיעים על המפה</p>
               <p className="mt-2 text-2xl font-semibold text-ink">{mapPins.length}</p>
             </div>
-            <div className="rounded-[22px] border border-[#7e97b3]/20 bg-[#7e97b3]/10 p-4">
+            <div className="rounded-[24px] border border-[#7e97b3]/18 bg-[#7e97b3]/10 p-4 backdrop-blur-md">
               <p className="text-xs text-[#d5e1ec]">מוקד הפרק</p>
               <p className="mt-2 text-sm font-semibold leading-6 text-ink">{primaryLocationLabel}</p>
             </div>
           </div>
+
+          {focusedLocation ? (
+            <div className="rounded-[24px] border border-white/[0.06] bg-white/[0.04] px-4 py-3">
+              <p className="text-xs text-muted">פוקוס מהמפה או מכרטיס דמות</p>
+              <div className="mt-2 flex items-center justify-between gap-4">
+                <div>
+                  <p className="text-base font-semibold text-ink">{focusedLocation.name}</p>
+                  <p className="mt-1 text-sm leading-6 text-muted">{focusedLocation.summary}</p>
+                </div>
+                {focusedLocation.controllerFaction ? (
+                  <span className="rounded-full border border-accent/15 bg-accent/[0.08] px-3 py-1 text-xs text-accent">
+                    בשליטת {focusedLocation.controllerFaction.name}
+                  </span>
+                ) : null}
+              </div>
+            </div>
+          ) : null}
         </div>
       </Panel>
 
       <Panel className="overflow-hidden p-0">
-        <div className="flex items-start justify-between gap-4 border-b border-line/10 px-5 py-4">
+        <div className="flex items-start justify-between gap-4 border-b border-white/[0.06] px-5 py-4">
           <div className="space-y-2">
             <p className="text-caption">שכבת מפה</p>
             <h2 className="font-display text-2xl text-ink">ווסטרוז ואסוס עד {currentEpisode.code}</h2>
-            <p className="text-sm leading-7 text-muted">
-              רחף/י או לחץ/י על סמן כדי לראות את פרטי המיקום, והשתמש/י ב־zoom ו־pan כדי לעבור בין
-              מוקדי העלילה הגלויים עד הפרק הנבחר.
+            <p className="max-w-[42ch] text-sm leading-7 text-muted">
+              רחף/י או לחץ/י על סמן כדי לראות פרטי מקום, והשתמש/י ב־zoom ו־pan כדי לנוע בין מושבים,
+              ערים ומבצרים לפי ציר הזמן הנוכחי.
             </p>
           </div>
-          <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-accent/25 bg-accent/10 text-accent">
+          <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-accent/15 bg-accent/[0.08] text-accent">
             <Compass className="h-5 w-5" />
           </div>
         </div>
 
-        <div className="relative h-[26rem] bg-canvas/70 md:h-[34rem]">
-          <FantasyMapCanvas pins={mapPins} />
+        <div className="relative h-[27rem] bg-canvas/70 md:h-[35rem]">
+          <FantasyMapCanvas pins={mapPins} focusLocationId={focusedLocation?.id ?? null} />
 
           {mapPins.length === 0 ? (
-            <div className="pointer-events-none absolute inset-x-4 bottom-4 rounded-[18px] border border-line/10 bg-canvas/75 px-4 py-3 text-xs leading-6 text-muted backdrop-blur-md">
-              אין עדיין נקודות פעילות ממוקמות לפרק הזה. עבור/י לפרק אחר או השלם/י מיקומים נוספים כדי
-              לראות את שכבת הסמנים.
+            <div className="pointer-events-none absolute inset-x-4 bottom-4 rounded-[18px] border border-white/[0.06] bg-canvas/75 px-4 py-3 text-xs leading-6 text-muted backdrop-blur-md">
+              עדיין אין נקודות ממופות לפרק הזה. עבור/י לפרק אחר או השלימי מיקומים נוספים כדי לראות
+              את הסמנים.
             </div>
           ) : null}
         </div>
@@ -120,15 +162,15 @@ export function MapScreen() {
               <p className="text-caption">מקרא</p>
               <h2 className="font-display text-2xl text-ink">איך לקרוא את המפה</h2>
             </div>
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-line/10 bg-white/5 text-accent">
+            <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/[0.06] bg-white/[0.04] text-accent">
               <Sparkles className="h-5 w-5" />
             </div>
           </div>
 
           <div className="space-y-3 text-sm leading-7 text-muted">
-            <p>הסמן הבהיר יותר מציין את מוקד הפרק הראשי; שאר הסמנים מציגים מוקדים גלויים נוספים.</p>
-            <p>Tooltip מהיר מציג את שם הלוקיישן, ו־popup פותח תיאור קצר מתוך הטיימליין הגלוי בלבד.</p>
-            <p>המפה מתעדכנת אוטומטית לפי הפרק שבחרת, כך שלא תראי לוקיישנים שעדיין לא נחשפו.</p>
+            <p>אייקון מבצר מסמן מושב שלטוני או מבצר מרכזי; אייקון יהלום מסמן מוקד מסע, עיר או אתר.</p>
+            <p>badge קטן ליד הסמן מציג שליטה פקשנית כשאפשר להסיק אותה מנקודת הזמן ומהמאזן הנוכחי.</p>
+            <p>הפין הבהיר יותר מציין את מוקד הפרק הראשי, ו־focus חיצוני לוקח אותך ישירות למיקום המבוקש.</p>
           </div>
         </Panel>
 
@@ -136,18 +178,27 @@ export function MapScreen() {
           <div className="mb-4 flex items-start justify-between gap-4">
             <div className="space-y-2">
               <p className="text-caption">מופיעים כעת</p>
-              <h2 className="font-display text-2xl text-ink">המוקדים שעל המפה</h2>
+              <h2 className="font-display text-2xl text-ink">לוקיישנים פעילים על המפה</h2>
             </div>
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-line/10 bg-white/5 text-accent">
+            <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/[0.06] bg-white/[0.04] text-accent">
               <MapPinned className="h-5 w-5" />
             </div>
           </div>
 
           <div className="space-y-3">
             {mapPins.slice(0, 8).map((location) => (
-              <div key={location.id} className="rounded-[20px] border border-line/10 bg-white/5 px-4 py-3">
-                <p className="font-medium text-ink">{location.name}</p>
-                <p className="mt-1 text-xs text-muted">{location.region}</p>
+              <div key={location.id} className="rounded-[20px] border border-white/[0.06] bg-white/[0.04] px-4 py-3">
+                <div className="flex items-start justify-between gap-3">
+                  <div>
+                    <p className="font-medium text-ink">{location.name}</p>
+                    <p className="mt-1 text-xs text-muted">{location.region}</p>
+                  </div>
+                  {location.controllerFaction ? (
+                    <span className="rounded-full border border-accent/15 bg-accent/[0.08] px-2.5 py-1 text-[0.68rem] text-accent">
+                      {location.controllerFaction.name}
+                    </span>
+                  ) : null}
+                </div>
               </div>
             ))}
 
@@ -157,6 +208,23 @@ export function MapScreen() {
           </div>
         </Panel>
       </div>
+
+      {factionRankings[0] ? (
+        <Panel className="p-5">
+          <div className="flex items-start gap-3">
+            <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-accent/15 bg-accent/[0.08] text-accent">
+              <Crown className="h-5 w-5" />
+            </div>
+            <div className="space-y-2">
+              <p className="text-caption">כוח שולט</p>
+              <h2 className="font-display text-2xl text-ink">
+                {factionRankings[0].faction.displayName} מוביל/ה את תמונת הפרק
+              </h2>
+              <p className="text-sm leading-7 text-muted">{factionRankings[0].latestPower.summary}</p>
+            </div>
+          </div>
+        </Panel>
+      ) : null}
     </section>
   );
 }

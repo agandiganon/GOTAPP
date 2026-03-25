@@ -100,6 +100,7 @@ export interface CharacterRecord {
   id: string;
   name: string;
   portrait: string | null;
+  characterImageUrl: string | null;
   baseDescription: string;
   timeline: CharacterTimelineEntry[];
 }
@@ -122,6 +123,7 @@ export interface FactionRecord {
   id: string;
   displayName: string;
   sigil: string | null;
+  factionSigilUrl: string | null;
   themeColor: string;
   powerTimeline: FactionPowerEntry[];
   relationshipTimeline: FactionRelationshipEntry[];

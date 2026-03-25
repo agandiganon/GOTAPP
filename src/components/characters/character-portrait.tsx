@@ -1,10 +1,8 @@
-import Image from "next/image";
-
 import { cn } from "@/lib/utils";
 
 interface CharacterPortraitProps {
   name: string;
-  portrait: string | null;
+  imageUrl: string | null;
   factionColor?: string | null;
   className?: string;
 }
@@ -133,22 +131,25 @@ function getPortraitSrc(name: string, accent: string) {
 
 export function CharacterPortrait({
   name,
-  portrait,
+  imageUrl,
   factionColor = "#8ea7cf",
   className,
 }: CharacterPortraitProps) {
-  const src = portrait ?? getPortraitSrc(name, factionColor ?? "#8ea7cf");
+  const fallbackSrc = getPortraitSrc(name, factionColor ?? "#8ea7cf");
+  const src = imageUrl ?? fallbackSrc;
 
   return (
     <div className={cn("relative h-full w-full overflow-hidden", className)}>
-      <Image
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
         src={src}
         alt={`דיוקן סמלי של ${name}`}
-        fill
-        unoptimized
+        loading="lazy"
         draggable={false}
-        sizes="(max-width: 768px) 100vw, 50vw"
-        className="object-cover"
+        className="h-full w-full object-cover"
+        onError={(event) => {
+          event.currentTarget.src = fallbackSrc;
+        }}
       />
     </div>
   );

@@ -81,7 +81,7 @@ export function HomeScreen() {
   return (
     <>
       <section className="space-y-4">
-        <Panel className="relative overflow-hidden p-5">
+        <Panel className="relative overflow-hidden p-5 md:p-6">
           <div className="absolute inset-0 bg-hero-glow opacity-70" />
           <div className="relative space-y-5">
             <div className="space-y-2">
@@ -94,14 +94,14 @@ export function HomeScreen() {
               </p>
             </div>
 
-            <div className="rounded-[30px] border border-white/[0.08] bg-canvas/[0.32] p-3 shadow-[0_22px_60px_rgba(0,0,0,0.25)]">
-              <div className="relative">
+            <div className="rounded-[30px] border border-white/[0.06] bg-[linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.015))] p-3 shadow-[0_22px_60px_rgba(0,0,0,0.25)] backdrop-blur-xl">
+              <div className="relative z-20">
                 <button
                   type="button"
                   aria-expanded={isSelectorOpen}
-                  aria-haspopup="dialog"
+                  aria-haspopup="listbox"
                   onClick={() => setIsSelectorOpen((current) => !current)}
-                  className="group w-full cursor-pointer rounded-[24px] border border-white/[0.06] bg-[linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.015))] p-4 text-right transition duration-300 hover:border-accent/20"
+                  className="group w-full cursor-pointer rounded-[24px] border border-white/[0.06] bg-canvas/[0.34] p-4 text-right transition duration-300 hover:border-accent/20 hover:bg-canvas/[0.42]"
                 >
                   <div className="flex items-start justify-between gap-4">
                     <div className="space-y-2">
@@ -114,10 +114,10 @@ export function HomeScreen() {
                     </div>
 
                     <div className="flex shrink-0 items-center gap-2">
-                      <span className="rounded-full border border-accent/20 bg-accent/[0.12] px-3 py-1 text-[0.68rem] font-medium text-accent">
+                      <span className="rounded-full border border-accent/15 bg-accent/[0.1] px-3 py-1 text-[0.68rem] font-medium text-accent">
                         מצב בטוח
                       </span>
-                      <span className="flex h-10 w-10 items-center justify-center rounded-full border border-line/10 bg-white/[0.05] text-accent transition group-hover:bg-accent/[0.12]">
+                      <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.04] text-accent transition group-hover:bg-accent/[0.12]">
                         <ChevronDown
                           className={cn(
                             "h-5 w-5 transition",
@@ -138,7 +138,7 @@ export function HomeScreen() {
                 />
               </div>
 
-              <div className="mt-3 rounded-[24px] border border-white/[0.06] bg-panel-strong/[0.68] p-4">
+              <div className="mt-3 rounded-[24px] border border-white/[0.06] bg-panel-strong/[0.54] p-4 backdrop-blur-md">
                 <div className="flex items-start justify-between gap-4">
                   <div className="space-y-2">
                     <p className="text-caption">תקציר הפרק</p>
@@ -152,7 +152,7 @@ export function HomeScreen() {
                   </div>
                 </div>
 
-                <div className="mt-4 rounded-[20px] border border-white/[0.05] bg-canvas/[0.4] px-4 py-4">
+                <div className="mt-4 rounded-[20px] border border-white/[0.05] bg-canvas/[0.34] px-4 py-4">
                   <p className="text-sm leading-8 text-ink">{homeSummary}</p>
                 </div>
 
@@ -160,7 +160,7 @@ export function HomeScreen() {
                   {focusCharacters.map((character) => (
                     <span
                       key={character.id}
-                      className="rounded-full border border-line/10 bg-white/5 px-3 py-1.5 text-xs text-muted"
+                    className="rounded-full border border-white/[0.06] bg-white/[0.04] px-3 py-1.5 text-xs text-muted"
                     >
                       {character.name}
                     </span>
@@ -186,7 +186,7 @@ export function HomeScreen() {
             </div>
           </div>
 
-          <div className="relative aspect-[16/10] overflow-hidden rounded-[24px] border border-line/10">
+          <div className="relative aspect-[16/10] overflow-hidden rounded-[24px] border border-white/[0.06]">
             <Image
               src="/images/world-map.jpg"
               alt="מפת עולם מותאמת להצגת מוקדי עלילה"
@@ -211,12 +211,12 @@ export function HomeScreen() {
                 </div>
               </div>
             ) : (
-              <div className="absolute inset-x-4 top-4 rounded-[18px] border border-line/10 bg-canvas/60 px-4 py-2 text-xs text-muted backdrop-blur-md">
+              <div className="absolute inset-x-4 top-4 rounded-[18px] border border-white/[0.06] bg-canvas/60 px-4 py-2 text-xs text-muted backdrop-blur-md">
                 כיול הסמן יתווסף לאחר מיקום ידני של הנקודה על המפה.
               </div>
             )}
 
-            <div className="absolute inset-x-4 bottom-4 rounded-[18px] border border-line/10 bg-canvas/70 px-4 py-3 backdrop-blur-md">
+            <div className="absolute inset-x-4 bottom-4 rounded-[18px] border border-white/[0.06] bg-canvas/70 px-4 py-3 backdrop-blur-md">
               <p className="text-sm font-semibold text-ink">{primaryLocation?.name ?? "מיקום ראשי"}</p>
               <p className="mt-1 text-xs text-muted">
                 {primaryLocation?.region ?? "האזור יוצג כאן לאחר קישור מלא לנתונים."}
@@ -261,11 +261,11 @@ export function HomeScreen() {
             {factionRankings.slice(0, 3).map((entry, index) => (
               <div
                 key={entry.faction.id}
-                className="rounded-[20px] border border-line/10 bg-white/5 px-4 py-3"
+                className="rounded-[20px] border border-white/[0.06] bg-white/[0.04] px-4 py-3"
               >
                 <div className="flex items-center justify-between gap-3">
                   <div className="flex items-center gap-3">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-full border border-line/10 bg-canvas/60 text-xs text-muted">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full border border-white/[0.06] bg-canvas/60 text-xs text-muted">
                       {index + 1}
                     </div>
                     <div>
@@ -296,7 +296,7 @@ export function HomeScreen() {
               <div
                 key={event.id}
                 className={cn(
-                  "rounded-[20px] border px-4 py-3",
+                    "rounded-[20px] border px-4 py-3 backdrop-blur-md",
                   toneClasses[event.tone],
                 )}
               >
@@ -317,7 +317,7 @@ export function HomeScreen() {
           <h2 className="mt-3 font-display text-2xl text-ink">מוקדי הפרק הפעיל</h2>
 
           <div className="mt-4 grid gap-4">
-            <div className="rounded-[22px] border border-line/10 bg-white/5 p-4">
+            <div className="rounded-[22px] border border-white/[0.06] bg-white/[0.04] p-4">
               <p className="text-xs text-muted">דמויות מרכזיות</p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {focusCharacters.map((character) => (
@@ -331,7 +331,7 @@ export function HomeScreen() {
               </div>
             </div>
 
-            <div className="rounded-[22px] border border-line/10 bg-white/5 p-4">
+            <div className="rounded-[22px] border border-white/[0.06] bg-white/[0.04] p-4">
               <p className="text-xs text-muted">מיקומים ראשיים</p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {mainLocationLabels.map((locationLabel) => (

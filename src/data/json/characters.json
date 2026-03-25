@@ -23,7 +23,8 @@
         "locationId": "castle-black",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "areo-hota",
@@ -39,7 +40,8 @@
         "locationId": "castle-black",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "arya-stark",
@@ -250,7 +252,8 @@
         "locationId": "kings-landing",
         "importance": 96
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/b/be/Arya_Stark_S8_cropped.jpg"
   },
   {
     "id": "balon-greyjoy",
@@ -276,7 +279,8 @@
         "locationId": "castle-black",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "barristan-selmy",
@@ -302,7 +306,8 @@
         "locationId": "meereen",
         "importance": 86
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/1a/Barristan_Selmy_profile_infobox.jpg"
   },
   {
     "id": "benjen-stark",
@@ -336,7 +341,8 @@
         "locationId": "beyond-the-wall-haunted-forest",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "beric-dondarrion",
@@ -362,7 +368,8 @@
         "locationId": "winterfell",
         "importance": 84
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "blackfish-tully",
@@ -378,7 +385,8 @@
         "locationId": "braavos",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "bowen-marsh",
@@ -394,7 +402,8 @@
         "locationId": "castle-black",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "bran-stark",
@@ -510,7 +519,8 @@
         "locationId": "dragonpit",
         "importance": 100
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/15/Bran_Stark_S8.jpg"
   },
   {
     "id": "brienne-of-tarth",
@@ -579,7 +589,8 @@
         "locationId": "kings-landing",
         "importance": 82
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/9/91/Brienne_S8.jpg"
   },
   {
     "id": "bronn",
@@ -614,7 +625,8 @@
         "locationId": "kings-landing",
         "importance": 76
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/6/6f/Bronn_S8.jpg"
   },
   {
     "id": "brother-ray",
@@ -630,7 +642,8 @@
         "locationId": "riverrun",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "catelyn-stark",
@@ -674,7 +687,8 @@
         "locationId": "the-twins",
         "importance": 97
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/5/54/Catelyn_Stark_-_Season_3_Promo.jpg"
   },
   {
     "id": "cersei-lannister",
@@ -763,7 +777,8 @@
         "locationId": "kings-landing",
         "importance": 100
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/c/c3/Profile-CerseiLannister.png"
   },
   {
     "id": "crasters-son",
@@ -780,7 +795,8 @@
         "locationId": "land-of-always-winter",
         "importance": 32
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "daario-naharis",
@@ -797,7 +813,8 @@
         "locationId": "yunkai",
         "importance": 75
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "daenerys-dragons",
@@ -823,7 +840,8 @@
         "affiliationId": "targaryen",
         "locationId": "house-of-the-undying"
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "daenerys-targaryen",
@@ -1011,7 +1029,8 @@
         "locationId": "kings-landing",
         "importance": 100
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/e/ee/Profile-Daenerys-Targaryen-S8.jpg"
   },
   {
     "id": "davos-seaworth",
@@ -1073,7 +1092,8 @@
         "locationId": "winterfell",
         "importance": 90
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/6/60/Davos_S8.jpg"
   },
   {
     "id": "doran-martell",
@@ -1089,7 +1109,8 @@
         "locationId": "castle-black",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "doreah",
@@ -1106,7 +1127,8 @@
         "affiliationId": "targaryen",
         "locationId": "qarth"
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "dothraki-khals",
@@ -1122,7 +1144,8 @@
         "locationId": "castle-black",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "eddard-stark",
@@ -1175,7 +1198,8 @@
         "locationId": "baelor-great-sept",
         "importance": 100
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/3/34/Eddard_Stark.jpg"
   },
   {
     "id": "edmure-tully",
@@ -1201,7 +1225,8 @@
         "locationId": "riverrun",
         "importance": 64
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "ellaria-sand",
@@ -1227,7 +1252,8 @@
         "locationId": "kings-landing",
         "importance": 72
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "euron-greyjoy",
@@ -1286,7 +1312,8 @@
         "locationId": "kings-landing",
         "importance": 90
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/4/41/Euron_Greyjoy_S8.jpg"
   },
   {
     "id": "gendry",
@@ -1372,7 +1399,8 @@
         "locationId": "winterfell",
         "importance": 84
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/b/b1/Gendry_S8.jpg"
   },
   {
     "id": "gilly",
@@ -1397,7 +1425,8 @@
         "locationId": "oldtown",
         "importance": 70
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "grenn",
@@ -1414,7 +1443,8 @@
         "locationId": "castle-black",
         "importance": 58
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "grey-worm",
@@ -1440,7 +1470,8 @@
         "locationId": "kings-landing",
         "importance": 86
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/6/66/Grey_worm_s8.jpg"
   },
   {
     "id": "harald-karstark",
@@ -1456,7 +1487,8 @@
         "locationId": "meereen",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "hardhome-wildlings",
@@ -1473,7 +1505,8 @@
         "locationId": "hardhome",
         "importance": 46
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "high-septon",
@@ -1489,7 +1522,8 @@
         "importance": 44,
         "locationId": "kings-landing"
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "high-sparrow",
@@ -1524,7 +1558,8 @@
         "locationId": "baelor-great-sept",
         "importance": 96
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/8/86/High_Sparrow_Main.jpg"
   },
   {
     "id": "hizdahr-zo-loraq",
@@ -1541,7 +1576,8 @@
         "locationId": "meereen",
         "importance": 64
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "hodor",
@@ -1557,7 +1593,8 @@
         "locationId": "three-eyed-raven-cave",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "irri",
@@ -1574,7 +1611,8 @@
         "affiliationId": "targaryen",
         "locationId": "qarth"
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "jaime-lannister",
@@ -1726,7 +1764,8 @@
         "locationId": "kings-landing",
         "importance": 100
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/e/eb/Jaime.jpg"
   },
   {
     "id": "janos-slynt",
@@ -1752,7 +1791,8 @@
         "locationId": "castle-black",
         "importance": 62
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "jaqen-hghar",
@@ -1784,7 +1824,8 @@
         "locationId": "house-of-black-and-white",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "jeor-mormont",
@@ -1810,7 +1851,8 @@
         "locationId": "crasters-keep",
         "importance": 74
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "joffrey-baratheon",
@@ -1845,7 +1887,8 @@
         "locationId": "kings-landing",
         "importance": 97
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/c/c3/Joffrey_Baratheon_Profile_S4.png"
   },
   {
     "id": "jojen-reed",
@@ -1871,7 +1914,8 @@
         "locationId": "three-eyed-raven-cave",
         "importance": 72
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "jon-arryn",
@@ -1888,7 +1932,8 @@
         "locationId": "kings-landing",
         "importance": 70
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "jon-snow",
@@ -2138,7 +2183,8 @@
         "locationId": "castle-black",
         "importance": 100
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/a/a5/Profile-JonSnow-707.png"
   },
   {
     "id": "jorah-mormont",
@@ -2236,7 +2282,8 @@
         "locationId": "winterfell",
         "importance": 94
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/12/Jorah_Mormont_S8.jpg"
   },
   {
     "id": "jory-cassel",
@@ -2253,7 +2300,8 @@
         "locationId": "kings-landing",
         "importance": 48
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "karl-tanner",
@@ -2270,7 +2318,8 @@
         "locationId": "crasters-keep",
         "importance": 37
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "karsi",
@@ -2287,7 +2336,8 @@
         "locationId": "hardhome",
         "importance": 52
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "kevan-lannister",
@@ -2312,7 +2362,8 @@
         "locationId": "kings-landing",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "khal-drogo",
@@ -2347,7 +2398,8 @@
         "locationId": "dany-desert-camp",
         "importance": 88
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/7/7b/Khal_drogo_infobox.jpg"
   },
   {
     "id": "kraznys-mo-nakloz",
@@ -2371,7 +2423,8 @@
         "locationId": "astapor",
         "importance": 40
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "lady-crane",
@@ -2387,7 +2440,8 @@
         "locationId": "braavos",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "lady-direwolf",
@@ -2403,7 +2457,8 @@
         "locationId": "kingsroad",
         "importance": 32
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "lancel-lannister",
@@ -2429,7 +2484,8 @@
         "locationId": "kings-landing",
         "importance": 56
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "leaf",
@@ -2445,7 +2501,8 @@
         "locationId": "three-eyed-raven-cave",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "lommy",
@@ -2461,7 +2518,8 @@
         "importance": 34,
         "locationId": "riverlands-road-north"
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "loras-tyrell",
@@ -2496,7 +2554,8 @@
         "locationId": "baelor-great-sept",
         "importance": 86
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/8/87/Loras_Tyrell_profile.png"
   },
   {
     "id": "lord-of-bones",
@@ -2513,7 +2572,8 @@
         "locationId": "hardhome",
         "importance": 32
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "lyanna-mormont",
@@ -2547,7 +2607,8 @@
         "locationId": "winterfell",
         "importance": 88
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "lysa-arryn",
@@ -2573,7 +2634,8 @@
         "locationId": "eyrie",
         "importance": 75
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "mace-tyrell",
@@ -2598,7 +2660,8 @@
         "locationId": "baelor-great-sept",
         "importance": 80
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "maester-aemon",
@@ -2615,7 +2678,8 @@
         "locationId": "castle-black",
         "importance": 71
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "maester-cressen",
@@ -2632,7 +2696,8 @@
         "affiliationId": "baratheon-stannis",
         "locationId": "dragonstone"
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "maester-luwin",
@@ -2649,7 +2714,8 @@
         "affiliationId": "stark",
         "locationId": "winterfell"
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "mag-mar",
@@ -2666,7 +2732,8 @@
         "locationId": "castle-black",
         "importance": 34
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "mance-rayder",
@@ -2701,7 +2768,8 @@
         "locationId": "the-wall",
         "importance": 86
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/b/bd/Mance_Rayder_profile.jpg"
   },
   {
     "id": "margaery-tyrell",
@@ -2736,7 +2804,8 @@
         "locationId": "baelor-great-sept",
         "importance": 96
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/13/Margaery_Tyrell_profile_infobox.jpg"
   },
   {
     "id": "matthos-seaworth",
@@ -2753,7 +2822,8 @@
         "affiliationId": "baratheon-stannis",
         "locationId": "blackwater-bay"
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "meera-reed",
@@ -2779,7 +2849,8 @@
         "locationId": "winterfell",
         "importance": 68
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "melisandre",
@@ -2832,7 +2903,8 @@
         "locationId": "winterfell",
         "importance": 88
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/d/d7/Melisandre_S8.jpg"
   },
   {
     "id": "meryn-trant",
@@ -2849,7 +2921,8 @@
         "locationId": "braavos",
         "importance": 48
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "mirri-maz-duur",
@@ -2866,7 +2939,8 @@
         "locationId": "dany-desert-camp",
         "importance": 44
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "mossador",
@@ -2883,7 +2957,8 @@
         "locationId": "meereen",
         "importance": 62
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "mycah",
@@ -2899,7 +2974,8 @@
         "locationId": "kingsroad",
         "importance": 36
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "myranda",
@@ -2916,7 +2992,8 @@
         "locationId": "winterfell",
         "importance": 44
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "myrcella-baratheon",
@@ -2942,7 +3019,8 @@
         "locationId": "dorne",
         "importance": 74
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "nymeria-sand",
@@ -2959,7 +3037,8 @@
         "locationId": "narrow-sea-route",
         "importance": 74
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "obara-sand",
@@ -2976,7 +3055,8 @@
         "locationId": "narrow-sea-route",
         "importance": 74
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "oberyn-martell",
@@ -3011,7 +3091,8 @@
         "locationId": "kings-landing",
         "importance": 94
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/c/c1/Oberyn_Martell.jpg"
   },
   {
     "id": "olenna-tyrell",
@@ -3054,7 +3135,8 @@
         "locationId": "highgarden",
         "importance": 92
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/b/b9/Olenna_Tyrell.jpg"
   },
   {
     "id": "olly",
@@ -3070,7 +3152,8 @@
         "locationId": "castle-black",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "one-of-the-thirteen",
@@ -3086,7 +3169,8 @@
         "importance": 18,
         "locationId": "qarth"
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "orell",
@@ -3112,7 +3196,8 @@
         "locationId": "queenscrown",
         "importance": 42
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "osha",
@@ -3136,7 +3221,8 @@
         "locationId": "castle-black",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "othell-yarwyck",
@@ -3152,7 +3238,8 @@
         "locationId": "castle-black",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "petyr-baelish",
@@ -3196,7 +3283,8 @@
         "locationId": "winterfell",
         "importance": 98
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/9/9f/Profile-Littlefinger.png"
   },
   {
     "id": "podrick-payne",
@@ -3212,7 +3300,8 @@
         "locationId": "kings-landing",
         "importance": 55
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "polliver",
@@ -3229,7 +3318,8 @@
         "locationId": "inn-at-the-crossroads",
         "importance": 28
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "pyat-pree",
@@ -3245,7 +3335,8 @@
         "importance": 56,
         "locationId": "house-of-the-undying"
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "pycelle",
@@ -3280,7 +3371,8 @@
         "locationId": "kings-landing",
         "importance": 76
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "pyp",
@@ -3297,7 +3389,8 @@
         "locationId": "castle-black",
         "importance": 49
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "qhorin-halfhand",
@@ -3314,7 +3407,8 @@
         "affiliationId": "night-watch",
         "locationId": "beyond-the-wall-haunted-forest"
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "qotho",
@@ -3331,7 +3425,8 @@
         "locationId": "khalasar-camp",
         "importance": 36
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "rakharo",
@@ -3348,7 +3443,8 @@
         "affiliationId": "targaryen",
         "locationId": "red-waste"
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "ramsay-snow",
@@ -3392,7 +3488,8 @@
         "locationId": "meereen",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/d/d4/Ramsay_Bolton_infobox.jpg"
   },
   {
     "id": "randyll-tarly",
@@ -3409,7 +3506,8 @@
         "locationId": "highgarden",
         "importance": 85
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "renly-baratheon",
@@ -3435,7 +3533,8 @@
         "affiliationId": "renly-tyrell",
         "locationId": "renly-camp-stormlands"
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/4/47/Renly_Baratheon_profile.jpg"
   },
   {
     "id": "rhaego",
@@ -3452,7 +3551,8 @@
         "locationId": "dany-desert-camp",
         "importance": 30
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "rickard-karstark",
@@ -3478,7 +3578,8 @@
         "locationId": "riverrun",
         "importance": 58
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "rickon-stark",
@@ -3522,7 +3623,8 @@
         "locationId": "meereen",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "robb-stark",
@@ -3557,7 +3659,8 @@
         "locationId": "the-twins",
         "importance": 99
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/0/00/Robb_Stark_Profile_S3.png"
   },
   {
     "id": "robert-baratheon",
@@ -3583,7 +3686,8 @@
         "locationId": "kings-landing",
         "importance": 95
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/d/d4/RobertBaratheon.jpg"
   },
   {
     "id": "roose-bolton",
@@ -3599,7 +3703,8 @@
         "locationId": "castle-black",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "ros",
@@ -3616,7 +3721,8 @@
         "locationId": "kings-landing",
         "importance": 38
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "roslin-frey",
@@ -3633,7 +3739,8 @@
         "locationId": "the-twins",
         "importance": 36
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "samwell-tarly",
@@ -3704,7 +3811,8 @@
         "locationId": "kings-landing",
         "importance": 84
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/e/e9/Sam_at_Winterfell.jpg"
   },
   {
     "id": "sand-snakes",
@@ -3721,7 +3829,8 @@
         "locationId": "dorne",
         "importance": 71
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "sandor-clegane",
@@ -3772,7 +3881,8 @@
         "locationId": "kings-landing",
         "importance": 92
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/b/bc/Sandor_Clegane_Season_7_Promo_Image.png"
   },
   {
     "id": "sansa-stark",
@@ -3915,7 +4025,8 @@
         "locationId": "winterfell",
         "importance": 100
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/7/7e/Sansa_Stark_S8.jpg"
   },
   {
     "id": "septa-mordane",
@@ -3932,7 +4043,8 @@
         "locationId": "kings-landing",
         "importance": 40
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "ser-alton-lannister",
@@ -3949,7 +4061,8 @@
         "affiliationId": "lannister",
         "locationId": "north-army-camp"
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "ser-amory-lorch",
@@ -3966,7 +4079,8 @@
         "affiliationId": "lannister",
         "locationId": "harrenhal"
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "ser-dontos-hollard",
@@ -3991,7 +4105,8 @@
         "locationId": "blackwater-bay",
         "importance": 42
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "ser-hugh-of-the-vale",
@@ -4008,7 +4123,8 @@
         "locationId": "kings-landing",
         "importance": 35
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "ser-mandon-moore",
@@ -4025,7 +4141,8 @@
         "affiliationId": "lannister",
         "locationId": "kings-landing"
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "ser-rodrik-cassel",
@@ -4042,7 +4159,8 @@
         "affiliationId": "stark",
         "locationId": "winterfell"
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "shae",
@@ -4058,7 +4176,8 @@
         "locationId": "kings-landing",
         "importance": 63
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "shireen-baratheon",
@@ -4075,7 +4194,8 @@
         "locationId": "stannis-northern-camp",
         "importance": 72
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "smalljon-umber",
@@ -4091,7 +4211,8 @@
         "locationId": "meereen",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "stafford-lannister",
@@ -4108,7 +4229,8 @@
         "affiliationId": "lannister",
         "locationId": "north-army-camp"
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "stannis-baratheon",
@@ -4134,7 +4256,8 @@
         "locationId": "stannis-northern-camp",
         "importance": 94
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/1b/Stannis_Baratheon_profile.jpg"
   },
   {
     "id": "stiv",
@@ -4150,7 +4273,8 @@
         "locationId": "winterfell-woods",
         "importance": 28
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "styr",
@@ -4167,7 +4291,8 @@
         "locationId": "castle-black",
         "importance": 46
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "summer",
@@ -4183,7 +4308,8 @@
         "locationId": "three-eyed-raven-cave",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "talisa-maegyr",
@@ -4209,7 +4335,8 @@
         "locationId": "the-twins",
         "importance": 72
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "the-waif",
@@ -4225,7 +4352,8 @@
         "locationId": "braavos",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "theon-greyjoy",
@@ -4359,7 +4487,8 @@
         "locationId": "winterfell",
         "importance": 94
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/5/55/Theon_profile.jpg"
   },
   {
     "id": "three-eyed-raven",
@@ -4375,7 +4504,8 @@
         "locationId": "three-eyed-raven-cave",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "tickler",
@@ -4392,7 +4522,8 @@
         "affiliationId": "lannister",
         "locationId": "harrenhal"
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "tommen-baratheon",
@@ -4436,7 +4567,8 @@
         "locationId": "kings-landing",
         "importance": 95
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/5/58/Tommen_Baratheon.jpg"
   },
   {
     "id": "tormund-giantsbane",
@@ -4453,7 +4585,8 @@
         "locationId": "castle-black",
         "importance": 79
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/f/f3/Tormund_S8.jpg"
   },
   {
     "id": "torrhen-karstark",
@@ -4470,7 +4603,8 @@
         "affiliationId": "stark",
         "locationId": "north-army-camp"
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "tower-guard",
@@ -4487,7 +4621,8 @@
         "locationId": "tower-of-joy",
         "importance": 34
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "trystane-martell",
@@ -4503,7 +4638,8 @@
         "locationId": "castle-black",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "tyene-sand",
@@ -4520,7 +4656,8 @@
         "locationId": "kings-landing",
         "importance": 70
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "tyrion-lannister",
@@ -4708,7 +4845,8 @@
         "locationId": "dragonpit",
         "importance": 100
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/5/58/Tyrion_main_s7_e6.jpg"
   },
   {
     "id": "tywin-lannister",
@@ -4734,7 +4872,8 @@
         "locationId": "kings-landing",
         "importance": 99
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/7/79/Tywin_Lannister_Profile_S4.jpg"
   },
   {
     "id": "vardis-egen",
@@ -4751,7 +4890,8 @@
         "locationId": "eyrie",
         "importance": 38
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "vayon-poole",
@@ -4768,7 +4908,8 @@
         "locationId": "kings-landing",
         "importance": 42
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "viserys-targaryen",
@@ -4794,7 +4935,8 @@
         "locationId": "vaes-dothrak",
         "importance": 82
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/3/36/Viserys_profile_infobox.jpg"
   },
   {
     "id": "walda-bolton",
@@ -4810,7 +4952,8 @@
         "locationId": "castle-black",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "walder-frey",
@@ -4835,7 +4978,8 @@
         "locationId": "the-twins",
         "importance": 84
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "wallen",
@@ -4851,7 +4995,8 @@
         "locationId": "winterfell-woods",
         "importance": 28
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "waymar-royce",
@@ -4868,7 +5013,8 @@
         "locationId": "beyond-the-wall-haunted-forest",
         "importance": 44
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "will-ranger",
@@ -4885,7 +5031,8 @@
         "locationId": "winterfell",
         "importance": 40
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "wun-wun",
@@ -4901,7 +5048,8 @@
         "locationId": "meereen",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "xaro-xhoan-daxos",
@@ -4917,7 +5065,8 @@
         "importance": 60,
         "locationId": "qarth"
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "yara-greyjoy",
@@ -4970,7 +5119,8 @@
         "locationId": "narrow-sea-route",
         "importance": 88
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/4/41/Yara_Greyjoy_S8.jpg"
   },
   {
     "id": "ygritte",
@@ -4987,7 +5137,8 @@
         "locationId": "castle-black",
         "importance": 86
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "yoren",
@@ -5004,7 +5155,8 @@
         "affiliationId": "night-watch",
         "locationId": "riverlands-road-north"
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "night-king",
@@ -5030,7 +5182,8 @@
         "locationId": "winterfell",
         "importance": 100
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/f/f4/Night_King_Hardhome.jpg"
   },
   {
     "id": "dickon-tarly",
@@ -5047,7 +5200,8 @@
         "locationId": "highgarden",
         "importance": 73
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "thoros-of-myr",
@@ -5064,7 +5218,8 @@
         "locationId": "beyond-the-wall-haunted-forest",
         "importance": 75
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "drogon",
@@ -5081,7 +5236,8 @@
         "locationId": "highgarden",
         "importance": 95
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "viserion",
@@ -5107,7 +5263,8 @@
         "locationId": "eastwatch-by-the-sea",
         "importance": 100
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/7/70/Viserion_S8_Profile.jpg"
   },
   {
     "id": "eddison-tollett",
@@ -5124,7 +5281,8 @@
         "locationId": "winterfell",
         "importance": 76
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "qyburn",
@@ -5141,7 +5299,8 @@
         "locationId": "kings-landing",
         "importance": 82
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "missandei",
@@ -5158,7 +5317,8 @@
         "locationId": "kings-landing",
         "importance": 92
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/18/Missandei_S8.jpg"
   },
   {
     "id": "rhaegal",
@@ -5175,7 +5335,8 @@
         "locationId": "narrow-sea-route",
         "importance": 96
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/8/8e/Rhaegal_S8_Profile.jpg"
   },
   {
     "id": "varys",
@@ -5192,7 +5353,8 @@
         "locationId": "dragonstone",
         "importance": 93
       }
-    ]
+    ],
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/e/ea/Varys_S8.jpg"
   },
   {
     "id": "gregor-clegane",
@@ -5209,7 +5371,8 @@
         "locationId": "kings-landing",
         "importance": 88
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "harry-strickland",
@@ -5226,7 +5389,8 @@
         "locationId": "kings-landing",
         "importance": 78
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "ghost-direwolf",
@@ -5243,7 +5407,8 @@
         "locationId": "winterfell",
         "importance": 60
       }
-    ]
+    ],
+    "characterImageUrl": ""
   },
   {
     "id": "ned-umber",
@@ -5260,6 +5425,7 @@
         "locationId": "last-hearth",
         "importance": 65
       }
-    ]
+    ],
+    "characterImageUrl": ""
   }
 ]

@@ -11,7 +11,8 @@
         "summary": "מחזיק במבצר חזק מאוד, אך אינו ממיר את ביטחונו לכוח מדיני אפקטיבי."
       }
     ],
-    "relationshipTimeline": []
+    "relationshipTimeline": [],
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/15/House-Arryn-Main-Shield.PNG"
   },
   {
     "id": "baratheon",
@@ -102,7 +103,8 @@
         "intensity": 84,
         "summary": "הכשרת גנדרי בידי דאינריז מחזירה את בית באראתיאון רשמית לסדר הפיאודלי החדש."
       }
-    ]
+    ],
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/b/b4/House-Baratheon-Main-Shield.PNG"
   },
   {
     "id": "baratheon-stannis",
@@ -263,7 +265,8 @@
         "intensity": 94,
         "summary": "סטאניס חוצה גבול מוסרי פנימי כדי לנסות לשמור על סיכוייו במערכה מול בית בולטון."
       }
-    ]
+    ],
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/4/46/House-Baratheon-of-Dragonstone-Main-Shield.PNG"
   },
   {
     "id": "bolton",
@@ -418,7 +421,8 @@
         "intensity": 95,
         "summary": "ריקון מוחזק כבן ערובה בידי ראמזי והעימות עם כל מי שיתלכד סביב ג׳ון וסאנסה נעשה בלתי נמנע."
       }
-    ]
+    ],
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/d/dd/House-Bolton-Main-Shield.PNG"
   },
   {
     "id": "brotherhood-without-banners",
@@ -440,7 +444,8 @@
         "intensity": 74,
         "summary": "האחווה ללא דגלים פועלת בחלל שנוצר אחרי קריסת הסמכות הרשמית בארצות הנהר."
       }
-    ]
+    ],
+    "factionSigilUrl": ""
   },
   {
     "id": "dothraki",
@@ -463,7 +468,8 @@
         "intensity": 84,
         "summary": "דרוגו קושר לראשונה את כוחו הצבאי ישירות לפלישה אל ווסטרוז."
       }
-    ]
+    ],
+    "factionSigilUrl": ""
   },
   {
     "id": "ellaria-dorne",
@@ -497,7 +503,8 @@
         "intensity": 78,
         "summary": "ההפיכה בדורן מייצרת שלטון חדש ונקמני המתעב את בית לאניסטר."
       }
-    ]
+    ],
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/7/74/House-Martell-Main-Shield.PNG"
   },
   {
     "id": "faith-militant",
@@ -602,7 +609,8 @@
         "intensity": 82,
         "summary": "הדרורים מוכיחים שהם מסוגלים לכפות גם על המלכה-האם כניעה פומבית, אף שסרסיי חוזרת אל המבצר האדום."
       }
-    ]
+    ],
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/a/ab/FaithMilitantLogo.png"
   },
   {
     "id": "frey",
@@ -651,7 +659,8 @@
         "intensity": 100,
         "summary": "בית פריי שובר באלימות את בריתו עם בית סטארק־טאלי."
       }
-    ]
+    ],
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/16/House-Frey-Main-Shield.PNG"
   },
   {
     "id": "greyjoy",
@@ -749,7 +758,8 @@
         "intensity": 98,
         "summary": "יורון משמיד חלק גדול מן הצי של יארה ותיאון ולוכד את יארה כשבויה."
       }
-    ]
+    ],
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/8/86/House-Greyjoy-Main-Shield.PNG"
   },
   {
     "id": "greyjoy-yara-theon",
@@ -763,7 +773,8 @@
         "summary": "חלש טריטוריאלית אך חזק דיפלומטית בזכות הברית;"
       }
     ],
-    "relationshipTimeline": []
+    "relationshipTimeline": [],
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/8/86/House-Greyjoy-Main-Shield.PNG"
   },
   {
     "id": "lannister",
@@ -1276,7 +1287,8 @@
         "intensity": 94,
         "summary": "סרסיי נשענת על יורון, צי הברזל וחברת הזהב כדי לקבע עליונות דרומית מחודשת."
       }
-    ]
+    ],
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/8/8b/House-Lannister-Main-Shield.PNG"
   },
   {
     "id": "lhazareen",
@@ -1284,7 +1296,8 @@
     "sigil": null,
     "themeColor": "#a8906e",
     "powerTimeline": [],
-    "relationshipTimeline": []
+    "relationshipTimeline": [],
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/14/House-Baratheon-of-Storm%27s-End-Main-Shield.PNG"
   },
   {
     "id": "littlefinger-vale",
@@ -1316,7 +1329,8 @@
         "intensity": 94,
         "summary": "בייליש משתלט מעשית על מרכז הכוח של העמק לאחר מותה של ליסה."
       }
-    ]
+    ],
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/7/7e/House-Baelish-Main-Shield.PNG"
   },
   {
     "id": "martell",
@@ -1396,7 +1410,8 @@
         "intensity": 44,
         "summary": "דוראן כופה הסדר עם מעלה המלך ומנסה להפוך עימות לניהול יחסים, אך המתיחות הבסיסית נשארת."
       }
-    ]
+    ],
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/7/74/House-Martell-Main-Shield.PNG"
   },
   {
     "id": "night-watch",
@@ -1547,7 +1562,8 @@
         "intensity": 68,
         "summary": "אחרי המרד וההוצאות להורג, החומה נשארת מפוררת וחסרת הנהגה ברורה מול איומי הצפון."
       }
-    ]
+    ],
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/f/f6/Night%27s_Watch_logo.png"
   },
   {
     "id": "renly-tyrell",
@@ -1571,7 +1587,8 @@
         "summary": "הטוען עצמו מת, והמחנה מתפרק."
       }
     ],
-    "relationshipTimeline": []
+    "relationshipTimeline": [],
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/14/House-Baratheon-of-Storm%27s-End-Main-Shield.PNG"
   },
   {
     "id": "stark",
@@ -2023,7 +2040,8 @@
         "intensity": 36,
         "summary": "בית סטארק עומד בראש הסדר החדש, בעוד בית לאניסטר שורד רק דרך תפקידו הממשלי של טיריון."
       }
-    ]
+    ],
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/8/8a/House-Stark-Main-Shield.PNG"
   },
   {
     "id": "targaryen",
@@ -2423,7 +2441,8 @@
         "intensity": 100,
         "summary": "דאינריז ודרוגון משמידים את צי הברזל, את חברת הזהב ואת מערכי ההגנה של מעלה-מלך."
       }
-    ]
+    ],
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/4/43/House-Targaryen-Main-Shield.PNG"
   },
   {
     "id": "tarly",
@@ -2437,7 +2456,8 @@
         "summary": "עדיין חזק אזורית, אך מתגלה בו סדק משפחתי משמעותי;"
       }
     ],
-    "relationshipTimeline": []
+    "relationshipTimeline": [],
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/c/c8/House-Tarly-Main-Shield.PNG"
   },
   {
     "id": "thenns",
@@ -2459,7 +2479,8 @@
         "intensity": 90,
         "summary": "שבטי הת׳ן סופגים אבדות כבדות במהלך ההסתערות על החומה."
       }
-    ]
+    ],
+    "factionSigilUrl": ""
   },
   {
     "id": "tyrell",
@@ -2533,7 +2554,8 @@
         "intensity": 93,
         "summary": "אולנה טיירל כורתת ברית עם אלריה סאנד נגד הכתר הלאניסטרי."
       }
-    ]
+    ],
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/c/c6/House-Tyrell-Main-Shield.PNG"
   },
   {
     "id": "white-walkers",
@@ -2658,7 +2680,8 @@
         "intensity": 100,
         "summary": "הקרב על וינטרפל מביא את מלחמת הקיום בין המתים לחיים לשיא ולהכרעה."
       }
-    ]
+    ],
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/8/83/White_walkers_sigil.png"
   },
   {
     "id": "wildlings",
@@ -2712,6 +2735,7 @@
         "intensity": 97,
         "summary": "הפראים מפעילים מתקפה דו־כיוונית אך אינם מצליחים לשבור את שחור־הטירה."
       }
-    ]
+    ],
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/8/89/Free_Folk_Sigil.png"
   }
 ]
