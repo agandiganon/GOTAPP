@@ -1,3 +1,7 @@
+"use client";
+
+import { useEffect, useMemo, useState } from "react";
+
 import { cn } from "@/lib/utils";
 
 interface CharacterPortraitProps {
@@ -135,22 +139,79 @@ export function CharacterPortrait({
   factionColor = "#8ea7cf",
   className,
 }: CharacterPortraitProps) {
-  const fallbackSrc = getPortraitSrc(name, factionColor ?? "#8ea7cf");
-  const src = imageUrl?.trim() ? imageUrl : fallbackSrc;
+  const fallbackSrc = useMemo(
+    () => getPortraitSrc(name, factionColor ?? "#8ea7cf"),
+    [factionColor, name],
+  );
+  const candidateSrc = imageUrl?.trim() ? imageUrl.trim() : "";
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [hasLoadError, setHasLoadError] = useState(!candidateSrc);
+
+  useEffect(() => {
+    if (!candidateSrc) {
+      setIsLoaded(false);
+      setHasLoadError(true);
+      return;
+    }
+
+    let cancelled = false;
+    const probe = new window.Image();
+
+    setIsLoaded(false);
+    setHasLoadError(false);
+
+    probe.onload = () => {
+      if (cancelled) {
+        return;
+      }
+
+      setIsLoaded(true);
+      setHasLoadError(false);
+    };
+
+    probe.onerror = () => {
+      if (cancelled) {
+        return;
+      }
+
+      setIsLoaded(false);
+      setHasLoadError(true);
+    };
+
+    probe.src = candidateSrc;
+
+    return () => {
+      cancelled = true;
+    };
+  }, [candidateSrc]);
 
   return (
     <div className={cn("relative h-full w-full overflow-hidden", className)}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src={src}
+        src={fallbackSrc}
         alt={`דיוקן סמלי של ${name}`}
         loading="lazy"
         draggable={false}
         className="h-full w-full object-cover"
-        onError={(event) => {
-          event.currentTarget.src = fallbackSrc;
-        }}
       />
+      {!hasLoadError && candidateSrc ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={candidateSrc}
+          alt=""
+          loading="lazy"
+          draggable={false}
+          className={cn(
+            "absolute inset-0 h-full w-full object-cover transition-opacity duration-500",
+            isLoaded ? "opacity-100" : "opacity-0",
+          )}
+          onError={() => {
+            setIsLoaded(false);
+            setHasLoadError(true);
+          }}
+        />
+      ) : null}
     </div>
   );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Shield } from "lucide-react";
 
 import { cn } from "@/lib/utils";
@@ -18,9 +18,49 @@ export function FactionSigilBadge({
   themeColor = "#b28b53",
   className,
 }: FactionSigilBadgeProps) {
-  const [hasImageError, setHasImageError] = useState(false);
-  const shouldRenderImage = Boolean(sigilUrl) && !hasImageError;
-  const resolvedSigilUrl = shouldRenderImage ? (sigilUrl ?? undefined) : undefined;
+  const resolvedSigilUrl = sigilUrl?.trim() ? sigilUrl.trim() : "";
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [hasImageError, setHasImageError] = useState(!resolvedSigilUrl);
+
+  useEffect(() => {
+    if (!resolvedSigilUrl) {
+      setIsLoaded(false);
+      setHasImageError(true);
+      return;
+    }
+
+    let cancelled = false;
+    const probe = new window.Image();
+
+    setIsLoaded(false);
+    setHasImageError(false);
+
+    probe.onload = () => {
+      if (cancelled) {
+        return;
+      }
+
+      setIsLoaded(true);
+      setHasImageError(false);
+    };
+
+    probe.onerror = () => {
+      if (cancelled) {
+        return;
+      }
+
+      setIsLoaded(false);
+      setHasImageError(true);
+    };
+
+    probe.src = resolvedSigilUrl;
+
+    return () => {
+      cancelled = true;
+    };
+  }, [resolvedSigilUrl]);
+
+  const showImage = Boolean(resolvedSigilUrl) && !hasImageError;
 
   return (
     <span
@@ -35,7 +75,7 @@ export function FactionSigilBadge({
       title={name}
       aria-label={`סמל הבית של ${name}`}
     >
-      {resolvedSigilUrl ? (
+      {showImage ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
           src={resolvedSigilUrl}
@@ -43,15 +83,21 @@ export function FactionSigilBadge({
           loading="lazy"
           referrerPolicy="no-referrer"
           draggable={false}
-          className="h-full w-full object-contain p-1.5"
-          onError={() => setHasImageError(true)}
+          className={cn(
+            "h-full w-full object-contain p-1.5 transition-opacity duration-300",
+            isLoaded ? "opacity-100" : "opacity-0",
+          )}
+          onError={() => {
+            setIsLoaded(false);
+            setHasImageError(true);
+          }}
         />
       ) : null}
 
       <span
         className={cn(
           "pointer-events-none absolute inset-0 flex items-center justify-center",
-          shouldRenderImage ? "hidden" : "flex",
+          showImage && isLoaded ? "hidden" : "flex",
         )}
       >
         <Shield className="h-4.5 w-4.5 text-ink/85" strokeWidth={1.8} />

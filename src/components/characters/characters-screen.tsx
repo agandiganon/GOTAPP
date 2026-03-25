@@ -316,7 +316,7 @@ export function CharactersScreen() {
                         faction ? (
                           <FactionSigilBadge
                             name={faction.displayName}
-                            sigilUrl={faction.factionSigilUrl ?? faction.sigil}
+                            sigilUrl={faction.factionSigilUrl || faction.sigil}
                             themeColor={faction.themeColor}
                             className="h-10 w-10"
                           />
