@@ -280,7 +280,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/0/05/Balon_Greyjoy_S2.jpg"
   },
   {
     "id": "barristan-selmy",
@@ -307,7 +307,7 @@
         "importance": 86
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/0/05/Barristan_Selmy_S1.jpg"
   },
   {
     "id": "benjen-stark",
@@ -590,7 +590,7 @@
         "importance": 82
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/18/BrienneOfTarthSeason2Promo.jpg"
   },
   {
     "id": "bronn",
@@ -626,7 +626,7 @@
         "importance": 76
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/3/36/BronnSeason1Promo.jpg"
   },
   {
     "id": "brother-ray",
@@ -688,7 +688,7 @@
         "importance": 97
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/3/34/Catelyn_Stark_Season_1_Promo.jpg"
   },
   {
     "id": "cersei-lannister",
@@ -1093,7 +1093,7 @@
         "importance": 90
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/f/f1/DavosSeaworthSeason2Promo.jpg"
   },
   {
     "id": "doran-martell",
@@ -1253,7 +1253,7 @@
         "importance": 72
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/d/df/EllariaSandSeason4Promo.jpg"
   },
   {
     "id": "euron-greyjoy",
@@ -1313,7 +1313,7 @@
         "importance": 90
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/5/50/EuronGreyjoySeason6Promo.jpg"
   },
   {
     "id": "gendry",
@@ -1400,7 +1400,7 @@
         "importance": 84
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/2/2f/GendrySeason1Promo.jpg"
   },
   {
     "id": "gilly",
@@ -1471,7 +1471,7 @@
         "importance": 86
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/0/0f/GreyWormSeason3Promo.jpg"
   },
   {
     "id": "harald-karstark",
@@ -1523,7 +1523,7 @@
         "locationId": "kings-landing"
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/b/b5/HighSeptorSeason1Promo.jpg"
   },
   {
     "id": "high-sparrow",
@@ -1559,7 +1559,7 @@
         "importance": 96
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/5/52/High_Sparrow_S5.jpg"
   },
   {
     "id": "hizdahr-zo-loraq",
@@ -1852,7 +1852,7 @@
         "importance": 74
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/f/f6/JeorMormontSeason1Promo.jpg"
   },
   {
     "id": "joffrey-baratheon",
@@ -1888,7 +1888,7 @@
         "importance": 97
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/7/7a/Joffrey_Baratheon_S1.jpg"
   },
   {
     "id": "jojen-reed",
@@ -2283,7 +2283,7 @@
         "importance": 94
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/4/47/JorahMormontSeason1Promo.jpg"
   },
   {
     "id": "jory-cassel",
@@ -2363,7 +2363,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/1e/Kevan_Lannister_S1.jpg"
   },
   {
     "id": "khal-drogo",
@@ -2399,7 +2399,7 @@
         "importance": 88
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/0/06/KhalDrogoSeason1Promo.jpg"
   },
   {
     "id": "kraznys-mo-nakloz",
@@ -2485,7 +2485,7 @@
         "importance": 56
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/2/29/Lancel_Lannister_S1.jpg"
   },
   {
     "id": "leaf",
@@ -2555,7 +2555,7 @@
         "importance": 86
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/c/ca/LorasTyrellSeason1Promo.jpg"
   },
   {
     "id": "lord-of-bones",
@@ -2608,7 +2608,7 @@
         "importance": 88
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/c/c5/Lyanna_Mormont_S6.jpg"
   },
   {
     "id": "lysa-arryn",
@@ -2769,7 +2769,7 @@
         "importance": 86
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/e/ed/ManceRayderSeason3Promo.jpg"
   },
   {
     "id": "margaery-tyrell",
@@ -2904,7 +2904,7 @@
         "importance": 88
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/8/8e/Melisandre_Season_2_Promo.jpg"
   },
   {
     "id": "meryn-trant",
@@ -3020,7 +3020,7 @@
         "importance": 74
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/e/e5/Myrcella-Baratheon-S1.png"
   },
   {
     "id": "nymeria-sand",
@@ -3092,7 +3092,7 @@
         "importance": 94
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/7/7b/OberynMartellSeason4Promo.jpg"
   },
   {
     "id": "olenna-tyrell",
@@ -3136,7 +3136,7 @@
         "importance": 92
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/16/Olenna_Tyrell_S3.jpg"
   },
   {
     "id": "olly",
@@ -3284,7 +3284,7 @@
         "importance": 98
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/d/da/LittlefingerSeason1Promo.jpg"
   },
   {
     "id": "podrick-payne",
@@ -3534,7 +3534,7 @@
         "locationId": "renly-camp-stormlands"
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/5/52/RenlyBaratheonSeason1Promo.jpg"
   },
   {
     "id": "rhaego",
@@ -3624,7 +3624,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/b/b8/RickonStarkSeason1Promo.jpg"
   },
   {
     "id": "robb-stark",
@@ -3660,7 +3660,7 @@
         "importance": 99
       }
     ],
-    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/0/00/Robb_Stark_Profile_S3.png"
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/5/51/Robb_Stark_Season_1_Promo.jpg"
   },
   {
     "id": "robert-baratheon",
@@ -3687,7 +3687,7 @@
         "importance": 95
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/d/d4/RobertBaratheon.jpg"
   },
   {
     "id": "roose-bolton",
@@ -3704,7 +3704,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/2/2e/RooseBoltonSeason2Promo.jpg"
   },
   {
     "id": "ros",
@@ -3812,7 +3812,7 @@
         "importance": 84
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/4/4f/SamwellTarlySeason1Promo.jpg"
   },
   {
     "id": "sand-snakes",
@@ -3882,7 +3882,7 @@
         "importance": 92
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/6/63/SandorCleganeSeason1Promo.jpg"
   },
   {
     "id": "sansa-stark",
@@ -4177,7 +4177,7 @@
         "importance": 63
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/0/0f/Shae_S1.jpg"
   },
   {
     "id": "shireen-baratheon",
@@ -4257,7 +4257,7 @@
         "importance": 94
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/7/7b/Profile-StannisBaratheon-S2.png"
   },
   {
     "id": "stiv",
@@ -4488,7 +4488,7 @@
         "importance": 94
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/e/ed/TheonGreyjoySeason1Promo.jpg"
   },
   {
     "id": "three-eyed-raven",
@@ -4568,7 +4568,7 @@
         "importance": 95
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/6/6d/Tommen-Baratheon-S1.png"
   },
   {
     "id": "tormund-giantsbane",
@@ -4586,7 +4586,7 @@
         "importance": 79
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/14/TormundGiantsbaneSeason3Promo.jpg"
   },
   {
     "id": "torrhen-karstark",
@@ -4873,7 +4873,7 @@
         "importance": 99
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/3/36/Tywin_Lannister_S1.jpg"
   },
   {
     "id": "vardis-egen",
@@ -4936,7 +4936,7 @@
         "importance": 82
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/d/df/ViserysTargaryenSeason1Promo.jpg"
   },
   {
     "id": "walda-bolton",
@@ -4979,7 +4979,7 @@
         "importance": 84
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/c/c8/WalderFreySeason1Promo.jpg"
   },
   {
     "id": "wallen",
@@ -5120,7 +5120,7 @@
         "importance": 88
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/b/ba/Yara_Greyjoy_S2.jpg"
   },
   {
     "id": "ygritte",
@@ -5138,7 +5138,7 @@
         "importance": 86
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/6/6b/Ygritte_S2.jpg"
   },
   {
     "id": "yoren",
@@ -5237,7 +5237,7 @@
         "importance": 95
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/0/06/Drogon-S1.jpg"
   },
   {
     "id": "viserion",
@@ -5300,7 +5300,7 @@
         "importance": 82
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/13/QyburnSeason3Promo.jpg"
   },
   {
     "id": "missandei",
@@ -5318,7 +5318,7 @@
         "importance": 92
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/1c/MissandeiSeason3Promo.jpg"
   },
   {
     "id": "rhaegal",
@@ -5354,7 +5354,7 @@
         "importance": 93
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/8/87/VarysSeason1Promo.jpg"
   },
   {
     "id": "gregor-clegane",
@@ -5372,7 +5372,7 @@
         "importance": 88
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/a/ac/Gregor_Clegane_S1.jpg"
   },
   {
     "id": "harry-strickland",

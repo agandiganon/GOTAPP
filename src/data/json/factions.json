@@ -12,7 +12,7 @@
       }
     ],
     "relationshipTimeline": [],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/15/House-Arryn-Main-Shield.PNG"
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/1c/House-Arryn-Main-Shield.PNG"
   },
   {
     "id": "baratheon",
@@ -104,7 +104,7 @@
         "summary": "הכשרת גנדרי בידי דאינריז מחזירה את בית באראתיאון רשמית לסדר הפיאודלי החדש."
       }
     ],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/b/b4/House-Baratheon-Main-Shield.PNG"
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/3/36/House-Baratheon-Main-Shield.PNG"
   },
   {
     "id": "baratheon-stannis",
@@ -266,7 +266,7 @@
         "summary": "סטאניס חוצה גבול מוסרי פנימי כדי לנסות לשמור על סיכוייו במערכה מול בית בולטון."
       }
     ],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/4/46/House-Baratheon-of-Dragonstone-Main-Shield.PNG"
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/1b/House-Baratheon-of-Dragonstone-Main-Shield.PNG"
   },
   {
     "id": "bolton",
@@ -759,7 +759,7 @@
         "summary": "יורון משמיד חלק גדול מן הצי של יארה ותיאון ולוכד את יארה כשבויה."
       }
     ],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/8/86/House-Greyjoy-Main-Shield.PNG"
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/c/ca/House-Greyjoy-Main-Shield.PNG"
   },
   {
     "id": "greyjoy-yara-theon",
@@ -1288,7 +1288,7 @@
         "summary": "סרסיי נשענת על יורון, צי הברזל וחברת הזהב כדי לקבע עליונות דרומית מחודשת."
       }
     ],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/8/8b/House-Lannister-Main-Shield.PNG"
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/2/29/House-Lannister-Main-Shield.PNG"
   },
   {
     "id": "lhazareen",
@@ -2041,7 +2041,7 @@
         "summary": "בית סטארק עומד בראש הסדר החדש, בעוד בית לאניסטר שורד רק דרך תפקידו הממשלי של טיריון."
       }
     ],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/8/8a/House-Stark-Main-Shield.PNG"
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/1a/House-Stark-Main-Shield.PNG"
   },
   {
     "id": "targaryen",
@@ -2442,7 +2442,7 @@
         "summary": "דאינריז ודרוגון משמידים את צי הברזל, את חברת הזהב ואת מערכי ההגנה של מעלה-מלך."
       }
     ],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/4/43/House-Targaryen-Main-Shield.PNG"
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/0/07/House-Targaryen-Main-Shield.PNG"
   },
   {
     "id": "tarly",
@@ -2555,7 +2555,7 @@
         "summary": "אולנה טיירל כורתת ברית עם אלריה סאנד נגד הכתר הלאניסטרי."
       }
     ],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/c/c6/House-Tyrell-Main-Shield.PNG"
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/3/36/House-Tyrell-Main-Shield.PNG"
   },
   {
     "id": "white-walkers",

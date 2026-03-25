@@ -43,7 +43,7 @@ export function FactionSigilBadge({
           loading="lazy"
           referrerPolicy="no-referrer"
           draggable={false}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-contain p-1.5"
           onError={() => setHasImageError(true)}
         />
       ) : null}
