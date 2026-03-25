@@ -27,7 +27,20 @@ export function getVisibleTimelineEntries<T extends TimelineEntry>(
   currentEpisodeId: EpisodeId,
   episodeIndex: EpisodeIndexMap,
 ) {
-  return entries.filter((entry) => isEpisodeVisible(entry.episodeId, currentEpisodeId, episodeIndex));
+  return entries
+    .map((entry, originalIndex) => ({ entry, originalIndex }))
+    .filter(({ entry }) => isEpisodeVisible(entry.episodeId, currentEpisodeId, episodeIndex))
+    .sort((entryA, entryB) => {
+      const episodeDelta =
+        (episodeIndex[entryA.entry.episodeId] ?? -1) - (episodeIndex[entryB.entry.episodeId] ?? -1);
+
+      if (episodeDelta !== 0) {
+        return episodeDelta;
+      }
+
+      return entryA.originalIndex - entryB.originalIndex;
+    })
+    .map(({ entry }) => entry);
 }
 
 export function getLatestVisibleEntry<T extends TimelineEntry>(

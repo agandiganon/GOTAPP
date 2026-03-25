@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { ArrowUpLeft, MapPin, Search, Shield, SlidersHorizontal, Sparkles } from "lucide-react";
-import { useMemo, useState } from "react";
+import { type ReactNode, useMemo, useState } from "react";
 
 import { CharacterPortrait } from "@/components/characters/character-portrait";
 import { FactionSigilBadge } from "@/components/factions/faction-sigil-badge";
@@ -48,6 +48,7 @@ interface CharacterInfoRowProps {
   value: string;
   toneClassName: string;
   href?: string;
+  trailing?: ReactNode;
 }
 
 function CharacterInfoRow({
@@ -56,18 +57,22 @@ function CharacterInfoRow({
   value,
   toneClassName,
   href,
+  trailing,
 }: CharacterInfoRowProps) {
   const content = (
-    <div className="flex min-w-0 items-start gap-3">
-      <span
-        className={`mt-0.5 inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-2xl border bg-white/[0.03] ${toneClassName}`}
-      >
-        <Icon className="h-4 w-4" strokeWidth={1.8} />
-      </span>
-      <div className="min-w-0 space-y-1">
-        <p className="text-[0.68rem] uppercase tracking-[0.22em] text-muted/65">{label}</p>
-        <p className="text-sm leading-7 text-ink">{value}</p>
+    <div className="flex min-w-0 items-start justify-between gap-3">
+      <div className="flex min-w-0 items-start gap-3">
+        <span
+          className={`mt-0.5 inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-2xl border bg-white/[0.03] ${toneClassName}`}
+        >
+          <Icon className="h-4 w-4" strokeWidth={1.8} />
+        </span>
+        <div className="min-w-0 space-y-1">
+          <p className="text-[0.68rem] uppercase tracking-[0.22em] text-muted/65">{label}</p>
+          <p className="text-sm leading-7 text-ink">{value}</p>
+        </div>
       </div>
+      {trailing ? <div className="shrink-0 pt-0.5">{trailing}</div> : null}
     </div>
   );
 
@@ -282,22 +287,14 @@ export function CharactersScreen() {
                   </div>
 
                   <div className="absolute inset-x-0 bottom-0 p-4">
-                    <div className="flex items-end justify-between gap-3">
-                      <div className="min-w-0 space-y-2">
-                        <p className="text-[0.72rem] text-muted">גלוי עד {currentEpisode.code}</p>
-                        <h2 className="font-display text-[1.95rem] leading-none text-ink">
-                          {character.name}
-                        </h2>
-                        <p className="max-w-[24ch] text-sm leading-6 text-[#ddd3c5]">
-                          {character.baseDescription}
-                        </p>
-                      </div>
-                      <FactionSigilBadge
-                        name={faction?.displayName ?? "בית לא ידוע"}
-                        sigilUrl={faction?.factionSigilUrl ?? faction?.sigil}
-                        themeColor={faction?.themeColor}
-                        className="h-11 w-11 shrink-0"
-                      />
+                    <div className="min-w-0 space-y-2">
+                      <p className="text-[0.72rem] text-muted">גלוי עד {currentEpisode.code}</p>
+                      <h2 className="font-display text-[1.95rem] leading-none text-ink">
+                        {character.name}
+                      </h2>
+                      <p className="max-w-[24ch] text-sm leading-6 text-[#ddd3c5]">
+                        {character.baseDescription}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -315,6 +312,16 @@ export function CharactersScreen() {
                       label="שיוך"
                       value={faction?.displayName ?? "שיוך לא זמין"}
                       toneClassName="border-[#7e97b3]/20 text-[#cfe1f1]"
+                      trailing={
+                        faction ? (
+                          <FactionSigilBadge
+                            name={faction.displayName}
+                            sigilUrl={faction.factionSigilUrl ?? faction.sigil}
+                            themeColor={faction.themeColor}
+                            className="h-10 w-10"
+                          />
+                        ) : null
+                      }
                     />
                     <CharacterInfoRow
                       icon={MapPin}

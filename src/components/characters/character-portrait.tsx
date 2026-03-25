@@ -136,7 +136,7 @@ export function CharacterPortrait({
   className,
 }: CharacterPortraitProps) {
   const fallbackSrc = getPortraitSrc(name, factionColor ?? "#8ea7cf");
-  const src = imageUrl ?? fallbackSrc;
+  const src = imageUrl?.trim() ? imageUrl : fallbackSrc;
 
   return (
     <div className={cn("relative h-full w-full overflow-hidden", className)}>
