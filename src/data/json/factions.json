@@ -1,172 +1,17 @@
 [
   {
-    "id": "stark",
-    "displayName": "בית סטארק",
+    "id": "arryn",
+    "displayName": "בית אארין",
     "sigil": null,
-    "themeColor": "#8ea7cf",
+    "themeColor": "#7b8cb8",
     "powerTimeline": [
       {
-        "episodeId": "S01E01",
-        "power": 84,
-        "summary": "חזק, מאוחד ומכובד בצפון, אך טרם נכנס במלואו למשחק החצר."
-      },
-      {
-        "episodeId": "S01E02",
-        "power": 78,
-        "summary": "עדיין חזק בצפון, אך פועל מעמדת תגובה ונפגע רגשית ופוליטית."
-      },
-      {
-        "episodeId": "S01E03",
-        "power": 76,
-        "summary": "נד נכנס למרכז השלטון, אך כטירון בזירת תככים שאינה ביתית לו."
-      },
-      {
-        "episodeId": "S01E04",
-        "power": 74,
-        "summary": "יוזמה נועזת נותנת להם מומנטום מוסרי, אך גם חושפת אותם לסכנת הסלמה."
-      },
-      {
         "episodeId": "S01E05",
-        "power": 68,
-        "summary": "נד פצוע, אנשיו נהרגים, והמשפחה מאבדת חופש פעולה."
-      },
-      {
-        "episodeId": "S01E06",
-        "power": 72,
-        "summary": "משיב יוזמה מוסדית דרך נד ושומר על יציבות בצפון."
-      },
-      {
-        "episodeId": "S01E07",
-        "power": 60,
-        "summary": "מאבד את ראש המשפחה שבבירה ואת השליטה באירועים."
-      },
-      {
-        "episodeId": "S01E08",
-        "power": 64,
-        "summary": "מאבד בני משפחה כקלפי מיקוח, אך יוצר לראשונה כוח צבאי מאורגן בדרום."
-      },
-      {
-        "episodeId": "S01E09",
-        "power": 72,
-        "summary": "סופג מכה איומה עם מות נד, אך מרוויח הישג צבאי אדיר ולגיטימציה של נקמה."
-      },
-      {
-        "episodeId": "S01E10",
-        "power": 82,
-        "summary": "חרף מות נד, זוכה בלגיטימציה שלטונית עצמאית, במנהיג מאחד ובתנופה פוליטית-צבאית."
+        "power": 55,
+        "summary": "מחזיק במבצר חזק מאוד, אך אינו ממיר את ביטחונו לכוח מדיני אפקטיבי."
       }
     ],
-    "relationshipTimeline": [
-      {
-        "episodeId": "S01E01",
-        "targetFactionId": "baratheon",
-        "state": "alliance",
-        "intensity": 78,
-        "summary": "ברית סטארק–באראתיאון מתחזקת רשמית עם הצעתו של רוברט לנד להפוך ליד המלך ועם שידוך אפשרי בין סאנסה לג'ופרי."
-      },
-      {
-        "episodeId": "S01E01",
-        "targetFactionId": "lannister",
-        "state": "tension",
-        "intensity": 68,
-        "summary": "במקביל נוצר ציר חשד ראשון של סטארק נגד לאניסטר בעקבות מכתבה של ליסה."
-      },
-      {
-        "episodeId": "S01E05",
-        "targetFactionId": "lannister",
-        "state": "war",
-        "intensity": 90,
-        "summary": "היריבות סטארק–לאניסטר הופכת רשמית למאבק אלים."
-      },
-      {
-        "episodeId": "S01E09",
-        "targetFactionId": "frey",
-        "state": "alliance",
-        "intensity": 82,
-        "summary": "בית פריי נכנס למשחק כברית מעבר חשובה לצפון."
-      }
-    ]
-  },
-  {
-    "id": "lannister",
-    "displayName": "בית לאניסטר",
-    "sigil": null,
-    "themeColor": "#c9a55c",
-    "powerTimeline": [
-      {
-        "episodeId": "S01E01",
-        "power": 88,
-        "summary": "קרוב מאוד למוקד הכוח דרך המלכה, המשמר וההון, אך עדיין פועל מאחורי הקלעים."
-      },
-      {
-        "episodeId": "S01E02",
-        "power": 84,
-        "summary": "קרבה מיידית לכתר מעניקה השפעה, אבל האלימות סביב ג'ופרי והפגיון מעמיקה חשד נגדם."
-      },
-      {
-        "episodeId": "S01E03",
-        "power": 87,
-        "summary": "יושב קרוב לכתר ולמוקדי העיר, גם אם החשד נגדו גובר."
-      },
-      {
-        "episodeId": "S01E04",
-        "power": 81,
-        "summary": "כוחם גדול, אך מעצר טיריון פוגע בכבודם ודוחק אותם לתגובה."
-      },
-      {
-        "episodeId": "S01E05",
-        "power": 85,
-        "summary": "מסוגל להשיב בכוח ולשחרר את טיריון דרך מנגנונים חברתיים ואלימים כאחד."
-      },
-      {
-        "episodeId": "S01E06",
-        "power": 79,
-        "summary": "נתון לראשונה לצו פומבי של צדק מלכותי."
-      },
-      {
-        "episodeId": "S01E07",
-        "power": 91,
-        "summary": "מחזיק בבירה, ביורש המוכתר ובמנגנון הכפייה העירוני."
-      },
-      {
-        "episodeId": "S01E08",
-        "power": 93,
-        "summary": "שולט בבירה, בחצר ובמבנה הצבאי הקרוב לכתר."
-      },
-      {
-        "episodeId": "S01E09",
-        "power": 79,
-        "summary": "עדיין מחזיק בבירה ובכתר, אך מאבד את ג'יימי ונפגע צבאית."
-      },
-      {
-        "episodeId": "S01E10",
-        "power": 85,
-        "summary": "שומר על הבירה ועל הכתר, ומציב את טיריון כמנהל אפקטיבי יותר."
-      }
-    ],
-    "relationshipTimeline": [
-      {
-        "episodeId": "S01E02",
-        "targetFactionId": "stark",
-        "state": "tension",
-        "intensity": 78,
-        "summary": "בית סטארק ובית לאניסטר עוברים מחשד עמום לעוינות אישית ומוחשית."
-      },
-      {
-        "episodeId": "S01E05",
-        "targetFactionId": "stark",
-        "state": "war",
-        "intensity": 92,
-        "summary": "היריבות סטארק–לאניסטר הופכת רשמית למאבק אלים."
-      },
-      {
-        "episodeId": "S01E07",
-        "targetFactionId": "baratheon",
-        "state": "alliance",
-        "intensity": 86,
-        "summary": "בית לאניסטר משתלט בפועל על הבירה באמצעות הכתר, המשמר והמלכה."
-      }
-    ]
+    "relationshipTimeline": []
   },
   {
     "id": "baratheon",
@@ -223,6 +68,16 @@
         "episodeId": "S01E10",
         "power": 52,
         "summary": "הכתר הרשמי מוחזק עדיין בשם באראתיאון, אך הלגיטימציה ממשיכה להתפורר."
+      },
+      {
+        "episodeId": "S08E04",
+        "power": 40,
+        "summary": "קם מחדש כסמל וכזכות חוקית, אך עדיין בלי בסיס צבאי משמעותי נראה לעין."
+      },
+      {
+        "episodeId": "S08E06",
+        "power": 55,
+        "summary": "אינו זוכה בכתר, אבל נותר אחד הבתים הגדולים היחידים שעברו רה-לגיטימציה רשמית ויש להם מושב ברור."
       }
     ],
     "relationshipTimeline": [
@@ -239,6 +94,1934 @@
         "state": "alliance",
         "intensity": 86,
         "summary": "בית לאניסטר משתלט בפועל על הבירה באמצעות הכתר, המשמר והמלכה."
+      },
+      {
+        "episodeId": "S08E04",
+        "targetFactionId": "targaryen",
+        "state": "alliance",
+        "intensity": 84,
+        "summary": "הכשרת גנדרי בידי דאינריז מחזירה את בית באראתיאון רשמית לסדר הפיאודלי החדש."
+      }
+    ]
+  },
+  {
+    "id": "baratheon-stannis",
+    "displayName": "מחנה סטאניס באראתיאון",
+    "sigil": null,
+    "themeColor": "#d7a55a",
+    "powerTimeline": [
+      {
+        "episodeId": "S02E01",
+        "power": 58,
+        "summary": "תביעה חוקית חזקה ובסיס ברור, אך עדיין מצומצם יחסית."
+      },
+      {
+        "episodeId": "S02E02",
+        "power": 61,
+        "summary": "צי מתרחב והובלה ממושמעת יותר."
+      },
+      {
+        "episodeId": "S02E03",
+        "power": 57,
+        "summary": "נחוש ולגיטימי בעיני עצמו, אך עדיין נחות מספרית."
+      },
+      {
+        "episodeId": "S02E04",
+        "power": 60,
+        "summary": "מקבל נשק חריג וקטלני."
+      },
+      {
+        "episodeId": "S02E05",
+        "power": 78,
+        "summary": "קפיצה חדה בזכות ספיגת כוחות ותנופת פלישה."
+      },
+      {
+        "episodeId": "S02E08",
+        "power": 80,
+        "summary": "ערב התקפה עם מומנטום."
+      },
+      {
+        "episodeId": "S02E09",
+        "power": 36,
+        "summary": "כישלון מצור ימי-יבשתי מכאיב."
+      },
+      {
+        "episodeId": "S02E10",
+        "power": 30,
+        "summary": "מובס אך לא שבור לחלוטין."
+      },
+      {
+        "episodeId": "S03E01",
+        "power": 27,
+        "summary": "מבודד, פצוע פוליטית ותלוי יותר במליסנדרה."
+      },
+      {
+        "episodeId": "S03E03",
+        "power": 29,
+        "summary": "צבאו קטן, אבל שאלת “דם המלוכה” פותחת לו נתיב פעולה חדש."
+      },
+      {
+        "episodeId": "S03E07",
+        "power": 34,
+        "summary": "עדיין קטן, אך ג׳נדרי מעלה את ערך הקלפים שלו."
+      },
+      {
+        "episodeId": "S03E08",
+        "power": 36,
+        "summary": "עדיין קטן, אך בטוח יותר בצדקתו הנבואית."
+      },
+      {
+        "episodeId": "S03E10",
+        "power": 42,
+        "summary": "עדיין קטן, אך מקבל יעד אסטרטגי ברור ותכלית רחבה יותר."
+      },
+      {
+        "episodeId": "S04E02",
+        "power": 35,
+        "summary": "נחושים, אך עדיין מבודדים ורחוקים ממוקד הכוח."
+      },
+      {
+        "episodeId": "S04E06",
+        "power": 53,
+        "summary": "הזינוק נובע לא מצבאי מיידי אלא מיכולת לגייס משאבים מחדש."
+      },
+      {
+        "episodeId": "S04E10",
+        "power": 67,
+        "summary": "ההתערבות בחומה מחזירה אותם למעמד צבאי רלוונטי מאוד."
+      },
+      {
+        "episodeId": "S05E01",
+        "power": 57,
+        "summary": "כוח צבאי קיים, אך חסר לו בסיס צפוני רחב."
+      },
+      {
+        "episodeId": "S05E05",
+        "power": 56,
+        "summary": "תקוע במסע קשה."
+      },
+      {
+        "episodeId": "S05E09",
+        "power": 20,
+        "summary": "התרסקות מוסרית ואסטרטגית."
+      }
+    ],
+    "relationshipTimeline": [
+      {
+        "episodeId": "S02E01",
+        "targetFactionId": "lannister",
+        "state": "tension",
+        "intensity": 84,
+        "summary": "התביעה של סטאניס מערערת ישירות את הלגיטימיות של ג׳ופרי."
+      },
+      {
+        "episodeId": "S02E03",
+        "targetFactionId": "renly-tyrell",
+        "state": "war",
+        "intensity": 92,
+        "summary": "רנלי וסטאניס עוברים מעוינות פוליטית לעימות בלתי נמנע."
+      },
+      {
+        "episodeId": "S02E05",
+        "targetFactionId": "lannister",
+        "state": "war",
+        "intensity": 94,
+        "summary": "במעלה מלך מתבצעת הכנה מעשית למצב מצור מול כוחו של סטאניס."
+      },
+      {
+        "episodeId": "S03E10",
+        "targetFactionId": "night-watch",
+        "state": "alliance",
+        "intensity": 76,
+        "summary": "סטאניס משנה כיוון אסטרטגי מן הכס לביטחון הצפון."
+      },
+      {
+        "episodeId": "S04E10",
+        "targetFactionId": "night-watch",
+        "state": "alliance",
+        "intensity": 88,
+        "summary": "סטאניס חוזר למפה כשחקן צבאי ממשי בצפון ומציל את החומה."
+      },
+      {
+        "episodeId": "S05E01",
+        "targetFactionId": "wildlings",
+        "state": "tension",
+        "intensity": 48,
+        "summary": "סטאניס מבין שללא הפראיים יהיה לו קשה מאוד לכבוש את הצפון."
+      },
+      {
+        "episodeId": "S05E03",
+        "targetFactionId": "night-watch",
+        "state": "tension",
+        "intensity": 58,
+        "summary": "ג׳ון דוחה באופן רשמי את חסות סטאניס ובוחר במשמר הלילה על פני כוח אישי."
+      },
+      {
+        "episodeId": "S05E09",
+        "targetFactionId": "bolton",
+        "state": "war",
+        "intensity": 94,
+        "summary": "סטאניס חוצה גבול מוסרי פנימי כדי לנסות לשמור על סיכוייו במערכה מול בית בולטון."
+      }
+    ]
+  },
+  {
+    "id": "bolton",
+    "displayName": "בית בולטון",
+    "sigil": null,
+    "themeColor": "#a56d73",
+    "powerTimeline": [
+      {
+        "episodeId": "S03E09",
+        "power": 72,
+        "summary": "עובר ממעמד של בעל ברית צפוני לאיש המפתח החדש בצפון."
+      },
+      {
+        "episodeId": "S03E10",
+        "power": 78,
+        "summary": "מחזק מאוד את מעמדו בצפון דרך צור מגור ותמיכת הדרום."
+      },
+      {
+        "episodeId": "S04E02",
+        "power": 73,
+        "summary": "ממשיך להתבסס בצפון דרך רמזי ורוז."
+      },
+      {
+        "episodeId": "S04E05",
+        "power": 80,
+        "summary": "ממשיך לבסס שליטה בצפון דרך רמזי ואימה שיטתית."
+      },
+      {
+        "episodeId": "S04E08",
+        "power": 86,
+        "summary": "שליטה בחפיר קיילין ולגיטימציה לרמזי מחזקות מאוד את אחיזתם בצפון."
+      },
+      {
+        "episodeId": "S05E03",
+        "power": 72,
+        "summary": "מתחזק בזכות חיבור לשם סטארק."
+      },
+      {
+        "episodeId": "S05E05",
+        "power": 74,
+        "summary": "עדיין מחזיק בווינטרפל וביוזמה בצפון."
+      },
+      {
+        "episodeId": "S05E06",
+        "power": 78,
+        "summary": "מתחזק דרך נישואי סאנסה."
+      },
+      {
+        "episodeId": "S05E10",
+        "power": 82,
+        "summary": "מנצח בצפון ושומר על וינטרפל."
+      },
+      {
+        "episodeId": "S06E01",
+        "power": 82,
+        "summary": "עדיין שולט בצפון בפועל;"
+      },
+      {
+        "episodeId": "S06E02",
+        "power": 86,
+        "summary": "ראמזי סילק את כל היריבים מבפנים;"
+      },
+      {
+        "episodeId": "S06E03",
+        "power": 88,
+        "summary": "גם צפון מבוהל וגם ריקון בידיהם;"
+      },
+      {
+        "episodeId": "S06E04",
+        "power": 84,
+        "summary": "חזק אך כעת מאוים במפורש;"
+      },
+      {
+        "episodeId": "S06E07",
+        "power": 81,
+        "summary": "מחזיק את ווינטרפל ואת ריקון, אך היריב מתארגן;"
+      },
+      {
+        "episodeId": "S06E09",
+        "power": 3,
+        "summary": "חדל להיות גורם ממשי;"
+      }
+    ],
+    "relationshipTimeline": [
+      {
+        "episodeId": "S03E09",
+        "targetFactionId": "stark",
+        "state": "war",
+        "intensity": 100,
+        "summary": "רוז בולטון חושף נאמנות חדשה לבית לאניסטר והופך את מחנה סטארק ליריב שבור."
+      },
+      {
+        "episodeId": "S03E09",
+        "targetFactionId": "lannister",
+        "state": "alliance",
+        "intensity": 88,
+        "summary": "בית בולטון חושף בפועל את מעברו לצד הלאניסטרים."
+      },
+      {
+        "episodeId": "S04E08",
+        "targetFactionId": "greyjoy",
+        "state": "war",
+        "intensity": 88,
+        "summary": "בית בולטון מקבל שליטה חזקה יותר על שער הצפון על חשבון כל סיכוי גרייג׳וי להשיב שליטה."
+      },
+      {
+        "episodeId": "S05E03",
+        "targetFactionId": "stark",
+        "state": "tension",
+        "intensity": 86,
+        "summary": "בייליש קושר את שם סטארק לבית בולטון דרך מסלול הנישואים של סאנסה לרמזי."
+      },
+      {
+        "episodeId": "S05E05",
+        "targetFactionId": "stark",
+        "state": "war",
+        "intensity": 88,
+        "summary": "סאנסה מפעילה ערוץ תקשורת חשאי נגד בית בולטון מתוך וינטרפל."
+      },
+      {
+        "episodeId": "S05E06",
+        "targetFactionId": "stark",
+        "state": "tension",
+        "intensity": 82,
+        "summary": "בית בולטון מקבל חותמת חוקית דרך נישואי סאנסה, אך על בסיס כפייה ואימה."
+      },
+      {
+        "episodeId": "S05E10",
+        "targetFactionId": "baratheon-stannis",
+        "state": "war",
+        "intensity": 98,
+        "summary": "שלטון בית בולטון בצפון שורד את האתגר המיידי ומביס את סטאניס."
+      },
+      {
+        "episodeId": "S06E01",
+        "targetFactionId": "stark",
+        "state": "war",
+        "intensity": 92,
+        "summary": "ראמזי שומר על שליטת בית בולטון בצפון בעוד סאנסה נמלטת ומתחילה להתארגן מחדש."
+      },
+      {
+        "episodeId": "S06E02",
+        "targetFactionId": "stark",
+        "state": "war",
+        "intensity": 94,
+        "summary": "שליטת ראמזי מתחזקת בדיוק כשחזרתו של ג׳ון מציבה מחדש גרעין סטארקי יריב."
+      },
+      {
+        "episodeId": "S06E03",
+        "targetFactionId": "stark",
+        "state": "war",
+        "intensity": 95,
+        "summary": "ריקון מוחזק כבן ערובה בידי ראמזי והעימות עם כל מי שיתלכד סביב ג׳ון וסאנסה נעשה בלתי נמנע."
+      }
+    ]
+  },
+  {
+    "id": "brotherhood-without-banners",
+    "displayName": "האחווה ללא דגלים",
+    "sigil": null,
+    "themeColor": "#9f7848",
+    "powerTimeline": [
+      {
+        "episodeId": "S03E02",
+        "power": 33,
+        "summary": "לא צבא גדול, אבל שחקן מקומי גמיש ומשמעותי."
+      }
+    ],
+    "relationshipTimeline": [
+      {
+        "episodeId": "S03E02",
+        "targetFactionId": "lannister",
+        "state": "war",
+        "intensity": 74,
+        "summary": "האחווה ללא דגלים פועלת בחלל שנוצר אחרי קריסת הסמכות הרשמית בארצות הנהר."
+      }
+    ]
+  },
+  {
+    "id": "dothraki",
+    "displayName": "הדות'ראקים",
+    "sigil": null,
+    "themeColor": "#a36b3a",
+    "powerTimeline": [],
+    "relationshipTimeline": [
+      {
+        "episodeId": "S01E01",
+        "targetFactionId": "targaryen",
+        "state": "alliance",
+        "intensity": 72,
+        "summary": "באסוס מתחיל ציר טארגאריין–דות'ראקי כבסיס לאיום עתידי על ווסטרוז."
+      },
+      {
+        "episodeId": "S01E07",
+        "targetFactionId": "targaryen",
+        "state": "alliance",
+        "intensity": 84,
+        "summary": "דרוגו קושר לראשונה את כוחו הצבאי ישירות לפלישה אל ווסטרוז."
+      }
+    ]
+  },
+  {
+    "id": "ellaria-dorne",
+    "displayName": "סיעת אלריה בדורן",
+    "sigil": null,
+    "themeColor": "#a24a50",
+    "powerTimeline": [
+      {
+        "episodeId": "S06E01",
+        "power": 62,
+        "summary": "קפיצה חדה בעקבות תפיסת השלטון;"
+      },
+      {
+        "episodeId": "S06E10",
+        "power": 58,
+        "summary": "קטן צבאית אך חשוב כשותף קואליציוני;"
+      }
+    ],
+    "relationshipTimeline": [
+      {
+        "episodeId": "S06E01",
+        "targetFactionId": "martell",
+        "state": "war",
+        "intensity": 96,
+        "summary": "דורן עוברת באלימות מהנהגת דוראן מרטל לשלטון הנקמה של אלריה סאנד."
+      },
+      {
+        "episodeId": "S06E01",
+        "targetFactionId": "lannister",
+        "state": "tension",
+        "intensity": 78,
+        "summary": "ההפיכה בדורן מייצרת שלטון חדש ונקמני המתעב את בית לאניסטר."
+      }
+    ]
+  },
+  {
+    "id": "faith-militant",
+    "displayName": "הדרורים החופשיים",
+    "sigil": null,
+    "themeColor": "#d0c39a",
+    "powerTimeline": [
+      {
+        "episodeId": "S05E01",
+        "power": 20,
+        "summary": "עדיין לא מוקד כוח רשמי, אבל כבר נוכחים מתחת לפני השטח."
+      },
+      {
+        "episodeId": "S05E02",
+        "power": 25,
+        "summary": "עדיין משניים, אך התשתית החברתית שלהם ממשיכה להבשיל."
+      },
+      {
+        "episodeId": "S05E03",
+        "power": 38,
+        "summary": "עלייה חדה עם כניסת הדרור העליון למרכז הבמה."
+      },
+      {
+        "episodeId": "S05E04",
+        "power": 55,
+        "summary": "זינוק חד עקב הכשרה פוליטית לפעולה."
+      },
+      {
+        "episodeId": "S05E05",
+        "power": 55,
+        "summary": "ללא שינוי מהותי בפרק, אך כוחם נותר גבוה."
+      },
+      {
+        "episodeId": "S05E06",
+        "power": 68,
+        "summary": "זינוק נוסף עם מעצר מארגארי."
+      },
+      {
+        "episodeId": "S05E07",
+        "power": 78,
+        "summary": "בשיא השפעתם הציבורית והמשפטית."
+      },
+      {
+        "episodeId": "S05E08",
+        "power": 76,
+        "summary": "שומרים על עליונותם במעלה המלך."
+      },
+      {
+        "episodeId": "S05E09",
+        "power": 76,
+        "summary": "כוחם במעלה המלך לא נפגע."
+      },
+      {
+        "episodeId": "S05E10",
+        "power": 70,
+        "summary": "עדיין חזקים מאוד, אף שסרסיי חוזרת אל המבצר האדום."
+      },
+      {
+        "episodeId": "S06E06",
+        "power": 79,
+        "summary": "מקבלת גיבוי ישיר מן המלך;"
+      },
+      {
+        "episodeId": "S06E08",
+        "power": 82,
+        "summary": "תומן מספק לה הישג מוסדי דרמטי."
+      }
+    ],
+    "relationshipTimeline": [
+      {
+        "episodeId": "S05E04",
+        "targetFactionId": "tyrell",
+        "state": "war",
+        "intensity": 80,
+        "summary": "הכוח הדתי מקבל לגיטימציה לפעול ועוצר את לוראס טיירל בלב הבירה."
+      },
+      {
+        "episodeId": "S05E06",
+        "targetFactionId": "tyrell",
+        "state": "war",
+        "intensity": 90,
+        "summary": "הדרורים החופשיים עוברים מפגיעה בשוליים למעצר ישיר של מארגארי ולוראס טיירל."
+      },
+      {
+        "episodeId": "S05E07",
+        "targetFactionId": "lannister",
+        "state": "war",
+        "intensity": 92,
+        "summary": "הכוח הדתי שחשבה סרסיי שתוכל לרתום פועל לפי היגיון משלו ועוצר גם אותה."
+      },
+      {
+        "episodeId": "S05E09",
+        "targetFactionId": "lannister",
+        "state": "war",
+        "intensity": 88,
+        "summary": "בזמן שהכתר תלוי בגורמים חיצוניים, הדרורים ממשיכים לשלוט במצב במעלה המלך."
+      },
+      {
+        "episodeId": "S05E10",
+        "targetFactionId": "lannister",
+        "state": "tension",
+        "intensity": 82,
+        "summary": "הדרורים מוכיחים שהם מסוגלים לכפות גם על המלכה-האם כניעה פומבית, אף שסרסיי חוזרת אל המבצר האדום."
+      }
+    ]
+  },
+  {
+    "id": "frey",
+    "displayName": "בית פריי",
+    "sigil": null,
+    "themeColor": "#8b6a46",
+    "powerTimeline": [
+      {
+        "episodeId": "S03E09",
+        "power": 68,
+        "summary": "קופץ מעמדת וסאל ממורמר לשחקן שהכריע מהלך מלחמה."
+      },
+      {
+        "episodeId": "S06E06",
+        "power": 51,
+        "summary": "חוזר אל מרכז הזירה סביב נהרן והתאומים."
+      },
+      {
+        "episodeId": "S06E07",
+        "power": 50,
+        "summary": "תלוי בג׳יימי כדי לשלוט בפועל."
+      },
+      {
+        "episodeId": "S06E08",
+        "power": 54,
+        "summary": "נהנה מן ההישג אך נשען על ג׳יימי;"
+      },
+      {
+        "episodeId": "S06E10",
+        "power": 22,
+        "summary": "נפגע תדמיתית ומנהיגותית לאחר מות וולדר."
+      }
+    ],
+    "relationshipTimeline": [
+      {
+        "episodeId": "S01E09",
+        "targetFactionId": "stark",
+        "state": "alliance",
+        "intensity": 82,
+        "summary": "בית פריי נכנס למשחק כברית מעבר חשובה לצפון."
+      },
+      {
+        "episodeId": "S03E09",
+        "targetFactionId": "stark",
+        "state": "war",
+        "intensity": 100,
+        "summary": "בית פריי שובר באלימות את בריתו עם בית סטארק־טאלי."
+      }
+    ]
+  },
+  {
+    "id": "greyjoy",
+    "displayName": "בית גרייג׳וי",
+    "sigil": null,
+    "themeColor": "#90959d",
+    "powerTimeline": [
+      {
+        "episodeId": "S02E02",
+        "power": 56,
+        "summary": "בחירה עצמאית התקפית מעלה את כוחם."
+      },
+      {
+        "episodeId": "S02E03",
+        "power": 58,
+        "summary": "תיאון נשאב עמוק יותר למחנה שאביו מוביל."
+      },
+      {
+        "episodeId": "S02E06",
+        "power": 67,
+        "summary": "תפיסת וינטרפל מעלה אותם דרמטית."
+      },
+      {
+        "episodeId": "S02E07",
+        "power": 62,
+        "summary": "עדיין מחזיקים בווינטרפל, אך במחיר זעם הצפון."
+      },
+      {
+        "episodeId": "S02E08",
+        "power": 45,
+        "summary": "וינטרפל הופך למלכודת לתיאון."
+      },
+      {
+        "episodeId": "S04E06",
+        "power": 26,
+        "summary": "יוזמת החילוץ נכשלת והמצב בצפון נשאר לטובת הבולטונים."
+      },
+      {
+        "episodeId": "S06E02",
+        "power": 49,
+        "summary": "נחלש זמנית בגלל רצח המלך, אך המאבק מחדד הנהגה חדשה;"
+      },
+      {
+        "episodeId": "S06E04",
+        "power": 63,
+        "summary": "קפיצה בעקבות שליטה רשמית;"
+      },
+      {
+        "episodeId": "S06E05",
+        "power": 67,
+        "summary": "הנהגה ממוסדת וחזקה יותר;"
+      },
+      {
+        "episodeId": "S07E02",
+        "power": 80,
+        "summary": "עלייה חדה מאוד; מכה ימית אחת הפכה אותו לגורם מכריע במערכה."
+      },
+      {
+        "episodeId": "S08E01",
+        "power": 48,
+        "summary": "מפוצל בין יורון השולט במשאבי הכתר לבין יארה שחוזרת לתבוע את איי הברזל."
+      },
+      {
+        "episodeId": "S08E06",
+        "power": 45,
+        "summary": "שורד דרך יארה ונשאר חלק מן הסדר החדש, אך בלי שליטה במרכז הכוח."
+      }
+    ],
+    "relationshipTimeline": [
+      {
+        "episodeId": "S02E06",
+        "targetFactionId": "stark",
+        "state": "war",
+        "intensity": 94,
+        "summary": "גרייג׳וי עוברים מפשיטות לשלטון על יעד סמלי של סטארק."
+      },
+      {
+        "episodeId": "S06E02",
+        "targetFactionId": "greyjoy-yara-theon",
+        "state": "tension",
+        "intensity": 72,
+        "summary": "יורון נכנס למרוץ הירושה באיי הברזל ומערער את מסלול יארה ותיאון."
+      },
+      {
+        "episodeId": "S06E04",
+        "targetFactionId": "greyjoy-yara-theon",
+        "state": "war",
+        "intensity": 82,
+        "summary": "יורון תופס את הנהגת איי הברזל ויארה ותיאון בורחים עם חלק מן הצי."
+      },
+      {
+        "episodeId": "S07E02",
+        "targetFactionId": "greyjoy-yara-theon",
+        "state": "war",
+        "intensity": 98,
+        "summary": "יורון משמיד חלק גדול מן הצי של יארה ותיאון ולוכד את יארה כשבויה."
+      }
+    ]
+  },
+  {
+    "id": "greyjoy-yara-theon",
+    "displayName": "מחנה יארה ותיאון גרייג׳וי",
+    "sigil": null,
+    "themeColor": "#6e6a55",
+    "powerTimeline": [
+      {
+        "episodeId": "S06E09",
+        "power": 66,
+        "summary": "חלש טריטוריאלית אך חזק דיפלומטית בזכות הברית;"
+      }
+    ],
+    "relationshipTimeline": []
+  },
+  {
+    "id": "lannister",
+    "displayName": "בית לאניסטר",
+    "sigil": null,
+    "themeColor": "#c9a55c",
+    "powerTimeline": [
+      {
+        "episodeId": "S01E01",
+        "power": 88,
+        "summary": "קרוב מאוד למוקד הכוח דרך המלכה, המשמר וההון, אך עדיין פועל מאחורי הקלעים."
+      },
+      {
+        "episodeId": "S01E02",
+        "power": 84,
+        "summary": "קרבה מיידית לכתר מעניקה השפעה, אבל האלימות סביב ג'ופרי והפגיון מעמיקה חשד נגדם."
+      },
+      {
+        "episodeId": "S01E03",
+        "power": 87,
+        "summary": "יושב קרוב לכתר ולמוקדי העיר, גם אם החשד נגדו גובר."
+      },
+      {
+        "episodeId": "S01E04",
+        "power": 81,
+        "summary": "כוחם גדול, אך מעצר טיריון פוגע בכבודם ודוחק אותם לתגובה."
+      },
+      {
+        "episodeId": "S01E05",
+        "power": 85,
+        "summary": "מסוגל להשיב בכוח ולשחרר את טיריון דרך מנגנונים חברתיים ואלימים כאחד."
+      },
+      {
+        "episodeId": "S01E06",
+        "power": 79,
+        "summary": "נתון לראשונה לצו פומבי של צדק מלכותי."
+      },
+      {
+        "episodeId": "S01E07",
+        "power": 91,
+        "summary": "מחזיק בבירה, ביורש המוכתר ובמנגנון הכפייה העירוני."
+      },
+      {
+        "episodeId": "S01E08",
+        "power": 93,
+        "summary": "שולט בבירה, בחצר ובמבנה הצבאי הקרוב לכתר."
+      },
+      {
+        "episodeId": "S01E09",
+        "power": 79,
+        "summary": "עדיין מחזיק בבירה ובכתר, אך מאבד את ג'יימי ונפגע צבאית."
+      },
+      {
+        "episodeId": "S01E10",
+        "power": 85,
+        "summary": "שומר על הבירה ועל הכתר, ומציב את טיריון כמנהל אפקטיבי יותר."
+      },
+      {
+        "episodeId": "S02E01",
+        "power": 67,
+        "summary": "עדיין מחזיקים בבירה, אבל הלגיטימיות נסדקת וג׳ופרי הוא נטל."
+      },
+      {
+        "episodeId": "S02E02",
+        "power": 66,
+        "summary": "טיריון מייצב מעט את הבירה, אך רצח הממזרים מעמיק את השנאה."
+      },
+      {
+        "episodeId": "S02E03",
+        "power": 69,
+        "summary": "טיריון מפגין שליטה ומייצב את מנגנון השלטון."
+      },
+      {
+        "episodeId": "S02E04",
+        "power": 63,
+        "summary": "הפסדים בחזית וצמיחת אכזריות בבירה, אך טייווין מייצב את הארנהל."
+      },
+      {
+        "episodeId": "S02E05",
+        "power": 64,
+        "summary": "עדיין תחת איום, אך טיריון מגלה פתרון אסטרטגי עצום."
+      },
+      {
+        "episodeId": "S02E06",
+        "power": 58,
+        "summary": "מחזיקים בבירה אבל מאבדים שליטה ברחוב."
+      },
+      {
+        "episodeId": "S02E07",
+        "power": 60,
+        "summary": "ג׳יימי נשאר בעייתי, אך אריה כבר ברחה."
+      },
+      {
+        "episodeId": "S02E08",
+        "power": 65,
+        "summary": "ההגנה ערוכה יותר בזכות טיריון, אך הבירה עדיין בסכנה."
+      },
+      {
+        "episodeId": "S02E09",
+        "power": 88,
+        "summary": "הבירה ניצלת והיוזמה שבה אליהם."
+      },
+      {
+        "episodeId": "S02E10",
+        "power": 90,
+        "summary": "שליטה מחודשת מלאה בבירה ובמנגנון השלטון."
+      },
+      {
+        "episodeId": "S03E01",
+        "power": 89,
+        "summary": "שולט בבירה ובמוסדות השלטון, וטייווין קובע את סדר היום."
+      },
+      {
+        "episodeId": "S03E02",
+        "power": 88,
+        "summary": "עדיין עליון בבירה."
+      },
+      {
+        "episodeId": "S03E03",
+        "power": 90,
+        "summary": "שולט במועצה, בבירה ובקצב הפוליטי."
+      },
+      {
+        "episodeId": "S03E04",
+        "power": 88,
+        "summary": "כוחו לא נפגע ישירות."
+      },
+      {
+        "episodeId": "S03E05",
+        "power": 91,
+        "summary": "מנצל את מנגנון הנישואים כתחליף למלחמה."
+      },
+      {
+        "episodeId": "S03E06",
+        "power": 92,
+        "summary": "שולט גם בזירת הבירה וגם בנישואי המפתח."
+      },
+      {
+        "episodeId": "S03E07",
+        "power": 91,
+        "summary": "שליטה יציבה בבירה."
+      },
+      {
+        "episodeId": "S03E08",
+        "power": 93,
+        "summary": "קושר אליו את יורשת וינטרפל בפועל."
+      },
+      {
+        "episodeId": "S03E09",
+        "power": 96,
+        "summary": "נהנה מקריסת יריבו הראשי בלי לשלם מחיר צבאי מיידי."
+      },
+      {
+        "episodeId": "S03E10",
+        "power": 97,
+        "summary": "נהנה מתוצאות התמוטטות מחנה סטארק ומחזיק בבירה ללא יריב שקול."
+      },
+      {
+        "episodeId": "S04E01",
+        "power": 91,
+        "summary": "מחזיק בכתר, בבירה וביוזמה הפוליטית, ומפגין ביטחון מוחלט."
+      },
+      {
+        "episodeId": "S04E02",
+        "power": 82,
+        "summary": "עדיין שולט בבירה, אך סופג זעזוע אדיר עם מות המלך והחשד הפנימי."
+      },
+      {
+        "episodeId": "S04E03",
+        "power": 72,
+        "summary": "עדיין מחזיק במרכזי הכוח, אך נאבק במשבר פנימי מתמשך."
+      },
+      {
+        "episodeId": "S04E04",
+        "power": 69,
+        "summary": "הכוח עדיין גדול, אך ג׳יימי מתחיל לפעול מחוץ לקו המשפחתי הנוקשה."
+      },
+      {
+        "episodeId": "S04E05",
+        "power": 77,
+        "summary": "שולט דרך מלך חדש וצייתן, אף כי בסיסו נשען על ניהול מאחורי הקלעים."
+      },
+      {
+        "episodeId": "S04E06",
+        "power": 73,
+        "summary": "עדיין שולט במוסדות, אך נזקק למניפולציה גלויה כדי לשמר יציבות."
+      },
+      {
+        "episodeId": "S04E07",
+        "power": 71,
+        "summary": "עדיין שולט בבירה, אך נאלץ להמר על משפט קרב מסוכן."
+      },
+      {
+        "episodeId": "S04E08",
+        "power": 77,
+        "summary": "השלטון בבירה מייצר את התוצאה שרצה, אף שדרך אכזרית ומפלגת."
+      },
+      {
+        "episodeId": "S04E10",
+        "power": 53,
+        "summary": "עדיין מחזיק בכתר, אבל מאבד את טייווין ואת היציבות הפנימית שלו במכה אחת."
+      },
+      {
+        "episodeId": "S05E01",
+        "power": 78,
+        "summary": "עדיין בשלטון, אבל מות טייווין מחליש את היציבות."
+      },
+      {
+        "episodeId": "S05E02",
+        "power": 75,
+        "summary": "הכתר שומר על כוח, אך מגיב לאיום חיצוני."
+      },
+      {
+        "episodeId": "S05E03",
+        "power": 74,
+        "summary": "מחזיק בכתר אך נחלש בביתו פנימה."
+      },
+      {
+        "episodeId": "S05E04",
+        "power": 73,
+        "summary": "רווח טקטי קצר-טווח דרך הפעלת הדת."
+      },
+      {
+        "episodeId": "S05E06",
+        "power": 70,
+        "summary": "נהנה זמנית מחולשת הטיירלים, אך השליטה כבר לא בידיו בלבד."
+      },
+      {
+        "episodeId": "S05E07",
+        "power": 60,
+        "summary": "ירידה חדה עם מאסר סרסיי."
+      },
+      {
+        "episodeId": "S05E09",
+        "power": 57,
+        "summary": "עדיין על הכס, אך לחוץ כלכלית ופוליטית."
+      },
+      {
+        "episodeId": "S05E10",
+        "power": 55,
+        "summary": "שומר על מרכז השלטון אך סופג אובדן אישי ופוליטי."
+      },
+      {
+        "episodeId": "S06E01",
+        "power": 56,
+        "summary": "עדיין במרכז השלטון, אך תחת לחץ דתי ופנימי;"
+      },
+      {
+        "episodeId": "S06E02",
+        "power": 55,
+        "summary": "תקוע מול אמונת השבעה;"
+      },
+      {
+        "episodeId": "S06E03",
+        "power": 53,
+        "summary": "עדיין מתקשה לפרוץ את החסימה הדתית במעלה המלך."
+      },
+      {
+        "episodeId": "S06E04",
+        "power": 50,
+        "summary": "תקוע בין אמונת השבעה, הטיירלים והרחוב."
+      },
+      {
+        "episodeId": "S06E06",
+        "power": 49,
+        "summary": "חזק צבאית, אך נשחק פוליטית בבירה;"
+      },
+      {
+        "episodeId": "S06E07",
+        "power": 54,
+        "summary": "ג׳יימי מחזיר יכולת שדה, אך הבירה פחות יציבה;"
+      },
+      {
+        "episodeId": "S06E08",
+        "power": 57,
+        "summary": "הישג צבאי בנהרן, אך משבר חריף בבירה;"
+      },
+      {
+        "episodeId": "S06E09",
+        "power": 55,
+        "summary": "נשאר מחוץ להישגי הפרק ונדחק הצדה."
+      },
+      {
+        "episodeId": "S06E10",
+        "power": 71,
+        "summary": "שיא כוח ריכוזי, אך גם שיא בידוד ושנאה;"
+      },
+      {
+        "episodeId": "S07E01",
+        "power": 70,
+        "summary": "עדיין מחזיק בבירה ובכס, אך מבודד ומחפש נואשות בעלי ברית."
+      },
+      {
+        "episodeId": "S07E02",
+        "power": 75,
+        "summary": "שיפור ברור בזכות גיוס טארלי, העקרב, והישגי יורון בשטח."
+      },
+      {
+        "episodeId": "S07E03",
+        "power": 88,
+        "summary": "ניצחון אסטרטגי מבריק, כיבוש רמות־גנים, וגישה לעושר הדרום."
+      },
+      {
+        "episodeId": "S07E04",
+        "power": 62,
+        "summary": "עדיין מחזיק בבירה ובקשר לבנק הברזל, אך ספג אובדן כבד בשטח וזעזוע מוראלי."
+      },
+      {
+        "episodeId": "S07E05",
+        "power": 70,
+        "summary": "משיג זמן, כסף, ותוכנית תגבור עתידית, למרות האבדות האחרונות."
+      },
+      {
+        "episodeId": "S07E07",
+        "power": 68,
+        "summary": "עדיין מחזיק בבירה, בכס ובתוכנית לשכור את פלוגת הזהב, אך מבודד יותר ומאבד את ג'יימי."
+      },
+      {
+        "episodeId": "S08E01",
+        "power": 63,
+        "summary": "מחזיק בבירה ובברית עם יורון, אך בוחר להמר על תשישת יריביו במקום לסייע נגד האיום הקיומי."
+      },
+      {
+        "episodeId": "S08E03",
+        "power": 70,
+        "summary": "לא נשחק כלל בקרב על וינטרפל, ולכן נהנה זמנית מיריבים מנצחים אך מרוקנים. זוהי הערכת מצב יחסית הנגזרת מכך שצבאות הצפון ודאינריז ספגו אבדות כבדות, בעוד סרסיי המתינה בדרום."
+      },
+      {
+        "episodeId": "S08E04",
+        "power": 74,
+        "summary": "יושבת במעלה-מלך עם הגנות, צי ברזל, חברת הזהב ומנוף שבוי שהופך להוצאה להורג פומבית."
+      },
+      {
+        "episodeId": "S08E05",
+        "power": 0,
+        "summary": "שלטון הבירה, המלכה והיורש הדה-פקטו שלה נהרסים יחד עם המבצר האדום."
+      },
+      {
+        "episodeId": "S08E06",
+        "power": 38,
+        "summary": "ענף השלטון המרכזי נכחד עם ג'יימי וסרסיי, אך טיריון שורד וחוזר ללב הממשל."
+      }
+    ],
+    "relationshipTimeline": [
+      {
+        "episodeId": "S01E02",
+        "targetFactionId": "stark",
+        "state": "tension",
+        "intensity": 78,
+        "summary": "בית סטארק ובית לאניסטר עוברים מחשד עמום לעוינות אישית ומוחשית."
+      },
+      {
+        "episodeId": "S01E05",
+        "targetFactionId": "stark",
+        "state": "war",
+        "intensity": 92,
+        "summary": "היריבות סטארק–לאניסטר הופכת רשמית למאבק אלים."
+      },
+      {
+        "episodeId": "S01E07",
+        "targetFactionId": "baratheon",
+        "state": "alliance",
+        "intensity": 86,
+        "summary": "בית לאניסטר משתלט בפועל על הבירה באמצעות הכתר, המשמר והמלכה."
+      },
+      {
+        "episodeId": "S02E10",
+        "targetFactionId": "tyrell",
+        "state": "alliance",
+        "intensity": 96,
+        "summary": "ברית לאניסטר-טיירל מתקבעת דרך חלוקת תארים ותוכניות נישואים."
+      },
+      {
+        "episodeId": "S03E05",
+        "targetFactionId": "tyrell",
+        "state": "alliance",
+        "intensity": 91,
+        "summary": "בית לאניסטר מגיב ביעילות טקטית לניסיון הטיירלי להשתלט על הצפון דרך סאנסה."
+      },
+      {
+        "episodeId": "S04E01",
+        "targetFactionId": "martell",
+        "state": "tension",
+        "intensity": 82,
+        "summary": "הגעת אוברין מכניסה לבירה כוח דרומי עם מטען אישי ופוליטי חד נגד בית לאניסטר."
+      },
+      {
+        "episodeId": "S05E01",
+        "targetFactionId": "tyrell",
+        "state": "tension",
+        "intensity": 72,
+        "summary": "מות טייווין חושף עד כמה המתח בין סרסיי למחנה טיירל כבר מורגש היטב במעלה המלך."
+      },
+      {
+        "episodeId": "S05E02",
+        "targetFactionId": "martell",
+        "state": "tension",
+        "intensity": 70,
+        "summary": "האיום הסמלי מדורן דוחף את סרסיי לשלוח את ג׳יימי וברון לדורן למשימת חילוץ חשאית."
+      },
+      {
+        "episodeId": "S05E03",
+        "targetFactionId": "faith-militant",
+        "state": "alliance",
+        "intensity": 76,
+        "summary": "סרסיי בוחנת ברית עקיפה עם הדרור העליון כדי להכות ביריביה דרך הכוח הדתי."
+      },
+      {
+        "episodeId": "S05E04",
+        "targetFactionId": "faith-militant",
+        "state": "alliance",
+        "intensity": 84,
+        "summary": "סרסיי ממסדת כלי חדש נגד יריביה ומעניקה לדרורים כוח מעשי."
+      },
+      {
+        "episodeId": "S06E01",
+        "targetFactionId": "faith-militant",
+        "state": "tension",
+        "intensity": 84,
+        "summary": "מות מירסלה והמשך מגבלות האמונה מחלישים את הכתר ומעמיקים את החיכוך עם סרסיי."
+      },
+      {
+        "episodeId": "S06E02",
+        "targetFactionId": "faith-militant",
+        "state": "tension",
+        "intensity": 86,
+        "summary": "תומן נמשך עוד יותר אל אמונת השבעה והמרחק בינו לבין סרסיי גדל."
+      },
+      {
+        "episodeId": "S06E06",
+        "targetFactionId": "faith-militant",
+        "state": "war",
+        "intensity": 92,
+        "summary": "הברית בין תומן להדרור העליון משאירה את ג׳יימי מושפל ואת בית לאניסטר ללא שליטה של ממש בבירה."
+      },
+      {
+        "episodeId": "S06E06",
+        "targetFactionId": "tyrell",
+        "state": "tension",
+        "intensity": 88,
+        "summary": "הטיירלים נכשלים לשבור את השפלת מרג׳רי, והפער בינם לבין הלאניסטרים מתרחב."
+      },
+      {
+        "episodeId": "S06E08",
+        "targetFactionId": "faith-militant",
+        "state": "war",
+        "intensity": 94,
+        "summary": "ביטול משפט הקרב סוגר כמעט סופית את נתיב ההיחלצות של סרסיי מול הכוח הדתי."
+      },
+      {
+        "episodeId": "S06E08",
+        "targetFactionId": "frey",
+        "state": "alliance",
+        "intensity": 86,
+        "summary": "ג׳יימי משתמש באדמור כדי להשיב את נהרן לשליטת ציר לאניסטר־פריי."
+      },
+      {
+        "episodeId": "S06E10",
+        "targetFactionId": "tyrell",
+        "state": "war",
+        "intensity": 98,
+        "summary": "השמדת הספט הגדול של ביילור מוחקת כמעט את הנהגת בית טיירל והופכת את העימות לגלוי ומוחלט."
+      },
+      {
+        "episodeId": "S06E10",
+        "targetFactionId": "faith-militant",
+        "state": "war",
+        "intensity": 100,
+        "summary": "סרסיי משמידה את לב הכוח הדתי באש פרא ומכתירה את עצמה במקומו."
+      },
+      {
+        "episodeId": "S07E01",
+        "targetFactionId": "greyjoy",
+        "state": "alliance",
+        "intensity": 74,
+        "summary": "סרסיי פותחת ערוץ ברית עם יורון כעוגן ימי וצבאי חיוני."
+      },
+      {
+        "episodeId": "S07E02",
+        "targetFactionId": "greyjoy",
+        "state": "alliance",
+        "intensity": 88,
+        "summary": "סרסיי נשענת על יורון כשותף ימי מרכזי ומקבלת ממנו הישג אסטרטגי מיידי."
+      },
+      {
+        "episodeId": "S07E03",
+        "targetFactionId": "greyjoy",
+        "state": "alliance",
+        "intensity": 90,
+        "summary": "יורון מספק לסרסיי שבויים ונקמה, ומעמיק את הברית בין הכתר לצי הברזל."
+      },
+      {
+        "episodeId": "S07E03",
+        "targetFactionId": "tyrell",
+        "state": "war",
+        "intensity": 100,
+        "summary": "כיבוש רמות־גנים ומותה של אולנה ממוטטים בפועל את מחנה טיירל."
+      },
+      {
+        "episodeId": "S08E01",
+        "targetFactionId": "greyjoy",
+        "state": "alliance",
+        "intensity": 90,
+        "summary": "הברית בין סרסיי ליורון מתחזקת צבאית ואישית."
+      },
+      {
+        "episodeId": "S08E04",
+        "targetFactionId": "greyjoy",
+        "state": "alliance",
+        "intensity": 94,
+        "summary": "סרסיי נשענת על יורון, צי הברזל וחברת הזהב כדי לקבע עליונות דרומית מחודשת."
+      }
+    ]
+  },
+  {
+    "id": "lhazareen",
+    "displayName": "יושבי לאזאר",
+    "sigil": null,
+    "themeColor": "#a8906e",
+    "powerTimeline": [],
+    "relationshipTimeline": []
+  },
+  {
+    "id": "littlefinger-vale",
+    "displayName": "רשת בייליש / עמק ארין",
+    "sigil": null,
+    "themeColor": "#7ea1bb",
+    "powerTimeline": [
+      {
+        "episodeId": "S04E03",
+        "power": 69,
+        "summary": "אין לו צבא גדול, אבל ההחזקה בסאנסה והיכולת להנדס אירועים מעלות אותו משמעותית."
+      },
+      {
+        "episodeId": "S04E07",
+        "power": 84,
+        "summary": "מותה של ליסה משאיר את בייליש בעמדת שליטה כמעט מלאה על הזירה."
+      },
+      {
+        "episodeId": "S04E10",
+        "power": 86,
+        "summary": "יוצאת מן העונה יציבה, עם שליטה פוליטית מעשית בעמק ועם סאנסה לצידה."
+      }
+    ],
+    "relationshipTimeline": [
+      {
+        "episodeId": "S04E07",
+        "targetFactionId": "arryn",
+        "state": "alliance",
+        "intensity": 94,
+        "summary": "בייליש משתלט מעשית על מרכז הכוח של העמק לאחר מותה של ליסה."
+      }
+    ]
+  },
+  {
+    "id": "martell",
+    "displayName": "בית מארטל",
+    "sigil": null,
+    "themeColor": "#d37a3c",
+    "powerTimeline": [
+      {
+        "episodeId": "S04E01",
+        "power": 63,
+        "summary": "כוחם הצבאי לא נבחן כאן, אך כניסת אוברין לבירה מגדילה את השפעתם."
+      },
+      {
+        "episodeId": "S04E07",
+        "power": 69,
+        "summary": "נוכחותם חדה יותר מאי פעם, ואוברין הופך לשחקן מרכזי."
+      },
+      {
+        "episodeId": "S04E08",
+        "power": 43,
+        "summary": "מאבד את נציגו הבולט והמסוכן ביותר בבירה."
+      },
+      {
+        "episodeId": "S05E02",
+        "power": 60,
+        "summary": "נכנס למשחק עם הנהגה יציבה אך לחץ פנימי."
+      },
+      {
+        "episodeId": "S05E04",
+        "power": 58,
+        "summary": "יציב שלטונית, אך סדוק מבפנים."
+      },
+      {
+        "episodeId": "S05E06",
+        "power": 61,
+        "summary": "יציבות שלטונית מחודשת תחת דוראן."
+      },
+      {
+        "episodeId": "S05E07",
+        "power": 64,
+        "summary": "מתחזק בזכות קו מדיני שקול."
+      }
+    ],
+    "relationshipTimeline": [
+      {
+        "episodeId": "S04E01",
+        "targetFactionId": "lannister",
+        "state": "tension",
+        "intensity": 82,
+        "summary": "דורן נכנסת פיזית למשחק החצר במעלה המלך דרך אוברין, עם טינה גלויה כלפי הלאניסטרים."
+      },
+      {
+        "episodeId": "S04E08",
+        "targetFactionId": "lannister",
+        "state": "war",
+        "intensity": 94,
+        "summary": "בית מארטל סופג מהלומה קשה דרך מותו של אוברין והעימות עם הלאניסטרים נעשה אישי מתמיד."
+      },
+      {
+        "episodeId": "S05E04",
+        "targetFactionId": "lannister",
+        "state": "tension",
+        "intensity": 67,
+        "summary": "בדורן מתחזק הפער בין שלטון ממלכתי לנקמת דם סביב הגעת ג׳יימי וברון."
+      },
+      {
+        "episodeId": "S05E06",
+        "targetFactionId": "lannister",
+        "state": "tension",
+        "intensity": 52,
+        "summary": "דוראן בולם גם את יוזמת ג׳יימי וגם את נקמת אלריה, ומחזיק את דורן במסלול עצמאי וזהיר מול הכתר."
+      },
+      {
+        "episodeId": "S05E07",
+        "targetFactionId": "lannister",
+        "state": "tension",
+        "intensity": 44,
+        "summary": "דוראן כופה הסדר עם מעלה המלך ומנסה להפוך עימות לניהול יחסים, אך המתיחות הבסיסית נשארת."
+      }
+    ]
+  },
+  {
+    "id": "night-watch",
+    "displayName": "משמר הלילה",
+    "sigil": null,
+    "themeColor": "#7b848f",
+    "powerTimeline": [
+      {
+        "episodeId": "S02E01",
+        "power": 42,
+        "summary": "מאורגן, אך ניצב מול איום צפוני הולך ומתרחב."
+      },
+      {
+        "episodeId": "S02E06",
+        "power": 43,
+        "summary": "שומר על כיוון, אך בלי הישג מיידי."
+      },
+      {
+        "episodeId": "S03E04",
+        "power": 31,
+        "summary": "שרד, אך נשבר מבפנים ואיבד את מפקדו."
+      },
+      {
+        "episodeId": "S04E01",
+        "power": 28,
+        "summary": "מבודד, דל במשאבים, וחסר אמון פנימי."
+      },
+      {
+        "episodeId": "S04E03",
+        "power": 33,
+        "summary": "עדיין חלש, אבל מראה סוף סוף יוזמה."
+      },
+      {
+        "episodeId": "S04E05",
+        "power": 39,
+        "summary": "מבצע מוצלח מעלה את מוראלו ואת אמינות ג׳ון."
+      },
+      {
+        "episodeId": "S04E07",
+        "power": 30,
+        "summary": "מאוים יותר ויותר וללא תמיכה מספקת."
+      },
+      {
+        "episodeId": "S04E09",
+        "power": 35,
+        "summary": "סופג אבדות איומות, אך זוכה בלגיטימציה מחודשת דרך עמידה בקרב."
+      },
+      {
+        "episodeId": "S05E01",
+        "power": 48,
+        "summary": "חסר הנהגה ברורה ותלוי בהחלטות פוליטיות חיצוניות."
+      },
+      {
+        "episodeId": "S05E02",
+        "power": 62,
+        "summary": "עלייה ברורה עקב בחירת ג׳ון."
+      },
+      {
+        "episodeId": "S05E03",
+        "power": 64,
+        "summary": "סמכותו של ג׳ון מתבססת."
+      },
+      {
+        "episodeId": "S05E05",
+        "power": 68,
+        "summary": "עלייה בזכות יוזמת ג׳ון מול הפראיים."
+      },
+      {
+        "episodeId": "S05E07",
+        "power": 63,
+        "summary": "יציב צבאית אך נחלש מוסדית עם מות אאימון."
+      },
+      {
+        "episodeId": "S05E08",
+        "power": 55,
+        "summary": "הרוויח ברית אך גילה איום גדול בהרבה מששיער."
+      },
+      {
+        "episodeId": "S05E09",
+        "power": 57,
+        "summary": "מביא שורדים הביתה אך בלי פתרון לסכסוך הפנימי."
+      },
+      {
+        "episodeId": "S05E10",
+        "power": 18,
+        "summary": "קריסה מוסדית כמעט מלאה."
+      },
+      {
+        "episodeId": "S06E03",
+        "power": 17,
+        "summary": "מפורר ומובך אחרי המרד וההוצאות להורג;"
+      }
+    ],
+    "relationshipTimeline": [
+      {
+        "episodeId": "S02E01",
+        "targetFactionId": "wildlings",
+        "state": "tension",
+        "intensity": 72,
+        "summary": "אנשי משמר הלילה לומדים על איחוד הפראים תחת מאנס ריידר."
+      },
+      {
+        "episodeId": "S02E10",
+        "targetFactionId": "wildlings",
+        "state": "war",
+        "intensity": 92,
+        "summary": "האיום מן הצפון עולה מעל כל מלחמת הכתר עם צבא מתים המתקדם אל המשמר."
+      },
+      {
+        "episodeId": "S04E09",
+        "targetFactionId": "wildlings",
+        "state": "war",
+        "intensity": 97,
+        "summary": "משמר הלילה והפראים נאבקים על קיומה של החומה בקרב ישיר וכולל."
+      },
+      {
+        "episodeId": "S05E02",
+        "targetFactionId": "wildlings",
+        "state": "tension",
+        "intensity": 42,
+        "summary": "בחירת ג׳ון למפקד מציבה אותו מול שאלת היחס לפראיים ולמהלך של סטאניס."
+      },
+      {
+        "episodeId": "S05E05",
+        "targetFactionId": "wildlings",
+        "state": "alliance",
+        "intensity": 74,
+        "summary": "ג׳ון מגייס את טורמונד ושולח אותו להארדהום כדי להביא את הפראיים דרומה."
+      },
+      {
+        "episodeId": "S05E08",
+        "targetFactionId": "wildlings",
+        "state": "alliance",
+        "intensity": 88,
+        "summary": "הברית בין ג׳ון לחלק מן הפראיים עוברת ממחשבה למעשה בהארדהום."
+      },
+      {
+        "episodeId": "S05E10",
+        "targetFactionId": "wildlings",
+        "state": "alliance",
+        "intensity": 74,
+        "summary": "הברית עם הפראיים ממשיכה להתקיים גם כשהיא קורעת את משמר הלילה מבפנים."
+      },
+      {
+        "episodeId": "S06E03",
+        "targetFactionId": "wildlings",
+        "state": "tension",
+        "intensity": 68,
+        "summary": "אחרי המרד וההוצאות להורג, החומה נשארת מפוררת וחסרת הנהגה ברורה מול איומי הצפון."
+      }
+    ]
+  },
+  {
+    "id": "renly-tyrell",
+    "displayName": "מחנה רנלי / טיירל",
+    "sigil": null,
+    "themeColor": "#7ab574",
+    "powerTimeline": [
+      {
+        "episodeId": "S02E03",
+        "power": 72,
+        "summary": "צבא גדול וחצר נוצצת, אך בלי הכרעה."
+      },
+      {
+        "episodeId": "S02E04",
+        "power": 74,
+        "summary": "עדיין בעלי המסה הגדולה ביותר, אך חסרי הכרעה אסטרטגית."
+      },
+      {
+        "episodeId": "S02E05",
+        "power": 20,
+        "summary": "הטוען עצמו מת, והמחנה מתפרק."
+      }
+    ],
+    "relationshipTimeline": []
+  },
+  {
+    "id": "stark",
+    "displayName": "בית סטארק",
+    "sigil": null,
+    "themeColor": "#8ea7cf",
+    "powerTimeline": [
+      {
+        "episodeId": "S01E01",
+        "power": 84,
+        "summary": "חזק, מאוחד ומכובד בצפון, אך טרם נכנס במלואו למשחק החצר."
+      },
+      {
+        "episodeId": "S01E02",
+        "power": 78,
+        "summary": "עדיין חזק בצפון, אך פועל מעמדת תגובה ונפגע רגשית ופוליטית."
+      },
+      {
+        "episodeId": "S01E03",
+        "power": 76,
+        "summary": "נד נכנס למרכז השלטון, אך כטירון בזירת תככים שאינה ביתית לו."
+      },
+      {
+        "episodeId": "S01E04",
+        "power": 74,
+        "summary": "יוזמה נועזת נותנת להם מומנטום מוסרי, אך גם חושפת אותם לסכנת הסלמה."
+      },
+      {
+        "episodeId": "S01E05",
+        "power": 68,
+        "summary": "נד פצוע, אנשיו נהרגים, והמשפחה מאבדת חופש פעולה."
+      },
+      {
+        "episodeId": "S01E06",
+        "power": 72,
+        "summary": "משיב יוזמה מוסדית דרך נד ושומר על יציבות בצפון."
+      },
+      {
+        "episodeId": "S01E07",
+        "power": 60,
+        "summary": "מאבד את ראש המשפחה שבבירה ואת השליטה באירועים."
+      },
+      {
+        "episodeId": "S01E08",
+        "power": 64,
+        "summary": "מאבד בני משפחה כקלפי מיקוח, אך יוצר לראשונה כוח צבאי מאורגן בדרום."
+      },
+      {
+        "episodeId": "S01E09",
+        "power": 72,
+        "summary": "סופג מכה איומה עם מות נד, אך מרוויח הישג צבאי אדיר ולגיטימציה של נקמה."
+      },
+      {
+        "episodeId": "S01E10",
+        "power": 82,
+        "summary": "חרף מות נד, זוכה בלגיטימציה שלטונית עצמאית, במנהיג מאחד ובתנופה פוליטית-צבאית."
+      },
+      {
+        "episodeId": "S02E01",
+        "power": 74,
+        "summary": "רצף ניצחונות שדה, אך עדיין ללא צי וללא השבת הבנות."
+      },
+      {
+        "episodeId": "S02E02",
+        "power": 70,
+        "summary": "חזק צבאית, אך עומד לאבד את איי הברזל כשותף פוטנציאלי."
+      },
+      {
+        "episodeId": "S02E03",
+        "power": 66,
+        "summary": "חזק צבאית אך מוחלש בגלל מצבן של הבנות והתמוטטות המסלול של אריה."
+      },
+      {
+        "episodeId": "S02E04",
+        "power": 76,
+        "summary": "עוד ניצחון שדה ברור."
+      },
+      {
+        "episodeId": "S02E05",
+        "power": 72,
+        "summary": "חזקים, אך אובדן אופציית הברית עם רנלי מורגש."
+      },
+      {
+        "episodeId": "S02E06",
+        "power": 52,
+        "summary": "מכה אסטרטגית וסמלית קשה."
+      },
+      {
+        "episodeId": "S02E07",
+        "power": 48,
+        "summary": "היורשים לכאורה מתים, גם אם הצופה יודע אחרת."
+      },
+      {
+        "episodeId": "S02E08",
+        "power": 54,
+        "summary": "מקבל חיזוק מהימלטות אריה, אך נשחק מבפנים."
+      },
+      {
+        "episodeId": "S02E09",
+        "power": 50,
+        "summary": "לא מעורב ישירות בפרק."
+      },
+      {
+        "episodeId": "S02E10",
+        "power": 44,
+        "summary": "פגיעה בווינטרפל ושבירת הבטחה אסטרטגית לפריי."
+      },
+      {
+        "episodeId": "S03E01",
+        "power": 64,
+        "summary": "עדיין שדה משמעותי, אך נע דרומה בלי הכרעה."
+      },
+      {
+        "episodeId": "S03E02",
+        "power": 59,
+        "summary": "מפוצל גיאוגרפית, אך בראן מקבל ידע ובני ברית."
+      },
+      {
+        "episodeId": "S03E03",
+        "power": 57,
+        "summary": "עדיין משמעותי, אך עם מתחים פנימיים ברורים."
+      },
+      {
+        "episodeId": "S03E04",
+        "power": 56,
+        "summary": "עדיין פעיל, אך ארצות הנהר נראות כאזור חסר ריבון אמיתי."
+      },
+      {
+        "episodeId": "S03E05",
+        "power": 46,
+        "summary": "מכה קשה עקב אובדן הקארסטארקים."
+      },
+      {
+        "episodeId": "S03E06",
+        "power": 49,
+        "summary": "מצמצם נזק באמצעות חידוש הברית עם פריי."
+      },
+      {
+        "episodeId": "S03E07",
+        "power": 45,
+        "summary": "אריה מנותקת, רוב עדיין ללא הכרעה."
+      },
+      {
+        "episodeId": "S03E08",
+        "power": 43,
+        "summary": "נכס מפתח שלו, סאנסה, כלוא עמוק יותר בידי היריב."
+      },
+      {
+        "episodeId": "S03E09",
+        "power": 12,
+        "summary": "הנהגה עליונה חוסלה, והמחנה נשבר."
+      },
+      {
+        "episodeId": "S04E04",
+        "power": 24,
+        "summary": "עדיין מפוזרות וחסרות בסיס כוח, למרות ניסיונות נאמנות מצד ג׳יימי ובריאן."
+      },
+      {
+        "episodeId": "S06E01",
+        "power": 24,
+        "summary": "חלש, אך סאנסה חיה ונאספת סביבה נאמנות;"
+      },
+      {
+        "episodeId": "S06E02",
+        "power": 32,
+        "summary": "חזרת ג׳ון משנה את התמונה, גם אם עדיין אין לו צבא;"
+      },
+      {
+        "episodeId": "S06E03",
+        "power": 34,
+        "summary": "ג׳ון חי אך נטול מסגרת צבאית;"
+      },
+      {
+        "episodeId": "S06E04",
+        "power": 43,
+        "summary": "עדיין חלש צבאית, אך סוף סוף מאוחד סביב ג׳ון וסאנסה;"
+      },
+      {
+        "episodeId": "S06E05",
+        "power": 45,
+        "summary": "יש כיוון ארגוני, אך עדיין בלי מסה צבאית;"
+      },
+      {
+        "episodeId": "S06E07",
+        "power": 52,
+        "summary": "עדיין קטן, אך עם סימני גיוס אמיתיים;"
+      },
+      {
+        "episodeId": "S06E08",
+        "power": 55,
+        "summary": "אריה חוזרת להיות שחקנית סטארקית מלאה, והמחנה בצפון ממשיך להתגבש;"
+      },
+      {
+        "episodeId": "S06E09",
+        "power": 89,
+        "summary": "ווינטרפל חזרה בידיהם;"
+      },
+      {
+        "episodeId": "S06E10",
+        "power": 92,
+        "summary": "שליטה בווינטרפל ולגיטימציה צפונית רחבה;"
+      },
+      {
+        "episodeId": "S07E01",
+        "power": 78,
+        "summary": "הצפון מאוחד יחסית ומגויס, אך סובל ממחסור במשאבים ומאיום מתקרב מן החומה."
+      },
+      {
+        "episodeId": "S07E02",
+        "power": 76,
+        "summary": "יציב, אך הנהגת הצפון מפוצלת גאוגרפית בין ג'ון לסאנסה."
+      },
+      {
+        "episodeId": "S07E03",
+        "power": 80,
+        "summary": "ללא רווח צבאי ישיר, אבל עם התקדמות מדינית חשובה דרך ג'ון וגישה לזכוכית־דרקון."
+      },
+      {
+        "episodeId": "S07E04",
+        "power": 82,
+        "summary": "איחוד אחים מרשים יותר כלפי חוץ, אך עם זרעי חשד פנימיים."
+      },
+      {
+        "episodeId": "S07E05",
+        "power": 79,
+        "summary": "מבחוץ חזק, מבפנים רווי חשד הדדי בין אריה לסאנסה."
+      },
+      {
+        "episodeId": "S07E06",
+        "power": 74,
+        "summary": "מקבל ברית חזקה יותר עם דאינריז, אך שורד בקושי והופך תלוי בה יותר מתמיד."
+      },
+      {
+        "episodeId": "S07E07",
+        "power": 88,
+        "summary": "עלייה חדה בלכידות ובהנהגה לאחר סילוק אצבעון, אף שהאיום הצבאי רק גובר."
+      },
+      {
+        "episodeId": "S08E01",
+        "power": 74,
+        "summary": "שולט בווינטרפל ומחזיק ביתרון מוסרי ומקומי, אך תלוי בדאינריז ומודאג ממזון, אמון ותגבורות שלא יגיעו."
+      },
+      {
+        "episodeId": "S08E02",
+        "power": 68,
+        "summary": "מלוכד יותר מאשר בפרק הקודם, אך נאלץ להילחם על אדמתו נגד כוח עדיף בהרבה."
+      },
+      {
+        "episodeId": "S08E03",
+        "power": 55,
+        "summary": "הניצחון עצום, אך המחיר בדמים כה כבד עד שהצפון יוצא מותש וחסר עומק צבאי."
+      },
+      {
+        "episodeId": "S08E04",
+        "power": 68,
+        "summary": "צבאו שחוק, אבל השפעתו הפוליטית עולה בזכות סאנסה ובזכות חוקיותו של ג'ון."
+      },
+      {
+        "episodeId": "S08E05",
+        "power": 42,
+        "summary": "ג'ון נוכח בעיר אך אינו שולט במהלך המאורעות, ועמדתו הפוליטית נחלשת מול ניצחון הטרור של בעלת בריתו."
+      },
+      {
+        "episodeId": "S08E06",
+        "power": 95,
+        "summary": "בראן יושב בראש הסדר החדש, סאנסה שולטת בצפון העצמאי, אריה בוחרת חירות, וג'ון חי — גם אם מחוץ למערכת הכוח. זהו הבית הדומיננטי של סיום העונה."
+      }
+    ],
+    "relationshipTimeline": [
+      {
+        "episodeId": "S01E01",
+        "targetFactionId": "baratheon",
+        "state": "alliance",
+        "intensity": 78,
+        "summary": "ברית סטארק–באראתיאון מתחזקת רשמית עם הצעתו של רוברט לנד להפוך ליד המלך ועם שידוך אפשרי בין סאנסה לג'ופרי."
+      },
+      {
+        "episodeId": "S01E01",
+        "targetFactionId": "lannister",
+        "state": "tension",
+        "intensity": 68,
+        "summary": "במקביל נוצר ציר חשד ראשון של סטארק נגד לאניסטר בעקבות מכתבה של ליסה."
+      },
+      {
+        "episodeId": "S01E05",
+        "targetFactionId": "lannister",
+        "state": "war",
+        "intensity": 90,
+        "summary": "היריבות סטארק–לאניסטר הופכת רשמית למאבק אלים."
+      },
+      {
+        "episodeId": "S01E09",
+        "targetFactionId": "frey",
+        "state": "alliance",
+        "intensity": 82,
+        "summary": "בית פריי נכנס למשחק כברית מעבר חשובה לצפון."
+      },
+      {
+        "episodeId": "S02E02",
+        "targetFactionId": "greyjoy",
+        "state": "tension",
+        "intensity": 82,
+        "summary": "גרייג׳וי מנתקים עצמם אסטרטגית ממחנה סטארק."
+      },
+      {
+        "episodeId": "S02E08",
+        "targetFactionId": "frey",
+        "state": "tension",
+        "intensity": 86,
+        "summary": "רוב חוצה קו מול בית פריי דרך בחירתו הרגשית והפוליטית."
+      },
+      {
+        "episodeId": "S03E06",
+        "targetFactionId": "frey",
+        "state": "alliance",
+        "intensity": 58,
+        "summary": "רוב מגיע להסכם חדש עם פריי כדי לשקם את הברית השבורה."
+      },
+      {
+        "episodeId": "S06E04",
+        "targetFactionId": "littlefinger-vale",
+        "state": "alliance",
+        "intensity": 74,
+        "summary": "ליטלפינגר מציע לסאנסה את אבירי הבקעה ומציב פתח לברית צבאית מחודשת."
+      },
+      {
+        "episodeId": "S06E07",
+        "targetFactionId": "bolton",
+        "state": "war",
+        "intensity": 90,
+        "summary": "מחנה סטארק מגייס בתי אצולה צפוניים לקראת עימות ישיר על ווינטרפל."
+      },
+      {
+        "episodeId": "S06E09",
+        "targetFactionId": "bolton",
+        "state": "war",
+        "intensity": 100,
+        "summary": "קרב הממזרים מסתיים בקריסת שלטון בולטון ובהשבת ווינטרפל לבית סטארק."
+      },
+      {
+        "episodeId": "S06E09",
+        "targetFactionId": "littlefinger-vale",
+        "state": "alliance",
+        "intensity": 92,
+        "summary": "אבירי הבקעה מגיעים ברגע הקריטי ומכריעים את הקרב לטובת סטארק."
+      },
+      {
+        "episodeId": "S07E01",
+        "targetFactionId": "white-walkers",
+        "state": "war",
+        "intensity": 94,
+        "summary": "החזון של סנדור והמודיעין שמגיע אל ג'ון מעבירים את הצפון למצב גיוס מול צבא המתים."
+      },
+      {
+        "episodeId": "S07E03",
+        "targetFactionId": "targaryen",
+        "state": "alliance",
+        "intensity": 62,
+        "summary": "הפגישה הראשונה בין ג'ון לדאינריז פותחת ערוץ עבודה ממשי סביב זכוכית־הדרקון והאיום מן הצפון."
+      },
+      {
+        "episodeId": "S07E04",
+        "targetFactionId": "littlefinger-vale",
+        "state": "tension",
+        "intensity": 78,
+        "summary": "הפגיון והמפגשים המחודשים בווינטרפל מחדדים את החשד סביב אצבעון."
+      },
+      {
+        "episodeId": "S07E05",
+        "targetFactionId": "targaryen",
+        "state": "alliance",
+        "intensity": 84,
+        "summary": "ג'ון ודאינריז עוברים מן הדיפלומטיה הראשונית לתכנון משותף של מבצע נגד המתים."
+      },
+      {
+        "episodeId": "S07E05",
+        "targetFactionId": "littlefinger-vale",
+        "state": "tension",
+        "intensity": 85,
+        "summary": "אצבעון מעמיק את הקרע בין אריה לסאנסה באמצעות המכתב הישן."
+      },
+      {
+        "episodeId": "S07E06",
+        "targetFactionId": "targaryen",
+        "state": "alliance",
+        "intensity": 96,
+        "summary": "ג'ון נשבע אמונים לדאינריז אחרי החילוץ, והברית ביניהם נהיית רשמית ואישית."
+      },
+      {
+        "episodeId": "S07E07",
+        "targetFactionId": "targaryen",
+        "state": "alliance",
+        "intensity": 98,
+        "summary": "הברית בין ג'ון לדאינריז נהיית פומבית לעיני כל המחנות בפסגת בור הדרקונים."
+      },
+      {
+        "episodeId": "S07E07",
+        "targetFactionId": "littlefinger-vale",
+        "state": "war",
+        "intensity": 100,
+        "summary": "בית סטארק חושף את פשעיו של אצבעון ומחסל את הגורם המסית המרכזי בתוכו."
+      },
+      {
+        "episodeId": "S08E01",
+        "targetFactionId": "targaryen",
+        "state": "tension",
+        "intensity": 86,
+        "summary": "הצפון פוגש את דאינריז בחשדנות ומתקשה לקבל את בריתו של ג'ון איתה."
+      },
+      {
+        "episodeId": "S08E02",
+        "targetFactionId": "targaryen",
+        "state": "tension",
+        "intensity": 88,
+        "summary": "סאנסה ודאינריז מגלות שהמחלוקת האמיתית ביניהן היא שאלת ריבונות הצפון אחרי המלחמה."
+      },
+      {
+        "episodeId": "S08E03",
+        "targetFactionId": "targaryen",
+        "state": "alliance",
+        "intensity": 97,
+        "summary": "מחנה סטארק ומחנה דאינריז שורדים את הקרב רק בזכות הברית ביניהם, גם אם במחיר כבד."
+      },
+      {
+        "episodeId": "S08E04",
+        "targetFactionId": "targaryen",
+        "state": "tension",
+        "intensity": 96,
+        "summary": "סוד מוצאו של ג'ון דולף החוצה ומעמיק את הקרע הפוליטי בין סאנסה לדאינריז."
+      },
+      {
+        "episodeId": "S08E05",
+        "targetFactionId": "targaryen",
+        "state": "tension",
+        "intensity": 100,
+        "summary": "ג'ון וטיריון מבינים במהלך שרפת העיר שדאינריז הפכה לאיום ולא לשחרור."
+      },
+      {
+        "episodeId": "S08E06",
+        "targetFactionId": "targaryen",
+        "state": "war",
+        "intensity": 100,
+        "summary": "ג'ון הורג את דאינריז, והציר סטארק–טארגאריין מתפרק סופית עם קריסת השושלת הטארגאריינית."
+      },
+      {
+        "episodeId": "S08E06",
+        "targetFactionId": "lannister",
+        "state": "tension",
+        "intensity": 36,
+        "summary": "בית סטארק עומד בראש הסדר החדש, בעוד בית לאניסטר שורד רק דרך תפקידו הממשלי של טיריון."
       }
     ]
   },
@@ -297,6 +2080,276 @@
         "episodeId": "S01E10",
         "power": 55,
         "summary": "עדיין חסר טריטוריה, אך הופעת שלושת הדרקונים משנה דרמטית את פוטנציאל הכוח והמשיכה של הבית."
+      },
+      {
+        "episodeId": "S02E01",
+        "power": 20,
+        "summary": "יש דרקונים, אך המצב המיידי הוא כמעט קריסת הישרדות."
+      },
+      {
+        "episodeId": "S02E02",
+        "power": 18,
+        "summary": "הדרקונים קיימים, אך הסביבה מבהירה כמה היא פגיעה."
+      },
+      {
+        "episodeId": "S02E04",
+        "power": 28,
+        "summary": "עולה מעט בזכות כניסה לקארת׳, אף שהבסיס שלה עדיין זעום."
+      },
+      {
+        "episodeId": "S02E05",
+        "power": 31,
+        "summary": "קארת׳ מספקת זמן נשימה, לא צבא."
+      },
+      {
+        "episodeId": "S02E06",
+        "power": 17,
+        "summary": "הדרקונים נעלמים, והכוח יורד כמעט למינימום."
+      },
+      {
+        "episodeId": "S02E07",
+        "power": 14,
+        "summary": "בלי ספינות ובלי ביטחון בתוך קארת׳."
+      },
+      {
+        "episodeId": "S02E08",
+        "power": 16,
+        "summary": "דאינריז עדיין בלי צבא, אך פועלת לשחזור יתרונה הייחודי."
+      },
+      {
+        "episodeId": "S02E09",
+        "power": 16,
+        "summary": "ללא שינוי ישיר."
+      },
+      {
+        "episodeId": "S02E10",
+        "power": 27,
+        "summary": "בלי צבא, אבל עם דרקונים בידיה שוב."
+      },
+      {
+        "episodeId": "S03E01",
+        "power": 34,
+        "summary": "עדיין חלש צבאית, אך לראשונה מזהה מסלול ממשי לבניית כוח."
+      },
+      {
+        "episodeId": "S03E03",
+        "power": 38,
+        "summary": "קרוב לזינוק חד אם העסקה תושלם."
+      },
+      {
+        "episodeId": "S03E04",
+        "power": 58,
+        "summary": "קפיצה דרמטית בזכות הבלתי-טמאים."
+      },
+      {
+        "episodeId": "S03E05",
+        "power": 60,
+        "summary": "לא צומח ישירות בפרק, אך עומד על בסיס חדש ויציב יותר."
+      },
+      {
+        "episodeId": "S03E07",
+        "power": 64,
+        "summary": "אחרי אסטפור, היא כבר מכתיבה תנאים לעיר נוספת."
+      },
+      {
+        "episodeId": "S03E08",
+        "power": 70,
+        "summary": "הבלתי-טמאים בתוספת הבנים השניים הם זינוק מבצעי משמעותי."
+      },
+      {
+        "episodeId": "S03E10",
+        "power": 76,
+        "summary": "כוח צבאי גדול, תדמית משחררת, והתרחבות יציבה במפרץ העבדים."
+      },
+      {
+        "episodeId": "S04E01",
+        "power": 74,
+        "summary": "דאינריז צוברת כוח צבאי ותנופה, אך טרם הוכיחה שליטה בעיר גדולה."
+      },
+      {
+        "episodeId": "S04E03",
+        "power": 86,
+        "summary": "כיבוש מירין מזניק את עוצמתה של דאינריז, צבאית וסמלית."
+      },
+      {
+        "episodeId": "S04E04",
+        "power": 88,
+        "summary": "דאינריז שולטת בעיר עצומה ומציבה קו של משטר."
+      },
+      {
+        "episodeId": "S04E05",
+        "power": 84,
+        "summary": "הכיבוש נעצר מרצון, אך החלטת השלטון מחזקת אותה בטווח הארוך."
+      },
+      {
+        "episodeId": "S04E06",
+        "power": 79,
+        "summary": "שליטה קיימת, אך ניהול מירין שוחק ומשאביה נמתחים."
+      },
+      {
+        "episodeId": "S04E08",
+        "power": 74,
+        "summary": "עדיין שולט במירין, אך סופג פגיעה באמון וביציבות הפנימית."
+      },
+      {
+        "episodeId": "S04E10",
+        "power": 71,
+        "summary": "שלטון במירין נמשך, אך נחשף מחיר כבד של חוסר שליטה בכוח."
+      },
+      {
+        "episodeId": "S05E01",
+        "power": 72,
+        "summary": "לדאינריז יש עיר וצבא, אך המרד האורבני גובר."
+      },
+      {
+        "episodeId": "S05E02",
+        "power": 68,
+        "summary": "עדיין שולט במירין, אך מאבד תמיכה ברחוב."
+      },
+      {
+        "episodeId": "S05E03",
+        "power": 70,
+        "summary": "שמה של דאינריז הולך לפניה, אך היא עדיין רחוקה מווסטרוז."
+      },
+      {
+        "episodeId": "S05E04",
+        "power": 63,
+        "summary": "ירידה בשל אובדן באריסטאן והסלמת ההתנגדות."
+      },
+      {
+        "episodeId": "S05E05",
+        "power": 66,
+        "summary": "עלייה מתונה עקב פשרה שמקטינה חיכוך מיידי."
+      },
+      {
+        "episodeId": "S05E07",
+        "power": 70,
+        "summary": "עלייה בזכות הגעת טיריון."
+      },
+      {
+        "episodeId": "S05E08",
+        "power": 72,
+        "summary": "יציב ואף משתפר במישור הייעוצי."
+      },
+      {
+        "episodeId": "S05E09",
+        "power": 75,
+        "summary": "עלייה סמלית אדירה בזכות דרוגון, אך שלטון העיר מתערער."
+      },
+      {
+        "episodeId": "S05E10",
+        "power": 52,
+        "summary": "עוצמת דרקון קיימת, אך המנהיגה מנותקת מממלכתה."
+      },
+      {
+        "episodeId": "S06E01",
+        "power": 43,
+        "summary": "המנהיגה בחוסר חופש, אך אנשיה במירין עדיין מחזיקים קו."
+      },
+      {
+        "episodeId": "S06E02",
+        "power": 47,
+        "summary": "הדרקונים שוחררו, אך דאינריז עצמה עדיין לא עם אנשיה."
+      },
+      {
+        "episodeId": "S06E03",
+        "power": 45,
+        "summary": "המנהיגה עדיין מרוחקת, אבל אנשיה פועלים;"
+      },
+      {
+        "episodeId": "S06E04",
+        "power": 76,
+        "summary": "זינוק חד בעקבות השגת ח׳אלסאר עצום;"
+      },
+      {
+        "episodeId": "S06E05",
+        "power": 79,
+        "summary": "צובר גם לגיטימציה דתית וגם משמעת פנימית;"
+      },
+      {
+        "episodeId": "S06E06",
+        "power": 84,
+        "summary": "שליטה מלאה על ח׳אלסאר עצום;"
+      },
+      {
+        "episodeId": "S06E08",
+        "power": 77,
+        "summary": "תחת מצור, אך המנהיגה חזרה אישית;"
+      },
+      {
+        "episodeId": "S06E09",
+        "power": 91,
+        "summary": "ניצחון צבאי מלא וברית ימית חשובה;"
+      },
+      {
+        "episodeId": "S06E10",
+        "power": 96,
+        "summary": "דרקונים, צי, בלתי-מוכתמים, דותראקים ובריתות אזוריות;"
+      },
+      {
+        "episodeId": "S07E01",
+        "power": 92,
+        "summary": "כוח צבאי עצום, שלושה דרקונים, צי ובסיס מבוצר בדרגונסטון. העלייה נובעת מהמעבר הפיזי לווסטרוז והפיכת האיום שלה למיידי."
+      },
+      {
+        "episodeId": "S07E02",
+        "power": 82,
+        "summary": "עדיין חזק מאוד, אבל מאבד יוזמה בים ופגיע יותר משנדמה."
+      },
+      {
+        "episodeId": "S07E03",
+        "power": 68,
+        "summary": "עדיין עוצמתי, אך סופג מכה קשה בקואליציה וביוקרה האסטרטגית."
+      },
+      {
+        "episodeId": "S07E04",
+        "power": 84,
+        "summary": "קפיצה בכוח ההרתעה ובמומנטום הצבאי אחרי מתקפת אש־ודות'ראקים מוצלחת."
+      },
+      {
+        "episodeId": "S07E05",
+        "power": 80,
+        "summary": "מפגין משמעת, כוח ושרידות, אך הופך מפחיד יותר לבתי האצולה המקומיים."
+      },
+      {
+        "episodeId": "S07E06",
+        "power": 62,
+        "summary": "עדיין בעל כוח אדיר, אך מאבד דרקון ומגלה שהאיום מן הצפון מסוגל לפגוע גם בו."
+      },
+      {
+        "episodeId": "S07E07",
+        "power": 78,
+        "summary": "הברית פומבית ומבוססת, אך ניצבת כעת מול אויב שחצה את החומה."
+      },
+      {
+        "episodeId": "S08E01",
+        "power": 80,
+        "summary": "עדיין הכוח הצבאי המרשים ביותר על הנייר, בזכות שני דרקונים, בלתי-טמאים ודות'ראקים; אבל הלגיטימציה שלה בצפון כבר נסדקת."
+      },
+      {
+        "episodeId": "S08E02",
+        "power": 77,
+        "summary": "עדיין מצויד בשני דרקונים ובכוחות עילית, אך הסדק הפוליטי עם הצפון גלוי ואינו נפתר."
+      },
+      {
+        "episodeId": "S08E03",
+        "power": 58,
+        "summary": "שומר על דרוגון וראיגל ועל הנהגה מרכזית, אבל מאבד לוחמים רבים ואת ז'ורה."
+      },
+      {
+        "episodeId": "S08E04",
+        "power": 49,
+        "summary": "מאבד דרקון, מאבד את מיסנדיי, נתון לספקות פנימיים ולדליפת תביעת ג'ון."
+      },
+      {
+        "episodeId": "S08E05",
+        "power": 88,
+        "summary": "מחזיק בבירה, בדרוגון ובמונופול הכוח הצבאי, גם אם במחיר קריסת כל בסיס מוסרי ללגיטימציה שלו."
+      },
+      {
+        "episodeId": "S08E06",
+        "power": 5,
+        "summary": "דאינריז מתה, ג'ון מודח מהמערכת הפוליטית, והבית מאבד גם שליט וגם כס. דרוגון נותר חי אך מחוץ למשחק השלטוני."
       }
     ],
     "relationshipTimeline": [
@@ -313,76 +2366,352 @@
         "state": "alliance",
         "intensity": 84,
         "summary": "דרוגו קושר לראשונה את כוחו הצבאי ישירות לפלישה אל ווסטרוז."
-      }
-    ]
-  },
-  {
-    "id": "arryn",
-    "displayName": "בית אארין",
-    "sigil": null,
-    "themeColor": "#7b8cb8",
-    "powerTimeline": [
+      },
       {
-        "episodeId": "S01E05",
-        "power": 55,
-        "summary": "מחזיק במבצר חזק מאוד, אך אינו ממיר את ביטחונו לכוח מדיני אפקטיבי."
-      }
-    ],
-    "relationshipTimeline": []
-  },
-  {
-    "id": "frey",
-    "displayName": "בית פריי",
-    "sigil": null,
-    "themeColor": "#8b6a46",
-    "powerTimeline": [],
-    "relationshipTimeline": [
+        "episodeId": "S06E04",
+        "targetFactionId": "dothraki",
+        "state": "alliance",
+        "intensity": 96,
+        "summary": "דאינריז יוצאת מן הלהבות וזוכה בנאמנות המונית של הדותראקים."
+      },
       {
-        "episodeId": "S01E09",
-        "targetFactionId": "stark",
+        "episodeId": "S06E06",
+        "targetFactionId": "dothraki",
+        "state": "alliance",
+        "intensity": 98,
+        "summary": "דאינריז מאחדת סופית את הדותראקים סביב הבטחת המסע לווסטרוז."
+      },
+      {
+        "episodeId": "S06E09",
+        "targetFactionId": "greyjoy-yara-theon",
+        "state": "alliance",
+        "intensity": 94,
+        "summary": "דאינריז חותמת עם יארה ותיאון על ברית ימית ופוליטית רחבה."
+      },
+      {
+        "episodeId": "S06E10",
+        "targetFactionId": "ellaria-dorne",
         "state": "alliance",
         "intensity": 82,
-        "summary": "בית פריי נכנס למשחק כברית מעבר חשובה לצפון."
-      }
-    ]
-  },
-  {
-    "id": "night-watch",
-    "displayName": "משמר הלילה",
-    "sigil": null,
-    "themeColor": "#7b848f",
-    "powerTimeline": [],
-    "relationshipTimeline": []
-  },
-  {
-    "id": "dothraki",
-    "displayName": "הדות'ראקים",
-    "sigil": null,
-    "themeColor": "#a36b3a",
-    "powerTimeline": [],
-    "relationshipTimeline": [
-      {
-        "episodeId": "S01E01",
-        "targetFactionId": "targaryen",
-        "state": "alliance",
-        "intensity": 72,
-        "summary": "באסוס מתחיל ציר טארגאריין–דות'ראקי כבסיס לאיום עתידי על ווסטרוז."
+        "summary": "היציאה לווסטרוז נשענת גם על ציר דורני חדש דרך ואריז ואלריה."
       },
       {
-        "episodeId": "S01E07",
-        "targetFactionId": "targaryen",
+        "episodeId": "S06E10",
+        "targetFactionId": "greyjoy-yara-theon",
         "state": "alliance",
-        "intensity": 84,
-        "summary": "דרוגו קושר לראשונה את כוחו הצבאי ישירות לפלישה אל ווסטרוז."
+        "intensity": 95,
+        "summary": "דאינריז מפליגה לווסטרוז עם צי משמעותי שנשען גם על ספינות יארה ותיאון."
+      },
+      {
+        "episodeId": "S07E02",
+        "targetFactionId": "stark",
+        "state": "tension",
+        "intensity": 58,
+        "summary": "הזימון של ג'ון לדרגונסטון פותח ערוץ ברית פוטנציאלי, אך מתוך עמדה של דרישות וספק הדדי."
+      },
+      {
+        "episodeId": "S07E04",
+        "targetFactionId": "lannister",
+        "state": "war",
+        "intensity": 98,
+        "summary": "דאינריז מעבירה את הדרקון והדות'ראקים לשדה הקרב ושוברת באש את צבא לאניסטר־טארלי."
+      },
+      {
+        "episodeId": "S08E05",
+        "targetFactionId": "lannister",
+        "state": "war",
+        "intensity": 100,
+        "summary": "דאינריז ודרוגון משמידים את צי הברזל, את חברת הזהב ואת מערכי ההגנה של מעלה-מלך."
       }
     ]
   },
   {
-    "id": "lhazareen",
-    "displayName": "יושבי לאזאר",
+    "id": "tarly",
+    "displayName": "בית טארלי",
     "sigil": null,
-    "themeColor": "#a8906e",
-    "powerTimeline": [],
+    "themeColor": "#556b3f",
+    "powerTimeline": [
+      {
+        "episodeId": "S06E06",
+        "power": 58,
+        "summary": "עדיין חזק אזורית, אך מתגלה בו סדק משפחתי משמעותי;"
+      }
+    ],
     "relationshipTimeline": []
+  },
+  {
+    "id": "thenns",
+    "displayName": "שבטי הת׳ן",
+    "sigil": null,
+    "themeColor": "#8d6950",
+    "powerTimeline": [
+      {
+        "episodeId": "S04E09",
+        "power": 12,
+        "summary": "האבדות הכבדות והכישלון בחומה פוגעים בהם קשות."
+      }
+    ],
+    "relationshipTimeline": [
+      {
+        "episodeId": "S04E09",
+        "targetFactionId": "night-watch",
+        "state": "war",
+        "intensity": 90,
+        "summary": "שבטי הת׳ן סופגים אבדות כבדות במהלך ההסתערות על החומה."
+      }
+    ]
+  },
+  {
+    "id": "tyrell",
+    "displayName": "בית טיירל",
+    "sigil": null,
+    "themeColor": "#6eaa67",
+    "powerTimeline": [
+      {
+        "episodeId": "S02E09",
+        "power": 82,
+        "summary": "נכנסים לרגע המכריע כמושיעים."
+      },
+      {
+        "episodeId": "S02E10",
+        "power": 86,
+        "summary": "משפיעים כעת ישירות על סדר הירושה והחצר."
+      },
+      {
+        "episodeId": "S03E05",
+        "power": 78,
+        "summary": "עדיין חזק מאוד, אך סוכל בזירת סאנסה."
+      },
+      {
+        "episodeId": "S03E06",
+        "power": 76,
+        "summary": "שומר על השפעה, אך תחת בלימה."
+      },
+      {
+        "episodeId": "S04E02",
+        "power": 78,
+        "summary": "הקשר שלהם לכתר לא נקטע, אך המרחב הפוליטי נעשה מסוכן יותר."
+      },
+      {
+        "episodeId": "S05E04",
+        "power": 60,
+        "summary": "נפגע ממעצר לוראס ומהשפלה ציבורית."
+      },
+      {
+        "episodeId": "S05E06",
+        "power": 48,
+        "summary": "ירידה חדה עקב כליאת שני יורשים מרכזיים."
+      },
+      {
+        "episodeId": "S06E07",
+        "power": 42,
+        "summary": "עדיין עשיר וחזק, אך נסוג ממוקד הכוח;"
+      },
+      {
+        "episodeId": "S06E10",
+        "power": 18,
+        "summary": "הנהגתו הושמדה במעלה המלך;"
+      },
+      {
+        "episodeId": "S07E03",
+        "power": 10,
+        "summary": "קריסה כמעט מוחלטת עם נפילת רמות־גנים ומותה של אולנה."
+      }
+    ],
+    "relationshipTimeline": [
+      {
+        "episodeId": "S06E07",
+        "targetFactionId": "lannister",
+        "state": "tension",
+        "intensity": 84,
+        "summary": "אולנה מבינה שהבירה אינה בטוחה עוד ומתחילה להתרחק מן הציר הלאניסטרי."
+      },
+      {
+        "episodeId": "S06E10",
+        "targetFactionId": "ellaria-dorne",
+        "state": "alliance",
+        "intensity": 93,
+        "summary": "אולנה טיירל כורתת ברית עם אלריה סאנד נגד הכתר הלאניסטרי."
+      }
+    ]
+  },
+  {
+    "id": "white-walkers",
+    "displayName": "ההולכים הלבנים",
+    "sigil": null,
+    "themeColor": "#8fc7df",
+    "powerTimeline": [
+      {
+        "episodeId": "S04E04",
+        "power": 56,
+        "summary": "נחשפים כבעלי מבנה וכוח מתרחב, מה שמעלה את משקל האיום."
+      },
+      {
+        "episodeId": "S05E08",
+        "power": 95,
+        "summary": "קפיצה עצומה בעוצמה הנתפסת."
+      },
+      {
+        "episodeId": "S06E05",
+        "power": 92,
+        "summary": "פרצו את המסתור של בראן והראו עליונות מוחצת בשטחם."
+      },
+      {
+        "episodeId": "S07E01",
+        "power": 95,
+        "summary": "לא שולט פוליטית, אבל איום קיומי בעל תנופה מתמדת, שכבר נראה מתקדם דרומה."
+      },
+      {
+        "episodeId": "S07E05",
+        "power": 96,
+        "summary": "מתקרב בפועל למצפה המזרח, ומכריח את החיים לשנות אסטרטגיה."
+      },
+      {
+        "episodeId": "S07E06",
+        "power": 99,
+        "summary": "זינוק קיצוני בעקבות השגת דרקון אל־מת והוכחת עליונות מול כוח האש של דאינריז."
+      },
+      {
+        "episodeId": "S07E07",
+        "power": 100,
+        "summary": "השגת פריצת דרך אסטרטגית מוחלטת עם הבקעת החומה והכניסה אל הצפון."
+      },
+      {
+        "episodeId": "S08E02",
+        "power": 95,
+        "summary": "מחזיק ביתרון מספרי ואסטרטגי כה מוחלט עד שכל תכנית ההגנה מתבססת על הימור צר אחד סביב בראן."
+      },
+      {
+        "episodeId": "S08E03",
+        "power": 0,
+        "summary": "מחוסל לחלוטין עם נפילתו של מלך הלילה."
+      }
+    ],
+    "relationshipTimeline": [
+      {
+        "episodeId": "S04E04",
+        "targetFactionId": "night-watch",
+        "state": "war",
+        "intensity": 95,
+        "summary": "האיום שמעבר לחומה מוגדר ככוח מאורגן ולא ככאוס בלבד."
+      },
+      {
+        "episodeId": "S05E08",
+        "targetFactionId": "wildlings",
+        "state": "war",
+        "intensity": 100,
+        "summary": "מלך הלילה משמיד את הארדהום ומגדיל מידית את צבאו על חשבון הפראיים."
+      },
+      {
+        "episodeId": "S05E08",
+        "targetFactionId": "night-watch",
+        "state": "war",
+        "intensity": 96,
+        "summary": "הקרב בהארדהום מבהיר שמשמר הלילה ניצב מול איום גדול בהרבה מכל מה ששיער."
+      },
+      {
+        "episodeId": "S07E05",
+        "targetFactionId": "night-watch",
+        "state": "war",
+        "intensity": 99,
+        "summary": "צבא המתים מתקדם למצפה המזרח ומאלץ את החיים לצאת למשימת הוכחה נואשת."
+      },
+      {
+        "episodeId": "S07E06",
+        "targetFactionId": "targaryen",
+        "state": "war",
+        "intensity": 100,
+        "summary": "מלך הלילה הורג את ויסריון ומוכיח שצבא המתים מסוגל לפגוע אפילו בדרקונים."
+      },
+      {
+        "episodeId": "S07E06",
+        "targetFactionId": "stark",
+        "state": "war",
+        "intensity": 100,
+        "summary": "המצור על האי הקפוא והקרבת בנג'ן מבהירים עד כמה צבא המתים קרוב להכרעה אסטרטגית."
+      },
+      {
+        "episodeId": "S07E07",
+        "targetFactionId": "night-watch",
+        "state": "war",
+        "intensity": 100,
+        "summary": "ויסריון האל־מת מבקיע את החומה במצפה המזרח וצבא המתים חוצה אל הצפון."
+      },
+      {
+        "episodeId": "S08E01",
+        "targetFactionId": "stark",
+        "state": "war",
+        "intensity": 100,
+        "summary": "אח אחרון מראה שצבא המתים כבר חדר אל לב הצפון."
+      },
+      {
+        "episodeId": "S08E02",
+        "targetFactionId": "stark",
+        "state": "war",
+        "intensity": 100,
+        "summary": "הבשורה שהאויב יגיע לפני הבוקר דוחפת את כל התכנית של וינטרפל אל הימור אחד סביב בראן."
+      },
+      {
+        "episodeId": "S08E03",
+        "targetFactionId": "stark",
+        "state": "war",
+        "intensity": 100,
+        "summary": "הקרב על וינטרפל מביא את מלחמת הקיום בין המתים לחיים לשיא ולהכרעה."
+      }
+    ]
+  },
+  {
+    "id": "wildlings",
+    "displayName": "הפראים",
+    "sigil": null,
+    "themeColor": "#b77a67",
+    "powerTimeline": [
+      {
+        "episodeId": "S02E07",
+        "power": 55,
+        "summary": "שביית ג׳ון מסמנת יוזמה צפונית ברורה."
+      },
+      {
+        "episodeId": "S02E10",
+        "power": 70,
+        "summary": "האיום הצפוני נעשה מסיבי ומוחשי בהרבה."
+      },
+      {
+        "episodeId": "S03E02",
+        "power": 61,
+        "summary": "מתברר ככוח עממי גדול בהרבה משנדמה."
+      },
+      {
+        "episodeId": "S03E06",
+        "power": 63,
+        "summary": "מתקרב פיזית לדרום החומה ומגדיל את רמת האיום."
+      },
+      {
+        "episodeId": "S04E09",
+        "power": 36,
+        "summary": "מפגין עוצמה התקפית אדירה, אך כושל בהשגת שבירה מוחלטת."
+      },
+      {
+        "episodeId": "S05E08",
+        "power": 40,
+        "summary": "ספגו אבדות כבדות, אך חלקם ניצלו."
+      }
+    ],
+    "relationshipTimeline": [
+      {
+        "episodeId": "S03E02",
+        "targetFactionId": "night-watch",
+        "state": "war",
+        "intensity": 84,
+        "summary": "מאנס מסביר לג׳ון שהצבא שאיחד נועד להתמודד עם מה שבא מן הצפון ולעבור את החומה."
+      },
+      {
+        "episodeId": "S04E09",
+        "targetFactionId": "night-watch",
+        "state": "war",
+        "intensity": 97,
+        "summary": "הפראים מפעילים מתקפה דו־כיוונית אך אינם מצליחים לשבור את שחור־הטירה."
+      }
+    ]
   }
 ]

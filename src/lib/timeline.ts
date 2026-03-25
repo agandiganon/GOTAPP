@@ -1,6 +1,7 @@
 import type {
   CharacterRecord,
   CharacterTimelineEntry,
+  EpisodeRecord,
   EpisodeId,
   FactionPowerEntry,
   FactionRecord,
@@ -99,6 +100,31 @@ export function getVisibleFactionRankings(
       return {
         faction,
         latestPower,
+      };
+    })
+    .filter((entry): entry is { faction: FactionRecord; latestPower: FactionPowerEntry } => Boolean(entry))
+    .sort((entryA, entryB) => entryB.latestPower.power - entryA.latestPower.power);
+}
+
+export function getEpisodeFactionRankings(
+  factions: FactionRecord[],
+  episode: EpisodeRecord,
+) {
+  return episode.housePowerUpdates
+    .map((entry) => {
+      const faction = factions.find((candidate) => candidate.id === entry.factionId);
+
+      if (!faction) {
+        return null;
+      }
+
+      return {
+        faction,
+        latestPower: {
+          episodeId: episode.id,
+          power: entry.power,
+          summary: entry.summary,
+        },
       };
     })
     .filter((entry): entry is { faction: FactionRecord; latestPower: FactionPowerEntry } => Boolean(entry))

@@ -4,6 +4,7 @@ import { Frank_Ruhl_Libre, Heebo } from "next/font/google";
 import { AppShell } from "@/components/layout/app-shell";
 import { Providers } from "@/app/providers";
 
+import "leaflet/dist/leaflet.css";
 import "@/app/globals.css";
 
 const heebo = Heebo({

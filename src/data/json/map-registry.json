@@ -1,91 +1,179 @@
 [
   {
-    "storyLocationId": "winterfell",
+    "storyLocationId": "astapor",
     "imagePositionPercent": {
-      "top": null,
-      "left": null
+      "top": 16.9074,
+      "left": 71.8552
     },
-    "revealEpisodeId": "S01E01"
+    "revealEpisodeId": "S03E01"
   },
   {
-    "storyLocationId": "the-wall",
+    "storyLocationId": "baelor-great-sept",
     "imagePositionPercent": {
       "top": null,
       "left": null
     },
-    "revealEpisodeId": "S01E01"
+    "revealEpisodeId": "S01E09"
+  },
+  {
+    "storyLocationId": "bear-island",
+    "imagePositionPercent": {
+      "top": 87.8117,
+      "left": 14.7279
+    },
+    "revealEpisodeId": "S06E07"
   },
   {
     "storyLocationId": "beyond-the-wall-haunted-forest",
     "imagePositionPercent": {
-      "top": null,
-      "left": null
+      "top": 96.2452,
+      "left": 22.4273
     },
     "revealEpisodeId": "S01E01"
   },
   {
-    "storyLocationId": "pentos",
+    "storyLocationId": "blackwater-bay",
     "imagePositionPercent": {
-      "top": null,
-      "left": null
+      "top": 42.9623,
+      "left": 28.6556
     },
-    "revealEpisodeId": "S01E01"
+    "revealEpisodeId": "S02E09"
   },
   {
-    "storyLocationId": "kingsroad",
+    "storyLocationId": "braavos",
     "imagePositionPercent": {
-      "top": null,
-      "left": null
+      "top": 60.64,
+      "left": 38.7679
     },
-    "revealEpisodeId": "S01E02"
-  },
-  {
-    "storyLocationId": "royal-encampment",
-    "imagePositionPercent": {
-      "top": null,
-      "left": null
-    },
-    "revealEpisodeId": "S01E02"
-  },
-  {
-    "storyLocationId": "road-to-the-wall",
-    "imagePositionPercent": {
-      "top": null,
-      "left": null
-    },
-    "revealEpisodeId": "S01E02"
-  },
-  {
-    "storyLocationId": "kings-landing",
-    "imagePositionPercent": {
-      "top": null,
-      "left": null
-    },
-    "revealEpisodeId": "S01E03"
+    "revealEpisodeId": "S04E06"
   },
   {
     "storyLocationId": "castle-black",
     "imagePositionPercent": {
-      "top": null,
-      "left": null
+      "top": 92.7754,
+      "left": 25.0532
     },
     "revealEpisodeId": "S01E03"
   },
   {
-    "storyLocationId": "khalasar-camp",
+    "storyLocationId": "citadel",
     "imagePositionPercent": {
-      "top": null,
-      "left": null
+      "top": 25.3221,
+      "left": 11.1662
     },
-    "revealEpisodeId": "S01E03"
+    "revealEpisodeId": "S06E10"
   },
   {
-    "storyLocationId": "vaes-dothrak",
+    "storyLocationId": "crasters-keep",
     "imagePositionPercent": {
       "top": null,
       "left": null
     },
-    "revealEpisodeId": "S01E04"
+    "revealEpisodeId": "S02E01"
+  },
+  {
+    "storyLocationId": "dany-desert-camp",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E10"
+  },
+  {
+    "storyLocationId": "daznaks-pit",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S05E09"
+  },
+  {
+    "storyLocationId": "dorne",
+    "imagePositionPercent": {
+      "top": 21.2337,
+      "left": 20.3828
+    },
+    "revealEpisodeId": "S05E02"
+  },
+  {
+    "storyLocationId": "dragonstone",
+    "imagePositionPercent": {
+      "top": 46.0335,
+      "left": 30.9391
+    },
+    "revealEpisodeId": "S02E01"
+  },
+  {
+    "storyLocationId": "dreadfort",
+    "imagePositionPercent": {
+      "top": 81.3999,
+      "left": 25.5134
+    },
+    "revealEpisodeId": "S03E10"
+  },
+  {
+    "storyLocationId": "eyrie",
+    "imagePositionPercent": {
+      "top": 56.1229,
+      "left": 26.3307
+    },
+    "revealEpisodeId": "S01E05"
+  },
+  {
+    "storyLocationId": "fist-of-the-first-men",
+    "imagePositionPercent": {
+      "top": 97.9461,
+      "left": 19.9034
+    },
+    "revealEpisodeId": "S02E05"
+  },
+  {
+    "storyLocationId": "hardhome",
+    "imagePositionPercent": {
+      "top": 97.768,
+      "left": 27.632
+    },
+    "revealEpisodeId": "S05E08"
+  },
+  {
+    "storyLocationId": "harrenhal",
+    "imagePositionPercent": {
+      "top": 48.9483,
+      "left": 22.5772
+    },
+    "revealEpisodeId": "S02E04"
+  },
+  {
+    "storyLocationId": "hollow-hill",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S03E04"
+  },
+  {
+    "storyLocationId": "horn-hill",
+    "imagePositionPercent": {
+      "top": 28.5545,
+      "left": 14.5493
+    },
+    "revealEpisodeId": "S06E06"
+  },
+  {
+    "storyLocationId": "house-of-black-and-white",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S05E02"
+  },
+  {
+    "storyLocationId": "house-of-the-undying",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S02E10"
   },
   {
     "storyLocationId": "inn-at-the-crossroads",
@@ -96,52 +184,44 @@
     "revealEpisodeId": "S01E04"
   },
   {
-    "storyLocationId": "eyrie",
+    "storyLocationId": "iron-islands",
     "imagePositionPercent": {
-      "top": null,
-      "left": null
+      "top": 56.4941,
+      "left": 11.0717
     },
-    "revealEpisodeId": "S01E05"
+    "revealEpisodeId": "S02E02"
   },
   {
-    "storyLocationId": "vale-of-arryn",
+    "storyLocationId": "khalasar-camp",
     "imagePositionPercent": {
       "top": null,
       "left": null
     },
-    "revealEpisodeId": "S01E05"
+    "revealEpisodeId": "S01E03"
   },
   {
-    "storyLocationId": "mountains-of-the-moon",
+    "storyLocationId": "kings-landing",
     "imagePositionPercent": {
-      "top": null,
-      "left": null
+      "top": 42.8294,
+      "left": 25.5727
     },
-    "revealEpisodeId": "S01E05"
+    "revealEpisodeId": "S01E03"
   },
   {
-    "storyLocationId": "winterfell-woods",
+    "storyLocationId": "kingsroad",
     "imagePositionPercent": {
       "top": null,
       "left": null
     },
-    "revealEpisodeId": "S01E06"
+    "revealEpisodeId": "S01E02"
   },
   {
-    "storyLocationId": "western-lannister-camp",
+    "storyLocationId": "land-of-always-winter",
     "imagePositionPercent": {
       "top": null,
       "left": null
     },
-    "revealEpisodeId": "S01E07"
-  },
-  {
-    "storyLocationId": "north-army-camp",
-    "imagePositionPercent": {
-      "top": null,
-      "left": null
-    },
-    "revealEpisodeId": "S01E08"
+    "revealEpisodeId": "S04E04"
   },
   {
     "storyLocationId": "lhazareen",
@@ -160,12 +240,292 @@
     "revealEpisodeId": "S01E08"
   },
   {
-    "storyLocationId": "the-twins",
+    "storyLocationId": "long-bridge-of-volantis",
     "imagePositionPercent": {
       "top": null,
       "left": null
     },
+    "revealEpisodeId": "S05E03"
+  },
+  {
+    "storyLocationId": "maggy-hut",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S05E01"
+  },
+  {
+    "storyLocationId": "meereen",
+    "imagePositionPercent": {
+      "top": 27.3071,
+      "left": 75.1771
+    },
+    "revealEpisodeId": "S04E01"
+  },
+  {
+    "storyLocationId": "moat-cailin",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S04E08"
+  },
+  {
+    "storyLocationId": "mole-town",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S04E03"
+  },
+  {
+    "storyLocationId": "mountains-of-the-moon",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E05"
+  },
+  {
+    "storyLocationId": "narrow-sea-route",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S05E04"
+  },
+  {
+    "storyLocationId": "nightfort",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S03E09"
+  },
+  {
+    "storyLocationId": "north-army-camp",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E08"
+  },
+  {
+    "storyLocationId": "old-valyria",
+    "imagePositionPercent": {
+      "top": 4.0531,
+      "left": 60.5221
+    },
+    "revealEpisodeId": "S05E05"
+  },
+  {
+    "storyLocationId": "old-wyk",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S06E05"
+  },
+  {
+    "storyLocationId": "oldtown",
+    "imagePositionPercent": {
+      "top": 25.281,
+      "left": 11.3023
+    },
+    "revealEpisodeId": "S06E10"
+  },
+  {
+    "storyLocationId": "pentos",
+    "imagePositionPercent": {
+      "top": 41.0297,
+      "left": 39.2101
+    },
+    "revealEpisodeId": "S01E01"
+  },
+  {
+    "storyLocationId": "pyke",
+    "imagePositionPercent": {
+      "top": 54.6403,
+      "left": 11.462
+    },
+    "revealEpisodeId": "S02E02"
+  },
+  {
+    "storyLocationId": "qarth",
+    "imagePositionPercent": {
+      "top": 8.9306,
+      "left": 93.8964
+    },
+    "revealEpisodeId": "S02E04"
+  },
+  {
+    "storyLocationId": "queenscrown",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S03E09"
+  },
+  {
+    "storyLocationId": "red-waste",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S02E01"
+  },
+  {
+    "storyLocationId": "renly-camp-stormlands",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S02E03"
+  },
+  {
+    "storyLocationId": "riverlands-road-north",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S02E02"
+  },
+  {
+    "storyLocationId": "riverrun",
+    "imagePositionPercent": {
+      "top": 53.581,
+      "left": 18.3463
+    },
     "revealEpisodeId": "S01E09"
+  },
+  {
+    "storyLocationId": "road-to-the-wall",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E02"
+  },
+  {
+    "storyLocationId": "royal-encampment",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E02"
+  },
+  {
+    "storyLocationId": "runestone",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S06E04"
+  },
+  {
+    "storyLocationId": "sea-of-dothraki",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S05E10"
+  },
+  {
+    "storyLocationId": "slavers-bay",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S03E01"
+  },
+  {
+    "storyLocationId": "smoking-sea",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S05E05"
+  },
+  {
+    "storyLocationId": "stannis-northern-camp",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S05E05"
+  },
+  {
+    "storyLocationId": "the-twins",
+    "imagePositionPercent": {
+      "top": 58.6658,
+      "left": 19.0561
+    },
+    "revealEpisodeId": "S01E09"
+  },
+  {
+    "storyLocationId": "the-wall",
+    "imagePositionPercent": {
+      "top": 92.7754,
+      "left": 25.0532
+    },
+    "revealEpisodeId": "S01E01"
+  },
+  {
+    "storyLocationId": "three-eyed-raven-cave",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S04E10"
+  },
+  {
+    "storyLocationId": "tower-of-joy",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S06E03"
+  },
+  {
+    "storyLocationId": "vaes-dothrak",
+    "imagePositionPercent": {
+      "top": 49.5206,
+      "left": 88.7271
+    },
+    "revealEpisodeId": "S01E04"
+  },
+  {
+    "storyLocationId": "vale-of-arryn",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E05"
+  },
+  {
+    "storyLocationId": "volantis",
+    "imagePositionPercent": {
+      "top": 19.0292,
+      "left": 51.0203
+    },
+    "revealEpisodeId": "S05E03"
+  },
+  {
+    "storyLocationId": "water-gardens",
+    "imagePositionPercent": {
+      "top": 19.6638,
+      "left": 31.2765
+    },
+    "revealEpisodeId": "S05E02"
+  },
+  {
+    "storyLocationId": "western-lannister-camp",
+    "imagePositionPercent": {
+      "top": null,
+      "left": null
+    },
+    "revealEpisodeId": "S01E07"
   },
   {
     "storyLocationId": "whispering-wood",
@@ -176,27 +536,67 @@
     "revealEpisodeId": "S01E09"
   },
   {
-    "storyLocationId": "riverrun",
+    "storyLocationId": "winterfell",
     "imagePositionPercent": {
-      "top": null,
-      "left": null
+      "top": 78.7987,
+      "left": 18.8588
     },
-    "revealEpisodeId": "S01E09"
+    "revealEpisodeId": "S01E01"
   },
   {
-    "storyLocationId": "baelor-great-sept",
+    "storyLocationId": "winterfell-woods",
     "imagePositionPercent": {
       "top": null,
       "left": null
     },
-    "revealEpisodeId": "S01E09"
+    "revealEpisodeId": "S01E06"
   },
   {
-    "storyLocationId": "dany-desert-camp",
+    "storyLocationId": "yunkai",
+    "imagePositionPercent": {
+      "top": 24.0487,
+      "left": 73.6465
+    },
+    "revealEpisodeId": "S03E07"
+  },
+  {
+    "storyLocationId": "casterly-rock",
+    "imagePositionPercent": {
+      "top": 44.8856,
+      "left": 11.4784
+    },
+    "revealEpisodeId": "S07E03"
+  },
+  {
+    "storyLocationId": "highgarden",
+    "imagePositionPercent": {
+      "top": 31.3333,
+      "left": 14.6791
+    },
+    "revealEpisodeId": "S07E03"
+  },
+  {
+    "storyLocationId": "eastwatch-by-the-sea",
+    "imagePositionPercent": {
+      "top": 92.8242,
+      "left": 26.4981
+    },
+    "revealEpisodeId": "S07E05"
+  },
+  {
+    "storyLocationId": "dragonpit",
     "imagePositionPercent": {
       "top": null,
       "left": null
     },
-    "revealEpisodeId": "S01E10"
+    "revealEpisodeId": "S07E07"
+  },
+  {
+    "storyLocationId": "last-hearth",
+    "imagePositionPercent": {
+      "top": 87.1677,
+      "left": 24.1109
+    },
+    "revealEpisodeId": "S08E01"
   }
 ]

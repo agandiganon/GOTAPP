@@ -4,7 +4,7 @@ import { ArrowLeftRight, Castle, Crown, Sparkles, Swords } from "lucide-react";
 
 import { Panel } from "@/components/ui/panel";
 import { episodeIndex, factions } from "@/data/seed";
-import { getVisibleFactionRankings, getVisibleRelationshipWeb } from "@/lib/timeline";
+import { getEpisodeFactionRankings, getVisibleRelationshipWeb } from "@/lib/timeline";
 import { useEpisode } from "@/providers/episode-provider";
 
 const relationshipLabels = {
@@ -24,7 +24,7 @@ const relationshipStyles = {
 export function PoliticsScreen() {
   const { currentEpisode, currentEpisodeId } = useEpisode();
 
-  const factionRankings = getVisibleFactionRankings(factions, currentEpisodeId, episodeIndex);
+  const factionRankings = getEpisodeFactionRankings(factions, currentEpisode);
   const relationshipWeb = getVisibleRelationshipWeb(factions, currentEpisodeId, episodeIndex);
   const leadingFaction = factionRankings[0] ?? null;
 
@@ -64,7 +64,7 @@ export function PoliticsScreen() {
             <p className="text-caption">מד הכוח</p>
             <h2 className="font-display text-2xl text-ink">מד העוצמה</h2>
             <p className="text-sm leading-7 text-muted">
-              דירוג הבתים הפעילים נשען על ה-entry האחרון שגלוי עד {currentEpisode.code}.
+              דירוג הבתים הפעילים נשען על תמונת הכוח המפורשת של {currentEpisode.code}.
             </p>
           </div>
           <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-accent/25 bg-accent/10 text-accent">

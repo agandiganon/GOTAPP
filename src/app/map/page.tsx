@@ -1,10 +1,5 @@
-import { RoutePlaceholder } from "@/components/ui/route-placeholder";
+import { MapScreen } from "@/components/map/map-screen";
 
 export default function MapPage() {
-  return (
-    <RoutePlaceholder
-      title="מפה"
-      description="דף המפה ייבנה על בסיס התמונה המקומית בלבד, עם סמנים באחוזים יחסיים וללא שימוש בשום ספריית מיפוי גיאוגרפית."
-    />
-  );
+  return <MapScreen />;
 }

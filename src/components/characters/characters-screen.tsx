@@ -184,7 +184,7 @@ export function CharactersScreen() {
           </p>
         </Panel>
       ) : (
-        <div className="grid gap-3 md:grid-cols-2">
+        <div className="grid gap-4 md:grid-cols-2">
           {sortedCharacters.map((character) => {
             const faction = factions.find((item) => item.id === character.latestState.affiliationId);
             const location = locations.find((item) => item.id === character.latestState.locationId);
@@ -192,19 +192,20 @@ export function CharactersScreen() {
             return (
               <Panel
                 key={character.id}
-                className="group overflow-hidden border-white/[0.08] bg-[linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.015))] p-0 transition duration-300 hover:-translate-y-0.5 hover:border-white/[0.12] hover:shadow-[0_30px_80px_rgba(0,0,0,0.4)]"
+                className="group overflow-hidden border-white/[0.07] bg-[linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.012))] p-0 transition duration-300 hover:-translate-y-0.5 hover:border-white/[0.12] hover:shadow-[0_28px_70px_rgba(0,0,0,0.36)]"
               >
-                <div className="relative aspect-[5/5.85] overflow-hidden">
+                <div className="relative aspect-[10/11.6] overflow-hidden">
                   <CharacterPortrait
                     name={character.name}
                     portrait={character.portrait}
                     factionColor={faction?.themeColor}
                     className="transition duration-500 group-hover:scale-[1.03]"
                   />
-                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,9,16,0.06),rgba(8,9,16,0.18)_34%,rgba(8,9,16,0.92)_82%,rgba(8,9,16,0.98))]" />
+                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,9,16,0.04),rgba(8,9,16,0.16)_36%,rgba(8,9,16,0.86)_78%,rgba(8,9,16,0.98))]" />
+                  <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-canvas to-transparent" />
 
                   <div className="absolute inset-x-0 top-0 flex items-start justify-between gap-3 p-4">
-                    <div className="rounded-full border border-line/10 bg-canvas/[0.56] px-3 py-1 text-[0.68rem] font-medium text-muted backdrop-blur-md">
+                    <div className="rounded-full border border-line/10 bg-canvas/[0.58] px-3 py-1 text-[0.68rem] font-medium text-muted backdrop-blur-md">
                       חשיבות {character.latestState.importance}
                     </div>
                     <StatusPill
@@ -216,7 +217,7 @@ export function CharactersScreen() {
                   <div className="absolute inset-x-0 bottom-0 p-4">
                     <div className="space-y-1">
                       <p className="text-xs text-muted">גלוי עד {currentEpisode.code}</p>
-                      <h2 className="text-2xl font-semibold text-ink">{character.name}</h2>
+                      <h2 className="font-display text-[1.85rem] leading-none text-ink">{character.name}</h2>
                       <p className="text-sm text-[#ddd3c5]">
                         {faction?.displayName ?? "שיוך לא זמין בנקודת הזמן הזו"}
                       </p>
@@ -225,46 +226,25 @@ export function CharactersScreen() {
                 </div>
 
                 <div className="space-y-4 p-4">
-                  <p className="text-sm leading-7 text-muted">{character.baseDescription}</p>
-
-                  <div className="grid gap-3">
-                    <div className="flex items-start gap-3 rounded-[20px] bg-white/[0.035] px-3 py-3">
-                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border border-[#7e97b3]/20 bg-[#7e97b3]/[0.12] text-[#cbd9e6]">
-                        <Shield className="h-4 w-4" />
-                      </div>
-                      <div className="space-y-1">
-                        <p className="text-xs text-muted">בית / שיוך</p>
-                        <p className="text-sm text-ink">
-                          {faction?.displayName ?? "שיוך לא זמין בנקודת הזמן הזו"}
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start gap-3 rounded-[20px] bg-white/[0.035] px-3 py-3">
-                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border border-[#8e795f]/20 bg-[#8e795f]/[0.12] text-[#e0cdb1]">
-                        <MapPin className="h-4 w-4" />
-                      </div>
-                      <div className="space-y-1">
-                        <p className="text-xs text-muted">מיקום נראה אחרון</p>
-                        <p className="text-sm text-ink">
-                          {location?.name ?? "מיקום לא זמין בנקודת הזמן הזו"}
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start gap-3 rounded-[20px] bg-white/[0.035] px-3 py-3">
-                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border border-[#caa25f]/20 bg-[#caa25f]/[0.12] text-[#f1ddb2]">
-                        <Crown className="h-4 w-4" />
-                      </div>
-                      <div className="space-y-1">
-                        <p className="text-xs text-muted">עוצמה עלילתית כרגע</p>
-                        <p className="text-sm text-ink">{character.latestState.importance} / 100</p>
-                      </div>
-                    </div>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="inline-flex items-center gap-2 rounded-full bg-[#7e97b3]/[0.12] px-3 py-1.5 text-xs text-[#d8e3ef]">
+                      <Shield className="h-3.5 w-3.5" />
+                      {faction?.displayName ?? "שיוך לא זמין"}
+                    </span>
+                    <span className="inline-flex items-center gap-2 rounded-full bg-[#8e795f]/[0.12] px-3 py-1.5 text-xs text-[#ead7bf]">
+                      <MapPin className="h-3.5 w-3.5" />
+                      {location?.name ?? "מיקום לא זמין"}
+                    </span>
+                    <span className="inline-flex items-center gap-2 rounded-full bg-[#caa25f]/[0.12] px-3 py-1.5 text-xs text-[#f3dfb8]">
+                      <Crown className="h-3.5 w-3.5" />
+                      עוצמה {character.latestState.importance}
+                    </span>
                   </div>
 
-                  <div className="rounded-[22px] bg-white/[0.04] p-4 ring-1 ring-white/[0.08]">
-                    <p className="text-xs text-muted">העדכון האחרון הידוע</p>
+                  <p className="text-sm leading-7 text-[#d0cbc2]">{character.baseDescription}</p>
+
+                  <div className="border-t border-white/[0.06] pt-4">
+                    <p className="text-[0.68rem] uppercase tracking-[0.22em] text-muted/70">העדכון האחרון</p>
                     <p className="mt-2 text-sm leading-7 text-ink">{character.latestState.summary}</p>
                   </div>
                 </div>

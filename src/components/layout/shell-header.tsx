@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 
-import iconAsset from "@/app/icon.png";
 import { useEpisode } from "@/providers/episode-provider";
 
 export function ShellHeader() {
@@ -13,7 +12,7 @@ export function ShellHeader() {
       <div className="flex items-center gap-3">
         <div className="relative h-12 w-12 overflow-hidden rounded-2xl border border-line/10 bg-panel-strong/80 shadow-accent">
           <Image
-            src={iconAsset}
+            src="/icon.png"
             alt="לוגו gotspoil"
             fill
             sizes="48px"

@@ -1,5 +1,1130 @@
 [
   {
+    "id": "alliser-thorne",
+    "name": "אליסר תורן",
+    "portrait": null,
+    "baseDescription": "מפקד ותיק במשמר הלילה, הנלחם כמפקד מנוסה בקרב על החומה.",
+    "timeline": [
+      {
+        "episodeId": "S04E09",
+        "status": "injured",
+        "statusLabel": "פצוע כמפקד ההגנה",
+        "summary": "נלחם כמפקד מנוסה ונפצע במהלך ההגנה.",
+        "affiliationId": "night-watch",
+        "locationId": "castle-black",
+        "importance": 72
+      },
+      {
+        "episodeId": "S06E03",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "הוצא להורג על חלקו במרד;",
+        "affiliationId": "night-watch",
+        "locationId": "castle-black",
+        "importance": 78
+      }
+    ]
+  },
+  {
+    "id": "areo-hota",
+    "name": "אריאו הוטה",
+    "portrait": null,
+    "baseDescription": "מגן המשמר של דוראן מארטל, המגלם את הסדר והמשמעת בדורן.",
+    "timeline": [
+      {
+        "episodeId": "S06E01",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג במהלך ההפיכה;",
+        "locationId": "castle-black",
+        "importance": 78
+      }
+    ]
+  },
+  {
+    "id": "arya-stark",
+    "name": "אריה סטארק",
+    "portrait": null,
+    "baseDescription": "מתנגשת חזיתית עם ג'ופרי ומסרבת להיכנע להיררכיה מלאכותית.",
+    "timeline": [
+      {
+        "episodeId": "S01E01",
+        "status": "active",
+        "statusLabel": "חיה / בת בית סטארק",
+        "summary": "נוכחת בוינטרפל כאשר ביקורו של רוברט מניע את העלילה.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
+        "importance": 93
+      },
+      {
+        "episodeId": "S01E03",
+        "status": "training",
+        "statusLabel": "החלה אימון לחימה",
+        "summary": "מתחילה ללמוד אצל סיריו פורל.",
+        "affiliationId": "stark",
+        "locationId": "kings-landing",
+        "importance": 93
+      },
+      {
+        "episodeId": "S01E08",
+        "status": "missing",
+        "statusLabel": "נעדרת / נמלטת",
+        "summary": "בורחת ממעלה מלך לאחר מעצר אביה.",
+        "affiliationId": "stark",
+        "locationId": "kings-landing",
+        "importance": 94
+      },
+      {
+        "episodeId": "S01E10",
+        "status": "disguised",
+        "statusLabel": "נמלטת / בזהות מוסווית",
+        "summary": "מוברחת ממעלה מלך מחופשת לנער.",
+        "affiliationId": "stark",
+        "locationId": "kingsroad",
+        "importance": 94
+      },
+      {
+        "episodeId": "S02E04",
+        "status": "captive",
+        "statusLabel": "שבויה",
+        "summary": "נלקחת להארנהל ומושמת תחת שלטון לאניסטרי.",
+        "importance": 96,
+        "affiliationId": "stark",
+        "locationId": "harrenhal"
+      },
+      {
+        "episodeId": "S02E07",
+        "status": "released",
+        "statusLabel": "שינוי סטטוס: כבר איננה שבויה בהארנהל",
+        "summary": "כבר איננה שבויה בהארנהל.",
+        "importance": 96,
+        "affiliationId": "stark",
+        "locationId": "harrenhal"
+      },
+      {
+        "episodeId": "S02E08",
+        "status": "away",
+        "statusLabel": "שינוי סטטוס: בורחת מהארנהל",
+        "summary": "בורחת מהארנהל עם גנדרי ופשטידה.",
+        "importance": 96,
+        "affiliationId": "stark",
+        "locationId": "harrenhal"
+      },
+      {
+        "episodeId": "S03E02",
+        "status": "captive",
+        "statusLabel": "בשבי/משמורת",
+        "summary": "מוחזקת בידי האחווה ללא דגלים.",
+        "locationId": "harrenhal",
+        "importance": 96
+      },
+      {
+        "episodeId": "S03E06",
+        "status": "captive",
+        "statusLabel": "שבויה",
+        "summary": "עוברת לידי ההאונד כמטבע כופר.",
+        "locationId": "riverlands-road-north",
+        "importance": 96
+      },
+      {
+        "episodeId": "S03E07",
+        "status": "captive",
+        "statusLabel": "שבויה",
+        "summary": "נלקחת בידי ההאונד.",
+        "locationId": "riverlands-road-north",
+        "importance": 96
+      },
+      {
+        "episodeId": "S03E09",
+        "status": "missing",
+        "statusLabel": "נותרת בחיים אך מנותקת",
+        "summary": "ההאונד מוציא אותה משם מחוסרת הכרה.",
+        "locationId": "the-twins",
+        "importance": 97
+      },
+      {
+        "episodeId": "S04E10",
+        "status": "away",
+        "statusLabel": "בדרך לבראאבוס",
+        "summary": "עוזבת את ווסטרוז.",
+        "affiliationId": "stark",
+        "locationId": "braavos",
+        "importance": 98
+      },
+      {
+        "episodeId": "S05E02",
+        "status": "appointed",
+        "statusLabel": "שינוי שיוך",
+        "summary": "התקבלה לבית השחור והלבן.",
+        "affiliationId": "stark",
+        "locationId": "house-of-black-and-white",
+        "importance": 96
+      },
+      {
+        "episodeId": "S05E09",
+        "status": "appointed",
+        "statusLabel": "שינוי משימה",
+        "summary": "חורגת משליחותה כדי לרדוף את מרין טראנט.",
+        "affiliationId": "stark",
+        "locationId": "braavos",
+        "importance": 96
+      },
+      {
+        "episodeId": "S05E10",
+        "status": "injured",
+        "statusLabel": "עיוורת",
+        "summary": "נענשת לאחר רצח לא מורשה.",
+        "affiliationId": "stark",
+        "locationId": "house-of-black-and-white",
+        "importance": 96
+      },
+      {
+        "episodeId": "S06E06",
+        "status": "injured",
+        "statusLabel": "פצועה / נרדפת",
+        "summary": "לאחר כישלון המשימה;",
+        "affiliationId": "stark",
+        "locationId": "land-of-always-winter",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E07",
+        "status": "away",
+        "statusLabel": "בדרך חזרה",
+        "summary": "מזמינה מעבר ימי;",
+        "affiliationId": "stark",
+        "locationId": "riverrun",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E08",
+        "status": "active",
+        "statusLabel": "חופשייה / שבה לזהותה",
+        "summary": "מנתקת את עצמה מן הבית השחור והלבן;",
+        "affiliationId": "stark",
+        "locationId": "braavos",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E08",
+        "status": "active",
+        "statusLabel": "שבה לזהותה כאריה סטארק",
+        "summary": "מסיימת את שלב בראאבוס ומצהירה שהיא אריה מווינטרפל.",
+        "affiliationId": "stark",
+        "locationId": "braavos",
+        "importance": 98
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "away",
+        "statusLabel": "שבה לווסטרוז",
+        "summary": "מבצעת את נקמתה בוולדר פריי בתאומים ומחזירה את עצמה למשחק הווסטרוזי.",
+        "affiliationId": "stark",
+        "locationId": "the-twins",
+        "importance": 99
+      },
+      {
+        "episodeId": "S07E01",
+        "status": "active",
+        "statusLabel": "פעילה / משימת נקם הושלמה חלקית",
+        "summary": "חיסלה את הנהגת בית פריי והמשיכה דרומה.",
+        "affiliationId": "stark",
+        "locationId": "the-twins",
+        "importance": 98
+      },
+      {
+        "episodeId": "S07E04",
+        "status": "released",
+        "statusLabel": "שבה לוינטרפל",
+        "summary": "חוזרת הביתה ומתאחדת עם סאנסה ועם בראן.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
+        "importance": 99
+      },
+      {
+        "episodeId": "S08E06",
+        "status": "away",
+        "statusLabel": "מפליגה מערבה",
+        "summary": "עוזבת את וסטרוז ומפליגה מערבה אל ים השקיעה.",
+        "affiliationId": "stark",
+        "locationId": "kings-landing",
+        "importance": 96
+      }
+    ]
+  },
+  {
+    "id": "balon-greyjoy",
+    "name": "באלון גרייג׳וי",
+    "portrait": null,
+    "baseDescription": "דוחה את הצעת הברית של רוב ומתכוון לתקוף דווקא את הצפון.",
+    "timeline": [
+      {
+        "episodeId": "S02E02",
+        "status": "active",
+        "statusLabel": "חי / לורד איי הברזל",
+        "summary": "דוחה את הצעתו של רוב ובוחר במסלול מלחמה עצמאי נגד הצפון.",
+        "importance": 74,
+        "affiliationId": "greyjoy",
+        "locationId": "pyke"
+      },
+      {
+        "episodeId": "S06E02",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בעימות עם יורון;",
+        "affiliationId": "greyjoy",
+        "locationId": "castle-black",
+        "importance": 78
+      }
+    ]
+  },
+  {
+    "id": "barristan-selmy",
+    "name": "סר באריסטן סלמי",
+    "portrait": null,
+    "baseDescription": "לוחם ותיק שמודח בידי ג'ופרי משומר המלך.",
+    "timeline": [
+      {
+        "episodeId": "S01E08",
+        "status": "dismissed",
+        "statusLabel": "שינוי תפקיד: הודח ממשמר המלך",
+        "summary": "ג'ופרי מסלק אותו מתפקידו.",
+        "affiliationId": "baratheon",
+        "locationId": "kings-landing",
+        "importance": 60
+      },
+      {
+        "episodeId": "S05E04",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בקרב רחוב מול בני ההרפיה.",
+        "affiliationId": "targaryen",
+        "locationId": "meereen",
+        "importance": 86
+      }
+    ]
+  },
+  {
+    "id": "benjen-stark",
+    "name": "בנג׳ן סטארק",
+    "portrait": null,
+    "baseDescription": "אחיו של נד סטארק, שנעלם מעבר לחומה וחזר בדמות שונה ומסתורית.",
+    "timeline": [
+      {
+        "episodeId": "S06E06",
+        "status": "active",
+        "statusLabel": "חי / חזר לזירה",
+        "summary": "מציל את בראן ומירה;",
+        "locationId": "land-of-always-winter",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E06",
+        "status": "active",
+        "statusLabel": "חי / חזר לזירה",
+        "summary": "מציל את בראן ומירה מן המתים שבשלג.",
+        "affiliationId": "stark",
+        "locationId": "land-of-always-winter",
+        "importance": 78
+      },
+      {
+        "episodeId": "S07E06",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "מקריב את עצמו כדי לאפשר לג'ון להימלט מצבא המתים.",
+        "affiliationId": "stark",
+        "locationId": "beyond-the-wall-haunted-forest",
+        "importance": 78
+      }
+    ]
+  },
+  {
+    "id": "beric-dondarrion",
+    "name": "בריק דונדריון",
+    "portrait": null,
+    "baseDescription": "מנהיג האחווה ללא דגלים, המגלם צדק מקומי מחוץ לסדר השלטוני.",
+    "timeline": [
+      {
+        "episodeId": "S03E04",
+        "status": "active",
+        "statusLabel": "מנהיג האחווה ללא דגלים",
+        "summary": "מוצג בהולו היל כראש מסגרת צבאית־ערכית עצמאית בארצות הנהר.",
+        "affiliationId": "brotherhood-without-banners",
+        "locationId": "hollow-hill",
+        "importance": 70
+      },
+      {
+        "episodeId": "S08E03",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "מקריב את עצמו כדי שאריה תוכל להימלט ולהגיע לרגע ההכרעה.",
+        "affiliationId": "brotherhood-without-banners",
+        "locationId": "winterfell",
+        "importance": 84
+      }
+    ]
+  },
+  {
+    "id": "blackfish-tully",
+    "name": "ברינדן \"הדג השחור\" טאלי",
+    "portrait": null,
+    "baseDescription": "לוחם ותיק, חד ואיתן, המייצג את רוח בית טאלי בנהרן.",
+    "timeline": [
+      {
+        "episodeId": "S06E08",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בהתנגדות בנהרן;",
+        "locationId": "braavos",
+        "importance": 78
+      }
+    ]
+  },
+  {
+    "id": "bowen-marsh",
+    "name": "בואן מארש",
+    "portrait": null,
+    "baseDescription": "איש משמר הלילה שהיה בין קושרי הקשר נגד ג׳ון שלג.",
+    "timeline": [
+      {
+        "episodeId": "S06E03",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "הוצא להורג;",
+        "locationId": "castle-black",
+        "importance": 78
+      }
+    ]
+  },
+  {
+    "id": "bran-stark",
+    "name": "בראן סטארק",
+    "portrait": null,
+    "baseDescription": "סקרנותו מובילה אותו לגילוי המסוכן ביותר של הפרק.",
+    "timeline": [
+      {
+        "episodeId": "S01E01",
+        "status": "incapacitated",
+        "statusLabel": "פצוע אנוש / מחוסר הכרה",
+        "summary": "נדחף ממגדל לאחר שראה את ג'יימי וסרסיי.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
+        "importance": 96
+      },
+      {
+        "episodeId": "S01E02",
+        "status": "recovering",
+        "statusLabel": "התעורר / עדיין מרותק למיטה",
+        "summary": "שורד את ניסיון הרצח ומתעורר בסוף הפרק.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
+        "importance": 96
+      },
+      {
+        "episodeId": "S02E06",
+        "status": "missing",
+        "statusLabel": "נעדר / במסתור",
+        "summary": "בורח מווינטרפל בסתר לאחר כיבוש הטירה בידי תיאון.",
+        "importance": 96,
+        "affiliationId": "stark",
+        "locationId": "winterfell"
+      },
+      {
+        "episodeId": "S02E08",
+        "status": "away",
+        "statusLabel": "סטטוס מאושר: חי במסתור",
+        "summary": "חיי בראן מתאשרים ללואין ולאושה.",
+        "importance": 96,
+        "affiliationId": "stark",
+        "locationId": "winterfell"
+      },
+      {
+        "episodeId": "S03E02",
+        "status": "active",
+        "statusLabel": "ברית חדשה",
+        "summary": "ג׳וג׳ן ומירה ריד מצטרפים לקבוצתו.",
+        "affiliationId": "stark",
+        "locationId": "winterfell-woods",
+        "importance": 96
+      },
+      {
+        "episodeId": "S03E10",
+        "status": "away",
+        "statusLabel": "מעבר גאוגרפי",
+        "summary": "חוצה את החומה צפונה.",
+        "affiliationId": "stark",
+        "locationId": "nightfort",
+        "importance": 97
+      },
+      {
+        "episodeId": "S04E05",
+        "status": "released",
+        "statusLabel": "ניצל משבי",
+        "summary": "משתחרר בעקבות התקפת משמר הלילה על מצודת קראסטר.",
+        "affiliationId": "stark",
+        "locationId": "crasters-keep",
+        "importance": 97
+      },
+      {
+        "episodeId": "S06E05",
+        "status": "active",
+        "statusLabel": "נמלט מן המערה",
+        "summary": "ניצל בקושי מן המערה של העורב בעל שלוש העיניים לאחר פריצת ההלכים הלבנים.",
+        "affiliationId": "stark",
+        "locationId": "three-eyed-raven-cave",
+        "importance": 99
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "away",
+        "statusLabel": "נושא את אמת מגדל השמחה",
+        "summary": "חוזר אל חזיון מגדל השמחה ומבין מי היו הוריו של ג׳ון.",
+        "affiliationId": "stark",
+        "locationId": "tower-of-joy",
+        "importance": 99
+      },
+      {
+        "episodeId": "S07E01",
+        "status": "active",
+        "statusLabel": "במקום מבוצר",
+        "summary": "הוכנס לשחור־הטירה לאחר שזוהה.",
+        "affiliationId": "stark",
+        "locationId": "castle-black",
+        "importance": 88
+      },
+      {
+        "episodeId": "S08E02",
+        "status": "active",
+        "statusLabel": "הפיתיון למלך הלילה",
+        "summary": "מוגדר כמרכז התכנית האסטרטגית של החיים לקראת הקרב.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
+        "importance": 100
+      },
+      {
+        "episodeId": "S08E06",
+        "status": "ruler",
+        "statusLabel": "מלך שש הממלכות",
+        "summary": "נבחר למלך החדש של הממלכות הדרומיות אחרי אימוץ המלוכה הנבחרת.",
+        "affiliationId": "stark",
+        "locationId": "dragonpit",
+        "importance": 100
+      }
+    ]
+  },
+  {
+    "id": "brienne-of-tarth",
+    "name": "בריאן מטארת׳",
+    "portrait": null,
+    "baseDescription": "מתקבלת למשמרו של רנלי ובהמשך נקשרת לנקמה ולנאמנות כלפי קייטלין.",
+    "timeline": [
+      {
+        "episodeId": "S02E03",
+        "status": "appointed",
+        "statusLabel": "שינוי תפקיד: במשמרו של רנלי",
+        "summary": "מתקבלת למשמרו של רנלי.",
+        "importance": 78,
+        "affiliationId": "renly-tyrell",
+        "locationId": "renly-camp-stormlands"
+      },
+      {
+        "episodeId": "S02E05",
+        "status": "missing",
+        "statusLabel": "נעדרת / בבריחה",
+        "summary": "בורחת לאחר שהואשמה ברצח רנלי.",
+        "importance": 79,
+        "affiliationId": "stark",
+        "locationId": "renly-camp-stormlands"
+      },
+      {
+        "episodeId": "S03E07",
+        "status": "released",
+        "statusLabel": "ניצלה",
+        "summary": "מחולצת מן הזירה בהארנהל.",
+        "locationId": "harrenhal",
+        "importance": 82
+      },
+      {
+        "episodeId": "S04E04",
+        "status": "away",
+        "statusLabel": "בשליחות רשמית",
+        "summary": "יוצאת לחפש את סאנסה בשליחותו של ג׳יימי.",
+        "locationId": "kingsroad",
+        "importance": 84
+      },
+      {
+        "episodeId": "S05E10",
+        "status": "active",
+        "statusLabel": "מבצעת גזר דין",
+        "summary": "מוצאת את סטאניס פצוע ומסיימת את סיפורו.",
+        "affiliationId": "stark",
+        "locationId": "stannis-northern-camp",
+        "importance": 78
+      },
+      {
+        "episodeId": "S08E02",
+        "status": "appointed",
+        "statusLabel": "אבירת שבע הממלכות",
+        "summary": "ג'יימי מעניק לה תואר אבירות בלילה האחרון לפני הקרב.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
+        "importance": 96
+      },
+      {
+        "episodeId": "S08E06",
+        "status": "appointed",
+        "statusLabel": "מפקדת משמר המלך",
+        "summary": "משמשת כמפקדת משמר המלך ומשלימה את דף ג'יימי בספר האחים.",
+        "affiliationId": "stark",
+        "locationId": "kings-landing",
+        "importance": 82
+      }
+    ]
+  },
+  {
+    "id": "bronn",
+    "name": "ברון",
+    "portrait": null,
+    "baseDescription": "מקבל את הפיקוד על משמר העיר כחלק מביסוס שליטתו של טיריון.",
+    "timeline": [
+      {
+        "episodeId": "S02E02",
+        "status": "appointed",
+        "statusLabel": "שינוי תפקיד: מפקד משמר העיר",
+        "summary": "מקבל את הפיקוד על משמר העיר.",
+        "importance": 74,
+        "affiliationId": "lannister",
+        "locationId": "kings-landing"
+      },
+      {
+        "episodeId": "S08E01",
+        "status": "appointed",
+        "statusLabel": "במשימת התנקשות",
+        "summary": "מקבל מקייבורן הוראה לחסל את ג'יימי ואת טיריון אם ישרדו את המלחמה בצפון.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 74
+      },
+      {
+        "episodeId": "S08E06",
+        "status": "appointed",
+        "statusLabel": "אדון רמות גנים ושר האוצר",
+        "summary": "נכנס למועצה הקטנה כאדון רמות גנים וכשר האוצר.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 76
+      }
+    ]
+  },
+  {
+    "id": "brother-ray",
+    "name": "האח ריי",
+    "portrait": null,
+    "baseDescription": "איש דת פציפיסטי שמנסה לבנות קהילה שקטה בנהריות.",
+    "timeline": [
+      {
+        "episodeId": "S06E07",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נרצח בטבח הכפר;",
+        "locationId": "riverrun",
+        "importance": 78
+      }
+    ]
+  },
+  {
+    "id": "catelyn-stark",
+    "name": "קייטלין סטארק",
+    "portrait": null,
+    "baseDescription": "מגנה על בראן, מזהה שמדובר בקנוניה, ומחליטה לפעול עצמאית.",
+    "timeline": [
+      {
+        "episodeId": "S01E01",
+        "status": "active",
+        "statusLabel": "חיה / גבירת וינטרפל",
+        "summary": "מקבלת מכתב חשאי מליסה אארין הטוען כי בית לאניסטר אחראי למות בעלה.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
+        "importance": 92
+      },
+      {
+        "episodeId": "S01E02",
+        "status": "away",
+        "statusLabel": "יצאה למשימה חשאית",
+        "summary": "עוזבת דרומה כדי להזהיר את נד.",
+        "affiliationId": "stark",
+        "locationId": "kingsroad",
+        "importance": 92
+      },
+      {
+        "episodeId": "S02E08",
+        "status": "captive",
+        "statusLabel": "במעצר במחנהו של רוב",
+        "summary": "מושמת תחת שמירה במחנהו של רוב.",
+        "importance": 92,
+        "affiliationId": "stark",
+        "locationId": "north-army-camp"
+      },
+      {
+        "episodeId": "S03E09",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "נרצחת בתאומים.",
+        "affiliationId": "stark",
+        "locationId": "the-twins",
+        "importance": 97
+      }
+    ]
+  },
+  {
+    "id": "cersei-lannister",
+    "name": "סרסיי לאניסטר",
+    "portrait": null,
+    "baseDescription": "מגיבה לאיום בחישוב קר, מהיר וקטלני.",
+    "timeline": [
+      {
+        "episodeId": "S01E01",
+        "status": "active",
+        "statusLabel": "חיה / מלכת ווסטרוז",
+        "summary": "סודה עם ג'יימי מוביל לנפילתו של בראן.",
+        "affiliationId": "lannister",
+        "locationId": "winterfell",
+        "importance": 96
+      },
+      {
+        "episodeId": "S03E05",
+        "status": "appointed",
+        "statusLabel": "שינוי שידוך",
+        "summary": "מיועדת להינשא ללוראס טיירל.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 89
+      },
+      {
+        "episodeId": "S05E07",
+        "status": "captive",
+        "statusLabel": "שבויה",
+        "summary": "נעצרת בידי הדרורים.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 100
+      },
+      {
+        "episodeId": "S05E10",
+        "status": "released",
+        "statusLabel": "שוחררה / ממתינה למשפט",
+        "summary": "משתחררת ממאסר לאחר הודאה חלקית, אך עדיין מחכה למשפט.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 100
+      },
+      {
+        "episodeId": "S06E08",
+        "status": "active",
+        "statusLabel": "תחת איום משפטי חמור",
+        "summary": "לאחר ביטול משפט הקרב.",
+        "affiliationId": "lannister",
+        "locationId": "braavos",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "ruler",
+        "statusLabel": "מלכה",
+        "summary": "מוכתרת למלכה;",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "ruler",
+        "statusLabel": "מלכה",
+        "summary": "משמידה את יריביה ומוכתרת למלכת שבע הממלכות.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 100
+      },
+      {
+        "episodeId": "S07E07",
+        "status": "ruler",
+        "statusLabel": "פועלת לבד מן הכס",
+        "summary": "מציגה מראית עין של שיתוף פעולה אך בונה מהלך רמייה, שכירים ובידוד פוליטי.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 100
+      },
+      {
+        "episodeId": "S08E05",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "נהרגת בקריסת המבצר האדום יחד עם ג'יימי.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 100
+      }
+    ]
+  },
+  {
+    "id": "crasters-son",
+    "name": "התינוק של קראסטר",
+    "portrait": null,
+    "baseDescription": "תינוק המוצג בטקס העל־טבעי של ההולכים הלבנים.",
+    "timeline": [
+      {
+        "episodeId": "S04E04",
+        "status": "transformed",
+        "statusLabel": "הפך לאחר",
+        "summary": "מוצג טקס ההפיכה שלו בידי כוח על־טבעי צפוני.",
+        "affiliationId": "white-walkers",
+        "locationId": "land-of-always-winter",
+        "importance": 32
+      }
+    ]
+  },
+  {
+    "id": "daario-naharis",
+    "name": "דאאריו נאהאריס",
+    "portrait": null,
+    "baseDescription": "מפקד שכירי חרב שעובר לצד דאינריז ומביא עמו את הבנים השניים.",
+    "timeline": [
+      {
+        "episodeId": "S03E08",
+        "status": "active",
+        "statusLabel": "שינוי נאמנות",
+        "summary": "עובר לצד דאינריז ומביא עמו את הבנים השניים.",
+        "affiliationId": "targaryen",
+        "locationId": "yunkai",
+        "importance": 75
+      }
+    ]
+  },
+  {
+    "id": "daenerys-dragons",
+    "name": "הדרקונים של דאינריז",
+    "portrait": null,
+    "baseDescription": "נעלמים מקארת׳ ומושבים אל דאינריז בבית הנצחי.",
+    "timeline": [
+      {
+        "episodeId": "S02E06",
+        "status": "missing",
+        "statusLabel": "נעדרים / נגנבו",
+        "summary": "ננגבים מקארת׳ והופכים את דאינריז לפגיעה כמעט לחלוטין.",
+        "importance": 72,
+        "affiliationId": "targaryen",
+        "locationId": "qarth"
+      },
+      {
+        "episodeId": "S02E10",
+        "status": "active",
+        "statusLabel": "חיים / שבו אל דאינריז",
+        "summary": "דאינריז משיבה לעצמה את דרקוניה בבית הנצחי.",
+        "importance": 72,
+        "affiliationId": "targaryen",
+        "locationId": "house-of-the-undying"
+      }
+    ]
+  },
+  {
+    "id": "daenerys-targaryen",
+    "name": "דאינריז טארגאריין",
+    "portrait": null,
+    "baseDescription": "עוברת מנכס פוליטי של אחיה לכלה של חאל דרוגו.",
+    "timeline": [
+      {
+        "episodeId": "S01E01",
+        "status": "active",
+        "statusLabel": "חיה / כלת החאל",
+        "summary": "עוברת מנכס פוליטי של אחיה לכלה של חאל דרוגו.",
+        "affiliationId": "targaryen",
+        "locationId": "pentos",
+        "importance": 99
+      },
+      {
+        "episodeId": "S01E03",
+        "status": "pregnant",
+        "statusLabel": "הרה",
+        "summary": "ההריון מתגלה ומעלה את מעמדה.",
+        "affiliationId": "targaryen",
+        "locationId": "khalasar-camp",
+        "importance": 99
+      },
+      {
+        "episodeId": "S01E10",
+        "status": "transformed",
+        "statusLabel": "שינוי סטטוס: אם הדרקונים",
+        "summary": "יוצאת מן האש עם שלושה דרקונים חיים.",
+        "affiliationId": "targaryen",
+        "locationId": "dany-desert-camp",
+        "importance": 100
+      },
+      {
+        "episodeId": "S03E01",
+        "status": "active",
+        "statusLabel": "שינוי יעד אסטרטגי",
+        "summary": "מגיעה למפרץ העבדים כדי לגייס צבא.",
+        "affiliationId": "targaryen",
+        "locationId": "astapor",
+        "importance": 98
+      },
+      {
+        "episodeId": "S03E04",
+        "status": "appointed",
+        "statusLabel": "שינוי מעמד",
+        "summary": "נעשית מפקדת הבלתי-טמאים.",
+        "affiliationId": "targaryen",
+        "locationId": "astapor",
+        "importance": 99
+      },
+      {
+        "episodeId": "S04E03",
+        "status": "ruler",
+        "statusLabel": "כובשת/שליטה חדשה במירין",
+        "summary": "עוברת מעוד מסע כיבוש לרגע של שלטון ממשי.",
+        "affiliationId": "targaryen",
+        "locationId": "meereen",
+        "importance": 99
+      },
+      {
+        "episodeId": "S04E04",
+        "status": "ruler",
+        "statusLabel": "שליטה פעילה במירין",
+        "summary": "מתחילה לעצב משטר משלה בעיר.",
+        "affiliationId": "targaryen",
+        "locationId": "meereen",
+        "importance": 99
+      },
+      {
+        "episodeId": "S05E01",
+        "status": "ruler",
+        "statusLabel": "שליטה מתוחה במירין",
+        "summary": "מגלה שהמרד העירוני במירין רחוק מסיום.",
+        "affiliationId": "targaryen",
+        "locationId": "meereen",
+        "importance": 100
+      },
+      {
+        "episodeId": "S05E09",
+        "status": "missing",
+        "statusLabel": "נעדרת",
+        "summary": "עוזבת את הזירה ואת מירין על גב דרוגון.",
+        "affiliationId": "targaryen",
+        "locationId": "daznaks-pit",
+        "importance": 100
+      },
+      {
+        "episodeId": "S06E01",
+        "status": "captive",
+        "statusLabel": "בשבי / בליווי כפוי",
+        "summary": "נלקחת אל ואייס דותראק;",
+        "affiliationId": "targaryen",
+        "locationId": "castle-black",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E04",
+        "status": "ruler",
+        "statusLabel": "מנהיגת הח׳אלסאר",
+        "summary": "יוצאת מן הלהבות ומכפיפה אליה המון דותראקי עצום.",
+        "affiliationId": "targaryen",
+        "locationId": "vaes-dothrak",
+        "importance": 100
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "away",
+        "statusLabel": "בדרך לווסטרוז",
+        "summary": "מפליגה סוף סוף לווסטרוז עם צי, דרקונים וקואליציה רחבה.",
+        "affiliationId": "targaryen",
+        "locationId": "slavers-bay",
+        "importance": 100
+      },
+      {
+        "episodeId": "S07E01",
+        "status": "ruler",
+        "statusLabel": "פועלת מדרגונסטון",
+        "summary": "שבה לווסטרוז והחלה לפעול מדרגונסטון כבסיס שלטוני חדש.",
+        "affiliationId": "targaryen",
+        "locationId": "dragonstone",
+        "importance": 100
+      },
+      {
+        "episodeId": "S07E03",
+        "status": "ruler",
+        "statusLabel": "מנהלת מגעים עם ג'ון מדרגונסטון",
+        "summary": "פוגשת את ג'ון, שומעת על איום המתים, אך סופגת גם כישלון אסטרטגי מול ג'יימי.",
+        "affiliationId": "targaryen",
+        "locationId": "dragonstone",
+        "importance": 100
+      },
+      {
+        "episodeId": "S07E04",
+        "status": "ruler",
+        "statusLabel": "העבירה את הדרקון לשדה הקרב",
+        "summary": "מפעילה לראשונה בגלוי את דרוגון ואת הדות'ראקים נגד צבא ווסטרוזי גדול.",
+        "affiliationId": "targaryen",
+        "locationId": "highgarden",
+        "importance": 100
+      },
+      {
+        "episodeId": "S07E06",
+        "status": "injured",
+        "statusLabel": "איבדה את ויסריון",
+        "summary": "מגיעה לחילוץ עם שלושת הדרקונים, אך משלמת באובדן כבד לויסריון.",
+        "affiliationId": "targaryen",
+        "locationId": "beyond-the-wall-haunted-forest",
+        "importance": 100
+      },
+      {
+        "episodeId": "S08E01",
+        "status": "ruler",
+        "statusLabel": "הגיעה לווינטרפל עם מחנה הפלישה",
+        "summary": "מביאה את הבלתי-טמאים והדות'ראקים להגנת הצפון, אך נתקלת בחוסר אמון מיידי.",
+        "affiliationId": "targaryen",
+        "locationId": "winterfell",
+        "importance": 100
+      },
+      {
+        "episodeId": "S08E04",
+        "status": "injured",
+        "statusLabel": "איבדה את ראיגל ואת מיסנדיי",
+        "summary": "סופגת רצף מכות אישיות וצבאיות שמערער את שלטונה ואת האמון סביבה.",
+        "affiliationId": "targaryen",
+        "locationId": "dragonstone",
+        "importance": 100
+      },
+      {
+        "episodeId": "S08E05",
+        "status": "ruler",
+        "statusLabel": "כבשה את מעלה-מלך דרך פחד",
+        "summary": "זוכה בניצחון צבאי מוחלט אך הופכת את שלטונה למסגרת של אימה והשמדה טוטאלית.",
+        "affiliationId": "targaryen",
+        "locationId": "kings-landing",
+        "importance": 100
+      },
+      {
+        "episodeId": "S08E06",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "נהרגת בידי ג'ון באולם הכס.",
+        "affiliationId": "targaryen",
+        "locationId": "kings-landing",
+        "importance": 100
+      }
+    ]
+  },
+  {
+    "id": "davos-seaworth",
+    "name": "דאבוס סיוורת׳",
+    "portrait": null,
+    "baseDescription": "ממסגר יחד עם מליסנדרה את השילוב הבעייתי בין פרגמטיזם ימי לבין אמונה קנאית.",
+    "timeline": [
+      {
+        "episodeId": "S02E02",
+        "status": "active",
+        "statusLabel": "חי / איש הים של סטאניס",
+        "summary": "מגייס את ספינותיו של סלאדהור סאן עבור הפלישה של סטאניס.",
+        "importance": 80,
+        "affiliationId": "baratheon-stannis",
+        "locationId": "dragonstone"
+      },
+      {
+        "episodeId": "S02E05",
+        "status": "appointed",
+        "statusLabel": "שינוי תפקיד: מפקד צי הפלישה",
+        "summary": "מתמנה למפקד צי הפלישה של סטאניס.",
+        "importance": 81,
+        "affiliationId": "baratheon-stannis",
+        "locationId": "dragonstone"
+      },
+      {
+        "episodeId": "S02E08",
+        "status": "appointed",
+        "statusLabel": "שינוי תפקיד: מיועד להיות יד המלך",
+        "summary": "מקבל מסטאניס הבטחה מפורשת להיות יד המלך לאחר הניצחון.",
+        "importance": 81,
+        "affiliationId": "baratheon-stannis",
+        "locationId": "dragonstone"
+      },
+      {
+        "episodeId": "S03E01",
+        "status": "captive",
+        "statusLabel": "כלוא",
+        "summary": "נכלא בדרגונסטון לאחר שניסה להרוג את מליסנדרה.",
+        "affiliationId": "baratheon-stannis",
+        "locationId": "dragonstone",
+        "importance": 82
+      },
+      {
+        "episodeId": "S03E10",
+        "status": "released",
+        "statusLabel": "ניצל מהוצאה להורג",
+        "summary": "מכתב מן החומה משנה את עמדת סטאניס.",
+        "affiliationId": "baratheon-stannis",
+        "locationId": "dragonstone",
+        "importance": 84
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "active",
+        "statusLabel": "יועץ למלך בצפון",
+        "summary": "חושף בפני ג׳ון וסאנסה את גורלה של שירין ונשאר חלק מהנהגת הצפון.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
+        "importance": 90
+      }
+    ]
+  },
+  {
+    "id": "doran-martell",
+    "name": "דוראן מארטל",
+    "portrait": null,
+    "baseDescription": "שליט דורן שמבכר איפוק, סדר וניהול יחסים על פני נקמת דם מיידית.",
+    "timeline": [
+      {
+        "episodeId": "S06E01",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נרצח בהפיכת אלריה;",
+        "locationId": "castle-black",
+        "importance": 78
+      }
+    ]
+  },
+  {
+    "id": "doreah",
+    "name": "דוריאה",
+    "portrait": null,
+    "baseDescription": "נאטמת בכספת הריקה לצד חארו.",
+    "timeline": [
+      {
+        "episodeId": "S02E10",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "נאטמת עם חארו בכספת הריקה.",
+        "importance": 28,
+        "affiliationId": "targaryen",
+        "locationId": "qarth"
+      }
+    ]
+  },
+  {
+    "id": "dothraki-khals",
+    "name": "הכאלים הדותראקים",
+    "portrait": null,
+    "baseDescription": "מנהיגי הדותראקים שנפגשים בוואייס דותראק ומאתגרים את דאינריז.",
+    "timeline": [
+      {
+        "episodeId": "S06E04",
+        "status": "dead",
+        "statusLabel": "מתים",
+        "summary": "נספים בשריפה בוואייס דותראק.",
+        "locationId": "castle-black",
+        "importance": 78
+      }
+    ]
+  },
+  {
     "id": "eddard-stark",
     "name": "אדארד סטארק",
     "portrait": null,
@@ -53,159 +1178,715 @@
     ]
   },
   {
-    "id": "bran-stark",
-    "name": "בראן סטארק",
+    "id": "edmure-tully",
+    "name": "אדמור טאלי",
     "portrait": null,
-    "baseDescription": "סקרנותו מובילה אותו לגילוי המסוכן ביותר של הפרק.",
+    "baseDescription": "היורש הפעיל של נהרן, אך כזה שמתקשה לעמוד בציפיות הבית.",
     "timeline": [
       {
-        "episodeId": "S01E01",
-        "status": "incapacitated",
-        "statusLabel": "פצוע אנוש / מחוסר הכרה",
-        "summary": "נדחף ממגדל לאחר שראה את ג'יימי וסרסיי.",
+        "episodeId": "S03E03",
+        "status": "active",
+        "statusLabel": "ראש הדור הפעיל בנהרן",
+        "summary": "נחשף כראש הדור הפעיל בנהרן אך גם כמי שמתקשה לעמוד בציפיות הבית.",
         "affiliationId": "stark",
-        "locationId": "winterfell",
-        "importance": 96
+        "locationId": "riverrun",
+        "importance": 63
       },
       {
-        "episodeId": "S01E02",
-        "status": "recovering",
-        "statusLabel": "התעורר / עדיין מרותק למיטה",
-        "summary": "שורד את ניסיון הרצח ומתעורר בסוף הפרק.",
+        "episodeId": "S03E06",
+        "status": "appointed",
+        "statusLabel": "שינוי שידוך",
+        "summary": "מקבל את נישואיו לרוזלין פריי כחלק מחידוש הברית.",
         "affiliationId": "stark",
+        "locationId": "riverrun",
+        "importance": 64
+      }
+    ]
+  },
+  {
+    "id": "ellaria-sand",
+    "name": "אלאריה סאנד",
+    "portrait": null,
+    "baseDescription": "בת לווייתו של אוברין, הנוכחת בבירה כחלק מנוכחות דורן בחצר.",
+    "timeline": [
+      {
+        "episodeId": "S04E01",
+        "status": "active",
+        "statusLabel": "נוכחת בחצר המלוכה",
+        "summary": "מגיעה עם אוברין מארטל למעלה המלך.",
+        "affiliationId": "martell",
+        "locationId": "kings-landing",
+        "importance": 58
+      },
+      {
+        "episodeId": "S07E03",
+        "status": "captive",
+        "statusLabel": "שבויה",
+        "summary": "נותרת כלואה בידי סרסיי אחרי מות טיאן.",
+        "affiliationId": "ellaria-dorne",
+        "locationId": "kings-landing",
+        "importance": 72
+      }
+    ]
+  },
+  {
+    "id": "euron-greyjoy",
+    "name": "יורון גרייג׳וי",
+    "portrait": null,
+    "baseDescription": "דודו האכזרי של תיאון ויארה, טוען לכתר איי הברזל.",
+    "timeline": [
+      {
+        "episodeId": "S06E02",
+        "status": "appointed",
+        "statusLabel": "טוען לכתר",
+        "summary": "חוזר למאבק הירושה של איי הברזל.",
+        "locationId": "castle-black",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E04",
+        "status": "ruler",
+        "statusLabel": "שליט איי הברזל",
+        "summary": "נבחר להוביל;",
+        "locationId": "castle-black",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E04",
+        "status": "ruler",
+        "statusLabel": "שליט איי הברזל",
+        "summary": "נבחר להוביל את איי הברזל ומאלץ את יארה ותיאון לברוח.",
+        "affiliationId": "greyjoy",
+        "locationId": "pyke",
+        "importance": 87
+      },
+      {
+        "episodeId": "S06E05",
+        "status": "ruler",
+        "statusLabel": "שליט מחוזק",
+        "summary": "אספת המלכים מחזקת את מעמדו.",
+        "locationId": "three-eyed-raven-cave",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E05",
+        "status": "ruler",
+        "statusLabel": "שליט מחוזק",
+        "summary": "אספת המלכים מחזקת את מעמדו כשליט האיים.",
+        "affiliationId": "greyjoy",
+        "locationId": "old-wyk",
+        "importance": 88
+      },
+      {
+        "episodeId": "S08E05",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג לאחר הדו-קרב עם ג'יימי.",
+        "affiliationId": "greyjoy",
+        "locationId": "kings-landing",
+        "importance": 90
+      }
+    ]
+  },
+  {
+    "id": "gendry",
+    "name": "גנדרי",
+    "portrait": null,
+    "baseDescription": "נרדף כחלק מציד הממזרים של רוברט ויוצא מן העיר.",
+    "timeline": [
+      {
+        "episodeId": "S02E01",
+        "status": "missing",
+        "statusLabel": "נעדר / נרדף",
+        "summary": "נרדף כחלק מציד הממזרים ויוצא מן העיר.",
+        "importance": 68,
+        "locationId": "kings-landing"
+      },
+      {
+        "episodeId": "S03E02",
+        "status": "captive",
+        "statusLabel": "בשבי/משמורת",
+        "summary": "מוחזק עם אריה בידי האחווה.",
+        "locationId": "riverlands-road-north",
+        "importance": 75
+      },
+      {
+        "episodeId": "S03E03",
+        "status": "active",
+        "statusLabel": "שינוי שיוך",
+        "summary": "מחליט להצטרף לאחווה ללא דגלים.",
+        "affiliationId": "brotherhood-without-banners",
+        "locationId": "harrenhal",
+        "importance": 75
+      },
+      {
+        "episodeId": "S03E04",
+        "status": "active",
+        "statusLabel": "שינוי שיוך",
+        "summary": "בוחר להישאר עם האחווה ללא דגלים.",
+        "affiliationId": "brotherhood-without-banners",
+        "locationId": "hollow-hill",
+        "importance": 75
+      },
+      {
+        "episodeId": "S03E07",
+        "status": "active",
+        "statusLabel": "ייחוס נחשף",
+        "summary": "מתברר כבנו הממזר של רוברט באראתיאון.",
+        "affiliationId": "baratheon-stannis",
+        "locationId": "dragonstone",
+        "importance": 77
+      },
+      {
+        "episodeId": "S03E08",
+        "status": "captive",
+        "statusLabel": "כלוא/מועמד לקורבן",
+        "summary": "דמו משמש את מליסנדרה ואת סטאניס.",
+        "affiliationId": "baratheon-stannis",
+        "locationId": "dragonstone",
+        "importance": 77
+      },
+      {
+        "episodeId": "S03E10",
+        "status": "released",
+        "statusLabel": "שוחרר",
+        "summary": "דאבוס שולח אותו להימלט מדרגונסטון.",
+        "locationId": "dragonstone",
+        "importance": 77
+      },
+      {
+        "episodeId": "S07E05",
+        "status": "active",
+        "statusLabel": "שב לפעולה",
+        "summary": "מצטרף לג'ון, לדאבוס ולמסע שמעבר לחומה.",
+        "affiliationId": "stark",
+        "locationId": "eastwatch-by-the-sea",
+        "importance": 76
+      },
+      {
+        "episodeId": "S08E04",
+        "status": "appointed",
+        "statusLabel": "לורד קץ-סופה",
+        "summary": "מוכרז כגנדרי באראתיאון ולורד קץ-סופה.",
+        "affiliationId": "baratheon",
         "locationId": "winterfell",
+        "importance": 84
+      }
+    ]
+  },
+  {
+    "id": "gilly",
+    "name": "גילי",
+    "portrait": null,
+    "baseDescription": "בת לווייתו של סם, הנשלחת עמו דרומה כדי להינצל מן העוינות בשחור-הטירה.",
+    "timeline": [
+      {
+        "episodeId": "S05E07",
+        "status": "away",
+        "statusLabel": "נשלחה דרומה",
+        "summary": "יוצאת עם סם והתינוק לעיר העתיקה.",
+        "affiliationId": "night-watch",
+        "locationId": "castle-black",
+        "importance": 60
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "away",
+        "statusLabel": "הגיעה לאולדטאון",
+        "summary": "מגיעה עם סאם אל המצודה אחרי המסע דרומה.",
+        "locationId": "oldtown",
+        "importance": 70
+      }
+    ]
+  },
+  {
+    "id": "grenn",
+    "name": "גרן",
+    "portrait": null,
+    "baseDescription": "אח במשמר הלילה שמחזיק קו עד לרגע האחרון בקרב על החומה.",
+    "timeline": [
+      {
+        "episodeId": "S04E09",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג במהלך הקרב על החומה.",
+        "affiliationId": "night-watch",
+        "locationId": "castle-black",
+        "importance": 58
+      }
+    ]
+  },
+  {
+    "id": "grey-worm",
+    "name": "גריי וורם",
+    "portrait": null,
+    "baseDescription": "מפקד הבלתי-טמאים ונכס צבאי מרכזי של דאינריז במירין.",
+    "timeline": [
+      {
+        "episodeId": "S05E04",
+        "status": "injured",
+        "statusLabel": "פצוע קשה",
+        "summary": "נפצע קשה במתקפה.",
+        "affiliationId": "targaryen",
+        "locationId": "meereen",
+        "importance": 84
+      },
+      {
+        "episodeId": "S08E06",
+        "status": "away",
+        "statusLabel": "עזב את וסטרוז",
+        "summary": "מפליג עם הבלתי-טמאים לנאאת'.",
+        "affiliationId": "targaryen",
+        "locationId": "kings-landing",
+        "importance": 86
+      }
+    ]
+  },
+  {
+    "id": "harald-karstark",
+    "name": "הארלד קארסטארק",
+    "portrait": null,
+    "baseDescription": "איש בית קארסטארק הנלחם לצד ראמזי בקרב על וינטרפל.",
+    "timeline": [
+      {
+        "episodeId": "S06E09",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בקרב;",
+        "locationId": "meereen",
+        "importance": 78
+      }
+    ]
+  },
+  {
+    "id": "hardhome-wildlings",
+    "name": "הפראיים מהארדהום",
+    "portrait": null,
+    "baseDescription": "שורדי הארדהום שחלקם מפונים דרומה ונכנסים למסגרת ברית עם ג׳ון.",
+    "timeline": [
+      {
+        "episodeId": "S05E08",
+        "status": "appointed",
+        "statusLabel": "חלקם פונו דרומה",
+        "summary": "חלקם מפונים דרומה ומצטרפים למסגרת ברית עם ג׳ון.",
+        "affiliationId": "wildlings",
+        "locationId": "hardhome",
+        "importance": 46
+      }
+    ]
+  },
+  {
+    "id": "high-septon",
+    "name": "הספטון העליון",
+    "portrait": null,
+    "baseDescription": "נרצח בידי ההמון במהומות הרחוב של מעלה מלך.",
+    "timeline": [
+      {
+        "episodeId": "S02E06",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נרצח בידי ההמון.",
+        "importance": 44,
+        "locationId": "kings-landing"
+      }
+    ]
+  },
+  {
+    "id": "high-sparrow",
+    "name": "הדרור העליון",
+    "portrait": null,
+    "baseDescription": "מנהיג דתי צנוע למראה אך בעל כוח חברתי ופוליטי עולה במעלה המלך.",
+    "timeline": [
+      {
+        "episodeId": "S05E03",
+        "status": "appointed",
+        "statusLabel": "כוח דתי-פוליטי מרכזי",
+        "summary": "נכנס בפועל ככוח דתי-פוליטי מרכזי במעלה המלך.",
+        "affiliationId": "faith-militant",
+        "locationId": "kings-landing",
+        "importance": 90
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בהשמדת הספט;",
+        "affiliationId": "faith-militant",
+        "locationId": "kings-landing",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בהשמדת הספט הגדול של ביילור.",
+        "affiliationId": "faith-militant",
+        "locationId": "baelor-great-sept",
         "importance": 96
       }
     ]
   },
   {
-    "id": "daenerys-targaryen",
-    "name": "דאינריז טארגאריין",
+    "id": "hizdahr-zo-loraq",
+    "name": "היזדאר זו לוראק",
     "portrait": null,
-    "baseDescription": "עוברת מנכס פוליטי של אחיה לכלה של חאל דרוגו.",
+    "baseDescription": "אציל מיריני ההופך לבן זוג פוליטי מיועד של דאינריז כחלק מהפשרה בעיר.",
+    "timeline": [
+      {
+        "episodeId": "S05E05",
+        "status": "appointed",
+        "statusLabel": "בן זוג פוליטי מיועד",
+        "summary": "הופך לבן זוג פוליטי מיועד של דאינריז.",
+        "affiliationId": "targaryen",
+        "locationId": "meereen",
+        "importance": 64
+      }
+    ]
+  },
+  {
+    "id": "hodor",
+    "name": "הודור",
+    "portrait": null,
+    "baseDescription": "בן לווייתו הנאמן של בראן, שנושא עבר טראגי הרבה יותר מכפי שנראה.",
+    "timeline": [
+      {
+        "episodeId": "S06E05",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בעת עיכוב ההלכים הלבנים;",
+        "locationId": "three-eyed-raven-cave",
+        "importance": 78
+      }
+    ]
+  },
+  {
+    "id": "irri",
+    "name": "אירי",
+    "portrait": null,
+    "baseDescription": "נמצאת מתה בקארת׳ בזמן שהדרקונים של דאינריז נעלמים.",
+    "timeline": [
+      {
+        "episodeId": "S02E06",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "נמצאת מתה בקארת׳.",
+        "importance": 36,
+        "affiliationId": "targaryen",
+        "locationId": "qarth"
+      }
+    ]
+  },
+  {
+    "id": "jaime-lannister",
+    "name": "ג'יימי לאניסטר",
+    "portrait": null,
+    "baseDescription": "משנה את הסכסוך לעימות אלים וישיר.",
     "timeline": [
       {
         "episodeId": "S01E01",
         "status": "active",
-        "statusLabel": "חיה / כלת החאל",
-        "summary": "עוברת מנכס פוליטי של אחיה לכלה של חאל דרוגו.",
-        "affiliationId": "targaryen",
-        "locationId": "pentos",
+        "statusLabel": "חי / בן בית לאניסטר",
+        "summary": "דוחף את בראן מן המגדל כדי לשמור על הסוד.",
+        "affiliationId": "lannister",
+        "locationId": "winterfell",
+        "importance": 92
+      },
+      {
+        "episodeId": "S01E09",
+        "status": "captive",
+        "statusLabel": "שבוי",
+        "summary": "נלכד בידי כוחותיו של רוב סטארק.",
+        "affiliationId": "lannister",
+        "locationId": "whispering-wood",
+        "importance": 92
+      },
+      {
+        "episodeId": "S03E03",
+        "status": "injured",
+        "statusLabel": "הושחת/נפצע אנושות לתפקודו",
+        "summary": "ידו הימנית נכרתת.",
+        "affiliationId": "lannister",
+        "locationId": "riverlands-road-north",
+        "importance": 94
+      },
+      {
+        "episodeId": "S03E07",
+        "status": "released",
+        "statusLabel": "שינוי נאמנות אישית",
+        "summary": "בוחר בפעולה שמגינה על בריאן גם במחיר אישי.",
+        "affiliationId": "lannister",
+        "locationId": "harrenhal",
+        "importance": 95
+      },
+      {
+        "episodeId": "S04E01",
+        "status": "injured",
+        "statusLabel": "שינוי מעמד",
+        "summary": "שב למעלה המלך כשהוא פצוע וחסר יד, ומוצא את מעמדו הצבאי והמשפחתי מעורער.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 95
+      },
+      {
+        "episodeId": "S05E02",
+        "status": "appointed",
+        "statusLabel": "משימה חשאית",
+        "summary": "יוצא לדורן להחזיר את מירסלה.",
+        "affiliationId": "lannister",
+        "locationId": "dorne",
+        "importance": 94
+      },
+      {
+        "episodeId": "S05E06",
+        "status": "captive",
+        "statusLabel": "מעוכב",
+        "summary": "נתון למרותו של דוראן אחרי הכישלון בדורן.",
+        "affiliationId": "lannister",
+        "locationId": "water-gardens",
+        "importance": 94
+      },
+      {
+        "episodeId": "S06E06",
+        "status": "dismissed",
+        "statusLabel": "שינוי תפקיד",
+        "summary": "מורחק ממשמר המלך ונשלח לנהרן;",
+        "affiliationId": "lannister",
+        "locationId": "land-of-always-winter",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E06",
+        "status": "dismissed",
+        "statusLabel": "מורחק ממשמר המלך ונשלח לנהרן",
+        "summary": "תומן והדרור העליון מדיחים אותו מן המשמר ושולחים אותו אל נהרן.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 92
+      },
+      {
+        "episodeId": "S06E08",
+        "status": "active",
+        "statusLabel": "משיב את נהרן לציר לאניסטר-פריי",
+        "summary": "כובש את נהרן בלי הסתערות ישירה דרך אדמור טאלי.",
+        "affiliationId": "lannister",
+        "locationId": "riverrun",
+        "importance": 93
+      },
+      {
+        "episodeId": "S07E04",
+        "status": "missing",
+        "statusLabel": "נעדר / גורל לא ידוע בסוף הפרק",
+        "summary": "שוקע לנהר לאחר ההסתערות הנואשת על דאינריז.",
+        "affiliationId": "lannister",
+        "locationId": "highgarden",
         "importance": 99
       },
       {
-        "episodeId": "S01E03",
-        "status": "pregnant",
-        "statusLabel": "הרה",
-        "summary": "ההריון מתגלה ומעלה את מעמדה.",
-        "affiliationId": "targaryen",
-        "locationId": "khalasar-camp",
+        "episodeId": "S07E07",
+        "status": "away",
+        "statusLabel": "עזב את מחנה סרסיי",
+        "summary": "פורש בפועל ממחנה סרסיי ויוצא ממעלה המלך לבדו.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
         "importance": 99
       },
       {
-        "episodeId": "S01E10",
-        "status": "transformed",
-        "statusLabel": "שינוי סטטוס: אם הדרקונים",
-        "summary": "יוצאת מן האש עם שלושה דרקונים חיים.",
-        "affiliationId": "targaryen",
-        "locationId": "dany-desert-camp",
+        "episodeId": "S08E01",
+        "status": "active",
+        "statusLabel": "הגיע לווינטרפל",
+        "summary": "מגיע לווינטרפל ומוצב מיד מול בראן.",
+        "affiliationId": "lannister",
+        "locationId": "winterfell",
+        "importance": 98
+      },
+      {
+        "episodeId": "S08E02",
+        "status": "released",
+        "statusLabel": "מורשה להילחם לצד וינטרפל",
+        "summary": "זוכה להילחם לצד החיים אחרי שבריאן ערבה לו.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
+        "importance": 99
+      },
+      {
+        "episodeId": "S08E04",
+        "status": "away",
+        "statusLabel": "חוזר למעלה-מלך",
+        "summary": "עוזב את בריאן ואת וינטרפל וחוזר דרומה אל סרסיי.",
+        "affiliationId": "lannister",
+        "locationId": "winterfell",
+        "importance": 99
+      },
+      {
+        "episodeId": "S08E05",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נקבר תחת קריסת המבצר האדום לצד סרסיי.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
         "importance": 100
       }
     ]
   },
   {
-    "id": "robert-baratheon",
-    "name": "רוברט באראתיאון",
+    "id": "janos-slynt",
+    "name": "יאנוס סלינט",
     "portrait": null,
-    "baseDescription": "מניע את העלילה המרכזית בבואו לצפון ובהצעתו לנד.",
+    "baseDescription": "מודח ממפקד משמר העיר ונשלח לחומה.",
+    "timeline": [
+      {
+        "episodeId": "S02E02",
+        "status": "dismissed",
+        "statusLabel": "שינוי תפקיד: מודח ונשלח לחומה",
+        "summary": "מודח ממפקד משמר העיר ונשלח לחומה.",
+        "importance": 48,
+        "affiliationId": "lannister",
+        "locationId": "kings-landing"
+      },
+      {
+        "episodeId": "S05E03",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "הוצא להורג לאחר סירוב פקודה.",
+        "affiliationId": "night-watch",
+        "locationId": "castle-black",
+        "importance": 62
+      }
+    ]
+  },
+  {
+    "id": "jaqen-hghar",
+    "name": "ז׳אקן האגאר",
+    "portrait": null,
+    "baseDescription": "איש חסר פנים המוביל את אריה אל מחיקת זהותה הישנה.",
+    "timeline": [
+      {
+        "episodeId": "S02E03",
+        "status": "active",
+        "statusLabel": "חי / אסיר מסתורי",
+        "summary": "ניצל מן האש בדרך צפונה, ויוצר קשר ראשון ומשמעותי עם אריה.",
+        "locationId": "riverlands-road-north",
+        "importance": 70
+      },
+      {
+        "episodeId": "S02E10",
+        "status": "away",
+        "statusLabel": "בדרכו לבראבוס",
+        "summary": "מוסר לאריה את המטבע ואת המילים שיפתחו לה נתיב עתידי לבראבוס.",
+        "locationId": "harrenhal",
+        "importance": 74
+      },
+      {
+        "episodeId": "S05E02",
+        "status": "active",
+        "statusLabel": "פועל מבית השחור והלבן",
+        "summary": "מקבל את אריה לבית השחור והלבן ומתחיל לעצב מחדש את מסלולה.",
+        "locationId": "house-of-black-and-white",
+        "importance": 78
+      }
+    ]
+  },
+  {
+    "id": "jeor-mormont",
+    "name": "ג׳יאור מורמונט",
+    "portrait": null,
+    "baseDescription": "לורד המפקד של משמר הלילה, שמותו מסמן משבר קשה במשמר.",
+    "timeline": [
+      {
+        "episodeId": "S03E01",
+        "status": "ruler",
+        "statusLabel": "לורד המפקד של משמר הלילה",
+        "summary": "שרידי המשמר מנסים לשרוד אחרי אגרוף ראשוני האדם תחת הנהגתו המתערערת.",
+        "affiliationId": "night-watch",
+        "locationId": "crasters-keep",
+        "importance": 74
+      },
+      {
+        "episodeId": "S03E04",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נרצח במרד במשכנו של קראסטר.",
+        "affiliationId": "night-watch",
+        "locationId": "crasters-keep",
+        "importance": 74
+      }
+    ]
+  },
+  {
+    "id": "joffrey-baratheon",
+    "name": "ג'ופרי באראתיאון",
+    "portrait": null,
+    "baseDescription": "הופך את הכוח המלכותי לכלי שרירותי ומסוכן.",
     "timeline": [
       {
         "episodeId": "S01E01",
         "status": "active",
-        "statusLabel": "חי / מלך שבע הממלכות",
-        "summary": "מניע את העלילה המרכזית בבואו לצפון ובהצעתו לנד.",
+        "statusLabel": "חי / יורש העצר",
+        "summary": "מוצע כחתן אפשרי לסאנסה סטארק.",
         "affiliationId": "baratheon",
         "locationId": "winterfell",
-        "importance": 95
+        "importance": 90
       },
       {
         "episodeId": "S01E07",
-        "status": "dead",
-        "statusLabel": "מת",
-        "summary": "מת מפצעי הציד לאחר שמינה את נד למגן הממלכה.",
+        "status": "ruler",
+        "statusLabel": "שינוי תואר: מלך",
+        "summary": "מוכרז כמלך לאחר מות רוברט.",
         "affiliationId": "baratheon",
         "locationId": "kings-landing",
-        "importance": 95
+        "importance": 91
+      },
+      {
+        "episodeId": "S04E02",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "מת במהלך סעודת החתונה.",
+        "affiliationId": "baratheon",
+        "locationId": "kings-landing",
+        "importance": 97
       }
     ]
   },
   {
-    "id": "catelyn-stark",
-    "name": "קייטלין סטארק",
+    "id": "jojen-reed",
+    "name": "ג׳וג׳ן ריד",
     "portrait": null,
-    "baseDescription": "מגנה על בראן, מזהה שמדובר בקנוניה, ומחליטה לפעול עצמאית.",
+    "baseDescription": "נער בעל חזיונות שממקם את בראן במסלול גדול יותר.",
     "timeline": [
       {
-        "episodeId": "S01E01",
+        "episodeId": "S03E02",
         "status": "active",
-        "statusLabel": "חיה / גבירת וינטרפל",
-        "summary": "מקבלת מכתב חשאי מליסה אארין הטוען כי בית לאניסטר אחראי למות בעלה.",
+        "statusLabel": "בעל ברית חדש",
+        "summary": "מצטרף לבראן ומסביר שכוחותיו אינם חלומות בלבד.",
         "affiliationId": "stark",
-        "locationId": "winterfell",
-        "importance": 92
+        "locationId": "winterfell-woods",
+        "importance": 72
       },
       {
-        "episodeId": "S01E02",
-        "status": "away",
-        "statusLabel": "יצאה למשימה חשאית",
-        "summary": "עוזבת דרומה כדי להזהיר את נד.",
+        "episodeId": "S04E10",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג לפני כניסת בראן אל המערה.",
         "affiliationId": "stark",
-        "locationId": "kingsroad",
-        "importance": 92
+        "locationId": "three-eyed-raven-cave",
+        "importance": 72
       }
     ]
   },
   {
-    "id": "arya-stark",
-    "name": "אריה סטארק",
+    "id": "jon-arryn",
+    "name": "ג'ון אארין",
     "portrait": null,
-    "baseDescription": "מתנגשת חזיתית עם ג'ופרי ומסרבת להיכנע להיררכיה מלאכותית.",
+    "baseDescription": "מותו מניע את נד להגיע לזירת הכוח המרכזית.",
     "timeline": [
       {
         "episodeId": "S01E01",
-        "status": "active",
-        "statusLabel": "חיה / בת בית סטארק",
-        "summary": "נוכחת בוינטרפל כאשר ביקורו של רוברט מניע את העלילה.",
-        "affiliationId": "stark",
-        "locationId": "winterfell",
-        "importance": 93
-      },
-      {
-        "episodeId": "S01E03",
-        "status": "training",
-        "statusLabel": "החלה אימון לחימה",
-        "summary": "מתחילה ללמוד אצל סיריו פורל.",
-        "affiliationId": "stark",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "מותו מדווח בתחילת הפרק ומניע את ביקור המלך.",
+        "affiliationId": "arryn",
         "locationId": "kings-landing",
-        "importance": 93
-      },
-      {
-        "episodeId": "S01E08",
-        "status": "missing",
-        "statusLabel": "נעדרת / נמלטת",
-        "summary": "בורחת ממעלה מלך לאחר מעצר אביה.",
-        "affiliationId": "stark",
-        "locationId": "kings-landing",
-        "importance": 94
-      },
-      {
-        "episodeId": "S01E10",
-        "status": "disguised",
-        "statusLabel": "נמלטת / בזהות מוסווית",
-        "summary": "מוברחת ממעלה מלך מחופשת לנער.",
-        "affiliationId": "stark",
-        "locationId": "kingsroad",
-        "importance": 94
+        "importance": 70
       }
     ]
   },
@@ -241,6 +1922,2603 @@
         "affiliationId": "night-watch",
         "locationId": "castle-black",
         "importance": 95
+      },
+      {
+        "episodeId": "S02E07",
+        "status": "captive",
+        "statusLabel": "שבוי / בקרב הפראים",
+        "summary": "נופל בשבי פראים לאחר שאיבד את ייגריט.",
+        "importance": 97,
+        "affiliationId": "night-watch",
+        "locationId": "beyond-the-wall-haunted-forest"
+      },
+      {
+        "episodeId": "S02E10",
+        "status": "away",
+        "statusLabel": "שינוי סטטוס: שומר על כיסוי בקרב הפראים",
+        "summary": "הורג את קורין חצי-יד כדי לשמר את כיסויו.",
+        "importance": 97,
+        "affiliationId": "night-watch",
+        "locationId": "beyond-the-wall-haunted-forest"
+      },
+      {
+        "episodeId": "S03E01",
+        "status": "away",
+        "statusLabel": "שינוי נאמנות מוצהר",
+        "summary": "מציג את עצמו כעריק מן המשמר בפני מאנס.",
+        "affiliationId": "night-watch",
+        "locationId": "beyond-the-wall-haunted-forest",
+        "importance": 97
+      },
+      {
+        "episodeId": "S03E10",
+        "status": "active",
+        "statusLabel": "חזר לקאסל בלאק",
+        "summary": "שב פצוע אך חי.",
+        "affiliationId": "night-watch",
+        "locationId": "castle-black",
+        "importance": 98
+      },
+      {
+        "episodeId": "S04E09",
+        "status": "appointed",
+        "statusLabel": "מפקד בפועל",
+        "summary": "נוטל את ההובלה בשטח לאחר פציעת תורן.",
+        "affiliationId": "night-watch",
+        "locationId": "castle-black",
+        "importance": 99
+      },
+      {
+        "episodeId": "S05E02",
+        "status": "appointed",
+        "statusLabel": "מפקד ה-998 של משמר הלילה",
+        "summary": "נבחר למפקד ה-998 של משמר הלילה.",
+        "affiliationId": "night-watch",
+        "locationId": "castle-black",
+        "importance": 100
+      },
+      {
+        "episodeId": "S05E10",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נדקר בידי אנשי משמר הלילה.",
+        "affiliationId": "night-watch",
+        "locationId": "castle-black",
+        "importance": 100
+      },
+      {
+        "episodeId": "S06E01",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "גופתו מוחזקת בקאסל בלאק.",
+        "affiliationId": "night-watch",
+        "locationId": "castle-black",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E02",
+        "status": "active",
+        "statusLabel": "חי",
+        "summary": "הושב לחיים בידי מליסנדרה;",
+        "affiliationId": "night-watch",
+        "locationId": "castle-black",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E02",
+        "status": "active",
+        "statusLabel": "חי",
+        "summary": "הושב לחיים בידי מליסנדרה.",
+        "affiliationId": "night-watch",
+        "locationId": "castle-black",
+        "importance": 100
+      },
+      {
+        "episodeId": "S06E03",
+        "status": "dismissed",
+        "statusLabel": "חדל להיות המפקד העליון של משמר הלילה",
+        "summary": "חדל להיות המפקד העליון של משמר הלילה;",
+        "affiliationId": "night-watch",
+        "locationId": "castle-black",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E03",
+        "status": "dismissed",
+        "statusLabel": "חדל להיות המפקד העליון של משמר הלילה",
+        "summary": "אחרי הוצאת המורדים להורג הוא מסיר מעליו את זהות המפקד.",
+        "locationId": "castle-black",
+        "importance": 100
+      },
+      {
+        "episodeId": "S06E04",
+        "status": "active",
+        "statusLabel": "מוביל את המחנה הסטארקי המתחדש",
+        "summary": "האיחוד עם סאנסה מושך אותו חזרה למאבק על ווינטרפל.",
+        "affiliationId": "stark",
+        "locationId": "castle-black",
+        "importance": 100
+      },
+      {
+        "episodeId": "S06E09",
+        "status": "active",
+        "statusLabel": "מפקד הניצחון על ווינטרפל",
+        "summary": "שורד את קרב הממזרים ומשיב את ווינטרפל למחנה סטארק.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
+        "importance": 100
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "ruler",
+        "statusLabel": "מלך בצפון",
+        "summary": "מוכרז מלך בצפון;",
+        "affiliationId": "night-watch",
+        "locationId": "kings-landing",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "ruler",
+        "statusLabel": "מלך בצפון",
+        "summary": "מוכרז בידי בתי הצפון והנהריות כמלך בצפון.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
+        "importance": 100
+      },
+      {
+        "episodeId": "S07E01",
+        "status": "ruler",
+        "statusLabel": "מלך בצפון המגייס את הצפון",
+        "summary": "מארגן את הצפון לקראת המלחמה נגד האיום שמעבר לחומה.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
+        "importance": 99
+      },
+      {
+        "episodeId": "S07E02",
+        "status": "away",
+        "statusLabel": "בדרך לדרגונסטון",
+        "summary": "יוצא דרומה כדי לפגוש את דאינריז ומותיר את סאנסה כעוצרת הצפון.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
+        "importance": 100
+      },
+      {
+        "episodeId": "S07E03",
+        "status": "active",
+        "statusLabel": "בברית זהירה עם דאינריז",
+        "summary": "פוגש את דאינריז ומקבל גישה לכריית זכוכית־דרקון בדרגונסטון.",
+        "affiliationId": "stark",
+        "locationId": "dragonstone",
+        "importance": 100
+      },
+      {
+        "episodeId": "S07E05",
+        "status": "active",
+        "statusLabel": "יוצא למבצע לכידת מת־מהלך",
+        "summary": "מוביל את ההימור הקיצוני שנועד לאחד את החיים נגד המתים.",
+        "affiliationId": "stark",
+        "locationId": "eastwatch-by-the-sea",
+        "importance": 100
+      },
+      {
+        "episodeId": "S07E06",
+        "status": "sworn",
+        "statusLabel": "נשבע אמונים לדאינריז",
+        "summary": "אחרי ההצלה והאבדות שמעבר לחומה הוא מכיר רשמית במנהיגותה של דאינריז.",
+        "affiliationId": "targaryen",
+        "locationId": "dragonstone",
+        "importance": 100
+      },
+      {
+        "episodeId": "S07E07",
+        "status": "active",
+        "statusLabel": "אאיגון טארגאריין החוקי (נחשף לצופה)",
+        "summary": "סאם ובראן מאמתים שג'ון הוא אאיגון טארגאריין החוקי, אף שהוא עצמו עדיין אינו מודע לכך.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
+        "importance": 100
+      },
+      {
+        "episodeId": "S08E01",
+        "status": "active",
+        "statusLabel": "שינוי יוחסין",
+        "summary": "מגלה כי שמו החוקי הוא אאיגון טארגאריין, בנו של ראיגר טארגאריין וליאנה סטארק.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
+        "importance": 100
+      },
+      {
+        "episodeId": "S08E06",
+        "status": "sworn",
+        "statusLabel": "נשלח למשמר הלילה",
+        "summary": "נאסר, ואז נשלח למשמר הלילה כחלק מן הפשרה עם הבלתי-טמאים.",
+        "affiliationId": "night-watch",
+        "locationId": "castle-black",
+        "importance": 100
+      }
+    ]
+  },
+  {
+    "id": "jorah-mormont",
+    "name": "ג׳ורה מורמונט",
+    "portrait": null,
+    "baseDescription": "יועצה הוותיק של דאינריז, שמאבד את אמונה לאחר חשיפת עברו כמרגל.",
+    "timeline": [
+      {
+        "episodeId": "S04E08",
+        "status": "dismissed",
+        "statusLabel": "מגורש",
+        "summary": "דאינריז מסלקת אותו ממירין לאחר חשיפת עברו כמרגל.",
+        "affiliationId": "targaryen",
+        "locationId": "meereen",
+        "importance": 83
+      },
+      {
+        "episodeId": "S05E05",
+        "status": "injured",
+        "statusLabel": "נדבק בגרייסקייל",
+        "summary": "נדבק בגרייסקייל לאחר עימות עם אנשי אבן.",
+        "affiliationId": "targaryen",
+        "locationId": "smoking-sea",
+        "importance": 82
+      },
+      {
+        "episodeId": "S05E06",
+        "status": "captive",
+        "statusLabel": "שבוי",
+        "summary": "נלכד בידי סוחרי עבדים.",
+        "affiliationId": "targaryen",
+        "locationId": "slavers-bay",
+        "importance": 82
+      },
+      {
+        "episodeId": "S05E08",
+        "status": "away",
+        "statusLabel": "מורחק שוב מדאינריז",
+        "summary": "מורחק שוב מדאינריז עד שימצא מרפא.",
+        "affiliationId": "targaryen",
+        "locationId": "meereen",
+        "importance": 82
+      },
+      {
+        "episodeId": "S05E09",
+        "status": "appointed",
+        "statusLabel": "שינוי מעמד",
+        "summary": "חוזר פיזית אל זירת חייה של דאינריז, גם אם לא אל חסדה.",
+        "affiliationId": "targaryen",
+        "locationId": "daznaks-pit",
+        "importance": 82
+      },
+      {
+        "episodeId": "S06E05",
+        "status": "away",
+        "statusLabel": "נפרד מדאינריז / במסע לחיפוש ריפוי",
+        "summary": "יוצא לבדו;",
+        "affiliationId": "targaryen",
+        "locationId": "three-eyed-raven-cave",
+        "importance": 78
+      },
+      {
+        "episodeId": "S07E02",
+        "status": "recovering",
+        "statusLabel": "בטיפול מסוכן",
+        "summary": "סאם מתחיל הליך אסור נגד קשקשת האבן במצודה.",
+        "affiliationId": "targaryen",
+        "locationId": "oldtown",
+        "importance": 80
+      },
+      {
+        "episodeId": "S07E03",
+        "status": "released",
+        "statusLabel": "נרפא / חופשי לחזור לשירות",
+        "summary": "סאם מציל אותו במצודה והוא חופשי לחזור לדאינריז.",
+        "affiliationId": "targaryen",
+        "locationId": "oldtown",
+        "importance": 84
+      },
+      {
+        "episodeId": "S07E05",
+        "status": "active",
+        "statusLabel": "שב לשירותה של דאינריז",
+        "summary": "חוזר אל דאינריז אחרי ריפויו ונכנס מחדש למעגל הפנימי שלה.",
+        "affiliationId": "targaryen",
+        "locationId": "dragonstone",
+        "importance": 82
+      },
+      {
+        "episodeId": "S08E03",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נופל בהגנה על דאינריז במהלך קריסת קווי ההגנה על וינטרפל.",
+        "affiliationId": "targaryen",
+        "locationId": "winterfell",
+        "importance": 94
+      }
+    ]
+  },
+  {
+    "id": "jory-cassel",
+    "name": "ג'ורי קאסל",
+    "portrait": null,
+    "baseDescription": "נהרג בהתנגשות בין אנשיו של נד לג'יימי.",
+    "timeline": [
+      {
+        "episodeId": "S01E05",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בהתנגשות בין אנשיו של נד לג'יימי.",
+        "affiliationId": "stark",
+        "locationId": "kings-landing",
+        "importance": 48
+      }
+    ]
+  },
+  {
+    "id": "karl-tanner",
+    "name": "קרל טאנר",
+    "portrait": null,
+    "baseDescription": "מנהיג המורדים במצודת קראסטר, שנהרג בפשיטת משמר הלילה.",
+    "timeline": [
+      {
+        "episodeId": "S04E05",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בפשיטה על המצודה.",
+        "affiliationId": "night-watch",
+        "locationId": "crasters-keep",
+        "importance": 37
+      }
+    ]
+  },
+  {
+    "id": "karsi",
+    "name": "קארסי",
+    "portrait": null,
+    "baseDescription": "מנהיגה פראית בהארדהום, מן הדמויות הבולטות שנופלות בקרב.",
+    "timeline": [
+      {
+        "episodeId": "S05E08",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "נהרגת במהלך הפינוי והקרב.",
+        "affiliationId": "wildlings",
+        "locationId": "hardhome",
+        "importance": 52
+      }
+    ]
+  },
+  {
+    "id": "kevan-lannister",
+    "name": "קבאן לאניסטר",
+    "portrait": null,
+    "baseDescription": "דודו היציב והמחושב של סרסיי, איש מנהל ותיק בבית לאניסטר.",
+    "timeline": [
+      {
+        "episodeId": "S06E10",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בספט;",
+        "locationId": "kings-landing",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בפיצוץ הספט הגדול של ביילור.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 78
+      }
+    ]
+  },
+  {
+    "id": "khal-drogo",
+    "name": "חאל דרוגו",
+    "portrait": null,
+    "baseDescription": "הופך את ענף טארגאריין הגולה לכוח צבאי ממשי.",
+    "timeline": [
+      {
+        "episodeId": "S01E01",
+        "status": "active",
+        "statusLabel": "חי / חאל הדות'ראקים",
+        "summary": "נושא את דאינריז ומעניק לראשונה בסיס צבאי לתביעת טארגאריין.",
+        "affiliationId": "dothraki",
+        "locationId": "pentos",
+        "importance": 88
+      },
+      {
+        "episodeId": "S01E09",
+        "status": "incapacitated",
+        "statusLabel": "פצוע אנוש / מחוסר תפקוד",
+        "summary": "פציעתו מחמירה ומעמידה את מנהיגותו בסכנה.",
+        "affiliationId": "dothraki",
+        "locationId": "khalasar-camp",
+        "importance": 88
+      },
+      {
+        "episodeId": "S01E10",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "דאינריז שמה קץ לחייו לאחר שאיבד את אישיותו ותפקודו.",
+        "affiliationId": "dothraki",
+        "locationId": "dany-desert-camp",
+        "importance": 88
+      }
+    ]
+  },
+  {
+    "id": "kraznys-mo-nakloz",
+    "name": "קרזניס מו נקלוז",
+    "portrait": null,
+    "baseDescription": "אדון עבדים מאסטפור שמוכר את הבלתי-טמאים לדאינריז.",
+    "timeline": [
+      {
+        "episodeId": "S03E01",
+        "status": "active",
+        "statusLabel": "אדון עבדים באסטפור",
+        "summary": "דאינריז נחשפת לראשונה לעיר העבדים ולכוחם של הבלתי-טמאים.",
+        "locationId": "astapor",
+        "importance": 40
+      },
+      {
+        "episodeId": "S03E04",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נשרף בידי דרוגון.",
+        "locationId": "astapor",
+        "importance": 40
+      }
+    ]
+  },
+  {
+    "id": "lady-crane",
+    "name": "ליידי קריין",
+    "portrait": null,
+    "baseDescription": "שחקנית בראאבוסית שאליה נשלחת אריה אך בוחרת לחוס עליה.",
+    "timeline": [
+      {
+        "episodeId": "S06E08",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "נהרגה במהלך המרדף;",
+        "locationId": "braavos",
+        "importance": 78
+      }
+    ]
+  },
+  {
+    "id": "lady-direwolf",
+    "name": "ליידי",
+    "portrait": null,
+    "baseDescription": "זאבת הבלהות של סאנסה.",
+    "timeline": [
+      {
+        "episodeId": "S01E02",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "מוצאה להורג בידי נד במקום נימריה.",
+        "locationId": "kingsroad",
+        "importance": 32
+      }
+    ]
+  },
+  {
+    "id": "lancel-lannister",
+    "name": "לנסל לאניסטר",
+    "portrait": null,
+    "baseDescription": "הופך למקור מודיעיני של טיריון בתוך המעגל של סרסיי.",
+    "timeline": [
+      {
+        "episodeId": "S02E04",
+        "status": "active",
+        "statusLabel": "שינוי סטטוס: מודיע של טיריון",
+        "summary": "נעשה מודיע של טיריון בתוך המעגל של סרסיי.",
+        "importance": 52,
+        "affiliationId": "lannister",
+        "locationId": "kings-landing"
+      },
+      {
+        "episodeId": "S05E01",
+        "status": "appointed",
+        "statusLabel": "שינוי שיוך",
+        "summary": "הפך לחסיד של הדרורים.",
+        "affiliationId": "faith-militant",
+        "locationId": "kings-landing",
+        "importance": 56
+      }
+    ]
+  },
+  {
+    "id": "leaf",
+    "name": "עלה",
+    "portrait": null,
+    "baseDescription": "אחת מילדי היער האחרונים, מגינת המערה שמעבר לחומה.",
+    "timeline": [
+      {
+        "episodeId": "S06E05",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "נהרגת במנוסה;",
+        "locationId": "three-eyed-raven-cave",
+        "importance": 78
+      }
+    ]
+  },
+  {
+    "id": "lommy",
+    "name": "לומי",
+    "portrait": null,
+    "baseDescription": "נהרג במהלך ההסתערות על השיירה.",
+    "timeline": [
+      {
+        "episodeId": "S02E03",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג במהלך ההסתערות על השיירה.",
+        "importance": 34,
+        "locationId": "riverlands-road-north"
+      }
+    ]
+  },
+  {
+    "id": "loras-tyrell",
+    "name": "לוראס טיירל",
+    "portrait": null,
+    "baseDescription": "יורש בולט לבית טיירל, שנפגע ישירות מעליית הכוח הדתי במעלה המלך.",
+    "timeline": [
+      {
+        "episodeId": "S05E04",
+        "status": "captive",
+        "statusLabel": "שבוי",
+        "summary": "נאסר בידי הכוח הדתי.",
+        "affiliationId": "tyrell",
+        "locationId": "kings-landing",
+        "importance": 76
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בספט;",
+        "affiliationId": "tyrell",
+        "locationId": "kings-landing",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בהשמדת הספט הגדול של ביילור.",
+        "affiliationId": "tyrell",
+        "locationId": "baelor-great-sept",
+        "importance": 86
+      }
+    ]
+  },
+  {
+    "id": "lord-of-bones",
+    "name": "לורד העצמות",
+    "portrait": null,
+    "baseDescription": "לוחם פראים בולט שנהרג בהארדהום בזמן קריסת היישוב.",
+    "timeline": [
+      {
+        "episodeId": "S05E08",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בהארדהום.",
+        "affiliationId": "wildlings",
+        "locationId": "hardhome",
+        "importance": 32
+      }
+    ]
+  },
+  {
+    "id": "lyanna-mormont",
+    "name": "ליאנה מורמונט",
+    "portrait": null,
+    "baseDescription": "ליידי צעירה ונחושה של אי הדובים, נאמנה בגלוי לבית סטארק.",
+    "timeline": [
+      {
+        "episodeId": "S06E07",
+        "status": "active",
+        "statusLabel": "בעלת ברית",
+        "summary": "מצטרפת למחנה סטארק;",
+        "locationId": "riverrun",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E07",
+        "status": "active",
+        "statusLabel": "בעלת ברית של מחנה סטארק",
+        "summary": "מצטרפת לגיוס הצפוני ומעניקה לגיטימציה חשובה למחנה סטארק.",
+        "affiliationId": "stark",
+        "locationId": "bear-island",
+        "importance": 74
+      },
+      {
+        "episodeId": "S08E03",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "מחסלת ענק מת ונהרגת במאבק.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
+        "importance": 88
+      }
+    ]
+  },
+  {
+    "id": "lysa-arryn",
+    "name": "ליסה ארין",
+    "portrait": null,
+    "baseDescription": "גברת העמק, שקנאתה ופחדיה מביאים אותה לאבד שליטה קטלנית.",
+    "timeline": [
+      {
+        "episodeId": "S04E07",
+        "status": "active",
+        "statusLabel": "גברת העמק",
+        "summary": "מאבדת שליטה לחלוטין על פחדיה ועל קנאתה.",
+        "affiliationId": "arryn",
+        "locationId": "eyrie",
+        "importance": 75
+      },
+      {
+        "episodeId": "S04E07",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "נהרגת לאחר עימות עם בייליש.",
+        "affiliationId": "arryn",
+        "locationId": "eyrie",
+        "importance": 75
+      }
+    ]
+  },
+  {
+    "id": "mace-tyrell",
+    "name": "מייס טיירל",
+    "portrait": null,
+    "baseDescription": "ראש בית טיירל, הנדחק בין כוח משפחתו לבין הכוח הדתי והכתר.",
+    "timeline": [
+      {
+        "episodeId": "S06E10",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בספט;",
+        "locationId": "kings-landing",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בהשמדת הספט הגדול של ביילור.",
+        "affiliationId": "tyrell",
+        "locationId": "baelor-great-sept",
+        "importance": 80
+      }
+    ]
+  },
+  {
+    "id": "maester-aemon",
+    "name": "מייסטר אאימון",
+    "portrait": null,
+    "baseDescription": "זקן המשמר ומצפן מוסרי עבור ג׳ון, שמצבו מידרדר בעונה החמישית.",
+    "timeline": [
+      {
+        "episodeId": "S05E07",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "מת בשחור-הטירה.",
+        "affiliationId": "night-watch",
+        "locationId": "castle-black",
+        "importance": 71
+      }
+    ]
+  },
+  {
+    "id": "maester-cressen",
+    "name": "מאייסטר קרסן",
+    "portrait": null,
+    "baseDescription": "מת לאחר שניסה לעצור את השפעתה של מליסנדרה בדרגונסטון.",
+    "timeline": [
+      {
+        "episodeId": "S02E01",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "מת לאחר שניסה להרעיל את מליסנדרה.",
+        "importance": 42,
+        "affiliationId": "baratheon-stannis",
+        "locationId": "dragonstone"
+      }
+    ]
+  },
+  {
+    "id": "maester-luwin",
+    "name": "מאייסטר לואין",
+    "portrait": null,
+    "baseDescription": "מת לאחר שנפצע בווינטרפל ומקבל מוות של חסד.",
+    "timeline": [
+      {
+        "episodeId": "S02E10",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "מת לאחר שנפצע בוינטרפל ומקבל מוות של חסד.",
+        "importance": 54,
+        "affiliationId": "stark",
+        "locationId": "winterfell"
+      }
+    ]
+  },
+  {
+    "id": "mag-mar",
+    "name": "מג מאר",
+    "portrait": null,
+    "baseDescription": "ענק מן הפראים שנופל במתקפה על שחור־הטירה.",
+    "timeline": [
+      {
+        "episodeId": "S04E09",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג במהלך הקרב על החומה.",
+        "affiliationId": "wildlings",
+        "locationId": "castle-black",
+        "importance": 34
+      }
+    ]
+  },
+  {
+    "id": "mance-rayder",
+    "name": "מאנס ריידר",
+    "portrait": null,
+    "baseDescription": "מנהיג הפראים שאיחד את השבטים מתוך פחד מפני מה שבא מן הצפון.",
+    "timeline": [
+      {
+        "episodeId": "S03E01",
+        "status": "ruler",
+        "statusLabel": "מלך מעבר לחומה",
+        "summary": "ג׳ון מובא אליו והוא בוחן את נאמנותו של הממזר מן המשמר.",
+        "affiliationId": "wildlings",
+        "locationId": "beyond-the-wall-haunted-forest",
+        "importance": 84
+      },
+      {
+        "episodeId": "S04E10",
+        "status": "captive",
+        "statusLabel": "שבוי",
+        "summary": "נופל בידי סטאניס לאחר התערבותו.",
+        "affiliationId": "wildlings",
+        "locationId": "beyond-the-wall-haunted-forest",
+        "importance": 84
+      },
+      {
+        "episodeId": "S05E01",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "הוצא להורג לאחר שסירב להישבע אמונים לסטאניס.",
+        "affiliationId": "wildlings",
+        "locationId": "the-wall",
+        "importance": 86
+      }
+    ]
+  },
+  {
+    "id": "margaery-tyrell",
+    "name": "מארגארי טיירל",
+    "portrait": null,
+    "baseDescription": "מלכה צעירה ומתוחכמת, הנאבקת על השפעה בארמון ועל חירות משפחתה.",
+    "timeline": [
+      {
+        "episodeId": "S05E06",
+        "status": "captive",
+        "statusLabel": "שבויה",
+        "summary": "נעצרת בידי הכוח הדתי.",
+        "affiliationId": "tyrell",
+        "locationId": "kings-landing",
+        "importance": 86
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "נהרגה בספט;",
+        "affiliationId": "tyrell",
+        "locationId": "kings-landing",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "נהרגה בהשמדת הספט הגדול של ביילור.",
+        "affiliationId": "tyrell",
+        "locationId": "baelor-great-sept",
+        "importance": 96
+      }
+    ]
+  },
+  {
+    "id": "matthos-seaworth",
+    "name": "מתוס סיוורת׳",
+    "portrait": null,
+    "baseDescription": "נהרג בפיצוץ אש-הפרא במפרץ בלאקווטר.",
+    "timeline": [
+      {
+        "episodeId": "S02E09",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בפיצוץ אש-הפרא.",
+        "importance": 40,
+        "affiliationId": "baratheon-stannis",
+        "locationId": "blackwater-bay"
+      }
+    ]
+  },
+  {
+    "id": "meera-reed",
+    "name": "מירה ריד",
+    "portrait": null,
+    "baseDescription": "אחותו של ג׳וג׳ן ולוחמת שמגינה על מסעו של בראן.",
+    "timeline": [
+      {
+        "episodeId": "S03E02",
+        "status": "active",
+        "statusLabel": "בעלת ברית חדשה",
+        "summary": "מצטרפת לבראן עם אחיה ומחזקת את קבוצת הנמלטים שלו.",
+        "affiliationId": "stark",
+        "locationId": "winterfell-woods",
+        "importance": 68
+      },
+      {
+        "episodeId": "S07E04",
+        "status": "away",
+        "statusLabel": "עזבה את וינטרפל",
+        "summary": "נפרדה מבראן והחלה את דרכה חזרה למשפחתה.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
+        "importance": 68
+      }
+    ]
+  },
+  {
+    "id": "melisandre",
+    "name": "מליסנדרה",
+    "portrait": null,
+    "baseDescription": "ממסגרת את עלייתו של סטאניס דרך אמונה קנאית וכוח אפל.",
+    "timeline": [
+      {
+        "episodeId": "S02E01",
+        "status": "active",
+        "statusLabel": "חיה / כוהנת האור",
+        "summary": "השפעתה על סטאניס ניכרת כבר עם פתיחת העונה בדרגונסטון.",
+        "importance": 76,
+        "affiliationId": "baratheon-stannis",
+        "locationId": "dragonstone"
+      },
+      {
+        "episodeId": "S06E01",
+        "status": "active",
+        "statusLabel": "שבה לחומה שבורה אך פעילה",
+        "summary": "שבה אל קאסל בלאק אחרי כישלונה עם סטאניס ונחשפת בשברונה.",
+        "affiliationId": "baratheon-stannis",
+        "locationId": "castle-black",
+        "importance": 90
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "away",
+        "statusLabel": "מגורשת",
+        "summary": "נשלחת מווינטרפל;",
+        "affiliationId": "baratheon-stannis",
+        "locationId": "kings-landing",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "away",
+        "statusLabel": "מגורשת",
+        "summary": "מגורשת מווינטרפל בעקבות גילוי גורלה של שירין.",
+        "affiliationId": "baratheon-stannis",
+        "locationId": "winterfell",
+        "importance": 90
+      },
+      {
+        "episodeId": "S08E03",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "לאחר שהשיבה אש, נבואה ותכלית לקרב, מסירה את השרשרת ומתמוטטת.",
+        "affiliationId": "baratheon-stannis",
+        "locationId": "winterfell",
+        "importance": 88
+      }
+    ]
+  },
+  {
+    "id": "meryn-trant",
+    "name": "מרין טראנט",
+    "portrait": null,
+    "baseDescription": "אביר ממשמר המלך הנושא עמו חשבון פתוח מעברָה של אריה.",
+    "timeline": [
+      {
+        "episodeId": "S05E10",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בידי אריה.",
+        "affiliationId": "lannister",
+        "locationId": "braavos",
+        "importance": 48
+      }
+    ]
+  },
+  {
+    "id": "mirri-maz-duur",
+    "name": "מירי מאז דור",
+    "portrait": null,
+    "baseDescription": "נשרפת במדורת הלוויה לאחר כישלון ניסיונה להציל את דרוגו.",
+    "timeline": [
+      {
+        "episodeId": "S01E10",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "נשרפת במדורת הלוויה.",
+        "affiliationId": "lhazareen",
+        "locationId": "dany-desert-camp",
+        "importance": 44
+      }
+    ]
+  },
+  {
+    "id": "mossador",
+    "name": "מוסאדור",
+    "portrait": null,
+    "baseDescription": "בן מירין משוחרר שהורג שבוי ומערער את מאמצי השלטון של דאינריז.",
+    "timeline": [
+      {
+        "episodeId": "S05E02",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "הוצא להורג לאחר שהרג שבוי מבני ההרפיה.",
+        "affiliationId": "targaryen",
+        "locationId": "meereen",
+        "importance": 62
+      }
+    ]
+  },
+  {
+    "id": "mycah",
+    "name": "מיקה",
+    "portrait": null,
+    "baseDescription": "נער הקצב שמעורב בעימות עם ג'ופרי.",
+    "timeline": [
+      {
+        "episodeId": "S01E02",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בידי סנדור קלגיין לאחר העימות עם ג'ופרי.",
+        "locationId": "kingsroad",
+        "importance": 36
+      }
+    ]
+  },
+  {
+    "id": "myranda",
+    "name": "מירנדה",
+    "portrait": null,
+    "baseDescription": "אישה מצפון הקשורה לרמזי ונופלת במהלך בריחת סאנסה ותיאון.",
+    "timeline": [
+      {
+        "episodeId": "S05E10",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "נהרגת במהלך בריחת סאנסה ותיאון.",
+        "affiliationId": "bolton",
+        "locationId": "winterfell",
+        "importance": 44
+      }
+    ]
+  },
+  {
+    "id": "myrcella-baratheon",
+    "name": "מירסלה באראתיאון",
+    "portrait": null,
+    "baseDescription": "הנסיכה שנלכדת בין דורן, מעלה המלך וסודות משפחתה.",
+    "timeline": [
+      {
+        "episodeId": "S05E07",
+        "status": "appointed",
+        "statusLabel": "שינוי מסלול",
+        "summary": "אמורה לשוב למעלה המלך.",
+        "affiliationId": "lannister",
+        "locationId": "dorne",
+        "importance": 74
+      },
+      {
+        "episodeId": "S05E10",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "מתה מהרעל של אלריה.",
+        "affiliationId": "lannister",
+        "locationId": "dorne",
+        "importance": 74
+      }
+    ]
+  },
+  {
+    "id": "nymeria-sand",
+    "name": "נימריה סאנד",
+    "portrait": null,
+    "baseDescription": "אחת מנחשיות החול, חלק מן הקו התקיף שמבקשת אלריה לקדם.",
+    "timeline": [
+      {
+        "episodeId": "S07E02",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "נהרגה במתקפת הלילה של יורון על צי יארה.",
+        "affiliationId": "ellaria-dorne",
+        "locationId": "narrow-sea-route",
+        "importance": 74
+      }
+    ]
+  },
+  {
+    "id": "obara-sand",
+    "name": "אובארה סאנד",
+    "portrait": null,
+    "baseDescription": "אחת מנחשיות החול, מזוהה עם קו נקמני ואלים בדורן.",
+    "timeline": [
+      {
+        "episodeId": "S07E02",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "נהרגה במתקפת הלילה של יורון על צי יארה.",
+        "affiliationId": "ellaria-dorne",
+        "locationId": "narrow-sea-route",
+        "importance": 74
+      }
+    ]
+  },
+  {
+    "id": "oberyn-martell",
+    "name": "אוברין מארטל",
+    "portrait": null,
+    "baseDescription": "נסיך דורני חד, מסוכן ונוקם, שנכנס לבירה עם טינה גלויה כלפי הלאניסטרים.",
+    "timeline": [
+      {
+        "episodeId": "S04E01",
+        "status": "active",
+        "statusLabel": "הגעה לזירה הפוליטית",
+        "summary": "מגיע כנציג דורן לחתונה המלכותית.",
+        "affiliationId": "martell",
+        "locationId": "kings-landing",
+        "importance": 92
+      },
+      {
+        "episodeId": "S04E07",
+        "status": "appointed",
+        "statusLabel": "אלוף במשפט בקרב",
+        "summary": "נוטל על עצמו את ייצוגו של טיריון.",
+        "affiliationId": "martell",
+        "locationId": "kings-landing",
+        "importance": 94
+      },
+      {
+        "episodeId": "S04E08",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג במשפט הקרב.",
+        "affiliationId": "martell",
+        "locationId": "kings-landing",
+        "importance": 94
+      }
+    ]
+  },
+  {
+    "id": "olenna-tyrell",
+    "name": "אולנה טיירל",
+    "portrait": null,
+    "baseDescription": "הסבתא הערמומית של בית טיירל, חדה פוליטית ומוכנה לפעול נגד אויביה.",
+    "timeline": [
+      {
+        "episodeId": "S06E07",
+        "status": "away",
+        "statusLabel": "עוזבת את מעלה המלך",
+        "summary": "מתרחקת ממרכז השלטון.",
+        "locationId": "riverrun",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E07",
+        "status": "away",
+        "statusLabel": "עוזבת את מעלה המלך",
+        "summary": "מרג׳רי מצליחה להזהיר אותה שהבירה איננה מקום בטוח עבורה.",
+        "affiliationId": "tyrell",
+        "locationId": "kings-landing",
+        "importance": 82
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "active",
+        "statusLabel": "כורתת ברית חדשה נגד לאניסטר",
+        "summary": "מתלכדת עם אלריה סאנד ועם ואריז בציר אנטי-לאניסטרי.",
+        "affiliationId": "tyrell",
+        "locationId": "dorne",
+        "importance": 86
+      },
+      {
+        "episodeId": "S07E03",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "שותה רעל שסיפק ג'יימי ומתוודה שהיא הרעילה את ג'ופרי.",
+        "affiliationId": "tyrell",
+        "locationId": "highgarden",
+        "importance": 92
+      }
+    ]
+  },
+  {
+    "id": "olly",
+    "name": "אולי",
+    "portrait": null,
+    "baseDescription": "נער ממשמר הלילה שנמשך אל המרד בג׳ון שלג והצטרף לקושרים נגדו.",
+    "timeline": [
+      {
+        "episodeId": "S06E03",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "הוצא להורג;",
+        "locationId": "castle-black",
+        "importance": 78
+      }
+    ]
+  },
+  {
+    "id": "one-of-the-thirteen",
+    "name": "אחד-עשר מחברי השלושה-עשר",
+    "portrait": null,
+    "baseDescription": "נהרג במהלך ההשתלטות הפנימית בקארת׳.",
+    "timeline": [
+      {
+        "episodeId": "S02E07",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג במהלך השתלטות פנימית בקארת׳.",
+        "importance": 18,
+        "locationId": "qarth"
+      }
+    ]
+  },
+  {
+    "id": "orell",
+    "name": "אורל",
+    "portrait": null,
+    "baseDescription": "פרא לוחם שמלווה את יחידת יגריט וטורמונד דרומה.",
+    "timeline": [
+      {
+        "episodeId": "S03E06",
+        "status": "active",
+        "statusLabel": "לוחם פראים",
+        "summary": "משתתף עם ג׳ון, יגריט וטורמונד בטיפוס על החומה.",
+        "affiliationId": "wildlings",
+        "locationId": "the-wall",
+        "importance": 42
+      },
+      {
+        "episodeId": "S03E09",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בידי ג׳ון.",
+        "affiliationId": "wildlings",
+        "locationId": "queenscrown",
+        "importance": 42
+      }
+    ]
+  },
+  {
+    "id": "osha",
+    "name": "אושה",
+    "portrait": null,
+    "baseDescription": "נלכדת בידי אנשיו של בראן לאחר המפגש ביער.",
+    "timeline": [
+      {
+        "episodeId": "S01E06",
+        "status": "captive",
+        "statusLabel": "שבויה",
+        "summary": "נלכדת בידי אנשיו של בראן לאחר המפגש ביער.",
+        "locationId": "winterfell-woods",
+        "importance": 52
+      },
+      {
+        "episodeId": "S06E04",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "נהרגת בווינטרפל;",
+        "locationId": "castle-black",
+        "importance": 78
+      }
+    ]
+  },
+  {
+    "id": "othell-yarwyck",
+    "name": "אות׳ל יארוויק",
+    "portrait": null,
+    "baseDescription": "קצין בכיר במשמר הלילה שלקח חלק במרד נגד ג׳ון.",
+    "timeline": [
+      {
+        "episodeId": "S06E03",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "הוצא להורג.",
+        "locationId": "castle-black",
+        "importance": 78
+      }
+    ]
+  },
+  {
+    "id": "petyr-baelish",
+    "name": "פטיר בייליש",
+    "portrait": null,
+    "baseDescription": "אדון מזימות שמחזיק בסאנסה והופך לשחקן אזורי בעל עצמה ממשית.",
+    "timeline": [
+      {
+        "episodeId": "S04E03",
+        "status": "active",
+        "statusLabel": "מארגן בריחה ומחזיק בסאנסה",
+        "summary": "לוקח את סאנסה מן הבירה וחושף שחלק גדול מן האירועים האחרונים לא היה מקרי כלל.",
+        "affiliationId": "littlefinger-vale",
+        "locationId": "blackwater-bay",
+        "importance": 93
+      },
+      {
+        "episodeId": "S04E03",
+        "status": "active",
+        "statusLabel": "שחקן אזורי",
+        "summary": "הופך משחקן חצר לשחקן אזורי עם נכס אסטרטגי בדמות סאנסה.",
+        "affiliationId": "littlefinger-vale",
+        "locationId": "blackwater-bay",
+        "importance": 94
+      },
+      {
+        "episodeId": "S04E07",
+        "status": "ruler",
+        "statusLabel": "שליט בפועל בעמק",
+        "summary": "נותר הדמות המשפיעה ביותר בקן הנשרים לאחר מותה של ליסה.",
+        "affiliationId": "littlefinger-vale",
+        "locationId": "eyrie",
+        "importance": 95
+      },
+      {
+        "episodeId": "S07E07",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "מוצא להורג בידי אריה לאחר משפט פומבי בווינטרפל.",
+        "affiliationId": "littlefinger-vale",
+        "locationId": "winterfell",
+        "importance": 98
+      }
+    ]
+  },
+  {
+    "id": "podrick-payne",
+    "name": "פודריק פיין",
+    "portrait": null,
+    "baseDescription": "נער נאמן המצטרף לבריאן והופך לבן לווייתה במסע החיפוש אחר סאנסה.",
+    "timeline": [
+      {
+        "episodeId": "S04E04",
+        "status": "active",
+        "statusLabel": "בן לוויה",
+        "summary": "מצטרף לבריאן למסע.",
+        "locationId": "kings-landing",
+        "importance": 55
+      }
+    ]
+  },
+  {
+    "id": "polliver",
+    "name": "פוליבר",
+    "portrait": null,
+    "baseDescription": "איש לאניסטר שהחזיק ב“מחט” של אריה עד שסגרה עמו חשבון בפונדק.",
+    "timeline": [
+      {
+        "episodeId": "S04E01",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בידי אריה בפונדק.",
+        "affiliationId": "lannister",
+        "locationId": "inn-at-the-crossroads",
+        "importance": 28
+      }
+    ]
+  },
+  {
+    "id": "pyat-pree",
+    "name": "פייאט פרי",
+    "portrait": null,
+    "baseDescription": "נשרף בידי הדרקונים של דאינריז בבית הנצחי.",
+    "timeline": [
+      {
+        "episodeId": "S02E10",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נשרף בידי הדרקונים של דאינריז.",
+        "importance": 56,
+        "locationId": "house-of-the-undying"
+      }
+    ]
+  },
+  {
+    "id": "pycelle",
+    "name": "פייסל",
+    "portrait": null,
+    "baseDescription": "נחשף כמדליף ונאסר בידי טיריון.",
+    "timeline": [
+      {
+        "episodeId": "S02E03",
+        "status": "captive",
+        "statusLabel": "אסור",
+        "summary": "נאסר בידי טיריון לאחר שנחשף כמדליף.",
+        "importance": 58,
+        "affiliationId": "lannister",
+        "locationId": "kings-landing"
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נרצח;",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נרצח לפני השמדת הספט.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 76
+      }
+    ]
+  },
+  {
+    "id": "pyp",
+    "name": "פיפ",
+    "portrait": null,
+    "baseDescription": "אח צעיר במשמר הלילה שנופל בהגנת שחור־הטירה.",
+    "timeline": [
+      {
+        "episodeId": "S04E09",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג במהלך ההגנה על שחור־הטירה.",
+        "affiliationId": "night-watch",
+        "locationId": "castle-black",
+        "importance": 49
+      }
+    ]
+  },
+  {
+    "id": "qhorin-halfhand",
+    "name": "קורין חצי-יד",
+    "portrait": null,
+    "baseDescription": "נהרג בידי ג׳ון כחלק מן הכיסוי שנדרש לחדירה למחנה הפראים.",
+    "timeline": [
+      {
+        "episodeId": "S02E10",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בידי ג׳ון כחלק מהחדירה.",
+        "importance": 62,
+        "affiliationId": "night-watch",
+        "locationId": "beyond-the-wall-haunted-forest"
+      }
+    ]
+  },
+  {
+    "id": "qotho",
+    "name": "קות'ו",
+    "portrait": null,
+    "baseDescription": "נהרג בעת העימות סביב דאינריז ומירי מאז דור.",
+    "timeline": [
+      {
+        "episodeId": "S01E09",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בעת העימות סביב דאינריז ומירי מאז דור.",
+        "affiliationId": "dothraki",
+        "locationId": "khalasar-camp",
+        "importance": 36
+      }
+    ]
+  },
+  {
+    "id": "rakharo",
+    "name": "ראח׳ארו",
+    "portrait": null,
+    "baseDescription": "ראשו מוחזר לדאינריז כאזהרה במדבר המוות.",
+    "timeline": [
+      {
+        "episodeId": "S02E02",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "ראשו מוחזר לדאינריז כאזהרה.",
+        "importance": 42,
+        "affiliationId": "targaryen",
+        "locationId": "red-waste"
+      }
+    ]
+  },
+  {
+    "id": "ramsay-snow",
+    "name": "ראמזי סנואו",
+    "portrait": null,
+    "baseDescription": "בנו האכזרי של בית בולטון, החושף את עצמו כמענהו של תיאון.",
+    "timeline": [
+      {
+        "episodeId": "S03E10",
+        "status": "active",
+        "statusLabel": "יורש אכזרי של בית בולטון",
+        "summary": "חושף את עצמו כמענהו של תיאון וכופה עליו את השם “ריק”.",
+        "affiliationId": "bolton",
+        "locationId": "dreadfort",
+        "importance": 88
+      },
+      {
+        "episodeId": "S04E05",
+        "status": "appointed",
+        "statusLabel": "מעמדו מתחזק",
+        "summary": "מוכיח שוב את ערכו האכזרי עבור רוז בולטון.",
+        "affiliationId": "bolton",
+        "locationId": "dreadfort",
+        "importance": 92
+      },
+      {
+        "episodeId": "S04E08",
+        "status": "appointed",
+        "statusLabel": "שינוי שם/לגיטימציה",
+        "summary": "מוכר רשמית כבולטון.",
+        "affiliationId": "bolton",
+        "locationId": "moat-cailin",
+        "importance": 94
+      },
+      {
+        "episodeId": "S06E09",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג לאחר נפילתו;",
+        "affiliationId": "bolton",
+        "locationId": "meereen",
+        "importance": 78
+      }
+    ]
+  },
+  {
+    "id": "randyll-tarly",
+    "name": "רנדיל טארלי",
+    "portrait": null,
+    "baseDescription": "לורד הורנהיל ואביו הקשוח של סאם, איש צבא יהיר וחסר רחמים.",
+    "timeline": [
+      {
+        "episodeId": "S07E05",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "הוצא להורג בלהבות דרוגון לאחר שסירב להכיר בדאינריז.",
+        "affiliationId": "lannister",
+        "locationId": "highgarden",
+        "importance": 85
+      }
+    ]
+  },
+  {
+    "id": "renly-baratheon",
+    "name": "רנלי באראתיאון",
+    "portrait": null,
+    "baseDescription": "מוביל מחנה עצום ונוצץ אך מסרב להיכנע לעקרון הבכורה של סטאניס.",
+    "timeline": [
+      {
+        "episodeId": "S02E03",
+        "status": "ruler",
+        "statusLabel": "טוען לכתר",
+        "summary": "מוביל מחנה עצום במחוז הסערה ומסרב לוותר לסטאניס.",
+        "importance": 88,
+        "affiliationId": "renly-tyrell",
+        "locationId": "renly-camp-stormlands"
+      },
+      {
+        "episodeId": "S02E05",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נרצח בידי צל שנולד ממליסנדרה.",
+        "importance": 88,
+        "affiliationId": "renly-tyrell",
+        "locationId": "renly-camp-stormlands"
+      }
+    ]
+  },
+  {
+    "id": "rhaego",
+    "name": "ראהגו",
+    "portrait": null,
+    "baseDescription": "בנה של דאינריז שמת בעקבות הכישוף הקשור לניסיון להציל את דרוגו.",
+    "timeline": [
+      {
+        "episodeId": "S01E10",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "מת בעקבות הכישוף הקשור לניסיון להציל את דרוגו.",
+        "affiliationId": "targaryen",
+        "locationId": "dany-desert-camp",
+        "importance": 30
+      }
+    ]
+  },
+  {
+    "id": "rickard-karstark",
+    "name": "ריקארד קארסטארק",
+    "portrait": null,
+    "baseDescription": "בעל ברית צפוני חזק של רוב, שנשבר מול מות בניו.",
+    "timeline": [
+      {
+        "episodeId": "S03E03",
+        "status": "active",
+        "statusLabel": "לורד קארסטארק",
+        "summary": "נוכח בנהרן כחלק ממחנהו של רוב לפני הקרע הסופי.",
+        "affiliationId": "stark",
+        "locationId": "riverrun",
+        "importance": 58
+      },
+      {
+        "episodeId": "S03E05",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "הוצא להורג בידי רוב סטארק.",
+        "affiliationId": "stark",
+        "locationId": "riverrun",
+        "importance": 58
+      }
+    ]
+  },
+  {
+    "id": "rickon-stark",
+    "name": "ריקון סטארק",
+    "portrait": null,
+    "baseDescription": "בורח מווינטרפל בסתר וממשיך צפונה עם בראן והמלווים.",
+    "timeline": [
+      {
+        "episodeId": "S02E06",
+        "status": "missing",
+        "statusLabel": "נעדר / במסתור",
+        "summary": "בורח מווינטרפל בסתר יחד עם בראן.",
+        "importance": 68,
+        "affiliationId": "stark",
+        "locationId": "winterfell"
+      },
+      {
+        "episodeId": "S02E08",
+        "status": "away",
+        "statusLabel": "סטטוס מאושר: חי במסתור",
+        "summary": "חי במסתור יחד עם בראן ואושה, אף שרוב הצפון משוכנע שמתו.",
+        "importance": 68,
+        "affiliationId": "stark",
+        "locationId": "winterfell"
+      },
+      {
+        "episodeId": "S06E03",
+        "status": "captive",
+        "statusLabel": "שבוי",
+        "summary": "נמסר לידי ראמזי;",
+        "affiliationId": "stark",
+        "locationId": "castle-black",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E09",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בידי ראמזי לפני הקרב;",
+        "affiliationId": "stark",
+        "locationId": "meereen",
+        "importance": 78
+      }
+    ]
+  },
+  {
+    "id": "robb-stark",
+    "name": "רוב סטארק",
+    "portrait": null,
+    "baseDescription": "הופך ממפקד בן למשפחה לאלטרנטיבה שלטונית של ממש.",
+    "timeline": [
+      {
+        "episodeId": "S01E01",
+        "status": "active",
+        "statusLabel": "חי / יורש בית סטארק",
+        "summary": "נמצא בוינטרפל בתחילת העונה כחלק מלב המשפחה.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
+        "importance": 90
+      },
+      {
+        "episodeId": "S01E10",
+        "status": "ruler",
+        "statusLabel": "שינוי תואר: מלך בצפון",
+        "summary": "מוכרז בידי אנשיו ובעלי בריתו.",
+        "affiliationId": "stark",
+        "locationId": "north-army-camp",
+        "importance": 96
+      },
+      {
+        "episodeId": "S03E09",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נרצח בתאומים.",
+        "affiliationId": "stark",
+        "locationId": "the-twins",
+        "importance": 99
+      }
+    ]
+  },
+  {
+    "id": "robert-baratheon",
+    "name": "רוברט באראתיאון",
+    "portrait": null,
+    "baseDescription": "מניע את העלילה המרכזית בבואו לצפון ובהצעתו לנד.",
+    "timeline": [
+      {
+        "episodeId": "S01E01",
+        "status": "active",
+        "statusLabel": "חי / מלך שבע הממלכות",
+        "summary": "מניע את העלילה המרכזית בבואו לצפון ובהצעתו לנד.",
+        "affiliationId": "baratheon",
+        "locationId": "winterfell",
+        "importance": 95
+      },
+      {
+        "episodeId": "S01E07",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "מת מפצעי הציד לאחר שמינה את נד למגן הממלכה.",
+        "affiliationId": "baratheon",
+        "locationId": "kings-landing",
+        "importance": 95
+      }
+    ]
+  },
+  {
+    "id": "roose-bolton",
+    "name": "רוז בולטון",
+    "portrait": null,
+    "baseDescription": "לורד הצפון הערמומי ואביו של ראמזי, שליט בולטוני עד לנפילתו מבפנים.",
+    "timeline": [
+      {
+        "episodeId": "S06E02",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נרצח בידי ראמזי;",
+        "locationId": "castle-black",
+        "importance": 78
+      }
+    ]
+  },
+  {
+    "id": "ros",
+    "name": "רוס",
+    "portrait": null,
+    "baseDescription": "אישה שנמסרת בידי בייליש אל אכזריותו של ג׳ופרי כדי להוכיח את מחירו של מידע.",
+    "timeline": [
+      {
+        "episodeId": "S03E06",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "נמסרה לג׳ופרי ונהרגה.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 38
+      }
+    ]
+  },
+  {
+    "id": "roslin-frey",
+    "name": "רוזלין פריי",
+    "portrait": null,
+    "baseDescription": "בת בית פריי שנישואיה הופכים לכלי מדיני בחידוש הברית עם רוב.",
+    "timeline": [
+      {
+        "episodeId": "S03E06",
+        "status": "appointed",
+        "statusLabel": "שינוי שידוך",
+        "summary": "נישואיה לאדמור נקבעים כחלק מחידוש הברית עם פריי.",
+        "affiliationId": "frey",
+        "locationId": "the-twins",
+        "importance": 36
+      }
+    ]
+  },
+  {
+    "id": "samwell-tarly",
+    "name": "סמוול טארלי",
+    "portrait": null,
+    "baseDescription": "מגיע כטירון חדש לטירת שחור.",
+    "timeline": [
+      {
+        "episodeId": "S01E04",
+        "status": "recruit",
+        "statusLabel": "הצטרף למשמר הלילה",
+        "summary": "מגיע כטירון חדש לטירת שחור.",
+        "affiliationId": "night-watch",
+        "locationId": "castle-black",
+        "importance": 74
+      },
+      {
+        "episodeId": "S06E06",
+        "status": "active",
+        "statusLabel": "שינוי מעמד אישי",
+        "summary": "נפרד סופית מרצון אביו ולוקח עמו חרב ואליריאנית.",
+        "affiliationId": "night-watch",
+        "locationId": "land-of-always-winter",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E06",
+        "status": "active",
+        "statusLabel": "יצא מהורנהיל עם לב-אבן",
+        "summary": "בוחר לעזוב את ביתו וליטול עמו את חרב הוואליריה של בית טארלי.",
+        "affiliationId": "night-watch",
+        "locationId": "horn-hill",
+        "importance": 88
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "away",
+        "statusLabel": "הגיע למצודה",
+        "summary": "מגיע עם גילי אל אולדטאון והמצודה.",
+        "affiliationId": "night-watch",
+        "locationId": "citadel",
+        "importance": 90
+      },
+      {
+        "episodeId": "S07E01",
+        "status": "active",
+        "statusLabel": "פריצת דרך מודיעינית",
+        "summary": "גילה את חשיבות מאגר זכוכית־הדרקון בדרגונסטון.",
+        "affiliationId": "night-watch",
+        "locationId": "oldtown",
+        "importance": 86
+      },
+      {
+        "episodeId": "S07E05",
+        "status": "away",
+        "statusLabel": "עזב את המצודה",
+        "summary": "נוטל את גילי והתינוק ויוצא צפונה עם ידע חשוב על האיום מן הצפון.",
+        "affiliationId": "night-watch",
+        "locationId": "oldtown",
+        "importance": 88
+      },
+      {
+        "episodeId": "S08E06",
+        "status": "appointed",
+        "statusLabel": "המלומד העליון במועצה הקטנה",
+        "summary": "נעשה המלומד העליון במועצה הקטנה של בראן.",
+        "affiliationId": "stark",
+        "locationId": "kings-landing",
+        "importance": 84
+      }
+    ]
+  },
+  {
+    "id": "sand-snakes",
+    "name": "נחשיות החול",
+    "portrait": null,
+    "baseDescription": "כוח התקפי מזוהה מדורן, הדוחף את הארץ למסלול נקמה.",
+    "timeline": [
+      {
+        "episodeId": "S05E04",
+        "status": "active",
+        "statusLabel": "נכנסו לפעולה",
+        "summary": "נכנסות לפעולה ככוח התקפי מזוהה.",
+        "affiliationId": "martell",
+        "locationId": "dorne",
+        "importance": 71
+      }
+    ]
+  },
+  {
+    "id": "sandor-clegane",
+    "name": "סנדור \"כלב הציד\" קלגיין",
+    "portrait": null,
+    "baseDescription": "עוזב את הקרב ואת העיר כשאש בלאקווטר שוברת אותו.",
+    "timeline": [
+      {
+        "episodeId": "S02E09",
+        "status": "missing",
+        "statusLabel": "נעדר / עזב את העיר",
+        "summary": "עוזב את הקרב ואת העיר.",
+        "importance": 80,
+        "affiliationId": "lannister",
+        "locationId": "kings-landing"
+      },
+      {
+        "episodeId": "S03E05",
+        "status": "released",
+        "statusLabel": "שוחרר",
+        "summary": "זכה במשפט הקרב.",
+        "affiliationId": "lannister",
+        "locationId": "hollow-hill",
+        "importance": 82
+      },
+      {
+        "episodeId": "S04E10",
+        "status": "injured",
+        "statusLabel": "פצוע קשה/נשאר מאחור",
+        "summary": "לאחר עימות עם בריאן, אריה עוזבת אותו בשטח.",
+        "locationId": "riverlands-road-north",
+        "importance": 83
+      },
+      {
+        "episodeId": "S06E07",
+        "status": "active",
+        "statusLabel": "חי / חזר לזירה",
+        "summary": "נחשף כחי וחוזר לנתיב אלים;",
+        "locationId": "riverrun",
+        "importance": 78
+      },
+      {
+        "episodeId": "S08E05",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נופל עם גרגור אל האש לאחר שהציל את אריה מנתיב הנקמה.",
+        "affiliationId": "stark",
+        "locationId": "kings-landing",
+        "importance": 92
+      }
+    ]
+  },
+  {
+    "id": "sansa-stark",
+    "name": "סאנסה סטארק",
+    "portrait": null,
+    "baseDescription": "נלכדת בתוך מאבקי החצר עוד לפני שהיא מבינה את מלוא הסכנה.",
+    "timeline": [
+      {
+        "episodeId": "S01E01",
+        "status": "active",
+        "statusLabel": "חיה / בת בית סטארק",
+        "summary": "מוצעת לשידוך עם ג'ופרי באראתיאון.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
+        "importance": 83
+      },
+      {
+        "episodeId": "S01E08",
+        "status": "captive",
+        "statusLabel": "שבויה",
+        "summary": "נשארת בחזקת הכתר במעלה מלך.",
+        "affiliationId": "stark",
+        "locationId": "kings-landing",
+        "importance": 84
+      },
+      {
+        "episodeId": "S03E05",
+        "status": "appointed",
+        "statusLabel": "שינוי שידוך",
+        "summary": "מיועדת להינשא לטיריון.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 92
+      },
+      {
+        "episodeId": "S03E06",
+        "status": "appointed",
+        "statusLabel": "שינוי שידוך",
+        "summary": "נישואיה לטיריון נקבעים סופית.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 92
+      },
+      {
+        "episodeId": "S03E08",
+        "status": "appointed",
+        "statusLabel": "שינוי מעמד",
+        "summary": "נשואה לטיריון.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 93
+      },
+      {
+        "episodeId": "S04E02",
+        "status": "missing",
+        "statusLabel": "נמלטת/נעדרת",
+        "summary": "יוצאת ממעלה המלך בעזרת דונטוס.",
+        "affiliationId": "stark",
+        "locationId": "blackwater-bay",
+        "importance": 94
+      },
+      {
+        "episodeId": "S04E03",
+        "status": "away",
+        "statusLabel": "נמצאת תחת חסות/שליטה של בייליש",
+        "summary": "נלקחת מהבירה ומועברת למסלול חדש.",
+        "affiliationId": "stark",
+        "locationId": "blackwater-bay",
+        "importance": 94
+      },
+      {
+        "episodeId": "S05E03",
+        "status": "appointed",
+        "statusLabel": "מיועדת לנישואים לרמזי בולטון",
+        "summary": "מוצבת על מסלול נישואין לבית בולטון.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
+        "importance": 99
+      },
+      {
+        "episodeId": "S05E06",
+        "status": "appointed",
+        "statusLabel": "נשואה לרמזי בולטון",
+        "summary": "נישאת לרמזי בולטון.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
+        "importance": 99
+      },
+      {
+        "episodeId": "S05E10",
+        "status": "missing",
+        "statusLabel": "נעדרת / ברחה",
+        "summary": "בורחת מווינטרפל עם תיאון.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
+        "importance": 99
+      },
+      {
+        "episodeId": "S06E01",
+        "status": "active",
+        "statusLabel": "תחת הגנת בריאן",
+        "summary": "לאחר הבריחה מווינטרפל;",
+        "affiliationId": "stark",
+        "locationId": "castle-black",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E04",
+        "status": "appointed",
+        "statusLabel": "שינוי מעמד",
+        "summary": "שבה להיות מוקד פוליטי לבית סטארק;",
+        "affiliationId": "stark",
+        "locationId": "castle-black",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E04",
+        "status": "active",
+        "statusLabel": "מוקד פוליטי מחודש לבית סטארק",
+        "summary": "מתאחדת עם ג׳ון ונעשית שותפה פעילה בתכנון השבת הצפון.",
+        "affiliationId": "stark",
+        "locationId": "castle-black",
+        "importance": 99
+      },
+      {
+        "episodeId": "S07E02",
+        "status": "appointed",
+        "statusLabel": "עוצרת הצפון",
+        "summary": "ממונה לעוצרת הצפון בזמן שג'ון יוצא לדרגונסטון.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
+        "importance": 97
+      },
+      {
+        "episodeId": "S08E06",
+        "status": "ruler",
+        "statusLabel": "מלכת הצפון",
+        "summary": "מוכתרת למלכת הצפון העצמאי.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
+        "importance": 100
+      }
+    ]
+  },
+  {
+    "id": "septa-mordane",
+    "name": "ספטה מורדיין",
+    "portrait": null,
+    "baseDescription": "נהרגת במהלך הטיהור נגד אנשי סטארק.",
+    "timeline": [
+      {
+        "episodeId": "S01E08",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "נהרגת במהלך הטיהור נגד אנשי סטארק.",
+        "affiliationId": "stark",
+        "locationId": "kings-landing",
+        "importance": 40
+      }
+    ]
+  },
+  {
+    "id": "ser-alton-lannister",
+    "name": "סר אלטון לאניסטר",
+    "portrait": null,
+    "baseDescription": "נרצח בידי ג׳יימי כחלק מניסיון בריחה.",
+    "timeline": [
+      {
+        "episodeId": "S02E07",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נרצח בידי ג׳יימי כחלק מניסיון בריחה.",
+        "importance": 30,
+        "affiliationId": "lannister",
+        "locationId": "north-army-camp"
+      }
+    ]
+  },
+  {
+    "id": "ser-amory-lorch",
+    "name": "סר אמורי לורץ׳",
+    "portrait": null,
+    "baseDescription": "נהרג בעקבות השם השני שאריה נותנת לז׳אקן.",
+    "timeline": [
+      {
+        "episodeId": "S02E06",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בעקבות שמה השני של אריה.",
+        "importance": 44,
+        "affiliationId": "lannister",
+        "locationId": "harrenhal"
+      }
+    ]
+  },
+  {
+    "id": "ser-dontos-hollard",
+    "name": "סר דונטוס הולארד",
+    "portrait": null,
+    "baseDescription": "ניצל מהוצאה להורג משפילה בידי סאנסה והופך לליצן חצר.",
+    "timeline": [
+      {
+        "episodeId": "S02E01",
+        "status": "appointed",
+        "statusLabel": "שינוי תפקיד: ליצן חצר",
+        "summary": "ניצל מהוצאה להורג והופך לליצן חצר.",
+        "importance": 38,
+        "affiliationId": "lannister",
+        "locationId": "kings-landing"
+      },
+      {
+        "episodeId": "S04E03",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג לאחר שסייע לסאנסה להימלט.",
+        "locationId": "blackwater-bay",
+        "importance": 42
+      }
+    ]
+  },
+  {
+    "id": "ser-hugh-of-the-vale",
+    "name": "סר יו מן הוואל",
+    "portrait": null,
+    "baseDescription": "נהרג בטורניר במעלה מלך.",
+    "timeline": [
+      {
+        "episodeId": "S01E04",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בטורניר במעלה מלך.",
+        "affiliationId": "arryn",
+        "locationId": "kings-landing",
+        "importance": 35
+      }
+    ]
+  },
+  {
+    "id": "ser-mandon-moore",
+    "name": "סר מנדון מור",
+    "portrait": null,
+    "baseDescription": "נהרג לאחר שניסה להתנקש בטיריון.",
+    "timeline": [
+      {
+        "episodeId": "S02E09",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג לאחר שניסה להתנקש בטיריון.",
+        "importance": 34,
+        "affiliationId": "lannister",
+        "locationId": "kings-landing"
+      }
+    ]
+  },
+  {
+    "id": "ser-rodrik-cassel",
+    "name": "סר רודריק קאסל",
+    "portrait": null,
+    "baseDescription": "מוצא להורג בידי תיאון לאחר כיבוש וינטרפל.",
+    "timeline": [
+      {
+        "episodeId": "S02E06",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "מוצא להורג בידי תיאון.",
+        "importance": 58,
+        "affiliationId": "stark",
+        "locationId": "winterfell"
+      }
+    ]
+  },
+  {
+    "id": "shae",
+    "name": "שיי",
+    "portrait": null,
+    "baseDescription": "אהובתו לשעבר של טיריון, שהמפגש ביניהם מסתיים באלימות קטלנית.",
+    "timeline": [
+      {
+        "episodeId": "S04E10",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "נהרגת בידי טיריון.",
+        "locationId": "kings-landing",
+        "importance": 63
+      }
+    ]
+  },
+  {
+    "id": "shireen-baratheon",
+    "name": "שירין באראתיאון",
+    "portrait": null,
+    "baseDescription": "בתו של סטאניס, שסופה מסמן את קריסת המחנה שלו.",
+    "timeline": [
+      {
+        "episodeId": "S05E09",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "מוקרבת בפקודת סטאניס.",
+        "affiliationId": "baratheon-stannis",
+        "locationId": "stannis-northern-camp",
+        "importance": 72
+      }
+    ]
+  },
+  {
+    "id": "smalljon-umber",
+    "name": "סמולג׳ון אומבר",
+    "portrait": null,
+    "baseDescription": "אדון צפוני שבוחר למסור את ריקון לראמזי ולהילחם לצדו.",
+    "timeline": [
+      {
+        "episodeId": "S06E09",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בקרב;",
+        "locationId": "meereen",
+        "importance": 78
+      }
+    ]
+  },
+  {
+    "id": "stafford-lannister",
+    "name": "סר סטאפורד לאניסטר",
+    "portrait": null,
+    "baseDescription": "נהרג בניצחון הלילי של רוב.",
+    "timeline": [
+      {
+        "episodeId": "S02E04",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בניצחון הלילי של רוב.",
+        "importance": 46,
+        "affiliationId": "lannister",
+        "locationId": "north-army-camp"
+      }
+    ]
+  },
+  {
+    "id": "stannis-baratheon",
+    "name": "סטאניס באראתיאון",
+    "portrait": null,
+    "baseDescription": "מציג תביעה חוקית גלויה לכס ומסרב לראות ברנלי או באחרים שותפים אפשריים.",
+    "timeline": [
+      {
+        "episodeId": "S02E01",
+        "status": "ruler",
+        "statusLabel": "טוען חוקי לכתר",
+        "summary": "מכריז בפומבי שהוא היורש החוקי של רוברט ושולח מכתבים לכל שבע הממלכות.",
+        "importance": 93,
+        "affiliationId": "baratheon-stannis",
+        "locationId": "dragonstone"
+      },
+      {
+        "episodeId": "S05E10",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג לאחר תבוסתו בצפון.",
+        "affiliationId": "baratheon-stannis",
+        "locationId": "stannis-northern-camp",
+        "importance": 94
+      }
+    ]
+  },
+  {
+    "id": "stiv",
+    "name": "סטיב",
+    "portrait": null,
+    "baseDescription": "נהרג במהלך העימות ליד וינטרפל.",
+    "timeline": [
+      {
+        "episodeId": "S01E06",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג במהלך העימות ליד וינטרפל.",
+        "locationId": "winterfell-woods",
+        "importance": 28
+      }
+    ]
+  },
+  {
+    "id": "styr",
+    "name": "סטיר",
+    "portrait": null,
+    "baseDescription": "מנהיג שבטי הת׳ן, שנופל בהסתערות על שחור־הטירה.",
+    "timeline": [
+      {
+        "episodeId": "S04E09",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג במהלך הקרב על החומה.",
+        "affiliationId": "thenns",
+        "locationId": "castle-black",
+        "importance": 46
+      }
+    ]
+  },
+  {
+    "id": "summer",
+    "name": "קיץ",
+    "portrait": null,
+    "baseDescription": "זאב הבלהות של בראן סטארק, בן לוויה נאמן בדרכו שמעבר לחומה.",
+    "timeline": [
+      {
+        "episodeId": "S06E05",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג במערה;",
+        "locationId": "three-eyed-raven-cave",
+        "importance": 78
+      }
+    ]
+  },
+  {
+    "id": "talisa-maegyr",
+    "name": "טאליסה מייגיר",
+    "portrait": null,
+    "baseDescription": "מעמידה את רוב מול מחיר הדם של ניצחונותיו.",
+    "timeline": [
+      {
+        "episodeId": "S02E04",
+        "status": "active",
+        "statusLabel": "חיה / מרפאה בשדה הקרב",
+        "summary": "פוגשת את רוב בשדה הקרב ומעמידה אותו מול מחיר הניצחונות שלו.",
+        "importance": 68,
+        "affiliationId": "stark",
+        "locationId": "north-army-camp"
+      },
+      {
+        "episodeId": "S03E09",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "נרצחת במהלך הטבח.",
+        "affiliationId": "stark",
+        "locationId": "the-twins",
+        "importance": 72
+      }
+    ]
+  },
+  {
+    "id": "the-waif",
+    "name": "הנערה חסרת השם",
+    "portrait": null,
+    "baseDescription": "חניכה ותיקה של הבית השחור והלבן ויריבתה העקבית של אריה.",
+    "timeline": [
+      {
+        "episodeId": "S06E08",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "נהרגה בידי אריה;",
+        "locationId": "braavos",
+        "importance": 78
+      }
+    ]
+  },
+  {
+    "id": "theon-greyjoy",
+    "name": "תיאון גרייג׳וי",
+    "portrait": null,
+    "baseDescription": "מבין סופית שהוא נתפס כזר גם בווינטרפל וגם בבית אביו.",
+    "timeline": [
+      {
+        "episodeId": "S02E02",
+        "status": "appointed",
+        "statusLabel": "שינוי מעמד: שב לנסיך בית גרייג׳וי",
+        "summary": "שב בפועל למעמד של נסיך בית גרייג׳וי, אך ללא קבלה מלאה.",
+        "importance": 86,
+        "affiliationId": "greyjoy",
+        "locationId": "pyke"
+      },
+      {
+        "episodeId": "S02E06",
+        "status": "ruler",
+        "statusLabel": "שינוי תואר: נסיך ולורד וינטרפל",
+        "summary": "כובש את וינטרפל בהטעיה ומכריז על עצמו כנסיך ולורד וינטרפל.",
+        "importance": 87,
+        "affiliationId": "greyjoy",
+        "locationId": "winterfell"
+      },
+      {
+        "episodeId": "S02E10",
+        "status": "captive",
+        "statusLabel": "שבוי",
+        "summary": "מאבד שליטה ונלקח בידי אנשיו לשעבר.",
+        "importance": 87,
+        "affiliationId": "greyjoy",
+        "locationId": "winterfell"
+      },
+      {
+        "episodeId": "S03E02",
+        "status": "captive",
+        "statusLabel": "שבוי",
+        "summary": "מיקומו וזהות מעניו עדיין אינם נחשפים.",
+        "affiliationId": "greyjoy",
+        "locationId": "dreadfort",
+        "importance": 92
+      },
+      {
+        "episodeId": "S03E10",
+        "status": "captive",
+        "statusLabel": "שינוי זהות/שבוי",
+        "summary": "נכפה עליו השם “ריק”.",
+        "affiliationId": "greyjoy",
+        "locationId": "dreadfort",
+        "importance": 93
+      },
+      {
+        "episodeId": "S04E06",
+        "status": "captive",
+        "statusLabel": "מנותק עוד יותר מזהותו הקודמת",
+        "summary": "ניסיון חילוץ נכשל, והוא נשאר תחת רמזי.",
+        "affiliationId": "greyjoy",
+        "locationId": "dreadfort",
+        "importance": 93
+      },
+      {
+        "episodeId": "S05E10",
+        "status": "missing",
+        "statusLabel": "נעדר / ברח",
+        "summary": "בורח מווינטרפל עם סאנסה.",
+        "affiliationId": "greyjoy",
+        "locationId": "winterfell",
+        "importance": 88
+      },
+      {
+        "episodeId": "S06E04",
+        "status": "missing",
+        "statusLabel": "במנוסה עם יארה",
+        "summary": "בורח עם יארה ועם ספינות לאחר עליית יורון.",
+        "affiliationId": "greyjoy-yara-theon",
+        "locationId": "pyke",
+        "importance": 86
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "away",
+        "statusLabel": "שב לברית עם סאנסה ועם יארה",
+        "summary": "שורד את בריחתו מן הצפון ונשאר חלק מן המחנה המתארגן נגד יורון.",
+        "affiliationId": "greyjoy-yara-theon",
+        "locationId": "winterfell",
+        "importance": 86
+      },
+      {
+        "episodeId": "S07E02",
+        "status": "missing",
+        "statusLabel": "נמלט / מעורער",
+        "summary": "קפץ לים וברח, מותיר את יארה בידי יורון.",
+        "affiliationId": "greyjoy-yara-theon",
+        "locationId": "narrow-sea-route",
+        "importance": 92
+      },
+      {
+        "episodeId": "S07E07",
+        "status": "active",
+        "statusLabel": "משיב לעצמו הנהגה",
+        "summary": "משיב לעצמו את אמון אנשיו ויוצא להציל את יארה.",
+        "affiliationId": "greyjoy-yara-theon",
+        "locationId": "dragonstone",
+        "importance": 88
+      },
+      {
+        "episodeId": "S08E01",
+        "status": "away",
+        "statusLabel": "בדרך לווינטרפל",
+        "summary": "נפרד מיארה ומפליג לווינטרפל כדי להילחם במתים.",
+        "affiliationId": "stark",
+        "locationId": "narrow-sea-route",
+        "importance": 92
+      },
+      {
+        "episodeId": "S08E02",
+        "status": "active",
+        "statusLabel": "שב לברית סטארק",
+        "summary": "חוזר לווינטרפל ומציע להגן על בראן בעץ הקדוש.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
+        "importance": 93
+      },
+      {
+        "episodeId": "S08E03",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בניסיון האחרון להגן על בראן בעץ הקדוש.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
+        "importance": 94
+      }
+    ]
+  },
+  {
+    "id": "three-eyed-raven",
+    "name": "העורב בעל שלוש העיניים",
+    "portrait": null,
+    "baseDescription": "מדריך מיסטי עתיק המוביל את בראן אל זיכרונות, חזיונות וסודות.",
+    "timeline": [
+      {
+        "episodeId": "S06E05",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בפלישה;",
+        "locationId": "three-eyed-raven-cave",
+        "importance": 78
+      }
+    ]
+  },
+  {
+    "id": "tickler",
+    "name": "הטיקלר",
+    "portrait": null,
+    "baseDescription": "הקורבן הראשון שבוחרת אריה במסגרת חובו של ז׳אקן.",
+    "timeline": [
+      {
+        "episodeId": "S02E05",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "הקורבן הראשון שבוחרת אריה במסגרת חובו של ז׳אקן.",
+        "importance": 30,
+        "affiliationId": "lannister",
+        "locationId": "harrenhal"
+      }
+    ]
+  },
+  {
+    "id": "tommen-baratheon",
+    "name": "טומן באראתיאון",
+    "portrait": null,
+    "baseDescription": "מלך צעיר וחלש יותר, שהכתר שעל ראשו נשלט בידי המבוגרים סביבו.",
+    "timeline": [
+      {
+        "episodeId": "S04E02",
+        "status": "appointed",
+        "statusLabel": "יורש מיידי לכתר",
+        "summary": "הופך בפועל לדמות המפתח הבאה בשושלת.",
+        "affiliationId": "baratheon",
+        "locationId": "kings-landing",
+        "importance": 74
+      },
+      {
+        "episodeId": "S04E05",
+        "status": "ruler",
+        "statusLabel": "מלך",
+        "summary": "מוכתר באופן רשמי.",
+        "affiliationId": "baratheon",
+        "locationId": "kings-landing",
+        "importance": 76
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "התאבד;",
+        "affiliationId": "baratheon",
+        "locationId": "kings-landing",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "מתאבד לאחר שראה את חורבן הספט הגדול של ביילור.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 95
+      }
+    ]
+  },
+  {
+    "id": "tormund-giantsbane",
+    "name": "טורמונד",
+    "portrait": null,
+    "baseDescription": "מנהיג פראים קשוח שהופך לשותף קריטי במדיניות של ג׳ון.",
+    "timeline": [
+      {
+        "episodeId": "S05E05",
+        "status": "appointed",
+        "statusLabel": "שינוי ברית",
+        "summary": "מקבל על עצמו שליחות מול הפראיים בהארדהום.",
+        "affiliationId": "wildlings",
+        "locationId": "castle-black",
+        "importance": 79
+      }
+    ]
+  },
+  {
+    "id": "torrhen-karstark",
+    "name": "טורהן קארסטארק",
+    "portrait": null,
+    "baseDescription": "נהרג במהלך ניסיון הבריחה של ג׳יימי.",
+    "timeline": [
+      {
+        "episodeId": "S02E07",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג במהלך אותו ניסיון.",
+        "importance": 34,
+        "affiliationId": "stark",
+        "locationId": "north-army-camp"
+      }
+    ]
+  },
+  {
+    "id": "tower-guard",
+    "name": "אבירי משמר המלך במגדל השמחה",
+    "portrait": null,
+    "baseDescription": "שומרי סודו של מגדל השמחה בחזיונותיו של בראן.",
+    "timeline": [
+      {
+        "episodeId": "S06E03",
+        "status": "active",
+        "statusLabel": "נראים בחיזיון עבר",
+        "summary": "מופיעים בחזיונו של בראן במגדל השמחה כשומרי הסוד של המקום.",
+        "affiliationId": "targaryen",
+        "locationId": "tower-of-joy",
+        "importance": 34
+      }
+    ]
+  },
+  {
+    "id": "trystane-martell",
+    "name": "טריסטיין מארטל",
+    "portrait": null,
+    "baseDescription": "בן בית מארטל הצעיר, הנשלח כנציג דורני במסגרת הפשרה עם מעלה המלך.",
+    "timeline": [
+      {
+        "episodeId": "S06E01",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נרצח בידי בנות החול;",
+        "locationId": "castle-black",
+        "importance": 78
+      }
+    ]
+  },
+  {
+    "id": "tyene-sand",
+    "name": "טיאנה סאנד",
+    "portrait": null,
+    "baseDescription": "אחת מנחשיות החול, חלק מן הלחץ הפנימי בדורן לעבר נקמה.",
+    "timeline": [
+      {
+        "episodeId": "S07E03",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "הורעלה בידי סרסיי לעיני אלריה.",
+        "affiliationId": "ellaria-dorne",
+        "locationId": "kings-landing",
+        "importance": 70
       }
     ]
   },
@@ -285,66 +4563,210 @@
         "affiliationId": "lannister",
         "locationId": "kings-landing",
         "importance": 95
-      }
-    ]
-  },
-  {
-    "id": "cersei-lannister",
-    "name": "סרסיי לאניסטר",
-    "portrait": null,
-    "baseDescription": "מגיבה לאיום בחישוב קר, מהיר וקטלני.",
-    "timeline": [
-      {
-        "episodeId": "S01E01",
-        "status": "active",
-        "statusLabel": "חיה / מלכת ווסטרוז",
-        "summary": "סודה עם ג'יימי מוביל לנפילתו של בראן.",
-        "affiliationId": "lannister",
-        "locationId": "winterfell",
-        "importance": 96
-      }
-    ]
-  },
-  {
-    "id": "samwell-tarly",
-    "name": "סמוול טארלי",
-    "portrait": null,
-    "baseDescription": "מגיע כטירון חדש לטירת שחור.",
-    "timeline": [
-      {
-        "episodeId": "S01E04",
-        "status": "recruit",
-        "statusLabel": "הצטרף למשמר הלילה",
-        "summary": "מגיע כטירון חדש לטירת שחור.",
-        "affiliationId": "night-watch",
-        "locationId": "castle-black",
-        "importance": 74
-      }
-    ]
-  },
-  {
-    "id": "jaime-lannister",
-    "name": "ג'יימי לאניסטר",
-    "portrait": null,
-    "baseDescription": "משנה את הסכסוך לעימות אלים וישיר.",
-    "timeline": [
-      {
-        "episodeId": "S01E01",
-        "status": "active",
-        "statusLabel": "חי / בן בית לאניסטר",
-        "summary": "דוחף את בראן מן המגדל כדי לשמור על הסוד.",
-        "affiliationId": "lannister",
-        "locationId": "winterfell",
-        "importance": 92
       },
       {
-        "episodeId": "S01E09",
+        "episodeId": "S02E01",
+        "status": "appointed",
+        "statusLabel": "שינוי תפקיד: ממלא מקום יד המלך",
+        "summary": "נעשה ממלא מקום יד המלך ונכנס למעלה מלך כדי לייצב שלטון כאוטי.",
+        "importance": 95,
+        "affiliationId": "lannister",
+        "locationId": "kings-landing"
+      },
+      {
+        "episodeId": "S02E09",
+        "status": "injured",
+        "statusLabel": "פצוע",
+        "summary": "נפצע קשה בקרב.",
+        "importance": 95,
+        "affiliationId": "lannister",
+        "locationId": "kings-landing"
+      },
+      {
+        "episodeId": "S02E10",
+        "status": "dismissed",
+        "statusLabel": "שינוי תפקיד: הודח מסמכותו כממלא מקום יד המלך",
+        "summary": "מאבד את סמכותו כממלא מקום יד המלך.",
+        "importance": 95,
+        "affiliationId": "lannister",
+        "locationId": "kings-landing"
+      },
+      {
+        "episodeId": "S03E08",
+        "status": "appointed",
+        "statusLabel": "שינוי מעמד",
+        "summary": "נשוי לסאנסה סטארק.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 96
+      },
+      {
+        "episodeId": "S04E02",
+        "status": "captive",
+        "statusLabel": "עצור/נאשם",
+        "summary": "נעצר מיידית כחשוד עיקרי.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 97
+      },
+      {
+        "episodeId": "S04E03",
+        "status": "captive",
+        "statusLabel": "נאשם מרכזי",
+        "summary": "מעמדו מתדרדר והוא מנותק מסביבתו.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 97
+      },
+      {
+        "episodeId": "S04E06",
+        "status": "captive",
+        "statusLabel": "דורש משפט בקרב",
+        "summary": "מסרב להמשיך בהליך המשפטי הרגיל.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 98
+      },
+      {
+        "episodeId": "S04E08",
+        "status": "captive",
+        "statusLabel": "נידון למוות",
+        "summary": "תוצאת הקרב פועלת נגדו.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 98
+      },
+      {
+        "episodeId": "S04E10",
+        "status": "away",
+        "statusLabel": "נמלט",
+        "summary": "יוצא מן הבירה בעזרת ואריז.",
+        "affiliationId": "lannister",
+        "locationId": "blackwater-bay",
+        "importance": 99
+      },
+      {
+        "episodeId": "S05E01",
+        "status": "missing",
+        "statusLabel": "נעדר / בגלות",
+        "summary": "מוסתר בידי ואריז מחוץ לווסטרוז.",
+        "affiliationId": "lannister",
+        "locationId": "pentos",
+        "importance": 98
+      },
+      {
+        "episodeId": "S05E03",
         "status": "captive",
         "statusLabel": "שבוי",
-        "summary": "נלכד בידי כוחותיו של רוב סטארק.",
+        "summary": "נחטף בידי ג׳ורה מורמונט.",
         "affiliationId": "lannister",
-        "locationId": "whispering-wood",
-        "importance": 92
+        "locationId": "volantis",
+        "importance": 98
+      },
+      {
+        "episodeId": "S05E06",
+        "status": "captive",
+        "statusLabel": "שבוי",
+        "summary": "נמכר יחד עם ג׳ורה לסוחרי עבדים.",
+        "affiliationId": "lannister",
+        "locationId": "slavers-bay",
+        "importance": 98
+      },
+      {
+        "episodeId": "S05E07",
+        "status": "appointed",
+        "statusLabel": "שינוי מעמד",
+        "summary": "חדל להיות שבוי חסר מעמד ומוצב מול דאינריז.",
+        "affiliationId": "lannister",
+        "locationId": "meereen",
+        "importance": 98
+      },
+      {
+        "episodeId": "S06E07",
+        "status": "active",
+        "statusLabel": "יועץ לדאינריז במירין",
+        "summary": "מתייצב סוף סוף מול דאינריז ופועל לצדה במירין.",
+        "affiliationId": "targaryen",
+        "locationId": "meereen",
+        "importance": 97
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "appointed",
+        "statusLabel": "יד המלכה",
+        "summary": "מתמנה ליד המלכה במסע לווסטרוז.",
+        "affiliationId": "targaryen",
+        "locationId": "meereen",
+        "importance": 99
+      },
+      {
+        "episodeId": "S08E06",
+        "status": "appointed",
+        "statusLabel": "יד המלך מחדש",
+        "summary": "משוחרר וממונה מחדש לימין המלך בסדר החדש.",
+        "affiliationId": "lannister",
+        "locationId": "dragonpit",
+        "importance": 100
+      }
+    ]
+  },
+  {
+    "id": "tywin-lannister",
+    "name": "טייווין לאניסטר",
+    "portrait": null,
+    "baseDescription": "מחלץ את הבירה בבלאקווטר וחוזר אליה כיד המלך.",
+    "timeline": [
+      {
+        "episodeId": "S02E10",
+        "status": "appointed",
+        "statusLabel": "שינוי תפקיד: יד המלך",
+        "summary": "מתמנה ליד המלך.",
+        "importance": 98,
+        "affiliationId": "lannister",
+        "locationId": "kings-landing"
+      },
+      {
+        "episodeId": "S04E10",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בידי טיריון במעלה המלך.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 99
+      }
+    ]
+  },
+  {
+    "id": "vardis-egen",
+    "name": "וארדיס איגן",
+    "portrait": null,
+    "baseDescription": "אלוף הקרב של ליסה אארין בקן הנשרים.",
+    "timeline": [
+      {
+        "episodeId": "S01E05",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג במשפט בקרב.",
+        "affiliationId": "arryn",
+        "locationId": "eyrie",
+        "importance": 38
+      }
+    ]
+  },
+  {
+    "id": "vayon-poole",
+    "name": "וֵיון פול",
+    "portrait": null,
+    "baseDescription": "נהרג בהשתלטות הלאניסטרית על בית סטארק בעיר.",
+    "timeline": [
+      {
+        "episodeId": "S01E08",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בהשתלטות הלאניסטרית על בית סטארק בעיר.",
+        "affiliationId": "stark",
+        "locationId": "kings-landing",
+        "importance": 42
       }
     ]
   },
@@ -375,97 +4797,59 @@
     ]
   },
   {
-    "id": "joffrey-baratheon",
-    "name": "ג'ופרי באראתיאון",
+    "id": "walda-bolton",
+    "name": "וולדה בולטון",
     "portrait": null,
-    "baseDescription": "הופך את הכוח המלכותי לכלי שרירותי ומסוכן.",
+    "baseDescription": "אשתו של רוז בולטון ואם בנו החוקי, קורבן למאבק הירושה בצפון.",
     "timeline": [
       {
-        "episodeId": "S01E01",
-        "status": "active",
-        "statusLabel": "חי / יורש העצר",
-        "summary": "מוצע כחתן אפשרי לסאנסה סטארק.",
-        "affiliationId": "baratheon",
-        "locationId": "winterfell",
-        "importance": 90
-      },
-      {
-        "episodeId": "S01E07",
-        "status": "ruler",
-        "statusLabel": "שינוי תואר: מלך",
-        "summary": "מוכרז כמלך לאחר מות רוברט.",
-        "affiliationId": "baratheon",
-        "locationId": "kings-landing",
-        "importance": 91
+        "episodeId": "S06E02",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "נרצחה עם תינוקה;",
+        "locationId": "castle-black",
+        "importance": 78
       }
     ]
   },
   {
-    "id": "robb-stark",
-    "name": "רוב סטארק",
+    "id": "walder-frey",
+    "name": "וולדר פריי",
     "portrait": null,
-    "baseDescription": "הופך ממפקד בן למשפחה לאלטרנטיבה שלטונית של ממש.",
+    "baseDescription": "לורד התאומים, בעל ברית הפכפך ואכזרי שהטבח האדום חיזק את מעמדו.",
     "timeline": [
       {
-        "episodeId": "S01E01",
-        "status": "active",
-        "statusLabel": "חי / יורש בית סטארק",
-        "summary": "נמצא בוינטרפל בתחילת העונה כחלק מלב המשפחה.",
-        "affiliationId": "stark",
-        "locationId": "winterfell",
-        "importance": 90
-      },
-      {
-        "episodeId": "S01E10",
-        "status": "ruler",
-        "statusLabel": "שינוי תואר: מלך בצפון",
-        "summary": "מוכרז בידי אנשיו ובעלי בריתו.",
-        "affiliationId": "stark",
-        "locationId": "north-army-camp",
-        "importance": 96
-      }
-    ]
-  },
-  {
-    "id": "sansa-stark",
-    "name": "סאנסה סטארק",
-    "portrait": null,
-    "baseDescription": "נלכדת בתוך מאבקי החצר עוד לפני שהיא מבינה את מלוא הסכנה.",
-    "timeline": [
-      {
-        "episodeId": "S01E01",
-        "status": "active",
-        "statusLabel": "חיה / בת בית סטארק",
-        "summary": "מוצעת לשידוך עם ג'ופרי באראתיאון.",
-        "affiliationId": "stark",
-        "locationId": "winterfell",
-        "importance": 83
-      },
-      {
-        "episodeId": "S01E08",
-        "status": "captive",
-        "statusLabel": "שבויה",
-        "summary": "נשארת בחזקת הכתר במעלה מלך.",
-        "affiliationId": "stark",
+        "episodeId": "S06E10",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נרצח בידי אריה.",
         "locationId": "kings-landing",
+        "importance": 78
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נרצח בידי אריה סטארק בהתאומים.",
+        "affiliationId": "frey",
+        "locationId": "the-twins",
         "importance": 84
       }
     ]
   },
   {
-    "id": "jon-arryn",
-    "name": "ג'ון אארין",
+    "id": "wallen",
+    "name": "וולן",
     "portrait": null,
-    "baseDescription": "מותו מניע את נד להגיע לזירת הכוח המרכזית.",
+    "baseDescription": "נהרג במהלך אותו עימות.",
     "timeline": [
       {
-        "episodeId": "S01E01",
+        "episodeId": "S01E06",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "מותו מדווח בתחילת הפרק ומניע את ביקור המלך.",
-        "affiliationId": "arryn",
-        "locationId": "kings-landing",
-        "importance": 70
+        "summary": "נהרג במהלך אותו עימות.",
+        "locationId": "winterfell-woods",
+        "importance": 28
       }
     ]
   },
@@ -504,270 +4888,377 @@
     ]
   },
   {
-    "id": "lady-direwolf",
-    "name": "ליידי",
+    "id": "wun-wun",
+    "name": "וון וון",
     "portrait": null,
-    "baseDescription": "זאבת הבלהות של סאנסה.",
+    "baseDescription": "ענק בעל ברית של ג׳ון ושל הפראיים במערכה על וינטרפל.",
     "timeline": [
       {
-        "episodeId": "S01E02",
-        "status": "dead",
-        "statusLabel": "מתה",
-        "summary": "מוצאה להורג בידי נד במקום נימריה.",
-        "locationId": "kingsroad",
-        "importance": 32
-      }
-    ]
-  },
-  {
-    "id": "mycah",
-    "name": "מיקה",
-    "portrait": null,
-    "baseDescription": "נער הקצב שמעורב בעימות עם ג'ופרי.",
-    "timeline": [
-      {
-        "episodeId": "S01E02",
+        "episodeId": "S06E09",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "נהרג בידי סנדור קלגיין לאחר העימות עם ג'ופרי.",
-        "locationId": "kingsroad",
-        "importance": 36
+        "summary": "נהרג בהסתערות על ווינטרפל.",
+        "locationId": "meereen",
+        "importance": 78
       }
     ]
   },
   {
-    "id": "ser-hugh-of-the-vale",
-    "name": "סר יו מן הוואל",
+    "id": "xaro-xhoan-daxos",
+    "name": "חארו חואן דקסוס",
     "portrait": null,
-    "baseDescription": "נהרג בטורניר במעלה מלך.",
+    "baseDescription": "נאטם בכספת הריקה לאחר שבגד בדאינריז.",
     "timeline": [
       {
-        "episodeId": "S01E04",
+        "episodeId": "S02E10",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "נהרג בטורניר במעלה מלך.",
-        "affiliationId": "arryn",
-        "locationId": "kings-landing",
-        "importance": 35
+        "summary": "נאטם בכספת הריקה.",
+        "importance": 60,
+        "locationId": "qarth"
       }
     ]
   },
   {
-    "id": "vardis-egen",
-    "name": "וארדיס איגן",
+    "id": "yara-greyjoy",
+    "name": "יארה גרייג׳וי",
     "portrait": null,
-    "baseDescription": "אלוף הקרב של ליסה אארין בקן הנשרים.",
+    "baseDescription": "מציגה לתיאון כמה מעט הוא מובן באמת בבית אביו.",
     "timeline": [
       {
-        "episodeId": "S01E05",
-        "status": "dead",
-        "statusLabel": "מת",
-        "summary": "נהרג במשפט בקרב.",
-        "affiliationId": "arryn",
-        "locationId": "eyrie",
-        "importance": 38
-      }
-    ]
-  },
-  {
-    "id": "jory-cassel",
-    "name": "ג'ורי קאסל",
-    "portrait": null,
-    "baseDescription": "נהרג בהתנגשות בין אנשיו של נד לג'יימי.",
-    "timeline": [
+        "episodeId": "S02E02",
+        "status": "active",
+        "statusLabel": "חיה / לוחמת בית גרייג׳וי",
+        "summary": "פוגשת את תיאון בפייק ומבהירה לו את פערי הזהות בינו לבין איי הברזל.",
+        "importance": 70,
+        "affiliationId": "greyjoy",
+        "locationId": "pyke"
+      },
       {
-        "episodeId": "S01E05",
-        "status": "dead",
-        "statusLabel": "מת",
-        "summary": "נהרג בהתנגשות בין אנשיו של נד לג'יימי.",
-        "affiliationId": "stark",
-        "locationId": "kings-landing",
-        "importance": 48
-      }
-    ]
-  },
-  {
-    "id": "osha",
-    "name": "אושה",
-    "portrait": null,
-    "baseDescription": "נלכדת בידי אנשיו של בראן לאחר המפגש ביער.",
-    "timeline": [
+        "episodeId": "S06E04",
+        "status": "missing",
+        "statusLabel": "במנוסה",
+        "summary": "בורחת עם תיאון ועם ספינות;",
+        "affiliationId": "greyjoy",
+        "locationId": "castle-black",
+        "importance": 78
+      },
       {
-        "episodeId": "S01E06",
+        "episodeId": "S06E04",
+        "status": "missing",
+        "statusLabel": "במנוסה",
+        "summary": "בורחת עם תיאון ועם חלק מן הצי מיורון.",
+        "affiliationId": "greyjoy-yara-theon",
+        "locationId": "pyke",
+        "importance": 84
+      },
+      {
+        "episodeId": "S07E02",
         "status": "captive",
         "statusLabel": "שבויה",
-        "summary": "נלכדת בידי אנשיו של בראן לאחר המפגש ביער.",
-        "locationId": "winterfell-woods",
-        "importance": 52
+        "summary": "נלכדה בידי יורון אחרי התמוטטות צי הברית שלה.",
+        "affiliationId": "greyjoy-yara-theon",
+        "locationId": "narrow-sea-route",
+        "importance": 92
+      },
+      {
+        "episodeId": "S08E01",
+        "status": "released",
+        "statusLabel": "שוחררה",
+        "summary": "תיאון מציל אותה מספינת הדגל של יורון.",
+        "affiliationId": "greyjoy-yara-theon",
+        "locationId": "narrow-sea-route",
+        "importance": 88
       }
     ]
   },
   {
-    "id": "stiv",
-    "name": "סטיב",
+    "id": "ygritte",
+    "name": "יגריט",
     "portrait": null,
-    "baseDescription": "נהרג במהלך העימות ליד וינטרפל.",
+    "baseDescription": "פראית ולוחמת, שעברה האישי עם ג׳ון מרחף מעל הקרב על החומה.",
     "timeline": [
       {
-        "episodeId": "S01E06",
+        "episodeId": "S04E09",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "נהרגת במהלך הקרב.",
+        "affiliationId": "wildlings",
+        "locationId": "castle-black",
+        "importance": 86
+      }
+    ]
+  },
+  {
+    "id": "yoren",
+    "name": "יורן",
+    "portrait": null,
+    "baseDescription": "נהרג בהתקפה על השיירה צפונה.",
+    "timeline": [
+      {
+        "episodeId": "S02E03",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "נהרג במהלך העימות ליד וינטרפל.",
-        "locationId": "winterfell-woods",
-        "importance": 28
+        "summary": "נהרג בהתקפת אנשי לאניסטר על השיירה.",
+        "importance": 50,
+        "affiliationId": "night-watch",
+        "locationId": "riverlands-road-north"
       }
     ]
   },
   {
-    "id": "wallen",
-    "name": "וולן",
+    "id": "night-king",
+    "name": "מלך הלילה",
     "portrait": null,
-    "baseDescription": "נהרג במהלך אותו עימות.",
+    "baseDescription": "מנהיג ההלכים הלבנים, שמסיט את איום המתים ממרחב אגדי אל חזית אסטרטגית ישירה.",
     "timeline": [
       {
-        "episodeId": "S01E06",
+        "episodeId": "S07E06",
+        "status": "active",
+        "statusLabel": "משנה את מאזן המלחמה",
+        "summary": "הורג את ויסריון ומחזיר אותו לחיים כדרקון אל־מת.",
+        "affiliationId": "white-walkers",
+        "locationId": "beyond-the-wall-haunted-forest",
+        "importance": 100
+      },
+      {
+        "episodeId": "S08E03",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "נהרג במהלך אותו עימות.",
-        "locationId": "winterfell-woods",
-        "importance": 28
+        "summary": "מחוסל בידי אריה בפגיון ולריאני, וכל צבאו קורס עמו.",
+        "affiliationId": "white-walkers",
+        "locationId": "winterfell",
+        "importance": 100
       }
     ]
   },
   {
-    "id": "barristan-selmy",
-    "name": "סר באריסטן סלמי",
+    "id": "dickon-tarly",
+    "name": "דיקון טארלי",
     "portrait": null,
-    "baseDescription": "לוחם ותיק שמודח בידי ג'ופרי משומר המלך.",
+    "baseDescription": "בנו הצעיר של רנדיל טארלי, הנמשך אל מחנה הכתר ונקלע למחיר הנאמנות המשפחתית.",
     "timeline": [
       {
-        "episodeId": "S01E08",
-        "status": "dismissed",
-        "statusLabel": "שינוי תפקיד: הודח ממשמר המלך",
-        "summary": "ג'ופרי מסלק אותו מתפקידו.",
-        "affiliationId": "baratheon",
+        "episodeId": "S07E05",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "בחר למות לצד אביו ולא להינצל על חשבונו.",
+        "affiliationId": "lannister",
+        "locationId": "highgarden",
+        "importance": 73
+      }
+    ]
+  },
+  {
+    "id": "thoros-of-myr",
+    "name": "ת׳ורוס ממיר",
+    "portrait": null,
+    "baseDescription": "כוהן לוהט של אחוות ללא דגלים, המצטרף למסע המסוכן שמעבר לחומה.",
+    "timeline": [
+      {
+        "episodeId": "S07E06",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "מת מפצעיו במהלך ההמתנה על האי הקפוא שמעבר לחומה.",
+        "affiliationId": "brotherhood-without-banners",
+        "locationId": "beyond-the-wall-haunted-forest",
+        "importance": 75
+      }
+    ]
+  },
+  {
+    "id": "drogon",
+    "name": "דרוגון",
+    "portrait": null,
+    "baseDescription": "הדרקון הגדול והקטלני ביותר של דאינריז, שהופך בעונה זו לנשק שדה מכריע בווסטרוז.",
+    "timeline": [
+      {
+        "episodeId": "S07E04",
+        "status": "injured",
+        "statusLabel": "פצוע אך חי",
+        "summary": "נפגע מעקרב במהלך מתקפת השדה נגד צבא לאניסטר־טארלי.",
+        "affiliationId": "targaryen",
+        "locationId": "highgarden",
+        "importance": 95
+      }
+    ]
+  },
+  {
+    "id": "viserion",
+    "name": "ויסריון",
+    "portrait": null,
+    "baseDescription": "אחד מדרקוניה של דאינריז, שגורלו בעונה 7 משנה את מאזן המלחמה כולו.",
+    "timeline": [
+      {
+        "episodeId": "S07E06",
+        "status": "transformed",
+        "statusLabel": "מת / הוקם מחדש כאל־מת",
+        "summary": "נהרג בידי מלך הלילה והוחזר לחיים בסיום הפרק כדרקון אל־מת.",
+        "affiliationId": "white-walkers",
+        "locationId": "beyond-the-wall-haunted-forest",
+        "importance": 100
+      },
+      {
+        "episodeId": "S07E07",
+        "status": "transformed",
+        "statusLabel": "דרקון אל־מת פעיל",
+        "summary": "משמש את מלך הלילה בהבקעת החומה במצפה המזרח שליד הים.",
+        "affiliationId": "white-walkers",
+        "locationId": "eastwatch-by-the-sea",
+        "importance": 100
+      }
+    ]
+  },
+  {
+    "id": "eddison-tollett",
+    "name": "אדיסון טולט",
+    "portrait": null,
+    "baseDescription": "אח ותיק במשמר הלילה, שמגלם נאמנות עייפה אך יציבה עד הרגע האחרון של הקרב על וינטרפל.",
+    "timeline": [
+      {
+        "episodeId": "S08E03",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בעת שהציל את סם בשיא הקרב על וינטרפל.",
+        "affiliationId": "night-watch",
+        "locationId": "winterfell",
+        "importance": 76
+      }
+    ]
+  },
+  {
+    "id": "qyburn",
+    "name": "קייבורן",
+    "portrait": null,
+    "baseDescription": "יועץ אפל וקר של סרסיי, שמפעיל עבורה מדע, רעל ותחבולה במקום מוסר.",
+    "timeline": [
+      {
+        "episodeId": "S08E05",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בידי גרגור קלגיין כשהוא מנסה לעצור אותו.",
+        "affiliationId": "lannister",
         "locationId": "kings-landing",
+        "importance": 82
+      }
+    ]
+  },
+  {
+    "id": "missandei",
+    "name": "מיסנדיי",
+    "portrait": null,
+    "baseDescription": "יועצת קרובה של דאינריז וסמל אנושי של העולם המשוחרר שהיא מבקשת לבנות.",
+    "timeline": [
+      {
+        "episodeId": "S08E04",
+        "status": "dead",
+        "statusLabel": "מתה",
+        "summary": "נערפת על חומות מעלה-מלך בפקודת סרסיי.",
+        "affiliationId": "targaryen",
+        "locationId": "kings-landing",
+        "importance": 92
+      }
+    ]
+  },
+  {
+    "id": "rhaegal",
+    "name": "ראיגל",
+    "portrait": null,
+    "baseDescription": "אחד משני הדרקונים שנותרו לדאינריז, שסופו מטלטל את מאזן הכוח בדרך למעלה־מלך.",
+    "timeline": [
+      {
+        "episodeId": "S08E04",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג במארב של צי יורון ממזרח לדרגונסטון.",
+        "affiliationId": "targaryen",
+        "locationId": "narrow-sea-route",
+        "importance": 96
+      }
+    ]
+  },
+  {
+    "id": "varys",
+    "name": "ואריז",
+    "portrait": null,
+    "baseDescription": "שחקן פוליטי שמודד שליטים על פי טובת הממלכה ומוכן לבגוד למען מה שהוא תופס כהצלתה.",
+    "timeline": [
+      {
+        "episodeId": "S08E05",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נשרף בדרוגון לאחר שניסה לקדם את ג'ון כיורש ראוי יותר.",
+        "affiliationId": "targaryen",
+        "locationId": "dragonstone",
+        "importance": 93
+      }
+    ]
+  },
+  {
+    "id": "gregor-clegane",
+    "name": "גרגור קלגיין",
+    "portrait": null,
+    "baseDescription": "המפלצת המשוריינת של סרסיי, שנעה מעבר לאנושי והופכת לסוף הנתיב של אחיו.",
+    "timeline": [
+      {
+        "episodeId": "S08E05",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג יחד עם סנדור בעימות הסופי ביניהם.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 88
+      }
+    ]
+  },
+  {
+    "id": "harry-strickland",
+    "name": "הארי סטריקלנד",
+    "portrait": null,
+    "baseDescription": "מפקד פלוגת הזהב, סמל לשכירי החרב שעליהם סרסיי בונה את ההגנה הדרומית שלה.",
+    "timeline": [
+      {
+        "episodeId": "S08E05",
+        "status": "dead",
+        "statusLabel": "מת",
+        "summary": "נהרג בידי תולע אפור עם קריסת חברת הזהב.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 78
+      }
+    ]
+  },
+  {
+    "id": "ghost-direwolf",
+    "name": "גוסט",
+    "portrait": null,
+    "baseDescription": "זאב הבלהות של ג'ון, שנשאר נאמן גם כשהאדון שלו נמשך הרחק מן הצפון.",
+    "timeline": [
+      {
+        "episodeId": "S08E04",
+        "status": "away",
+        "statusLabel": "נשלח צפונה עם טורמונד",
+        "summary": "נפרד מג'ון ונשלח צפונה עם האנשים החופשיים.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
         "importance": 60
       }
     ]
   },
   {
-    "id": "vayon-poole",
-    "name": "וֵיון פול",
+    "id": "ned-umber",
+    "name": "נד אומבר",
     "portrait": null,
-    "baseDescription": "נהרג בהשתלטות הלאניסטרית על בית סטארק בעיר.",
+    "baseDescription": "יורש צעיר של בית אומבר, שהופך בראשית העונה לסימן האימה הראשון של פלישת המתים.",
     "timeline": [
       {
-        "episodeId": "S01E08",
+        "episodeId": "S08E01",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "נהרג בהשתלטות הלאניסטרית על בית סטארק בעיר.",
+        "summary": "נמצא באח אחרון, מוצב כאזהרה של מלך הלילה.",
         "affiliationId": "stark",
-        "locationId": "kings-landing",
-        "importance": 42
-      }
-    ]
-  },
-  {
-    "id": "septa-mordane",
-    "name": "ספטה מורדיין",
-    "portrait": null,
-    "baseDescription": "נהרגת במהלך הטיהור נגד אנשי סטארק.",
-    "timeline": [
-      {
-        "episodeId": "S01E08",
-        "status": "dead",
-        "statusLabel": "מתה",
-        "summary": "נהרגת במהלך הטיהור נגד אנשי סטארק.",
-        "affiliationId": "stark",
-        "locationId": "kings-landing",
-        "importance": 40
-      }
-    ]
-  },
-  {
-    "id": "qotho",
-    "name": "קות'ו",
-    "portrait": null,
-    "baseDescription": "נהרג בעת העימות סביב דאינריז ומירי מאז דור.",
-    "timeline": [
-      {
-        "episodeId": "S01E09",
-        "status": "dead",
-        "statusLabel": "מת",
-        "summary": "נהרג בעת העימות סביב דאינריז ומירי מאז דור.",
-        "affiliationId": "dothraki",
-        "locationId": "khalasar-camp",
-        "importance": 36
-      }
-    ]
-  },
-  {
-    "id": "khal-drogo",
-    "name": "חאל דרוגו",
-    "portrait": null,
-    "baseDescription": "הופך את ענף טארגאריין הגולה לכוח צבאי ממשי.",
-    "timeline": [
-      {
-        "episodeId": "S01E01",
-        "status": "active",
-        "statusLabel": "חי / חאל הדות'ראקים",
-        "summary": "נושא את דאינריז ומעניק לראשונה בסיס צבאי לתביעת טארגאריין.",
-        "affiliationId": "dothraki",
-        "locationId": "pentos",
-        "importance": 88
-      },
-      {
-        "episodeId": "S01E09",
-        "status": "incapacitated",
-        "statusLabel": "פצוע אנוש / מחוסר תפקוד",
-        "summary": "פציעתו מחמירה ומעמידה את מנהיגותו בסכנה.",
-        "affiliationId": "dothraki",
-        "locationId": "khalasar-camp",
-        "importance": 88
-      },
-      {
-        "episodeId": "S01E10",
-        "status": "dead",
-        "statusLabel": "מת",
-        "summary": "דאינריז שמה קץ לחייו לאחר שאיבד את אישיותו ותפקודו.",
-        "affiliationId": "dothraki",
-        "locationId": "dany-desert-camp",
-        "importance": 88
-      }
-    ]
-  },
-  {
-    "id": "rhaego",
-    "name": "ראהגו",
-    "portrait": null,
-    "baseDescription": "בנה של דאינריז שמת בעקבות הכישוף הקשור לניסיון להציל את דרוגו.",
-    "timeline": [
-      {
-        "episodeId": "S01E10",
-        "status": "dead",
-        "statusLabel": "מת",
-        "summary": "מת בעקבות הכישוף הקשור לניסיון להציל את דרוגו.",
-        "affiliationId": "targaryen",
-        "locationId": "dany-desert-camp",
-        "importance": 30
-      }
-    ]
-  },
-  {
-    "id": "mirri-maz-duur",
-    "name": "מירי מאז דור",
-    "portrait": null,
-    "baseDescription": "נשרפת במדורת הלוויה לאחר כישלון ניסיונה להציל את דרוגו.",
-    "timeline": [
-      {
-        "episodeId": "S01E10",
-        "status": "dead",
-        "statusLabel": "מתה",
-        "summary": "נשרפת במדורת הלוויה.",
-        "affiliationId": "lhazareen",
-        "locationId": "dany-desert-camp",
-        "importance": 44
+        "locationId": "last-hearth",
+        "importance": 65
       }
     ]
   }

@@ -17,8 +17,8 @@ import {
 import { formatEpisodeLabel, getEpisodeHomeSummary } from "@/lib/episodes";
 import {
   getVisibleCharacterSnapshots,
+  getEpisodeFactionRankings,
   getVisibleEvents,
-  getVisibleFactionRankings,
   getVisibleLocationSnapshots,
   getVisibleMapPins,
 } from "@/lib/timeline";
@@ -37,7 +37,7 @@ export function HomeScreen() {
 
   const visibleCharacters = getVisibleCharacterSnapshots(characters, currentEpisodeId, episodeIndex);
   const visibleLocations = getVisibleLocationSnapshots(locations, currentEpisodeId, episodeIndex);
-  const factionRankings = getVisibleFactionRankings(factions, currentEpisodeId, episodeIndex);
+  const factionRankings = getEpisodeFactionRankings(factions, currentEpisode);
   const visibleEvents = getVisibleEvents(timelineEvents, currentEpisodeId, episodeIndex);
   const visiblePins = getVisibleMapPins(mapRegistry, currentEpisodeId, episodeIndex);
 
@@ -87,7 +87,7 @@ export function HomeScreen() {
             <div className="space-y-2">
               <p className="text-caption">לוח צפייה</p>
               <h1 className="max-w-[16ch] font-display text-3xl leading-tight text-ink">
-                מלווה הצפייה של gotspoil
+                gotspoil: מלווה הצפייה שלך
               </h1>
               <p className="text-sm leading-7 text-muted">
                 בחר/י את נקודת הצפייה שלך, וקבלי תמונת מצב מדויקת, נקייה ונטולת ספוילרים.
@@ -101,7 +101,7 @@ export function HomeScreen() {
                   aria-expanded={isSelectorOpen}
                   aria-haspopup="dialog"
                   onClick={() => setIsSelectorOpen((current) => !current)}
-                  className="group w-full rounded-[24px] border border-white/[0.06] bg-[linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.015))] p-4 text-right transition duration-300 hover:border-accent/20"
+                  className="group w-full cursor-pointer rounded-[24px] border border-white/[0.06] bg-[linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.015))] p-4 text-right transition duration-300 hover:border-accent/20"
                 >
                   <div className="flex items-start justify-between gap-4">
                     <div className="space-y-2">
@@ -110,6 +110,7 @@ export function HomeScreen() {
                       <p className="text-sm text-muted">
                         עונה {currentEpisode.season} · פרק {currentEpisode.episode}
                       </p>
+                      <p className="text-xs text-accent/90">לחץ/י כדי לבחור עונה ופרק</p>
                     </div>
 
                     <div className="flex shrink-0 items-center gap-2">
