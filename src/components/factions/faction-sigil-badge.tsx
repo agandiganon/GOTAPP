@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { Shield } from "lucide-react";
 
+import { getProxiedExternalImageUrl } from "@/lib/media";
 import { cn } from "@/lib/utils";
 
 interface FactionSigilBadgeProps {
@@ -18,7 +19,7 @@ export function FactionSigilBadge({
   themeColor = "#b28b53",
   className,
 }: FactionSigilBadgeProps) {
-  const resolvedSigilUrl = sigilUrl?.trim() ? sigilUrl.trim() : "";
+  const resolvedSigilUrl = getProxiedExternalImageUrl(sigilUrl);
   const [isLoaded, setIsLoaded] = useState(false);
   const [hasImageError, setHasImageError] = useState(!resolvedSigilUrl);
 

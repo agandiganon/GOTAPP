@@ -12,7 +12,7 @@
       }
     ],
     "relationshipTimeline": [],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/1c/House-Arryn-Main-Shield.PNG"
+    "factionSigilUrl": ""
   },
   {
     "id": "baratheon",
@@ -266,7 +266,7 @@
         "summary": "סטאניס חוצה גבול מוסרי פנימי כדי לנסות לשמור על סיכוייו במערכה מול בית בולטון."
       }
     ],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/1b/House-Baratheon-of-Dragonstone-Main-Shield.PNG"
+    "factionSigilUrl": ""
   },
   {
     "id": "bolton",
@@ -422,7 +422,7 @@
         "summary": "ריקון מוחזק כבן ערובה בידי ראמזי והעימות עם כל מי שיתלכד סביב ג׳ון וסאנסה נעשה בלתי נמנע."
       }
     ],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/d/dd/House-Bolton-Main-Shield.PNG"
+    "factionSigilUrl": ""
   },
   {
     "id": "brotherhood-without-banners",
@@ -504,7 +504,7 @@
         "summary": "ההפיכה בדורן מייצרת שלטון חדש ונקמני המתעב את בית לאניסטר."
       }
     ],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/7/74/House-Martell-Main-Shield.PNG"
+    "factionSigilUrl": ""
   },
   {
     "id": "faith-militant",
@@ -610,7 +610,7 @@
         "summary": "הדרורים מוכיחים שהם מסוגלים לכפות גם על המלכה-האם כניעה פומבית, אף שסרסיי חוזרת אל המבצר האדום."
       }
     ],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/a/ab/FaithMilitantLogo.png"
+    "factionSigilUrl": ""
   },
   {
     "id": "frey",
@@ -660,7 +660,7 @@
         "summary": "בית פריי שובר באלימות את בריתו עם בית סטארק־טאלי."
       }
     ],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/16/House-Frey-Main-Shield.PNG"
+    "factionSigilUrl": ""
   },
   {
     "id": "greyjoy",
@@ -774,7 +774,7 @@
       }
     ],
     "relationshipTimeline": [],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/8/86/House-Greyjoy-Main-Shield.PNG"
+    "factionSigilUrl": ""
   },
   {
     "id": "lannister",
@@ -1297,7 +1297,7 @@
     "themeColor": "#a8906e",
     "powerTimeline": [],
     "relationshipTimeline": [],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/14/House-Baratheon-of-Storm%27s-End-Main-Shield.PNG"
+    "factionSigilUrl": ""
   },
   {
     "id": "littlefinger-vale",
@@ -1330,7 +1330,7 @@
         "summary": "בייליש משתלט מעשית על מרכז הכוח של העמק לאחר מותה של ליסה."
       }
     ],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/7/7e/House-Baelish-Main-Shield.PNG"
+    "factionSigilUrl": ""
   },
   {
     "id": "martell",
@@ -1411,7 +1411,7 @@
         "summary": "דוראן כופה הסדר עם מעלה המלך ומנסה להפוך עימות לניהול יחסים, אך המתיחות הבסיסית נשארת."
       }
     ],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/7/74/House-Martell-Main-Shield.PNG"
+    "factionSigilUrl": ""
   },
   {
     "id": "night-watch",
@@ -1588,7 +1588,7 @@
       }
     ],
     "relationshipTimeline": [],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/14/House-Baratheon-of-Storm%27s-End-Main-Shield.PNG"
+    "factionSigilUrl": ""
   },
   {
     "id": "stark",
@@ -2457,7 +2457,7 @@
       }
     ],
     "relationshipTimeline": [],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/c/c8/House-Tarly-Main-Shield.PNG"
+    "factionSigilUrl": ""
   },
   {
     "id": "thenns",
@@ -2555,7 +2555,7 @@
         "summary": "אולנה טיירל כורתת ברית עם אלריה סאנד נגד הכתר הלאניסטרי."
       }
     ],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/3/36/House-Tyrell-Main-Shield.PNG"
+    "factionSigilUrl": ""
   },
   {
     "id": "white-walkers",
@@ -2681,7 +2681,7 @@
         "summary": "הקרב על וינטרפל מביא את מלחמת הקיום בין המתים לחיים לשיא ולהכרעה."
       }
     ],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/8/83/White_walkers_sigil.png"
+    "factionSigilUrl": ""
   },
   {
     "id": "wildlings",
@@ -2736,6 +2736,6 @@
         "summary": "הפראים מפעילים מתקפה דו־כיוונית אך אינם מצליחים לשבור את שחור־הטירה."
       }
     ],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/8/89/Free_Folk_Sigil.png"
+    "factionSigilUrl": ""
   }
 ]

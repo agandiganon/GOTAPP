@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 
+import { getProxiedExternalImageUrl } from "@/lib/media";
 import { cn } from "@/lib/utils";
 
 interface CharacterPortraitProps {
@@ -143,7 +144,10 @@ export function CharacterPortrait({
     () => getPortraitSrc(name, factionColor ?? "#8ea7cf"),
     [factionColor, name],
   );
-  const candidateSrc = imageUrl?.trim() ? imageUrl.trim() : "";
+  const candidateSrc = useMemo(
+    () => getProxiedExternalImageUrl(imageUrl),
+    [imageUrl],
+  );
   const [isLoaded, setIsLoaded] = useState(false);
   const [hasLoadError, setHasLoadError] = useState(!candidateSrc);
 
