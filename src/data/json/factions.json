@@ -12,7 +12,7 @@
       }
     ],
     "relationshipTimeline": [],
-    "factionSigilUrl": ""
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/6/62/House-Arryn-Square.PNG/revision/latest?cb=20170512000629"
   },
   {
     "id": "baratheon",
@@ -104,7 +104,7 @@
         "summary": "הכשרת גנדרי בידי דאינריז מחזירה את בית באראתיאון רשמית לסדר הפיאודלי החדש."
       }
     ],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/3/36/House-Baratheon-Main-Shield.PNG"
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/8/82/House-Baratheon-Main-Square.PNG/revision/latest?cb=20220410231954"
   },
   {
     "id": "baratheon-stannis",
@@ -422,7 +422,7 @@
         "summary": "ריקון מוחזק כבן ערובה בידי ראמזי והעימות עם כל מי שיתלכד סביב ג׳ון וסאנסה נעשה בלתי נמנע."
       }
     ],
-    "factionSigilUrl": ""
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/7/71/House-Bolton-Square.PNG/revision/latest?cb=20170511001347"
   },
   {
     "id": "brotherhood-without-banners",
@@ -660,7 +660,7 @@
         "summary": "בית פריי שובר באלימות את בריתו עם בית סטארק־טאלי."
       }
     ],
-    "factionSigilUrl": ""
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/4/4c/House-Frey-Bastard-Shield.PNG/revision/latest?cb=20160714172333"
   },
   {
     "id": "greyjoy",
@@ -759,7 +759,7 @@
         "summary": "יורון משמיד חלק גדול מן הצי של יארה ותיאון ולוכד את יארה כשבויה."
       }
     ],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/c/ca/House-Greyjoy-Main-Shield.PNG"
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/11/House-Greyjoy-Bastard-Shield.PNG/revision/latest?cb=20160714172334"
   },
   {
     "id": "greyjoy-yara-theon",
@@ -1288,7 +1288,7 @@
         "summary": "סרסיי נשענת על יורון, צי הברזל וחברת הזהב כדי לקבע עליונות דרומית מחודשת."
       }
     ],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/2/29/House-Lannister-Main-Shield.PNG"
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/2/24/House-Lannister-Bastard-Shield.PNG/revision/latest?cb=20220428222556"
   },
   {
     "id": "lhazareen",
@@ -1411,7 +1411,7 @@
         "summary": "דוראן כופה הסדר עם מעלה המלך ומנסה להפוך עימות לניהול יחסים, אך המתיחות הבסיסית נשארת."
       }
     ],
-    "factionSigilUrl": ""
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/0/07/House-Martell-Bastard-Shield.PNG/revision/latest?cb=20160714172334"
   },
   {
     "id": "night-watch",
@@ -1563,7 +1563,7 @@
         "summary": "אחרי המרד וההוצאות להורג, החומה נשארת מפוררת וחסרת הנהגה ברורה מול איומי הצפון."
       }
     ],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/f/f6/Night%27s_Watch_logo.png"
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/b/b8/Night%27s-Watch-Crow-Shield.PNG/revision/latest?cb=20220816223339"
   },
   {
     "id": "renly-tyrell",
@@ -2041,7 +2041,7 @@
         "summary": "בית סטארק עומד בראש הסדר החדש, בעוד בית לאניסטר שורד רק דרך תפקידו הממשלי של טיריון."
       }
     ],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/1a/House-Stark-Main-Shield.PNG"
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/d/da/House-Stark-Bastard-Shield.PNG/revision/latest?cb=20160714172335"
   },
   {
     "id": "targaryen",
@@ -2442,7 +2442,7 @@
         "summary": "דאינריז ודרוגון משמידים את צי הברזל, את חברת הזהב ואת מערכי ההגנה של מעלה-מלך."
       }
     ],
-    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/0/07/House-Targaryen-Main-Shield.PNG"
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/a/a7/House-Targaryen-Blacks-Square.PNG/revision/latest?cb=20221020115535"
   },
   {
     "id": "tarly",
@@ -2555,7 +2555,7 @@
         "summary": "אולנה טיירל כורתת ברית עם אלריה סאנד נגד הכתר הלאניסטרי."
       }
     ],
-    "factionSigilUrl": ""
+    "factionSigilUrl": "https://static.wikia.nocookie.net/gameofthrones/images/b/b5/House-Tyrell-Bastard-Shield.PNG/revision/latest?cb=20160714172332"
   },
   {
     "id": "white-walkers",

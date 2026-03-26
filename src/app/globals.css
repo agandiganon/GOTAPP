@@ -2,23 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ─────────────────────────────────────────────────────────────────────────
+   DESIGN TOKENS
+   ───────────────────────────────────────────────────────────────────────── */
 :root {
   color-scheme: dark;
-  --color-canvas: 7 10 18;
-  --color-canvas-soft: 12 16 27;
-  --color-panel: 15 19 31;
-  --color-panel-strong: 22 27 42;
-  --color-accent: 201 166 97;
-  --color-danger: 131 34 45;
-  --color-ink: 242 238 229;
-  --color-muted: 160 166 183;
-  --color-line: 255 255 255;
+
+  /* Surface palette — layered obsidian */
+  --color-canvas:       10  8  6;
+  --color-canvas-soft:  17 14 11;
+  --color-panel:        26 21 16;
+  --color-panel-strong: 36 29 23;
+
+  /* Accent — aged amber / Lannister gold */
+  --color-accent:  205 164  94;
+
+  /* Danger — deep blood-red */
+  --color-danger:  108  30  35;
+
+  /* Text */
+  --color-ink:   232 224 210;
+  --color-muted: 160 150 138;
+  --color-line:  255 255 255;
 }
 
+/* ─────────────────────────────────────────────────────────────────────────
+   RESET
+   ───────────────────────────────────────────────────────────────────────── */
 * {
-  border-color: rgb(var(--color-line) / 0.1);
+  border-color: rgb(var(--color-line) / 0.09);
 }
 
+/* ─────────────────────────────────────────────────────────────────────────
+   BASE DOCUMENT
+   ───────────────────────────────────────────────────────────────────────── */
 html {
   direction: rtl;
   scroll-behavior: smooth;
@@ -29,10 +46,16 @@ body {
   margin: 0;
   overflow-x: hidden;
   background:
-    radial-gradient(circle at top, rgba(201, 166, 97, 0.14), transparent 26%),
-    radial-gradient(circle at 12% 18%, rgba(74, 96, 143, 0.12), transparent 16%),
-    radial-gradient(circle at 85% 12%, rgba(131, 34, 45, 0.12), transparent 18%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.018), rgba(255, 255, 255, 0)),
+    /* Top-centre warm crown glow */
+    radial-gradient(ellipse 80% 40% at 50% -5%, rgba(205,164,94, 0.13), transparent 62%),
+    /* Left ember pocket */
+    radial-gradient(circle at 8% 20%,  rgba(72, 48, 28, 0.28), transparent 20%),
+    /* Right blood-hint */
+    radial-gradient(circle at 92% 12%, rgba(100,30,30, 0.20), transparent 22%),
+    /* Bottom depth fade */
+    radial-gradient(ellipse 100% 55% at 50% 110%, rgba(0,0,0,0.55), transparent 70%),
+    /* Noise grain layer (subtle parchment texture) */
+    linear-gradient(180deg, rgba(255,248,225, 0.022), rgba(0,0,0,0)),
     rgb(var(--color-canvas));
   color: rgb(var(--color-ink));
   font-family: var(--font-heebo), sans-serif;
@@ -51,45 +74,139 @@ textarea {
 }
 
 ::selection {
-  background: rgba(203, 165, 92, 0.22);
+  background: rgba(203,165,92, 0.24);
   color: rgb(var(--color-ink));
 }
 
+/* ─────────────────────────────────────────────────────────────────────────
+   CUSTOM SCROLLBAR — AMBER QUILL
+   ───────────────────────────────────────────────────────────────────────── */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
-
 ::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255,255,255, 0.02);
 }
-
 ::-webkit-scrollbar-thumb {
-  background: rgba(203, 165, 92, 0.22);
+  background: linear-gradient(180deg, rgba(203,165,92,0.32), rgba(130,90,42,0.22));
   border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgba(203,165,92,0.52), rgba(160,110,50,0.38));
+  background-clip: padding-box;
 }
 
+/* ─────────────────────────────────────────────────────────────────────────
+   COMPONENT LAYER
+   ───────────────────────────────────────────────────────────────────────── */
 @layer components {
+  /* Outer app chrome — thick glassmorphism frame */
   .shell-frame {
-    @apply relative overflow-hidden rounded-[34px] border border-white/[0.07] bg-[linear-gradient(180deg,rgba(20,24,38,0.9),rgba(13,16,27,0.84))] shadow-shell backdrop-blur-2xl;
+    @apply relative overflow-hidden rounded-[38px] border border-stone-700/30;
+    background: linear-gradient(180deg, rgba(34,27,21,0.92), rgba(13,11,9,0.95));
+    box-shadow:
+      0 32px 100px rgba(0,0,0,0.58),
+      inset 0 1px 0 rgba(255,245,215,0.06),
+      inset 0 -1px 0 rgba(0,0,0,0.25);
+    backdrop-filter: blur(24px) saturate(1.15);
   }
 
+  /* Generic content panel */
   .panel-surface {
-    @apply rounded-[28px] border border-white/[0.07] bg-[linear-gradient(180deg,rgba(24,28,42,0.76),rgba(13,16,28,0.82))] shadow-panel backdrop-blur-xl;
+    @apply rounded-[30px] border border-stone-700/30 shadow-2xl;
+    background: linear-gradient(180deg, rgba(28,23,17,0.96), rgba(18,14,10,0.98));
+    backdrop-filter: blur(16px) saturate(1.08);
+    box-shadow:
+      0 20px 60px rgba(0,0,0,0.38),
+      inset 0 1px 0 rgba(255,245,215,0.05),
+      inset 0 -1px 0 rgba(0,0,0,0.18);
   }
 
+  /* Caption label  — spaced gold caps */
   .text-caption {
-    @apply text-[0.7rem] font-medium uppercase tracking-[0.28em] text-muted/75;
+    @apply text-[0.68rem] font-semibold uppercase tracking-[0.30em] text-amber-300/65;
   }
 }
 
+/* ─────────────────────────────────────────────────────────────────────────
+   ANIMATIONS
+   ───────────────────────────────────────────────────────────────────────── */
+@keyframes shimmerSlide {
+  0%   { transform: translateX(130%) skewX(-18deg); }
+  100% { transform: translateX(-130%) skewX(-18deg); }
+}
+
+@keyframes cardReveal {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   CHARACTER CARD — PREMIUM TAROT / MOVIE POSTER FRAME
+   ───────────────────────────────────────────────────────────────────────── */
+
+/* The card's outer golden sheen on hover */
+.character-card-frame {
+  position: relative;
+  transition: transform 280ms cubic-bezier(0.22,0.61,0.36,1),
+              box-shadow 280ms cubic-bezier(0.22,0.61,0.36,1),
+              border-color 280ms ease;
+}
+.character-card-frame:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 44px 110px rgba(0,0,0,0.70),
+    0 0 0 1px rgba(203,165,92,0.10),
+    0 0 50px rgba(203,165,92,0.05);
+}
+
+/* Subtle shimmer sweep on card hover */
+.character-card-frame::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(
+    105deg,
+    transparent 35%,
+    rgba(255,245,200,0.05) 50%,
+    transparent 65%
+  );
+  transform: translateX(130%) skewX(-18deg);
+  transition: none;
+  z-index: 1;
+}
+.character-card-frame:hover::after {
+  animation: shimmerSlide 0.65s ease forwards;
+}
+
+/* Portrait fallback — heraldic crown SVG wrapper */
+.portrait-crest-fallback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   LEAFLET — CINEMATIC MAP TREATMENT
+   ───────────────────────────────────────────────────────────────────────── */
+
+/* Map container base */
 .leaflet-container {
   background:
-    radial-gradient(circle at top, rgba(203, 165, 92, 0.1), transparent 34%),
+    radial-gradient(circle at top, rgba(205,164,94,0.10), transparent 30%),
     rgb(var(--color-canvas-soft));
   font-family: var(--font-heebo), sans-serif;
   direction: ltr !important;
+  overflow: hidden !important;
 }
 
+/* Force LTR inside all Leaflet panes */
 .leaflet-container .leaflet-pane,
 .leaflet-container .leaflet-control-container,
 .leaflet-container .leaflet-overlay-pane,
@@ -104,24 +221,50 @@ textarea {
   max-width: none !important;
 }
 
+/* ── PARCHMENT TREATMENT ──
+   Apply sepia / contrast / brightness ONLY to the base map image layer.
+   Markers, tooltips, and popups are unaffected because they live in
+   separate Leaflet panes that are siblings, not children, of .leaflet-overlay-pane.
+*/
+.leaflet-overlay-pane {
+  filter: sepia(0.28) saturate(0.78) contrast(1.12) brightness(0.84);
+}
+
+/* ── ZOOM CONTROLS ── */
 .leaflet-control-zoom {
-  border: 1px solid rgb(var(--color-line) / 0.1) !important;
-  border-radius: 18px !important;
+  border: 1px solid rgba(120,100,72,0.50) !important;
+  border-radius: 22px !important;
   overflow: hidden;
-  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28) !important;
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.40),
+    inset 0 1px 0 rgba(255,245,215,0.06) !important;
 }
-
+.leaflet-top .leaflet-control,
+.leaflet-bottom .leaflet-control {
+  margin: 14px !important;
+}
 .leaflet-control-zoom a {
-  background: rgba(14, 16, 28, 0.88) !important;
+  background: rgba(24,19,14,0.92) !important;
   color: rgb(var(--color-ink)) !important;
-  border-bottom-color: rgb(var(--color-line) / 0.1) !important;
+  border-bottom-color: rgba(120,100,72,0.38) !important;
+  transition: background 160ms ease, color 160ms ease;
 }
-
 .leaflet-control-zoom a:hover {
-  background: rgba(203, 165, 92, 0.14) !important;
+  background: rgba(205,164,94,0.16) !important;
   color: rgb(var(--color-accent)) !important;
 }
 
+/* ── PARCHMENT VIGNETTE FRAME ──
+   Applied to the immediate wrapper around .leaflet-container in the React tree.
+   Inset box-shadow creates an authentic aged-parchment edge vignette.
+*/
+.map-parchment-container {
+  box-shadow:
+    inset 0 0 90px rgba(6,5,3,0.78),
+    inset 0 0 30px rgba(6,5,3,0.45);
+}
+
+/* ── MARKER BASE ── */
 .map-location-marker-shell {
   background: transparent;
   border: 0;
@@ -132,18 +275,18 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 34px;
+  width: 30px;
+  height: 42px;
 }
 
 .map-location-marker__halo {
   position: absolute;
-  inset: 2px 4px 8px;
+  inset: 6px 6px 10px;
   border-radius: 999px;
-  background: color-mix(in srgb, var(--marker-tone) 24%, transparent);
-  filter: blur(10px);
+  background: color-mix(in srgb, var(--marker-tone) 30%, transparent);
+  filter: blur(14px);
   opacity: 0;
-  transition: opacity 180ms ease;
+  transition: opacity 200ms ease;
 }
 
 .map-location-marker__core {
@@ -152,35 +295,36 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 19px;
-  height: 19px;
-  border: 1px solid color-mix(in srgb, var(--marker-tone) 42%, rgba(255, 255, 255, 0.14));
-  border-radius: 999px;
-  background: linear-gradient(180deg, rgba(16, 21, 34, 0.98), rgba(9, 12, 22, 0.95));
+  width: 22px;
+  height: 28px;
+  border: 1px solid color-mix(in srgb, var(--marker-tone) 55%, rgba(243,226,185,0.16));
+  border-radius: 10px 10px 8px 8px;
+  background: linear-gradient(180deg, rgba(42,33,25,0.98), rgba(18,14,10,0.97));
   box-shadow:
-    0 10px 22px rgba(0, 0, 0, 0.38),
-    inset 0 1px 0 rgba(255, 255, 255, 0.06);
-  color: rgba(242, 238, 229, 0.9);
+    0 14px 28px rgba(0,0,0,0.50),
+    inset 0 1px 0 rgba(255,244,217,0.08);
+  color: color-mix(in srgb, var(--marker-tone) 72%, rgb(255 240 214));
+  transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
 .map-location-marker__tip {
   position: absolute;
-  bottom: 3px;
+  bottom: 4px;
   left: 50%;
   z-index: 1;
-  width: 8px;
-  height: 8px;
-  border-right: 1px solid color-mix(in srgb, var(--marker-tone) 36%, rgba(255, 255, 255, 0.12));
-  border-bottom: 1px solid color-mix(in srgb, var(--marker-tone) 36%, rgba(255, 255, 255, 0.12));
-  background: rgba(12, 15, 24, 0.94);
+  width: 10px;
+  height: 10px;
+  border-right: 1px solid color-mix(in srgb, var(--marker-tone) 45%, rgba(255,245,222,0.16));
+  border-bottom: 1px solid color-mix(in srgb, var(--marker-tone) 45%, rgba(255,245,222,0.16));
+  background: rgba(22,17,12,0.96);
   transform: translateX(-50%) rotate(45deg);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.28);
 }
 
 .map-location-marker__badge {
   position: absolute;
-  top: 1px;
-  left: 0;
+  top: 0;
+  right: -1px;
   z-index: 3;
   display: flex;
   align-items: center;
@@ -188,11 +332,11 @@ textarea {
   width: 12px;
   height: 12px;
   overflow: hidden;
-  border: 1px solid color-mix(in srgb, var(--badge-tone) 50%, rgba(255, 255, 255, 0.16));
+  border: 1px solid color-mix(in srgb, var(--badge-tone) 55%, rgba(255,255,255,0.18));
   border-radius: 999px;
-  background: linear-gradient(180deg, rgba(17, 21, 34, 0.98), rgba(11, 14, 23, 0.94));
-  color: rgba(242, 238, 229, 0.88);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.24);
+  background: linear-gradient(180deg, rgba(40,30,22,0.98), rgba(18,13,10,0.96));
+  color: rgba(242,238,229,0.90);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.28);
 }
 
 .map-location-marker__badge img {
@@ -205,20 +349,23 @@ textarea {
   transform: translateX(2px);
 }
 
+/* Primary location marker gets a golden crown treatment */
 .map-location-marker.is-primary .map-location-marker__core {
-  width: 21px;
-  height: 21px;
-  border-color: rgba(241, 213, 154, 0.72);
-  color: rgba(249, 236, 205, 0.98);
+  width: 24px;
+  height: 30px;
+  border-color: rgba(241,213,154,0.78);
+  color: rgba(252,239,208,0.98);
+  background: linear-gradient(180deg, rgba(52,40,27,0.98), rgba(22,16,11,0.97));
   box-shadow:
-    0 14px 30px rgba(0, 0, 0, 0.42),
-    0 0 0 1px rgba(241, 213, 154, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    0 18px 38px rgba(0,0,0,0.52),
+    0 0 0 1px rgba(241,213,154,0.10),
+    0 0 18px rgba(203,165,94,0.12),
+    inset 0 1px 0 rgba(255,255,255,0.09);
 }
 
 .map-location-marker.is-primary .map-location-marker__tip {
-  border-right-color: rgba(241, 213, 154, 0.6);
-  border-bottom-color: rgba(241, 213, 154, 0.6);
+  border-right-color: rgba(241,213,154,0.65);
+  border-bottom-color: rgba(241,213,154,0.65);
 }
 
 .map-location-marker.is-focused .map-location-marker__halo,
@@ -229,26 +376,33 @@ textarea {
 .map-location-marker.is-focused .map-location-marker__core {
   transform: translateY(-1px);
   box-shadow:
-    0 18px 38px rgba(0, 0, 0, 0.44),
-    0 0 0 1px rgba(241, 213, 154, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    0 20px 42px rgba(0,0,0,0.52),
+    0 0 0 1px rgba(241,213,154,0.12),
+    0 0 24px rgba(203,165,94,0.14),
+    inset 0 1px 0 rgba(255,255,255,0.09);
 }
 
 .map-location-marker.is-focused.has-faction .map-location-marker__core {
   transform: translateX(2px) translateY(-1px);
 }
 
+/* ── TOOLTIP — Luxe dark glass with gold top-border ── */
 .map-location-tooltip {
-  border: 0;
+  border: 1px solid rgba(78,68,54,0.95);
+  border-top: 2px solid rgba(203,165,94,0.45);
   border-radius: 12px;
-  background: rgba(12, 16, 28, 0.94);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.34);
-  color: rgb(var(--color-ink));
+  background: rgba(22,18,14,0.93);
+  box-shadow:
+    0 24px 52px rgba(0,0,0,0.58),
+    inset 0 1px 0 rgba(255,245,215,0.06);
+  color: rgb(254 243 199);
   font-family: var(--font-heebo), sans-serif;
-  font-size: 0.74rem;
-  line-height: 1.45;
-  padding: 4px 9px;
-  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  max-width: min(14rem, calc(100vw - 3rem));
+  padding: 0;
+  text-align: right;
+  white-space: nowrap;
   backdrop-filter: blur(16px);
 }
 
@@ -257,37 +411,69 @@ textarea {
   direction: rtl;
 }
 
-.map-location-tooltip.leaflet-tooltip-top::before {
-  border-top-color: rgba(12, 16, 28, 0.94);
+.map-location-tooltip .leaflet-tooltip-content {
+  margin: 0 !important;
+  padding: 0.3rem 0.85rem;
+  min-width: max-content;
+  white-space: nowrap;
 }
 
+/* Tooltip arrows inherit the panel background */
+.map-location-tooltip.leaflet-tooltip-top::before {
+  border-top-color: rgba(22,18,14,0.93);
+}
+.map-location-tooltip.leaflet-tooltip-bottom::before {
+  border-bottom-color: rgba(22,18,14,0.93);
+}
+.map-location-tooltip.leaflet-tooltip-left::before {
+  border-left-color: rgba(22,18,14,0.93);
+}
+.map-location-tooltip.leaflet-tooltip-right::before {
+  border-right-color: rgba(22,18,14,0.93);
+}
+
+/* ── POPUP ── */
 .map-location-popup .leaflet-popup-content-wrapper {
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 20px;
-  background: rgba(13, 17, 28, 0.94) !important;
-  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.45);
-  color: rgb(var(--color-ink)) !important;
-  backdrop-filter: blur(18px);
+  border: 1px solid rgba(78,68,54,0.98);
+  border-top: 2px solid rgba(203,165,94,0.40);
+  border-radius: 24px;
+  background: rgba(22,18,14,0.96) !important;
+  box-shadow:
+    0 32px 80px rgba(0,0,0,0.62),
+    inset 0 1px 0 rgba(255,245,215,0.06);
+  color: rgb(254 243 199) !important;
+  backdrop-filter: blur(20px);
 }
 
 .map-location-popup .leaflet-popup-content {
-  min-width: 13rem;
+  min-width: min(13rem, calc(100vw - 4rem));
+  max-width: min(16rem, calc(100vw - 4rem));
   margin: 0;
-  padding: 14px 16px;
+  padding: 14px 18px;
 }
 
 .map-location-popup .leaflet-popup-tip {
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(13, 17, 28, 0.94) !important;
+  border: 1px solid rgba(165,120,68,0.30);
+  background: rgba(18,14,10,0.96) !important;
   box-shadow: none;
 }
 
 .map-location-popup .leaflet-popup-close-button {
-  top: 8px;
-  right: 8px;
+  top: 9px;
+  right: 10px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.06) !important;
   color: rgb(var(--color-muted)) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: background 160ms ease, color 160ms ease;
 }
 
 .map-location-popup .leaflet-popup-close-button:hover {
+  background: rgba(203,165,94,0.15) !important;
   color: rgb(var(--color-ink)) !important;
 }

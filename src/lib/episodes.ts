@@ -33,9 +33,14 @@ export function formatEpisodeLabel(episode: EpisodeRecord) {
 
 export function getEpisodeHomeSummary(episode: EpisodeRecord) {
   const fullSummary = episode.summaries.full.trim();
+  const snapshotSummary = episode.summaries.snapshot.trim();
 
   if (!fullSummary) {
-    return episode.summaries.snapshot.trim();
+    if (snapshotSummary) {
+      return snapshotSummary;
+    }
+
+    return `תמונת המצב המעודכנת של ${episode.code} מוצגת כעת לפי נקודת הצפייה שבחרת.`;
   }
 
   const normalizedSummary = fullSummary.replace(/\s+/g, " ").trim();
@@ -70,7 +75,10 @@ export function getEpisodeHomeSummary(episode: EpisodeRecord) {
     }
   }
 
-  return truncateSummary(sentences[0] ?? normalizedSummary, HOME_SUMMARY_CHARACTER_LIMIT);
+  return truncateSummary(
+    sentences[0] ?? normalizedSummary ?? snapshotSummary,
+    HOME_SUMMARY_CHARACTER_LIMIT,
+  );
 }
 
 function truncateSummary(text: string, maxLength: number) {

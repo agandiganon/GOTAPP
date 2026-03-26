@@ -12,142 +12,97 @@ interface CharacterPortraitProps {
   className?: string;
 }
 
-function hashString(value: string) {
-  let hash = 0;
+/**
+ * Heraldic crown SVG — shown whenever a real portrait is unavailable.
+ * The crown is faction-tinted so each "unknown" character still feels
+ * thematically grounded in their house.
+ */
+function HeraldicCrestFallback({ factionColor }: { factionColor: string }) {
+  return (
+    <div
+      className="absolute inset-0"
+      aria-hidden="true"
+      style={{
+        background: `
+          radial-gradient(ellipse 65% 55% at 50% 28%, ${factionColor}28, transparent 68%),
+          radial-gradient(ellipse 100% 80% at 50% 100%, rgba(0,0,0,0.55), transparent 70%),
+          linear-gradient(160deg, rgba(30,24,18,0.98) 0%, rgba(12,9,7,1) 100%)
+        `,
+      }}
+    >
+      {/* Subtle radial texture ring */}
+      <div
+        className="absolute inset-0 opacity-20"
+        style={{
+          background: `
+            repeating-conic-gradient(
+              from 0deg at 50% 42%,
+              transparent 0deg,
+              transparent 12deg,
+              rgba(255,240,200,0.018) 13deg,
+              transparent 14deg
+            )
+          `,
+        }}
+      />
 
-  for (const char of value) {
-    hash = (hash * 31 + char.charCodeAt(0)) >>> 0;
-  }
+      {/* Crown SVG — centred, faction-tinted */}
+      <svg
+        viewBox="0 0 64 72"
+        width="60"
+        height="68"
+        fill="none"
+        className="absolute left-1/2 top-[38%] -translate-x-1/2 -translate-y-1/2"
+        style={{
+          color: `color-mix(in srgb, ${factionColor} 55%, rgba(230,215,185,0.55))`,
+          filter: `drop-shadow(0 0 14px ${factionColor}40)`,
+        }}
+      >
+        {/* Crown — five-pointed */}
+        <path
+          d="M10 46 L10 35 L17 23 L24 33 L32 14 L40 33 L47 23 L54 35 L54 46 Z"
+          stroke="currentColor"
+          strokeWidth="1.4"
+          strokeLinejoin="round"
+          strokeLinecap="round"
+          fill={`${factionColor}14`}
+          opacity="0.75"
+        />
+        {/* Crown base band */}
+        <rect
+          x="10" y="46" width="44" height="5" rx="2.5"
+          stroke="currentColor"
+          strokeWidth="1.3"
+          fill={`${factionColor}10`}
+          opacity="0.65"
+        />
+        {/* Centre jewel */}
+        <circle cx="32" cy="22" r="3.2" fill="currentColor" opacity="0.45" />
+        {/* Left jewel */}
+        <circle cx="18" cy="33" r="2.2" fill="currentColor" opacity="0.32" />
+        {/* Right jewel */}
+        <circle cx="46" cy="33" r="2.2" fill="currentColor" opacity="0.32" />
 
-  return hash;
-}
+        {/* Decorative horizontal divider beneath crown */}
+        <line x1="16" y1="56" x2="48" y2="56" stroke="currentColor" strokeWidth="0.7" opacity="0.22" />
+        <line x1="20" y1="59" x2="44" y2="59" stroke="currentColor" strokeWidth="0.5" opacity="0.14" />
+      </svg>
 
-function hexToRgb(hex: string) {
-  const normalized = hex.replace("#", "");
-  const hexValue =
-    normalized.length === 3
-      ? normalized
-          .split("")
-          .map((char) => `${char}${char}`)
-          .join("")
-      : normalized;
-
-  const value = Number.parseInt(hexValue, 16);
-
-  return {
-    r: (value >> 16) & 255,
-    g: (value >> 8) & 255,
-    b: value & 255,
-  };
-}
-
-function shiftHex(hex: string, amount: number) {
-  const { r, g, b } = hexToRgb(hex);
-  const clamp = (value: number) => Math.max(0, Math.min(255, Math.round(value)));
-
-  return `#${[r, g, b]
-    .map((channel) => clamp(channel + amount).toString(16).padStart(2, "0"))
-    .join("")}`;
-}
-
-function rgba(hex: string, alpha: number) {
-  const { r, g, b } = hexToRgb(hex);
-
-  return `rgba(${r},${g},${b},${alpha})`;
-}
-
-function buildPortraitSvg(name: string, accent: string) {
-  const seed = hashString(name);
-  const headX = 180 + ((seed % 7) - 3) * 4;
-  const headY = 176 + ((seed >> 3) % 8);
-  const headRx = 48 + ((seed >> 4) % 6);
-  const headRy = 60 + ((seed >> 6) % 6);
-  const shoulderY = 314 + ((seed >> 8) % 14);
-  const shoulderWidth = 118 + ((seed >> 11) % 30);
-  const chestCurve = 252 + ((seed >> 14) % 24);
-  const haloX = 90 + ((seed >> 5) % 180);
-  const haloY = 90 + ((seed >> 7) % 80);
-  const secondaryHaloX = 260 - ((seed >> 9) % 110);
-  const secondaryHaloY = 78 + ((seed >> 10) % 70);
-  const hairLift = 22 + ((seed >> 12) % 16);
-
-  const frame = rgba(shiftHex(accent, 34), 0.24);
-  const glow = rgba(accent, 0.16);
-  const glowSoft = rgba(shiftHex(accent, 24), 0.08);
-  const backgroundTop = shiftHex(accent, -128);
-  const backgroundMid = shiftHex(accent, -168);
-  const backgroundBottom = "#080910";
-  const silhouette = shiftHex(accent, -184);
-  const silhouetteSoft = shiftHex(accent, -150);
-  const highlight = rgba(shiftHex(accent, 32), 0.22);
-
-  return `
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 460" fill="none">
-      <defs>
-        <linearGradient id="bg" x1="180" y1="0" x2="180" y2="460" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stop-color="${backgroundTop}" />
-          <stop offset="52%" stop-color="${backgroundMid}" />
-          <stop offset="100%" stop-color="${backgroundBottom}" />
-        </linearGradient>
-        <linearGradient id="mist" x1="180" y1="120" x2="180" y2="420" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stop-color="${rgba("#ffffff", 0.10)}" />
-          <stop offset="100%" stop-color="${rgba("#ffffff", 0)}" />
-        </linearGradient>
-      </defs>
-
-      <rect width="360" height="460" rx="34" fill="url(#bg)" />
-      <circle cx="${haloX}" cy="${haloY}" r="102" fill="${glow}" />
-      <circle cx="${secondaryHaloX}" cy="${secondaryHaloY}" r="74" fill="${glowSoft}" />
-      <path d="M0 378C72 342 136 334 194 352C248 368 304 388 360 360V460H0V378Z" fill="${rgba(
-        silhouetteSoft,
-        0.5,
-      )}" />
-      <path d="M${180 - shoulderWidth} ${shoulderY}C${120 - shoulderWidth / 3} ${chestCurve} 116 ${chestCurve - 34} ${headX} ${
-        headY + headRy - 4
-      }C244 ${chestCurve - 34} ${240 + shoulderWidth / 3} ${chestCurve} ${180 + shoulderWidth} ${shoulderY}L332 460H28L${
-        180 - shoulderWidth
-      } ${shoulderY}Z" fill="${silhouetteSoft}" />
-      <ellipse cx="${headX}" cy="${headY}" rx="${headRx}" ry="${headRy}" fill="${silhouette}" />
-      <path d="M${headX - headRx} ${headY - 4}C${headX - headRx + 10} ${headY - hairLift} ${headX - 8} ${
-        headY - headRy - 10
-      } ${headX + 6} ${headY - headRy + 4}C${headX + headRx - 8} ${headY - headRy + 12} ${headX + headRx} ${
-        headY - 6
-      } ${headX + headRx} ${headY + 8}V${headY + 22}C${headX + 18} ${headY + 8} ${headX - 10} ${headY + 10} ${
-        headX - headRx
-      } ${headY + 16}V${headY - 4}Z" fill="${silhouetteSoft}" />
-      <path d="M${headX - headRx - 22} ${shoulderY - 30}C${headX - headRx - 10} ${shoulderY - 88} ${headX - 16} ${
-        headY + 62
-      } ${headX} ${headY + 72}C${headX + 18} ${headY + 62} ${headX + headRx + 8} ${shoulderY - 92} ${headX + headRx + 24} ${
-        shoulderY - 26
-      }L${headX + shoulderWidth - 12} ${shoulderY + 32}C${headX + 64} ${shoulderY + 6} ${headX - 62} ${
-        shoulderY + 6
-      } ${headX - shoulderWidth + 12} ${shoulderY + 34}L${headX - headRx - 22} ${shoulderY - 30}Z" fill="${silhouette}" />
-      <path d="M46 54C92 36 138 26 182 26C230 26 274 36 314 54" stroke="${frame}" stroke-width="1.5" stroke-linecap="round" />
-      <rect x="18" y="18" width="324" height="424" rx="28" stroke="${frame}" />
-      <path d="M34 378C102 396 164 406 220 406C272 406 310 398 326 392" stroke="${highlight}" stroke-width="1.5" stroke-linecap="round" />
-      <rect y="0" width="360" height="460" rx="34" fill="url(#mist)" opacity="0.32" />
-    </svg>
-  `.trim();
-}
-
-function getPortraitSrc(name: string, accent: string) {
-  return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(buildPortraitSvg(name, accent))}`;
+      {/* Name initial — large, ghosted */}
+      {/* Deliberately omitted so it doesn't compete with real portraits */}
+    </div>
+  );
 }
 
 export function CharacterPortrait({
   name,
   imageUrl,
-  factionColor = "#8ea7cf",
+  factionColor = "#a07840",
   className,
 }: CharacterPortraitProps) {
-  const fallbackSrc = useMemo(
-    () => getPortraitSrc(name, factionColor ?? "#8ea7cf"),
-    [factionColor, name],
-  );
-  const candidateSrc = useMemo(
-    () => getProxiedExternalImageUrl(imageUrl),
-    [imageUrl],
-  );
+  const safeFactionColor = factionColor ?? "#a07840";
+
+  const candidateSrc = useMemo(() => getProxiedExternalImageUrl(imageUrl), [imageUrl]);
   const [isLoaded, setIsLoaded] = useState(false);
   const [hasLoadError, setHasLoadError] = useState(!candidateSrc);
 
@@ -165,19 +120,13 @@ export function CharacterPortrait({
     setHasLoadError(false);
 
     probe.onload = () => {
-      if (cancelled) {
-        return;
-      }
-
+      if (cancelled) return;
       setIsLoaded(true);
       setHasLoadError(false);
     };
 
     probe.onerror = () => {
-      if (cancelled) {
-        return;
-      }
-
+      if (cancelled) return;
       setIsLoaded(false);
       setHasLoadError(true);
     };
@@ -189,25 +138,22 @@ export function CharacterPortrait({
     };
   }, [candidateSrc]);
 
+  const showImage = Boolean(candidateSrc) && !hasLoadError;
+
   return (
     <div className={cn("relative h-full w-full overflow-hidden", className)}>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={fallbackSrc}
-        alt={`דיוקן סמלי של ${name}`}
-        loading="lazy"
-        draggable={false}
-        className="h-full w-full object-cover"
-      />
-      {!hasLoadError && candidateSrc ? (
+      {/* Fallback — always rendered; hidden by the real image once loaded */}
+      <HeraldicCrestFallback factionColor={safeFactionColor} />
+
+      {showImage && (
         // eslint-disable-next-line @next/next/no-img-element
         <img
           src={candidateSrc}
-          alt=""
+          alt={name}
           loading="lazy"
           draggable={false}
           className={cn(
-            "absolute inset-0 h-full w-full object-cover transition-opacity duration-500",
+            "absolute inset-0 h-full w-full object-cover object-top transition-opacity duration-700",
             isLoaded ? "opacity-100" : "opacity-0",
           )}
           onError={() => {
@@ -215,7 +161,7 @@ export function CharacterPortrait({
             setHasLoadError(true);
           }}
         />
-      ) : null}
+      )}
     </div>
   );
 }

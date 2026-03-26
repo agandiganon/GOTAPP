@@ -5,44 +5,64 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        canvas: "rgb(var(--color-canvas) / <alpha-value>)",
-        "canvas-soft": "rgb(var(--color-canvas-soft) / <alpha-value>)",
-        panel: "rgb(var(--color-panel) / <alpha-value>)",
-        "panel-strong": "rgb(var(--color-panel-strong) / <alpha-value>)",
-        accent: "rgb(var(--color-accent) / <alpha-value>)",
-        danger: "rgb(var(--color-danger) / <alpha-value>)",
-        ink: "rgb(var(--color-ink) / <alpha-value>)",
-        muted: "rgb(var(--color-muted) / <alpha-value>)",
-        line: "rgb(var(--color-line) / <alpha-value>)",
+        canvas:         "rgb(var(--color-canvas)       / <alpha-value>)",
+        "canvas-soft":  "rgb(var(--color-canvas-soft)  / <alpha-value>)",
+        panel:          "rgb(var(--color-panel)         / <alpha-value>)",
+        "panel-strong": "rgb(var(--color-panel-strong)  / <alpha-value>)",
+        accent:         "rgb(var(--color-accent)        / <alpha-value>)",
+        danger:         "rgb(var(--color-danger)        / <alpha-value>)",
+        ink:            "rgb(var(--color-ink)           / <alpha-value>)",
+        muted:          "rgb(var(--color-muted)         / <alpha-value>)",
+        line:           "rgb(var(--color-line)          / <alpha-value>)",
       },
+
       fontFamily: {
-        body: ["var(--font-heebo)", "sans-serif"],
+        body:    ["var(--font-heebo)",   "sans-serif"],
         display: ["var(--font-display)", "serif"],
       },
+
       boxShadow: {
-        shell: "0 28px 90px rgba(0, 0, 0, 0.45)",
-        panel: "0 18px 60px rgba(0, 0, 0, 0.32)",
-        accent: "0 14px 42px rgba(203, 165, 92, 0.18)",
+        shell:  "0 32px 100px rgba(0,0,0,0.55)",
+        panel:  "0 20px 64px rgba(0,0,0,0.40)",
+        accent: "0 12px 40px rgba(203,165,92,0.20)",
       },
+
       backgroundImage: {
         "panel-gradient":
-          "linear-gradient(180deg, rgba(255,255,255,0.14) 0%, rgba(255,255,255,0.05) 100%)",
+          "linear-gradient(180deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.04) 100%)",
         "hero-glow":
-          "radial-gradient(circle at top, rgba(203, 165, 92, 0.18), transparent 48%)",
+          "radial-gradient(ellipse 80% 50% at 50% 0%, rgba(203,165,92,0.20), transparent 60%)",
       },
+
       keyframes: {
         float: {
           "0%, 100%": { transform: "translateY(0px)" },
-          "50%": { transform: "translateY(-4px)" },
+          "50%":      { transform: "translateY(-4px)" },
         },
         pulseSoft: {
-          "0%, 100%": { opacity: "0.7", transform: "scale(1)" },
-          "50%": { opacity: "1", transform: "scale(1.12)" },
+          "0%, 100%": { opacity: "0.7",  transform: "scale(1)" },
+          "50%":      { opacity: "1",    transform: "scale(1.12)" },
+        },
+        shimmerSlide: {
+          "0%":   { transform: "translateX(130%) skewX(-18deg)" },
+          "100%": { transform: "translateX(-130%) skewX(-18deg)" },
+        },
+        cardReveal: {
+          from: { opacity: "0", transform: "translateY(10px)" },
+          to:   { opacity: "1", transform: "translateY(0)" },
+        },
+        fadeIn: {
+          from: { opacity: "0" },
+          to:   { opacity: "1" },
         },
       },
+
       animation: {
-        float: "float 5s ease-in-out infinite",
-        "pulse-soft": "pulseSoft 2.4s ease-in-out infinite",
+        float:         "float 5s ease-in-out infinite",
+        "pulse-soft":  "pulseSoft 2.4s ease-in-out infinite",
+        "shimmer":     "shimmerSlide 0.65s ease forwards",
+        "card-reveal": "cardReveal 0.38s ease-out forwards",
+        "fade-in":     "fadeIn 0.3s ease-out forwards",
       },
     },
   },

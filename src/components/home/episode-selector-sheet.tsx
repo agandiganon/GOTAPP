@@ -71,8 +71,8 @@ export function EpisodeSelectorSheet({
   };
 
   return (
-    <div className="relative z-[70] mt-3 overflow-hidden rounded-[26px] border border-white/[0.08] bg-[linear-gradient(180deg,rgba(14,18,30,0.92),rgba(10,13,22,0.88))] shadow-[0_28px_80px_rgba(0,0,0,0.34)] backdrop-blur-2xl">
-      <div className="flex items-start justify-between gap-4 border-b border-white/[0.06] px-4 py-4">
+    <div className="relative z-[90] mt-3 overflow-hidden rounded-[28px] border border-stone-700/40 bg-stone-900/70 shadow-[0_30px_80px_rgba(0,0,0,0.42)] backdrop-blur-xl">
+      <div className="flex items-start justify-between gap-4 border-b border-stone-700/35 px-4 py-4">
         <div className="space-y-1.5">
           <p className="text-caption">בחירת פרק</p>
           <h3 className="font-display text-xl text-ink">
@@ -94,7 +94,7 @@ export function EpisodeSelectorSheet({
         <button
           type="button"
           onClick={onClose}
-          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.04] text-muted transition hover:text-ink"
+          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-stone-700/40 bg-stone-950/55 text-stone-400 transition hover:border-amber-700/35 hover:text-amber-100"
           aria-label="סגירת בחירת פרק"
         >
           <X className="h-4 w-4" />
@@ -111,13 +111,13 @@ export function EpisodeSelectorSheet({
                 key={season}
                 type="button"
                 onClick={() => openSeason(season)}
-                className="rounded-[22px] border border-white/[0.08] bg-white/[0.04] px-4 py-4 text-right transition hover:border-accent/20 hover:bg-accent/[0.08]"
+                className="rounded-[24px] border border-stone-700/40 bg-stone-950/45 px-4 py-4 text-right transition duration-300 hover:-translate-y-0.5 hover:border-amber-700/35 hover:bg-amber-500/[0.08]"
               >
                 <div className="space-y-3">
                   <div className="flex items-center justify-between gap-3">
-                    <span className="flex h-10 w-10 items-center justify-center rounded-2xl border border-accent/20 bg-accent/[0.12] text-accent">
-                      <Layers3 className="h-4 w-4" />
-                    </span>
+                      <span className="flex h-10 w-10 items-center justify-center rounded-2xl border border-amber-700/35 bg-amber-500/10 text-amber-200">
+                        <Layers3 className="h-4 w-4" />
+                      </span>
                     {isCurrentSeason ? (
                       <span className="rounded-full border border-[#6c9a78]/25 bg-[#6c9a78]/[0.14] px-2 py-1 text-[0.62rem] text-[#d9eadc]">
                         פעילה
@@ -142,14 +142,14 @@ export function EpisodeSelectorSheet({
             <button
               type="button"
               onClick={() => setStep("season")}
-              className="flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.04] px-3 py-2 text-xs text-muted transition hover:text-ink"
+              className="flex items-center gap-2 rounded-full border border-stone-700/40 bg-stone-950/55 px-3 py-2 text-xs text-stone-400 transition hover:border-amber-700/35 hover:text-amber-100"
             >
               <ArrowRight className="h-4 w-4" />
               חזרה לעונות
             </button>
 
-            <div className="flex items-center gap-2 text-xs text-muted">
-              <span className="flex h-8 w-8 items-center justify-center rounded-2xl border border-accent/20 bg-accent/[0.12] text-accent">
+            <div className="flex items-center gap-2 text-xs text-stone-400">
+              <span className="flex h-8 w-8 items-center justify-center rounded-2xl border border-amber-700/35 bg-amber-500/10 text-amber-200">
                 <Clapperboard className="h-4 w-4" />
               </span>
               עונה {activeSeason}
@@ -166,10 +166,10 @@ export function EpisodeSelectorSheet({
                   type="button"
                   onClick={() => openWarning(episode.id)}
                   className={cn(
-                    "rounded-[18px] border px-4 py-3 text-right transition",
+                    "rounded-[20px] border px-4 py-3 text-right transition duration-300 hover:-translate-y-0.5",
                     isCurrent
-                      ? "border-[#6c9a78]/20 bg-[#6c9a78]/[0.08]"
-                      : "border-white/[0.08] bg-white/[0.04] hover:border-accent/20 hover:bg-white/[0.06]",
+                      ? "border-[#7b957a]/25 bg-[#7b957a]/[0.12]"
+                      : "border-stone-700/40 bg-stone-950/45 hover:border-amber-700/35 hover:bg-stone-900/65",
                   )}
                 >
                   <div className="flex items-center justify-between gap-3">
@@ -196,16 +196,16 @@ export function EpisodeSelectorSheet({
             <button
               type="button"
               onClick={() => setStep("episode")}
-              className="flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.04] px-3 py-2 text-xs text-muted transition hover:text-ink"
+              className="flex items-center gap-2 rounded-full border border-stone-700/40 bg-stone-950/55 px-3 py-2 text-xs text-stone-400 transition hover:border-amber-700/35 hover:text-amber-100"
             >
               <ArrowRight className="h-4 w-4" />
               חזרה לפרקים
             </button>
           </div>
 
-          <div className="rounded-[22px] border border-[#7b4d56]/30 bg-[#7b4d56]/[0.12] p-4">
+          <div className="rounded-[24px] border border-rose-900/35 bg-rose-950/25 p-4">
             <div className="flex items-start gap-3">
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border border-[#7b4d56]/35 bg-[#7b4d56]/[0.18] text-[#f0d5d9]">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border border-rose-900/35 bg-rose-950/35 text-rose-100">
                 <AlertTriangle className="h-4 w-4" />
               </span>
               <div className="space-y-1.5">
@@ -217,7 +217,7 @@ export function EpisodeSelectorSheet({
             </div>
           </div>
 
-          <div className="mt-4 rounded-[18px] border border-white/[0.08] bg-white/[0.04] px-4 py-3">
+          <div className="mt-4 rounded-[20px] border border-stone-700/40 bg-stone-950/45 px-4 py-3">
             <p className="text-xs text-muted">יעודכן אל</p>
             <p className="mt-2 text-sm font-semibold text-ink">{formatEpisodeLabel(pendingEpisode)}</p>
           </div>
@@ -226,14 +226,14 @@ export function EpisodeSelectorSheet({
             <button
               type="button"
               onClick={() => setStep("episode")}
-              className="rounded-[18px] border border-white/[0.08] bg-white/[0.04] px-4 py-3 text-sm font-medium text-ink transition hover:bg-white/[0.07]"
+              className="rounded-[18px] border border-stone-700/40 bg-stone-950/55 px-4 py-3 text-sm font-medium text-stone-200 transition hover:border-amber-700/30 hover:text-amber-100"
             >
               ביטול
             </button>
             <button
               type="button"
               onClick={() => onConfirm(pendingEpisode.id)}
-              className="inline-flex items-center justify-center gap-2 rounded-[18px] border border-accent/20 bg-accent/[0.14] px-4 py-3 text-sm font-semibold text-accent transition hover:bg-accent/[0.2]"
+              className="inline-flex items-center justify-center gap-2 rounded-[18px] border border-amber-700/35 bg-amber-500/[0.12] px-4 py-3 text-sm font-semibold text-amber-100 transition hover:bg-amber-500/[0.18]"
             >
               <Check className="h-4 w-4" />
               אישור ועדכון

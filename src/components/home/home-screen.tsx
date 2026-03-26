@@ -1,9 +1,19 @@
 "use client";
 
-import Image from "next/image";
-import { useState } from "react";
-import { ArrowUpRight, ChevronDown, MapPinned, Shield, Sparkles, Swords } from "lucide-react";
+import dynamic from "next/dynamic";
+import { useMemo, useState } from "react";
+import {
+  ArrowUpRight,
+  ChevronDown,
+  Flame,
+  MapPin,
+  Shield,
+  Sparkles,
+  Swords,
+  Users,
+} from "lucide-react";
 
+import { FactionSigilBadge } from "@/components/factions/faction-sigil-badge";
 import { EpisodeSelectorSheet } from "@/components/home/episode-selector-sheet";
 import { Panel } from "@/components/ui/panel";
 import {
@@ -15,9 +25,10 @@ import {
   timelineEvents,
 } from "@/data/seed";
 import { formatEpisodeLabel, getEpisodeHomeSummary } from "@/lib/episodes";
+import { resolveMapLocationController } from "@/lib/map-presentation";
 import {
-  getVisibleCharacterSnapshots,
   getEpisodeFactionRankings,
+  getVisibleCharacterSnapshots,
   getVisibleEvents,
   getVisibleLocationSnapshots,
   getVisibleMapPins,
@@ -25,329 +36,627 @@ import {
 import { cn, isDefined } from "@/lib/utils";
 import { useEpisode } from "@/providers/episode-provider";
 
-const toneClasses = {
-  neutral: "border-white/10 bg-white/5 text-ink",
-  shift: "border-accent/20 bg-accent/10 text-accent",
-  alert: "border-danger/20 bg-danger/10 text-[#f2c0c7]",
+/* ─── Leaflet mini-map (SSR-disabled — Leaflet requires browser APIs) ─────── */
+const HomeMiniMapCanvas = dynamic(
+  () =>
+    import("@/components/home/home-mini-map-canvas").then(
+      (m) => m.HomeMiniMapCanvas,
+    ),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="flex h-full items-center justify-center text-xs text-muted">
+        טוען מפה…
+      </div>
+    ),
+  },
+);
+
+/* ─── Convert percent coords to Leaflet CRS.Simple pixel coords ───────────── */
+const MAP_IMAGE_WIDTH  = 1409;
+const MAP_IMAGE_HEIGHT = 944;
+
+function toMapPoint(topPercent: number, leftPercent: number): [number, number] {
+  return [
+    (MAP_IMAGE_HEIGHT * topPercent) / 100,
+    (MAP_IMAGE_WIDTH  * leftPercent) / 100,
+  ];
+}
+
+/* ─── Event tone map ──────────────────────────────────────────────────────── */
+const toneStyles = {
+  neutral: {
+    wrapper: "border-stone-700/45 bg-stone-900/60",
+    dot:     "bg-stone-500",
+    title:   "text-ink",
+  },
+  shift: {
+    wrapper: "border-amber-800/35 bg-amber-500/[0.08]",
+    dot:     "bg-amber-400",
+    title:   "text-amber-200",
+  },
+  alert: {
+    wrapper: "border-danger/30 bg-danger/[0.12]",
+    dot:     "bg-rose-400",
+    title:   "text-[#f2c0c7]",
+  },
 } as const;
 
+/* ─────────────────────────────────────────────────────────────────────────── */
 export function HomeScreen() {
-  const { availableEpisodes, currentEpisode, currentEpisodeId, setCurrentEpisodeId } = useEpisode();
+  const { availableEpisodes, currentEpisode, currentEpisodeId, setCurrentEpisodeId } =
+    useEpisode();
   const [isSelectorOpen, setIsSelectorOpen] = useState(false);
 
-  const visibleCharacters = getVisibleCharacterSnapshots(characters, currentEpisodeId, episodeIndex);
-  const visibleLocations = getVisibleLocationSnapshots(locations, currentEpisodeId, episodeIndex);
-  const factionRankings = getEpisodeFactionRankings(factions, currentEpisode);
-  const visibleEvents = getVisibleEvents(timelineEvents, currentEpisodeId, episodeIndex);
-  const visiblePins = getVisibleMapPins(mapRegistry, currentEpisodeId, episodeIndex);
+  /* ── Anti-spoiler data — DO NOT TOUCH ─────────────────────────────────── */
+  const visibleCharacters = useMemo(
+    () => getVisibleCharacterSnapshots(characters, currentEpisodeId, episodeIndex),
+    [currentEpisodeId],
+  );
+  const visibleLocations = useMemo(
+    () => getVisibleLocationSnapshots(locations, currentEpisodeId, episodeIndex),
+    [currentEpisodeId],
+  );
+  const factionRankings = useMemo(
+    () => getEpisodeFactionRankings(factions, currentEpisode),
+    [currentEpisode],
+  );
+  const visibleEvents = useMemo(
+    () => getVisibleEvents(timelineEvents, currentEpisodeId, episodeIndex),
+    [currentEpisodeId],
+  );
+  const visiblePins = useMemo(
+    () => getVisibleMapPins(mapRegistry, currentEpisodeId, episodeIndex),
+    [currentEpisodeId],
+  );
 
-  const focusCharacters = currentEpisode.focusCharacterIds
-    .map((characterId) => visibleCharacters.find((character) => character.id === characterId))
-    .filter(isDefined);
+  const focusCharacters = useMemo(
+    () =>
+      currentEpisode.focusCharacterIds
+        .map((id) => visibleCharacters.find((c) => c.id === id))
+        .filter(isDefined),
+    [currentEpisode.focusCharacterIds, visibleCharacters],
+  );
 
-  const mainLocations = currentEpisode.mainLocationIds
-    .map((locationId) => visibleLocations.find((location) => location.id === locationId))
-    .filter(isDefined);
+  const mainLocations = useMemo(
+    () =>
+      currentEpisode.mainLocationIds
+        .map((id) => visibleLocations.find((l) => l.id === id))
+        .filter(isDefined),
+    [currentEpisode.mainLocationIds, visibleLocations],
+  );
 
-  const primaryLocation =
-    visibleLocations.find((location) => location.id === currentEpisode.primaryLocationId) ?? null;
-
-  const primaryPin =
-    visiblePins.find((pin) => pin.storyLocationId === currentEpisode.primaryLocationId) ?? null;
+  const primaryLocation = useMemo(
+    () => visibleLocations.find((l) => l.id === currentEpisode.primaryLocationId) ?? null,
+    [currentEpisode.primaryLocationId, visibleLocations],
+  );
+  const primaryPin = useMemo(
+    () => visiblePins.find((p) => p.storyLocationId === currentEpisode.primaryLocationId) ?? null,
+    [currentEpisode.primaryLocationId, visiblePins],
+  );
+  const primaryControllerFaction = useMemo(
+    () =>
+      currentEpisode.primaryLocationId
+        ? resolveMapLocationController(currentEpisode.primaryLocationId, factionRankings)
+        : null,
+    [currentEpisode.primaryLocationId, factionRankings],
+  );
   const hasPrimaryPinCoordinates =
     primaryPin?.imagePositionPercent.top != null && primaryPin.imagePositionPercent.left != null;
 
-  const leadingFaction =
-    factionRankings.find((entry) => entry.faction.id === currentEpisode.powerLeaderId) ??
-    factionRankings[0];
+  const leadingFaction = useMemo(
+    () =>
+      factionRankings.find((e) => e.faction.id === currentEpisode.powerLeaderId) ??
+      factionRankings[0],
+    [currentEpisode.powerLeaderId, factionRankings],
+  );
+  const recentEvents = useMemo(
+    () =>
+      visibleEvents
+        .filter((e) => currentEpisode.recentEventIds.includes(e.id))
+        .slice(-3)
+        .reverse(),
+    [currentEpisode.recentEventIds, visibleEvents],
+  );
+  const mainLocationLabels = useMemo(
+    () =>
+      currentEpisode.mainLocationLabels.length > 0
+        ? currentEpisode.mainLocationLabels
+        : mainLocations.map((l) => l.name),
+    [currentEpisode.mainLocationLabels, mainLocations],
+  );
 
-  const recentEvents = visibleEvents
-    .filter((event) => currentEpisode.recentEventIds.includes(event.id))
-    .slice(-3)
-    .reverse();
+  const homeSummary    = useMemo(() => getEpisodeHomeSummary(currentEpisode), [currentEpisode]);
+  const primarySummary = useMemo(
+    () =>
+      primaryLocation?.latestHistory?.summary ??
+      "המיקום הטקסטואלי מסונכרן לפרק הנוכחי — קואורדינטות מפה טרם הוגדרו.",
+    [primaryLocation],
+  );
 
-  const mainLocationLabels =
-    currentEpisode.mainLocationLabels.length > 0
-      ? currentEpisode.mainLocationLabels
-      : mainLocations.map((location) => location.name);
-
-  const applyEpisodeSelection = (episodeId: typeof currentEpisodeId) => {
-    setCurrentEpisodeId(episodeId);
+  const applyEpisode = (id: typeof currentEpisodeId) => {
+    setCurrentEpisodeId(id);
     setIsSelectorOpen(false);
   };
+  /* ── End anti-spoiler block ───────────────────────────────────────────── */
 
-  const homeSummary = getEpisodeHomeSummary(currentEpisode);
+  const focalColor = primaryControllerFaction?.themeColor ?? "rgb(205,164,94)";
 
   return (
-    <>
-      <section className="space-y-4">
-        <Panel className="relative overflow-hidden p-5 md:p-6">
-          <div className="absolute inset-0 bg-hero-glow opacity-70" />
-          <div className="relative space-y-5">
-            <div className="space-y-2">
-              <p className="text-caption">לוח צפייה</p>
-              <h1 className="max-w-[16ch] font-display text-3xl leading-tight text-ink">
-                gotspoil: מלווה הצפייה שלך
-              </h1>
-              <p className="text-sm leading-7 text-muted">
-                בחר/י את נקודת הצפייה שלך, וקבלי תמונת מצב מדויקת, נקייה ונטולת ספוילרים.
-              </p>
-            </div>
+    <section className="space-y-5 pb-24 md:pb-6" dir="rtl">
 
-            <div className="rounded-[30px] border border-white/[0.06] bg-[linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.015))] p-3 shadow-[0_22px_60px_rgba(0,0,0,0.25)] backdrop-blur-xl">
-              <div className="relative z-20">
-                <button
-                  type="button"
-                  aria-expanded={isSelectorOpen}
-                  aria-haspopup="listbox"
-                  onClick={() => setIsSelectorOpen((current) => !current)}
-                  className="group w-full cursor-pointer rounded-[24px] border border-white/[0.06] bg-canvas/[0.34] p-4 text-right transition duration-300 hover:border-accent/20 hover:bg-canvas/[0.42]"
-                >
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="space-y-2">
-                      <p className="text-xs text-muted">בחירת פרק</p>
-                      <p className="text-lg font-semibold text-ink">{formatEpisodeLabel(currentEpisode)}</p>
-                      <p className="text-sm text-muted">
-                        עונה {currentEpisode.season} · פרק {currentEpisode.episode}
-                      </p>
-                      <p className="text-xs text-accent/90">לחץ/י כדי לבחור עונה ופרק</p>
-                    </div>
+      {/* ══════════════════════════════════════════════════════════════════
+          HERO — EPISODE SELECTOR
+          ═══════════════════════════════════════════════════════════════ */}
+      <Panel
+        key={`hero-${currentEpisodeId}`}
+        className="relative overflow-hidden p-5 md:p-6"
+      >
+        {/* Background crown glow */}
+        <div className="absolute inset-0 bg-hero-glow opacity-70" />
 
-                    <div className="flex shrink-0 items-center gap-2">
-                      <span className="rounded-full border border-accent/15 bg-accent/[0.1] px-3 py-1 text-[0.68rem] font-medium text-accent">
-                        מצב בטוח
-                      </span>
-                      <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.04] text-accent transition group-hover:bg-accent/[0.12]">
-                        <ChevronDown
-                          className={cn(
-                            "h-5 w-5 transition",
-                            isSelectorOpen ? "rotate-180" : "group-hover:translate-y-0.5",
-                          )}
-                        />
-                      </span>
-                    </div>
+        <div className="relative space-y-5">
+          {/* Label + title */}
+          <div className="space-y-2">
+            <p className="text-caption">לוח צפייה</p>
+            <h1 className="max-w-[16ch] font-display text-3xl leading-tight text-ink">
+              gotspoil · מלווה הצפייה שלך
+            </h1>
+            <p className="text-sm leading-7 text-muted">
+              בחר/י את נקודת הצפייה שלך וקבלי תמונת מצב מדויקת ונטולת ספוילרים.
+            </p>
+          </div>
+
+          {/* Selector container */}
+          <div
+            className="rounded-[32px] border border-stone-700/38 p-3 backdrop-blur-xl"
+            style={{
+              background: "linear-gradient(180deg, rgba(30,24,18,0.88), rgba(16,12,9,0.92))",
+              boxShadow: "0 24px 64px rgba(0,0,0,0.42), inset 0 1px 0 rgba(255,245,215,0.05)",
+            }}
+          >
+            {/* Trigger button */}
+            <button
+              type="button"
+              aria-expanded={isSelectorOpen}
+              aria-haspopup="listbox"
+              onClick={() => setIsSelectorOpen((p) => !p)}
+              className="group w-full cursor-pointer rounded-[26px] border border-stone-700/38 bg-stone-950/55 p-4 text-right transition duration-300 hover:border-amber-700/35 hover:bg-stone-900/70"
+            >
+              <div className="flex items-start justify-between gap-4">
+                <div className="space-y-1.5">
+                  <p className="text-xs text-muted">פרק פעיל</p>
+                  <p className="text-xl font-semibold text-ink">
+                    {formatEpisodeLabel(currentEpisode)}
+                  </p>
+                  <p className="text-sm text-muted">
+                    עונה {currentEpisode.season} · פרק {currentEpisode.episode}
+                  </p>
+                </div>
+                <div className="flex shrink-0 items-center gap-2">
+                  <span className="rounded-full border border-emerald-700/30 bg-emerald-500/[0.10] px-3 py-1 text-[0.68rem] font-medium text-emerald-200">
+                    מצב בטוח
+                  </span>
+                  <span className="flex h-10 w-10 items-center justify-center rounded-full border border-stone-700/40 bg-stone-950/55 text-amber-300 transition group-hover:border-amber-700/40 group-hover:bg-amber-500/[0.10]">
+                    <ChevronDown
+                      className={cn(
+                        "h-5 w-5 transition duration-300",
+                        isSelectorOpen ? "rotate-180" : "group-hover:translate-y-0.5",
+                      )}
+                    />
+                  </span>
+                </div>
+              </div>
+            </button>
+
+            <EpisodeSelectorSheet
+              isOpen={isSelectorOpen}
+              episodes={availableEpisodes}
+              currentEpisodeId={currentEpisodeId}
+              onClose={() => setIsSelectorOpen(false)}
+              onConfirm={applyEpisode}
+            />
+
+            {/* Episode summary */}
+            <div className="mt-3 rounded-[26px] border border-stone-700/38 bg-stone-950/42 p-4 backdrop-blur-md">
+              <div className="mb-3 flex items-center justify-between gap-3">
+                <div className="flex items-center gap-2">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-xl border border-amber-700/35 bg-amber-500/[0.10] text-amber-300">
+                    <Sparkles className="h-4 w-4" />
                   </div>
-                </button>
-
-                <EpisodeSelectorSheet
-                  isOpen={isSelectorOpen}
-                  episodes={availableEpisodes}
-                  currentEpisodeId={currentEpisodeId}
-                  onClose={() => setIsSelectorOpen(false)}
-                  onConfirm={applyEpisodeSelection}
-                />
+                  <p className="text-caption">תקציר הפרק</p>
+                </div>
+                <span className="rounded-full border border-stone-700/35 bg-stone-900/55 px-2.5 py-0.5 text-[0.65rem] text-stone-400">
+                  {currentEpisode.code}
+                </span>
               </div>
 
-              <div className="mt-3 rounded-[24px] border border-white/[0.06] bg-panel-strong/[0.54] p-4 backdrop-blur-md">
-                <div className="flex items-start justify-between gap-4">
-                  <div className="space-y-2">
-                    <p className="text-caption">תקציר הפרק</p>
-                    <h2 className="font-display text-2xl text-ink">{formatEpisodeLabel(currentEpisode)}</h2>
-                    <p className="text-sm text-muted">
-                      עונה {currentEpisode.season} · פרק {currentEpisode.episode}
-                    </p>
-                  </div>
-                  <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-accent/25 bg-accent/10 text-accent">
-                    <Sparkles className="h-5 w-5" />
-                  </div>
-                </div>
+              <p className="text-sm leading-8 text-stone-200">{homeSummary}</p>
 
-                <div className="mt-4 rounded-[20px] border border-white/[0.05] bg-canvas/[0.34] px-4 py-4">
-                  <p className="text-sm leading-8 text-ink">{homeSummary}</p>
-                </div>
-
+              {/* Focus character chips */}
+              {focusCharacters.length > 0 && (
                 <div className="mt-4 flex flex-wrap gap-2">
-                  {focusCharacters.map((character) => (
+                  {focusCharacters.map((c) => (
                     <span
-                      key={character.id}
-                    className="rounded-full border border-white/[0.06] bg-white/[0.04] px-3 py-1.5 text-xs text-muted"
+                      key={c.id}
+                      className="inline-flex items-center gap-1.5 rounded-full border border-stone-700/35 bg-stone-900/55 px-3 py-1.5 text-xs font-medium text-stone-300"
                     >
-                      {character.name}
+                      <Users className="h-3 w-3 text-amber-400/60" />
+                      {c.name}
                     </span>
                   ))}
                 </div>
-              </div>
+              )}
             </div>
           </div>
-        </Panel>
+        </div>
+      </Panel>
 
-        <Panel className="overflow-hidden p-5">
-          <div className="mb-4 flex items-start justify-between gap-4">
-            <div className="space-y-2">
-              <p className="text-caption">מוקד מפה</p>
-              <h2 className="font-display text-2xl text-ink">מוקד המפה</h2>
-              <p className="text-sm leading-7 text-muted">
-                {primaryLocation?.latestHistory?.summary ??
-                  "לא הוגדר עדיין תיאור גלוי למיקום הזה בנקודת הזמן הנבחרת."}
+      {/* ══════════════════════════════════════════════════════════════════
+          MAP WIDGET — EPISODE BATTLEFIELD
+          This panel's ENTIRE PURPOSE is to show WHERE the main action
+          of this episode happens on the Westeros map. Every element
+          reinforces that single message.
+          ═══════════════════════════════════════════════════════════════ */}
+      <Panel
+        key={`map-${currentEpisodeId}`}
+        className="overflow-hidden"
+      >
+        {/* Panel header — CLEARLY names the section's purpose */}
+        <div className="flex items-start justify-between gap-4 border-b border-stone-700/35 px-5 py-4">
+          <div className="space-y-1.5">
+            <p className="text-caption">זירת הפרק</p>
+            <h2 className="font-display text-2xl leading-tight text-ink">
+              {primaryLocation?.name
+                ? `${primaryLocation.name} — מוקד הפרק`
+                : "מוקד הפרק"}
+            </h2>
+            {primaryLocation?.region && (
+              <p className="text-xs text-stone-400">
+                {primaryLocation.region}
+                {primaryControllerFaction
+                  ? ` · בשליטת ${primaryControllerFaction.displayName}`
+                  : ""}
               </p>
-            </div>
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-line/10 bg-white/5 text-accent">
-              <MapPinned className="h-5 w-5" />
-            </div>
-          </div>
-
-          <div className="relative aspect-[16/10] overflow-hidden rounded-[24px] border border-white/[0.06]">
-            <Image
-              src="/images/world-map.jpg"
-              alt="מפת עולם מותאמת להצגת מוקדי עלילה"
-              fill
-              sizes="(max-width: 768px) 100vw, 430px"
-              className="object-cover opacity-90"
-              priority
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-canvas via-canvas/20 to-transparent" />
-
-            {hasPrimaryPinCoordinates ? (
-              <div
-                className="absolute -translate-x-1/2 -translate-y-1/2"
-                style={{
-                  top: `${primaryPin.imagePositionPercent.top}%`,
-                  left: `${primaryPin.imagePositionPercent.left}%`,
-                }}
-              >
-                <div className="absolute inset-0 animate-pulse-soft rounded-full bg-accent/[0.35] blur-md" />
-                <div className="relative flex h-6 w-6 items-center justify-center rounded-full border border-accent/25 bg-accent text-canvas shadow-accent">
-                  <span className="block h-2.5 w-2.5 rounded-full bg-canvas" />
-                </div>
-              </div>
-            ) : (
-              <div className="absolute inset-x-4 top-4 rounded-[18px] border border-white/[0.06] bg-canvas/60 px-4 py-2 text-xs text-muted backdrop-blur-md">
-                כיול הסמן יתווסף לאחר מיקום ידני של הנקודה על המפה.
-              </div>
             )}
-
-            <div className="absolute inset-x-4 bottom-4 rounded-[18px] border border-white/[0.06] bg-canvas/70 px-4 py-3 backdrop-blur-md">
-              <p className="text-sm font-semibold text-ink">{primaryLocation?.name ?? "מיקום ראשי"}</p>
-              <p className="mt-1 text-xs text-muted">
-                {primaryLocation?.region ?? "האזור יוצג כאן לאחר קישור מלא לנתונים."}
-              </p>
-            </div>
           </div>
-        </Panel>
-
-        <Panel className="p-5">
-          <div className="mb-4 flex items-start justify-between gap-4">
-            <div className="space-y-2">
-              <p className="text-caption">מאזן כוח</p>
-              <h2 className="font-display text-2xl text-ink">מאזן הכוח הנוכחי</h2>
+          {primaryControllerFaction ? (
+            <FactionSigilBadge
+              name={primaryControllerFaction.displayName}
+              sigilUrl={
+                primaryControllerFaction.factionSigilUrl ??
+                primaryControllerFaction.sigil
+              }
+              themeColor={primaryControllerFaction.themeColor}
+              className="h-11 w-11 shrink-0"
+            />
+          ) : (
+            <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-amber-700/30 bg-amber-500/[0.10] text-amber-300">
+              <MapPin className="h-5 w-5" />
             </div>
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-accent/25 bg-accent/10 text-accent">
-              <Shield className="h-5 w-5" />
-            </div>
-          </div>
+          )}
+        </div>
 
-          {leadingFaction ? (
-            <div className="rounded-[24px] border border-accent/[0.15] bg-accent/[0.08] p-4">
-              <div className="flex items-center justify-between gap-3">
-                <div>
-                  <p className="text-xs text-muted">הכוח המוביל כרגע</p>
-                  <p className="mt-1 text-lg font-semibold text-ink">{leadingFaction.faction.displayName}</p>
-                </div>
-                <div className="rounded-full border border-accent/20 bg-canvas/[0.45] px-3 py-1 text-xs text-accent">
-                  {leadingFaction.latestPower.power}%
-                </div>
-              </div>
-              <div className="mt-4 h-2 overflow-hidden rounded-full bg-white/10">
-                <div
-                  className="h-full rounded-full bg-gradient-to-l from-accent to-[#f6dba4]"
-                  style={{ width: `${leadingFaction.latestPower.power}%` }}
-                />
-              </div>
-              <p className="mt-3 text-sm leading-7 text-muted">{leadingFaction.latestPower.summary}</p>
-            </div>
-          ) : null}
+        {/* Interactive mini-map centred on the primary episode location */}
+        <div className="p-4 pb-0">
+          <div
+            className="overflow-hidden rounded-[22px] border border-amber-900/28"
+            style={{
+              background: "linear-gradient(180deg, rgba(26,20,15,0.96), rgba(10,8,6,1))",
+              boxShadow: `0 20px 56px rgba(0,0,0,0.48), inset 0 0 0 1px rgba(203,165,92,0.06)`,
+            }}
+          >
+            <div className="p-2">
+              {/*
+                dir="ltr" is required — Leaflet's internals expect LTR layout.
+                The outer home screen uses dir="rtl", so we explicitly reset here.
+              */}
+              <div dir="ltr" className="relative h-56 overflow-hidden rounded-[18px] sm:h-64">
 
-          <div className="mt-4 space-y-3">
-            {factionRankings.slice(0, 3).map((entry, index) => (
-              <div
-                key={entry.faction.id}
-                className="rounded-[20px] border border-white/[0.06] bg-white/[0.04] px-4 py-3"
-              >
-                <div className="flex items-center justify-between gap-3">
-                  <div className="flex items-center gap-3">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-full border border-white/[0.06] bg-canvas/60 text-xs text-muted">
-                      {index + 1}
-                    </div>
-                    <div>
-                      <p className="font-medium text-ink">{entry.faction.displayName}</p>
-                      <p className="text-xs text-muted">{entry.latestPower.summary}</p>
+                {hasPrimaryPinCoordinates ? (
+                  <HomeMiniMapCanvas
+                    center={toMapPoint(
+                      primaryPin.imagePositionPercent.top!,
+                      primaryPin.imagePositionPercent.left!,
+                    )}
+                    markerColor={focalColor}
+                  />
+                ) : (
+                  /* Fallback when no coordinates exist for this episode's primary location */
+                  <div
+                    className="flex h-full items-center justify-center text-center"
+                    style={{ background: "rgba(14,11,8,0.92)" }}
+                  >
+                    <div className="space-y-2 px-6">
+                      <MapPin className="mx-auto h-6 w-6 text-amber-500/40" />
+                      <p className="text-xs text-stone-500">
+                        קואורדינטות מפה טרם הוגדרו למיקום זה
+                      </p>
                     </div>
                   </div>
-                  <div className="text-sm font-semibold text-accent">{entry.latestPower.power}%</div>
+                )}
+
+                {/* Parchment vignette + bottom fade */}
+                <div
+                  className="pointer-events-none absolute inset-0 rounded-[18px]"
+                  style={{
+                    background:
+                      "radial-gradient(ellipse 120% 100% at 50% 50%, transparent 48%, rgba(6,4,3,0.55) 82%, rgba(6,4,3,0.80) 100%)",
+                  }}
+                />
+
+                {/* Bottom-left episode badge */}
+                <div className="pointer-events-none absolute bottom-2.5 left-2.5 flex items-center gap-1.5 rounded-full border border-stone-600/40 bg-stone-950/78 px-2.5 py-1.5 backdrop-blur-md">
+                  <Flame className="h-3 w-3 text-amber-400/80" />
+                  <span className="text-[0.62rem] font-semibold tracking-wide text-amber-200/80">
+                    זירת הפרק
+                  </span>
+                </div>
+
+                {/* Location name label — bottom-right */}
+                {primaryLocation && (
+                  <div
+                    className="pointer-events-none absolute bottom-2.5 right-2.5 rounded-[8px] border px-2 py-1 backdrop-blur-sm"
+                    style={{
+                      borderColor: `${focalColor}45`,
+                      background: "rgba(10,8,6,0.82)",
+                    }}
+                  >
+                    <p className="text-[0.68rem] font-semibold" style={{ color: focalColor }}>
+                      {primaryLocation.name}
+                    </p>
+                  </div>
+                )}
+
+                {/* Inset frame ring */}
+                <div className="pointer-events-none absolute inset-0 rounded-[18px] ring-1 ring-inset ring-amber-700/[0.12]" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Location detail card below map */}
+        <div className="p-4 pt-3">
+          <div
+            className="rounded-[20px] border border-stone-700/38 p-4 backdrop-blur-sm"
+            style={{ background: "rgba(18,14,10,0.75)" }}
+          >
+            <p className="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-amber-300/50">
+              תיאור המיקום
+            </p>
+            <p className="mt-2 text-sm leading-7 text-stone-300">{primarySummary}</p>
+            {!hasPrimaryPinCoordinates && (
+              <p className="mt-2 text-xs text-stone-500">
+                ※ קואורדינטות מפה טרם הוגדרו למיקום זה — הסמן יופיע לאחר עדכון הנתונים.
+              </p>
+            )}
+          </div>
+        </div>
+      </Panel>
+
+      {/* ══════════════════════════════════════════════════════════════════
+          POWER BALANCE
+          ═══════════════════════════════════════════════════════════════ */}
+      <Panel className="p-5">
+        <div className="mb-5 flex items-start justify-between gap-4">
+          <div className="space-y-1.5">
+            <p className="text-caption">מאזן כוח</p>
+            <h2 className="font-display text-2xl text-ink">מאזן הכוח הנוכחי</h2>
+          </div>
+          <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-accent/25 bg-accent/[0.10] text-accent">
+            <Shield className="h-5 w-5" />
+          </div>
+        </div>
+
+        {/* Leading faction highlight */}
+        {leadingFaction && (
+          <div
+            className="mb-4 rounded-[22px] border p-4"
+            style={{
+              borderColor: `${leadingFaction.faction.themeColor}30`,
+              background: `linear-gradient(135deg, ${leadingFaction.faction.themeColor}12, ${leadingFaction.faction.themeColor}06)`,
+            }}
+          >
+            <div className="flex items-center justify-between gap-3">
+              <div className="flex items-center gap-3">
+                <FactionSigilBadge
+                  name={leadingFaction.faction.displayName}
+                  sigilUrl={
+                    leadingFaction.faction.factionSigilUrl ?? leadingFaction.faction.sigil
+                  }
+                  themeColor={leadingFaction.faction.themeColor}
+                  className="h-10 w-10"
+                />
+                <div>
+                  <p className="text-[0.68rem] text-stone-400">הכוח המוביל כרגע</p>
+                  <p className="text-base font-semibold text-ink">
+                    {leadingFaction.faction.displayName}
+                  </p>
                 </div>
               </div>
-            ))}
-          </div>
-        </Panel>
-
-        <Panel className="p-5">
-          <div className="mb-4 flex items-start justify-between gap-4">
-            <div className="space-y-2">
-              <p className="text-caption">אירועים אחרונים</p>
-              <h2 className="font-display text-2xl text-ink">אירועים בולטים עד כאן</h2>
+              <div
+                className="rounded-full border px-3 py-1 text-xs font-semibold"
+                style={{
+                  borderColor: `${leadingFaction.faction.themeColor}35`,
+                  color: leadingFaction.faction.themeColor,
+                  background: `${leadingFaction.faction.themeColor}12`,
+                }}
+              >
+                {leadingFaction.latestPower.power}%
+              </div>
             </div>
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-danger/20 bg-danger/10 text-[#f2c0c7]">
-              <Swords className="h-5 w-5" />
+            {/* Power bar — faction-colored */}
+            <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-white/[0.07]">
+              <div
+                className="h-full rounded-full transition-all duration-700"
+                style={{
+                  width: `${leadingFaction.latestPower.power}%`,
+                  background: `linear-gradient(90deg, ${leadingFaction.faction.themeColor}80, ${leadingFaction.faction.themeColor})`,
+                }}
+              />
             </div>
+            <p className="mt-2 text-xs leading-6 text-muted">{leadingFaction.latestPower.summary}</p>
           </div>
+        )}
 
-          <div className="space-y-3">
-            {recentEvents.map((event) => (
+        {/* Faction ranking list */}
+        <div className="space-y-2.5">
+          {factionRankings.slice(0, 3).map((entry, index) => (
+            <div
+              key={entry.faction.id}
+              className="flex items-center gap-3 rounded-[18px] border px-3.5 py-3"
+              style={{
+                borderColor: `${entry.faction.themeColor}20`,
+                background: `linear-gradient(135deg, ${entry.faction.themeColor}08, rgba(20,16,12,0.70))`,
+              }}
+            >
+              <span
+                className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold"
+                style={{
+                  border: `1px solid ${entry.faction.themeColor}30`,
+                  color: entry.faction.themeColor,
+                  background: `${entry.faction.themeColor}14`,
+                }}
+              >
+                {index + 1}
+              </span>
+              <div className="min-w-0 flex-1">
+                <p className="text-sm font-medium text-ink">{entry.faction.displayName}</p>
+                <div className="mt-1.5 h-1 overflow-hidden rounded-full bg-white/[0.06]">
+                  <div
+                    className="h-full rounded-full"
+                    style={{
+                      width: `${entry.latestPower.power}%`,
+                      background: entry.faction.themeColor,
+                      opacity: 0.7,
+                    }}
+                  />
+                </div>
+              </div>
+              <span
+                className="shrink-0 text-sm font-semibold"
+                style={{ color: entry.faction.themeColor }}
+              >
+                {entry.latestPower.power}%
+              </span>
+            </div>
+          ))}
+        </div>
+      </Panel>
+
+      {/* ══════════════════════════════════════════════════════════════════
+          RECENT EVENTS — tone-matched glassmorphism
+          ═══════════════════════════════════════════════════════════════ */}
+      <Panel className="p-5">
+        <div className="mb-5 flex items-start justify-between gap-4">
+          <div className="space-y-1.5">
+            <p className="text-caption">אירועים אחרונים</p>
+            <h2 className="font-display text-2xl text-ink">אירועים בולטים עד כאן</h2>
+          </div>
+          <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-danger/22 bg-danger/[0.10] text-[#f2c0c7]">
+            <Swords className="h-5 w-5" />
+          </div>
+        </div>
+
+        <div className="space-y-2.5">
+          {recentEvents.map((event) => {
+            const t = toneStyles[event.tone];
+            return (
               <div
                 key={event.id}
                 className={cn(
-                    "rounded-[20px] border px-4 py-3 backdrop-blur-md",
-                  toneClasses[event.tone],
+                  "rounded-[20px] border px-4 py-3.5 backdrop-blur-md",
+                  t.wrapper,
                 )}
               >
-                <div className="flex items-center justify-between gap-3">
-                  <p className="font-medium">{event.title}</p>
-                  <ArrowUpRight className="h-4 w-4 opacity-75" />
+                <div className="flex items-start gap-3">
+                  {/* Tone dot */}
+                  <div className={cn("mt-1.5 h-2 w-2 shrink-0 rounded-full", t.dot)} />
+                  <div className="min-w-0 flex-1">
+                    <div className="flex items-start justify-between gap-3">
+                      <p className={cn("text-sm font-semibold leading-6", t.title)}>
+                        {event.title}
+                      </p>
+                      <ArrowUpRight className="mt-0.5 h-4 w-4 shrink-0 text-stone-500" />
+                    </div>
+                    {event.description !== event.title && (
+                      <p className="mt-1 text-xs leading-6 text-stone-400">
+                        {event.description}
+                      </p>
+                    )}
+                  </div>
                 </div>
-                {event.description !== event.title ? (
-                  <p className="mt-2 text-sm leading-7 text-muted">{event.description}</p>
-                ) : null}
               </div>
-            ))}
-          </div>
-        </Panel>
+            );
+          })}
+          {recentEvents.length === 0 && (
+            <p className="text-sm text-muted">אין אירועים מוגדרים עד נקודת הזמן הנוכחית.</p>
+          )}
+        </div>
+      </Panel>
 
-        <Panel className="p-5">
-          <p className="text-caption">הקשר הפרק</p>
-          <h2 className="mt-3 font-display text-2xl text-ink">מוקדי הפרק הפעיל</h2>
+      {/* ══════════════════════════════════════════════════════════════════
+          EPISODE CONTEXT — characters + locations
+          ═══════════════════════════════════════════════════════════════ */}
+      <Panel className="p-5">
+        <p className="text-caption">הקשר הפרק</p>
+        <h2 className="mt-1.5 font-display text-2xl text-ink">מוקדי הפרק הפעיל</h2>
 
-          <div className="mt-4 grid gap-4">
-            <div className="rounded-[22px] border border-white/[0.06] bg-white/[0.04] p-4">
-              <p className="text-xs text-muted">דמויות מרכזיות</p>
-              <div className="mt-3 flex flex-wrap gap-2">
-                {focusCharacters.map((character) => (
-                  <span
-                    key={character.id}
-                    className="rounded-full border border-line/10 bg-canvas/50 px-3 py-1.5 text-xs text-ink"
-                  >
-                    {character.name}
-                  </span>
-                ))}
-              </div>
+        <div className="mt-4 grid gap-3">
+          {/* Characters */}
+          <div
+            className="rounded-[20px] border border-stone-700/35 p-4"
+            style={{ background: "rgba(20,16,12,0.70)" }}
+          >
+            <div className="mb-3 flex items-center gap-2">
+              <Users className="h-3.5 w-3.5 text-amber-400/70" />
+              <p className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-stone-400">
+                דמויות מרכזיות
+              </p>
             </div>
-
-            <div className="rounded-[22px] border border-white/[0.06] bg-white/[0.04] p-4">
-              <p className="text-xs text-muted">מיקומים ראשיים</p>
-              <div className="mt-3 flex flex-wrap gap-2">
-                {mainLocationLabels.map((locationLabel) => (
-                  <span
-                    key={locationLabel}
-                    className="rounded-full border border-line/10 bg-canvas/50 px-3 py-1.5 text-xs text-ink"
-                  >
-                    {locationLabel}
-                  </span>
-                ))}
-              </div>
+            <div className="flex flex-wrap gap-2">
+              {focusCharacters.map((c) => (
+                <span
+                  key={c.id}
+                  className="rounded-full border border-stone-700/38 bg-stone-900/60 px-3 py-1.5 text-xs font-medium text-stone-200"
+                >
+                  {c.name}
+                </span>
+              ))}
+              {focusCharacters.length === 0 && (
+                <span className="text-xs text-stone-500">לא הוגדרו דמויות ממוקדות.</span>
+              )}
             </div>
           </div>
-        </Panel>
-      </section>
 
-    </>
+          {/* Locations */}
+          <div
+            className="rounded-[20px] border border-stone-700/35 p-4"
+            style={{ background: "rgba(20,16,12,0.70)" }}
+          >
+            <div className="mb-3 flex items-center gap-2">
+              <MapPin className="h-3.5 w-3.5 text-amber-400/70" />
+              <p className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-stone-400">
+                מיקומים ראשיים
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {mainLocationLabels.map((label) => (
+                <span
+                  key={label}
+                  className="rounded-full border border-stone-700/38 bg-stone-900/60 px-3 py-1.5 text-xs font-medium text-stone-200"
+                >
+                  {label}
+                </span>
+              ))}
+              {mainLocationLabels.length === 0 && (
+                <span className="text-xs text-stone-500">לא הוגדרו מיקומים.</span>
+              )}
+            </div>
+          </div>
+        </div>
+      </Panel>
+
+    </section>
   );
 }

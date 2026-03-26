@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Frank_Ruhl_Libre, Heebo } from "next/font/google";
 
 import { AppShell } from "@/components/layout/app-shell";
+import { ChunkLoadGuard } from "@/components/runtime/chunk-load-guard";
 import { Providers } from "@/app/providers";
 
 import "leaflet/dist/leaflet.css";
@@ -43,6 +44,7 @@ export default function RootLayout({
     <html lang="he" dir="rtl" suppressHydrationWarning>
       <body className={`${heebo.variable} ${frankRuhlLibre.variable} bg-canvas text-ink antialiased`}>
         <Providers>
+          <ChunkLoadGuard />
           <AppShell>{children}</AppShell>
         </Providers>
       </body>
