@@ -3,7 +3,7 @@
 import { useEffect, useMemo } from "react";
 import type { LatLngBoundsExpression } from "leaflet";
 import L from "leaflet";
-import { ImageOverlay, MapContainer, Marker, Popup, Tooltip, useMap } from "react-leaflet";
+import { ImageOverlay, MapContainer, Marker, Popup, Tooltip, useMap, ZoomControl } from "react-leaflet";
 
 import type { MapPinKind } from "@/lib/map-presentation";
 import { getProxiedExternalImageUrl } from "@/lib/media";
@@ -214,19 +214,29 @@ function MapLocationMarker({ pin }: { pin: FantasyMapPin }) {
       >
         <div
           dir="rtl"
-          className="space-y-1.5 min-w-max whitespace-nowrap text-right"
-          style={{ whiteSpace: "nowrap", direction: "rtl" }}
+          className="space-y-2 text-right"
+          style={{ direction: "rtl" }}
         >
-          <p className="whitespace-nowrap font-display text-lg leading-none text-amber-100">{pin.name}</p>
-          <p className="whitespace-nowrap text-[0.65rem] text-stone-400 tracking-wide">{pin.region}</p>
+          <div>
+            <p className="font-display text-[1.05rem] leading-snug text-amber-100">{pin.name}</p>
+            <p className="text-[0.62rem] tracking-wide text-stone-500 mt-0.5">{pin.region}</p>
+          </div>
           {pin.controllerFaction && (
-            <p className="whitespace-nowrap text-[0.7rem] text-amber-300/80">
-              מוקד כוח משויך: {pin.controllerFaction.name}
+            <div className="flex items-center gap-1.5 justify-end">
+              <p className="text-[0.68rem] text-amber-300/75">
+                {pin.controllerFaction.name}
+              </p>
+              <span
+                className="inline-block h-1.5 w-1.5 rounded-full"
+                style={{ background: pin.controllerFaction.themeColor }}
+              />
+            </div>
+          )}
+          {pin.summary && (
+            <p className="text-[0.75rem] leading-[1.65] text-stone-300/90 pt-0.5 border-t border-stone-700/40">
+              {pin.summary}
             </p>
           )}
-          <p className="max-w-[14rem] whitespace-normal text-xs leading-6 text-stone-300 pt-0.5">
-            {pin.summary}
-          </p>
         </div>
       </Popup>
     </Marker>
@@ -264,7 +274,7 @@ export function FantasyMapCanvas({ pins, focusLocationId }: FantasyMapCanvasProp
   }, [focusLocationId, pins]);
 
   return (
-    <div dir="ltr" className="ltr relative h-full w-full">
+    <div dir="ltr" className="ltr relative h-full w-full" aria-label="מפת ווסטרוז ואסוס">
       {/* Inner wrapper — carries the parchment vignette via CSS class */}
       <div className="map-parchment-container relative h-full w-full overflow-hidden rounded-[inherit] bg-stone-950">
 
@@ -273,13 +283,15 @@ export function FantasyMapCanvas({ pins, focusLocationId }: FantasyMapCanvasProp
           crs={L.CRS.Simple}
           bounds={MAP_BOUNDS}
           attributionControl={false}
-          zoomControl
+          zoomControl={false}
           minZoom={-1.5}
           maxZoom={2}
           zoomSnap={0.25}
           wheelPxPerZoomLevel={120}
           scrollWheelZoom="center"
         >
+          {/* Zoom control on bottom-right — more natural for the RTL UI */}
+          <ZoomControl position="bottomright" />
           <MapViewController focusPoint={focusPoint} />
           <ImageOverlay url="/images/world-map.jpg" bounds={MAP_BOUNDS} className="select-none" />
           {pins.map((pin) => (
@@ -319,6 +331,100 @@ export function FantasyMapCanvas({ pins, focusLocationId }: FantasyMapCanvasProp
             zIndex: 9999,
           }}
         />
+
+        {/* ── Map legend — top-left corner ──────────────────────────────── */}
+        <div
+          dir="rtl"
+          className="pointer-events-none absolute right-3 top-3 rounded-[14px] border border-stone-700/40 px-3 py-2.5 backdrop-blur-md"
+          style={{
+            background: "rgba(14,11,8,0.82)",
+            zIndex: 10000,
+            minWidth: "120px",
+          }}
+        >
+          <p className="mb-1.5 text-[0.55rem] font-semibold uppercase tracking-[0.22em] text-amber-400/50">
+            מקרא
+          </p>
+          <div className="space-y-1.5">
+            {/* Stronghold */}
+            <div className="flex items-center gap-2">
+              <span
+                className="flex h-5 w-5 shrink-0 items-center justify-center rounded-[6px] border"
+                style={{
+                  background: "linear-gradient(180deg,rgba(42,33,25,0.98),rgba(18,14,10,0.97))",
+                  borderColor: "rgba(203,165,94,0.45)",
+                  color: "rgba(203,165,94,0.9)",
+                }}
+              >
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" strokeWidth="1.65" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M4 20V8.5h3V5h2.4v3.5h5.2V5H17v3.5h3V20" />
+                  <path d="M9 20v-4.8h6V20" />
+                </svg>
+              </span>
+              <span className="text-[0.68rem] text-stone-400">מצודה</span>
+            </div>
+            {/* City */}
+            <div className="flex items-center gap-2">
+              <span
+                className="flex h-5 w-5 shrink-0 items-center justify-center rounded-[6px] border"
+                style={{
+                  background: "linear-gradient(180deg,rgba(42,33,25,0.98),rgba(18,14,10,0.97))",
+                  borderColor: "rgba(160,140,100,0.40)",
+                  color: "rgba(180,155,100,0.85)",
+                }}
+              >
+                <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" strokeWidth="1.65" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M12 3.5 18 9l-1.8 10.5H7.8L6 9l6-5.5Z" />
+                </svg>
+              </span>
+              <span className="text-[0.68rem] text-stone-400">עיר</span>
+            </div>
+            {/* Region */}
+            <div className="flex items-center gap-2">
+              <span
+                className="flex h-5 w-5 shrink-0 items-center justify-center rounded-[6px] border"
+                style={{
+                  background: "linear-gradient(180deg,rgba(42,33,25,0.98),rgba(18,14,10,0.97))",
+                  borderColor: "rgba(130,120,95,0.35)",
+                  color: "rgba(150,135,100,0.75)",
+                }}
+              >
+                <svg viewBox="0 0 24 24" width="9" height="9" fill="none" stroke="currentColor" strokeWidth="1.65" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M12 3.5 19 10l-7 10-7-10 7-6.5Z" />
+                </svg>
+              </span>
+              <span className="text-[0.68rem] text-stone-400">אזור</span>
+            </div>
+            {/* Primary (episode focus) */}
+            <div className="flex items-center gap-2">
+              <span
+                className="flex h-5 w-5 shrink-0 items-center justify-center rounded-[6px] border"
+                style={{
+                  background: "linear-gradient(180deg,rgba(52,40,27,0.98),rgba(22,16,11,0.97))",
+                  borderColor: "rgba(241,213,154,0.75)",
+                  color: "rgba(252,239,208,0.98)",
+                  boxShadow: "0 0 8px rgba(203,165,94,0.20)",
+                }}
+              >
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M12 3.5 18 6v5c0 4-2.7 7-6 9-3.3-2-6-5-6-9V6l6-2.5Z" />
+                </svg>
+              </span>
+              <span className="text-[0.68rem] text-amber-300/70">מוקד פרק</span>
+            </div>
+          </div>
+        </div>
+
+        {/* ── Hint bar — bottom-left corner ─────────────────────────────── */}
+        <div
+          dir="rtl"
+          className="pointer-events-none absolute bottom-12 left-3 rounded-[10px] border border-stone-700/30 px-2.5 py-1 backdrop-blur-sm"
+          style={{ background: "rgba(12,9,6,0.72)", zIndex: 10000 }}
+        >
+          <p className="text-[0.58rem] text-stone-500">
+            גלול לזום · לחץ על סמן לפרטים
+          </p>
+        </div>
 
       </div>
     </div>

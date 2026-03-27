@@ -1,6 +1,6 @@
 "use client";
 
-import { Activity, Search, Shield, SlidersHorizontal, User } from "lucide-react";
+import { MapPin, Search, Shield, SlidersHorizontal, User } from "lucide-react";
 import { useMemo, useState } from "react";
 
 import { CharacterPortrait } from "@/components/characters/character-portrait";
@@ -162,10 +162,13 @@ export function CharactersScreen() {
                             focus-within:border-amber-800/40 focus-within:bg-stone-900/70 transition">
             <Search className="h-4 w-4 shrink-0 text-stone-500" />
             <input
+              type="search"
+              dir="rtl"
               value={query}
               onChange={(event) => setQuery(event.target.value)}
               placeholder="חיפוש לפי שם, בית, מיקום או סטטוס"
               className="w-full bg-transparent text-[0.9rem] text-stone-100 outline-none placeholder:text-stone-500"
+              aria-label="חיפוש דמויות"
             />
           </label>
 
@@ -219,6 +222,7 @@ export function CharactersScreen() {
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
           {sortedCharacters.map((character) => {
             const faction = factions.find((item) => item.id === character.latestState.affiliationId);
+            const locationName = locations.find((l) => l.id === character.latestState.locationId)?.name ?? null;
             const factionColor = faction?.themeColor ?? "#a07840";
 
             return (
@@ -320,18 +324,41 @@ export function CharactersScreen() {
                     )}
                   </div>
 
-                  {/* Summary block */}
-                  <div
-                    className="rounded-[16px] border border-stone-800/60 px-4 py-3.5"
-                    style={{ background: "rgba(18,14,10,0.75)" }}
-                  >
-                    <p className="text-[0.64rem] font-semibold uppercase tracking-[0.24em] text-amber-300/45 mb-2">
-                      תיאור נוכחי
+                  {/* Location row */}
+                  {locationName && (
+                    <div
+                      className="flex items-center gap-2.5 rounded-[16px] border border-stone-800/60 px-3.5 py-2.5 backdrop-blur-sm"
+                      style={{ background: "rgba(22,17,13,0.80)" }}
+                    >
+                      <MapPin className="h-3.5 w-3.5 shrink-0 text-stone-500" strokeWidth={1.7} />
+                      <span className="text-[0.82rem] text-stone-300">
+                        <span className="text-stone-500">מיקום: </span>
+                        {locationName}
+                      </span>
+                    </div>
+                  )}
+
+                  {/* Base character description */}
+                  {character.baseDescription && (
+                    <p className="text-[0.81rem] leading-[1.8] text-stone-400/90 px-1">
+                      {character.baseDescription}
                     </p>
-                    <p className="text-[0.82rem] leading-[1.8] text-stone-300">
-                      {character.latestState.summary}
-                    </p>
-                  </div>
+                  )}
+
+                  {/* Episode-aware current state */}
+                  {character.latestState.summary && (
+                    <div
+                      className="rounded-[14px] border border-amber-900/25 px-4 py-3"
+                      style={{ background: "rgba(18,14,10,0.75)" }}
+                    >
+                      <p className="text-[0.60rem] font-semibold uppercase tracking-[0.24em] text-amber-400/50 mb-1.5">
+                        עד פרק {character.latestState.episodeId.replace('S0','S').replace('E0','E')}
+                      </p>
+                      <p className="text-[0.82rem] leading-[1.75] text-stone-300">
+                        {character.latestState.summary}
+                      </p>
+                    </div>
+                  )}
 
                 </div>
               </article>

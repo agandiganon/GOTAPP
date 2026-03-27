@@ -18,13 +18,13 @@
         "episodeId": "S06E03",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "הוצא להורג על חלקו במרד;",
+        "summary": "הוצא להורג על חלקו במרד",
         "affiliationId": "night-watch",
         "locationId": "castle-black",
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "areo-hota",
@@ -36,12 +36,12 @@
         "episodeId": "S06E01",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "נהרג במהלך ההפיכה;",
+        "summary": "נהרג במהלך ההפיכה",
         "locationId": "castle-black",
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "arya-stark",
@@ -184,7 +184,7 @@
         "episodeId": "S06E06",
         "status": "injured",
         "statusLabel": "פצועה / נרדפת",
-        "summary": "לאחר כישלון המשימה;",
+        "summary": "לאחר כישלון המשימה",
         "affiliationId": "stark",
         "locationId": "land-of-always-winter",
         "importance": 78
@@ -193,7 +193,7 @@
         "episodeId": "S06E07",
         "status": "away",
         "statusLabel": "בדרך חזרה",
-        "summary": "מזמינה מעבר ימי;",
+        "summary": "מזמינה מעבר ימי",
         "affiliationId": "stark",
         "locationId": "riverrun",
         "importance": 78
@@ -202,7 +202,7 @@
         "episodeId": "S06E08",
         "status": "active",
         "statusLabel": "חופשייה / שבה לזהותה",
-        "summary": "מנתקת את עצמה מן הבית השחור והלבן;",
+        "summary": "מנתקת את עצמה מן הבית השחור והלבן",
         "affiliationId": "stark",
         "locationId": "braavos",
         "importance": 78
@@ -274,13 +274,13 @@
         "episodeId": "S06E02",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "נהרג בעימות עם יורון;",
+        "summary": "נהרג בעימות עם יורון",
         "affiliationId": "greyjoy",
         "locationId": "castle-black",
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "barristan-selmy",
@@ -307,7 +307,7 @@
         "importance": 86
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/b/be/Barristan_Selmy.jpg/revision/latest"
   },
   {
     "id": "benjen-stark",
@@ -319,7 +319,7 @@
         "episodeId": "S06E06",
         "status": "active",
         "statusLabel": "חי / חזר לזירה",
-        "summary": "מציל את בראן ומירה;",
+        "summary": "מציל את בראן ומירה",
         "locationId": "land-of-always-winter",
         "importance": 78
       },
@@ -342,7 +342,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "beric-dondarrion",
@@ -369,7 +369,7 @@
         "importance": 84
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "blackfish-tully",
@@ -381,12 +381,12 @@
         "episodeId": "S06E08",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "נהרג בהתנגדות בנהרן;",
+        "summary": "נהרג בהתנגדות בנהרן",
         "locationId": "braavos",
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "bowen-marsh",
@@ -398,12 +398,12 @@
         "episodeId": "S06E03",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "הוצא להורג;",
+        "summary": "הוצא להורג",
         "locationId": "castle-black",
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "bran-stark",
@@ -520,7 +520,7 @@
         "importance": 100
       }
     ],
-    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/b/b9/Bran_Stark_Season_3.jpg/revision/latest?cb=20130402191659"
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/6/62/Bran_Main.jpg/revision/latest?cb=20160720033956"
   },
   {
     "id": "brienne-of-tarth",
@@ -590,7 +590,7 @@
         "importance": 82
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "bronn",
@@ -638,12 +638,12 @@
         "episodeId": "S06E07",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "נרצח בטבח הכפר;",
+        "summary": "נרצח בטבח הכפר",
         "locationId": "riverrun",
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "catelyn-stark",
@@ -745,7 +745,7 @@
         "episodeId": "S06E10",
         "status": "ruler",
         "statusLabel": "מלכה",
-        "summary": "מוכתרת למלכה;",
+        "summary": "מוכתרת למלכה",
         "affiliationId": "lannister",
         "locationId": "kings-landing",
         "importance": 78
@@ -796,7 +796,7 @@
         "importance": 32
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "daario-naharis",
@@ -814,7 +814,7 @@
         "importance": 75
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "daenerys-dragons",
@@ -841,7 +841,7 @@
         "locationId": "house-of-the-undying"
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "daenerys-targaryen",
@@ -934,7 +934,7 @@
         "episodeId": "S06E01",
         "status": "captive",
         "statusLabel": "בשבי / בליווי כפוי",
-        "summary": "נלקחת אל ואייס דותראק;",
+        "summary": "נלקחת אל ואייס דותראק",
         "affiliationId": "targaryen",
         "locationId": "castle-black",
         "importance": 78
@@ -1093,7 +1093,7 @@
         "importance": 90
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "doran-martell",
@@ -1105,12 +1105,12 @@
         "episodeId": "S06E01",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "נרצח בהפיכת אלריה;",
+        "summary": "נרצח בהפיכת אלריה",
         "locationId": "castle-black",
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "doreah",
@@ -1128,7 +1128,7 @@
         "locationId": "qarth"
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "dothraki-khals",
@@ -1145,7 +1145,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "eddard-stark",
@@ -1226,7 +1226,7 @@
         "importance": 64
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "ellaria-sand",
@@ -1253,7 +1253,7 @@
         "importance": 72
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "euron-greyjoy",
@@ -1273,7 +1273,7 @@
         "episodeId": "S06E04",
         "status": "ruler",
         "statusLabel": "שליט איי הברזל",
-        "summary": "נבחר להוביל;",
+        "summary": "נבחר להוביל",
         "locationId": "castle-black",
         "importance": 78
       },
@@ -1313,7 +1313,7 @@
         "importance": 90
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "gendry",
@@ -1400,7 +1400,7 @@
         "importance": 84
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "gilly",
@@ -1426,7 +1426,7 @@
         "importance": 70
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "grenn",
@@ -1444,7 +1444,7 @@
         "importance": 58
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "grey-worm",
@@ -1471,7 +1471,7 @@
         "importance": 86
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "harald-karstark",
@@ -1483,12 +1483,12 @@
         "episodeId": "S06E09",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "נהרג בקרב;",
+        "summary": "נהרג בקרב",
         "locationId": "meereen",
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "hardhome-wildlings",
@@ -1506,7 +1506,7 @@
         "importance": 46
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "high-septon",
@@ -1523,7 +1523,7 @@
         "locationId": "kings-landing"
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "high-sparrow",
@@ -1544,7 +1544,7 @@
         "episodeId": "S06E10",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "נהרג בהשמדת הספט;",
+        "summary": "נהרג בהשמדת הספט",
         "affiliationId": "faith-militant",
         "locationId": "kings-landing",
         "importance": 78
@@ -1559,7 +1559,7 @@
         "importance": 96
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "hizdahr-zo-loraq",
@@ -1577,7 +1577,7 @@
         "importance": 64
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "hodor",
@@ -1589,12 +1589,12 @@
         "episodeId": "S06E05",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "נהרג בעת עיכוב ההלכים הלבנים;",
+        "summary": "נהרג בעת עיכוב ההלכים הלבנים",
         "locationId": "three-eyed-raven-cave",
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "irri",
@@ -1612,7 +1612,7 @@
         "locationId": "qarth"
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "jaime-lannister",
@@ -1687,7 +1687,7 @@
         "episodeId": "S06E06",
         "status": "dismissed",
         "statusLabel": "שינוי תפקיד",
-        "summary": "מורחק ממשמר המלך ונשלח לנהרן;",
+        "summary": "מורחק ממשמר המלך ונשלח לנהרן",
         "affiliationId": "lannister",
         "locationId": "land-of-always-winter",
         "importance": 78
@@ -1792,7 +1792,7 @@
         "importance": 62
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "jaqen-hghar",
@@ -1825,7 +1825,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "jeor-mormont",
@@ -1852,7 +1852,7 @@
         "importance": 74
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "joffrey-baratheon",
@@ -1915,7 +1915,7 @@
         "importance": 72
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "jon-arryn",
@@ -1933,7 +1933,7 @@
         "importance": 70
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/a/a1/Jon_Arryn_Hand.png/revision/latest"
   },
   {
     "id": "jon-snow",
@@ -2044,7 +2044,7 @@
         "episodeId": "S06E02",
         "status": "active",
         "statusLabel": "חי",
-        "summary": "הושב לחיים בידי מליסנדרה;",
+        "summary": "הושב לחיים בידי מליסנדרה",
         "affiliationId": "night-watch",
         "locationId": "castle-black",
         "importance": 78
@@ -2062,7 +2062,7 @@
         "episodeId": "S06E03",
         "status": "dismissed",
         "statusLabel": "חדל להיות המפקד העליון של משמר הלילה",
-        "summary": "חדל להיות המפקד העליון של משמר הלילה;",
+        "summary": "חדל להיות המפקד העליון של משמר הלילה",
         "affiliationId": "night-watch",
         "locationId": "castle-black",
         "importance": 78
@@ -2097,7 +2097,7 @@
         "episodeId": "S06E10",
         "status": "ruler",
         "statusLabel": "מלך בצפון",
-        "summary": "מוכרז מלך בצפון;",
+        "summary": "מוכרז מלך בצפון",
         "affiliationId": "night-watch",
         "locationId": "kings-landing",
         "importance": 78
@@ -2241,7 +2241,7 @@
         "episodeId": "S06E05",
         "status": "away",
         "statusLabel": "נפרד מדאינריז / במסע לחיפוש ריפוי",
-        "summary": "יוצא לבדו;",
+        "summary": "יוצא לבדו",
         "affiliationId": "targaryen",
         "locationId": "three-eyed-raven-cave",
         "importance": 78
@@ -2283,7 +2283,7 @@
         "importance": 94
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "jory-cassel",
@@ -2301,7 +2301,7 @@
         "importance": 48
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/8/87/Jory_profile.jpg/revision/latest"
   },
   {
     "id": "karl-tanner",
@@ -2319,7 +2319,7 @@
         "importance": 37
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "karsi",
@@ -2337,7 +2337,7 @@
         "importance": 52
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "kevan-lannister",
@@ -2349,7 +2349,7 @@
         "episodeId": "S06E10",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "נהרג בספט;",
+        "summary": "נהרג בספט",
         "locationId": "kings-landing",
         "importance": 78
       },
@@ -2363,7 +2363,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "khal-drogo",
@@ -2399,7 +2399,7 @@
         "importance": 88
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/2/21/Khal_Drogo_infobox_promo.jpg/revision/latest"
   },
   {
     "id": "kraznys-mo-nakloz",
@@ -2424,7 +2424,7 @@
         "importance": 40
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "lady-crane",
@@ -2436,12 +2436,12 @@
         "episodeId": "S06E08",
         "status": "dead",
         "statusLabel": "מתה",
-        "summary": "נהרגה במהלך המרדף;",
+        "summary": "נהרגה במהלך המרדף",
         "locationId": "braavos",
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "lady-direwolf",
@@ -2458,7 +2458,7 @@
         "importance": 32
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "lancel-lannister",
@@ -2485,7 +2485,7 @@
         "importance": 56
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "leaf",
@@ -2497,12 +2497,12 @@
         "episodeId": "S06E05",
         "status": "dead",
         "statusLabel": "מתה",
-        "summary": "נהרגת במנוסה;",
+        "summary": "נהרגת במנוסה",
         "locationId": "three-eyed-raven-cave",
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "lommy",
@@ -2519,7 +2519,7 @@
         "locationId": "riverlands-road-north"
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "loras-tyrell",
@@ -2540,7 +2540,7 @@
         "episodeId": "S06E10",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "נהרג בספט;",
+        "summary": "נהרג בספט",
         "affiliationId": "tyrell",
         "locationId": "kings-landing",
         "importance": 78
@@ -2555,7 +2555,7 @@
         "importance": 86
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "lord-of-bones",
@@ -2573,7 +2573,7 @@
         "importance": 32
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "lyanna-mormont",
@@ -2585,7 +2585,7 @@
         "episodeId": "S06E07",
         "status": "active",
         "statusLabel": "בעלת ברית",
-        "summary": "מצטרפת למחנה סטארק;",
+        "summary": "מצטרפת למחנה סטארק",
         "locationId": "riverrun",
         "importance": 78
       },
@@ -2608,7 +2608,7 @@
         "importance": 88
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "lysa-arryn",
@@ -2635,7 +2635,7 @@
         "importance": 75
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "mace-tyrell",
@@ -2647,7 +2647,7 @@
         "episodeId": "S06E10",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "נהרג בספט;",
+        "summary": "נהרג בספט",
         "locationId": "kings-landing",
         "importance": 78
       },
@@ -2661,7 +2661,7 @@
         "importance": 80
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "maester-aemon",
@@ -2679,7 +2679,7 @@
         "importance": 71
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "maester-cressen",
@@ -2697,7 +2697,7 @@
         "locationId": "dragonstone"
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "maester-luwin",
@@ -2715,7 +2715,7 @@
         "locationId": "winterfell"
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "mag-mar",
@@ -2733,7 +2733,7 @@
         "importance": 34
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "mance-rayder",
@@ -2769,7 +2769,7 @@
         "importance": 86
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "margaery-tyrell",
@@ -2790,7 +2790,7 @@
         "episodeId": "S06E10",
         "status": "dead",
         "statusLabel": "מתה",
-        "summary": "נהרגה בספט;",
+        "summary": "נהרגה בספט",
         "affiliationId": "tyrell",
         "locationId": "kings-landing",
         "importance": 78
@@ -2805,7 +2805,7 @@
         "importance": 96
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "matthos-seaworth",
@@ -2823,7 +2823,7 @@
         "locationId": "blackwater-bay"
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "meera-reed",
@@ -2850,7 +2850,7 @@
         "importance": 68
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "melisandre",
@@ -2880,7 +2880,7 @@
         "episodeId": "S06E10",
         "status": "away",
         "statusLabel": "מגורשת",
-        "summary": "נשלחת מווינטרפל;",
+        "summary": "נשלחת מווינטרפל",
         "affiliationId": "baratheon-stannis",
         "locationId": "kings-landing",
         "importance": 78
@@ -2904,7 +2904,7 @@
         "importance": 88
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "meryn-trant",
@@ -2922,7 +2922,7 @@
         "importance": 48
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "mirri-maz-duur",
@@ -2940,7 +2940,7 @@
         "importance": 44
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/f/f3/Mirri_Maz_Duur_1x09.png/revision/latest"
   },
   {
     "id": "mossador",
@@ -2958,7 +2958,7 @@
         "importance": 62
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "mycah",
@@ -2975,7 +2975,7 @@
         "importance": 36
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/9/9f/Mycah_infobox.jpg/revision/latest"
   },
   {
     "id": "myranda",
@@ -2993,7 +2993,7 @@
         "importance": 44
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "myrcella-baratheon",
@@ -3020,7 +3020,7 @@
         "importance": 74
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "nymeria-sand",
@@ -3038,7 +3038,7 @@
         "importance": 74
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "obara-sand",
@@ -3056,7 +3056,7 @@
         "importance": 74
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "oberyn-martell",
@@ -3092,7 +3092,7 @@
         "importance": 94
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "olenna-tyrell",
@@ -3136,7 +3136,7 @@
         "importance": 92
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "olly",
@@ -3148,12 +3148,12 @@
         "episodeId": "S06E03",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "הוצא להורג;",
+        "summary": "הוצא להורג",
         "locationId": "castle-black",
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "one-of-the-thirteen",
@@ -3170,7 +3170,7 @@
         "locationId": "qarth"
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "orell",
@@ -3197,7 +3197,7 @@
         "importance": 42
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "osha",
@@ -3217,12 +3217,12 @@
         "episodeId": "S06E04",
         "status": "dead",
         "statusLabel": "מתה",
-        "summary": "נהרגת בווינטרפל;",
+        "summary": "נהרגת בווינטרפל",
         "locationId": "castle-black",
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/5/5c/Osha.jpg/revision/latest"
   },
   {
     "id": "othell-yarwyck",
@@ -3239,7 +3239,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "petyr-baelish",
@@ -3301,7 +3301,7 @@
         "importance": 55
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "polliver",
@@ -3319,7 +3319,7 @@
         "importance": 28
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "pyat-pree",
@@ -3336,7 +3336,7 @@
         "locationId": "house-of-the-undying"
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "pycelle",
@@ -3357,7 +3357,7 @@
         "episodeId": "S06E10",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "נרצח;",
+        "summary": "נרצח",
         "affiliationId": "lannister",
         "locationId": "kings-landing",
         "importance": 78
@@ -3372,7 +3372,7 @@
         "importance": 76
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "pyp",
@@ -3390,7 +3390,7 @@
         "importance": 49
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "qhorin-halfhand",
@@ -3408,7 +3408,7 @@
         "locationId": "beyond-the-wall-haunted-forest"
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "qotho",
@@ -3426,7 +3426,7 @@
         "importance": 36
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/a/a5/Qotho_1x08.png/revision/latest"
   },
   {
     "id": "rakharo",
@@ -3444,7 +3444,7 @@
         "locationId": "red-waste"
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "ramsay-snow",
@@ -3483,13 +3483,13 @@
         "episodeId": "S06E09",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "נהרג לאחר נפילתו;",
+        "summary": "נהרג לאחר נפילתו",
         "affiliationId": "bolton",
         "locationId": "meereen",
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "randyll-tarly",
@@ -3507,7 +3507,7 @@
         "importance": 85
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "renly-baratheon",
@@ -3534,7 +3534,7 @@
         "locationId": "renly-camp-stormlands"
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "rhaego",
@@ -3552,7 +3552,7 @@
         "importance": 30
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "rickard-karstark",
@@ -3579,7 +3579,7 @@
         "importance": 58
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "rickon-stark",
@@ -3609,7 +3609,7 @@
         "episodeId": "S06E03",
         "status": "captive",
         "statusLabel": "שבוי",
-        "summary": "נמסר לידי ראמזי;",
+        "summary": "נמסר לידי ראמזי",
         "affiliationId": "stark",
         "locationId": "castle-black",
         "importance": 78
@@ -3618,13 +3618,13 @@
         "episodeId": "S06E09",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "נהרג בידי ראמזי לפני הקרב;",
+        "summary": "נהרג בידי ראמזי לפני הקרב",
         "affiliationId": "stark",
         "locationId": "meereen",
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "robb-stark",
@@ -3687,7 +3687,7 @@
         "importance": 95
       }
     ],
-    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/8/86/Robert%27s_Rebellion.png/revision/latest?cb=20130416034522"
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/d/d8/Robert_Baratheon.jpg/revision/latest"
   },
   {
     "id": "roose-bolton",
@@ -3699,12 +3699,12 @@
         "episodeId": "S06E02",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "נרצח בידי ראמזי;",
+        "summary": "נרצח בידי ראמזי",
         "locationId": "castle-black",
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "ros",
@@ -3722,7 +3722,7 @@
         "importance": 38
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "roslin-frey",
@@ -3740,7 +3740,7 @@
         "importance": 36
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "samwell-tarly",
@@ -3830,7 +3830,7 @@
         "importance": 71
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "sandor-clegane",
@@ -3868,7 +3868,7 @@
         "episodeId": "S06E07",
         "status": "active",
         "statusLabel": "חי / חזר לזירה",
-        "summary": "נחשף כחי וחוזר לנתיב אלים;",
+        "summary": "נחשף כחי וחוזר לנתיב אלים",
         "locationId": "riverrun",
         "importance": 78
       },
@@ -3984,7 +3984,7 @@
         "episodeId": "S06E01",
         "status": "active",
         "statusLabel": "תחת הגנת בריאן",
-        "summary": "לאחר הבריחה מווינטרפל;",
+        "summary": "לאחר הבריחה מווינטרפל",
         "affiliationId": "stark",
         "locationId": "castle-black",
         "importance": 78
@@ -3993,7 +3993,7 @@
         "episodeId": "S06E04",
         "status": "appointed",
         "statusLabel": "שינוי מעמד",
-        "summary": "שבה להיות מוקד פוליטי לבית סטארק;",
+        "summary": "שבה להיות מוקד פוליטי לבית סטארק",
         "affiliationId": "stark",
         "locationId": "castle-black",
         "importance": 78
@@ -4044,7 +4044,7 @@
         "importance": 40
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/b/b2/Septa_Mordane.jpg/revision/latest"
   },
   {
     "id": "ser-alton-lannister",
@@ -4062,7 +4062,7 @@
         "locationId": "north-army-camp"
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "ser-amory-lorch",
@@ -4080,7 +4080,7 @@
         "locationId": "harrenhal"
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "ser-dontos-hollard",
@@ -4106,7 +4106,7 @@
         "importance": 42
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "ser-hugh-of-the-vale",
@@ -4124,7 +4124,7 @@
         "importance": 35
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "ser-mandon-moore",
@@ -4142,7 +4142,7 @@
         "locationId": "kings-landing"
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "ser-rodrik-cassel",
@@ -4160,7 +4160,7 @@
         "locationId": "winterfell"
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "shae",
@@ -4177,7 +4177,7 @@
         "importance": 63
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "shireen-baratheon",
@@ -4195,7 +4195,7 @@
         "importance": 72
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "smalljon-umber",
@@ -4207,12 +4207,12 @@
         "episodeId": "S06E09",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "נהרג בקרב;",
+        "summary": "נהרג בקרב",
         "locationId": "meereen",
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "stafford-lannister",
@@ -4230,7 +4230,7 @@
         "locationId": "north-army-camp"
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "stannis-baratheon",
@@ -4257,7 +4257,7 @@
         "importance": 94
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "stiv",
@@ -4274,7 +4274,7 @@
         "importance": 28
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/1b/Stiv.jpg/revision/latest"
   },
   {
     "id": "styr",
@@ -4292,7 +4292,7 @@
         "importance": 46
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "summer",
@@ -4304,12 +4304,12 @@
         "episodeId": "S06E05",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "נהרג במערה;",
+        "summary": "נהרג במערה",
         "locationId": "three-eyed-raven-cave",
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "talisa-maegyr",
@@ -4336,7 +4336,7 @@
         "importance": 72
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "the-waif",
@@ -4348,12 +4348,12 @@
         "episodeId": "S06E08",
         "status": "dead",
         "statusLabel": "מתה",
-        "summary": "נהרגה בידי אריה;",
+        "summary": "נהרגה בידי אריה",
         "locationId": "braavos",
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "theon-greyjoy",
@@ -4500,12 +4500,12 @@
         "episodeId": "S06E05",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "נהרג בפלישה;",
+        "summary": "נהרג בפלישה",
         "locationId": "three-eyed-raven-cave",
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "tickler",
@@ -4523,7 +4523,7 @@
         "locationId": "harrenhal"
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "tommen-baratheon",
@@ -4553,7 +4553,7 @@
         "episodeId": "S06E10",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "התאבד;",
+        "summary": "התאבד",
         "affiliationId": "baratheon",
         "locationId": "kings-landing",
         "importance": 78
@@ -4568,7 +4568,7 @@
         "importance": 95
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "tormund-giantsbane",
@@ -4586,7 +4586,7 @@
         "importance": 79
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "torrhen-karstark",
@@ -4604,7 +4604,7 @@
         "locationId": "north-army-camp"
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "tower-guard",
@@ -4622,7 +4622,7 @@
         "importance": 34
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "trystane-martell",
@@ -4634,12 +4634,12 @@
         "episodeId": "S06E01",
         "status": "dead",
         "statusLabel": "מת",
-        "summary": "נרצח בידי בנות החול;",
+        "summary": "נרצח בידי בנות החול",
         "locationId": "castle-black",
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "tyene-sand",
@@ -4657,7 +4657,7 @@
         "importance": 70
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "tyrion-lannister",
@@ -4891,7 +4891,7 @@
         "importance": 38
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/3/32/Vardis_profile.jpg/revision/latest"
   },
   {
     "id": "vayon-poole",
@@ -4909,7 +4909,7 @@
         "importance": 42
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/6/69/Vayon_Poole.jpg/revision/latest"
   },
   {
     "id": "viserys-targaryen",
@@ -4948,12 +4948,12 @@
         "episodeId": "S06E02",
         "status": "dead",
         "statusLabel": "מתה",
-        "summary": "נרצחה עם תינוקה;",
+        "summary": "נרצחה עם תינוקה",
         "locationId": "castle-black",
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "walder-frey",
@@ -4979,7 +4979,7 @@
         "importance": 84
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "wallen",
@@ -4996,7 +4996,7 @@
         "importance": 28
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/f/fa/Wallen1.jpg/revision/latest"
   },
   {
     "id": "waymar-royce",
@@ -5014,7 +5014,7 @@
         "importance": 44
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/5/57/Waymar_Royce.jpg/revision/latest"
   },
   {
     "id": "will-ranger",
@@ -5032,7 +5032,7 @@
         "importance": 40
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/4/4b/Will_1x01.jpg/revision/latest"
   },
   {
     "id": "wun-wun",
@@ -5049,7 +5049,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "xaro-xhoan-daxos",
@@ -5066,7 +5066,7 @@
         "locationId": "qarth"
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "yara-greyjoy",
@@ -5087,7 +5087,7 @@
         "episodeId": "S06E04",
         "status": "missing",
         "statusLabel": "במנוסה",
-        "summary": "בורחת עם תיאון ועם ספינות;",
+        "summary": "בורחת עם תיאון ועם ספינות",
         "affiliationId": "greyjoy",
         "locationId": "castle-black",
         "importance": 78
@@ -5120,7 +5120,7 @@
         "importance": 88
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "ygritte",
@@ -5138,7 +5138,7 @@
         "importance": 86
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "yoren",
@@ -5156,7 +5156,7 @@
         "locationId": "riverlands-road-north"
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "night-king",
@@ -5183,7 +5183,7 @@
         "importance": 100
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "dickon-tarly",
@@ -5201,7 +5201,7 @@
         "importance": 73
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "thoros-of-myr",
@@ -5219,7 +5219,7 @@
         "importance": 75
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "drogon",
@@ -5237,7 +5237,7 @@
         "importance": 95
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "viserion",
@@ -5264,7 +5264,7 @@
         "importance": 100
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "eddison-tollett",
@@ -5282,7 +5282,7 @@
         "importance": 76
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "qyburn",
@@ -5300,7 +5300,7 @@
         "importance": 82
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "missandei",
@@ -5318,7 +5318,7 @@
         "importance": 92
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "rhaegal",
@@ -5336,7 +5336,7 @@
         "importance": 96
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "varys",
@@ -5372,7 +5372,7 @@
         "importance": 88
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "harry-strickland",
@@ -5390,7 +5390,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "ghost-direwolf",
@@ -5408,7 +5408,7 @@
         "importance": 60
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   },
   {
     "id": "ned-umber",
@@ -5426,6 +5426,6 @@
         "importance": 65
       }
     ],
-    "characterImageUrl": ""
+    "characterImageUrl": null
   }
 ]
