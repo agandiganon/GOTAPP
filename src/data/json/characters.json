@@ -1639,7 +1639,6 @@
   {
     "id": "euron-greyjoy",
     "name": "יורון גרייג׳וי",
-    "portrait": null,
     "baseDescription": "דודו האכזרי של תיאון ויארה, טוען לכתר איי הברזל.",
     "timeline": [
       {
@@ -1694,7 +1693,7 @@
         "importance": 90
       }
     ],
-    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/0/06/Euron_Greyjoy.svg/revision/latest?cb=20230905225214"
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/8/82/Euron_Greyjoy_Promo.png/revision/latest?cb=20160502084804"
   },
   {
     "id": "gendry",
@@ -1909,7 +1908,6 @@
   {
     "id": "high-sparrow",
     "name": "הדרור העליון",
-    "portrait": null,
     "baseDescription": "מנהיג דתי צנוע למראה אך בעל כוח חברתי ופוליטי עולה במעלה המלך.",
     "timeline": [
       {
@@ -1940,7 +1938,7 @@
         "importance": 96
       }
     ],
-    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/6/68/High_Sparrow/revision/latest?cb=20211012111005"
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/a/aa/The_High_Sparrow_promo_pic.jpg/revision/latest?cb=20150131020351"
   },
   {
     "id": "hizdahr-zo-loraq",
@@ -2014,7 +2012,6 @@
   {
     "id": "jaime-lannister",
     "name": "ג'יימי לאניסטר",
-    "portrait": null,
     "baseDescription": "משנה את הסכסוך לעימות אלים וישיר.",
     "timeline": [
       {
@@ -2162,7 +2159,7 @@
         "importance": 100
       }
     ],
-    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/4/4b/Jaime_Lannister_Season_1_Promo.jpg/revision/latest"
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/0/0d/Jaime_Lannister_in_his_cell.jpg/revision/latest?cb=20160729063328"
   },
   {
     "id": "janos-slynt",
@@ -2606,6 +2603,69 @@
     "baseDescription": "יועצה הוותיק של דאינריז, שמאבד את אמונה לאחר חשיפת עברו כמרגל.",
     "timeline": [
       {
+        "episodeId": "S01E01",
+        "status": "active",
+        "statusLabel": "מגן המלכה",
+        "affiliationId": "targaryen",
+        "locationId": "pentos",
+        "importance": 72,
+        "summary": "נמצא בגלות ומשמש כמלווה את ויסריס. רואה בדניריס פוטנציאל שהיא טרם רואה בעצמה."
+      },
+      {
+        "episodeId": "S01E03",
+        "status": "active",
+        "statusLabel": "מגן המלכה",
+        "affiliationId": "targaryen",
+        "locationId": "dothraki-sea",
+        "importance": 72,
+        "summary": "מגלה לוועצי המלך שדניריס בהריון - אך חוזר בו ברגע האחרון מן הבגידה."
+      },
+      {
+        "episodeId": "S01E06",
+        "status": "active",
+        "statusLabel": "מגן המלכה",
+        "affiliationId": "targaryen",
+        "locationId": "dothraki-sea",
+        "importance": 74,
+        "summary": "מציל את דניריס מניסיון הרעלה ומוכיח נאמנות שאין לפקפק בה."
+      },
+      {
+        "episodeId": "S01E10",
+        "status": "active",
+        "statusLabel": "מגן המלכה",
+        "affiliationId": "targaryen",
+        "locationId": "dothraki-sea",
+        "importance": 76,
+        "summary": "עד לניסי הדרקונים - ניצב לצד דניריס ברגע שהפך אותה למשהו גדול מהאנושי."
+      },
+      {
+        "episodeId": "S02E01",
+        "status": "active",
+        "statusLabel": "מגן המלכה",
+        "affiliationId": "targaryen",
+        "locationId": "red-waste",
+        "importance": 74,
+        "summary": "מנחה את הח׳אלאסאר הקטן דרך המדבר - הגנה, ייעוץ ונאמנות."
+      },
+      {
+        "episodeId": "S02E05",
+        "status": "active",
+        "statusLabel": "מגן המלכה",
+        "affiliationId": "targaryen",
+        "locationId": "qarth",
+        "importance": 74,
+        "summary": "ליווה את דניריס לקארת, עיר הסוחרים, שם נוכח לראות את הקסם הראשון."
+      },
+      {
+        "episodeId": "S03E05",
+        "status": "active",
+        "statusLabel": "מגן המלכה",
+        "affiliationId": "targaryen",
+        "locationId": "astapor",
+        "importance": 76,
+        "summary": "מסביר לדניריס את המשמעות הפוליטית של כיבוש אסטאפור."
+      },
+      {
         "episodeId": "S04E08",
         "status": "dismissed",
         "statusLabel": "מגורש",
@@ -2792,6 +2852,42 @@
         "affiliationId": "dothraki",
         "locationId": "pentos",
         "importance": 88
+      },
+      {
+        "episodeId": "S01E02",
+        "status": "active",
+        "statusLabel": "ח׳אל",
+        "affiliationId": "dothraki",
+        "locationId": "dothraki-sea",
+        "importance": 82,
+        "summary": "מתחיל הנישואים בכוח, אך עם הזמן מגלה יחס מיוחד לאשתו."
+      },
+      {
+        "episodeId": "S01E04",
+        "status": "active",
+        "statusLabel": "ח׳אל",
+        "affiliationId": "dothraki",
+        "locationId": "dothraki-sea",
+        "importance": 85,
+        "summary": "הורג את ויסריס בשיטה הדות׳ראקית - כתר של זהב - ומגן על דניריס."
+      },
+      {
+        "episodeId": "S01E06",
+        "status": "injured",
+        "statusLabel": "פצוע",
+        "affiliationId": "dothraki",
+        "locationId": "dothraki-sea",
+        "importance": 82,
+        "summary": "נפצע בקרב. דניריס מנסה להציל אותו דרך מירי מאז דוורי."
+      },
+      {
+        "episodeId": "S01E08",
+        "status": "incapacitated",
+        "statusLabel": "גוסס",
+        "affiliationId": "dothraki",
+        "locationId": "dothraki-sea",
+        "importance": 80,
+        "summary": "מצב הפצע הידרדר עם הקסם של מירי. כוחו נשבר."
       },
       {
         "episodeId": "S01E09",
@@ -3095,7 +3191,6 @@
   {
     "id": "maester-aemon",
     "name": "מייסטר אאימון",
-    "portrait": null,
     "baseDescription": "זקן המשמר ומצפן מוסרי עבור ג׳ון, שמצבו מידרדר בעונה החמישית.",
     "timeline": [
       {
@@ -3108,7 +3203,7 @@
         "importance": 71
       }
     ],
-    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/a/a4/Aemond-TLotT-profile.png/revision/latest?cb=20221008120856"
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/a/a9/Aemon_1x09.jpg/revision/latest?cb=20110613221610"
   },
   {
     "id": "maester-cressen",
@@ -3676,6 +3771,51 @@
     "portrait": null,
     "baseDescription": "אדון מזימות שמחזיק בסאנסה והופך לשחקן אזורי בעל עצמה ממשית.",
     "timeline": [
+      {
+        "episodeId": "S01E01",
+        "status": "appointed",
+        "statusLabel": "אדון האוצר",
+        "affiliationId": "baratheon",
+        "locationId": "kings-landing",
+        "importance": 78,
+        "summary": "מנהל את האוצר המלכותי, בעל קשרים עמוקים לקטלין - סודות רבים."
+      },
+      {
+        "episodeId": "S01E04",
+        "status": "appointed",
+        "statusLabel": "אדון האוצר",
+        "affiliationId": "baratheon",
+        "locationId": "kings-landing",
+        "importance": 80,
+        "summary": "מסייע לנד לחקור את מות ג׳ון אריין - פרצופו אינו מגלה לאיזה צד הוא שייך."
+      },
+      {
+        "episodeId": "S01E07",
+        "status": "appointed",
+        "statusLabel": "אדון האוצר",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 82,
+        "summary": "בוגד בנד ברגע הקריטי - מצביע עליו בחרב ומוסר אותו לסרסאי."
+      },
+      {
+        "episodeId": "S02E01",
+        "status": "appointed",
+        "statusLabel": "אדון האוצר",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 80,
+        "summary": "נשאר בכס תחת שלטון ג׳ופרי. משחק בשני צדדים כרגיל."
+      },
+      {
+        "episodeId": "S03E01",
+        "status": "appointed",
+        "statusLabel": "אדון האוצר",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 80,
+        "summary": "מוצע לו שידוך לבית אריין - קידום מדיני מחוץ לתפקיד האוצר."
+      },
       {
         "episodeId": "S04E03",
         "status": "active",
@@ -4260,7 +4400,6 @@
   {
     "id": "samwell-tarly",
     "name": "סמוול טארלי",
-    "portrait": null,
     "baseDescription": "מגיע כטירון חדש לטירת שחור.",
     "timeline": [
       {
@@ -4271,6 +4410,51 @@
         "affiliationId": "night-watch",
         "locationId": "castle-black",
         "importance": 74
+      },
+      {
+        "episodeId": "S01E05",
+        "status": "recruit",
+        "statusLabel": "גיוס חדש",
+        "affiliationId": "night-watch",
+        "locationId": "castle-black",
+        "importance": 60,
+        "summary": "קושר ידידות עם ג׳ון שמגן עליו. מוצא בטירת שחורה מגינים לא צפויים."
+      },
+      {
+        "episodeId": "S01E08",
+        "status": "recruit",
+        "statusLabel": "גיוס חדש",
+        "affiliationId": "night-watch",
+        "locationId": "castle-black",
+        "importance": 58,
+        "summary": "נשבע לשמור על החומה. ג׳ון ניצב לרוחו - אחווה יותר מגנה."
+      },
+      {
+        "episodeId": "S02E03",
+        "status": "recruit",
+        "statusLabel": "גיוס חדש",
+        "affiliationId": "night-watch",
+        "locationId": "crasters-keep",
+        "importance": 60,
+        "summary": "מגיע עם המשלחת לבית קראסטר. רואה את הנוהג האיום של קראסטר."
+      },
+      {
+        "episodeId": "S02E10",
+        "status": "active",
+        "statusLabel": "משמר הלילה",
+        "affiliationId": "night-watch",
+        "locationId": "fist-of-first-men",
+        "importance": 62,
+        "summary": "מסתתר מאחורי אבן כשצבא הווייט ווקרים עובר. שרד."
+      },
+      {
+        "episodeId": "S03E08",
+        "status": "active",
+        "statusLabel": "משמר הלילה",
+        "affiliationId": "night-watch",
+        "locationId": "beyond-the-wall",
+        "importance": 64,
+        "summary": "הורג ווייט ווקר לראשונה בפגיון גרב-זכוכית - גיבורות בלתי צפויה."
       },
       {
         "episodeId": "S06E06",
@@ -4327,7 +4511,7 @@
         "importance": 84
       }
     ],
-    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/4/4f/SamwellTarlySeason1Promo.jpg/revision/latest"
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/3/32/Samwell.jpg/revision/latest?cb=20110531012124"
   },
   {
     "id": "sand-snakes",
@@ -4750,7 +4934,6 @@
   {
     "id": "stannis-baratheon",
     "name": "סטאניס באראתיאון",
-    "portrait": null,
     "baseDescription": "מציג תביעה חוקית גלויה לכס ומסרב לראות ברנלי או באחרים שותפים אפשריים.",
     "timeline": [
       {
@@ -4772,7 +4955,7 @@
         "importance": 94
       }
     ],
-    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/6/6b/Stannis_Portal.png/revision/latest?cb=20201217213521"
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/4/4f/Stannis-3x01.jpg/revision/latest?cb=20160809141251"
   },
   {
     "id": "stiv",
@@ -5891,6 +6074,69 @@
     "portrait": null,
     "baseDescription": "שחקן פוליטי שמודד שליטים על פי טובת הממלכה ומוכן לבגוד למען מה שהוא תופס כהצלתה.",
     "timeline": [
+      {
+        "episodeId": "S01E01",
+        "status": "active",
+        "statusLabel": "ראש השריפים",
+        "affiliationId": "baratheon",
+        "locationId": "kings-landing",
+        "importance": 78,
+        "summary": "ראש השריפים של המלך בקינגסלאנדינג, מפעיל רשת מרגלים ויודע הכל לפני כולם."
+      },
+      {
+        "episodeId": "S01E04",
+        "status": "active",
+        "statusLabel": "ראש השריפים",
+        "affiliationId": "baratheon",
+        "locationId": "kings-landing",
+        "importance": 78,
+        "summary": "מתנסח בזהירות מול נד, מאותת שהוא יודע יותר משנראה ושהמצב בטירה מסוכן."
+      },
+      {
+        "episodeId": "S01E06",
+        "status": "active",
+        "statusLabel": "ראש השריפים",
+        "affiliationId": "baratheon",
+        "locationId": "kings-landing",
+        "importance": 80,
+        "summary": "חושף בפני נד שגשון אריין נרצח ומנסה לגייסו לפעולה - אך בתנאי הסוואה."
+      },
+      {
+        "episodeId": "S01E08",
+        "status": "active",
+        "statusLabel": "ראש השריפים",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 80,
+        "summary": "מציע לנד לודות בבגידה כדי שייחסך ממוות - המהלך הפוליטי שנד מסרב לו."
+      },
+      {
+        "episodeId": "S01E09",
+        "status": "active",
+        "statusLabel": "ראש השריפים",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 78,
+        "summary": "עד לביצוע גזר הדין. לא מנע - אך פרצופו מגלה מורכבות."
+      },
+      {
+        "episodeId": "S02E01",
+        "status": "active",
+        "statusLabel": "ראש השריפים",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 78,
+        "summary": "מינה את עצמו כניטרלי - משרת את הכס אך שומר על רשת מרגלים עצמאית."
+      },
+      {
+        "episodeId": "S02E04",
+        "status": "active",
+        "statusLabel": "ראש השריפים",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 80,
+        "summary": "מתמודד עם טיריון במשחק ידע - שני האנשים החכמים בעיר מודדים זה את זה."
+      },
       {
         "episodeId": "S08E05",
         "status": "dead",

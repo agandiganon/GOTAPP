@@ -153,9 +153,10 @@ export function CharacterPortrait({
           loading="lazy"
           draggable={false}
           className={cn(
-            "absolute inset-0 h-full w-full object-cover object-top transition-opacity duration-700",
+            "absolute inset-0 h-full w-full object-cover transition-opacity duration-700",
             isLoaded ? "opacity-100" : "opacity-0",
           )}
+          style={{ objectPosition: "center 18%" }}
           onError={() => {
             setIsLoaded(false);
             setHasLoadError(true);

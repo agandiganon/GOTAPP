@@ -49,7 +49,8 @@ export function PoliticsScreen() {
 
   /* ── Anti-spoiler data — DO NOT TOUCH ─────────────────────────────────── */
   const factionRankings  = getEpisodeFactionRankings(factions, currentEpisode);
-  const relationshipWeb  = getVisibleRelationshipWeb(factions, currentEpisodeId, episodeIndex);
+  const relationshipWeb  = getVisibleRelationshipWeb(factions, currentEpisodeId, episodeIndex)
+    .filter((rel) => rel.state !== "neutral");
   const leadingFaction   = factionRankings[0] ?? null;
   /* ── End anti-spoiler block ───────────────────────────────────────────── */
 

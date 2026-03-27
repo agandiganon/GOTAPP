@@ -97,6 +97,27 @@
         "summary": "בית לאניסטר משתלט בפועל על הבירה באמצעות הכתר, המשמר והמלכה."
       },
       {
+        "episodeId": "S01E07",
+        "targetFactionId": "stark",
+        "state": "war",
+        "intensity": 90,
+        "summary": "עם מות רוברט וכינון שלטון ג׳ופרי, ביה ׳באראתיאון׳ הנשלט על ידי לאניסטר עובר לעימות גלוי עם בית סטארק."
+      },
+      {
+        "episodeId": "S02E01",
+        "targetFactionId": "baratheon-stannis",
+        "state": "war",
+        "intensity": 88,
+        "summary": "ג׳ופרי וסטאניס מתחרים על הכתר — שניהם טוענים לשם ״באראתיאון״ אך ביניהם מלחמה."
+      },
+      {
+        "episodeId": "S04E02",
+        "targetFactionId": "lannister",
+        "state": "tension",
+        "intensity": 60,
+        "summary": "מות ג׳ופרי ועליית תומן מחלישים את הקשר המדיני. בית באראתיאון הפך לצל של עצמו."
+      },
+      {
         "episodeId": "S08E04",
         "targetFactionId": "targaryen",
         "state": "alliance",
@@ -217,6 +238,13 @@
         "summary": "התביעה של סטאניס מערערת ישירות את הלגיטימיות של ג׳ופרי."
       },
       {
+        "episodeId": "S02E01",
+        "targetFactionId": "baratheon",
+        "state": "war",
+        "intensity": 88,
+        "summary": "סטאניס מכריז על ג׳ופרי כממזר ומוצהר כמלך — מלחמה בין שני צדדי בית באראתיאון."
+      },
+      {
         "episodeId": "S02E03",
         "targetFactionId": "renly-tyrell",
         "state": "war",
@@ -229,6 +257,13 @@
         "state": "war",
         "intensity": 94,
         "summary": "במעלה מלך מתבצעת הכנה מעשית למצב מצור מול כוחו של סטאניס."
+      },
+      {
+        "episodeId": "S02E06",
+        "targetFactionId": "renly-tyrell",
+        "state": "neutral",
+        "intensity": 0,
+        "summary": "רנלי נרצח, מחנהו מתפורר. מחנה סטאניס אינו עוד במלחמה עם כוח שאינו קיים."
       },
       {
         "episodeId": "S03E10",
@@ -467,6 +502,13 @@
         "state": "alliance",
         "intensity": 84,
         "summary": "דרוגו קושר לראשונה את כוחו הצבאי ישירות לפלישה אל ווסטרוז."
+      },
+      {
+        "episodeId": "S01E10",
+        "targetFactionId": "targaryen",
+        "state": "neutral",
+        "intensity": 0,
+        "summary": "דרוגו מת, הח׳אלאסאר פוזר ונטש את דייניריס. הברית בין הדות׳ראקים לטארגאריין התפוגגה לחלוטין."
       }
     ],
     "factionSigilUrl": ""
@@ -1155,6 +1197,13 @@
         "summary": "בית לאניסטר מגיב ביעילות טקטית לניסיון הטיירלי להשתלט על הצפון דרך סאנסה."
       },
       {
+        "episodeId": "S03E09",
+        "targetFactionId": "stark",
+        "state": "tension",
+        "intensity": 40,
+        "summary": "חתונת האדומה חיסלה את מנהיגות בית סטארק. הלאניסטרים מנצחים פוליטית, אך ניצולי הסטארקים נותרים איום סמוי."
+      },
+      {
         "episodeId": "S04E01",
         "targetFactionId": "martell",
         "state": "tension",
@@ -1512,6 +1561,13 @@
         "state": "tension",
         "intensity": 72,
         "summary": "אנשי משמר הלילה לומדים על איחוד הפראים תחת מאנס ריידר."
+      },
+      {
+        "episodeId": "S02E04",
+        "targetFactionId": "wildlings",
+        "state": "war",
+        "intensity": 82,
+        "summary": "משמר הלילה עוקב אחרי הפראים מעבר לחומה. ג׳ון שנש חוקר את מחנה ה׳פראים."
       },
       {
         "episodeId": "S02E10",
@@ -1880,6 +1936,13 @@
         "summary": "היריבות סטארק–לאניסטר הופכת רשמית למאבק אלים."
       },
       {
+        "episodeId": "S01E07",
+        "targetFactionId": "baratheon",
+        "state": "war",
+        "intensity": 90,
+        "summary": "מות רוברט ומאסרו של נד על ידי סרסאי הופכים את ברית סטארק–באראתיאון לאיבה ומלחמה."
+      },
+      {
         "episodeId": "S01E09",
         "targetFactionId": "frey",
         "state": "alliance",
@@ -1906,6 +1969,13 @@
         "state": "alliance",
         "intensity": 58,
         "summary": "רוב מגיע להסכם חדש עם פריי כדי לשקם את הברית השבורה."
+      },
+      {
+        "episodeId": "S03E09",
+        "targetFactionId": "lannister",
+        "state": "tension",
+        "intensity": 40,
+        "summary": "חתונת האדומה שברה את מחנה סטארק. שרידי הבית מפוזרים, אך האיבה ללאניסטרים נותרת חיה."
       },
       {
         "episodeId": "S06E04",
@@ -2384,6 +2454,13 @@
         "state": "alliance",
         "intensity": 84,
         "summary": "דרוגו קושר לראשונה את כוחו הצבאי ישירות לפלישה אל ווסטרוז."
+      },
+      {
+        "episodeId": "S01E10",
+        "targetFactionId": "dothraki",
+        "state": "neutral",
+        "intensity": 0,
+        "summary": "עם מות דרוגו, דייניריס איבדה את הח׳אלאסאר שלה. אין לה עוד כוח דות׳ראקי."
       },
       {
         "episodeId": "S06E04",

@@ -1,7 +1,8 @@
 "use client";
 
-import { BookOpenText, ChevronDown, Crown, MapPin, Scroll, Swords, Users } from "lucide-react";
+import { BookOpenText, ChevronDown, Crown, MapPin, Scroll, Skull, Swords, Users } from "lucide-react";
 
+import { FactionSigilBadge } from "@/components/factions/faction-sigil-badge";
 import { StatusPill } from "@/components/ui/status-pill";
 import { characters, episodeIndex, factions, locations } from "@/data/seed";
 import { getVisibleCharacterSnapshots, getVisibleLocationSnapshots } from "@/lib/timeline";
@@ -153,6 +154,16 @@ export function SummaryScreen() {
     .slice()
     .reverse();
 
+  /* Notable deaths — characters with status "dead", sorted by importance */
+  const notableDeaths = visibleCharacters
+    .filter((c) => c.latestState.status === "dead" && (c.latestState.importance ?? 0) >= 55)
+    .sort((a, b) => (b.latestState.importance ?? 0) - (a.latestState.importance ?? 0))
+    .map((c) => {
+      /* Find the episode when they first became dead */
+      const deathEntry = c.timeline.find((t) => t.status === "dead");
+      return { ...c, deathEpisodeId: deathEntry?.episodeId ?? c.latestState.episodeId };
+    });
+
   return (
     <section className="space-y-4">
 
@@ -263,6 +274,70 @@ export function SummaryScreen() {
           ))}
         </div>
       </SectionPanel>
+
+      {/* ══ NOTABLE DEATHS ════════════════════════════════════════════════════ */}
+      {notableDeaths.length > 0 && (
+        <SectionPanel accentBorder="rgba(100,20,30,0.30)">
+          <SectionHeader
+            caption="נפילות עיקריות"
+            title={`${notableDeaths.length} דמויות שנפלו עד כאן`}
+            icon={Skull}
+            iconColor="blood"
+          />
+          <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
+            {notableDeaths.map((char) => {
+              const faction = factions.find(f => f.id === char.latestState.affiliationId);
+              const accentColor = faction?.themeColor ?? "#8a3844";
+              const shortEpId = char.deathEpisodeId.replace('S0', 'S').replace('E0', 'E');
+              return (
+                <div
+                  key={char.id}
+                  className="flex items-center gap-3 rounded-[18px] p-3"
+                  style={{
+                    background: "linear-gradient(135deg, rgba(60,10,16,0.30), rgba(14,18,28,0.70))",
+                    border: "1px solid rgba(100,20,30,0.28)",
+                  }}
+                >
+                  {faction ? (
+                    <FactionSigilBadge
+                      name={faction.displayName}
+                      sigilUrl={faction.factionSigilUrl ?? faction.sigil}
+                      themeColor={accentColor}
+                      className="h-8 w-8 shrink-0 opacity-70"
+                    />
+                  ) : (
+                    <div
+                      className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full"
+                      style={{
+                        background: "rgba(100,20,30,0.18)",
+                        border: "1px solid rgba(140,40,50,0.25)",
+                      }}
+                    >
+                      <Skull className="h-3.5 w-3.5 text-[#f7c4cb]/60" />
+                    </div>
+                  )}
+                  <div className="min-w-0 flex-1">
+                    <p className="text-sm font-semibold leading-tight text-ink/90">{char.name}</p>
+                    <p className="mt-0.5 text-[0.68rem] text-muted">{faction?.displayName ?? "ללא שיוך"}</p>
+                  </div>
+                  <span
+                    className="shrink-0 rounded-full px-2 py-0.5 text-[0.60rem] font-semibold"
+                    style={{
+                      fontFamily: "var(--font-cinzel), serif",
+                      letterSpacing: "0.08em",
+                      background: "rgba(100,20,30,0.22)",
+                      border: "1px solid rgba(140,40,50,0.30)",
+                      color: "rgb(242,165,172)",
+                    }}
+                  >
+                    {shortEpId}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        </SectionPanel>
+      )}
 
       {/* ══ FOCUS CHARACTERS ═════════════════════════════════════════════════ */}
       {focusCharacters.length > 0 && (

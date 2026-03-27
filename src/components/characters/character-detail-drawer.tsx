@@ -104,7 +104,8 @@ export function CharacterDetailDrawer({ character, onClose }: CharacterDetailDra
                 <img
                   src={`/api/image-proxy?url=${encodeURIComponent(character.characterImageUrl)}`}
                   alt={character.name}
-                  className="h-full w-full object-cover object-top"
+                  className="h-full w-full object-cover"
+                  style={{ objectPosition: "center 15%" }}
                 />
                 <div
                   className="absolute inset-0"
