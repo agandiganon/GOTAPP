@@ -7,16 +7,24 @@ import { characters, episodeIndex, factions, locations } from "@/data/seed";
 import { getVisibleCharacterSnapshots, getVisibleLocationSnapshots } from "@/lib/timeline";
 import { useEpisode } from "@/providers/episode-provider";
 
-/* ─── tiny amber Roman-numeral-style index badge ─────────────────────────── */
+/* ─── New design tokens (aligned with globals.css v3 "THE REALM") ─────────── */
+// canvas:       rgb(8,10,16)
+// panel:        rgb(20,24,36)
+// panel-strong: rgb(28,33,50)
+// accent:       rgb(210,168,90)
+// border-gold:  rgba(210,168,90,0.22)
+
+/* ─── Numbered badge ─────────────────────────────────────────────────────── */
 function TurningPointBadge({ index }: { index: number }) {
   return (
     <div
       className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-xs font-bold"
       style={{
-        background: "linear-gradient(135deg, rgba(203,165,94,0.22), rgba(120,80,30,0.14))",
-        border: "1px solid rgba(203,165,94,0.28)",
-        color: "rgb(252,220,140)",
-        boxShadow: "0 0 12px rgba(203,165,94,0.10)",
+        background: "linear-gradient(135deg, rgba(210,168,90,0.20), rgba(130,90,30,0.12))",
+        border: "1px solid rgba(210,168,90,0.28)",
+        color: "rgb(240,200,120)",
+        boxShadow: "0 0 10px rgba(210,168,90,0.10)",
+        fontFamily: "var(--font-cinzel), serif",
       }}
     >
       {index + 1}
@@ -24,19 +32,19 @@ function TurningPointBadge({ index }: { index: number }) {
   );
 }
 
-/* ─── section icon tile ───────────────────────────────────────────────────── */
+/* ─── Section icon tile ───────────────────────────────────────────────────── */
 function SectionIcon({
   icon: Icon,
   color,
 }: {
   icon: React.ElementType;
-  color: "amber" | "rose" | "slate" | "teal";
+  color: "gold" | "blood" | "slate" | "ice";
 }) {
   const palette = {
-    amber: { border: "rgba(203,165,94,0.28)", bg: "rgba(203,165,94,0.10)", text: "rgb(252,220,140)" },
-    rose:  { border: "rgba(160,50,60,0.35)",  bg: "rgba(140,35,45,0.14)",  text: "rgb(255,190,200)" },
-    slate: { border: "rgba(120,120,140,0.30)", bg: "rgba(80,80,100,0.12)",  text: "rgb(190,190,210)" },
-    teal:  { border: "rgba(70,140,120,0.30)",  bg: "rgba(50,110,90,0.12)",  text: "rgb(160,220,200)" },
+    gold:  { border: "rgba(210,168,90,0.30)", bg: "rgba(210,168,90,0.10)", text: "rgb(240,200,120)" },
+    blood: { border: "rgba(140,30,42,0.40)",  bg: "rgba(110,24,34,0.16)",  text: "rgb(255,160,172)" },
+    slate: { border: "rgba(90,105,140,0.32)", bg: "rgba(60,72,100,0.14)",  text: "rgb(170,180,210)" },
+    ice:   { border: "rgba(100,140,185,0.30)", bg: "rgba(70,110,160,0.12)", text: "rgb(170,200,230)" },
   }[color];
 
   return (
@@ -49,7 +57,7 @@ function SectionIcon({
   );
 }
 
-/* ─── section header ──────────────────────────────────────────────────────── */
+/* ─── Section header ─────────────────────────────────────────────────────── */
 function SectionHeader({
   caption,
   title,
@@ -59,7 +67,7 @@ function SectionHeader({
   caption: string;
   title: string;
   icon: React.ElementType;
-  iconColor: "amber" | "rose" | "slate" | "teal";
+  iconColor: "gold" | "blood" | "slate" | "ice";
 }) {
   return (
     <div className="mb-5 flex items-start justify-between gap-4">
@@ -72,24 +80,24 @@ function SectionHeader({
   );
 }
 
-/* ─── glassmorphism card surface ──────────────────────────────────────────── */
+/* ─── Card surface — slate-navy glassmorphism ──────────────────────────────── */
 function CardSurface({
   children,
   className = "",
-  accentColor,
+  accentHex,
 }: {
   children: React.ReactNode;
   className?: string;
-  accentColor?: string;
+  accentHex?: string;
 }) {
   return (
     <div
-      className={`rounded-[22px] p-4 ${className}`}
+      className={`rounded-[20px] p-4 ${className}`}
       style={{
-        border: `1px solid ${accentColor ? `${accentColor}20` : "rgba(255,255,255,0.07)"}`,
-        background: accentColor
-          ? `linear-gradient(135deg, ${accentColor}0d, rgba(14,11,8,0.78))`
-          : "rgba(255,255,255,0.035)",
+        border: `1px solid ${accentHex ? `${accentHex}22` : "rgba(60,70,100,0.40)"}`,
+        background: accentHex
+          ? `linear-gradient(135deg, ${accentHex}0c, rgba(14,17,26,0.82))`
+          : "rgba(20,24,36,0.70)",
         backdropFilter: "blur(10px)",
       }}
     >
@@ -98,9 +106,33 @@ function CardSurface({
   );
 }
 
-/* ═══════════════════════════════════════════════════════════════════════════
+/* ─── Main section panel ──────────────────────────────────────────────────── */
+function SectionPanel({
+  children,
+  accentBorder = "rgba(60,70,100,0.45)",
+  className = "",
+}: {
+  children: React.ReactNode;
+  accentBorder?: string;
+  className?: string;
+}) {
+  return (
+    <div
+      className={`rounded-[28px] p-5 ${className}`}
+      style={{
+        background: "linear-gradient(160deg, rgba(20,24,36,0.97), rgba(10,13,20,0.99))",
+        border: `1px solid ${accentBorder}`,
+        boxShadow: "0 18px 54px rgba(0,0,0,0.50), inset 0 1px 0 rgba(255,255,255,0.04)",
+      }}
+    >
+      {children}
+    </div>
+  );
+}
+
+/* ══════════════════════════════════════════════════════════════════════════════
    MAIN COMPONENT
-   ═══════════════════════════════════════════════════════════════════════════ */
+══════════════════════════════════════════════════════════════════════════════ */
 export function SummaryScreen() {
   const { availableEpisodes, currentEpisode, currentEpisodeId } = useEpisode();
 
@@ -124,21 +156,21 @@ export function SummaryScreen() {
   return (
     <section className="space-y-4">
 
-      {/* ── HERO PANEL ─────────────────────────────────────────────────────── */}
+      {/* ══ HERO PANEL ════════════════════════════════════════════════════════ */}
       <div
         className="relative overflow-hidden rounded-[28px] p-5"
         style={{
-          background: "linear-gradient(160deg, rgba(30,23,16,0.95), rgba(12,9,7,0.98))",
-          border: "1px solid rgba(203,165,94,0.14)",
-          boxShadow: "0 20px 64px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,245,215,0.06)",
+          background: "linear-gradient(160deg, rgba(22,26,42,0.97), rgba(8,10,16,0.99))",
+          border: "1px solid rgba(210,168,90,0.16)",
+          boxShadow: "0 24px 70px rgba(0,0,0,0.55), inset 0 1px 0 rgba(210,168,90,0.08)",
         }}
       >
-        {/* ambient hero glow */}
+        {/* Ambient hero glow — gold at top */}
         <div
           className="pointer-events-none absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse 80% 50% at 50% 0%, rgba(203,165,94,0.16), transparent 60%)",
+              "radial-gradient(ellipse 80% 50% at 50% 0%, rgba(210,168,90,0.13), transparent 60%)",
           }}
         />
 
@@ -148,22 +180,34 @@ export function SummaryScreen() {
             <div
               className="flex items-center gap-2 rounded-full px-3 py-1.5 text-xs font-semibold"
               style={{
-                background: "linear-gradient(90deg, rgba(203,165,94,0.18), rgba(120,80,30,0.12))",
-                border: "1px solid rgba(203,165,94,0.30)",
-                color: "rgb(252,220,140)",
-                boxShadow: "0 4px 14px rgba(203,165,94,0.10)",
+                background: "linear-gradient(90deg, rgba(210,168,90,0.16), rgba(130,90,30,0.10))",
+                border: "1px solid rgba(210,168,90,0.30)",
+                color: "rgb(240,200,120)",
+                boxShadow: "0 4px 14px rgba(210,168,90,0.10)",
+                fontFamily: "var(--font-cinzel), serif",
+                letterSpacing: "0.08em",
               }}
             >
               <Crown className="h-3.5 w-3.5" />
               {currentEpisode.code}
             </div>
-            <p className="text-xs text-muted">תקציר</p>
+            <p
+              style={{
+                fontFamily: "var(--font-cinzel), serif",
+                fontSize: "0.58rem",
+                letterSpacing: "0.22em",
+                textTransform: "uppercase",
+                color: "rgba(210,168,90,0.45)",
+              }}
+            >
+              תקציר
+            </p>
           </div>
 
           {/* Episode title */}
           <h1
             className="font-display text-3xl leading-tight"
-            style={{ color: "rgb(235,220,190)" }}
+            style={{ color: "rgb(225,215,195)" }}
           >
             {currentEpisode.title}
           </h1>
@@ -171,40 +215,43 @@ export function SummaryScreen() {
           {/* Snapshot */}
           <p className="text-sm leading-7 text-muted">{currentEpisode.summaries.snapshot}</p>
 
-          {/* Full summary collapsible */}
+          {/* Full summary */}
           <div
-            className="rounded-[20px] p-4"
+            className="rounded-[18px] p-4"
             style={{
-              background: "rgba(14,11,8,0.55)",
-              border: "1px solid rgba(203,165,94,0.10)",
-              borderTop: "2px solid rgba(203,165,94,0.32)",
+              background: "rgba(8,10,16,0.65)",
+              border: "1px solid rgba(60,70,100,0.40)",
+              borderTop: "2px solid rgba(210,168,90,0.28)",
             }}
           >
-            <div className="flex items-center gap-2 mb-3">
+            <div className="mb-3 flex items-center gap-2">
               <Scroll className="h-3.5 w-3.5 text-accent" />
-              <p className="text-xs font-semibold tracking-wide text-accent/70">התקציר המלא</p>
+              <p
+                style={{
+                  fontFamily: "var(--font-cinzel), serif",
+                  fontSize: "0.58rem",
+                  fontWeight: 700,
+                  letterSpacing: "0.22em",
+                  textTransform: "uppercase",
+                  color: "rgba(210,168,90,0.60)",
+                }}
+              >
+                התקציר המלא
+              </p>
             </div>
             <p className="text-sm leading-8 text-ink">{currentEpisode.summaries.full}</p>
           </div>
         </div>
       </div>
 
-      {/* ── TURNING POINTS ─────────────────────────────────────────────────── */}
-      <div
-        className="rounded-[28px] p-5"
-        style={{
-          background: "linear-gradient(160deg, rgba(26,20,15,0.94), rgba(14,10,7,0.97))",
-          border: "1px solid rgba(160,50,60,0.18)",
-          boxShadow: "0 16px 50px rgba(0,0,0,0.38), inset 0 1px 0 rgba(255,200,200,0.04)",
-        }}
-      >
+      {/* ══ TURNING POINTS ════════════════════════════════════════════════════ */}
+      <SectionPanel accentBorder="rgba(140,30,42,0.22)">
         <SectionHeader
           caption="נקודות מפנה"
           title="רגעי שבר"
           icon={Swords}
-          iconColor="rose"
+          iconColor="blood"
         />
-
         <div className="space-y-3">
           {currentEpisode.turningPoints.map((tp, index) => (
             <CardSurface key={tp.id}>
@@ -215,25 +262,17 @@ export function SummaryScreen() {
             </CardSurface>
           ))}
         </div>
-      </div>
+      </SectionPanel>
 
-      {/* ── FOCUS CHARACTERS ───────────────────────────────────────────────── */}
+      {/* ══ FOCUS CHARACTERS ═════════════════════════════════════════════════ */}
       {focusCharacters.length > 0 && (
-        <div
-          className="rounded-[28px] p-5"
-          style={{
-            background: "linear-gradient(160deg, rgba(24,19,14,0.94), rgba(14,10,7,0.97))",
-            border: "1px solid rgba(255,255,255,0.06)",
-            boxShadow: "0 16px 50px rgba(0,0,0,0.38), inset 0 1px 0 rgba(255,245,215,0.04)",
-          }}
-        >
+        <SectionPanel accentBorder="rgba(210,168,90,0.14)">
           <SectionHeader
             caption="מבט ממוקד"
             title="דמויות במוקד"
             icon={Users}
-            iconColor="amber"
+            iconColor="gold"
           />
-
           <div className="space-y-3">
             {focusCharacters.map((entry) => {
               const factionColor = factions.find(
@@ -241,12 +280,11 @@ export function SummaryScreen() {
               )?.themeColor;
 
               return (
-                <CardSurface key={entry.characterId} accentColor={factionColor}>
-                  {/* Name row */}
-                  <div className="flex items-start justify-between gap-3 mb-2">
+                <CardSurface key={entry.characterId} accentHex={factionColor}>
+                  <div className="mb-2 flex items-start justify-between gap-3">
                     <p
                       className="text-base font-semibold leading-snug"
-                      style={{ color: factionColor ? `${factionColor}ee` : "rgb(232,224,210)" }}
+                      style={{ color: factionColor ? `${factionColor}ee` : "rgb(225,215,195)" }}
                     >
                       {entry.character?.name ?? entry.characterId}
                     </p>
@@ -257,15 +295,15 @@ export function SummaryScreen() {
                       />
                     ) : null}
                   </div>
-
-                  {/* Episode-specific summary */}
                   <p className="text-sm leading-7 text-muted">{entry.summary}</p>
-
-                  {/* Character's latest state summary */}
                   {entry.character?.latestState.summary ? (
                     <p
                       className="mt-3 border-t pt-3 text-sm leading-7 text-ink/70"
-                      style={{ borderColor: factionColor ? `${factionColor}18` : "rgba(255,255,255,0.06)" }}
+                      style={{
+                        borderColor: factionColor
+                          ? `${factionColor}18`
+                          : "rgba(60,70,100,0.35)",
+                      }}
                     >
                       {entry.character.latestState.summary}
                     </p>
@@ -274,39 +312,30 @@ export function SummaryScreen() {
               );
             })}
           </div>
-        </div>
+        </SectionPanel>
       )}
 
-      {/* ── MAIN LOCATIONS ─────────────────────────────────────────────────── */}
+      {/* ══ MAIN LOCATIONS ════════════════════════════════════════════════════ */}
       {mainLocations.length > 0 && (
-        <div
-          className="rounded-[28px] p-5"
-          style={{
-            background: "linear-gradient(160deg, rgba(22,18,14,0.94), rgba(12,9,7,0.97))",
-            border: "1px solid rgba(80,130,110,0.18)",
-            boxShadow: "0 16px 50px rgba(0,0,0,0.38), inset 0 1px 0 rgba(160,220,200,0.03)",
-          }}
-        >
+        <SectionPanel accentBorder="rgba(100,140,185,0.20)">
           <SectionHeader
             caption="זירות הפרק"
             title="מיקומים ראשיים"
             icon={MapPin}
-            iconColor="teal"
+            iconColor="ice"
           />
-
           <div className="space-y-3">
             {currentEpisode.mainLocationLabels.map((label, index) => {
               const location = mainLocations[index];
-
               return (
                 <CardSurface key={label}>
                   <div className="flex items-start gap-3">
                     <div
                       className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full"
                       style={{
-                        background: "rgba(50,110,90,0.14)",
-                        border: "1px solid rgba(70,140,120,0.22)",
-                        color: "rgb(160,220,200)",
+                        background: "rgba(70,110,160,0.14)",
+                        border: "1px solid rgba(100,140,185,0.24)",
+                        color: "rgb(170,200,230)",
                       }}
                     >
                       <MapPin className="h-3.5 w-3.5" />
@@ -323,25 +352,17 @@ export function SummaryScreen() {
               );
             })}
           </div>
-        </div>
+        </SectionPanel>
       )}
 
-      {/* ── EPISODE ARCHIVE ────────────────────────────────────────────────── */}
-      <div
-        className="rounded-[28px] p-5"
-        style={{
-          background: "linear-gradient(160deg, rgba(22,18,14,0.94), rgba(12,9,7,0.97))",
-          border: "1px solid rgba(255,255,255,0.06)",
-          boxShadow: "0 16px 50px rgba(0,0,0,0.38), inset 0 1px 0 rgba(255,245,215,0.04)",
-        }}
-      >
+      {/* ══ EPISODE ARCHIVE ═══════════════════════════════════════════════════ */}
+      <SectionPanel>
         <SectionHeader
           caption="ארכיון בטוח"
           title="ארכיון פרקים קודמים"
           icon={BookOpenText}
           iconColor="slate"
         />
-
         <p className="mb-4 text-xs leading-6 text-muted">
           הרשימה כוללת רק פרקים שקודמים לפרק הפעיל. שום תוכן עתידי לא נכלל.
         </p>
@@ -355,20 +376,22 @@ export function SummaryScreen() {
             {archiveEpisodes.map((episode) => (
               <details key={episode.id} className="group">
                 <summary
-                  className="flex cursor-pointer list-none items-start justify-between gap-4 rounded-[20px] p-4 transition-colors duration-200"
+                  className="flex cursor-pointer list-none items-start justify-between gap-4 rounded-[18px] p-4 transition-colors duration-200 hover:bg-white/[0.025]"
                   style={{
-                    background: "rgba(255,255,255,0.03)",
-                    border: "1px solid rgba(255,255,255,0.07)",
+                    background: "rgba(20,24,36,0.55)",
+                    border: "1px solid rgba(60,70,100,0.38)",
                   }}
                 >
-                  <div className="flex items-start gap-3 min-w-0">
+                  <div className="flex min-w-0 items-start gap-3">
                     {/* Episode code pill */}
                     <div
                       className="mt-0.5 shrink-0 rounded-full px-2.5 py-1 text-[0.62rem] font-semibold"
                       style={{
-                        background: "rgba(203,165,94,0.10)",
-                        border: "1px solid rgba(203,165,94,0.22)",
-                        color: "rgb(215,182,118)",
+                        background: "rgba(210,168,90,0.10)",
+                        border: "1px solid rgba(210,168,90,0.22)",
+                        color: "rgb(225,185,110)",
+                        fontFamily: "var(--font-cinzel), serif",
+                        letterSpacing: "0.06em",
                       }}
                     >
                       {episode.code}
@@ -387,20 +410,27 @@ export function SummaryScreen() {
 
                 {/* Expanded content */}
                 <div
-                  className="mx-1 rounded-b-[20px] px-4 pb-4 pt-3"
+                  className="mx-1 rounded-b-[18px] px-4 pb-4 pt-3"
                   style={{
-                    background: "rgba(14,11,8,0.55)",
-                    border: "1px solid rgba(255,255,255,0.06)",
+                    background: "rgba(8,10,16,0.70)",
+                    border: "1px solid rgba(60,70,100,0.30)",
                     borderTop: "none",
                   }}
                 >
-                  {/* Full summary */}
                   <p className="text-sm leading-8 text-ink">{episode.summaries.full}</p>
 
-                  {/* Turning-point chips */}
                   {episode.turningPoints.length > 0 && (
                     <div className="mt-4 space-y-2">
-                      <p className="text-[0.65rem] font-semibold uppercase tracking-widest text-muted">
+                      <p
+                        style={{
+                          fontFamily: "var(--font-cinzel), serif",
+                          fontSize: "0.55rem",
+                          fontWeight: 700,
+                          letterSpacing: "0.24em",
+                          textTransform: "uppercase",
+                          color: "rgba(210,168,90,0.45)",
+                        }}
+                      >
                         רגעי שבר
                       </p>
                       <div className="flex flex-col gap-1.5">
@@ -409,9 +439,10 @@ export function SummaryScreen() {
                             <span
                               className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[0.6rem] font-bold"
                               style={{
-                                background: "rgba(203,165,94,0.12)",
-                                border: "1px solid rgba(203,165,94,0.22)",
-                                color: "rgb(215,182,118)",
+                                background: "rgba(210,168,90,0.12)",
+                                border: "1px solid rgba(210,168,90,0.22)",
+                                color: "rgb(225,185,110)",
+                                fontFamily: "var(--font-cinzel), serif",
                               }}
                             >
                               {i + 1}
@@ -427,7 +458,7 @@ export function SummaryScreen() {
             ))}
           </div>
         )}
-      </div>
+      </SectionPanel>
     </section>
   );
 }

@@ -2,43 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ─────────────────────────────────────────────────────────────────────────
-   DESIGN TOKENS
-   ───────────────────────────────────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════════════════════
+   DESIGN SYSTEM v3 — "THE REALM"
+   Deep Slate / Obsidian + Burnished Copper-Gold
+   Optimised for readability and cinematic depth
+   ═══════════════════════════════════════════════════════════════════════════ */
 :root {
   color-scheme: dark;
 
-  /* Surface palette — layered obsidian */
-  --color-canvas:       10  8  6;
-  --color-canvas-soft:  17 14 11;
-  --color-panel:        26 21 16;
-  --color-panel-strong: 36 29 23;
+  /* ── Base surfaces — deep blue-slate obsidian ────────────────────────── */
+  --color-canvas:        8  10  16;   /* near-black with blue undertone  */
+  --color-canvas-soft:  14  17  26;
+  --color-panel:        20  24  36;
+  --color-panel-strong: 28  33  50;
 
-  /* Accent — aged amber / Lannister gold */
-  --color-accent:  205 164  94;
+  /* ── Gold accent — burnished copper-gold ─────────────────────────────── */
+  --color-accent:       210 168  90;
+  --color-accent-bright:240 200 120;
+  --color-accent-muted: 150 110  55;
 
-  /* Danger — deep blood-red */
-  --color-danger:  108  30  35;
+  /* ── Blood red ────────────────────────────────────────────────────────── */
+  --color-danger:       130  28  36;
+  --color-danger-light: 210  68  78;
 
-  /* Text */
-  --color-ink:   232 224 210;
-  --color-muted: 160 150 138;
-  --color-line:  255 255 255;
+  /* ── Ice / Winter ─────────────────────────────────────────────────────── */
+  --color-ice:          130 160 195;
+  --color-ice-faint:    100 130 165;
+
+  /* ── Text ─────────────────────────────────────────────────────────────── */
+  --color-ink:          232 228 220;   /* warm off-white */
+  --color-ink-soft:     185 180 170;
+  --color-muted:        120 115 108;
+  --color-line:         255 255 255;
+
+  /* ── Semantic RGB shorthands ─────────────────────────────────────────── */
+  --gold:      rgb(210, 168, 90);
+  --gold-faint: rgba(210, 168, 90, 0.14);
+  --border-fine: rgba(255, 255, 255, 0.07);
+  --border-gold: rgba(210, 168, 90, 0.22);
 }
 
-/* ─────────────────────────────────────────────────────────────────────────
+/* ═══════════════════════════════════════════════════════════════════════════
    RESET
-   ───────────────────────────────────────────────────────────────────────── */
-* {
-  border-color: rgb(var(--color-line) / 0.09);
-}
+   ═══════════════════════════════════════════════════════════════════════════ */
+* { border-color: var(--border-fine); }
 
-/* ─────────────────────────────────────────────────────────────────────────
+/* ═══════════════════════════════════════════════════════════════════════════
    BASE DOCUMENT
-   ───────────────────────────────────────────────────────────────────────── */
+   ═══════════════════════════════════════════════════════════════════════════ */
 html {
   direction: rtl;
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
@@ -46,144 +61,210 @@ body {
   margin: 0;
   overflow-x: hidden;
   background:
-    /* Top-centre warm crown glow */
-    radial-gradient(ellipse 80% 40% at 50% -5%, rgba(205,164,94, 0.13), transparent 62%),
-    /* Left ember pocket */
-    radial-gradient(circle at 8% 20%,  rgba(72, 48, 28, 0.28), transparent 20%),
-    /* Right blood-hint */
-    radial-gradient(circle at 92% 12%, rgba(100,30,30, 0.20), transparent 22%),
-    /* Bottom depth fade */
-    radial-gradient(ellipse 100% 55% at 50% 110%, rgba(0,0,0,0.55), transparent 70%),
-    /* Noise grain layer (subtle parchment texture) */
-    linear-gradient(180deg, rgba(255,248,225, 0.022), rgba(0,0,0,0)),
+    radial-gradient(ellipse 100% 55% at 50% -8%,  rgba(210,168,90,0.16) 0%, transparent 62%),
+    radial-gradient(ellipse 70%  50% at 15% 30%,  rgba(120,60,200,0.08), transparent 50%),
+    radial-gradient(ellipse 70%  50% at 88% 15%,  rgba(140,40,20,0.14),  transparent 48%),
+    radial-gradient(ellipse 100% 60% at 50% 115%, rgba(0,0,0,0.70), transparent 72%),
     rgb(var(--color-canvas));
   color: rgb(var(--color-ink));
   font-family: var(--font-heebo), sans-serif;
+  line-height: 1.6;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-button,
-input,
-select,
-textarea {
-  font: inherit;
-}
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; }
 
 ::selection {
-  background: rgba(203,165,92, 0.24);
+  background: rgba(210,168,90,0.26);
   color: rgb(var(--color-ink));
 }
 
-/* ─────────────────────────────────────────────────────────────────────────
-   CUSTOM SCROLLBAR — AMBER QUILL
-   ───────────────────────────────────────────────────────────────────────── */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: rgba(255,255,255, 0.02);
-}
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, rgba(203,165,92,0.32), rgba(130,90,42,0.22));
+/* ═══════════════════════════════════════════════════════════════════════════
+   SCROLLBAR — GOLD THREAD
+   ═══════════════════════════════════════════════════════════════════════════ */
+::-webkit-scrollbar        { width: 5px; }
+::-webkit-scrollbar-track  { background: rgba(255,255,255,0.013); }
+::-webkit-scrollbar-thumb  {
+  background: linear-gradient(180deg, rgba(210,168,90,0.42), rgba(120,80,30,0.28));
   border-radius: 999px;
-  border: 2px solid transparent;
-  background-clip: padding-box;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, rgba(203,165,92,0.52), rgba(160,110,50,0.38));
-  background-clip: padding-box;
+  background: linear-gradient(180deg, rgba(210,168,90,0.68), rgba(150,98,40,0.48));
 }
 
-/* ─────────────────────────────────────────────────────────────────────────
+/* ═══════════════════════════════════════════════════════════════════════════
    COMPONENT LAYER
-   ───────────────────────────────────────────────────────────────────────── */
+   ═══════════════════════════════════════════════════════════════════════════ */
 @layer components {
-  /* Outer app chrome — thick glassmorphism frame */
+
+  /* ── OUTER SHELL FRAME ──────────────────────────────────────────────── */
   .shell-frame {
-    @apply relative overflow-hidden rounded-[38px] border border-stone-700/30;
-    background: linear-gradient(180deg, rgba(34,27,21,0.92), rgba(13,11,9,0.95));
+    position: relative;
+    overflow: hidden;
+    border-radius: 36px;
+    border: 1px solid rgba(210,168,90,0.12);
+    background: linear-gradient(170deg,
+      rgba(18, 22, 34, 0.97) 0%,
+      rgba(8,  10, 16, 0.99) 100%
+    );
     box-shadow:
-      0 32px 100px rgba(0,0,0,0.58),
-      inset 0 1px 0 rgba(255,245,215,0.06),
-      inset 0 -1px 0 rgba(0,0,0,0.25);
-    backdrop-filter: blur(24px) saturate(1.15);
+      0 48px 130px rgba(0,0,0,0.80),
+      0  0   0 1px rgba(0,0,0,0.55) inset,
+      0  1px  0 rgba(210,168,90,0.09) inset;
+    backdrop-filter: blur(32px) saturate(1.25);
   }
 
-  /* Generic content panel */
+  /* ── PANEL SURFACE — carved slate ───────────────────────────────────── */
   .panel-surface {
-    @apply rounded-[30px] border border-stone-700/30 shadow-2xl;
-    background: linear-gradient(180deg, rgba(28,23,17,0.96), rgba(18,14,10,0.98));
-    backdrop-filter: blur(16px) saturate(1.08);
+    border-radius: 20px;
+    border: 1px solid rgba(60, 70, 100, 0.60);
+    background: linear-gradient(160deg,
+      rgba(20, 24, 38, 0.98) 0%,
+      rgba(12, 15, 24, 0.99) 100%
+    );
     box-shadow:
-      0 20px 60px rgba(0,0,0,0.38),
-      inset 0 1px 0 rgba(255,245,215,0.05),
-      inset 0 -1px 0 rgba(0,0,0,0.18);
+      0 20px 56px rgba(0,0,0,0.45),
+      0  0   0 1px rgba(210,168,90,0.05) inset,
+      0  1px  0 rgba(255,255,255,0.04) inset;
+    transition: border-color 220ms ease, box-shadow 220ms ease;
+  }
+  .panel-surface:hover {
+    border-color: rgba(80, 95, 135, 0.70);
+    box-shadow:
+      0 24px 68px rgba(0,0,0,0.50),
+      0  0   0 1px rgba(210,168,90,0.08) inset,
+      0  1px  0 rgba(255,255,255,0.05) inset;
   }
 
-  /* Caption label  — spaced gold caps */
+  /* ── CAPTION — inscribed label ──────────────────────────────────────── */
   .text-caption {
-    @apply text-[0.68rem] font-semibold uppercase tracking-[0.30em] text-amber-300/65;
+    font-family: var(--font-cinzel), serif;
+    font-size: 0.58rem;
+    font-weight: 700;
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+    color: rgba(210,168,90,0.60);
+  }
+
+  /* ── GOLD DIVIDER ───────────────────────────────────────────────────── */
+  .got-divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg,
+      transparent,
+      rgba(210,168,90,0.24) 25%,
+      rgba(210,168,90,0.50) 50%,
+      rgba(210,168,90,0.24) 75%,
+      transparent
+    );
+  }
+
+  /* ── INPUT FIELD ────────────────────────────────────────────────────── */
+  .got-input {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    border-radius: 18px;
+    border: 1px solid rgba(60,70,100,0.55);
+    background: rgba(10,12,20,0.65);
+    padding: 0.75rem 1rem;
+    transition: border-color 160ms ease, background 160ms ease;
+    backdrop-filter: blur(10px);
+  }
+  .got-input:focus-within {
+    border-color: rgba(210,168,90,0.38);
+    background: rgba(14,17,28,0.80);
+    box-shadow: 0 0 0 3px rgba(210,168,90,0.07);
+  }
+
+  /* ── PILL BUTTON ────────────────────────────────────────────────────── */
+  .got-pill {
+    border-radius: 999px;
+    border: 1px solid rgba(60,70,100,0.55);
+    background: rgba(10,12,20,0.55);
+    padding: 0.4em 0.9em;
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: rgba(120,115,108,0.90);
+    transition: border-color 160ms ease, color 160ms ease, background 160ms ease;
+    cursor: pointer;
+  }
+  .got-pill:hover {
+    border-color: rgba(100,110,150,0.65);
+    color: rgb(var(--color-ink));
+  }
+  .got-pill.is-active {
+    border-color: rgba(210,168,90,0.40);
+    background: rgba(210,168,90,0.12);
+    color: rgba(240,200,120,0.95);
+    box-shadow: 0 0 20px rgba(210,168,90,0.08);
   }
 }
 
-/* ─────────────────────────────────────────────────────────────────────────
+/* ═══════════════════════════════════════════════════════════════════════════
    ANIMATIONS
-   ───────────────────────────────────────────────────────────────────────── */
+   ═══════════════════════════════════════════════════════════════════════════ */
 @keyframes shimmerSlide {
   0%   { transform: translateX(130%) skewX(-18deg); }
   100% { transform: translateX(-130%) skewX(-18deg); }
 }
-
 @keyframes cardReveal {
-  from { opacity: 0; transform: translateY(12px); }
+  from { opacity: 0; transform: translateY(12px) scale(0.988); }
+  to   { opacity: 1; transform: translateY(0)    scale(1.000); }
+}
+@keyframes emberPulse {
+  0%, 100% { opacity: 0.50; }
+  50%       { opacity: 0.90; }
+}
+@keyframes goldPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(210,168,90,0); }
+  50%       { box-shadow: 0 0 22px 4px rgba(210,168,90,0.15); }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(100%); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ─────────────────────────────────────────────────────────────────────────
-   CHARACTER CARD — PREMIUM TAROT / MOVIE POSTER FRAME
-   ───────────────────────────────────────────────────────────────────────── */
-
-/* The card's outer golden sheen on hover */
+/* ═══════════════════════════════════════════════════════════════════════════
+   CHARACTER CARD
+   ═══════════════════════════════════════════════════════════════════════════ */
 .character-card-frame {
   position: relative;
-  transition: transform 280ms cubic-bezier(0.22,0.61,0.36,1),
-              box-shadow 280ms cubic-bezier(0.22,0.61,0.36,1),
-              border-color 280ms ease;
+  transition:
+    transform  280ms cubic-bezier(0.22, 0.61, 0.36, 1),
+    box-shadow 280ms cubic-bezier(0.22, 0.61, 0.36, 1),
+    border-color 280ms ease;
 }
 .character-card-frame:hover {
-  transform: translateY(-3px);
+  transform: translateY(-5px) scale(1.010);
   box-shadow:
-    0 44px 110px rgba(0,0,0,0.70),
-    0 0 0 1px rgba(203,165,92,0.10),
-    0 0 50px rgba(203,165,92,0.05);
+    0 52px 100px rgba(0,0,0,0.72),
+    0  0   0 1px rgba(210,168,90,0.22),
+    0  0  60px rgba(210,168,90,0.07);
 }
-
-/* Subtle shimmer sweep on card hover */
 .character-card-frame::after {
   content: '';
   position: absolute;
   inset: 0;
   border-radius: inherit;
   pointer-events: none;
-  background: linear-gradient(
-    105deg,
-    transparent 35%,
-    rgba(255,245,200,0.05) 50%,
-    transparent 65%
-  );
+  background: linear-gradient(105deg, transparent 32%, rgba(255,245,200,0.055) 50%, transparent 68%);
   transform: translateX(130%) skewX(-18deg);
-  transition: none;
   z-index: 1;
 }
 .character-card-frame:hover::after {
-  animation: shimmerSlide 0.65s ease forwards;
+  animation: shimmerSlide 0.70s ease forwards;
 }
 
-/* Portrait fallback — heraldic crown SVG wrapper */
+/* Portrait fallback */
 .portrait-crest-fallback {
   position: absolute;
   inset: 0;
@@ -192,21 +273,135 @@ textarea {
   justify-content: center;
 }
 
-/* ─────────────────────────────────────────────────────────────────────────
-   LEAFLET — CINEMATIC MAP TREATMENT
-   ───────────────────────────────────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════════════════════
+   SHELL HEADER
+   ═══════════════════════════════════════════════════════════════════════════ */
+.shell-header-bar {
+  position: relative;
+}
+.shell-header-bar::after {
+  content: '';
+  position: absolute;
+  inset-x: 0;
+  bottom: -1px;
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent,
+    rgba(210,168,90,0.18) 30%,
+    rgba(210,168,90,0.36) 50%,
+    rgba(210,168,90,0.18) 70%,
+    transparent
+  );
+}
 
-/* Map container base */
+.shell-logo-tile {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid rgba(210,168,90,0.24);
+  box-shadow:
+    0 8px 24px rgba(0,0,0,0.55),
+    0 0 20px rgba(210,168,90,0.10) inset;
+  background: linear-gradient(150deg, rgba(20,24,38,0.98), rgba(8,10,16,1));
+}
+.shell-logo-tile::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255,245,200,0.07), transparent 55%);
+  pointer-events: none;
+}
+
+.episode-badge {
+  border-radius: 999px;
+  border: 1px solid rgba(210,168,90,0.32);
+  background: linear-gradient(135deg, rgba(210,168,90,0.14), rgba(120,80,28,0.09));
+  padding: 0.32rem 0.88rem;
+  font-family: var(--font-cinzel), serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.10em;
+  color: rgba(240,200,120,0.92);
+  box-shadow:
+    0 4px 16px rgba(210,168,90,0.10),
+    inset 0 1px 0 rgba(255,245,215,0.08);
+  backdrop-filter: blur(12px);
+  text-shadow: 0 1px 8px rgba(210,168,90,0.28);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   BOTTOM NAVIGATION
+   ═══════════════════════════════════════════════════════════════════════════ */
+.bottom-nav-bar {
+  border-radius: 30px;
+  border: 1px solid rgba(60,70,100,0.65);
+  background: linear-gradient(180deg, rgba(16,20,32,0.97), rgba(8,10,16,0.99));
+  box-shadow:
+    0 -1px 0 rgba(210,168,90,0.09),
+    0 36px 100px rgba(0,0,0,0.78),
+    inset 0  1px 0 rgba(255,255,255,0.04),
+    inset 0 -1px 0 rgba(0,0,0,0.22);
+  backdrop-filter: blur(28px) saturate(1.40);
+}
+
+.bottom-nav-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-height: 62px;
+  border-radius: 24px;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: rgba(120,115,108,0.88);
+  transition: color 180ms ease, background 180ms ease;
+}
+.bottom-nav-item:hover {
+  color: rgba(185,180,170,0.95);
+  background: rgba(255,255,255,0.03);
+}
+.bottom-nav-item.is-active {
+  color: rgba(240,200,120,0.98);
+  background: linear-gradient(155deg, rgba(210,168,90,0.15), rgba(120,80,28,0.09));
+  box-shadow: 0 0 0 1px rgba(210,168,90,0.14) inset;
+}
+.bottom-nav-item.is-active::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 22%;
+  right: 22%;
+  height: 1.5px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, rgba(210,168,90,0.72), transparent);
+}
+.bottom-nav-item.is-active::after {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(210,168,90,0.20);
+  filter: blur(5px);
+  animation: emberPulse 3s ease-in-out infinite;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   LEAFLET — ANCIENT MAP
+   ═══════════════════════════════════════════════════════════════════════════ */
 .leaflet-container {
-  background:
-    radial-gradient(circle at top, rgba(205,164,94,0.10), transparent 30%),
-    rgb(var(--color-canvas-soft));
+  background: rgb(var(--color-canvas-soft));
   font-family: var(--font-heebo), sans-serif;
   direction: ltr !important;
   overflow: hidden !important;
 }
 
-/* Force LTR inside all Leaflet panes */
 .leaflet-container .leaflet-pane,
 .leaflet-container .leaflet-control-container,
 .leaflet-container .leaflet-overlay-pane,
@@ -221,54 +416,40 @@ textarea {
   max-width: none !important;
 }
 
-/* ── PARCHMENT TREATMENT ──
-   Apply sepia / contrast / brightness ONLY to the base map image layer.
-   Markers, tooltips, and popups are unaffected because they live in
-   separate Leaflet panes that are siblings, not children, of .leaflet-overlay-pane.
-*/
+/* Parchment aged filter on map image */
 .leaflet-overlay-pane {
-  filter: sepia(0.28) saturate(0.78) contrast(1.12) brightness(0.84);
+  filter: sepia(0.30) saturate(0.72) contrast(1.16) brightness(0.80);
 }
 
-/* ── ZOOM CONTROLS ── */
+/* Zoom controls */
 .leaflet-control-zoom {
-  border: 1px solid rgba(120,100,72,0.50) !important;
-  border-radius: 22px !important;
+  border: 1px solid rgba(80,95,135,0.55) !important;
+  border-radius: 20px !important;
   overflow: hidden;
-  box-shadow:
-    0 20px 50px rgba(0,0,0,0.40),
-    inset 0 1px 0 rgba(255,245,215,0.06) !important;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.48) !important;
 }
 .leaflet-top .leaflet-control,
-.leaflet-bottom .leaflet-control {
-  margin: 14px !important;
-}
+.leaflet-bottom .leaflet-control { margin: 14px !important; }
 .leaflet-control-zoom a {
-  background: rgba(24,19,14,0.92) !important;
+  background: rgba(14,17,28,0.94) !important;
   color: rgb(var(--color-ink)) !important;
-  border-bottom-color: rgba(120,100,72,0.38) !important;
-  transition: background 160ms ease, color 160ms ease;
+  border-bottom-color: rgba(60,70,100,0.45) !important;
+  transition: background 150ms ease, color 150ms ease;
 }
 .leaflet-control-zoom a:hover {
-  background: rgba(205,164,94,0.16) !important;
-  color: rgb(var(--color-accent)) !important;
+  background: rgba(210,168,90,0.14) !important;
+  color: rgba(240,200,120,0.98) !important;
 }
 
-/* ── PARCHMENT VIGNETTE FRAME ──
-   Applied to the immediate wrapper around .leaflet-container in the React tree.
-   Inset box-shadow creates an authentic aged-parchment edge vignette.
-*/
+/* Map vignette wrapper */
 .map-parchment-container {
   box-shadow:
-    inset 0 0 90px rgba(6,5,3,0.78),
-    inset 0 0 30px rgba(6,5,3,0.45);
+    inset 0 0 110px rgba(0,0,0,0.82),
+    inset 0 0  42px rgba(0,0,0,0.52);
 }
 
-/* ── MARKER BASE ── */
-.map-location-marker-shell {
-  background: transparent;
-  border: 0;
-}
+/* ── Marker base ── */
+.map-location-marker-shell { background: transparent; border: 0; }
 
 .map-location-marker {
   position: relative;
@@ -286,7 +467,7 @@ textarea {
   background: color-mix(in srgb, var(--marker-tone) 30%, transparent);
   filter: blur(14px);
   opacity: 0;
-  transition: opacity 200ms ease;
+  transition: opacity 220ms ease;
 }
 
 .map-location-marker__core {
@@ -299,9 +480,9 @@ textarea {
   height: 28px;
   border: 1px solid color-mix(in srgb, var(--marker-tone) 55%, rgba(243,226,185,0.16));
   border-radius: 10px 10px 8px 8px;
-  background: linear-gradient(180deg, rgba(42,33,25,0.98), rgba(18,14,10,0.97));
+  background: linear-gradient(180deg, rgba(22,26,40,0.99), rgba(10,12,20,0.98));
   box-shadow:
-    0 14px 28px rgba(0,0,0,0.50),
+    0 14px 28px rgba(0,0,0,0.58),
     inset 0 1px 0 rgba(255,244,217,0.08);
   color: color-mix(in srgb, var(--marker-tone) 72%, rgb(255 240 214));
   transition: transform 180ms ease, box-shadow 180ms ease;
@@ -316,9 +497,9 @@ textarea {
   height: 10px;
   border-right: 1px solid color-mix(in srgb, var(--marker-tone) 45%, rgba(255,245,222,0.16));
   border-bottom: 1px solid color-mix(in srgb, var(--marker-tone) 45%, rgba(255,245,222,0.16));
-  background: rgba(22,17,12,0.96);
+  background: rgba(12,14,22,0.97);
   transform: translateX(-50%) rotate(45deg);
-  box-shadow: 0 10px 18px rgba(0,0,0,0.28);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.32);
 }
 
 .map-location-marker__badge {
@@ -334,68 +515,79 @@ textarea {
   overflow: hidden;
   border: 1px solid color-mix(in srgb, var(--badge-tone) 55%, rgba(255,255,255,0.18));
   border-radius: 999px;
-  background: linear-gradient(180deg, rgba(40,30,22,0.98), rgba(18,13,10,0.96));
+  background: linear-gradient(180deg, rgba(28,32,48,0.99), rgba(10,12,20,0.97));
   color: rgba(242,238,229,0.90);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.28);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.30);
 }
+.map-location-marker__badge img { width: 100%; height: 100%; object-fit: cover; }
 
-.map-location-marker__badge img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+.map-location-marker.has-faction .map-location-marker__core { transform: translateX(2px); }
 
-.map-location-marker.has-faction .map-location-marker__core {
-  transform: translateX(2px);
-}
-
-/* Primary location marker gets a golden crown treatment */
 .map-location-marker.is-primary .map-location-marker__core {
   width: 24px;
   height: 30px;
-  border-color: rgba(241,213,154,0.78);
-  color: rgba(252,239,208,0.98);
-  background: linear-gradient(180deg, rgba(52,40,27,0.98), rgba(22,16,11,0.97));
+  border-color: rgba(241,213,154,0.80);
+  color: rgba(255,243,210,1);
+  background: linear-gradient(180deg, rgba(20,24,38,0.99), rgba(10,12,20,0.98));
   box-shadow:
-    0 18px 38px rgba(0,0,0,0.52),
-    0 0 0 1px rgba(241,213,154,0.10),
-    0 0 18px rgba(203,165,94,0.12),
-    inset 0 1px 0 rgba(255,255,255,0.09);
+    0 18px 40px rgba(0,0,0,0.60),
+    0  0   0 1px rgba(241,213,154,0.12),
+    0  0  22px rgba(210,168,90,0.16),
+    inset 0 1px 0 rgba(255,255,255,0.10);
 }
-
 .map-location-marker.is-primary .map-location-marker__tip {
-  border-right-color: rgba(241,213,154,0.65);
-  border-bottom-color: rgba(241,213,154,0.65);
+  border-right-color: rgba(241,213,154,0.66);
+  border-bottom-color: rgba(241,213,154,0.66);
 }
 
 .map-location-marker.is-focused .map-location-marker__halo,
-.map-location-marker:hover .map-location-marker__halo {
-  opacity: 1;
-}
-
+.map-location-marker:hover    .map-location-marker__halo { opacity: 1; }
 .map-location-marker.is-focused .map-location-marker__core {
   transform: translateY(-1px);
   box-shadow:
-    0 20px 42px rgba(0,0,0,0.52),
-    0 0 0 1px rgba(241,213,154,0.12),
-    0 0 24px rgba(203,165,94,0.14),
-    inset 0 1px 0 rgba(255,255,255,0.09);
+    0 20px 42px rgba(0,0,0,0.58),
+    0  0   0 1px rgba(241,213,154,0.14),
+    0  0  28px rgba(210,168,90,0.16),
+    inset 0 1px 0 rgba(255,255,255,0.10);
 }
-
 .map-location-marker.is-focused.has-faction .map-location-marker__core {
   transform: translateX(2px) translateY(-1px);
 }
 
-/* ── TOOLTIP — Luxe dark glass with gold top-border ── */
-.map-location-tooltip {
-  border: 1px solid rgba(78,68,54,0.95);
-  border-top: 2px solid rgba(203,165,94,0.45);
-  border-radius: 12px;
-  background: rgba(22,18,14,0.93);
+.map-location-marker.is-selected .map-location-marker__halo {
+  opacity: 1;
+  background: color-mix(in srgb, var(--marker-tone) 50%, transparent);
+  filter: blur(10px);
+}
+.map-location-marker.is-selected .map-location-marker__core {
+  border-color: rgba(241,213,154,0.90);
+  color: rgba(255,248,220,1.00);
+  background: linear-gradient(180deg, rgba(56,44,26,0.99), rgba(20,15,9,0.98));
   box-shadow:
-    0 24px 52px rgba(0,0,0,0.58),
+    0 20px 42px rgba(0,0,0,0.65),
+    0  0   0 1px rgba(241,213,154,0.22),
+    0  0  28px rgba(210,168,90,0.24),
+    inset 0 1px 0 rgba(255,255,255,0.14);
+  transform: translateY(-2px) scale(1.10);
+}
+.map-location-marker.is-selected.has-faction .map-location-marker__core {
+  transform: translateX(2px) translateY(-2px) scale(1.10);
+}
+.map-location-marker.is-selected .map-location-marker__tip {
+  border-right-color: rgba(241,213,154,0.78);
+  border-bottom-color: rgba(241,213,154,0.78);
+}
+
+/* ── TOOLTIP ── */
+.map-location-tooltip {
+  border: 1px solid rgba(60,70,100,0.95);
+  border-top: 2px solid rgba(210,168,90,0.52);
+  border-radius: 12px;
+  background: rgba(12,15,24,0.96);
+  box-shadow:
+    0 24px 56px rgba(0,0,0,0.68),
     inset 0 1px 0 rgba(255,245,215,0.06);
-  color: rgb(254 243 199);
+  color: rgb(232 228 220);
   font-family: var(--font-heebo), sans-serif;
   font-size: 0.875rem;
   line-height: 1.4;
@@ -403,77 +595,222 @@ textarea {
   padding: 0;
   text-align: right;
   white-space: nowrap;
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(20px);
 }
-
 .map-location-tooltip .leaflet-tooltip-content,
-.map-location-popup .leaflet-popup-content {
-  direction: rtl;
-}
-
+.map-location-popup  .leaflet-popup-content { direction: rtl; }
 .map-location-tooltip .leaflet-tooltip-content {
   margin: 0 !important;
   padding: 0.3rem 0.85rem;
   min-width: max-content;
   white-space: nowrap;
 }
+.map-location-tooltip.leaflet-tooltip-top::before    { border-top-color:    rgba(12,15,24,0.96); }
+.map-location-tooltip.leaflet-tooltip-bottom::before { border-bottom-color: rgba(12,15,24,0.96); }
+.map-location-tooltip.leaflet-tooltip-left::before   { border-left-color:   rgba(12,15,24,0.96); }
+.map-location-tooltip.leaflet-tooltip-right::before  { border-right-color:  rgba(12,15,24,0.96); }
 
-/* Tooltip arrows inherit the panel background */
-.map-location-tooltip.leaflet-tooltip-top::before {
-  border-top-color: rgba(22,18,14,0.93);
-}
-.map-location-tooltip.leaflet-tooltip-bottom::before {
-  border-bottom-color: rgba(22,18,14,0.93);
-}
-.map-location-tooltip.leaflet-tooltip-left::before {
-  border-left-color: rgba(22,18,14,0.93);
-}
-.map-location-tooltip.leaflet-tooltip-right::before {
-  border-right-color: rgba(22,18,14,0.93);
-}
-
-/* ── POPUP ── */
+/* ── POPUP (legacy) ── */
 .map-location-popup .leaflet-popup-content-wrapper {
-  border: 1px solid rgba(78,68,54,0.98);
-  border-top: 2px solid rgba(203,165,94,0.40);
+  border: 1px solid rgba(60,70,100,0.98);
+  border-top: 2px solid rgba(210,168,90,0.42);
   border-radius: 24px;
-  background: rgba(22,18,14,0.96) !important;
-  box-shadow:
-    0 32px 80px rgba(0,0,0,0.62),
-    inset 0 1px 0 rgba(255,245,215,0.06);
-  color: rgb(254 243 199) !important;
-  backdrop-filter: blur(20px);
+  background: rgba(12,15,24,0.97) !important;
+  box-shadow: 0 32px 80px rgba(0,0,0,0.68);
+  color: rgb(232 228 220) !important;
+  backdrop-filter: blur(24px);
 }
-
 .map-location-popup .leaflet-popup-content {
   min-width: min(13rem, calc(100vw - 4rem));
   max-width: min(16rem, calc(100vw - 4rem));
   margin: 0;
   padding: 14px 18px;
 }
-
 .map-location-popup .leaflet-popup-tip {
-  border: 1px solid rgba(165,120,68,0.30);
-  background: rgba(18,14,10,0.96) !important;
+  background: rgba(12,15,24,0.97) !important;
   box-shadow: none;
 }
-
 .map-location-popup .leaflet-popup-close-button {
-  top: 9px;
-  right: 10px;
-  width: 22px;
-  height: 22px;
+  top: 9px; right: 10px;
+  width: 22px; height: 22px;
   border-radius: 50%;
   background: rgba(255,255,255,0.06) !important;
   color: rgb(var(--color-muted)) !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex; align-items: center; justify-content: center;
   font-size: 16px;
-  transition: background 160ms ease, color 160ms ease;
+  transition: background 160ms ease;
+}
+.map-location-popup .leaflet-popup-close-button:hover {
+  background: rgba(210,168,90,0.16) !important;
 }
 
-.map-location-popup .leaflet-popup-close-button:hover {
-  background: rgba(203,165,94,0.15) !important;
-  color: rgb(var(--color-ink)) !important;
+/* ── MAP INFO PANEL ── */
+@keyframes mapPanelIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-map-panel-in {
+  animation: mapPanelIn 0.24s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+}
+.map-info-panel {
+  width: 100%;
+  border: 1px solid rgba(60, 70, 100, 0.82);
+  border-top: 2px solid rgba(210, 168, 90, 0.52);
+  border-radius: 18px;
+  padding: 14px 16px 12px;
+  background: linear-gradient(170deg, rgba(18, 22, 36, 0.97), rgba(10, 12, 20, 0.99));
+  box-shadow:
+    0 -4px 32px rgba(0,0,0,0.55),
+    0 24px 64px rgba(0,0,0,0.60),
+    inset 0 1px 0 rgba(255,245,215,0.06);
+  backdrop-filter: blur(24px) saturate(1.20);
+  color: rgb(var(--color-ink));
+  font-family: var(--font-heebo), sans-serif;
+  direction: rtl;
+  text-align: right;
+}
+
+/* ── SELECTED MARKER STATE ── */
+.map-location-marker.is-selected .map-location-marker__halo {
+  opacity: 1;
+  background: color-mix(in srgb, var(--marker-tone) 50%, transparent);
+  filter: blur(10px);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   DESKTOP LAYOUT — responsive sidebar + multi-column
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Mobile defaults ─────────────────────────────────────────────────────── */
+.desktop-sidebar         { display: none; }
+.desktop-hide-on-desktop { display: block; }
+.desktop-show-on-desktop { display: none; }  /* kept for backward compat */
+
+/* Mobile: positioner centers the phone frame */
+.app-main-column       { position: relative; }
+.app-mobile-positioner {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 450px;
+  padding: 1rem 1rem 7rem;   /* pb-28 equivalent for bottom nav clearance */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/* Shell inner: on mobile it IS the .shell-frame card */
+.app-shell-inner       { flex: 1; min-height: calc(100vh - 8rem); }
+
+/* Desktop shell — replaces single-column phone layout */
+@media (min-width: 768px) {
+  .desktop-shell {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 0;
+  }
+
+  /* Sidebar nav for desktop */
+  .desktop-sidebar {
+    grid-row: 1 / -1;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 2rem 1rem 1.5rem;
+    border-left: 1px solid rgba(60,70,100,0.42);
+    background: linear-gradient(180deg, rgba(16,20,32,0.98), rgba(8,10,16,0.99));
+    backdrop-filter: blur(16px);
+    overflow-y: auto;
+  }
+
+  .desktop-nav-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    border-radius: 14px;
+    padding: 0.70rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: rgba(120,115,108,0.88);
+    transition: color 160ms ease, background 160ms ease;
+    text-decoration: none;
+  }
+  .desktop-nav-item:hover {
+    color: rgba(185,180,170,0.95);
+    background: rgba(255,255,255,0.04);
+  }
+  .desktop-nav-item.is-active {
+    color: rgba(240,200,120,0.96);
+    background: rgba(210,168,90,0.12);
+    border: 1px solid rgba(210,168,90,0.16);
+  }
+  .desktop-nav-item.is-active .desktop-nav-icon {
+    color: rgba(240,200,120,0.96);
+  }
+
+  /* Show/hide helpers */
+  .desktop-hide-on-desktop { display: none !important; }
+  .desktop-show-on-desktop { display: flex; flex-direction: column; }
+
+  /* Desktop content area */
+  .desktop-content {
+    padding: 2rem;
+    overflow-y: auto;
+    height: 100vh;
+  }
+
+  /* Desktop content wrapper (the main column) */
+  .desktop-content-area {
+    padding: 2.5rem 2rem;
+    overflow-y: auto;
+    min-height: 100vh;
+  }
+
+  /* ── Desktop adaptive app shell overrides ───────────────────────────── */
+  /* Main column takes the grid's 1fr content area */
+  .app-main-column {
+    overflow-y: auto;
+    height: 100vh;
+  }
+  /* Positioner: no mobile centering/max-width on desktop */
+  .app-mobile-positioner {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    padding: 2.5rem 2.5rem 2rem;
+    min-height: 100vh;
+    display: block;
+  }
+  /* Shell inner: strip the glassy phone-card appearance on desktop */
+  .app-shell-inner {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    min-height: unset;
+  }
+
+  /* Multi-column character grid on desktop */
+  .character-grid-desktop {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+
+  /* Wider panels on desktop */
+  .panel-surface {
+    border-radius: 24px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .desktop-shell {
+    grid-template-columns: 260px 1fr;
+    max-width: 1400px;
+  }
 }

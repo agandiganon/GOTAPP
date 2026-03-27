@@ -199,7 +199,14 @@ export function HomeScreen() {
           {/* Label + title */}
           <div className="space-y-2">
             <p className="text-caption">לוח צפייה</p>
-            <h1 className="max-w-[16ch] font-display text-3xl leading-tight text-ink">
+            <h1
+              className="max-w-[16ch] leading-tight text-ink"
+              style={{
+                fontFamily: "var(--font-display), serif",
+                fontSize: "clamp(1.6rem, 5vw, 2rem)",
+                textShadow: "0 1px 18px rgba(200,158,82,0.14)",
+              }}
+            >
               gotspoil · מלווה הצפייה שלך
             </h1>
             <p className="text-sm leading-7 text-muted">
@@ -209,9 +216,9 @@ export function HomeScreen() {
 
           {/* Selector container */}
           <div
-            className="rounded-[32px] border border-stone-700/38 p-3 backdrop-blur-xl"
+            className="rounded-[32px] border border-[#3c4664]/42 p-3 backdrop-blur-xl"
             style={{
-              background: "linear-gradient(180deg, rgba(30,24,18,0.88), rgba(16,12,9,0.92))",
+              background: "linear-gradient(180deg, rgba(18,22,36,0.92), rgba(10,13,20,0.95))",
               boxShadow: "0 24px 64px rgba(0,0,0,0.42), inset 0 1px 0 rgba(255,245,215,0.05)",
             }}
           >
@@ -221,7 +228,7 @@ export function HomeScreen() {
               aria-expanded={isSelectorOpen}
               aria-haspopup="listbox"
               onClick={() => setIsSelectorOpen((p) => !p)}
-              className="group w-full cursor-pointer rounded-[26px] border border-stone-700/38 bg-stone-950/55 p-4 text-right transition duration-300 hover:border-amber-700/35 hover:bg-stone-900/70"
+              className="group w-full cursor-pointer rounded-[26px] border border-[#3c4664]/40 bg-[#0a0d14]/55 p-4 text-right transition duration-300 hover:border-[#d2a85a]/35 hover:bg-[#0e1220]/70"
             >
               <div className="flex items-start justify-between gap-4">
                 <div className="space-y-1.5">
@@ -234,10 +241,10 @@ export function HomeScreen() {
                   </p>
                 </div>
                 <div className="flex shrink-0 items-center gap-2">
-                  <span className="rounded-full border border-emerald-700/30 bg-emerald-500/[0.10] px-3 py-1 text-[0.68rem] font-medium text-emerald-200">
+                  <span className="rounded-full border border-[#7a9ec4]/28 bg-[#5a7ea8]/[0.13] px-3 py-1 text-[0.68rem] font-medium text-[#c2d8ef]">
                     מצב בטוח
                   </span>
-                  <span className="flex h-10 w-10 items-center justify-center rounded-full border border-stone-700/40 bg-stone-950/55 text-amber-300 transition group-hover:border-amber-700/40 group-hover:bg-amber-500/[0.10]">
+                  <span className="flex h-10 w-10 items-center justify-center rounded-full border border-[#3c4664]/42 bg-[#0a0d14]/55 text-[#d2a85a] transition group-hover:border-[#d2a85a]/40 group-hover:bg-[#d2a85a]/[0.10]">
                     <ChevronDown
                       className={cn(
                         "h-5 w-5 transition duration-300",
@@ -256,6 +263,56 @@ export function HomeScreen() {
               onClose={() => setIsSelectorOpen(false)}
               onConfirm={applyEpisode}
             />
+
+            {/* Season progress bar */}
+            {(() => {
+              const seasonEps = availableEpisodes.filter(e => e.season === currentEpisode.season);
+              const epIndex = seasonEps.findIndex(e => e.id === currentEpisodeId);
+              const progressPct = seasonEps.length > 0 ? ((epIndex + 1) / seasonEps.length) * 100 : 0;
+              return (
+                <div className="mt-3 px-1">
+                  <div className="mb-1.5 flex items-center justify-between">
+                    <p
+                      style={{
+                        fontFamily: "var(--font-cinzel), serif",
+                        fontSize: "0.55rem",
+                        fontWeight: 700,
+                        letterSpacing: "0.22em",
+                        textTransform: "uppercase",
+                        color: "rgba(210,168,90,0.50)",
+                      }}
+                    >
+                      עונה {currentEpisode.season} · פרק {epIndex + 1} מתוך {seasonEps.length}
+                    </p>
+                    <span className="text-[0.60rem] text-muted">{Math.round(progressPct)}%</span>
+                  </div>
+                  <div className="h-1 w-full overflow-hidden rounded-full" style={{ background: "rgba(60,70,100,0.35)" }}>
+                    <div
+                      className="h-full rounded-full transition-all duration-700"
+                      style={{
+                        width: `${progressPct}%`,
+                        background: "linear-gradient(90deg, rgba(150,120,60,0.70), rgba(210,168,90,0.90))",
+                        boxShadow: "0 0 8px rgba(210,168,90,0.30)",
+                      }}
+                    />
+                  </div>
+                  <div className="mt-1.5 flex gap-px">
+                    {seasonEps.map((ep, idx) => (
+                      <div
+                        key={ep.id}
+                        className="h-1 flex-1 rounded-sm"
+                        style={{
+                          background: idx <= epIndex
+                            ? `rgba(210,168,90,${0.25 + (idx === epIndex ? 0.55 : 0.20)})`
+                            : "rgba(60,70,100,0.25)",
+                          transition: "background 0.3s ease",
+                        }}
+                      />
+                    ))}
+                  </div>
+                </div>
+              );
+            })()}
 
             {/* Episode summary */}
             <div className="mt-3 rounded-[26px] border border-stone-700/38 bg-stone-950/42 p-4 backdrop-blur-md">
@@ -279,7 +336,7 @@ export function HomeScreen() {
                   {focusCharacters.map((c) => (
                     <span
                       key={c.id}
-                      className="inline-flex items-center gap-1.5 rounded-full border border-stone-700/35 bg-stone-900/55 px-3 py-1.5 text-xs font-medium text-stone-300"
+                      className="inline-flex items-center gap-1.5 rounded-full border border-stone-700/35 bg-stone-900/55 px-3 py-1.5 text-xs font-medium text-ink"
                     >
                       <Users className="h-3 w-3 text-amber-400/60" />
                       {c.name}
@@ -340,9 +397,9 @@ export function HomeScreen() {
         {/* Interactive mini-map centred on the primary episode location */}
         <div className="p-4 pb-0">
           <div
-            className="overflow-hidden rounded-[22px] border border-amber-900/28"
+            className="overflow-hidden rounded-[22px] border border-[#3c4664]/38"
             style={{
-              background: "linear-gradient(180deg, rgba(26,20,15,0.96), rgba(10,8,6,1))",
+              background: "linear-gradient(180deg, rgba(16,20,32,0.97), rgba(8,10,16,1))",
               boxShadow: `0 20px 56px rgba(0,0,0,0.48), inset 0 0 0 1px rgba(203,165,92,0.06)`,
             }}
           >
@@ -365,11 +422,11 @@ export function HomeScreen() {
                   /* Fallback when no coordinates exist for this episode's primary location */
                   <div
                     className="flex h-full items-center justify-center text-center"
-                    style={{ background: "rgba(14,11,8,0.92)" }}
+                    style={{ background: "rgba(8,10,16,0.92)" }}
                   >
                     <div className="space-y-2 px-6">
                       <MapPin className="mx-auto h-6 w-6 text-amber-500/40" />
-                      <p className="text-xs text-stone-500">
+                      <p className="text-xs text-muted">
                         קואורדינטות מפה טרם הוגדרו למיקום זה
                       </p>
                     </div>
@@ -381,12 +438,12 @@ export function HomeScreen() {
                   className="pointer-events-none absolute inset-0 rounded-[18px]"
                   style={{
                     background:
-                      "radial-gradient(ellipse 120% 100% at 50% 50%, transparent 48%, rgba(6,4,3,0.55) 82%, rgba(6,4,3,0.80) 100%)",
+                      "radial-gradient(ellipse 120% 100% at 50% 50%, transparent 48%, rgba(4,6,14,0.55) 82%, rgba(4,6,14,0.80) 100%)",
                   }}
                 />
 
                 {/* Bottom-left episode badge */}
-                <div className="pointer-events-none absolute bottom-2.5 left-2.5 flex items-center gap-1.5 rounded-full border border-stone-600/40 bg-stone-950/78 px-2.5 py-1.5 backdrop-blur-md">
+                <div className="pointer-events-none absolute bottom-2.5 left-2.5 flex items-center gap-1.5 rounded-full border border-[#3c4664]/42 bg-[#080a10]/78 px-2.5 py-1.5 backdrop-blur-md">
                   <Flame className="h-3 w-3 text-amber-400/80" />
                   <span className="text-[0.62rem] font-semibold tracking-wide text-amber-200/80">
                     זירת הפרק
@@ -399,7 +456,7 @@ export function HomeScreen() {
                     className="pointer-events-none absolute bottom-2.5 right-2.5 rounded-[8px] border px-2 py-1 backdrop-blur-sm"
                     style={{
                       borderColor: `${focalColor}45`,
-                      background: "rgba(10,8,6,0.82)",
+                      background: "rgba(8,10,16,0.82)",
                     }}
                   >
                     <p className="text-[0.68rem] font-semibold" style={{ color: focalColor }}>
@@ -418,15 +475,15 @@ export function HomeScreen() {
         {/* Location detail card below map */}
         <div className="p-4 pt-3">
           <div
-            className="rounded-[20px] border border-stone-700/38 p-4 backdrop-blur-sm"
-            style={{ background: "rgba(18,14,10,0.75)" }}
+            className="rounded-[20px] border border-[#3c4664]/40 p-4 backdrop-blur-sm"
+            style={{ background: "rgba(14,18,28,0.72)" }}
           >
-            <p className="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-amber-300/50">
+            <p className="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-accent/50">
               תיאור המיקום
             </p>
-            <p className="mt-2 text-sm leading-7 text-stone-300">{primarySummary}</p>
+            <p className="mt-2 text-sm leading-7 text-ink">{primarySummary}</p>
             {!hasPrimaryPinCoordinates && (
-              <p className="mt-2 text-xs text-stone-500">
+              <p className="mt-2 text-xs text-muted">
                 ※ קואורדינטות מפה טרם הוגדרו למיקום זה — הסמן יופיע לאחר עדכון הנתונים.
               </p>
             )}
@@ -507,7 +564,7 @@ export function HomeScreen() {
               className="flex items-center gap-3 rounded-[18px] border px-3.5 py-3"
               style={{
                 borderColor: `${entry.faction.themeColor}20`,
-                background: `linear-gradient(135deg, ${entry.faction.themeColor}08, rgba(20,16,12,0.70))`,
+                background: `linear-gradient(135deg, ${entry.faction.themeColor}08, rgba(16,20,32,0.68))`,
               }}
             >
               <span
@@ -577,7 +634,7 @@ export function HomeScreen() {
                       <p className={cn("text-sm font-semibold leading-6", t.title)}>
                         {event.title}
                       </p>
-                      <ArrowUpRight className="mt-0.5 h-4 w-4 shrink-0 text-stone-500" />
+                      <ArrowUpRight className="mt-0.5 h-4 w-4 shrink-0 text-muted" />
                     </div>
                     {event.description !== event.title && (
                       <p className="mt-1 text-xs leading-6 text-stone-400">
@@ -606,7 +663,7 @@ export function HomeScreen() {
           {/* Characters */}
           <div
             className="rounded-[20px] border border-stone-700/35 p-4"
-            style={{ background: "rgba(20,16,12,0.70)" }}
+            style={{ background: "rgba(16,20,32,0.68)" }}
           >
             <div className="mb-3 flex items-center gap-2">
               <Users className="h-3.5 w-3.5 text-amber-400/70" />
@@ -624,7 +681,7 @@ export function HomeScreen() {
                 </span>
               ))}
               {focusCharacters.length === 0 && (
-                <span className="text-xs text-stone-500">לא הוגדרו דמויות ממוקדות.</span>
+                <span className="text-xs text-muted">לא הוגדרו דמויות ממוקדות.</span>
               )}
             </div>
           </div>
@@ -632,7 +689,7 @@ export function HomeScreen() {
           {/* Locations */}
           <div
             className="rounded-[20px] border border-stone-700/35 p-4"
-            style={{ background: "rgba(20,16,12,0.70)" }}
+            style={{ background: "rgba(16,20,32,0.68)" }}
           >
             <div className="mb-3 flex items-center gap-2">
               <MapPin className="h-3.5 w-3.5 text-amber-400/70" />
@@ -650,7 +707,7 @@ export function HomeScreen() {
                 </span>
               ))}
               {mainLocationLabels.length === 0 && (
-                <span className="text-xs text-stone-500">לא הוגדרו מיקומים.</span>
+                <span className="text-xs text-muted">לא הוגדרו מיקומים.</span>
               )}
             </div>
           </div>

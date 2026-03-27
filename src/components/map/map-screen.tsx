@@ -144,7 +144,7 @@ export function MapScreen() {
         </div>
 
         <div className="p-4 pt-0 pb-5">
-          <div className="rounded-[30px] border border-amber-900/30 bg-[linear-gradient(180deg,rgba(27,22,18,0.94),rgba(12,10,8,0.98))] p-3 shadow-[0_28px_70px_rgba(0,0,0,0.42)] ring-1 ring-inset ring-amber-800/10">
+          <div className="rounded-[30px] border border-[#3c4664]/38 bg-[linear-gradient(180deg,rgba(18,22,36,0.96),rgba(8,10,16,0.99))] p-3 shadow-[0_28px_70px_rgba(0,0,0,0.42)] ring-1 ring-inset ring-amber-800/10">
             <div className="relative h-[21.5rem] overflow-hidden rounded-[24px] border border-stone-700/35 bg-stone-950 shadow-[inset_0_1px_0_rgba(255,244,217,0.04)] sm:h-[25rem] md:h-[34rem]">
               <FantasyMapCanvas pins={mapPins} focusLocationId={focusedLocation?.id ?? null} />
 

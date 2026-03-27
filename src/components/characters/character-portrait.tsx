@@ -26,7 +26,7 @@ function HeraldicCrestFallback({ factionColor }: { factionColor: string }) {
         background: `
           radial-gradient(ellipse 65% 55% at 50% 28%, ${factionColor}28, transparent 68%),
           radial-gradient(ellipse 100% 80% at 50% 100%, rgba(0,0,0,0.55), transparent 70%),
-          linear-gradient(160deg, rgba(30,24,18,0.98) 0%, rgba(12,9,7,1) 100%)
+          linear-gradient(160deg, rgba(18,22,36,0.98) 0%, rgba(8,10,16,1) 100%)
         `,
       }}
     >

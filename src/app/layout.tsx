@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Frank_Ruhl_Libre, Heebo } from "next/font/google";
+import { Cinzel, Frank_Ruhl_Libre, Heebo } from "next/font/google";
 
 import { AppShell } from "@/components/layout/app-shell";
 import { ChunkLoadGuard } from "@/components/runtime/chunk-load-guard";
@@ -19,6 +19,14 @@ const frankRuhlLibre = Frank_Ruhl_Libre({
   variable: "--font-display",
   display: "swap",
   weight: ["500", "700"],
+});
+
+/* Cinzel — Roman-numeral / ornamental titling, Latin-only */
+const cinzel = Cinzel({
+  subsets: ["latin"],
+  variable: "--font-cinzel",
+  display: "swap",
+  weight: ["400", "700", "900"],
 });
 
 export const metadata: Metadata = {
@@ -42,7 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="he" dir="rtl" suppressHydrationWarning>
-      <body className={`${heebo.variable} ${frankRuhlLibre.variable} bg-canvas text-ink antialiased`}>
+      <body className={`${heebo.variable} ${frankRuhlLibre.variable} ${cinzel.variable} bg-canvas text-ink antialiased`}>
         <Providers>
           <ChunkLoadGuard />
           <AppShell>{children}</AppShell>

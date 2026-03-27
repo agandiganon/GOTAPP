@@ -1,16 +1,19 @@
 "use client";
 
 import { MapPin, Search, Shield, SlidersHorizontal, User } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useState } from "react";
 
+import { CharacterDetailDrawer } from "@/components/characters/character-detail-drawer";
 import { CharacterPortrait } from "@/components/characters/character-portrait";
 import { FactionSigilBadge } from "@/components/factions/faction-sigil-badge";
 import { Panel } from "@/components/ui/panel";
 import { StatusPill } from "@/components/ui/status-pill";
 import { characters, episodeIndex, factions, locations } from "@/data/seed";
-import type { CharacterStatus } from "@/data/schemas";
+import type { CharacterRecord, CharacterStatus, CharacterTimelineEntry } from "@/data/schemas";
 import { getVisibleCharacterSnapshots } from "@/lib/timeline";
 import { useEpisode } from "@/providers/episode-provider";
+
+type CharacterSnapshot = CharacterRecord & { latestState: CharacterTimelineEntry };
 
 /* ─── Sort ──────────────────────────────────────────────────────────────── */
 type SortMode = "importance" | "status" | "name";
@@ -47,15 +50,30 @@ const statusSortOrder: Record<CharacterStatus, number> = {
    ───────────────────────────────────────────────────────────────────────── */
 export function CharactersScreen() {
   const { currentEpisode, currentEpisodeId } = useEpisode();
-  const [query, setQuery]       = useState("");
-  const [sortMode, setSortMode] = useState<SortMode>("importance");
+  const [query, setQuery]               = useState("");
+  const [sortMode, setSortMode]         = useState<SortMode>("importance");
+  const [factionFilter, setFactionFilter] = useState<string | null>(null);
+  const [selectedCharacter, setSelectedCharacter] = useState<CharacterSnapshot | null>(null);
 
   /* ── Anti-spoiler logic — DO NOT TOUCH ────────────────────────────────── */
   const visibleCharacters = getVisibleCharacterSnapshots(characters, currentEpisodeId, episodeIndex);
 
+  /* Factions that actually appear in the visible set */
+  const activeFactionIds = Array.from(
+    new Set(visibleCharacters.map((c) => c.latestState.affiliationId).filter(Boolean))
+  ) as string[];
+  const activeFactions = factions
+    .filter((f) => activeFactionIds.includes(f.id))
+    .sort((a, b) => {
+      // sort by character count descending
+      const countA = visibleCharacters.filter(c => c.latestState.affiliationId === a.id).length;
+      const countB = visibleCharacters.filter(c => c.latestState.affiliationId === b.id).length;
+      return countB - countA;
+    });
+
   const filteredCharacters = visibleCharacters.filter((character) => {
-    const factionName =
-      factions.find((faction) => faction.id === character.latestState.affiliationId)?.displayName ?? "";
+    const faction = factions.find((f) => f.id === character.latestState.affiliationId);
+    const factionName = faction?.displayName ?? "";
     const locationName =
       locations.find((location) => location.id === character.latestState.locationId)?.name ?? "";
     const haystack = [
@@ -69,7 +87,9 @@ export function CharactersScreen() {
       .join(" ")
       .toLowerCase();
 
-    return haystack.includes(query.trim().toLowerCase());
+    const matchesQuery = haystack.includes(query.trim().toLowerCase());
+    const matchesFaction = factionFilter === null || character.latestState.affiliationId === factionFilter;
+    return matchesQuery && matchesFaction;
   });
 
   const sortedCharacters = [...filteredCharacters].sort((characterA, characterB) => {
@@ -197,6 +217,43 @@ export function CharactersScreen() {
               );
             })}
           </div>
+
+          {/* Faction filter — horizontal scroll */}
+          <div className="-mx-1 overflow-x-auto pb-1" style={{ scrollbarWidth: "none" }}>
+            <div className="flex items-center gap-2 px-1" style={{ width: "max-content" }}>
+              {/* "All" pill */}
+              <button
+                type="button"
+                onClick={() => setFactionFilter(null)}
+                className={`shrink-0 rounded-full border px-3.5 py-1.5 text-[0.70rem] font-medium transition-all duration-200 ${
+                  factionFilter === null
+                    ? "border-[#3c4664]/60 bg-[#2a3050]/70 text-[#c8d8f0]"
+                    : "border-stone-700/30 bg-stone-950/40 text-stone-500 hover:text-stone-300"
+                }`}
+              >
+                הכל
+              </button>
+              {activeFactions.slice(0, 12).map((faction) => {
+                const isActive = factionFilter === faction.id;
+                const color = faction.themeColor ?? "#a07840";
+                return (
+                  <button
+                    key={faction.id}
+                    type="button"
+                    onClick={() => setFactionFilter(isActive ? null : faction.id)}
+                    className="shrink-0 flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-[0.70rem] font-medium transition-all duration-200"
+                    style={{
+                      background: isActive ? `${color}15` : "rgba(8,10,16,0.60)",
+                      border: isActive ? `1px solid ${color}38` : "1px solid rgba(60,70,100,0.30)",
+                      color: isActive ? color : "rgb(130,130,150)",
+                    }}
+                  >
+                    {faction.displayName}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </Panel>
 
@@ -219,7 +276,7 @@ export function CharactersScreen() {
 
       {/* ── Character cards grid ─────────────────────────────────────── */}
       {sortedCharacters.length > 0 && (
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+        <div className="character-grid-desktop grid grid-cols-1 gap-5 sm:grid-cols-2">
           {sortedCharacters.map((character) => {
             const faction = factions.find((item) => item.id === character.latestState.affiliationId);
             const locationName = locations.find((l) => l.id === character.latestState.locationId)?.name ?? null;
@@ -229,15 +286,22 @@ export function CharactersScreen() {
               <article
                 key={character.id}
                 dir="rtl"
-                className="character-card-frame group overflow-hidden rounded-[26px] border border-stone-800/65 hover:border-amber-900/45"
+                className="character-card-frame group overflow-hidden rounded-[26px] cursor-pointer"
                 style={{
-                  background: "linear-gradient(170deg, rgba(26,21,16,0.99), rgba(10,8,6,1))",
-                  boxShadow: "0 28px 72px rgba(0,0,0,0.58), inset 0 1px 0 rgba(255,245,215,0.04)",
+                  border: `1px solid ${factionColor}28`,
+                  background: "linear-gradient(175deg, rgba(14,18,30,0.99), rgba(8,10,18,1))",
+                  boxShadow: `0 24px 60px rgba(0,0,0,0.55), inset 0 1px 0 ${factionColor}0a, 0 0 0 0 ${factionColor}00`,
+                  transition: "box-shadow 0.2s ease, border-color 0.2s ease",
                 }}
+                onClick={() => setSelectedCharacter(character)}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") setSelectedCharacter(character); }}
+                aria-label={`פרטי ${character.name}`}
               >
 
                 {/* ── Portrait zone ────────────────────────────── */}
-                <div className="relative h-64 w-full sm:h-72 overflow-hidden">
+                <div className="relative h-72 w-full sm:h-80 overflow-hidden">
                   <CharacterPortrait
                     name={character.name}
                     imageUrl={character.characterImageUrl ?? character.portrait}
@@ -251,13 +315,13 @@ export function CharactersScreen() {
                     style={{
                       background: `
                         linear-gradient(to top,
-                          rgba(10,8,6,1)   0%,
-                          rgba(10,8,6,0.85) 20%,
-                          rgba(10,8,6,0.18) 46%,
+                          rgba(8,10,16,1)   0%,
+                          rgba(8,10,16,0.85) 20%,
+                          rgba(8,10,16,0.18) 46%,
                           transparent       72%
                         ),
                         linear-gradient(to right,
-                          rgba(10,8,6,0.22) 0%,
+                          rgba(8,10,16,0.22) 0%,
                           transparent       55%
                         )
                       `,
@@ -274,18 +338,14 @@ export function CharactersScreen() {
                     />
                   )}
 
-                  {/* Top-left episode badge */}
-                  <div className="absolute left-3.5 top-3.5 rounded-full border border-stone-600/35 bg-stone-950/72 px-2.5 py-1 text-[0.62rem] font-medium text-stone-400 backdrop-blur-md">
-                    עד {currentEpisode.code}
-                  </div>
-
                   {/* Character name + status — floated on bottom of image */}
                   <div className="absolute bottom-0 left-0 right-0 p-4 pt-10">
                     <h2
-                      className="font-display leading-tight text-amber-100"
+                      className="leading-tight text-amber-100"
                       style={{
-                        fontSize: "clamp(1.3rem, 4vw, 1.6rem)",
-                        textShadow: "0 2px 16px rgba(0,0,0,0.75)",
+                        fontFamily: "var(--font-display), serif",
+                        fontSize: "clamp(1.25rem, 4vw, 1.55rem)",
+                        textShadow: "0 2px 20px rgba(0,0,0,0.80), 0 0 30px rgba(200,158,82,0.15)",
                       }}
                     >
                       {character.name}
@@ -304,13 +364,16 @@ export function CharactersScreen() {
 
                   {/* Faction row */}
                   <div
-                    className="flex items-center justify-between gap-3 rounded-[16px] border border-stone-800/65 px-3.5 py-2.5 backdrop-blur-sm"
-                    style={{ background: "rgba(22,17,13,0.80)" }}
+                    className="flex items-center justify-between gap-3 rounded-[16px] px-3.5 py-2.5 backdrop-blur-sm"
+                    style={{
+                      background: "rgba(14,18,28,0.82)",
+                      border: "1px solid rgba(50,60,90,0.55)",
+                    }}
                   >
                     <div className="flex items-center gap-2.5">
-                      <Shield className="h-3.5 w-3.5 shrink-0 text-amber-400/60" strokeWidth={1.7} />
-                      <span className="text-[0.82rem] text-stone-300">
-                        <span className="text-stone-500">שיוך: </span>
+                      <Shield className="h-3.5 w-3.5 shrink-0 text-accent/50" strokeWidth={1.7} />
+                      <span className="text-[0.82rem] text-ink/80">
+                        <span className="text-muted">שיוך: </span>
                         {faction?.displayName ?? "לא זמין בנקודת הזמן הזו"}
                       </span>
                     </div>
@@ -327,12 +390,15 @@ export function CharactersScreen() {
                   {/* Location row */}
                   {locationName && (
                     <div
-                      className="flex items-center gap-2.5 rounded-[16px] border border-stone-800/60 px-3.5 py-2.5 backdrop-blur-sm"
-                      style={{ background: "rgba(22,17,13,0.80)" }}
+                      className="flex items-center gap-2.5 rounded-[16px] px-3.5 py-2.5 backdrop-blur-sm"
+                      style={{
+                        background: "rgba(14,18,28,0.82)",
+                        border: "1px solid rgba(50,60,90,0.55)",
+                      }}
                     >
-                      <MapPin className="h-3.5 w-3.5 shrink-0 text-stone-500" strokeWidth={1.7} />
-                      <span className="text-[0.82rem] text-stone-300">
-                        <span className="text-stone-500">מיקום: </span>
+                      <MapPin className="h-3.5 w-3.5 shrink-0 text-muted" strokeWidth={1.7} />
+                      <span className="text-[0.82rem] text-ink/80">
+                        <span className="text-muted">מיקום: </span>
                         {locationName}
                       </span>
                     </div>
@@ -348,17 +414,45 @@ export function CharactersScreen() {
                   {/* Episode-aware current state */}
                   {character.latestState.summary && (
                     <div
-                      className="rounded-[14px] border border-amber-900/25 px-4 py-3"
-                      style={{ background: "rgba(18,14,10,0.75)" }}
+                      className="rounded-[14px] px-4 py-3"
+                      style={{
+                        border: `1px solid ${factionColor}18`,
+                        borderTop: `1.5px solid ${factionColor}30`,
+                        background: "linear-gradient(165deg, rgba(14,18,30,0.94), rgba(8,11,20,0.98))",
+                        boxShadow: `inset 0 1px 0 ${factionColor}06`,
+                      }}
                     >
-                      <p className="text-[0.60rem] font-semibold uppercase tracking-[0.24em] text-amber-400/50 mb-1.5">
+                      <p
+                        className="mb-1.5"
+                        style={{
+                          fontFamily: "var(--font-cinzel), serif",
+                          fontSize: "0.55rem",
+                          fontWeight: 700,
+                          letterSpacing: "0.28em",
+                          textTransform: "uppercase",
+                          color: `${factionColor}88`,
+                        }}
+                      >
                         עד פרק {character.latestState.episodeId.replace('S0','S').replace('E0','E')}
                       </p>
-                      <p className="text-[0.82rem] leading-[1.75] text-stone-300">
+                      <p className="text-[0.82rem] leading-[1.75] text-ink/80">
                         {character.latestState.summary}
                       </p>
                     </div>
                   )}
+
+                  {/* Tap hint */}
+                  <p
+                    className="text-center text-[0.60rem] opacity-40"
+                    style={{
+                      fontFamily: "var(--font-cinzel), serif",
+                      letterSpacing: "0.18em",
+                      textTransform: "uppercase",
+                      color: factionColor,
+                    }}
+                  >
+                    לחץ לפרטים מלאים
+                  </p>
 
                 </div>
               </article>
@@ -366,6 +460,12 @@ export function CharactersScreen() {
           })}
         </div>
       )}
+
+      {/* ── Character detail drawer ───────────────────────────────────── */}
+      <CharacterDetailDrawer
+        character={selectedCharacter}
+        onClose={() => setSelectedCharacter(null)}
+      />
     </section>
   );
 }

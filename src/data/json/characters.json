@@ -24,7 +24,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/c/c9/AlliserThorne.png/revision/latest"
   },
   {
     "id": "areo-hota",
@@ -41,7 +41,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/2/2d/Areo-3.jpg/revision/latest"
   },
   {
     "id": "arya-stark",
@@ -253,7 +253,7 @@
         "importance": 96
       }
     ],
-    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/c/c9/Arya-Portal.png/revision/latest?cb=20170814110112"
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/0/07/Arya_1x08.png/revision/latest"
   },
   {
     "id": "balon-greyjoy",
@@ -280,7 +280,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/19/Balon-profile.png/revision/latest?cb=20170420085750"
   },
   {
     "id": "barristan-selmy",
@@ -342,7 +342,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/d/d1/Benjen.JPG/revision/latest"
   },
   {
     "id": "beric-dondarrion",
@@ -369,7 +369,7 @@
         "importance": 84
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/7/7f/BericDondarrionSeason1.PNG/revision/latest"
   },
   {
     "id": "blackfish-tully",
@@ -386,7 +386,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/9/93/Blackfish_6x07.png/revision/latest?cb=20160606190707"
   },
   {
     "id": "bowen-marsh",
@@ -403,7 +403,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/d/d7/Bowen_Marsh.png/revision/latest?cb=20160812055850"
   },
   {
     "id": "bran-stark",
@@ -590,7 +590,7 @@
         "importance": 82
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/5/5c/Brienne_No_One_ep_infobox.jpg/revision/latest?cb=20160808014804"
   },
   {
     "id": "bronn",
@@ -643,7 +643,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/4/43/Ray_Nicholas.jpg/revision/latest"
   },
   {
     "id": "catelyn-stark",
@@ -668,6 +668,141 @@
         "affiliationId": "stark",
         "locationId": "kingsroad",
         "importance": 92
+      },
+      {
+        "episodeId": "S01E03",
+        "status": "active",
+        "statusLabel": "ליידי סטארק / נוסעת למעלה מלך",
+        "summary": "נוסעת בסתר למעלה מלך כדי להודיע לנד על ניסיון ההתנקשות בבראן ולחפש תשובות.",
+        "affiliationId": "stark",
+        "locationId": "kings-landing",
+        "importance": 88
+      },
+      {
+        "episodeId": "S01E04",
+        "status": "active",
+        "statusLabel": "ליידי סטארק / עוצרת את טיריון",
+        "summary": "מזהה את טיריון לאניסטר בפונדק ועוצרת אותו בפני כל הנוכחים.",
+        "affiliationId": "stark",
+        "locationId": "crossroads-inn",
+        "importance": 90
+      },
+      {
+        "episodeId": "S01E05",
+        "status": "active",
+        "statusLabel": "ליידי סטארק / בעמק אארין",
+        "summary": "מגיעה לעמק אארין עם טיריון שבוי ומגלה כי אחותה ליסה מתנהגת בצורה מוזרה.",
+        "affiliationId": "tully",
+        "locationId": "eyrie",
+        "importance": 88
+      },
+      {
+        "episodeId": "S01E06",
+        "status": "active",
+        "statusLabel": "ליידי סטארק / בעמק אארין",
+        "summary": "נוכחת בניסיון ה'שיפוט' של טיריון בעמק אארין.",
+        "affiliationId": "tully",
+        "locationId": "eyrie",
+        "importance": 87
+      },
+      {
+        "episodeId": "S01E07",
+        "status": "active",
+        "statusLabel": "ליידי סטארק / חוזרת צפונה",
+        "summary": "חוזרת מעמק אארין לאחר שחרורו של טיריון, מתעדכנת בנעשה.",
+        "affiliationId": "stark",
+        "locationId": "kingsroad",
+        "importance": 86
+      },
+      {
+        "episodeId": "S01E08",
+        "status": "active",
+        "statusLabel": "ליידי סטארק / בוינטרפל",
+        "summary": "שומעת על מעצרו של נד ומנסה לארגן כוחות להגנת המשפחה.",
+        "affiliationId": "stark",
+        "locationId": "winterfell",
+        "importance": 88
+      },
+      {
+        "episodeId": "S01E09",
+        "status": "active",
+        "statusLabel": "ליידי סטארק / מנהלת משא ומתן",
+        "summary": "מנסה לנהל משא ומתן עם ג'יימי לאניסטר כדי להציל את נד.",
+        "affiliationId": "stark",
+        "locationId": "riverrun",
+        "importance": 90
+      },
+      {
+        "episodeId": "S01E10",
+        "status": "active",
+        "statusLabel": "ליידי סטארק / מתאבלת",
+        "summary": "מתמודדת עם בשורת הוצאתו להורג של נד ומתכננת את צעד ההמשך.",
+        "affiliationId": "stark",
+        "locationId": "riverrun",
+        "importance": 90
+      },
+      {
+        "episodeId": "S02E01",
+        "status": "active",
+        "statusLabel": "ליידי סטארק / יועצת רוב",
+        "summary": "עומדת לצד רוב סטארק בהכנות למלחמה נגד בית הכס.",
+        "affiliationId": "stark",
+        "locationId": "riverrun",
+        "importance": 88
+      },
+      {
+        "episodeId": "S02E02",
+        "status": "active",
+        "statusLabel": "ליידי סטארק / בחנות המלחמה",
+        "summary": "מלווה את רוב ומייעצת לו בנושאי ברית עם בתים אחרים.",
+        "affiliationId": "stark",
+        "locationId": "riverrun",
+        "importance": 87
+      },
+      {
+        "episodeId": "S02E03",
+        "status": "active",
+        "statusLabel": "ליידי סטארק / שגרירה",
+        "summary": "נשלחת לשכנע את ריינלי ב'ראתיאון להצטרף לברית נגד הלאניסטרים.",
+        "affiliationId": "stark",
+        "locationId": "stormlands",
+        "importance": 90
+      },
+      {
+        "episodeId": "S02E04",
+        "status": "active",
+        "statusLabel": "ליידי סטארק / פוגשת ריינלי",
+        "summary": "נפגשת עם ריינלי ב'ראתיאון ובריאן מטרת' ומנסה להשיג ברית.",
+        "affiliationId": "stark",
+        "locationId": "stormlands",
+        "importance": 89
+      },
+      {
+        "episodeId": "S02E05",
+        "status": "active",
+        "statusLabel": "ליידי סטארק / עורכת ברית",
+        "summary": "ממשיכה במגעים עם ריינלי; עדה לכוחה של בריאן.",
+        "affiliationId": "stark",
+        "locationId": "stormlands",
+        "importance": 88
+      },
+      {
+        "episodeId": "S02E06",
+        "status": "active",
+        "statusLabel": "ליידי סטארק / חוזרת לרוב",
+        "summary": "חוזרת אל רוב עם חדשות הברית הכושלת עם ריינלי.",
+        "affiliationId": "stark",
+        "locationId": "riverrun",
+        "importance": 87
+      },
+      {
+        "episodeId": "S02E07",
+        "status": "active",
+        "statusLabel": "ליידי סטארק / כולאת ג'יימי",
+        "summary": "מחזיקה את ג'יימי לאניסטר כשבוי ודנה אם לשחררו בתמורה לבנותיה.",
+        "affiliationId": "stark",
+        "locationId": "riverrun",
+        "importance": 90
       },
       {
         "episodeId": "S02E08",
@@ -704,6 +839,168 @@
         "affiliationId": "lannister",
         "locationId": "winterfell",
         "importance": 96
+      },
+      {
+        "episodeId": "S01E02",
+        "status": "active",
+        "statusLabel": "המלכה / במעלה מלך",
+        "summary": "מתעסקת בנסיעה לדרום ובמניפולציה על ג'ופרי.",
+        "affiliationId": "lannister",
+        "locationId": "kingsroad",
+        "importance": 82
+      },
+      {
+        "episodeId": "S01E03",
+        "status": "active",
+        "statusLabel": "המלכה / מתכננת",
+        "summary": "חוזרת למעלה מלך ומתחילה לרקום תוכניות להסרת נד כיד המלך.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 83
+      },
+      {
+        "episodeId": "S01E04",
+        "status": "active",
+        "statusLabel": "המלכה / ממרת ג'ופרי",
+        "summary": "מגיבה לחדשות על לכידת טיריון ומנסה לשלוט בפגיעה הצפויה.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 83
+      },
+      {
+        "episodeId": "S01E05",
+        "status": "active",
+        "statusLabel": "המלכה / מתנגשת עם רוברט",
+        "summary": "מתנגשת עם רוברט על פקודתו להרוג את דאינריז.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 85
+      },
+      {
+        "episodeId": "S01E06",
+        "status": "active",
+        "statusLabel": "המלכה / בשלטון",
+        "summary": "ממשיכה לבסס כוח בזמן שרוברט יוצא לציד.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 84
+      },
+      {
+        "episodeId": "S01E07",
+        "status": "active",
+        "statusLabel": "המלכה / מאיימת על נד",
+        "summary": "מתעימת עם נד על גילוי הסוד; מזהירה אותו לעזוב את מעלה מלך.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 90
+      },
+      {
+        "episodeId": "S01E08",
+        "status": "active",
+        "statusLabel": "המלכה / תופסת שלטון",
+        "summary": "קורעת את צוואת רוברט ותופסת שלטון בשם ג'ופרי.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 93
+      },
+      {
+        "episodeId": "S01E09",
+        "status": "ruler",
+        "statusLabel": "המלכה / שולטת בפועל",
+        "summary": "פוקדת על הוצאתו להורג של נד סטארק לאחר שסרב להכיר בשלטון ג'ופרי.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 95
+      },
+      {
+        "episodeId": "S01E10",
+        "status": "ruler",
+        "statusLabel": "המלכה האם / שולטת בפועל",
+        "summary": "מנהלת את ממלכת ג'ופרי ומנסה לשלוט בנזקי הוצאת נד להורג.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 92
+      },
+      {
+        "episodeId": "S02E01",
+        "status": "ruler",
+        "statusLabel": "המלכה האם / שולטת",
+        "summary": "מפקחת על מדיניות ג'ופרי ומנסה לאזן בין שאפותיו לבין יציבות הממלכה.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 90
+      },
+      {
+        "episodeId": "S02E02",
+        "status": "ruler",
+        "statusLabel": "המלכה האם / שולטת",
+        "summary": "מגיבה להתעצמות האיום הסטארקי ומתכננת את מהלך הלאניסטרים.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 89
+      },
+      {
+        "episodeId": "S02E03",
+        "status": "ruler",
+        "statusLabel": "המלכה האם / שולטת",
+        "summary": "מנסה לאזן בין ג'ופרי הבלתי-נשלט לבין מועצת השרים.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 88
+      },
+      {
+        "episodeId": "S02E04",
+        "status": "ruler",
+        "statusLabel": "המלכה האם / שולטת",
+        "summary": "מתנגשת עם טיריון על מינויו כיד המלך ומדיניותו השונה.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 90
+      },
+      {
+        "episodeId": "S02E06",
+        "status": "ruler",
+        "statusLabel": "המלכה האם / שולטת",
+        "summary": "מגלה את קשרו של טיריון לשי ומנסה להשתמש בזה כנגדו.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 91
+      },
+      {
+        "episodeId": "S02E07",
+        "status": "ruler",
+        "statusLabel": "המלכה האם / בעת מלחמה",
+        "summary": "מתכוננת למתקפת סטניס ומתמודדת עם הלחץ הגובר על מעלה מלך.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 89
+      },
+      {
+        "episodeId": "S02E08",
+        "status": "ruler",
+        "statusLabel": "המלכה האם / בהגנה",
+        "summary": "מנסה לשמור על שלטון ולהגן על הבירה מפני הצבא הקרב.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 90
+      },
+      {
+        "episodeId": "S02E09",
+        "status": "ruler",
+        "statusLabel": "המלכה האם / בקרב הבלקווטר",
+        "summary": "שוהה בחדר הנשים עם שאר הנשים בזמן קרב הבלקווטר; כמעט מרעילה את ג'ופרי.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 92
+      },
+      {
+        "episodeId": "S02E10",
+        "status": "ruler",
+        "statusLabel": "המלכה האם / לאחר הניצחון",
+        "summary": "שורדת את קרב הבלקווטר; אביה טיווין מגיע להציל את מעלה מלך.",
+        "affiliationId": "lannister",
+        "locationId": "kings-landing",
+        "importance": 90
       },
       {
         "episodeId": "S03E05",
@@ -812,9 +1109,33 @@
         "affiliationId": "targaryen",
         "locationId": "yunkai",
         "importance": 75
+      },
+      {
+        "episodeId": "S04E01",
+        "status": "active",
+        "locationId": "meereen",
+        "affiliationId": "house-targaryen",
+        "summary": "נשאר עם דאינריז כמפקד הבנים השניים בכיבוש קנות׳וס ולאחריו מיריין.",
+        "importance": 4
+      },
+      {
+        "episodeId": "S05E09",
+        "status": "active",
+        "locationId": "meereen",
+        "affiliationId": "house-targaryen",
+        "summary": "נלחם לצד דאינריז בזירות הקרבות במיריין נגד בני ההארפי.",
+        "importance": 4
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "away",
+        "locationId": "meereen",
+        "affiliationId": "house-targaryen",
+        "summary": "נאמר לו להישאר במיריין ולשמור על הסדר בשם דאינריז בעת שהיא שטה לווסטרוז.",
+        "importance": 4
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/8/89/Daario_Naharis%2C_s3%2C_hilt_and_dagger.jpg/revision/latest?cb=20190428030945"
   },
   {
     "id": "daenerys-dragons",
@@ -1093,7 +1414,7 @@
         "importance": 90
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/9/91/Davos_2x04.jpg/revision/latest"
   },
   {
     "id": "doran-martell",
@@ -1110,7 +1431,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/b/bf/Doran_Martell.png/revision/latest?cb=20141017064741"
   },
   {
     "id": "doreah",
@@ -1128,7 +1449,7 @@
         "locationId": "qarth"
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/a/a0/Doreah.png/revision/latest?cb=20110426173446"
   },
   {
     "id": "dothraki-khals",
@@ -1145,7 +1466,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/f/f3/Khal_Brozho.PNG/revision/latest"
   },
   {
     "id": "eddard-stark",
@@ -1163,6 +1484,15 @@
         "importance": 100
       },
       {
+        "episodeId": "S01E02",
+        "status": "active",
+        "statusLabel": "יד המלך / נוסע לדרום",
+        "summary": "נוסע עם המלך ומשפחתו לכיוון מעלה מלך, חש אי-נוחות עם תפקידו החדש.",
+        "affiliationId": "stark",
+        "locationId": "kingsroad",
+        "importance": 92
+      },
+      {
         "episodeId": "S01E03",
         "status": "appointed",
         "statusLabel": "יד המלך בפועל במעלה מלך",
@@ -1170,6 +1500,15 @@
         "affiliationId": "stark",
         "locationId": "kings-landing",
         "importance": 100
+      },
+      {
+        "episodeId": "S01E04",
+        "status": "active",
+        "statusLabel": "יד המלך / חוקר",
+        "summary": "מגלה כי ג'ון אארין חקר את ילדי רוברט — עדות לסוד נפיץ.",
+        "affiliationId": "stark",
+        "locationId": "kings-landing",
+        "importance": 93
       },
       {
         "episodeId": "S01E05",
@@ -1181,6 +1520,15 @@
         "importance": 100
       },
       {
+        "episodeId": "S01E06",
+        "status": "active",
+        "statusLabel": "יד המלך / מגלה את האמת",
+        "summary": "מגלה כי ג'ופרי ושאר ילדי רוברט הם ממזרים, בני ג'יימי.",
+        "affiliationId": "stark",
+        "locationId": "kings-landing",
+        "importance": 96
+      },
+      {
         "episodeId": "S01E07",
         "status": "captive",
         "statusLabel": "שבוי",
@@ -1188,6 +1536,15 @@
         "affiliationId": "stark",
         "locationId": "kings-landing",
         "importance": 100
+      },
+      {
+        "episodeId": "S01E08",
+        "status": "captive",
+        "statusLabel": "כלוא / עצור",
+        "summary": "נעצר על ידי הלאניסטרים לאחר שניסה לחשוף את הסוד ולהדיח את ג'ופרי.",
+        "affiliationId": "stark",
+        "locationId": "kings-landing",
+        "importance": 97
       },
       {
         "episodeId": "S01E09",
@@ -1224,9 +1581,33 @@
         "affiliationId": "stark",
         "locationId": "riverrun",
         "importance": 64
+      },
+      {
+        "episodeId": "S03E09",
+        "status": "captive",
+        "locationId": "the-twins",
+        "affiliationId": "house-tully",
+        "summary": "נלכד בחתונה האדומה לאחר שרוב בני בית טאלי נהרגו.",
+        "importance": 5
+      },
+      {
+        "episodeId": "S06E08",
+        "status": "captive",
+        "locationId": "riverrun",
+        "affiliationId": "house-frey",
+        "summary": "מוחזק שבוי על ידי ואלדר פריי ומשמש כאיום נגד בית טאלי בריברון.",
+        "importance": 5
+      },
+      {
+        "episodeId": "S08E06",
+        "status": "appointed",
+        "locationId": "riverrun",
+        "affiliationId": "house-tully",
+        "summary": "משוחרר לאחר מות דאינריז; מוצע לתפקיד לורד ריברון.",
+        "importance": 5
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/0/03/Edmure-Tully-Profile-HD.png/revision/latest?cb=20160723031806"
   },
   {
     "id": "ellaria-sand",
@@ -1253,7 +1634,7 @@
         "importance": 72
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/6/6f/Ellaria_sand_and_the_sand_snakes_game_of_thrones_finale_s6.jpg/revision/latest?cb=20160814010326"
   },
   {
     "id": "euron-greyjoy",
@@ -1313,7 +1694,7 @@
         "importance": 90
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/0/06/Euron_Greyjoy.svg/revision/latest?cb=20230905225214"
   },
   {
     "id": "gendry",
@@ -1400,7 +1781,7 @@
         "importance": 84
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/4/41/Gendry_S2.jpg/revision/latest"
   },
   {
     "id": "gilly",
@@ -1426,7 +1807,7 @@
         "importance": 70
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/9/9e/GillyAndSamS4EP03.png/revision/latest?cb=20160804231430"
   },
   {
     "id": "grenn",
@@ -1444,7 +1825,7 @@
         "importance": 58
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/6/6f/Grenn-Profile-HD.jpg/revision/latest?cb=20160712080907"
   },
   {
     "id": "grey-worm",
@@ -1471,7 +1852,7 @@
         "importance": 86
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/0/0c/Grey_Worm_Longer.jpg/revision/latest?cb=20170728152422"
   },
   {
     "id": "harald-karstark",
@@ -1523,7 +1904,7 @@
         "locationId": "kings-landing"
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/a/a3/High_Septon.png/revision/latest"
   },
   {
     "id": "high-sparrow",
@@ -1559,7 +1940,7 @@
         "importance": 96
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/6/68/High_Sparrow/revision/latest?cb=20211012111005"
   },
   {
     "id": "hizdahr-zo-loraq",
@@ -1575,9 +1956,25 @@
         "affiliationId": "targaryen",
         "locationId": "meereen",
         "importance": 64
+      },
+      {
+        "episodeId": "S05E08",
+        "status": "appointed",
+        "locationId": "meereen",
+        "affiliationId": "house-targaryen",
+        "summary": "מגיע עם דאינריז לאצטדיון הקרבות כנשאה הנסיך.",
+        "importance": 4
+      },
+      {
+        "episodeId": "S05E09",
+        "status": "dead",
+        "locationId": "meereen",
+        "affiliationId": "house-targaryen",
+        "summary": "נרצח על ידי בני ההארפי בזמן הפאניקה באצטדיון.",
+        "importance": 4
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/15/Hizdahr-zo-Loraq-S4-EP-03.jpg/revision/latest?cb=20140421053754"
   },
   {
     "id": "hodor",
@@ -1594,7 +1991,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/c/c1/Hodor_infobox.jpg/revision/latest?cb=20160718092124"
   },
   {
     "id": "irri",
@@ -1612,7 +2009,7 @@
         "locationId": "qarth"
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/e/e7/Irri_1.jpg/revision/latest?cb=20160807060226"
   },
   {
     "id": "jaime-lannister",
@@ -1765,7 +2162,7 @@
         "importance": 100
       }
     ],
-    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/4/4b/Jaime_Lannister_Season_1_Promo.jpg"
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/4/4b/Jaime_Lannister_Season_1_Promo.jpg/revision/latest"
   },
   {
     "id": "janos-slynt",
@@ -1792,7 +2189,7 @@
         "importance": 62
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/3/36/JanosSlynt.jpg/revision/latest?cb=20110531002026"
   },
   {
     "id": "jaqen-hghar",
@@ -1823,9 +2220,25 @@
         "summary": "מקבל את אריה לבית השחור והלבן ומתחיל לעצב מחדש את מסלולה.",
         "locationId": "house-of-black-and-white",
         "importance": 78
+      },
+      {
+        "episodeId": "S05E10",
+        "status": "active",
+        "locationId": "braavos",
+        "affiliationId": "faceless-men",
+        "summary": "מציג עצמו לאריה מחדש לאחר שהיא נמצאת עיוורת כעונש.",
+        "importance": 5
+      },
+      {
+        "episodeId": "S06E08",
+        "status": "active",
+        "locationId": "braavos",
+        "affiliationId": "faceless-men",
+        "summary": "מאפשר לאריה לעזוב את בית שחור ולבן לאחר שהשלימה את שלה.",
+        "importance": 5
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/b/b0/Jaqen.png/revision/latest?cb=20160826000828"
   },
   {
     "id": "jeor-mormont",
@@ -1852,7 +2265,7 @@
         "importance": 74
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/6/65/Jeor-Mormont-Profile-HD.png/revision/latest?cb=20140515205439"
   },
   {
     "id": "joffrey-baratheon",
@@ -1915,7 +2328,7 @@
         "importance": 72
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/6/65/Jojen-Reed-Profile-HD.png/revision/latest?cb=20160726064048"
   },
   {
     "id": "jon-arryn",
@@ -2184,7 +2597,7 @@
         "importance": 100
       }
     ],
-    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/2/25/Jon-Portal.png/revision/latest?cb=20170814110246"
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/c/c0/Jon_Snow-So4Ep5.jpg/revision/latest"
   },
   {
     "id": "jorah-mormont",
@@ -2283,7 +2696,7 @@
         "importance": 94
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/5/51/JorahCastPortal2.png/revision/latest?cb=20180412195946"
   },
   {
     "id": "jory-cassel",
@@ -2319,7 +2732,7 @@
         "importance": 37
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/f/f0/Karl_Tanner_Death.gif/revision/latest?cb=20150428163515"
   },
   {
     "id": "karsi",
@@ -2337,7 +2750,7 @@
         "importance": 52
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/d/d5/Karsi_%28Hardhome%29.PNG/revision/latest?cb=20160829170007"
   },
   {
     "id": "kevan-lannister",
@@ -2363,7 +2776,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/d/d8/Kevan-603.png/revision/latest"
   },
   {
     "id": "khal-drogo",
@@ -2424,7 +2837,7 @@
         "importance": 40
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/c/cf/Kraznys-3x03.jpg/revision/latest"
   },
   {
     "id": "lady-crane",
@@ -2441,7 +2854,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/a/a3/Lady_Crane.png/revision/latest"
   },
   {
     "id": "lady-direwolf",
@@ -2483,9 +2896,25 @@
         "affiliationId": "faith-militant",
         "locationId": "kings-landing",
         "importance": 56
+      },
+      {
+        "episodeId": "S06E01",
+        "status": "appointed",
+        "locationId": "kings-landing",
+        "affiliationId": "faith-militant",
+        "summary": "ממשיך לשרת את האמונה הלוחמת ומשמש כנציגה בחצר.",
+        "importance": 4
+      },
+      {
+        "episodeId": "S06E10",
+        "status": "dead",
+        "locationId": "kings-landing",
+        "affiliationId": "faith-militant",
+        "summary": "נהרג בפיצוץ הגוביל מהאש הירוקה שהניחה סרסיי תחת הספט.",
+        "importance": 4
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/a/a2/LancelLannisterHD2x09.png/revision/latest"
   },
   {
     "id": "leaf",
@@ -2502,7 +2931,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/d/de/Leaf_HBO_Viewer%27s_Guide_Season_6.jpg/revision/latest"
   },
   {
     "id": "lommy",
@@ -2519,7 +2948,7 @@
         "locationId": "riverlands-road-north"
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/d/d8/Lommy.png/revision/latest"
   },
   {
     "id": "loras-tyrell",
@@ -2555,7 +2984,7 @@
         "importance": 86
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/6/6b/Loras_Tyrell_infobox.jpg/revision/latest?cb=20120622000734"
   },
   {
     "id": "lord-of-bones",
@@ -2573,7 +3002,7 @@
         "importance": 32
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/c/c3/Lord_of_Bones_%28Hardhome%29.PNG/revision/latest"
   },
   {
     "id": "lyanna-mormont",
@@ -2608,7 +3037,7 @@
         "importance": 88
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/3/3d/Lyanna_Mormont%27s_letter.png/revision/latest?cb=20150421172421"
   },
   {
     "id": "lysa-arryn",
@@ -2635,7 +3064,7 @@
         "importance": 75
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/e/ef/Lysa_Arryn_infobox.jpg/revision/latest?cb=20120702173925"
   },
   {
     "id": "mace-tyrell",
@@ -2661,7 +3090,7 @@
         "importance": 80
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/3/3d/Mace_Tyrell_in_armor.jpg/revision/latest"
   },
   {
     "id": "maester-aemon",
@@ -2679,7 +3108,7 @@
         "importance": 71
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/a/a4/Aemond-TLotT-profile.png/revision/latest?cb=20221008120856"
   },
   {
     "id": "maester-cressen",
@@ -2697,7 +3126,7 @@
         "locationId": "dragonstone"
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/3/32/Cressen.png/revision/latest"
   },
   {
     "id": "maester-luwin",
@@ -2715,7 +3144,7 @@
         "locationId": "winterfell"
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/b/b2/Luwin_infobox.jpg/revision/latest?cb=20120701225048"
   },
   {
     "id": "mag-mar",
@@ -2733,7 +3162,7 @@
         "importance": 34
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/f/f2/Mag_Mar_Tun_Doh_Weg.png/revision/latest"
   },
   {
     "id": "mance-rayder",
@@ -2769,7 +3198,7 @@
         "importance": 86
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/8/82/ManceS3Promo.jpg/revision/latest?cb=20130125200554"
   },
   {
     "id": "margaery-tyrell",
@@ -2805,7 +3234,7 @@
         "importance": 96
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/5/55/Margaery_tyrell_infobox.png/revision/latest?cb=20130531092528"
   },
   {
     "id": "matthos-seaworth",
@@ -2823,7 +3252,7 @@
         "locationId": "blackwater-bay"
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/5/5b/Matthos.png/revision/latest"
   },
   {
     "id": "meera-reed",
@@ -2850,7 +3279,7 @@
         "importance": 68
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/2/2f/Meera-Reed-Profile-HD.png/revision/latest?cb=20160719063456"
   },
   {
     "id": "melisandre",
@@ -2904,7 +3333,7 @@
         "importance": 88
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/b/b3/MelisandreCastportal.jpg/revision/latest?cb=20140514134726"
   },
   {
     "id": "meryn-trant",
@@ -2922,7 +3351,7 @@
         "importance": 48
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/4/41/Meryn-Trant-201.jpg/revision/latest"
   },
   {
     "id": "mirri-maz-duur",
@@ -2958,7 +3387,7 @@
         "importance": 62
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/1f/Mossador-s5e1-v2.jpg/revision/latest"
   },
   {
     "id": "mycah",
@@ -2993,7 +3422,7 @@
         "importance": 44
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/9/90/Myranda-Ramsay.png/revision/latest"
   },
   {
     "id": "myrcella-baratheon",
@@ -3020,7 +3449,7 @@
         "importance": 74
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/e/e1/Myrcella_baratheon_season2.jpg/revision/latest?cb=20120316174935"
   },
   {
     "id": "nymeria-sand",
@@ -3038,7 +3467,7 @@
         "importance": 74
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/b/b3/Nymeria_Sand_Profile.jpg/revision/latest"
   },
   {
     "id": "obara-sand",
@@ -3056,7 +3485,7 @@
         "importance": 74
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/5/5f/ObaraS5E6.jpg/revision/latest"
   },
   {
     "id": "oberyn-martell",
@@ -3092,7 +3521,7 @@
         "importance": 94
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/2/29/Martell_banner_set_photo.jpg/revision/latest?cb=20131224173810"
   },
   {
     "id": "olenna-tyrell",
@@ -3136,7 +3565,7 @@
         "importance": 92
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/6/6b/Olenna%2C_Purple_Wedding_headpiece.jpg/revision/latest?cb=20170417142932"
   },
   {
     "id": "olly",
@@ -3153,7 +3582,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/8/84/Olly_Season5.jpg/revision/latest"
   },
   {
     "id": "one-of-the-thirteen",
@@ -3197,7 +3626,7 @@
         "importance": 42
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/c/c9/OrellS3.jpg/revision/latest?cb=20130325163211"
   },
   {
     "id": "osha",
@@ -3239,7 +3668,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/5/55/Othell_Yarwyck.png/revision/latest"
   },
   {
     "id": "petyr-baelish",
@@ -3299,9 +3728,41 @@
         "summary": "מצטרף לבריאן למסע.",
         "locationId": "kings-landing",
         "importance": 55
+      },
+      {
+        "episodeId": "S05E03",
+        "status": "active",
+        "locationId": "the-riverlands",
+        "affiliationId": "house-stark",
+        "summary": "ממשיך לנסוע עם בריאן לצפון ומשתלם כנגד אויבים בדרך.",
+        "importance": 5
+      },
+      {
+        "episodeId": "S07E07",
+        "status": "active",
+        "locationId": "winterfell",
+        "affiliationId": "house-stark",
+        "summary": "מגיע לווינטרפל עם בריאן לפגישת השלום בין הצפון לסרסיי.",
+        "importance": 5
+      },
+      {
+        "episodeId": "S08E04",
+        "status": "active",
+        "locationId": "winterfell",
+        "affiliationId": "house-stark",
+        "summary": "שורד את קרב ווינטרפל; מוכן להמשיך דרומה עם הצבא.",
+        "importance": 5
+      },
+      {
+        "episodeId": "S08E06",
+        "status": "appointed",
+        "locationId": "kings-landing",
+        "affiliationId": "house-baratheon",
+        "summary": "מוכתר כסיר פודריק פיין על ידי בריאן מטארת׳.",
+        "importance": 5
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/4/45/Payne_sigil.png/revision/latest?cb=20140326162004"
   },
   {
     "id": "polliver",
@@ -3319,7 +3780,7 @@
         "importance": 28
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/6/6c/Polliver-Profile-HD.jpg/revision/latest"
   },
   {
     "id": "pyat-pree",
@@ -3336,7 +3797,7 @@
         "locationId": "house-of-the-undying"
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/11/Pyat_Pree.jpg/revision/latest"
   },
   {
     "id": "pycelle",
@@ -3372,7 +3833,7 @@
         "importance": 76
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/7/7c/Pycelle-Profile-HD.png/revision/latest?cb=20140515204528"
   },
   {
     "id": "pyp",
@@ -3390,7 +3851,7 @@
         "importance": 49
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/8/8a/PypBody.PNG/revision/latest?cb=20140616071959"
   },
   {
     "id": "qhorin-halfhand",
@@ -3408,7 +3869,7 @@
         "locationId": "beyond-the-wall-haunted-forest"
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/9/9d/Halfhand_and_Jon_Snow.jpg/revision/latest?cb=20160720012454"
   },
   {
     "id": "qotho",
@@ -3444,7 +3905,7 @@
         "locationId": "red-waste"
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/a/ae/Rakharo.jpg/revision/latest"
   },
   {
     "id": "ramsay-snow",
@@ -3489,7 +3950,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/0/05/Ramsay-Snow-promotional-still.jpg/revision/latest"
   },
   {
     "id": "randyll-tarly",
@@ -3507,7 +3968,7 @@
         "importance": 85
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/7/78/Randyll-Tarly-Profile.png/revision/latest"
   },
   {
     "id": "renly-baratheon",
@@ -3534,7 +3995,7 @@
         "locationId": "renly-camp-stormlands"
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/d/d0/Renly_Baratheon.jpg/revision/latest"
   },
   {
     "id": "rhaego",
@@ -3552,7 +4013,7 @@
         "importance": 30
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/7/70/Rhaego_2x10.png/revision/latest"
   },
   {
     "id": "rickard-karstark",
@@ -3579,7 +4040,7 @@
         "importance": 58
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/7/7e/Rickard_Karstark.jpg/revision/latest"
   },
   {
     "id": "rickon-stark",
@@ -3624,7 +4085,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/d/d7/Rickon_Stark_infobox.jpg/revision/latest?cb=20160724062553"
   },
   {
     "id": "robb-stark",
@@ -3678,6 +4139,51 @@
         "importance": 95
       },
       {
+        "episodeId": "S01E02",
+        "status": "active",
+        "statusLabel": "מלך / נוסע לדרום",
+        "summary": "נוסע עם משפחת סטארק דרומה למעלה מלך, שרוי בנוסטלגיה ובשתייה.",
+        "affiliationId": "baratheon",
+        "locationId": "kingsroad",
+        "importance": 85
+      },
+      {
+        "episodeId": "S01E03",
+        "status": "active",
+        "statusLabel": "מלך / מגיע למעלה מלך",
+        "summary": "מגיע לבירה ומתחיל לגלות את מצב הממלכה החמור מבחינה כלכלית.",
+        "affiliationId": "baratheon",
+        "locationId": "kings-landing",
+        "importance": 84
+      },
+      {
+        "episodeId": "S01E04",
+        "status": "active",
+        "statusLabel": "מלך / מנהל ממשל",
+        "summary": "ממשיך להפגין חוסר עניין בענייני מדינה; מגיב לחדשות על דאינריז.",
+        "affiliationId": "baratheon",
+        "locationId": "kings-landing",
+        "importance": 82
+      },
+      {
+        "episodeId": "S01E05",
+        "status": "active",
+        "statusLabel": "מלך / מנהל מועצה",
+        "summary": "מציע להרוג את דאינריז הרה מחשש להתקפת דות'ראקי.",
+        "affiliationId": "baratheon",
+        "locationId": "kings-landing",
+        "importance": 85
+      },
+      {
+        "episodeId": "S01E06",
+        "status": "active",
+        "statusLabel": "מלך / יוצא לציד",
+        "summary": "יוצא לציד ומאפשר לסרסיי ולמועצה לנהל ענייני מדינה.",
+        "affiliationId": "baratheon",
+        "locationId": "kings-landing",
+        "importance": 80
+      },
+      {
         "episodeId": "S01E07",
         "status": "dead",
         "statusLabel": "מת",
@@ -3685,6 +4191,15 @@
         "affiliationId": "baratheon",
         "locationId": "kings-landing",
         "importance": 95
+      },
+      {
+        "episodeId": "S01E08",
+        "status": "injured",
+        "statusLabel": "נפצע אנושות בציד",
+        "summary": "פצוע אנושות מפצע חזיר בציד; מנסה להכתיב צוואה ולמנות את נד כאפוטרופוס.",
+        "affiliationId": "baratheon",
+        "locationId": "kings-landing",
+        "importance": 92
       }
     ],
     "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/d/d8/Robert_Baratheon.jpg/revision/latest"
@@ -3704,7 +4219,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/7/7d/Bolton-Title-Icon.png/revision/latest?cb=20160430121722"
   },
   {
     "id": "ros",
@@ -3722,7 +4237,7 @@
         "importance": 38
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/c/c5/Ros%27s_dissatisfied_customer.jpg/revision/latest?cb=20160716071101"
   },
   {
     "id": "roslin-frey",
@@ -3740,7 +4255,7 @@
         "importance": 36
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/b/bc/Roslin3x09.jpg/revision/latest"
   },
   {
     "id": "samwell-tarly",
@@ -3812,7 +4327,7 @@
         "importance": 84
       }
     ],
-    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/4/4f/SamwellTarlySeason1Promo.jpg"
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/4/4f/SamwellTarlySeason1Promo.jpg/revision/latest"
   },
   {
     "id": "sand-snakes",
@@ -3830,7 +4345,7 @@
         "importance": 71
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/1e/Sand_Snake_boots.jpg/revision/latest"
   },
   {
     "id": "sandor-clegane",
@@ -3882,7 +4397,7 @@
         "importance": 92
       }
     ],
-    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/6/63/SandorCleganeSeason1Promo.jpg"
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/6/63/SandorCleganeSeason1Promo.jpg/revision/latest"
   },
   {
     "id": "sansa-stark",
@@ -4026,7 +4541,7 @@
         "importance": 100
       }
     ],
-    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/a/a5/Sansa-Portal.png/revision/latest?cb=20170814110607"
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/d/dd/Sansa_1x08.jpg/revision/latest"
   },
   {
     "id": "septa-mordane",
@@ -4062,7 +4577,7 @@
         "locationId": "north-army-camp"
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/5/51/Alton_Lannister.jpg/revision/latest"
   },
   {
     "id": "ser-amory-lorch",
@@ -4080,7 +4595,7 @@
         "locationId": "harrenhal"
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/c/c4/Amory-lorch.jpg/revision/latest"
   },
   {
     "id": "ser-dontos-hollard",
@@ -4106,7 +4621,7 @@
         "importance": 42
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/0/04/Dontos-Hollard-401.jpg/revision/latest"
   },
   {
     "id": "ser-hugh-of-the-vale",
@@ -4124,7 +4639,7 @@
         "importance": 35
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/b/b3/Hugh.jpg/revision/latest"
   },
   {
     "id": "ser-mandon-moore",
@@ -4142,7 +4657,7 @@
         "locationId": "kings-landing"
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/17/Mandon_2x09.jpg/revision/latest"
   },
   {
     "id": "ser-rodrik-cassel",
@@ -4160,7 +4675,7 @@
         "locationId": "winterfell"
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/d/d4/Rodrik-cassel.jpg/revision/latest"
   },
   {
     "id": "shae",
@@ -4177,7 +4692,7 @@
         "importance": 63
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/4/48/Shae_S2.jpg/revision/latest?cb=20120427233426"
   },
   {
     "id": "shireen-baratheon",
@@ -4195,7 +4710,7 @@
         "importance": 72
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/f/fa/Shireen-3x06.jpg/revision/latest?cb=20160811101009"
   },
   {
     "id": "smalljon-umber",
@@ -4212,7 +4727,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/4/43/Smalljon_Umber.png/revision/latest"
   },
   {
     "id": "stafford-lannister",
@@ -4257,7 +4772,7 @@
         "importance": 94
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/6/6b/Stannis_Portal.png/revision/latest?cb=20201217213521"
   },
   {
     "id": "stiv",
@@ -4292,7 +4807,7 @@
         "importance": 46
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/9/96/Styr-HD.png/revision/latest"
   },
   {
     "id": "summer",
@@ -4309,7 +4824,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/b/b6/Summer_2x03.jpg/revision/latest"
   },
   {
     "id": "talisa-maegyr",
@@ -4336,7 +4851,7 @@
         "importance": 72
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/4/4e/Talisa.jpg/revision/latest"
   },
   {
     "id": "the-waif",
@@ -4353,7 +4868,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/c/c3/Waif.jpg/revision/latest"
   },
   {
     "id": "theon-greyjoy",
@@ -4488,7 +5003,7 @@
         "importance": 94
       }
     ],
-    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/e/e2/Theon%27s_master_of_hounds.jpg/revision/latest?cb=20160805022108"
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/5/51/Theon_1x06.jpg/revision/latest"
   },
   {
     "id": "three-eyed-raven",
@@ -4505,7 +5020,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/c/c5/Three-Eyed_Raven_s4.jpg/revision/latest"
   },
   {
     "id": "tickler",
@@ -4523,7 +5038,7 @@
         "locationId": "harrenhal"
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/0/02/Tickler.png/revision/latest"
   },
   {
     "id": "tommen-baratheon",
@@ -4568,7 +5083,7 @@
         "importance": 95
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/c/ca/Tommenj_profile.jpg/revision/latest?cb=20190519041111"
   },
   {
     "id": "tormund-giantsbane",
@@ -4584,9 +5099,41 @@
         "affiliationId": "wildlings",
         "locationId": "castle-black",
         "importance": 79
+      },
+      {
+        "episodeId": "S06E01",
+        "status": "active",
+        "locationId": "castle-black",
+        "affiliationId": "nights-watch",
+        "summary": "שורד את ההתקפה על טירת שחור ועוזר לג׳ון שלג להתאושש.",
+        "importance": 6
+      },
+      {
+        "episodeId": "S07E06",
+        "status": "active",
+        "locationId": "beyond-the-wall",
+        "affiliationId": "house-stark",
+        "summary": "מצטרף לפשיטה מעבר לחומה לצוד וורג לבן; שורד את ההתקפה.",
+        "importance": 6
+      },
+      {
+        "episodeId": "S08E03",
+        "status": "active",
+        "locationId": "winterfell",
+        "affiliationId": "house-stark",
+        "summary": "נלחם בקרב ווינטרפל נגד מלך הלילה; שורד.",
+        "importance": 6
+      },
+      {
+        "episodeId": "S08E06",
+        "status": "away",
+        "locationId": "beyond-the-wall",
+        "affiliationId": "free-folk",
+        "summary": "חוזר צפונה עם הפרא עם ג׳ון שלג וחי מחוץ לחומה.",
+        "importance": 6
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/9/97/Tormund_Profile.PNG/revision/latest?cb=20170818044433"
   },
   {
     "id": "torrhen-karstark",
@@ -4604,7 +5151,7 @@
         "locationId": "north-army-camp"
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/5/59/Torrhen_Karstark.png/revision/latest"
   },
   {
     "id": "tower-guard",
@@ -4639,7 +5186,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/d/d5/Trystane.jpg/revision/latest"
   },
   {
     "id": "tyene-sand",
@@ -4657,7 +5204,7 @@
         "importance": 70
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/f/f0/Tyene_Sand_Season_5_HD_profile.jpg/revision/latest"
   },
   {
     "id": "tyrion-lannister",
@@ -4846,7 +5393,7 @@
         "importance": 100
       }
     ],
-    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/1b/Tyrion-Portal.png/revision/latest?cb=20170624075910"
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/d/d2/Tyrion_S2Promo.jpg/revision/latest"
   },
   {
     "id": "tywin-lannister",
@@ -4953,7 +5500,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/8/83/Walda.jpg/revision/latest"
   },
   {
     "id": "walder-frey",
@@ -4979,7 +5526,7 @@
         "importance": 84
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/3/30/Walder_Frey_infobox.jpg/revision/latest?cb=20120701224630"
   },
   {
     "id": "wallen",
@@ -5049,7 +5596,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/19/Wun_Weg_%28Hardhome%29.PNG/revision/latest"
   },
   {
     "id": "xaro-xhoan-daxos",
@@ -5066,7 +5613,7 @@
         "locationId": "qarth"
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/6/60/Xaro.jpg/revision/latest"
   },
   {
     "id": "yara-greyjoy",
@@ -5120,7 +5667,7 @@
         "importance": 88
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/e/ec/Yara-ep-2.jpg/revision/latest"
   },
   {
     "id": "ygritte",
@@ -5138,7 +5685,7 @@
         "importance": 86
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/7/7d/YgritteSeason2.png/revision/latest"
   },
   {
     "id": "yoren",
@@ -5156,7 +5703,7 @@
         "locationId": "riverlands-road-north"
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/14/Yoren_profile.jpg/revision/latest?cb=20221114071421"
   },
   {
     "id": "night-king",
@@ -5183,7 +5730,7 @@
         "importance": 100
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/1f/Night_King_BTW.jpg/revision/latest"
   },
   {
     "id": "dickon-tarly",
@@ -5201,7 +5748,7 @@
         "importance": 73
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/0/03/Dickon-tarly-512x512.jpg/revision/latest"
   },
   {
     "id": "thoros-of-myr",
@@ -5219,7 +5766,7 @@
         "importance": 75
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/f/fd/Thoros_of_Myr.jpg/revision/latest"
   },
   {
     "id": "drogon",
@@ -5237,7 +5784,7 @@
         "importance": 95
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/0/00/Drogon_2x10.jpg/revision/latest"
   },
   {
     "id": "viserion",
@@ -5264,7 +5811,7 @@
         "importance": 100
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/f/f1/Viserion-in-beyond-the-wall.jpg/revision/latest"
   },
   {
     "id": "eddison-tollett",
@@ -5282,7 +5829,7 @@
         "importance": 76
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/e/ec/Eddison-Tollet-Profile-HD.png/revision/latest"
   },
   {
     "id": "qyburn",
@@ -5300,7 +5847,7 @@
         "importance": 82
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/1/1b/Qyburn-Kings-Landing-Throne-Room-Season-8.jpg/revision/latest"
   },
   {
     "id": "missandei",
@@ -5318,7 +5865,7 @@
         "importance": 92
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/e/eb/Missandei-and-greyworm-s5e5.jpg/revision/latest?cb=20160809051909"
   },
   {
     "id": "rhaegal",
@@ -5336,7 +5883,7 @@
         "importance": 96
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/a/a1/Rhaegal_%26_Viserion_5x01.png/revision/latest"
   },
   {
     "id": "varys",
@@ -5354,7 +5901,7 @@
         "importance": 93
       }
     ],
-    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/5/59/Varys-Portal.png/revision/latest?cb=20170624082259"
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/c/ce/Varys_1x05.png/revision/latest"
   },
   {
     "id": "gregor-clegane",
@@ -5372,7 +5919,7 @@
         "importance": 88
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/5/57/Gregor_Clegane-Profile-HD.png/revision/latest"
   },
   {
     "id": "harry-strickland",
@@ -5390,7 +5937,7 @@
         "importance": 78
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/f/f7/Harry_Strickland_8x05.jpg/revision/latest"
   },
   {
     "id": "ghost-direwolf",
@@ -5408,7 +5955,7 @@
         "importance": 60
       }
     ],
-    "characterImageUrl": null
+    "characterImageUrl": "https://static.wikia.nocookie.net/gameofthrones/images/9/99/Ghost_2.png/revision/latest"
   },
   {
     "id": "ned-umber",

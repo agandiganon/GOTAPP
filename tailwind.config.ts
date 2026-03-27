@@ -19,6 +19,7 @@ const config: Config = {
       fontFamily: {
         body:    ["var(--font-heebo)",   "sans-serif"],
         display: ["var(--font-display)", "serif"],
+        cinzel:  ["var(--font-cinzel)",  "serif"],
       },
 
       boxShadow: {
@@ -31,7 +32,9 @@ const config: Config = {
         "panel-gradient":
           "linear-gradient(180deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.04) 100%)",
         "hero-glow":
-          "radial-gradient(ellipse 80% 50% at 50% 0%, rgba(203,165,92,0.20), transparent 60%)",
+          "radial-gradient(ellipse 80% 50% at 50% 0%, rgba(200,158,82,0.22), transparent 62%)",
+        "iron-glow":
+          "radial-gradient(ellipse 100% 60% at 50% 0%, rgba(200,158,82,0.26), transparent 70%)",
       },
 
       keyframes: {

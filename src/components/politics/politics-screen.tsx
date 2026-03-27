@@ -139,7 +139,7 @@ export function PoliticsScreen() {
               className="rounded-[22px] border p-4"
               style={{
                 borderColor: `${entry.faction.themeColor}22`,
-                background:  `linear-gradient(135deg, ${entry.faction.themeColor}0a, rgba(18,14,10,0.78))`,
+                background:  `linear-gradient(135deg, ${entry.faction.themeColor}0a, rgba(14,18,28,0.78))`,
               }}
             >
               <div className="flex items-start justify-between gap-4">
@@ -314,7 +314,7 @@ export function PoliticsScreen() {
               <div
                 key={shift.id}
                 className="flex items-start gap-3.5 rounded-[20px] border border-stone-700/35 p-4"
-                style={{ background: "rgba(18,14,10,0.70)" }}
+                style={{ background: "rgba(14,18,28,0.70)" }}
               >
                 {/* Index indicator */}
                 <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-amber-700/28 bg-amber-500/[0.10] text-[0.7rem] font-bold text-amber-300">
@@ -377,8 +377,8 @@ export function PoliticsScreen() {
                   style={{
                     borderColor: faction ? `${faction.themeColor}20` : "rgba(255,255,255,0.07)",
                     background:  faction
-                      ? `linear-gradient(135deg, ${faction.themeColor}08, rgba(18,14,10,0.78))`
-                      : "rgba(18,14,10,0.70)",
+                      ? `linear-gradient(135deg, ${faction.themeColor}08, rgba(14,18,28,0.78))`
+                      : "rgba(14,18,28,0.70)",
                   }}
                 >
                   <div className="flex items-center justify-between gap-3">
