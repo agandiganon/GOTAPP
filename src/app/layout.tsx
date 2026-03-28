@@ -34,7 +34,11 @@ export const metadata: Metadata = {
   description: "מלווה צפייה נטול ספוילרים לפרקים של משחקי הכס.",
   applicationName: "gotspoil",
   icons: {
-    apple: "/icon.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "48x48" },
+      { url: "/icon-32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
   },
 };
 
