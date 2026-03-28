@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 
 import { getProxiedExternalImageUrl } from "@/lib/media";
 import { cn } from "@/lib/utils";
@@ -106,38 +106,6 @@ export function CharacterPortrait({
   const [isLoaded, setIsLoaded] = useState(false);
   const [hasLoadError, setHasLoadError] = useState(!candidateSrc);
 
-  useEffect(() => {
-    if (!candidateSrc) {
-      setIsLoaded(false);
-      setHasLoadError(true);
-      return;
-    }
-
-    let cancelled = false;
-    const probe = new window.Image();
-
-    setIsLoaded(false);
-    setHasLoadError(false);
-
-    probe.onload = () => {
-      if (cancelled) return;
-      setIsLoaded(true);
-      setHasLoadError(false);
-    };
-
-    probe.onerror = () => {
-      if (cancelled) return;
-      setIsLoaded(false);
-      setHasLoadError(true);
-    };
-
-    probe.src = candidateSrc;
-
-    return () => {
-      cancelled = true;
-    };
-  }, [candidateSrc]);
-
   const showImage = Boolean(candidateSrc) && !hasLoadError;
 
   return (
@@ -153,10 +121,14 @@ export function CharacterPortrait({
           loading="lazy"
           draggable={false}
           className={cn(
-            "absolute inset-0 h-full w-full object-cover transition-opacity duration-700",
+            "character-portrait-img absolute inset-0 h-full w-full object-cover transition-opacity duration-700",
             isLoaded ? "opacity-100" : "opacity-0",
           )}
           style={{ objectPosition: "center 18%" }}
+          onLoad={() => {
+            setIsLoaded(true);
+            setHasLoadError(false);
+          }}
           onError={() => {
             setIsLoaded(false);
             setHasLoadError(true);

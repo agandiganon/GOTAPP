@@ -1,7 +1,7 @@
 "use client";
 
-import { MapPin, Search, Shield, SlidersHorizontal, User } from "lucide-react";
-import { useState } from "react";
+import { MapPin, Search, Shield, SlidersHorizontal, User, BookOpen } from "lucide-react";
+import { useEffect, useState } from "react";
 
 import { CharacterDetailDrawer } from "@/components/characters/character-detail-drawer";
 import { CharacterPortrait } from "@/components/characters/character-portrait";
@@ -14,6 +14,21 @@ import { getVisibleCharacterSnapshots } from "@/lib/timeline";
 import { useEpisode } from "@/providers/episode-provider";
 
 type CharacterSnapshot = CharacterRecord & { latestState: CharacterTimelineEntry };
+
+/* ─── Fuzzy Search Helper ────────────────────────────────────────────────── */
+function fuzzyMatch(text: string, query: string): boolean {
+  if (!query) return true;
+  const t = text.toLowerCase();
+  const q = query.toLowerCase().trim();
+  // Exact substring match
+  if (t.includes(q)) return true;
+  // Character-by-character fuzzy
+  let qi = 0;
+  for (let i = 0; i < t.length && qi < q.length; i++) {
+    if (t[i] === q[qi]) qi++;
+  }
+  return qi === q.length;
+}
 
 /* ─── Sort ──────────────────────────────────────────────────────────────── */
 type SortMode = "importance" | "status" | "name";
@@ -54,6 +69,7 @@ export function CharactersScreen() {
   const [sortMode, setSortMode]         = useState<SortMode>("importance");
   const [factionFilter, setFactionFilter] = useState<string | null>(null);
   const [selectedCharacter, setSelectedCharacter] = useState<CharacterSnapshot | null>(null);
+  const [visibleCount, setVisibleCount]  = useState(20);
 
   /* ── Anti-spoiler logic — DO NOT TOUCH ────────────────────────────────── */
   const visibleCharacters = getVisibleCharacterSnapshots(characters, currentEpisodeId, episodeIndex);
@@ -71,6 +87,12 @@ export function CharactersScreen() {
       return countB - countA;
     });
 
+  const factionCounts = new Map<string, number>();
+  visibleCharacters.forEach(c => {
+    const id = c.latestState.affiliationId;
+    if (id) factionCounts.set(id, (factionCounts.get(id) ?? 0) + 1);
+  });
+
   const filteredCharacters = visibleCharacters.filter((character) => {
     const faction = factions.find((f) => f.id === character.latestState.affiliationId);
     const factionName = faction?.displayName ?? "";
@@ -84,10 +106,9 @@ export function CharactersScreen() {
       character.latestState.statusLabel,
       character.latestState.summary,
     ]
-      .join(" ")
-      .toLowerCase();
+      .join(" ");
 
-    const matchesQuery = haystack.includes(query.trim().toLowerCase());
+    const matchesQuery = fuzzyMatch(haystack, query);
     const matchesFaction = factionFilter === null || character.latestState.affiliationId === factionFilter;
     return matchesQuery && matchesFaction;
   });
@@ -106,6 +127,11 @@ export function CharactersScreen() {
     return characterB.latestState.importance - characterA.latestState.importance;
   });
 
+  /* Reset visible count when filters, sort, or episode changes */
+  useEffect(() => {
+    setVisibleCount(20);
+  }, [query, sortMode, factionFilter, currentEpisodeId]);
+
   const statusSummary = {
     dead:    visibleCharacters.filter((c) => c.latestState.status === "dead").length,
     captive: visibleCharacters.filter((c) => c.latestState.status === "captive").length,
@@ -117,7 +143,12 @@ export function CharactersScreen() {
   /* ── End anti-spoiler block ───────────────────────────────────────────── */
 
   return (
-    <section className="space-y-5 pb-24 md:pb-6" dir="rtl">
+    <section
+      key={`characters-${currentEpisodeId}`}
+      className="space-y-5 pb-24 md:pb-6 episode-content-fade"
+      style={{ paddingBottom: "calc(1.5rem + env(safe-area-inset-bottom, 0px))" }}
+      dir="rtl"
+    >
 
       {/* ── Hero stats panel ─────────────────────────────────────────── */}
       <Panel className="relative overflow-hidden p-5">
@@ -236,6 +267,7 @@ export function CharactersScreen() {
               {activeFactions.slice(0, 12).map((faction) => {
                 const isActive = factionFilter === faction.id;
                 const color = faction.themeColor ?? "#a07840";
+                const count = factionCounts.get(faction.id) ?? 0;
                 return (
                   <button
                     key={faction.id}
@@ -249,6 +281,9 @@ export function CharactersScreen() {
                     }}
                   >
                     {faction.displayName}
+                    <span style={{ opacity: 0.5, marginRight: 4, fontSize: "0.62rem" }}>
+                      {count}
+                    </span>
                   </button>
                 );
               })}
@@ -276,8 +311,9 @@ export function CharactersScreen() {
 
       {/* ── Character cards grid ─────────────────────────────────────── */}
       {sortedCharacters.length > 0 && (
-        <div className="character-grid-desktop grid grid-cols-1 gap-5 sm:grid-cols-2">
-          {sortedCharacters.map((character) => {
+        <>
+          <div className="character-grid-desktop grid grid-cols-1 gap-5 sm:grid-cols-2">
+            {sortedCharacters.slice(0, visibleCount).map((character) => {
             const faction = factions.find((item) => item.id === character.latestState.affiliationId);
             const locationName = locations.find((l) => l.id === character.latestState.locationId)?.name ?? null;
             const factionColor = faction?.themeColor ?? "#a07840";
@@ -404,6 +440,23 @@ export function CharactersScreen() {
                     </div>
                   )}
 
+                  {/* First appearance row */}
+                  {character.timeline.length > 0 && (
+                    <div
+                      className="flex items-center gap-2.5 rounded-[16px] px-3.5 py-2.5 backdrop-blur-sm"
+                      style={{
+                        background: "rgba(14,18,28,0.82)",
+                        border: "1px solid rgba(50,60,90,0.55)",
+                      }}
+                    >
+                      <BookOpen className="h-3.5 w-3.5 shrink-0 text-muted" strokeWidth={1.7} />
+                      <span className="text-[0.82rem] text-ink/80">
+                        <span className="text-muted">הופעה ראשונה: </span>
+                        {character.timeline[0].episodeId.replace('S0','S').replace('E0','E')}
+                      </span>
+                    </div>
+                  )}
+
                   {/* Base character description */}
                   {character.baseDescription && (
                     <p className="text-[0.81rem] leading-[1.8] text-stone-400/90 px-1">
@@ -458,7 +511,28 @@ export function CharactersScreen() {
               </article>
             );
           })}
-        </div>
+          </div>
+
+          {/* Show-more buttons */}
+          {visibleCount < sortedCharacters.length && (
+            <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
+              <button
+                type="button"
+                onClick={() => setVisibleCount((prev) => Math.min(prev + 20, sortedCharacters.length))}
+                className="rounded-[22px] border border-amber-700/35 bg-amber-500/[0.12] px-6 py-3 text-[0.9rem] font-semibold text-amber-200 transition-all duration-200 hover:border-amber-600/50 hover:bg-amber-500/[0.18] hover:text-amber-100 shadow-[0_0_20px_rgba(203,165,92,0.08)]"
+              >
+                הצג עוד
+              </button>
+              <button
+                type="button"
+                onClick={() => setVisibleCount(sortedCharacters.length)}
+                className="rounded-[22px] border border-stone-700/35 bg-stone-950/50 px-6 py-3 text-[0.9rem] font-semibold text-stone-400 transition-all duration-200 hover:border-stone-600/45 hover:bg-stone-900/70 hover:text-stone-200"
+              >
+                הצג הכל
+              </button>
+            </div>
+          )}
+        </>
       )}
 
       {/* ── Character detail drawer ───────────────────────────────────── */}

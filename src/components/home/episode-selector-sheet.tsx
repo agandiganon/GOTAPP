@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { AlertTriangle, ArrowRight, Check, Clapperboard, Layers3, X } from "lucide-react";
 
+import { useFocusTrap } from "@/hooks/use-focus-trap";
 import type { EpisodeId, EpisodeRecord } from "@/data/schemas";
 import { formatEpisodeLabel } from "@/lib/episodes";
 import { cn } from "@/lib/utils";
@@ -24,6 +25,7 @@ export function EpisodeSelectorSheet({
   onClose,
   onConfirm,
 }: EpisodeSelectorSheetProps) {
+  const trapRef = useFocusTrap(isOpen);
   const seasons = useMemo(
     () => Array.from(new Set(episodes.map((episode) => episode.season))).sort((a, b) => a - b),
     [episodes],
@@ -32,6 +34,7 @@ export function EpisodeSelectorSheet({
   const [step, setStep] = useState<SelectorStep>("season");
   const [activeSeason, setActiveSeason] = useState<number | null>(currentEpisode?.season ?? seasons[0] ?? null);
   const [pendingEpisodeId, setPendingEpisodeId] = useState<EpisodeId | null>(null);
+  const episodeListRef = useRef<HTMLDivElement>(null);
 
   const seasonGroups = useMemo(
     () =>
@@ -71,7 +74,10 @@ export function EpisodeSelectorSheet({
   };
 
   return (
-    <div className="relative z-[90] mt-3 overflow-hidden rounded-[28px] border border-stone-700/40 bg-stone-900/70 shadow-[0_30px_80px_rgba(0,0,0,0.42)] backdrop-blur-xl">
+    <div
+      ref={trapRef}
+      className="relative z-[90] mt-3 overflow-hidden rounded-[28px] border border-stone-700/40 bg-stone-900/70 shadow-[0_30px_80px_rgba(0,0,0,0.42)] backdrop-blur-xl"
+    >
       <div className="flex items-start justify-between gap-4 border-b border-stone-700/35 px-4 py-4">
         <div className="space-y-1.5">
           <p className="text-caption">בחירת פרק</p>
@@ -156,7 +162,26 @@ export function EpisodeSelectorSheet({
             </div>
           </div>
 
-          <div className="grid max-h-[19rem] gap-2 overflow-y-auto pr-1">
+          {/* Season navigation tabs */}
+          <div className="mb-3 flex gap-2 overflow-x-auto pb-2">
+            {seasons.map((season) => (
+              <button
+                key={season}
+                type="button"
+                onClick={() => setActiveSeason(season)}
+                className={cn(
+                  "shrink-0 rounded-full px-3 py-1 text-xs font-medium transition",
+                  activeSeason === season
+                    ? "border border-amber-700/35 bg-amber-500/10 text-amber-200"
+                    : "border border-stone-700/40 bg-stone-950/45 text-stone-400 hover:border-amber-700/35 hover:text-amber-100",
+                )}
+              >
+                עונה {season}
+              </button>
+            ))}
+          </div>
+
+          <div ref={episodeListRef} className="grid max-h-[19rem] gap-2 overflow-y-auto pr-1">
             {seasonEpisodes.map((episode) => {
               const isCurrent = currentEpisodeId === episode.id;
 

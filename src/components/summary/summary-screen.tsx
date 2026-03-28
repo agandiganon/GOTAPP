@@ -1,11 +1,13 @@
 "use client";
 
-import { BookOpenText, ChevronDown, Crown, MapPin, Scroll, Skull, Swords, Users } from "lucide-react";
+import { useMemo, useState } from "react";
+import { BookOpenText, ChevronDown, Crown, MapPin, Scroll, Skull, Swords, Users, Clock } from "lucide-react";
 
 import { FactionSigilBadge } from "@/components/factions/faction-sigil-badge";
 import { StatusPill } from "@/components/ui/status-pill";
 import { characters, episodeIndex, factions, locations } from "@/data/seed";
 import { getVisibleCharacterSnapshots, getVisibleLocationSnapshots } from "@/lib/timeline";
+import { getReadingTimeLabel } from "@/lib/reading-time";
 import { useEpisode } from "@/providers/episode-provider";
 
 /* ─── New design tokens (aligned with globals.css v3 "THE REALM") ─────────── */
@@ -14,6 +16,36 @@ import { useEpisode } from "@/providers/episode-provider";
 // panel-strong: rgb(28,33,50)
 // accent:       rgb(210,168,90)
 // border-gold:  rgba(210,168,90,0.22)
+
+/* ─── Accordion section wrapper ────────────────────────────────────────── */
+function AccordionSection({
+  title,
+  defaultOpen = false,
+  children,
+}: {
+  title: string;
+  defaultOpen?: boolean;
+  children: React.ReactNode;
+}) {
+  const [isOpen, setIsOpen] = useState(defaultOpen);
+  return (
+    <div>
+      <button
+        type="button"
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full flex items-center justify-between py-2 px-0"
+      >
+        <span className="font-semibold text-ink">{title}</span>
+        <ChevronDown
+          className={`h-4 w-4 transition-transform duration-300 ${
+            isOpen ? "rotate-180" : ""
+          }`}
+        />
+      </button>
+      {isOpen && <div className="pt-2">{children}</div>}
+    </div>
+  );
+}
 
 /* ─── Numbered badge ─────────────────────────────────────────────────────── */
 function TurningPointBadge({ index }: { index: number }) {
@@ -154,6 +186,12 @@ export function SummaryScreen() {
     .slice()
     .reverse();
 
+  /* Calculate reading time for the full summary */
+  const readingTime = useMemo(
+    () => getReadingTimeLabel(currentEpisode.summaries.full),
+    [currentEpisode.summaries.full],
+  );
+
   /* Notable deaths — characters with status "dead", sorted by importance */
   const notableDeaths = visibleCharacters
     .filter((c) => c.latestState.status === "dead" && (c.latestState.importance ?? 0) >= 55)
@@ -165,7 +203,7 @@ export function SummaryScreen() {
     });
 
   return (
-    <section className="space-y-4">
+    <section key={`summary-${currentEpisodeId}`} className="space-y-4 episode-content-fade">
 
       {/* ══ HERO PANEL ════════════════════════════════════════════════════════ */}
       <div
@@ -217,8 +255,7 @@ export function SummaryScreen() {
 
           {/* Episode title */}
           <h1
-            className="font-display text-3xl leading-tight"
-            style={{ color: "rgb(225,215,195)" }}
+            className="character-name-heading font-display text-3xl leading-tight"
           >
             {currentEpisode.title}
           </h1>
@@ -235,20 +272,34 @@ export function SummaryScreen() {
               borderTop: "2px solid rgba(210,168,90,0.28)",
             }}
           >
-            <div className="mb-3 flex items-center gap-2">
-              <Scroll className="h-3.5 w-3.5 text-accent" />
-              <p
+            <div className="mb-3 flex items-center justify-between gap-2">
+              <div className="flex items-center gap-2">
+                <Scroll className="h-3.5 w-3.5 text-accent" />
+                <p
+                  style={{
+                    fontFamily: "var(--font-cinzel), serif",
+                    fontSize: "0.58rem",
+                    fontWeight: 700,
+                    letterSpacing: "0.22em",
+                    textTransform: "uppercase",
+                    color: "rgba(210,168,90,0.60)",
+                  }}
+                >
+                  התקציר המלא
+                </p>
+              </div>
+              <div
+                className="flex items-center gap-1.5 rounded-full px-2.5 py-1"
                 style={{
-                  fontFamily: "var(--font-cinzel), serif",
-                  fontSize: "0.58rem",
-                  fontWeight: 700,
-                  letterSpacing: "0.22em",
-                  textTransform: "uppercase",
-                  color: "rgba(210,168,90,0.60)",
+                  background: "rgba(210,168,90,0.10)",
+                  border: "1px solid rgba(210,168,90,0.20)",
                 }}
               >
-                התקציר המלא
-              </p>
+                <Clock className="h-3 w-3 text-accent/70" />
+                <span className="text-[0.62rem] font-semibold text-accent/80">
+                  {readingTime}
+                </span>
+              </div>
             </div>
             <p className="text-sm leading-8 text-ink">{currentEpisode.summaries.full}</p>
           </div>
@@ -257,282 +308,269 @@ export function SummaryScreen() {
 
       {/* ══ TURNING POINTS ════════════════════════════════════════════════════ */}
       <SectionPanel accentBorder="rgba(140,30,42,0.22)">
-        <SectionHeader
-          caption="נקודות מפנה"
-          title="רגעי שבר"
-          icon={Swords}
-          iconColor="blood"
-        />
-        <div className="space-y-3">
-          {currentEpisode.turningPoints.map((tp, index) => (
-            <CardSurface key={tp.id}>
-              <div className="flex items-start gap-3">
-                <TurningPointBadge index={index} />
-                <p className="mt-0.5 text-sm leading-7 text-ink">{tp.summary}</p>
-              </div>
-            </CardSurface>
-          ))}
-        </div>
+        <AccordionSection title="רגעי שבר" defaultOpen={true}>
+          <div className="space-y-3">
+            {currentEpisode.turningPoints.map((tp, index) => (
+              <CardSurface key={tp.id}>
+                <div className="flex items-start gap-3">
+                  <TurningPointBadge index={index} />
+                  <div className="flex-1">
+                    <p className="mt-0.5 text-sm leading-7 text-ink">{tp.summary}</p>
+                    <div className="mt-2">
+                      <span className="rounded-full border border-stone-700/35 bg-stone-900/55 px-2 py-0.5 text-[0.62rem] text-stone-400">
+                        {currentEpisode.code}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </CardSurface>
+            ))}
+          </div>
+        </AccordionSection>
       </SectionPanel>
 
       {/* ══ NOTABLE DEATHS ════════════════════════════════════════════════════ */}
       {notableDeaths.length > 0 && (
         <SectionPanel accentBorder="rgba(100,20,30,0.30)">
-          <SectionHeader
-            caption="נפילות עיקריות"
-            title={`${notableDeaths.length} דמויות שנפלו עד כאן`}
-            icon={Skull}
-            iconColor="blood"
-          />
-          <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
-            {notableDeaths.map((char) => {
-              const faction = factions.find(f => f.id === char.latestState.affiliationId);
-              const accentColor = faction?.themeColor ?? "#8a3844";
-              const shortEpId = char.deathEpisodeId.replace('S0', 'S').replace('E0', 'E');
-              return (
-                <div
-                  key={char.id}
-                  className="flex items-center gap-3 rounded-[18px] p-3"
-                  style={{
-                    background: "linear-gradient(135deg, rgba(60,10,16,0.30), rgba(14,18,28,0.70))",
-                    border: "1px solid rgba(100,20,30,0.28)",
-                  }}
-                >
-                  {faction ? (
-                    <FactionSigilBadge
-                      name={faction.displayName}
-                      sigilUrl={faction.factionSigilUrl ?? faction.sigil}
-                      themeColor={accentColor}
-                      className="h-8 w-8 shrink-0 opacity-70"
-                    />
-                  ) : (
-                    <div
-                      className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full"
-                      style={{
-                        background: "rgba(100,20,30,0.18)",
-                        border: "1px solid rgba(140,40,50,0.25)",
-                      }}
-                    >
-                      <Skull className="h-3.5 w-3.5 text-[#f7c4cb]/60" />
-                    </div>
-                  )}
-                  <div className="min-w-0 flex-1">
-                    <p className="text-sm font-semibold leading-tight text-ink/90">{char.name}</p>
-                    <p className="mt-0.5 text-[0.68rem] text-muted">{faction?.displayName ?? "ללא שיוך"}</p>
-                  </div>
-                  <span
-                    className="shrink-0 rounded-full px-2 py-0.5 text-[0.60rem] font-semibold"
+          <AccordionSection title={`${notableDeaths.length} דמויות שנפלו עד כאן`}>
+            <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
+              {notableDeaths.map((char) => {
+                const faction = factions.find(f => f.id === char.latestState.affiliationId);
+                const accentColor = faction?.themeColor ?? "#8a3844";
+                const shortEpId = char.deathEpisodeId.replace('S0', 'S').replace('E0', 'E');
+                return (
+                  <div
+                    key={char.id}
+                    className="flex items-center gap-3 rounded-[18px] p-3"
                     style={{
-                      fontFamily: "var(--font-cinzel), serif",
-                      letterSpacing: "0.08em",
-                      background: "rgba(100,20,30,0.22)",
-                      border: "1px solid rgba(140,40,50,0.30)",
-                      color: "rgb(242,165,172)",
+                      background: "linear-gradient(135deg, rgba(60,10,16,0.30), rgba(14,18,28,0.70))",
+                      border: "1px solid rgba(100,20,30,0.28)",
                     }}
                   >
-                    {shortEpId}
-                  </span>
-                </div>
-              );
-            })}
-          </div>
+                    {faction ? (
+                      <FactionSigilBadge
+                        name={faction.displayName}
+                        sigilUrl={faction.factionSigilUrl ?? faction.sigil}
+                        themeColor={accentColor}
+                        className="h-8 w-8 shrink-0 opacity-70"
+                      />
+                    ) : (
+                      <div
+                        className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full"
+                        style={{
+                          background: "rgba(100,20,30,0.18)",
+                          border: "1px solid rgba(140,40,50,0.25)",
+                        }}
+                      >
+                        <Skull className="h-3.5 w-3.5 text-[#f7c4cb]/60" />
+                      </div>
+                    )}
+                    <div className="min-w-0 flex-1">
+                      <p className="text-sm font-semibold leading-tight text-ink/90">{char.name}</p>
+                      <p className="mt-0.5 text-[0.68rem] text-muted">{faction?.displayName ?? "ללא שיוך"}</p>
+                    </div>
+                    <span
+                      className="shrink-0 rounded-full px-2 py-0.5 text-[0.60rem] font-semibold"
+                      style={{
+                        fontFamily: "var(--font-cinzel), serif",
+                        letterSpacing: "0.08em",
+                        background: "rgba(100,20,30,0.22)",
+                        border: "1px solid rgba(140,40,50,0.30)",
+                        color: "rgb(242,165,172)",
+                      }}
+                    >
+                      {shortEpId}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+          </AccordionSection>
         </SectionPanel>
       )}
 
       {/* ══ FOCUS CHARACTERS ═════════════════════════════════════════════════ */}
       {focusCharacters.length > 0 && (
         <SectionPanel accentBorder="rgba(210,168,90,0.14)">
-          <SectionHeader
-            caption="מבט ממוקד"
-            title="דמויות במוקד"
-            icon={Users}
-            iconColor="gold"
-          />
-          <div className="space-y-3">
-            {focusCharacters.map((entry) => {
-              const factionColor = factions.find(
-                (f) => f.id === entry.character?.latestState.affiliationId,
-              )?.themeColor;
+          <AccordionSection title="דמויות במוקד">
+            <div className="space-y-3">
+              {focusCharacters.map((entry) => {
+                const factionColor = factions.find(
+                  (f) => f.id === entry.character?.latestState.affiliationId,
+                )?.themeColor;
 
-              return (
-                <CardSurface key={entry.characterId} accentHex={factionColor}>
-                  <div className="mb-2 flex items-start justify-between gap-3">
-                    <p
-                      className="text-base font-semibold leading-snug"
-                      style={{ color: factionColor ? `${factionColor}ee` : "rgb(225,215,195)" }}
-                    >
-                      {entry.character?.name ?? entry.characterId}
-                    </p>
-                    {entry.character ? (
-                      <StatusPill
-                        status={entry.character.latestState.status}
-                        label={entry.character.latestState.statusLabel}
-                      />
+                return (
+                  <CardSurface key={entry.characterId} accentHex={factionColor}>
+                    <div className="mb-2 flex items-start justify-between gap-3">
+                      <p
+                        className="text-base font-semibold leading-snug"
+                        style={{ color: factionColor ? `${factionColor}ee` : "rgb(225,215,195)" }}
+                      >
+                        {entry.character?.name ?? entry.characterId}
+                      </p>
+                      {entry.character ? (
+                        <StatusPill
+                          status={entry.character.latestState.status}
+                          label={entry.character.latestState.statusLabel}
+                        />
+                      ) : null}
+                    </div>
+                    <p className="text-sm leading-7 text-muted">{entry.summary}</p>
+                    {entry.character?.latestState.summary ? (
+                      <p
+                        className="mt-3 border-t pt-3 text-sm leading-7 text-ink/70"
+                        style={{
+                          borderColor: factionColor
+                            ? `${factionColor}18`
+                            : "rgba(60,70,100,0.35)",
+                        }}
+                      >
+                        {entry.character.latestState.summary}
+                      </p>
                     ) : null}
-                  </div>
-                  <p className="text-sm leading-7 text-muted">{entry.summary}</p>
-                  {entry.character?.latestState.summary ? (
-                    <p
-                      className="mt-3 border-t pt-3 text-sm leading-7 text-ink/70"
-                      style={{
-                        borderColor: factionColor
-                          ? `${factionColor}18`
-                          : "rgba(60,70,100,0.35)",
-                      }}
-                    >
-                      {entry.character.latestState.summary}
-                    </p>
-                  ) : null}
-                </CardSurface>
-              );
-            })}
-          </div>
+                  </CardSurface>
+                );
+              })}
+            </div>
+          </AccordionSection>
         </SectionPanel>
       )}
 
       {/* ══ MAIN LOCATIONS ════════════════════════════════════════════════════ */}
       {mainLocations.length > 0 && (
         <SectionPanel accentBorder="rgba(100,140,185,0.20)">
-          <SectionHeader
-            caption="זירות הפרק"
-            title="מיקומים ראשיים"
-            icon={MapPin}
-            iconColor="ice"
-          />
-          <div className="space-y-3">
-            {currentEpisode.mainLocationLabels.map((label, index) => {
-              const location = mainLocations[index];
-              return (
-                <CardSurface key={label}>
-                  <div className="flex items-start gap-3">
-                    <div
-                      className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full"
-                      style={{
-                        background: "rgba(70,110,160,0.14)",
-                        border: "1px solid rgba(100,140,185,0.24)",
-                        color: "rgb(170,200,230)",
-                      }}
-                    >
-                      <MapPin className="h-3.5 w-3.5" />
+          <AccordionSection title="מיקומים ראשיים">
+            <div className="space-y-3">
+              {currentEpisode.mainLocationLabels.map((label, index) => {
+                const location = mainLocations[index];
+                return (
+                  <CardSurface key={label}>
+                    <div className="flex items-start gap-3">
+                      <div
+                        className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full"
+                        style={{
+                          background: "rgba(70,110,160,0.14)",
+                          border: "1px solid rgba(100,140,185,0.24)",
+                          color: "rgb(170,200,230)",
+                        }}
+                      >
+                        <MapPin className="h-3.5 w-3.5" />
+                      </div>
+                      <div>
+                        <p className="text-base font-semibold text-ink">{label}</p>
+                        <p className="mt-1.5 text-sm leading-7 text-muted">
+                          {location?.latestHistory?.summary ??
+                            "הפרק מציין את המיקום הזה במפורש, אך טרם חוברה לו היסטוריה טקסטואלית נפרדת."}
+                        </p>
+                      </div>
                     </div>
-                    <div>
-                      <p className="text-base font-semibold text-ink">{label}</p>
-                      <p className="mt-1.5 text-sm leading-7 text-muted">
-                        {location?.latestHistory?.summary ??
-                          "הפרק מציין את המיקום הזה במפורש, אך טרם חוברה לו היסטוריה טקסטואלית נפרדת."}
-                      </p>
-                    </div>
-                  </div>
-                </CardSurface>
-              );
-            })}
-          </div>
+                  </CardSurface>
+                );
+              })}
+            </div>
+          </AccordionSection>
         </SectionPanel>
       )}
 
       {/* ══ EPISODE ARCHIVE ═══════════════════════════════════════════════════ */}
       <SectionPanel>
-        <SectionHeader
-          caption="ארכיון בטוח"
-          title="ארכיון פרקים קודמים"
-          icon={BookOpenText}
-          iconColor="slate"
-        />
-        <p className="mb-4 text-xs leading-6 text-muted">
-          הרשימה כוללת רק פרקים שקודמים לפרק הפעיל. שום תוכן עתידי לא נכלל.
-        </p>
+        <AccordionSection title="ארכיון פרקים קודמים">
+          <p className="mb-4 text-xs leading-6 text-muted">
+            הרשימה כוללת רק פרקים שקודמים לפרק הפעיל. שום תוכן עתידי לא נכלל.
+          </p>
 
-        {archiveEpisodes.length === 0 ? (
-          <CardSurface>
-            <p className="text-sm text-muted">אין עדיין ארכיון קודם לפני {currentEpisode.code}.</p>
-          </CardSurface>
-        ) : (
-          <div className="space-y-2.5">
-            {archiveEpisodes.map((episode) => (
-              <details key={episode.id} className="group">
-                <summary
-                  className="flex cursor-pointer list-none items-start justify-between gap-4 rounded-[18px] p-4 transition-colors duration-200 hover:bg-white/[0.025]"
-                  style={{
-                    background: "rgba(20,24,36,0.55)",
-                    border: "1px solid rgba(60,70,100,0.38)",
-                  }}
-                >
-                  <div className="flex min-w-0 items-start gap-3">
-                    {/* Episode code pill */}
-                    <div
-                      className="mt-0.5 shrink-0 rounded-full px-2.5 py-1 text-[0.62rem] font-semibold"
-                      style={{
-                        background: "rgba(210,168,90,0.10)",
-                        border: "1px solid rgba(210,168,90,0.22)",
-                        color: "rgb(225,185,110)",
-                        fontFamily: "var(--font-cinzel), serif",
-                        letterSpacing: "0.06em",
-                      }}
-                    >
-                      {episode.code}
-                    </div>
-                    <div className="min-w-0">
-                      <p className="text-sm font-semibold text-ink">{episode.title}</p>
-                      <p className="mt-1 line-clamp-2 text-xs leading-5 text-muted">
-                        {episode.summaries.snapshot}
-                      </p>
-                    </div>
-                  </div>
-                  <ChevronDown
-                    className="mt-1 h-4 w-4 shrink-0 text-muted transition-transform duration-300 group-open:rotate-180"
-                  />
-                </summary>
-
-                {/* Expanded content */}
-                <div
-                  className="mx-1 rounded-b-[18px] px-4 pb-4 pt-3"
-                  style={{
-                    background: "rgba(8,10,16,0.70)",
-                    border: "1px solid rgba(60,70,100,0.30)",
-                    borderTop: "none",
-                  }}
-                >
-                  <p className="text-sm leading-8 text-ink">{episode.summaries.full}</p>
-
-                  {episode.turningPoints.length > 0 && (
-                    <div className="mt-4 space-y-2">
-                      <p
+          {archiveEpisodes.length === 0 ? (
+            <CardSurface>
+              <p className="text-sm text-muted">אין עדיין ארכיון קודם לפני {currentEpisode.code}.</p>
+            </CardSurface>
+          ) : (
+            <div className="space-y-2.5">
+              {archiveEpisodes.map((episode) => (
+                <details key={episode.id} className="group">
+                  <summary
+                    className="flex cursor-pointer list-none items-start justify-between gap-4 rounded-[18px] p-4 transition-colors duration-200 hover:bg-white/[0.025]"
+                    style={{
+                      background: "rgba(20,24,36,0.55)",
+                      border: "1px solid rgba(60,70,100,0.38)",
+                    }}
+                  >
+                    <div className="flex min-w-0 items-start gap-3">
+                      {/* Episode code pill */}
+                      <div
+                        className="mt-0.5 shrink-0 rounded-full px-2.5 py-1 text-[0.62rem] font-semibold"
                         style={{
+                          background: "rgba(210,168,90,0.10)",
+                          border: "1px solid rgba(210,168,90,0.22)",
+                          color: "rgb(225,185,110)",
                           fontFamily: "var(--font-cinzel), serif",
-                          fontSize: "0.55rem",
-                          fontWeight: 700,
-                          letterSpacing: "0.24em",
-                          textTransform: "uppercase",
-                          color: "rgba(210,168,90,0.45)",
+                          letterSpacing: "0.06em",
                         }}
                       >
-                        רגעי שבר
-                      </p>
-                      <div className="flex flex-col gap-1.5">
-                        {episode.turningPoints.map((tp, i) => (
-                          <div key={tp.id} className="flex items-start gap-2.5">
-                            <span
-                              className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[0.6rem] font-bold"
-                              style={{
-                                background: "rgba(210,168,90,0.12)",
-                                border: "1px solid rgba(210,168,90,0.22)",
-                                color: "rgb(225,185,110)",
-                                fontFamily: "var(--font-cinzel), serif",
-                              }}
-                            >
-                              {i + 1}
-                            </span>
-                            <p className="text-xs leading-5 text-muted">{tp.summary}</p>
-                          </div>
-                        ))}
+                        {episode.code}
+                      </div>
+                      <div className="min-w-0">
+                        <p className="text-sm font-semibold text-ink">{episode.title}</p>
+                        <p className="mt-1 line-clamp-2 text-xs leading-5 text-muted">
+                          {episode.summaries.snapshot}
+                        </p>
                       </div>
                     </div>
-                  )}
-                </div>
-              </details>
-            ))}
-          </div>
-        )}
+                    <ChevronDown
+                      className="mt-1 h-4 w-4 shrink-0 text-muted transition-transform duration-300 group-open:rotate-180"
+                    />
+                  </summary>
+
+                  {/* Expanded content */}
+                  <div
+                    className="mx-1 rounded-b-[18px] px-4 pb-4 pt-3"
+                    style={{
+                      background: "rgba(8,10,16,0.70)",
+                      border: "1px solid rgba(60,70,100,0.30)",
+                      borderTop: "none",
+                    }}
+                  >
+                    <p className="text-sm leading-8 text-ink">{episode.summaries.full}</p>
+
+                    {episode.turningPoints.length > 0 && (
+                      <div className="mt-4 space-y-2">
+                        <p
+                          style={{
+                            fontFamily: "var(--font-cinzel), serif",
+                            fontSize: "0.55rem",
+                            fontWeight: 700,
+                            letterSpacing: "0.24em",
+                            textTransform: "uppercase",
+                            color: "rgba(210,168,90,0.45)",
+                          }}
+                        >
+                          רגעי שבר
+                        </p>
+                        <div className="flex flex-col gap-1.5">
+                          {episode.turningPoints.map((tp, i) => (
+                            <div key={tp.id} className="flex items-start gap-2.5">
+                              <span
+                                className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[0.6rem] font-bold"
+                                style={{
+                                  background: "rgba(210,168,90,0.12)",
+                                  border: "1px solid rgba(210,168,90,0.22)",
+                                  color: "rgb(225,185,110)",
+                                  fontFamily: "var(--font-cinzel), serif",
+                                }}
+                              >
+                                {i + 1}
+                              </span>
+                              <p className="text-xs leading-5 text-muted">{tp.summary}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </details>
+              ))}
+            </div>
+          )}
+        </AccordionSection>
       </SectionPanel>
     </section>
   );

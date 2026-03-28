@@ -1,8 +1,10 @@
 "use client";
 
-import { ArrowLeftRight, Castle, Crown, Flame, Sparkles, Swords } from "lucide-react";
+import { ArrowLeftRight, Castle, Crown, Flame, Search, Sparkles, Swords, Castle as CastleEmpty } from "lucide-react";
+import { useState } from "react";
 
 import { FactionSigilBadge } from "@/components/factions/faction-sigil-badge";
+import { FactionHeatMap } from "@/components/politics/faction-heat-map";
 import { Panel } from "@/components/ui/panel";
 import { episodeIndex, factions } from "@/data/seed";
 import { getEpisodeFactionRankings, getVisibleRelationshipWeb } from "@/lib/timeline";
@@ -46,6 +48,8 @@ const relationshipConfig = {
 /* ─────────────────────────────────────────────────────────────────────────── */
 export function PoliticsScreen() {
   const { currentEpisode, currentEpisodeId } = useEpisode();
+  const [relationFilter, setRelationFilter] = useState<string | null>(null);
+  const [factionSearch, setFactionSearch] = useState<string | null>(null);
 
   /* ── Anti-spoiler data — DO NOT TOUCH ─────────────────────────────────── */
   const factionRankings  = getEpisodeFactionRankings(factions, currentEpisode);
@@ -54,8 +58,23 @@ export function PoliticsScreen() {
   const leadingFaction   = factionRankings[0] ?? null;
   /* ── End anti-spoiler block ───────────────────────────────────────────── */
 
+  /* Get unique factions that appear in relationship web */
+  const activeFactionIds = Array.from(
+    new Set(
+      relationshipWeb.flatMap((rel) => [rel.sourceFactionId, rel.targetFactionId])
+    )
+  );
+  const activeFactions = factions.filter((f) => activeFactionIds.includes(f.id));
+
+  /* Filter relationships by type and faction */
+  const filteredRelationships = relationshipWeb.filter((rel) => {
+    if (relationFilter && rel.state !== relationFilter) return false;
+    if (factionSearch && rel.sourceFactionId !== factionSearch && rel.targetFactionId !== factionSearch) return false;
+    return true;
+  });
+
   return (
-    <section className="space-y-5 pb-24 md:pb-6" dir="rtl">
+    <section key={`politics-${currentEpisodeId}`} className="space-y-5 pb-24 md:pb-6 episode-content-fade" dir="rtl">
 
       {/* ══════════════════════════════════════════════════════════════════
           HERO — LEADING POWER
@@ -215,13 +234,96 @@ export function PoliticsScreen() {
           </div>
         </div>
 
+        {/* Relationship type filter pills */}
+        <div className="mb-4 flex flex-wrap items-center gap-2">
+          <button
+            type="button"
+            onClick={() => setRelationFilter(null)}
+            className={`shrink-0 rounded-full border px-3.5 py-1.5 text-[0.70rem] font-medium transition-all duration-200 ${
+              relationFilter === null
+                ? "border-[#3c4664]/60 bg-[#2a3050]/70 text-[#c8d8f0]"
+                : "border-stone-700/30 bg-stone-950/40 text-stone-500 hover:text-stone-300"
+            }`}
+          >
+            הכל
+          </button>
+          {(["alliance", "war", "tension"] as const).map((type) => {
+            const isActive = relationFilter === type;
+            const cfg = relationshipConfig[type];
+            return (
+              <button
+                key={type}
+                type="button"
+                onClick={() => setRelationFilter(isActive ? null : type)}
+                className={`shrink-0 rounded-full border px-3.5 py-1.5 text-[0.70rem] font-medium transition-all duration-200 ${cfg.badge}`}
+                style={{
+                  background: isActive ? `${cfg.bar}18` : cfg.bg,
+                  borderColor: isActive ? cfg.border : "rgba(60,70,100,0.30)",
+                }}
+              >
+                {relationshipLabels[type]}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Faction filter — horizontal scroll */}
+        {activeFactions.length > 0 && (
+          <div className="-mx-2 mb-4 overflow-x-auto pb-1" style={{ scrollbarWidth: "none" }}>
+            <div className="flex items-center gap-2 px-2" style={{ width: "max-content" }}>
+              <button
+                type="button"
+                onClick={() => setFactionSearch(null)}
+                className={`shrink-0 rounded-full border px-3 py-1.5 text-[0.70rem] font-medium transition-all duration-200 ${
+                  factionSearch === null
+                    ? "border-[#3c4664]/60 bg-[#2a3050]/70 text-[#c8d8f0]"
+                    : "border-stone-700/30 bg-stone-950/40 text-stone-500 hover:text-stone-300"
+                }`}
+              >
+                הכל
+              </button>
+              {activeFactions.map((faction) => {
+                const isActive = factionSearch === faction.id;
+                const color = faction.themeColor ?? "#a07840";
+                return (
+                  <button
+                    key={faction.id}
+                    type="button"
+                    onClick={() => setFactionSearch(isActive ? null : faction.id)}
+                    className="shrink-0 flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-[0.70rem] font-medium transition-all duration-200"
+                    style={{
+                      background: isActive ? `${color}15` : "rgba(8,10,16,0.60)",
+                      border: isActive ? `1px solid ${color}38` : "1px solid rgba(60,70,100,0.30)",
+                      color: isActive ? color : "rgb(130,130,150)",
+                    }}
+                  >
+                    {faction.displayName}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
         {relationshipWeb.length === 0 ? (
+          <div className="flex flex-col items-center gap-4 rounded-[22px] border border-white/[0.07] bg-white/[0.04] p-8 text-center">
+            <div className="flex h-16 w-16 items-center justify-center rounded-full border border-stone-700/40 bg-stone-900/60">
+              <Castle className="h-7 w-7 text-stone-500" />
+            </div>
+            <div className="space-y-2">
+              <p className="text-lg font-semibold text-ink">אין יחסי כוח גלויים</p>
+              <p className="max-w-[32ch] text-sm leading-7 text-muted">
+                עדיין לא נוצרו יחסי כוח מוגדרים בין הבתים עד נקודת הזמן הנוכחית. נסה/י לעבור לפרק מאוחר יותר.
+              </p>
+            </div>
+          </div>
+        ) : filteredRelationships.length === 0 ? (
           <div className="rounded-[22px] border border-white/[0.07] bg-white/[0.04] p-4 text-sm leading-7 text-muted">
-            עדיין אין יחסי כוח מוגדרים עד נקודת הזמן הנוכחית.
+            לא נמצאו יחסי כוח התואמים לסינון הנבחר.
           </div>
         ) : (
-          <div className="space-y-2.5">
-            {relationshipWeb.map((rel) => {
+          <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+            {filteredRelationships.map((rel) => {
               const srcFaction = factions.find((f) => f.id === rel.sourceFactionId);
               const tgtFaction = factions.find((f) => f.id === rel.targetFactionId);
               const cfg = relationshipConfig[rel.state];
@@ -289,6 +391,16 @@ export function PoliticsScreen() {
           </div>
         )}
       </Panel>
+
+      {/* ══════════════════════════════════════════════════════════════════
+          FACTION HEAT MAP
+          ═══════════════════════════════════════════════════════════════ */}
+      {relationshipWeb.length > 0 && (
+        <FactionHeatMap
+          relationshipWeb={relationshipWeb}
+          activeFactions={activeFactions}
+        />
+      )}
 
       {/* ══════════════════════════════════════════════════════════════════
           POLITICAL SHIFTS THIS EPISODE

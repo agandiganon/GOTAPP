@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
-import { Compass, Crown, MapPinned } from "lucide-react";
+import { Compass, Crown, MapPinned, Maximize2, X } from "lucide-react";
 
 import { Panel } from "@/components/ui/panel";
 import { episodeIndex, factions, locations, mapRegistry } from "@/data/seed";
@@ -26,6 +26,8 @@ const FantasyMapCanvas = dynamic(
 export function MapScreen() {
   const { currentEpisode, currentEpisodeId } = useEpisode();
   const [requestedLocationId, setRequestedLocationId] = useState<string | null>(null);
+  const [showAllLocations, setShowAllLocations] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -81,7 +83,23 @@ export function MapScreen() {
     : null;
 
   return (
-    <section className="space-y-4 pb-24 md:pb-6">
+    <>
+      {isFullscreen && (
+        <div className="fixed inset-0 z-[60] bg-[rgb(8,10,16)]">
+          <button
+            onClick={() => setIsFullscreen(false)}
+            className="absolute top-4 right-4 z-[61] flex h-10 w-10 items-center justify-center rounded-full border border-stone-700/35 bg-stone-900/60 hover:bg-stone-900/80 transition-colors"
+            aria-label="סגור מצב מלא"
+          >
+            <X className="h-5 w-5 text-stone-300" />
+          </button>
+          <div className="h-full w-full">
+            <FantasyMapCanvas pins={mapPins} focusLocationId={focusedLocation?.id ?? null} />
+          </div>
+        </div>
+      )}
+
+      <section key={`map-${currentEpisodeId}`} className="space-y-4 pb-24 md:pb-6 episode-content-fade">
       <Panel className="relative overflow-hidden p-5 md:p-6">
         <div className="absolute inset-0 bg-hero-glow opacity-55" />
         <div className="relative space-y-4">
@@ -138,8 +156,17 @@ export function MapScreen() {
               ערים ומבצרים לפי ציר הזמן הנוכחי.
             </p>
           </div>
-          <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-amber-700/35 bg-amber-500/[0.12] text-amber-100">
-            <Compass className="h-5 w-5" />
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setIsFullscreen(true)}
+              className="flex h-11 w-11 items-center justify-center rounded-2xl border border-stone-700/35 bg-stone-900/50 text-stone-300 hover:bg-stone-900/70 transition-colors"
+              aria-label="מצב מלא"
+            >
+              <Maximize2 className="h-5 w-5" />
+            </button>
+            <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-amber-700/35 bg-amber-500/[0.12] text-amber-100">
+              <Compass className="h-5 w-5" />
+            </div>
           </div>
         </div>
 
@@ -174,7 +201,7 @@ export function MapScreen() {
         </div>
 
         <div className="grid gap-3 sm:grid-cols-2">
-          {mapPins.slice(0, 8).map((location) => (
+          {(showAllLocations ? mapPins : mapPins.slice(0, 8)).map((location) => (
             <div key={location.id} className="rounded-[20px] border border-white/[0.06] bg-white/[0.04] px-4 py-3">
               <div className="flex items-start justify-between gap-3">
                 <div>
@@ -194,6 +221,16 @@ export function MapScreen() {
             <p className="text-xs text-muted">עדיין אין לוקיישנים שמופו לפרק הזה.</p>
           ) : null}
         </div>
+
+        {mapPins.length > 8 && (
+          <button
+            type="button"
+            onClick={() => setShowAllLocations(!showAllLocations)}
+            className="mt-4 w-full rounded-[18px] border border-white/[0.06] bg-white/[0.04] px-4 py-3 text-sm font-medium text-accent transition hover:bg-white/[0.08]"
+          >
+            {showAllLocations ? "הצג פחות" : `הצג עוד (${mapPins.length - 8})`}
+          </button>
+        )}
       </Panel>
 
       {factionRankings[0] ? (
@@ -213,5 +250,6 @@ export function MapScreen() {
         </Panel>
       ) : null}
     </section>
+    </>
   );
 }

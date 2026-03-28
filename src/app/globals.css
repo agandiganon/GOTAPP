@@ -32,7 +32,7 @@
   /* ── Text ─────────────────────────────────────────────────────────────── */
   --color-ink:          232 228 220;   /* warm off-white */
   --color-ink-soft:     185 180 170;
-  --color-muted:        120 115 108;
+  --color-muted:        155 150 142;
   --color-line:         255 255 255;
 
   /* ── Semantic RGB shorthands ─────────────────────────────────────────── */
@@ -90,6 +90,12 @@ button, input, select, textarea { font: inherit; }
 }
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(180deg, rgba(210,168,90,0.68), rgba(150,98,40,0.48));
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(210,168,90,0.42) rgba(255,255,255,0.013);
 }
 
 /* ═══════════════════════════════════════════════════════════════════════════
@@ -199,6 +205,29 @@ button, input, select, textarea { font: inherit; }
     color: rgba(240,200,120,0.95);
     box-shadow: 0 0 20px rgba(210,168,90,0.08);
   }
+
+  /* ── SECTION CAPTION LABEL ──────────────────────────────────────────– */
+  .section-caption {
+    font-family: var(--font-cinzel), serif;
+    font-size: 0.55rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(210,168,90,0.50);
+    margin-bottom: 12px;
+  }
+
+  /* ── CHARACTER NAME DISPLAY ────────────────────────────────────────── */
+  .character-name-heading {
+    font-family: var(--font-display), serif;
+    color: rgb(232,220,200);
+  }
+
+  /* ── ATMOSPHERIC GLOWS — for dynamic backdrop blurs ──────────────────── */
+  .blur-glow {
+    border-radius: 50%;
+    filter: blur(100px);
+  }
 }
 
 /* ═══════════════════════════════════════════════════════════════════════════
@@ -233,16 +262,83 @@ button, input, select, textarea { font: inherit; }
   to   { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes slideUpSpring {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes backdropBlurIn {
+  from {
+    background: rgba(0,0,0,0);
+    backdrop-filter: blur(0px);
+  }
+  to {
+    background: rgba(0,0,0,0.70);
+    backdrop-filter: blur(12px);
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes contentFadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes cardFadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translate(-50%, -20px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+}
+
+@keyframes pageTransitionFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.skeleton-pulse {
+  background: linear-gradient(90deg, rgba(28,33,50,0.8) 25%, rgba(42,48,70,0.9) 50%, rgba(28,33,50,0.8) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.8s ease-in-out infinite;
+  border-radius: 12px;
+}
+
+.episode-content-fade {
+  animation: contentFadeIn 0.4s ease-out;
+}
+
 /* ═══════════════════════════════════════════════════════════════════════════
    CHARACTER CARD
    ═══════════════════════════════════════════════════════════════════════════ */
 .character-card-frame {
   position: relative;
+  animation: cardFadeIn 0.5s ease-out both;
   transition:
     transform  280ms cubic-bezier(0.22, 0.61, 0.36, 1),
     box-shadow 280ms cubic-bezier(0.22, 0.61, 0.36, 1),
     border-color 280ms ease;
 }
+.character-card-frame:nth-child(1) { animation-delay: 0ms; }
+.character-card-frame:nth-child(2) { animation-delay: 60ms; }
+.character-card-frame:nth-child(3) { animation-delay: 120ms; }
+.character-card-frame:nth-child(4) { animation-delay: 180ms; }
+.character-card-frame:nth-child(5) { animation-delay: 240ms; }
+.character-card-frame:nth-child(6) { animation-delay: 300ms; }
+.character-card-frame:nth-child(n+7) { animation-delay: 360ms; }
+
 .character-card-frame:hover {
   transform: translateY(-5px) scale(1.010);
   box-shadow:
@@ -262,6 +358,16 @@ button, input, select, textarea { font: inherit; }
 }
 .character-card-frame:hover::after {
   animation: shimmerSlide 0.70s ease forwards;
+}
+
+.character-card-frame:hover .character-portrait-img,
+.character-card-frame:focus-within .character-portrait-img {
+  transform: scale(1.03);
+  filter: brightness(1.08);
+}
+
+.character-portrait-img {
+  transition: transform 0.5s ease, filter 0.5s ease;
 }
 
 /* Portrait fallback */
@@ -342,6 +448,7 @@ button, input, select, textarea { font: inherit; }
     inset 0  1px 0 rgba(255,255,255,0.04),
     inset 0 -1px 0 rgba(0,0,0,0.22);
   backdrop-filter: blur(28px) saturate(1.40);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 
 .bottom-nav-item {
@@ -746,8 +853,9 @@ button, input, select, textarea { font: inherit; }
   }
   .desktop-nav-item.is-active {
     color: rgba(240,200,120,0.96);
-    background: rgba(210,168,90,0.12);
+    background: rgba(210,168,90,0.10);
     border: 1px solid rgba(210,168,90,0.16);
+    border-right: 2.5px solid rgba(210,168,90,0.70);
   }
   .desktop-nav-item.is-active .desktop-nav-icon {
     color: rgba(240,200,120,0.96);
@@ -813,4 +921,57 @@ button, input, select, textarea { font: inherit; }
     grid-template-columns: 260px 1fr;
     max-width: 1400px;
   }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   HIGH CONTRAST MODE
+   ═══════════════════════════════════════════════════════════════════════════ */
+@media (prefers-contrast: more) {
+  :root {
+    --color-muted: 170 165 158;
+    --color-ink: 245 242 236;
+    --color-accent: 230 188 100;
+  }
+  .panel-surface { border-color: rgba(255,255,255,0.15) !important; }
+  .text-muted { color: rgb(170, 165, 158) !important; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   MICRO-INTERACTIONS — BUTTON PRESS EFFECTS
+   ═══════════════════════════════════════════════════════════════════════════ */
+button {
+  transition: transform 80ms cubic-bezier(0.34, 1.56, 0.64, 1),
+              opacity 80ms ease;
+}
+
+button:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Interactive elements (buttons, links, inputs) */
+.clickable, [role="button"], input[type="button"], input[type="submit"] {
+  transition: transform 80ms cubic-bezier(0.34, 1.56, 0.64, 1),
+              background 120ms ease,
+              border-color 120ms ease,
+              color 120ms ease;
+}
+
+.clickable:active:not(:disabled),
+[role="button"]:active:not(:disabled),
+input[type="button"]:active:not(:disabled),
+input[type="submit"]:active:not(:disabled) {
+  transform: scale(0.95);
 }

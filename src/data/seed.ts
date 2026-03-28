@@ -13,6 +13,11 @@ import type {
 } from "@/data/schemas";
 import { createEpisodeIndex } from "@/lib/episodes";
 
+/* ──────────────────────────────────────────────────────────────────────────
+   All exports are named exports and can be tree-shaken. Each screen component
+   imports only what it needs, avoiding unnecessary data bundling.
+   ────────────────────────────────────────────────────────────────────────── */
+
 export const episodes = episodesData as EpisodeRecord[];
 export const characters = charactersData as CharacterRecord[];
 export const factions = factionsData as FactionRecord[];

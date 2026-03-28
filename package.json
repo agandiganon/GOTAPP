@@ -1,6 +1,10 @@
 {
   "name": "gotspoil",
   "version": "0.1.0",
+  "description": "GotSpoil - Spoiler-free Game of Thrones companion app",
+  "keywords": ["game-of-thrones", "spoiler-free", "nextjs", "react", "hebrew", "rtl"],
+  "author": "GotSpoil Team",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "node scripts/dev-with-lan-host.mjs",
@@ -9,7 +13,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/leaflet": "^1.9.21",
     "clsx": "^2.1.1",
     "leaflet": "^1.9.4",
     "lucide-react": "^0.511.0",
@@ -21,6 +24,7 @@
     "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {
+    "@types/leaflet": "^1.9.21",
     "@types/node": "^22.15.3",
     "@types/react": "^18.3.20",
     "@types/react-dom": "^18.3.7",

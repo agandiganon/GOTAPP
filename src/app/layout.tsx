@@ -33,6 +33,9 @@ export const metadata: Metadata = {
   title: "gotspoil",
   description: "מלווה צפייה נטול ספוילרים לפרקים של משחקי הכס.",
   applicationName: "gotspoil",
+  icons: {
+    apple: "/icon.png",
+  },
 };
 
 export const viewport: Viewport = {

@@ -16,6 +16,7 @@ interface EpisodeContextValue {
   setCurrentEpisodeId: (episodeId: EpisodeId) => void;
   availableEpisodes: EpisodeRecord[];
   currentEpisode: EpisodeRecord;
+  generateShareUrl: () => string;
 }
 
 const STORAGE_KEY = "gotspoil.currentEpisodeId";
@@ -27,8 +28,17 @@ export function EpisodeProvider({ children }: PropsWithChildren) {
   const [hasHydratedStorage, setHasHydratedStorage] = useState(false);
 
   useEffect(() => {
-    const storedEpisodeId = window.localStorage.getItem(STORAGE_KEY);
+    // First, check URL query parameter
+    const params = new URLSearchParams(window.location.search);
+    const queryEpisodeId = params.get("ep");
+    if (queryEpisodeId && episodes.some((episode) => episode.id === queryEpisodeId)) {
+      setCurrentEpisodeIdState(queryEpisodeId);
+      setHasHydratedStorage(true);
+      return;
+    }
 
+    // Then check localStorage
+    const storedEpisodeId = window.localStorage.getItem(STORAGE_KEY);
     if (storedEpisodeId && episodes.some((episode) => episode.id === storedEpisodeId)) {
       setCurrentEpisodeIdState(storedEpisodeId);
     }
@@ -55,6 +65,13 @@ export function EpisodeProvider({ children }: PropsWithChildren) {
   const currentEpisode =
     episodes.find((episode) => episode.id === currentEpisodeId) ?? episodes[0];
 
+  const generateShareUrl = () => {
+    const baseUrl = typeof window !== "undefined" ? window.location.origin : "";
+    const url = new URL("/", baseUrl);
+    url.searchParams.set("ep", currentEpisodeId);
+    return url.toString();
+  };
+
   return (
     <EpisodeContext.Provider
       value={{
@@ -62,6 +79,7 @@ export function EpisodeProvider({ children }: PropsWithChildren) {
         setCurrentEpisodeId,
         availableEpisodes: episodes,
         currentEpisode,
+        generateShareUrl,
       }}
     >
       {children}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Shield } from "lucide-react";
 
 import { getProxiedExternalImageUrl } from "@/lib/media";
@@ -22,44 +22,6 @@ export function FactionSigilBadge({
   const resolvedSigilUrl = getProxiedExternalImageUrl(sigilUrl);
   const [isLoaded, setIsLoaded] = useState(false);
   const [hasImageError, setHasImageError] = useState(!resolvedSigilUrl);
-
-  useEffect(() => {
-    if (!resolvedSigilUrl) {
-      setIsLoaded(false);
-      setHasImageError(true);
-      return;
-    }
-
-    let cancelled = false;
-    const probe = new window.Image();
-
-    setIsLoaded(false);
-    setHasImageError(false);
-
-    probe.onload = () => {
-      if (cancelled) {
-        return;
-      }
-
-      setIsLoaded(true);
-      setHasImageError(false);
-    };
-
-    probe.onerror = () => {
-      if (cancelled) {
-        return;
-      }
-
-      setIsLoaded(false);
-      setHasImageError(true);
-    };
-
-    probe.src = resolvedSigilUrl;
-
-    return () => {
-      cancelled = true;
-    };
-  }, [resolvedSigilUrl]);
 
   const showImage = Boolean(resolvedSigilUrl) && !hasImageError;
 
@@ -88,6 +50,10 @@ export function FactionSigilBadge({
             "h-full w-full object-contain p-1.5 transition-opacity duration-300",
             isLoaded ? "opacity-100" : "opacity-0",
           )}
+          onLoad={() => {
+            setIsLoaded(true);
+            setHasImageError(false);
+          }}
           onError={() => {
             setIsLoaded(false);
             setHasImageError(true);

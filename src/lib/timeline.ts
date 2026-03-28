@@ -72,6 +72,16 @@ export function getVisibleCharacterSnapshots(
     .filter((character): character is CharacterRecord & { latestState: CharacterTimelineEntry } => Boolean(character));
 }
 
+export function getDeadCharacterCount(
+  characters: CharacterRecord[],
+  currentEpisodeId: EpisodeId,
+  episodeIndex: EpisodeIndexMap,
+) {
+  return getVisibleCharacterSnapshots(characters, currentEpisodeId, episodeIndex).filter(
+    (character) => character.latestState.status === "dead",
+  ).length;
+}
+
 export function getVisibleLocationSnapshots(
   locations: LocationRecord[],
   currentEpisodeId: EpisodeId,

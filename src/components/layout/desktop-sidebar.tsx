@@ -3,10 +3,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookText, Castle, Home, Map, UsersRound } from "lucide-react";
+import { BookText, Castle, Home, Map, UsersRound, Info, Brain } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { useEpisode } from "@/providers/episode-provider";
+import { characters, episodeIndex } from "@/data/seed";
+import { getDeadCharacterCount } from "@/lib/timeline";
 
 const navigationItems = [
   { href: "/",           label: "בית",      icon: Home,       labelEn: "Home"      },
@@ -14,11 +16,13 @@ const navigationItems = [
   { href: "/map",        label: "מפה",      icon: Map,        labelEn: "Map"       },
   { href: "/politics",   label: "פוליטיקה", icon: Castle,     labelEn: "Politics"  },
   { href: "/summary",    label: "תקציר",    icon: BookText,   labelEn: "Summary"   },
+  { href: "/quiz",       label: "חידון",    icon: Brain,      labelEn: "Quiz"      },
 ] as const;
 
 export function DesktopSidebar() {
-  const pathname      = usePathname();
-  const { currentEpisode } = useEpisode();
+  const pathname = usePathname();
+  const { currentEpisode, currentEpisodeId } = useEpisode();
+  const deadCount = getDeadCharacterCount(characters, currentEpisodeId, episodeIndex);
 
   return (
     <aside className="desktop-sidebar" aria-label="ניווט ראשי">
@@ -85,12 +89,13 @@ export function DesktopSidebar() {
         {navigationItems.map((item) => {
           const isActive = pathname === item.href;
           const Icon = item.icon;
+          const isCharactersTab = item.href === "/characters";
 
           return (
             <Link
               key={item.href}
               href={item.href}
-              className={cn("desktop-nav-item", isActive && "is-active")}
+              className={cn("desktop-nav-item relative", isActive && "is-active")}
               aria-current={isActive ? "page" : undefined}
             >
               <Icon
@@ -99,6 +104,15 @@ export function DesktopSidebar() {
                 aria-hidden="true"
               />
               <span className="flex-1">{item.label}</span>
+              {isCharactersTab && deadCount > 0 && (
+                <div
+                  className="h-5 w-5 rounded-full flex items-center justify-center text-[0.55rem] font-bold text-white shrink-0 ml-1"
+                  style={{ background: "rgba(210, 68, 78, 0.95)" }}
+                  title={`${deadCount} דמות מתה`}
+                >
+                  {deadCount}
+                </div>
+              )}
               <span
                 style={{
                   fontFamily: "var(--font-cinzel), serif",
@@ -115,8 +129,23 @@ export function DesktopSidebar() {
         })}
       </nav>
 
+      {/* ── About link ──────────────────────────────────────────────────── */}
+      <div className="mt-auto pt-6 pb-6">
+        <Link
+          href="/about"
+          className={cn(
+            "desktop-nav-item text-xs",
+            pathname === "/about" && "is-active"
+          )}
+          aria-current={pathname === "/about" ? "page" : undefined}
+        >
+          <Info className="h-[16px] w-[16px] shrink-0" strokeWidth={1.7} aria-hidden="true" />
+          <span className="flex-1">אודות</span>
+        </Link>
+      </div>
+
       {/* ── Episode badge ───────────────────────────────────────────────── */}
-      <div className="mt-auto pt-6">
+      <div className="pt-0">
         <div
           className="mx-2 mb-3"
           style={{

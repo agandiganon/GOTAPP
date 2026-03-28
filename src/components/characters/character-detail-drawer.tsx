@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { MapPin, X, Clock, Shield } from "lucide-react";
 
 import { StatusPill } from "@/components/ui/status-pill";
+import { useFocusTrap } from "@/hooks/use-focus-trap";
 import { factions, locations, episodeIndex, episodes } from "@/data/seed";
 import type { CharacterRecord, CharacterTimelineEntry } from "@/data/schemas";
 import { getVisibleTimelineEntries } from "@/lib/timeline";
@@ -16,9 +17,16 @@ interface CharacterDetailDrawerProps {
   onClose: () => void;
 }
 
+const DRAG_DISMISS_THRESHOLD = 150;
+
 export function CharacterDetailDrawer({ character, onClose }: CharacterDetailDrawerProps) {
   const { currentEpisodeId } = useEpisode();
   const drawerRef = useRef<HTMLDivElement>(null);
+  const backdropRef = useRef<HTMLDivElement>(null);
+  const dragStartRef = useRef(0);
+  const [dragDistance, setDragDistance] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const trapRef = useFocusTrap(!!character);
 
   /* Close on Escape */
   useEffect(() => {
@@ -36,6 +44,83 @@ export function CharacterDetailDrawer({ character, onClose }: CharacterDetailDra
     }
     return () => { document.body.style.overflow = ""; };
   }, [character]);
+
+  /* Handle back button to close drawer */
+  useEffect(() => {
+    if (!character) return;
+
+    window.history.pushState({ drawer: true }, "");
+
+    function handlePopState(e: PopStateEvent) {
+      onClose();
+    }
+
+    window.addEventListener("popstate", handlePopState);
+    return () => {
+      window.removeEventListener("popstate", handlePopState);
+    };
+  }, [character, onClose]);
+
+  /* Drag-to-dismiss handler */
+  useEffect(() => {
+    if (!drawerRef.current) return;
+
+    const handleTouchStart = (evt: Event) => {
+      const e = evt as TouchEvent;
+      dragStartRef.current = e.touches[0].clientY;
+      setIsDragging(true);
+    };
+
+    const handleTouchMove = (evt: Event) => {
+      const e = evt as TouchEvent;
+      if (!isDragging) return;
+      const currentY = e.touches[0].clientY;
+      const distance = Math.max(0, currentY - dragStartRef.current);
+      setDragDistance(distance);
+
+      if (drawerRef.current) {
+        drawerRef.current.style.transform = `translateY(${distance}px)`;
+      }
+    };
+
+    const handleTouchEnd = () => {
+      setIsDragging(false);
+
+      if (dragDistance >= DRAG_DISMISS_THRESHOLD) {
+        /* Trigger close with animation */
+        if (drawerRef.current) {
+          drawerRef.current.style.animation = "slideUpSpring 360ms cubic-bezier(0.34,1.12,0.64,1) reverse forwards";
+        }
+        if (backdropRef.current) {
+          backdropRef.current.style.animation = "backdropBlurIn 200ms ease reverse forwards";
+        }
+        setTimeout(onClose, 360);
+      } else {
+        /* Snap back to original position */
+        setDragDistance(0);
+        if (drawerRef.current) {
+          drawerRef.current.style.transform = "translateY(0)";
+          drawerRef.current.style.transition = "transform 200ms cubic-bezier(0.34,1.12,0.64,1)";
+        }
+        setTimeout(() => {
+          if (drawerRef.current) {
+            drawerRef.current.style.transition = "";
+          }
+        }, 200);
+      }
+    };
+
+    const drawerElement = drawerRef.current;
+    drawerElement.addEventListener("touchstart", handleTouchStart as EventListener);
+    drawerElement.addEventListener("touchmove", handleTouchMove as EventListener);
+    drawerElement.addEventListener("touchend", handleTouchEnd as EventListener);
+
+    return () => {
+      drawerElement.removeEventListener("touchstart", handleTouchStart as EventListener);
+      drawerElement.removeEventListener("touchmove", handleTouchMove as EventListener);
+      drawerElement.removeEventListener("touchend", handleTouchEnd as EventListener);
+    };
+  }, [isDragging, dragDistance, onClose]);
 
   if (!character) return null;
 
@@ -56,10 +141,11 @@ export function CharacterDetailDrawer({ character, onClose }: CharacterDetailDra
     <>
       {/* ── Backdrop ──────────────────────────────────────────────────────── */}
       <div
-        className="fixed inset-0 z-[200] bg-black/70 backdrop-blur-sm"
+        ref={backdropRef}
+        className="fixed inset-0 z-[200] bg-black/70 backdrop-blur-xl"
         onClick={onClose}
         aria-hidden="true"
-        style={{ animation: "fadeIn 180ms ease" }}
+        style={{ animation: "backdropBlurIn 200ms ease" }}
       />
 
       {/* ── Drawer ────────────────────────────────────────────────────────── */}
@@ -69,7 +155,7 @@ export function CharacterDetailDrawer({ character, onClose }: CharacterDetailDra
         aria-modal="true"
         aria-label={`פרטי ${character.name}`}
         className="fixed inset-x-0 bottom-0 z-[201] mx-auto max-w-[520px] md:max-w-[680px]"
-        style={{ animation: "slideUp 260ms cubic-bezier(0.34,1.12,0.64,1)" }}
+        style={{ animation: "slideUpSpring 360ms cubic-bezier(0.34,1.12,0.64,1)" }}
       >
         <div
           className="relative flex max-h-[88vh] flex-col overflow-hidden rounded-t-[32px]"
@@ -119,8 +205,7 @@ export function CharacterDetailDrawer({ character, onClose }: CharacterDetailDra
             {/* Name + meta */}
             <div className="min-w-0 flex-1">
               <h2
-                className="text-xl font-bold leading-tight"
-                style={{ fontFamily: "var(--font-display), serif", color: "rgb(232,220,200)" }}
+                className="character-name-heading text-xl font-bold leading-tight"
               >
                 {character.name}
               </h2>
@@ -187,6 +272,52 @@ export function CharacterDetailDrawer({ character, onClose }: CharacterDetailDra
                 <Shield className="h-3.5 w-3.5 text-accent" />
               </div>
               <p className="text-sm leading-7 text-muted">{character.latestState.summary}</p>
+            </div>
+          )}
+
+          {/* ── Episode appearance timeline ──────────────────────────────── */}
+          {visibleTimeline.length > 0 && (
+            <div className="mx-5 mb-4">
+              <p
+                style={{
+                  fontFamily: "var(--font-cinzel), serif",
+                  fontSize: "0.56rem",
+                  fontWeight: 700,
+                  letterSpacing: "0.24em",
+                  textTransform: "uppercase",
+                  color: "rgba(210,168,90,0.50)",
+                  marginBottom: "8px",
+                }}
+              >
+                הופעות בפרקים
+              </p>
+              <div className="flex flex-wrap gap-1">
+                {visibleTimeline.map((entry, idx) => {
+                  const isDead = entry.status === "dead";
+                  const isLatest = idx === visibleTimeline.length - 1;
+                  const episodeNum = entry.episodeId;
+
+                  return (
+                    <div
+                      key={`${entry.episodeId}-${idx}`}
+                      className="h-6 w-2 rounded-sm"
+                      style={{
+                        background: isDead
+                          ? "rgba(210, 68, 78, 0.75)"
+                          : accentColor,
+                        opacity: isLatest ? 1 : 0.5,
+                        border: isLatest
+                          ? `1px solid ${accentColor}`
+                          : "1px solid rgba(60,70,100,0.30)",
+                        boxShadow: isLatest
+                          ? `0 0 6px ${accentColor}40`
+                          : "none",
+                      }}
+                      title={episodeNum}
+                    />
+                  );
+                })}
+              </div>
             </div>
           )}
 

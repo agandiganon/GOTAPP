@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import type { LatLngBoundsExpression } from "leaflet";
 import L from "leaflet";
 import { ImageOverlay, MapContainer, Marker, Tooltip, useMap, ZoomControl } from "react-leaflet";
@@ -144,12 +144,16 @@ function MapLocationMarker({
     [pin.id, pin.isPrimary, pin.isFocused, isSelected, pin.controllerFaction?.id],
   );
 
+  const handleMarkerClick = useCallback(() => {
+    onSelect(pin);
+  }, [pin, onSelect]);
+
   return (
     <Marker
       position={center}
       icon={icon}
       eventHandlers={{
-        click: () => onSelect(pin),
+        click: handleMarkerClick,
       }}
     >
       <Tooltip
@@ -161,7 +165,32 @@ function MapLocationMarker({
         permanent={false}
       >
         <div dir="rtl" className="whitespace-nowrap text-right" style={{ direction: "rtl" }}>
-          <p className="font-display text-[0.95rem] text-amber-100">{pin.name}</p>
+          <div className="flex items-center gap-2 mb-1">
+            <div
+              className="flex h-8 w-8 shrink-0 items-center justify-center rounded-[8px] border"
+              style={{
+                background: "linear-gradient(135deg, rgba(210,168,90,0.15), rgba(100,100,120,0.10))",
+                borderColor: "rgba(210,168,90,0.30)",
+              }}
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="14"
+                height="14"
+                fill="none"
+                stroke="rgba(210,168,90,0.7)"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M12 2L19 6V12L12 16L5 12V6L12 2" />
+                <path d="M12 10V16" />
+                <path d="M5 9L12 13L19 9" />
+              </svg>
+            </div>
+            <p className="font-display text-[0.95rem] text-amber-100">{pin.name}</p>
+          </div>
           {pin.region && (
             <p className="text-[0.60rem] text-stone-500 mt-0.5">{pin.region}</p>
           )}
